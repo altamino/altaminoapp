@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeLinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent" app:nv_dark_background="@color/color_default_primary"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/content_layout" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="25.0dp" android:paddingTop="35.0dp" android:paddingRight="25.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="25.0dp" android:paddingEnd="25.0dp">
+            <com.narvii.app.theme.view.NVThemeTextView android:textSize="16.0dp" android:textColor="#ff4a4a4a" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" app:nv_dark_textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+    <com.github.mmin18.widget.FlexLayout android:id="@id/empty_layout" android:padding="15.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/empty_image" android:src="@drawable/ic_empty_announcement" app:layout_centerX="50%" app:layout_centerY="30%" app:layout_height="parent.width*0.4" app:layout_width="parent.width*0.45" />
+        <com.narvii.app.theme.view.NVThemeTextView android:textColor="#ff9b9b9b" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_announcement_yet" app:layout_top="empty_image.bottom+10dp" app:nv_dark_textColor="#99ffffff" />
+    </com.github.mmin18.widget.FlexLayout>
+    <com.narvii.app.theme.view.NVThemeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/editable_bottom" android:background="#fff6f6f6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60.0dp" app:nv_dark_background="#1affffff">
+        <com.narvii.app.theme.view.NVThemeTextView android:textSize="16.0dp" android:textColor="#ff4a4a4a" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/pin_announcement" android:layout_weight="1.0" android:layout_marginStart="10.0dp" app:nv_dark_textColor="#ffffffff" />
+        <CheckBox android:id="@id/switch_view" android:layout_width="52.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:button="@drawable/switch_bg" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+    </com.narvii.app.theme.view.NVThemeLinearLayout>
+</com.narvii.app.theme.view.NVThemeLinearLayout>

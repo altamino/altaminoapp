@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/master_tab_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/tab_discover" android:layout_width="0.0pt" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/incubator_tab_item_layout" />
+    <include android:id="@id/tab_community" android:layout_width="0.0pt" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/incubator_tab_item_layout" />
+    <include android:id="@id/tab_chat" android:layout_width="0.0pt" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/incubator_tab_item_layout" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/tab_me" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0pt" android:layout_height="match_parent" android:layout_marginTop="2.0dp" android:layout_weight="1.0">
+        <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="20.0dp" android:layout_height="20.0dp">
+            <include android:id="@id/me_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" layout="@layout/user_avatar_layout_mini_nobadge_noavatar" />
+            <View android:layout_gravity="end" android:id="@id/badge_me" android:background="@drawable/drawer_badge_o" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginTop="-2.0dp" android:layout_marginRight="-2.0dp" android:layout_marginEnd="-2.0dp" />
+        </FrameLayout>
+        <TextView android:textSize="10.0dp" android:textColor="#ff999999" android:id="@id/me_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/me" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

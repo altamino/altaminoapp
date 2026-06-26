@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/delete" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dp" android:src="@drawable/ic_item_delete" android:layout_marginStart="-10.0dp" />
+    <FrameLayout android:layout_width="56.0dp" android:layout_height="50.0dp" android:layout_marginLeft="2.0dp" android:layout_marginRight="12.0dp" android:layout_marginStart="2.0dp" android:layout_marginEnd="12.0dp">
+        <com.narvii.widget.ThumbImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="56.0dp" android:layout_height="50.0dp" app:defaultDrawable="@color/placeholder" app:strokeColor="#ff888888" app:strokeWidth="0.5dp" />
+        <ImageView android:layout_gravity="center" android:id="@id/play_button" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_sr_media_play" />
+    </FrameLayout>
+    <include layout="@layout/draft_item_base" />
+</LinearLayout>

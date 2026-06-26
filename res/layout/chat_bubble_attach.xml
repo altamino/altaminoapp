@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <Button android:textSize="15.0dp" android:id="@id/strike_button" android:paddingLeft="14.0dp" android:paddingRight="14.0dp" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:minHeight="36.0dp" android:text="@string/you_received_strike" android:layout_below="@id/stub5" android:layout_centerHorizontal="true" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" style="@style/ButtonRed" />
+    <View android:id="@id/attach_divider" android:background="#ffcccccc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="12.0dp" android:layout_below="@id/strike_button" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_attachment" android:background="@drawable/button_round_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_below="@id/attach_divider">
+        <com.narvii.widget.NVImageView android:id="@id/attach_image" android:layout_width="54.0dp" android:layout_height="54.0dp" android:layout_marginLeft="6.0dp" android:layout_marginStart="6.0dp" narvii:defaultDrawable="@color/placeholder" />
+        <LinearLayout android:gravity="start|center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_marginLeft="6.0dp" android:layout_weight="1.0" android:layout_marginStart="6.0dp">
+            <TextView android:textSize="18.0dp" android:textColor="#ff222222" android:id="@id/attach_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="13.0dp" android:textColor="#ff555555" android:id="@id/attach_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.AutoCloseKeyboardLayout android:orientation="vertical" android:background="#ff111111" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.SearchBar android:id="@id/search" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16.0dp" android:textColor="#ffffffff" android:textColorHint="#ffaaaaaa" android:id="@id/search_text" android:background="@drawable/media_search_bar_text" android:paddingLeft="36.0dp" android:paddingRight="32.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_margin="8.0dp" android:hint="@string/search" android:layout_centerVertical="true" android:inputType="textCapSentences" android:imeOptions="actionSearch" android:paddingStart="36.0dp" android:paddingEnd="32.0dp" />
+        <com.narvii.widget.FontAwesomeView android:textSize="16.0dp" android:textColor="#ffaaaaaa" android:gravity="center" android:padding="8.0dp" android:layout_width="32.0dp" android:layout_height="32.0dp" android:text="@string/fa_search" android:layout_alignLeft="@id/search_text" android:layout_centerVertical="true" android:layout_alignStart="@id/search_text" />
+        <com.narvii.widget.FontAwesomeView android:textSize="16.0dp" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/search_clear" android:padding="8.0dp" android:layout_width="32.0dp" android:layout_height="32.0dp" android:text="@string/fa_times_circle" android:layout_alignRight="@id/search_text" android:layout_centerVertical="true" android:layout_alignEnd="@id/search_text" />
+    </com.narvii.widget.SearchBar>
+    <include android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0" layout="@layout/list_layout" />
+</com.narvii.widget.AutoCloseKeyboardLayout>

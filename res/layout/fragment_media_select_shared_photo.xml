@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.sharedfolder.SharedPhotoTouchImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" narvii:preload="true" narvii:supportUhq="true"
+      xmlns:narvii="http://schemas.android.com/apk/res-auto" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/image_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+</FrameLayout>

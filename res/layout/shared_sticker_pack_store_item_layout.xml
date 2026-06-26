@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="100.0dp">
+        <com.narvii.widget.NVImageView android:id="@id/store_item_preview" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" app:defaultDrawable="@color/sticker_placeholder" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/amino_plus_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:src="@drawable/ic_amino_plus_mini_new" android:layout_marginEnd="4.0dp" />
+            <TextView android:textSize="10.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/_new" android:background="@drawable/shared_sticker_pack_new_bg" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="16.0dp" android:text="New" android:textAllCaps="true" />
+        </LinearLayout>
+        <View android:id="@id/disabled" android:background="@drawable/sticker_picker_item_disabled" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <TextView android:textSize="14.0dp" android:textColor="#ff333334" android:layout_gravity="center_horizontal" android:id="@id/store_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:singleLine="true" />
+    <TextView android:textSize="12.0dp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:id="@id/used_times" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

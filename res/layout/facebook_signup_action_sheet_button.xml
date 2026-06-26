@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.FontAwesomeView android:textColor="#ff3b5998" android:gravity="center" android:id="@id/icon" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:text="@string/fa_facebook_square" />
+    <TextView android:textSize="16.0dp" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="40.0dp" android:text="@string/account_facebook" android:singleLine="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="40.0dp" />
+</LinearLayout>

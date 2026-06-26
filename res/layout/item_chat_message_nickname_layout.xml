@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.ReversibleLinearLayout android:orientation="horizontal" android:id="@id/nickname_container" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.NicknameView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/nickname" android:layout_width="0.0pt" android:layout_height="wrap_content" android:shadowColor="#40000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_weight="1.0" />
+    <TextView android:textSize="10.0dp" android:textColor="#ff000000" android:id="@id/host_label" android:background="@drawable/round_white_corner_2" android:paddingLeft="4.0dp" android:paddingTop="1.0dp" android:paddingRight="4.0dp" android:paddingBottom="1.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:text="@string/host" android:maxLines="1" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" />
+</com.narvii.widget.ReversibleLinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <View narvii:layout_height="this.width" narvii:layout_width="100%" />
+    <ImageView android:id="@id/current_community_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_current_community_indicator" narvii:layout_centerY="50%" narvii:layout_left="0" />
+    <com.narvii.widget.CommunityIconView android:id="@id/icon" narvii:layout_centerX="50%" narvii:layout_centerY="50%" narvii:layout_height="this.width" narvii:layout_width="68.2%" narvii:shadowColor="#66000000" narvii:shadowOffsetX="2.0dp" narvii:shadowOffsetY="2.0dp" narvii:shadowSize="2.0dp" style="@style/CommunityImageView" />
+    <com.narvii.widget.AutoScaleTextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/notification_count" android:background="@drawable/community_notification_badge_o" narvii:defaultAtHeight="24.0dp" narvii:layout_centerX="icon.right-icon.width*0.05" narvii:layout_centerY="icon.top+icon.width*0.05" narvii:layout_height="this.width" narvii:layout_right="image.right+3dp" narvii:layout_top="image.top-4dp" narvii:layout_width="min(18dp,icon.width*0.4)" narvii:minScaleTextSize="12.0dp" />
+    <com.narvii.widget.SmoothProgressBar android:id="@id/progress" android:visibility="gone" android:layout_height="2.0dp" android:progressDrawable="@drawable/communtiy_theme_downloading_progress" narvii:layout_centerX="50%" narvii:layout_centerY="icon.bottom-10dp" narvii:layout_width="icon.width" style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+</com.github.mmin18.widget.FlexLayout>

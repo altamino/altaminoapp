@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.detail.DateDividerItem android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="42.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="3.0" />
+    <com.narvii.widget.FontAwesomeView android:textSize="16.0dp" android:textColor="#ffa4a4a4" android:gravity="center" android:id="@id/stub1" android:padding="4.0dp" android:layout_width="26.0dp" android:layout_height="26.0dp" android:text="@string/fa_asterisk" />
+    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <TextView android:textSize="14.0dp" android:textColor="#ff888888" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <com.narvii.widget.FontAwesomeView android:textSize="16.0dp" android:textColor="#ffa4a4a4" android:gravity="center" android:id="@id/stub2" android:padding="4.0dp" android:layout_width="26.0dp" android:layout_height="26.0dp" android:text="@string/fa_asterisk" />
+    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="3.0" />
+</com.narvii.detail.DateDividerItem>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/sticker_pack_info_dash_line" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layerType="software" />
+    <com.narvii.monetization.utils.StoreItemNameView android:id="@id/name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="10.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/author_layout" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+        <TextView android:textSize="12.0dp" android:textColor="#ffb9b9b9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:text="@string/submitted_by" android:layout_marginEnd="5.0dp" />
+        <TextView android:textSize="13.0dp" android:textColor="#ff0f86ff" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <com.narvii.monetization.StoreItemStatusView android:id="@id/store_item_status_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+    <TextView android:textSize="12.0dp" android:textColor="#ff717379" android:layout_gravity="center_horizontal" android:id="@id/used_times" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:singleLine="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/edit_button" android:background="@drawable/sticker_pack_edit_bg" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginTop="8.0dp" android:minWidth="78.0dp">
+        <ImageView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sticker_pack_edit" />
+        <TextView android:textSize="12.0dp" android:textColor="#ff777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="@string/edit" android:layout_marginStart="6.0dp" />
+    </LinearLayout>
+</LinearLayout>

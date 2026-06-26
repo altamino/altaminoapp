@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/post_background" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffffff" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_title" />
+        <EditText android:textSize="16.0dp" android:textColor="#ff222222" android:id="@id/title" android:background="@null" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:singleLine="true" android:layout_weight="1.0" android:inputType="textCapSentences" android:layout_marginStart="10.0dp" />
+    </LinearLayout>
+    <include layout="@layout/list_divider" />
+    <com.github.mmin18.widget.FlexLayout android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="0.0pt" android:layout_weight="1.0">
+        <com.github.mmin18.widget.FlexLayout android:id="@id/add_photo_placeholder" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp">
+            <View android:background="@drawable/photo_post_bg" android:layout_width="match_parent" narvii:layout_centerX="50%" narvii:layout_height="min(100%, screen.height*0.32)" />
+            <com.narvii.widget.TintButton android:background="@drawable/photo_post_add_photo_bg" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_post_photo_add" narvii:layout_centerX="prev.centerX" narvii:layout_centerY="prev.centerY" narvii:tintColor="@color/selector_color_white" />
+            <LinearLayout android:orientation="vertical" android:id="@id/current_language_info_layout" android:background="@drawable/image_photo_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginRight="8.0dp" android:layout_marginEnd="8.0dp" narvii:layout_centerX="50%" narvii:layout_top="prev.bottom">
+                <com.narvii.widget.FontAwesomeView android:textColor="#ff008af4" android:layout_gravity="center" android:layout_width="25.0dp" android:layout_height="25.0dp" android:text="@string/ion_arrow_up_b" />
+                <TextView android:textColor="#ffffffff" android:gravity="center_horizontal" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:paddingBottom="8.0dp" android:layout_width="160.0dp" android:layout_height="wrap_content" android:text="@string/add_photo_hint" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" />
+            </LinearLayout>
+        </com.github.mmin18.widget.FlexLayout>
+        <FrameLayout android:id="@id/single_image_container" android:layout_width="match_parent" narvii:layout_centerX="50%" narvii:layout_height="min(100%, screen.height*0.32)">
+            <com.narvii.widget.NVImageView android:id="@id/image_content" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" narvii:defaultDrawable="@drawable/placeholder_picture_gray_small" />
+            <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/caption" android:background="#77000000" android:padding="4.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </FrameLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/multi_image_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.github.mmin18.widget.FlexLayout>
+    <include layout="@layout/post_media_bar" />
+</LinearLayout>

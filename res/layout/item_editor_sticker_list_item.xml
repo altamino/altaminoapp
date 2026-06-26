@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="80.0dp" android:layout_height="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" app:defaultDrawable="@color/sticker_placeholder" app:scalePlaceholder="true" />
+    <com.narvii.video.widget.EditorStickerInstallFrameView android:id="@id/sticker_install_frame" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

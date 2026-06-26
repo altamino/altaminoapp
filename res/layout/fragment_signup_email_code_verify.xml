@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/account_signup_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:gravity="center" android:layout_height="wrap_content" android:text="@string/enter_confirmation_code" android:maxLines="1" android:singleLine="true" narvii:layout_centerX="50%" narvii:layout_left="10%" narvii:layout_right="90%" narvii:layout_top="16dp" style="@style/account_big_title" />
+            <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/email_info" android:layout_height="wrap_content" android:text="@string/code_sent_to_email" narvii:layout_centerX="50%" narvii:layout_left="20%" narvii:layout_right="80%" narvii:layout_top="prev.bottom+6dp" />
+            <com.narvii.widget.CodeEditView android:id="@id/code_edit" narvii:layout_height="this.width*0.15" narvii:layout_left="15%" narvii:layout_right="85%" narvii:layout_top="prev.bottom+20dp" />
+            <TextView android:textSize="12.0dp" android:textColor="#ffff0000" android:gravity="center" android:id="@id/code_verification_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/incorrect_verification_code" narvii:layout_centerX="50%" narvii:layout_top="prev.bottom+12dp" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/selector_text_create_amino_green" android:id="@id/resend" android:background="@drawable/button_rect_transparent_0x2000" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/get_a_new_code" narvii:layout_centerX="50%" narvii:layout_top="prev.bottom+8dp" />
+            <Button android:enabled="false" android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/account_text" android:gravity="center" android:id="@id/next" android:background="@drawable/button_round_account_plus" android:layout_height="54.0dp" android:text="@string/next" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="prev.bottom+30dp" />
+            <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="@color/account_signup_clickable_text_white" android:id="@id/skip" android:background="@drawable/button_rect_transparent_0x2000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skip" narvii:layout_centerX="50%" narvii:layout_top="prev.bottom+38dp" />
+        </com.github.mmin18.widget.FlexLayout>
+    </ScrollView>
+</LinearLayout>

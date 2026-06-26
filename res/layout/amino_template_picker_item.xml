@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:paddingLeft="@dimen/template_picker_padding_h" android:paddingTop="5.0dp" android:paddingRight="@dimen/template_picker_padding_h" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.transition.TransitionLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.GradientView android:id="@id/gradient" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include layout="@layout/amino_template_picker_item_collapse" />
+        <include layout="@layout/amino_template_picker_item_expand" />
+        <com.narvii.widget.TintButton android:layout_gravity="end" android:id="@id/chevron" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/chevron_right_mirror" android:layout_marginEnd="10.0dp" narvii:tintColor="#ffffffff" />
+    </com.narvii.transition.TransitionLayout>
+</FrameLayout>

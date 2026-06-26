@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/bg" android:background="#cc000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.github.mmin18.widget.FlexLayout android:id="@id/main_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.github.mmin18.widget.FlexLayout android:id="@id/main_content" android:clipChildren="false" android:clipToPadding="false" app:layout_centerX="50%" app:layout_centerY="50%-10dp" app:layout_height="min(parent.height-100dp,wrap_content)" app:layout_width="((280dp>parent.width)?parent.width*0.85:parent.width*0.8)">
+            <com.narvii.checkin.lottery.LotteryBackgroundView android:id="@id/lottery_background" app:layout_centerX="50%" app:layout_height="content.height" app:layout_width="content.width" />
+            <ImageView android:id="@id/award_light" android:visibility="gone" android:src="@drawable/lottery_award_light" android:scaleType="centerInside" app:layout_centerX="50%" app:layout_height="content.height" app:layout_width="content.width" />
+            <ScrollView android:id="@id/content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_width="parent.width">
+                <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffbd5f" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="50.0dp" />
+                    <com.github.mmin18.widget.FlexLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@id/card_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" app:layout_height="max(130dp,this.width/3*1.8)">
+                            <LinearLayout android:layout_gravity="center" android:id="@id/card_layout" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="20.0dp">
+                                <com.github.mmin18.widget.FlexLayout android:id="@id/card1" android:clipChildren="false" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_margin="@dimen/lottery_flip_card_margin" android:layout_weight="1.0">
+                                    <com.narvii.widget.ThumbImageView android:layout_width="match_parent" android:src="@drawable/lottery_card_back_bg" app:cornerRadius="5.0dp" app:layout_height="this.width*1.5" app:shadowColor="#88f9c053" app:shadowOffsetY="0.0dp" app:shadowSize="4.0dp" />
+                                </com.github.mmin18.widget.FlexLayout>
+                                <com.github.mmin18.widget.FlexLayout android:id="@id/card2" android:clipChildren="false" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_margin="@dimen/lottery_flip_card_margin" android:layout_weight="1.0">
+                                    <com.narvii.widget.ThumbImageView android:layout_width="match_parent" android:src="@drawable/lottery_card_back_bg" app:cornerRadius="5.0dp" app:layout_height="this.width*1.5" app:shadowColor="#88f9c053" app:shadowOffsetY="0.0dp" app:shadowSize="4.0dp" />
+                                </com.github.mmin18.widget.FlexLayout>
+                                <com.github.mmin18.widget.FlexLayout android:id="@id/card3" android:clipChildren="false" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_margin="@dimen/lottery_flip_card_margin" android:layout_weight="1.0">
+                                    <com.narvii.widget.ThumbImageView android:layout_width="match_parent" android:src="@drawable/lottery_card_back_bg" app:cornerRadius="5.0dp" app:layout_height="this.width*1.5" app:shadowColor="#88f9c053" app:shadowOffsetY="0.0dp" app:shadowSize="4.0dp" />
+                                </com.github.mmin18.widget.FlexLayout>
+                            </LinearLayout>
+                            <com.narvii.widget.FlipLayout android:layout_gravity="center" android:id="@id/flip_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <include layout="@layout/lottery_card_layout" />
+                            </com.narvii.widget.FlipLayout>
+                            <com.narvii.widget.PressedFrameLayout android:layout_gravity="end|top" android:id="@id/coins_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dp">
+                                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="8.0dp">
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/amino_coin_small" />
+                                    <com.narvii.widget.AutoSizingTextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:minWidth="30.0dp" android:maxLines="1" android:layout_marginStart="8.0dp" app:autoSizeTextMaxSize="15.0dp" />
+                                </LinearLayout>
+                            </com.narvii.widget.PressedFrameLayout>
+                            <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#fff85757" android:gravity="center" android:layout_gravity="end|top" android:id="@id/added_coins" android:paddingRight="8.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginLeft="8.0dp" android:shadowColor="#88ffffff" android:shadowRadius="2.0" android:paddingEnd="8.0dp" android:layout_marginStart="8.0dp" />
+                        </FrameLayout>
+                    </com.github.mmin18.widget.FlexLayout>
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:minHeight="70.0dp">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/tap_to_open" android:background="@drawable/lottery_tap_to_open_bg" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp">
+                            <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/pick_a_card" android:singleLine="true" android:shadowColor="#ffffab2f" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+                            <TextView android:textSize="12.0dp" android:textColor="#ffffc878" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/tap_to_open_it" android:singleLine="true" android:shadowColor="#ffb7771a" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="top" android:orientation="vertical" android:id="@id/result_bottom" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/check_back_tomorrow_for_more_prizes" android:maxLines="2" />
+                            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/get_free_icons" android:background="@drawable/lucky_draw_get_free_icons_bg_selector" android:paddingLeft="30.0dp" android:paddingRight="30.0dp" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="20.0dp" android:text="@string/get_more_free_coins" android:singleLine="true" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </ScrollView>
+        </com.github.mmin18.widget.FlexLayout>
+        <FrameLayout android:id="@id/prompt_layout" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_top="main_content.bottom-80dp" app:layout_width="main_content.width+36dp">
+            <com.github.mmin18.widget.FlexLayout android:id="@id/ads_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.widget.GradientView android:id="@id/ads_gradient" app:layout_centerX="50%" app:layout_height="next.height" app:layout_top="8dp" app:layout_width="next.width-16dp" />
+                <LinearLayout android:layout_height="wrap_content" android:minHeight="80.0dp" app:layout_width="parent.width">
+                    <ImageView android:layout_width="46.0dp" android:layout_height="44.0dp" android:src="@drawable/ic_lottery_ads" />
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ads_enable_layout" android:paddingLeft="10.0dp" android:paddingTop="18.0dp" android:paddingRight="18.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="18.0dp">
+                        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wanna_earn_free_coins_by_turning_on_ads" android:maxLines="2" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp">
+                            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@id/ads_enable_no" android:background="@drawable/lottery_ads_no_bg" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:minWidth="80.0dp" android:text="@string/no" android:singleLine="true" />
+                            <FrameLayout android:id="@id/ads_enable_yes" android:background="@drawable/lottery_ads_yes_bg" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginLeft="15.0dp" android:minWidth="80.0dp" android:layout_marginStart="15.0dp">
+                                <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes" android:singleLine="true" android:drawableRight="@drawable/ic_lottery_yes_money" android:drawableEnd="@drawable/ic_lottery_yes_money" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ads_enabled_layout" android:paddingLeft="10.0dp" android:paddingTop="18.0dp" android:paddingRight="10.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ads_successfully_enabled" android:maxLines="2" />
+                        <TextView android:textSize="13.0dp" android:textColor="#ff000000" android:id="@id/ads_enabled_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="2" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.github.mmin18.widget.FlexLayout>
+            <com.github.mmin18.widget.FlexLayout android:id="@id/video_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.widget.GradientView android:id="@id/video_gradient" app:layout_centerX="50%" app:layout_height="next.height" app:layout_top="8dp" app:layout_width="next.width-16dp" />
+                <LinearLayout android:layout_height="wrap_content" android:minHeight="80.0dp" app:layout_width="parent.width">
+                    <ImageView android:layout_width="46.0dp" android:layout_height="44.0dp" android:src="@drawable/ic_lottery_video" />
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingTop="18.0dp" android:paddingRight="18.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="18.0dp">
+                        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/reward_video_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp">
+                            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/watch_video_no" android:background="@drawable/lottery_video_no_bg" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:minWidth="80.0dp" android:text="@string/no" android:singleLine="true" />
+                            <FrameLayout android:id="@id/watch_video_yes" android:background="@drawable/lottery_video_yes_bg" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginLeft="15.0dp" android:minWidth="80.0dp" android:layout_marginStart="15.0dp">
+                                <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff41cb41" android:layout_gravity="center" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes" android:singleLine="true" android:drawableRight="@drawable/ic_lottery_yes_money" android:drawableEnd="@drawable/ic_lottery_yes_money" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.github.mmin18.widget.FlexLayout>
+        </FrameLayout>
+        <com.narvii.widget.PopButton android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dialog_close_circle" android:alpha="0.8" app:layout_centerX="50%" app:layout_top="max(main_content.bottom,prompt_layout.bottom)+20dp" app:tintColor="#ffffffff" />
+    </com.github.mmin18.widget.FlexLayout>
+</com.github.mmin18.widget.FlexLayout>

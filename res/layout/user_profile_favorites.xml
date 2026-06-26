@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/favorites" android:paddingBottom="14.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/user_collection" android:background="@drawable/button_rect_transparent" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_alignParentTop="true">
+        <TextView android:textSize="15.0dp" android:textColor="#ff888888" android:id="@id/user_collection_n" android:paddingLeft="10.0dp" android:layout_width="0.0px" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:paddingStart="10.0dp" />
+        <com.narvii.widget.TintButton android:gravity="center" android:id="@id/user_collection_chevron" android:layout_width="10.0dp" android:layout_height="15.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/chevron_right_mirror" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" narvii:tintColor="#ff888888" />
+    </LinearLayout>
+    <com.narvii.user.profile.UserFavoriteGallery android:id="@id/pager" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="104.0dp" android:layout_below="@id/user_collection" />
+    <com.narvii.widget.SpinningView android:id="@id/user_loading_collection" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/item_card_height" android:layout_alignTop="@id/pager" narvii:spinSize="@dimen/spin_middle_size" />
+    <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/user_no_collection" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/item_card_height" android:text="@string/user_no_collection" android:layout_alignTop="@id/pager" />
+</RelativeLayout>

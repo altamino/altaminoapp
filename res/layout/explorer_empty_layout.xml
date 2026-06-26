@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:padding="10.0dp" android:paddingTop="40.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/normal_empty_list" />
+    <com.narvii.widget.FontAwesomeView android:textColor="#ffffffff" android:gravity="center" android:id="@id/empty_retry" android:padding="12.0dp" android:clickable="true" android:layout_width="60.0dp" android:layout_height="60.0dp" android:text="@string/ion_refresh" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/language_info_container" android:background="@drawable/button_rect_transparent" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/community_page_actionbar_height">
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/language_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/explorer_current_language" />
+        <com.narvii.widget.TintButton android:layout_gravity="center_vertical" android:id="@id/language_arrows" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flag_arrow_mirror" app:tintColor="#ffffffff" />
+    </LinearLayout>
+</LinearLayout>

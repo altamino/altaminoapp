@@ -1,0 +1,82 @@
+{
+  "templateConfigList": [
+    {
+      "templateId": "f80e90fd-0271-5e5b-873a-c6459b81c7bd",
+      "title": "Template 6",
+      "previewVideoUrl": "http://static.altamino.top/asset/story-template/demo-video/story-template-demo-video-6.mp4",
+      "coverImageUrl": "http://static.altamino.top/asset/story-template/cover-image/story-template-cover-image-6.jpg",
+      "minInputCount": 2,
+      "maxInputCount": 19,
+      "videoEnabled": true,
+      "isWatermark": false,
+      "maxInputLengthMs": 1400,
+      "folder": "template6",
+      "template": "template6/template.json"
+    },
+    {
+      "templateId": "7b78c4e3-81f4-5576-95b9-22b1b1d5f4de",
+      "title": "Template 5",
+      "previewVideoUrl": "http://static.altamino.top/asset/story-template/demo-video/story-template-demo-video-5.mp4",
+      "coverImageUrl": "http://static.altamino.top/asset/story-template/cover-image/story-template-cover-image-5.jpg",
+      "minInputCount": 1,
+      "maxInputCount": 1,
+      "videoEnabled": true,
+      "isWatermark": false,
+      "maxInputLengthMs": 15000,
+      "folder": "template5",
+      "template": "template5/template.json"
+    },
+    {
+      "templateId": "d19152e4-5c0b-5346-9b8a-1e63808cfbcc",
+      "title": "Template 4",
+      "previewVideoUrl": "http://static.altamino.top/asset/story-template/demo-video/story-template-demo-video-4.mp4",
+      "coverImageUrl": "http://static.altamino.top/asset/story-template/cover-image/story-template-cover-image-4.jpg",
+      "minInputCount": 2,
+      "maxInputCount": 10,
+      "videoEnabled": true,
+      "isWatermark": false,
+      "maxInputLengthMs": 2200,
+      "folder": "template4",
+      "template": "template4/template.json"
+    },
+    {
+      "templateId": "13e2c44d-8a14-5794-9685-d9e1cb69f1f2",
+      "title": "Template 3",
+      "previewVideoUrl": "http://static.altamino.top/asset/story-template/demo-video/story-template-demo-video-3.mp4",
+      "coverImageUrl": "http://static.altamino.top/asset/story-template/cover-image/story-template-cover-image-3.jpeg",
+      "minInputCount": 2,
+      "maxInputCount": 16,
+      "videoEnabled": true,
+      "isWatermark": false,
+      "maxInputLengthMs": 2100,
+      "folder": "template3",
+      "template": "template3/template.json"
+    },
+    {
+      "templateId": "2f7f0a23-b70b-5f56-a984-5098a9054a10",
+      "title": "Template 2",
+      "previewVideoUrl": "http://static.altamino.top/asset/story-template/demo-video/story-template-demo-video-2.mp4",
+      "coverImageUrl": "http://static.altamino.top/asset/story-template/cover-image/story-template-cover-image-2.jpg",
+      "minInputCount": 2,
+      "maxInputCount": 8,
+      "videoEnabled": true,
+      "isWatermark": false,
+      "maxInputLengthMs": 3500,
+      "folder": "template2",
+      "template": "template2/template.json"
+    },
+    {
+      "templateId": "df01f985-205a-55fa-bd03-ce718a30d74f",
+      "title": "Template 1",
+      "previewVideoUrl": "http://static.altamino.top/asset/story-template/demo-video/story-template-demo-video-1.mp4",
+      "coverImageUrl": "http://static.altamino.top/asset/story-template/cover-image/story-template-cover-image-1.jpg",
+      "minInputCount": 1,
+      "maxInputCount": 6,
+      "videoEnabled": true,
+      "isWatermark": false,
+      "maxInputLengthMs": 4200,
+      "folder": "template1",
+      "template": "template1/template.json"
+    }
+  ]
+}

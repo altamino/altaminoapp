@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.chat.hangout.HangoutItem android:id="@id/chat_item" android:paddingLeft="18.0dp" android:paddingTop="5.0dp" android:paddingRight="18.0dp" android:paddingBottom="5.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <View narvii:layout_height="this.width * 0.55" narvii:layout_width="100%" />
+    <include layout="@layout/common_chat_item" />
+</com.narvii.chat.hangout.HangoutItem>

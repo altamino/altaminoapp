@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dp" android:paddingTop="10.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff2e2e2e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favorite_stickers" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/my_sticker_layout" android:background="@drawable/selector_my_sticker_stroke_border_grey" android:paddingLeft="6.0dp" android:paddingTop="4.0dp" android:paddingRight="6.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dp" android:paddingEnd="6.0dp">
+        <com.narvii.widget.TintButton android:layout_gravity="center_vertical" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/more_options" android:scaleType="centerInside" narvii:tintColor="#ff777777" />
+        <TextView android:textSize="12.0dp" android:textColor="#ff777777" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="@string/my_stickers" android:layout_marginStart="6.0dp" />
+    </LinearLayout>
+</LinearLayout>

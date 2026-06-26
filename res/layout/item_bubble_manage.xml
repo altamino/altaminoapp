@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/collection_layout" android:background="@drawable/item_selector_white_grey" android:layout_width="match_parent" android:layout_height="75.0dp" android:paddingStart="@dimen/item_padding_horizontal_ex" android:paddingEnd="@dimen/item_padding_horizontal_ex"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/item_bubble_base" />
+    <com.narvii.widget.TintButton android:id="@id/edit" android:padding="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_padding_horizontal_ex" android:layout_marginRight="8.0dp" android:src="@drawable/ic_sticker_pack_edit" android:layout_marginStart="@dimen/item_padding_horizontal_ex" android:layout_marginEnd="8.0dp" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="20.0dp" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="center_horizontal" android:layout_width="80.0dp" android:layout_height="80.0dp" layout="@layout/user_avatar_layout_large" />
+    <TextView android:textSize="14.0dp" android:textColor="#ff4a4a4a" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+        <TextView android:textSize="15.0dp" android:textColor="#ffffffff" android:id="@id/reject" android:background="@drawable/button_invite_to_talk_reject" android:paddingLeft="27.0dp" android:paddingTop="8.0dp" android:paddingRight="27.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reject" android:paddingStart="27.0dp" android:paddingEnd="27.0dp" />
+        <TextView android:textSize="15.0dp" android:textColor="#ffffffff" android:id="@id/accept" android:background="@drawable/button_invite_to_talk" android:paddingLeft="27.0dp" android:paddingTop="8.0dp" android:paddingRight="27.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/accept" android:paddingStart="27.0dp" android:paddingEnd="27.0dp" android:layout_marginStart="10.0dp" />
+    </LinearLayout>
+</LinearLayout>

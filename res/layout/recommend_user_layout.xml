@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" style="@style/on_boarding_title" />
+    <View style="@style/on_boarding_title_divider" />
+    <com.narvii.widget.NVListView android:id="@android:id/list" android:padding="12.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

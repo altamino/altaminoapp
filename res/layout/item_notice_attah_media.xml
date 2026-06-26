@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:padding="@dimen/multi_image_gap" android:layout_width="42.0dp" android:layout_height="42.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:defaultDrawable="@drawable/placeholder_picture_gray_small" />
+</FrameLayout>

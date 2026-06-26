@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.WalletBalanceView android:id="@id/wallet_balance_view" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.PressedFrameLayout android:layout_gravity="center_vertical" android:id="@id/store_header_coin_info_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="44.0dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_wallet_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="4.0dp" android:layout_marginBottom="5.0dp" android:src="@drawable/amino_coin_big" android:layout_marginStart="5.0dp" />
+            <com.narvii.widget.AutoSizingTextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/wallet_balance" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:minWidth="20.0dp" android:maxLines="1" app:autoSizeTextMaxSize="13.0dp" app:autoSizeTextMinSize="8.0dp" />
+            <com.narvii.widget.TintButton android:background="@drawable/selector_wallet_plus_icon_bg" android:padding="7.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:src="@drawable/wallet_ic_add" android:layout_marginStart="5.0dp" app:tintColor="#80ffffff" />
+        </LinearLayout>
+    </com.narvii.widget.PressedFrameLayout>
+    <com.narvii.monetization.utils.ClaimGiftHintLayout android:layout_gravity="center_vertical" android:id="@id/claim_gift_hint" android:background="@drawable/selector_wallet_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:isSmall="true" />
+</com.narvii.widget.WalletBalanceView>

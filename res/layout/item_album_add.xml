@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:padding="@dimen/album_item_padding" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:id="@id/cover" android:layout_width="match_parent" app:cornerRadius="8.0dp" app:defaultDrawable="@color/album_add_placeholder" app:hidePlayButton="true" app:layout_height="this.width" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_centerY="50%">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_album_add" />
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/create_album" />
+    </LinearLayout>
+</com.github.mmin18.widget.FlexLayout>

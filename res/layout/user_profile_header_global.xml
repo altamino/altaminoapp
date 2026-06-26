@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/user_profile_header" android:clipChildren="false" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.SlideshowView android:id="@id/slideshow" android:background="@drawable/slideshow_bg" android:layout_width="match_parent" android:layout_height="match_parent" narvii:hidingHeight2="40.0dp" />
+    <com.narvii.widget.BubbleBackground android:id="@id/bubble" android:background="#ff303030" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:background="@drawable/shadow_drop_profile" android:layout_width="match_parent" android:layout_height="320.0dp" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.narvii.widget.ThumbImageView android:id="@id/avatar" android:layout_width="@dimen/user_profile_header_avatar" android:layout_height="@dimen/user_profile_header_avatar" narvii:shadowColor="#dd000000" narvii:shadowSize="5.0dp" narvii:strokeWidth="2.0dp" style="@style/AvatarImageView" />
+        <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#fff2f2f2" android:ellipsize="end" android:id="@id/nickname" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:singleLine="true" android:shadowColor="@color/shadow" android:shadowDy="2.0" android:shadowRadius="4.0" />
+    </LinearLayout>
+</RelativeLayout>

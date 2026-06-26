@@ -1,0 +1,33 @@
+.class final synthetic Lcom/google/android/gms/internal/ads/zzayg;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field private final zzdwi:Lcom/google/android/gms/internal/ads/zzayb;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/internal/ads/zzayb;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzayg;->zzdwi:Lcom/google/android/gms/internal/ads/zzayb;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzayg;->zzdwi:Lcom/google/android/gms/internal/ads/zzayb;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/zzayb;->zzwl()V
+
+    return-void
+.end method

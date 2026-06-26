@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/action_bar_overlay" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:paddingTop="13.0dp" android:paddingBottom="13.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.NVPagerTabLayout android:layout_gravity="center" android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="wrap_content" app:indicator_show="false" app:segment_control="true" app:tab_mode="1" />
+    </FrameLayout>
+    <com.narvii.widget.NVViewPager android:id="@id/viewpager" android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+</LinearLayout>

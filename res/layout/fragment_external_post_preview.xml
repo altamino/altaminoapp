@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/webview_layout" />
+    <View android:id="@id/divider" android:background="#a08f8f8f" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@id/divider_gd" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/external_post_bottom_height">
+        <View android:id="@id/divider_gd" android:background="@drawable/sbb_gradient_bg" android:layout_width="match_parent" android:layout_height="10.0dp" android:layout_alignParentTop="true" />
+        <View android:background="#ffe9e9e9" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_container" android:background="#fff9f9f9" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="50.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:layout_width="0.0pt" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/vote_container" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.narvii.widget.BottomVoteIcon android:id="@id/vote_icon" android:layout_width="21.0dp" android:layout_height="18.0dp" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/ic_bottom_vote_normal" android:scaleType="centerInside" narvii:vote_normal_icon="@drawable/ic_bottom_vote_normal" narvii:vote_voted_icon="@drawable/ic_bottom_voted" />
+                    <com.narvii.widget.SpinningView android:id="@id/vote_progress" android:visibility="gone" android:layout_width="21.0dp" android:layout_height="18.0dp" android:layout_marginTop="4.0dp" narvii:spinColor="#ffadaebb" narvii:spinStyle="2" />
+                    <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="start|top" android:id="@id/vote_count" android:background="@drawable/feed_bottom_vote_count_bg" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" android:layout_marginStart="15.0dp" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/comment_container" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.narvii.widget.TintButton android:id="@id/comment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/ic_bottom_comment" android:scaleType="centerInside" narvii:tintColor="#ffadaebb" />
+                    <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="start|top" android:id="@id/comment_count" android:background="@drawable/feed_bottom_vote_count_bg" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" android:layout_marginStart="15.0dp" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/share_container" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <com.narvii.widget.TintButton android:layout_gravity="center_vertical" android:id="@id/share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_share" android:scaleType="centerInside" narvii:tintColor="#ffadaebb" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/more_container" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <com.narvii.widget.TintButton android:id="@id/more" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_share_more" android:scaleType="centerInside" narvii:tintColor="#ffadaebb" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

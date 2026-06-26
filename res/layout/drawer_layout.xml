@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.drawer.MyDrawerLayout android:id="@id/drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.drawer.DrawerView android:layout_gravity="start" android:id="@id/drawer_left_view" android:background="@color/window_background" android:layout_width="@dimen/drawer_left_content_width" android:layout_height="match_parent" />
+    <com.narvii.drawer.DrawerView android:layout_gravity="end" android:id="@id/drawer_right_view" android:background="@color/window_background" android:layout_width="@dimen/drawer_right_width" android:layout_height="match_parent" />
+</com.narvii.drawer.MyDrawerLayout>

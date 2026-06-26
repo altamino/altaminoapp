@@ -1,0 +1,108 @@
+{
+    "id": "f80e90fd-0271-5e5b-873a-c6459b81c7bd",
+    "version": 1,
+    "fps": 25,
+    "minInputCount": 2,
+    "inputCount": 19,
+    "outputFrameCount": 375,
+    "videoEnabled": false,
+    "backgroundMusic": "template6/bgMusic.aac",
+    "segments": [
+        {
+            "channel": 2,
+            "channelInputs": [0, 1],
+            "frameCount": 18,
+            "shader": ["template6/1.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [1, 2],
+            "frameCount": 18,
+            "shader": ["template6/2.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [2, 3],
+            "frameCount": 20,
+            "shader": ["template6/3.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [3, 4],
+            "frameCount": 18,
+            "shader": ["template6/4.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [4, 5],
+            "frameCount": 19,
+            "shader": ["template6/5.glsl"]
+        },
+        {
+            "channel": 3,
+            "channelInputs": [5, 6, 7],
+            "frameCount": 25,
+            "shader": ["template6/6.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [7, 8],
+            "frameCount": 19,
+            "shader": ["template6/7.glsl"]
+        },
+        {
+            "channel": 3,
+            "channelInputs": [8, 9, 10],
+            "frameCount": 34,
+            "shader": ["template6/8.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [10, 11],
+            "frameCount": 30,
+            "shader": ["template6/9.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [11, 12],
+            "frameCount": 26,
+            "shader": ["template6/10.glsl"]
+        },
+        {
+            "channel": 3,
+            "channelInputs": [12, 13, 14],
+            "frameCount": 35,
+            "shader": ["template6/11.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [14, 15],
+            "frameCount": 28,
+            "shader": ["template6/12.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [15, 16],
+            "frameCount": 22,
+            "shader": ["template6/13.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [16, 17],
+            "frameCount": 11,
+            "shader": ["template6/14.glsl"]
+        },
+        {
+            "channel": 1,
+            "channelInputs": [17],
+            "frameCount": 20,
+            "shader": ["template6/15.glsl"]
+        },
+        {
+            "channel": 1,
+            "channelInputs": [18],
+            "frameCount": 32,
+            "shader": ["template6/16.glsl"]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.livelayer.LiveLayerOnlineBar android:id="@id/page_online_bar" app:minAvatarCount="2" app:onlineText="@string/n_members_on_this_page" app:showShadow="true" app:supportFold="true" style="@style/live_layer_online_bar_style" />
+</FrameLayout>

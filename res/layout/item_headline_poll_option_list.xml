@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.poll.PollOptionListLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dp" android:textColor="#ff888888" android:id="@id/poll_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:singleLine="true" />
+    <include android:id="@id/poll_option_item" layout="@layout/poll_option_item_headline" />
+    <include android:id="@id/poll_option_item" layout="@layout/poll_option_item_headline" />
+    <include android:id="@id/poll_option_item" layout="@layout/poll_option_item_headline" />
+    <include android:id="@id/poll_option_item" layout="@layout/poll_option_item_headline" />
+    <include android:id="@id/poll_option_item" layout="@layout/poll_option_item_headline" />
+</com.narvii.poll.PollOptionListLayout>

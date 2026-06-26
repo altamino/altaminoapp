@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/master_background" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.list.refresh.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.nested.NVCoordinateLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.narvii.nested.NVAppBarLayout android:id="@id/appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/header_behavior">
+                <LinearLayout android:orientation="vertical" android:id="@id/coordinate_top_content" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_nvscrollFlags="scroll|exitUntilCollapsed">
+                    <com.narvii.master.widget.MasterTabPlaceHolder android:id="@id/master_top_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </com.narvii.nested.NVAppBarLayout>
+            <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_behavior="@string/body_behavior">
+                <LinearLayout android:orientation="vertical" android:id="@id/body_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.narvii.widget.NVPagerTabLayout android:id="@id/tabs" android:layout_width="0.0pt" android:layout_height="44.0dp" android:layout_marginLeft="5.0dp" android:layout_weight="1.0" android:layout_marginStart="5.0dp" app:custom_tab_width="@dimen/coordinate_tab_width" app:scroll_divide_equal="false" />
+                        <com.narvii.widget.TintButton android:layout_gravity="end|center" android:id="@id/picker" android:padding="4.0dp" android:layout_width="44.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_story_discover_intrest_picker" android:scaleType="centerInside" app:tintColor="@color/white" />
+                    </LinearLayout>
+                    <com.narvii.widget.NVViewPager android:id="@id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4.0dp" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+            <com.narvii.master.widget.MasterTabTransparentPlaceHolder android:id="@id/gradient_top_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:layout_gravity="bottom" android:background="@drawable/global_top_gradient_placeholder" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.narvii.master.widget.MasterTabTransparentPlaceHolder>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@id/story_list_frame" android:layout_width="match_parent" android:layout_height="0.0pt" android:layout_weight="1.0" />
+                <View android:id="@id/bottom_offset" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="0.0dp" />
+            </LinearLayout>
+        </com.narvii.nested.NVCoordinateLayout>
+    </com.narvii.list.refresh.SwipeRefreshLayout>
+</FrameLayout>

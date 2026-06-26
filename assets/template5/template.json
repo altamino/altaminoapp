@@ -1,0 +1,59 @@
+{
+    "id": "7b78c4e3-81f4-5576-95b9-22b1b1d5f4de",
+    "version": 1,
+    "fps": 25,
+    "minInputCount": 1,
+    "inputCount": 1,
+    "outputFrameCount": 375,
+    "videoEnabled": true,
+    "backgroundMusic": "template5/bgMusic.aac",
+    "segments": [
+        {
+            "channel": 1,
+            "channelInputs": [0],
+            "frameCount": 51,
+            "shader": ["template5/1.glsl"]
+        },
+        {
+            "channel": 1,
+            "channelInputs": [0],
+            "frameCount": 59,
+            "frameOffset": 51,
+            "shader": ["template5/2.glsl"]
+        },
+        {
+            "channel": 3,
+            "channelInputs": [0, 1, 2],
+            "channelRenderDelays": [0, 5, 10],
+            "frameCount": 62,
+            "frameOffset": 110,
+            "shader": ["template5/3.glsl"]
+        },
+        {
+            "channel": 4,
+            "channelInputs": [0, 1, 2, 3],
+            "channelRenderDelays": [0, 5, 10, 15],
+            "frameCount": 62,
+            "frameOffset": 172,
+            "shader": ["template5/4.glsl"]
+        },
+        {
+            "channel": 6,
+            "channelInputs": [0, 1, 2, 3, 4, 5],
+            "channelRenderDelays": [0, 5, 10, 15, 20, 25],
+            "frameCount": 60,
+            "frameOffset": 234,
+            "shader": ["template5/5.glsl"]
+        },
+        {
+            "channel": 9,
+            "channelInputs": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+            "channelRenderDelays": [0, 5, 10, 15, 20, 25, 30, 35, 40],
+            "shaderInputs": [[0, 1, 2, 3, 4], [5, 6, 7, 8]],
+            "pass2ExtraInputs": [5, 6, 7, 8],
+            "frameCount": 81,
+            "frameOffset": 294,
+            "shader": ["template5/6_1.glsl", "template5/6_2.glsl"]
+        }
+    ]
+}

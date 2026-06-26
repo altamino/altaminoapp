@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.RadiusLayout android:layout_gravity="bottom" android:background="#99000000" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_corner_radius_left_top="15.0dp" app:layout_corner_radius_right_top="15.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="17.5dp" android:text="@string/camera_settings" />
+        <View android:background="#4d979797" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginTop="24.5dp" android:layout_marginRight="14.0dp" android:layout_marginStart="14.0dp" android:layout_marginEnd="14.0dp">
+            <com.narvii.chat.video.layout.VideoCameraPreviewView android:id="@id/video_camera_preview_view" android:layout_width="match_parent" app:layout_height="this.width*0.88" />
+        </com.github.mmin18.widget.FlexLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp">
+            <FrameLayout android:id="@id/mute_fl" android:layout_width="40.0dp" android:layout_height="40.0dp">
+                <com.narvii.widget.TintButton android:layout_gravity="center" android:id="@id/mute_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_camera_normal" app:tintColor="@color/white" />
+            </FrameLayout>
+            <View android:layout_width="49.0dp" android:layout_height="1.0dp" />
+            <FrameLayout android:id="@id/flip_fl" android:layout_width="40.0dp" android:layout_height="40.0dp">
+                <com.narvii.widget.TintButton android:layout_gravity="center" android:id="@id/flip_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_camera_flip" app:tintColor="@color/white" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/start_tv" android:background="@drawable/chat_go_live_picker_start_bg" android:layout_width="match_parent" android:layout_height="47.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="51.0dp" android:text="@string/start" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+    </LinearLayout>
+</com.narvii.widget.RadiusLayout>

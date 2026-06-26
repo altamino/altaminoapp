@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.ClearEditText android:textSize="15.0dp" android:textColor="#ff222222" android:gravity="start|center" android:id="@id/edit" android:background="@drawable/edit_round_normal" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginBottom="20.0dp" android:singleLine="true" android:inputType="textCapWords" />
+    <com.narvii.widget.ClearEditText android:textSize="15.0dp" android:textColor="#ff222222" android:gravity="start|center" android:id="@id/edit_2" android:background="@drawable/edit_round_normal" android:padding="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:singleLine="true" android:inputType="text" />
+    <TextView android:textSize="12.0dp" android:textColor="#ffe90d3b" android:id="@id/error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-10.0dp" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/asset_item_selector" android:layout_width="80.0dp" android:layout_height="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/asset_item_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" />
+    <com.narvii.widget.NVImageView android:id="@id/cover" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:scaleType="fitCenter" app:cornerRadius="5.0dp" app:showPressedMask="false" />
+    <ImageView android:layout_gravity="end|bottom" android:id="@id/not_downloaded" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_margin="5.0dp" android:src="@drawable/ic_asset_not_downloaded" />
+    <FrameLayout android:layout_gravity="end|bottom" android:id="@id/downloading_layout" android:background="@drawable/oval_asset_action_bg" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_margin="5.0dp">
+        <com.narvii.widget.CircleProgressBar android:layout_gravity="center" android:id="@id/downloading" android:layout_width="16.0dp" android:layout_height="16.0dp" app:max="100" app:roundBackgroundColor="#00000000" app:roundProgressColor="#ffffffff" app:roundWidth="2.0dp" />
+    </FrameLayout>
+</FrameLayout>

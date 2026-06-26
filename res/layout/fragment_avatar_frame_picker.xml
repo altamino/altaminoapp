@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/dismiss_mask" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.widget.SwipeableLayout android:id="@id/frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/membership_expire_fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:orientation="vertical" android:id="@id/title_layout" android:layout_width="match_parent" android:layout_height="46.0dp">
+                <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:layout_gravity="center" android:id="@id/list_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_profile_frames" />
+                <FrameLayout android:layout_gravity="left|center" android:id="@id/close_area" android:layout_width="40.0dp" android:layout_height="40.0dp">
+                    <com.narvii.widget.TintButton android:gravity="center" android:layout_gravity="center" android:id="@id/close" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_actionbar_close" android:scaleType="centerInside" app:tintColor="#ff3a3b41" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="end|center" android:id="@id/check_area" android:layout_width="40.0dp" android:layout_height="40.0dp">
+                    <com.narvii.widget.TintButton android:gravity="center" android:layout_gravity="center" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_actionbar_check" android:scaleType="centerInside" app:tintColor="#ff3a3b41" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="end|center" android:id="@id/minimize_area" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp">
+                    <com.narvii.widget.TintButton android:gravity="center" android:layout_gravity="center" android:id="@id/minimize" android:background="@drawable/circle_dark_transplant_clickable" android:padding="6.0dp" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_chevron_down" android:scaleType="centerInside" />
+                </FrameLayout>
+            </FrameLayout>
+            <View android:layout_gravity="bottom" android:background="#fff6f7f9" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <include layout="@layout/list_layout" />
+        </LinearLayout>
+    </com.narvii.widget.SwipeableLayout>
+</FrameLayout>

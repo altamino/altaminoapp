@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/list_layout" />
+    </LinearLayout>
+    <com.narvii.widget.AlphaHeaderOverlayLayout android:id="@id/overlay" android:background="#ff131347" android:clipChildren="false" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="0.0px" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/subscribe_info_container_bottom" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <FrameLayout android:id="@id/subscribe_amino_plus_button" android:background="#e6ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16.0dp" android:textColor="#ffffffff" android:layout_gravity="center" android:background="@drawable/button_half_round_membership" android:paddingLeft="20.0dp" android:paddingTop="8.0dp" android:paddingRight="20.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="35.0dp" android:text="@string/membership_subscribe" android:drawableLeft="@drawable/ic_amino_plus_diamond" android:drawablePadding="8.0dp" android:drawableStart="@drawable/ic_amino_plus_diamond" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/membership_user_info_layout" android:background="@drawable/selector_white_alpha_90" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="60.0dp">
+            <com.narvii.widget.ThumbImageView android:layout_gravity="center_vertical" android:id="@id/avatar" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="18.0dp" android:layout_marginStart="18.0dp" narvii:strokeWidth="2.0dp" style="@style/AvatarImageView" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp">
+                <TextView android:textSize="14.0dp" android:textColor="#fff49f24" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp">
+                    <ImageView android:id="@id/amino_plus_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_amino_plus" android:scaleType="centerInside" />
+                    <TextView android:textSize="11.0dp" android:textColor="#ffffffff" android:id="@id/membership_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:shadowColor="#44000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dp" android:layout_height="wrap_content" android:layout_marginRight="13.0dp" android:src="@drawable/ic_arrow_orange" android:layout_marginEnd="13.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

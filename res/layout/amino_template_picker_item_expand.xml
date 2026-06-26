@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/expand" android:padding="20.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="120.0dp" android:layout_height="120.0dp" android:src="@drawable/ic_amino_catalog" android:scaleType="fitCenter" />
+    <TextView android:textSize="27.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="16.0dp" android:textColor="#bbffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:background="#44ffffff" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" />
+    <TextView android:textSize="18.0dp" android:textColor="#ffffffff" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/features_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.narvii.widget.PushButton android:id="@id/create_push_button" android:paddingLeft="20.0dp" android:paddingTop="12.0dp" android:paddingRight="20.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" narvii:pushButtonColor="@color/amino_green">
+        <com.narvii.widget.AutoSizingTextView android:textSize="24.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/create_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create" android:maxLines="1" narvii:autoSizeTextMaxSize="24.0dp" narvii:autoSizeTextMinSize="18.0dp" />
+    </com.narvii.widget.PushButton>
+</LinearLayout>

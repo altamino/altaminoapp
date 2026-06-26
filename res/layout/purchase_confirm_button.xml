@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/confirm_button_container" android:background="@drawable/selector_subscribe_green" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/confirm_button_loading" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/ic_loading_circle" android:layout_marginEnd="10.0dp" />
+            <ImageView android:id="@id/confirm_button_coin" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/amino_coin_small" android:layout_marginEnd="10.0dp" />
+            <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/confirm_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirm" />
+        </LinearLayout>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="2.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:layout_gravity="center_horizontal" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.chat.video.view.UserSpeakingView android:id="@id/user_speaking" android:minWidth="40.0dp" android:minHeight="40.0dp" app:layout_centerX="50%" app:layout_height="this.width" app:layout_width="85%" />
+        <include android:padding="@dimen/voice_avatar_padding" android:minWidth="40.0dp" android:minHeight="40.0dp" app:layout_centerX="50%" app:layout_height="this.width" app:layout_width="85%" layout="@layout/user_avatar_layout_mini_nobadge" />
+        <ImageView android:id="@id/local_mute_indicator" android:background="@drawable/local_mute_bg" android:padding="15.0dp" android:visibility="gone" android:src="@drawable/ic_rtc_local_muted" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_height="user_avatar_layout.width-4dp" app:layout_width="user_avatar_layout.width-4dp" />
+        <com.github.mmin18.widget.FlexLayout android:id="@id/bad_connection_container" android:background="@drawable/local_mute_bg" android:visibility="gone" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_height="user_avatar_layout.width-4dp" app:layout_width="user_avatar_layout.width-4dp">
+            <com.narvii.widget.AutoSizingTextView android:textSize="13.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:text="@string/bad_connection" android:maxLines="2" app:autoSizeTextMaxSize="13.0dp" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_height="76%" app:layout_width="76%" />
+        </com.github.mmin18.widget.FlexLayout>
+        <ImageView android:id="@id/bad_network" android:visibility="gone" android:src="@drawable/ic_rtc_bad_network" android:scaleType="centerInside" app:layout_bottom="user_avatar_layout.bottom" app:layout_height="user_avatar_layout.height*0.36" app:layout_right="user_avatar_layout.right" app:layout_width="user_avatar_layout.height*0.36" />
+        <ImageView android:id="@id/muted" android:visibility="gone" android:src="@drawable/ic_voice_muted" android:scaleType="centerInside" app:layout_bottom="user_avatar_layout.bottom" app:layout_height="user_avatar_layout.height*0.36" app:layout_right="user_avatar_layout.right" app:layout_width="user_avatar_layout.height*0.36" />
+        <com.narvii.widget.VolumeIndicator android:id="@id/volume_level" android:layout_width="30.0dp" android:layout_height="5.0dp" android:scaleType="fitStart" app:layout_centerX="50%" app:layout_top="80%" />
+        <ImageView android:id="@id/loading_indicator" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_height="40%" app:layout_width="40%" />
+    </com.github.mmin18.widget.FlexLayout>
+    <LinearLayout android:layout_gravity="center" android:id="@id/nickname_wrapper" android:paddingLeft="3.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/voice_nickname_height_margin_top" android:layout_weight="1.0" android:paddingStart="3.0dp" android:paddingEnd="6.0dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/nickname_badge" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_badge_membership" android:scaleType="fitCenter" />
+        <com.narvii.chat.video.layout.VVChatNickNameView android:id="@id/nickname" style="@style/vvchat_nick_name" />
+    </LinearLayout>
+    <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/local_mute" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/local_mute" android:singleLine="true" />
+</LinearLayout>

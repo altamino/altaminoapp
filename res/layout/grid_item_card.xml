@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.CardView android:id="@id/item_card" android:padding="@dimen/grid_item_card_margin" android:layout_width="@dimen/grid_item_card_width" android:layout_height="@dimen/grid_item_card_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" narvii:cornerRadius="10.0dp" narvii:defaultDrawable="@color/item_card_placeholder" narvii:strokeColor="@color/item_card_stroke" narvii:strokeWidth="@dimen/item_card_stroke_width" />
+    <TextView android:textSize="13.0dp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="match_parent" android:layout_height="20.0dp" android:singleLine="true" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+    <include layout="@layout/fans_only_content_indicator_layout_wiki" />
+</com.narvii.widget.CardView>

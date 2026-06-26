@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="1.0dp" android:paddingBottom="1.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/video_editor_time_line_item_width" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.video.widget.FrameItemMaskView android:id="@id/frame_mask" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.NVImageView android:id="@id/frame_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </com.narvii.video.widget.FrameItemMaskView>
+</FrameLayout>

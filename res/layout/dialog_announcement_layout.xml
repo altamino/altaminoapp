@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/bg" android:background="#cc000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.github.mmin18.widget.FlexLayout android:id="@id/main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.FullsizeImageView android:id="@id/cover" android:scaleType="centerCrop" app:cornerRadius="7.0dp" app:defaultDrawable="@color/placeholder_white" app:hidePlayButton="true" app:layout_centerX="50%" app:layout_centerY="50%-10dp" app:layout_height="this.width*4/3" app:layout_width="(parent.width*0.75)*4/3>(parent.height-120dp)?parent.height-120dp*3/4:parent.width*0.75" />
+        <com.narvii.widget.SpinningView android:id="@id/cover_loading" android:visibility="gone" android:layout_width="@dimen/spin_middle_size" android:layout_height="@dimen/spin_middle_size" app:layout_centerX="cover.centerX" app:layout_centerY="cover.centerY" app:spinColor="#ffffffff" />
+        <com.narvii.widget.PopButton android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dialog_close_circle" android:alpha="0.8" app:layout_centerX="50%" app:layout_top="cover.bottom+20dp" app:tintColor="#ffffffff" />
+        <com.narvii.widget.PopButton android:id="@id/ann_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_announcement_dialog_indicator" app:layout_centerX="cover.left+5dp" app:layout_centerY="cover.top+5dp" />
+    </com.github.mmin18.widget.FlexLayout>
+</com.github.mmin18.widget.FlexLayout>

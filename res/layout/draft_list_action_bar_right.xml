@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatButton android:textSize="12.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/delete_btn" android:background="@drawable/draft_list_edit_bg" android:paddingLeft="10.0dp" android:paddingTop="7.0dp" android:paddingRight="10.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:text="@string/edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

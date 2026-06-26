@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/flag_quizzes_related_page" />
+            <include layout="@layout/fragment_quiz_question" />
+            <View android:layout_width="match_parent" android:layout_height="120.0dp" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/flag_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

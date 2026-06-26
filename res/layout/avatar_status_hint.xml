@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/face_detect_status" android:padding="20.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.chat.video.view.BreathView android:id="@id/icon" android:src="@drawable/ic_face_not_detected" android:minWidth="70.0dp" android:minHeight="70.0dp" app:layout_centerX="50%" app:layout_centerY="47%" app:layout_height="this.width" app:layout_width="min(min(58%,parent.height*0.5),220dp)" />
+    <TextView android:textSize="16.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_not_detected" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="6.0" app:layout_bottom="icon.top-max(icon.width*0.1,8dp)" app:layout_centerX="50%" />
+</com.github.mmin18.widget.FlexLayout>

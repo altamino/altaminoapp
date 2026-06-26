@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.list.refresh.SwipeRefreshLayout android:id="@id/home_swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.headercollapse.NVHeaderCollapsibleLayout android:id="@id/collapsible_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:bottomPanelLayoutId="@layout/home_body_layout" app:defaultExpand="false" app:overshootDistance="10000" app:stickyFooterLayoutId="@id/fake_action_bar" app:topPanelLayoutId="@layout/home_header_layout" />
+</com.narvii.list.refresh.SwipeRefreshLayout>

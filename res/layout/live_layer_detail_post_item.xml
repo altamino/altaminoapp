@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.livelayer.detailview.LiveLayerDetailListItemView android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="146.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" narvii:cornerRadius="@dimen/live_detail_chat_corner" narvii:defaultDrawable="@drawable/live_layer_detail_item_placeholder" narvii:hidePlayButton="true" />
+    <TextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="#fff2f2f2" android:gravity="start" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="60.0dp" android:maxLines="2" android:shadowColor="#cc000000" android:shadowDy="3.0" android:shadowRadius="8.0" android:textAlignment="viewStart" android:layout_marginStart="15.0dp" android:layout_marginEnd="60.0dp" />
+    <include layout="@layout/fans_only_content_indicator_layout_live_chat" />
+    <View android:background="@drawable/popular_text_backgroud_gradual" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_alignParentBottom="true" />
+    <include android:id="@id/feed_toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:layout_above="@id/divider" android:layout_alignParentBottom="true" layout="@layout/live_layer_feed_toolbar" />
+    <FrameLayout android:id="@id/live_layer_additional_layout" android:paddingLeft="10.0dp" android:paddingTop="20.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+    <include layout="@layout/live_layer_detail_item_bar" />
+</com.narvii.livelayer.detailview.LiveLayerDetailListItemView>

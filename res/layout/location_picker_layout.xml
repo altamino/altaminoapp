@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/stub1" android:background="#88000000" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.narvii.widget.FontAwesomeView android:textSize="20.0dp" android:textColor="#ffcccccc" android:gravity="center" android:padding="5.0dp" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginRight="4.0dp" android:text="@string/fa_exclamation_triangle" android:layout_marginEnd="4.0dp" />
+        <TextView android:textSize="13.0dp" android:textColor="#ffeeeeee" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/post_location_picker_hint" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0.0px" android:layout_above="@id/stub1" android:layout_alignParentTop="true">
+        <View android:id="@id/stub2" android:layout_width="0.0px" android:layout_height="0.0px" android:layout_centerInParent="true" />
+        <View android:background="#aa000000" android:layout_width="50.0dp" android:layout_height="3.0dp" android:layout_marginRight="10.0dp" android:layout_toLeftOf="@id/stub2" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_toStartOf="@id/stub2" />
+        <View android:background="#aa000000" android:layout_width="50.0dp" android:layout_height="3.0dp" android:layout_marginLeft="10.0dp" android:layout_toRightOf="@id/stub2" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_toEndOf="@id/stub2" />
+        <View android:background="#aa000000" android:layout_width="3.0dp" android:layout_height="50.0dp" android:layout_marginBottom="10.0dp" android:layout_above="@id/stub2" android:layout_centerHorizontal="true" />
+        <View android:background="#aa000000" android:layout_width="3.0dp" android:layout_height="50.0dp" android:layout_marginTop="10.0dp" android:layout_below="@id/stub2" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

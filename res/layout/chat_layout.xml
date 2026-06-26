@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.chat.ChatContentContainer android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/chat_bg_frame" android:layout_width="match_parent" android:layout_height="0.0px" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/chat_list_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/chat_bottom_container" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/vv_chat_frame_container">
+        <include layout="@layout/vvchat_child_announcement" />
+        <FrameLayout android:id="@id/tip_broadcast_layout" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.narvii.widget.PressedFrameLayout android:id="@id/tip_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:layout_marginBottom="15.0dp" android:layout_above="@id/chat_bottom_container" android:layout_alignParentRight="true" android:layout_marginEnd="6.0dp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="38.0dp" android:layout_height="38.0dp" android:src="@drawable/amino_coin_big" />
+        <com.narvii.widget.AutoSizingTextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ffffe555" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tipping_count" android:background="@drawable/ic_chat_tip_bg" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="26.0dp" android:layout_marginTop="30.0dp" android:maxWidth="55.0dp" android:minWidth="45.0dp" android:maxLines="1" android:shadowColor="#ffff7700" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="4.0" narvii:autoSizeTextMaxSize="12.0dp" narvii:autoSizeTextMinSize="2.0dp" />
+    </com.narvii.widget.PressedFrameLayout>
+    <View android:id="@id/chat_actionbar_overlay" android:background="@drawable/chat_actionbar_gradient_background" android:layout_width="match_parent" android:layout_height="0.0px" android:layout_alignParentTop="true" />
+    <FrameLayout android:id="@id/chat_list_frame_bg" android:background="#77000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/chat_bottom_container" />
+    <LinearLayout android:orientation="vertical" android:id="@id/vv_chat_frame_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/vv_chat_overlay_list_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/vv_chat_frame" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    </LinearLayout>
+    <View android:id="@id/chat_input_dismiss_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/chat_bottom_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/chat_input_frame" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/chat_invitation_frame" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/chat_organizer_trans_frame" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/chat_prop_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/chat_beauty_chooser" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <include android:id="@id/chat_input_option_menu_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/chat_bottom_container" layout="@layout/chat_input_option_menu" />
+    <FrameLayout android:id="@id/mentioned_user_list" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="222.0dp" android:layout_above="@id/chat_bottom_container" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/screen_room_playlist" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/fans_only_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/organizer_left" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/disabled_layout" android:background="#ffffffff" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.narvii.widget.AutoSizingTextView android:textColor="#ff000000" android:gravity="center" android:id="@id/disabled_bar" android:clickable="true" android:layout_width="match_parent" android:layout_height="50.0dp" android:text="@string/chat_disabled_by_moderator" android:layout_alignParentBottom="true" narvii:autoSizeTextMaxSize="15.0dp" narvii:autoSizeTextMinSize="8.0dp" />
+        <TextView android:textSize="20.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/leave_conversation" android:background="@drawable/button_leave_conversation_red" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:layout_width="wrap_content" android:layout_height="42.0dp" android:layout_marginTop="15.0dp" android:text="@string/chat_leave_conversation" android:paddingStart="40.0dp" android:paddingEnd="40.0dp" />
+    </LinearLayout>
+</com.narvii.chat.ChatContentContainer>

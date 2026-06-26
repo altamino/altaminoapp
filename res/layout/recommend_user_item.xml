@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="65.0dp" android:layout_height="65.0dp">
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/user_avatar_layout_mini" />
+        <com.narvii.widget.CircleImageView android:id="@id/avatar_overlay" android:layout_width="match_parent" android:layout_height="match_parent" narvii:cornerRadius="1000.0dp" />
+        <ImageView android:layout_gravity="center" android:id="@id/recommend_check" android:layout_width="17.0dp" android:layout_height="14.0dp" android:src="@drawable/recommend_follow_check" />
+        <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/progress" android:layout_width="20.0dp" android:layout_height="20.0dp" narvii:spinColor="#ffeeeeee" narvii:spinSize="20.0dp" narvii:spinStyle="2" />
+    </FrameLayout>
+    <com.narvii.widget.NicknameView android:textSize="11.0dp" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:id="@id/nickname" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" narvii:hideMembershipBadge="true" narvii:hideRole="true" />
+    <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/role" android:background="@drawable/role_bg_default" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:singleLine="true" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" />
+</LinearLayout>

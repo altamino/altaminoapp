@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff666666" android:gravity="start" android:id="@id/item_property_title" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+    <TextView android:textSize="14.0dp" android:textColor="#ff666666" android:gravity="start" android:id="@id/item_property_value" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="2.0" />
+</merge>

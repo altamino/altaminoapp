@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.chat.video.view.RippleView android:id="@id/ripple_bg" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.narvii.chat.video.view.RippleChildView android:id="@id/disable_bg" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.narvii.chat.video.view.RippleChildView android:id="@id/ripple_holder" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="center|bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp">
+        <FrameLayout android:layout_width="22.0dp" android:layout_height="22.0dp">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/join_indicator" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/ic_rtc_join_audio" />
+            <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/join_loading" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" narvii:spinColor="#ffffffff" narvii:spinSize="@dimen/spin_tiny_size" narvii:spinStyle="2" />
+        </FrameLayout>
+        <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/join" />
+    </LinearLayout>
+</FrameLayout>

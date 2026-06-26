@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <View narvii:layout_height="min(400dp,screen.width)*0.9*0.25" narvii:layout_width="this.height" />
+    <View android:id="@id/stub1" android:background="@drawable/sticker_add_bg" narvii:layout_centerX="50%" narvii:layout_centerY="50%" narvii:layout_height="prev.height*0.85" narvii:layout_width="prev.height*0.85" />
+    <com.narvii.widget.TintButton android:layout_gravity="center" android:id="@id/avatar_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_avatar_placeholder" narvii:layout_centerX="50%" narvii:layout_centerY="50%" narvii:tintColor="#ff979797" />
+</com.github.mmin18.widget.FlexLayout>

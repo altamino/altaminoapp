@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#88000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/dialog_bg_round_radius_20" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="72.0dp" android:layout_height="72.0dp" android:src="@drawable/icon_master" android:scaleType="fitCenter" />
+        <TextView android:textSize="24.0dp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/standalone_deprecated_title" />
+        <TextView android:textSize="16.0dp" android:textColor="#ff666666" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/standalone_deprecated_message" />
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/download" android:background="@drawable/green_radius_8" android:paddingLeft="25.0dp" android:paddingRight="25.0dp" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_marginTop="20.0dp" android:text="@string/standalone_deprecated_button" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/rmt_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/remind" android:paddingLeft="25.0dp" android:paddingRight="25.0dp" android:layout_width="match_parent" android:layout_height="46.0dp" android:text="@string/remind_me_tomorrow" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

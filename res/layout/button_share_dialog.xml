@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/button_share_dialog_round" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.AutoSizingTextView android:textSize="14.0dp" android:textColor="@color/button_text_gray_dark" android:ellipsize="end" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:maxLines="2" android:drawablePadding="10.0dp" app:autoSizeTextMaxSize="14.0dp" app:autoSizeTextMinSize="10.0dp" />
+</LinearLayout>

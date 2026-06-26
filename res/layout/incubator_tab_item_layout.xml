@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.master.widget.MasterBottomItemView android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/tab_icon_selected" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/tab_icon_tmp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/tab_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+        <View android:layout_gravity="end|top" android:id="@id/badge" android:background="@drawable/drawer_badge_o" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="4.0dp" android:layout_marginEnd="4.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="10.0dp" android:textColor="#ff999999" android:gravity="center|top" android:id="@id/tab_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" android:singleLine="true" />
+</com.narvii.master.widget.MasterBottomItemView>

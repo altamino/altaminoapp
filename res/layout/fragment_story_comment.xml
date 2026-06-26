@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/all_comments" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAllCaps="false" android:textAlignment="center" />
+    <View android:id="@id/list_divider" android:background="@color/list_divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/list_divider_height" android:layout_below="@id/all_comments" />
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="55.0dp" android:layout_below="@id/list_divider" layout="@layout/list_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_edit_text" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:id="@id/sticker_entry" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="15.0dp" android:src="@drawable/ic_chat_input_sticker_button" android:scaleType="centerInside" android:layout_marginStart="15.0dp" />
+        <TextView android:textSize="15.0dp" android:textColor="#ff888888" android:gravity="start|top" android:layout_gravity="bottom" android:id="@id/add_comment" android:background="@drawable/edit_round_add_comment_light" android:padding="6.0dp" android:scrollbars="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/add_comment_hint" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+    </LinearLayout>
+</RelativeLayout>

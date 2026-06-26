@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/top_divider" android:background="@color/list_divider_dark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/list_divider_height" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bio_main" android:background="@drawable/bio_snippet_bg_white" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="4.0dp" android:baselineAligned="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="4.0dp">
+            <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:id="@id/bio_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bio" />
+            <TextView android:textSize="12.0dp" android:textColor="#ff9b9b9b" android:id="@id/member_since" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.narvii.user.profile.BioBriefView android:id="@id/bio_brief" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="10.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+            <com.narvii.widget.TintButton android:id="@id/location_icon" android:layout_width="12.0dp" android:layout_height="15.0dp" android:src="@drawable/ic_location_white" android:scaleType="centerInside" android:shadowColor="@color/shadow" android:shadowDy="1.0" android:shadowRadius="1.0" app:tintColor="#ff9b9b9b" />
+            <TextView android:textSize="12.0dp" android:textColor="#ff9b9b9b" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:singleLine="true" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

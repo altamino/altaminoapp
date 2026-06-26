@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/chat_right_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/voice_view" android:paddingLeft="5.0dp" android:paddingTop="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.narvii.chat.input.ChatInputPanelVoiceButton android:layout_gravity="center" android:id="@id/voice_button" android:background="@drawable/selector_rtc_bottom_button_bg" android:padding="4.0dp" android:visibility="visible" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/ic_chat_input_voice" android:scaleType="centerInside" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/menu_view" android:paddingLeft="3.0dp" android:paddingTop="5.0dp" android:paddingRight="3.0dp" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.narvii.widget.TintButton android:gravity="center" android:layout_gravity="center" android:background="@drawable/selector_rtc_bottom_button_bg" android:padding="4.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/ic_chat_input_menu_button" android:scaleType="centerInside" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/request_view" android:paddingLeft="3.0dp" android:paddingTop="5.0dp" android:paddingRight="3.0dp" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.narvii.widget.TintButton android:gravity="center" android:layout_gravity="center" android:background="@drawable/selector_rtc_bottom_button_bg" android:padding="4.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/ic_chat_input_request_button" android:scaleType="centerInside" />
+        <com.narvii.widget.AutoSizingTextView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="end|top" android:id="@id/waiting_member_count" android:background="@drawable/green_oval" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:textAlignment="center" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/mute_view" android:paddingLeft="3.0dp" android:paddingTop="5.0dp" android:paddingRight="3.0dp" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.narvii.chat.video.view.CheckableImageView android:gravity="center" android:layout_gravity="center" android:id="@id/mute_button" android:background="@drawable/selector_rtc_bottom_button_bg" android:padding="4.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/selector_rtc_bottom_mute" android:scaleType="centerInside" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/end_view" android:paddingLeft="3.0dp" android:paddingTop="5.0dp" android:paddingRight="3.0dp" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.narvii.widget.TintButton android:gravity="center" android:layout_gravity="center" android:background="@drawable/selector_rtc_bottom_button_bg" android:padding="4.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/ic_chat_input_end_button" android:scaleType="centerInside" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/join_view" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/join_button" android:background="@drawable/chat_input_green_button" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="90.0dp" android:layout_height="40.0dp">
+            <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/join_loading" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" narvii:spinColor="#ffffffff" narvii:spinSize="@dimen/spin_tiny_size" narvii:spinStyle="2" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/join_icon" android:layout_width="26.0dp" android:layout_height="match_parent" android:src="@drawable/ic_rtc_join_audio" android:scaleType="centerInside" />
+            <com.narvii.widget.AutoSizingTextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/join_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/join" android:maxLines="1" android:layout_marginStart="5.0dp" narvii:autoSizeMaxTextSize="18.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.narvii.widget.PressedFrameLayout android:layout_gravity="bottom" android:id="@id/tip_view" android:paddingLeft="1.0dp" android:paddingRight="1.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="44.0dp" android:layout_height="44.0dp" android:src="@drawable/ic_chat_input_tip" android:scaleType="centerInside" />
+    </com.narvii.widget.PressedFrameLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_user_container_root" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/gap_view" android:layout_width="2.0dp" android:layout_height="2.0dp" />
+    <include android:id="@id/host_view" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/sr_recycler_presenter_item" />
+    <View android:id="@id/gap_view2" android:layout_width="12.0dp" android:layout_height="12.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_user_recycler_container" android:background="@drawable/sr_live_user_container_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/live_user_count_container" android:background="@drawable/sr_live_user_container_bg" android:layout_width="@dimen/live_user_count_container_width" android:layout_height="@dimen/sr_live_user_container_recycler_view_height">
+            <View android:background="@drawable/pure_green_oval" android:layout_width="8.0dp" android:layout_height="8.0dp" />
+            <com.narvii.widget.AutoSizingTextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/live_user_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sr_live_user_count_margin" android:autoSizeMinTextSize="8.0dp" app:autoSizeTextMaxSize="14.0dp" />
+        </LinearLayout>
+        <com.narvii.chat.screenroom.widgets.SRLiveUserRecyclerView android:layout_gravity="center" android:id="@id/live_user_recycler" android:paddingTop="@dimen/sr_live_user_recycler_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/sr_live_user_container_recycler_view_height" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#74000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.SmoothProgressBar android:id="@id/progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="46.0dp" android:layout_marginRight="46.0dp" android:layout_marginStart="46.0dp" android:layout_marginEnd="46.0dp" style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+    <TextView android:textSize="16.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

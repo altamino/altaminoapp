@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.feed.FeedListItem android:orientation="horizontal" android:tag="blog" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/user_click" layout="@layout/feed_external_post_header" />
+    <FrameLayout android:id="@id/content_container" android:paddingLeft="@dimen/headline_default_padding_horizontal" android:paddingRight="@dimen/headline_default_padding_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_below="@id/user_click" android:paddingStart="@dimen/headline_default_padding_horizontal" android:paddingEnd="@dimen/headline_default_padding_horizontal">
+        <include layout="@layout/item_feed_normal" />
+    </FrameLayout>
+    <include android:id="@id/feed_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/feed_toolbar_height" android:layout_marginTop="2.0dp" android:layout_below="@id/content_container" layout="@layout/feed_toolbar" />
+    <include layout="@layout/fans_only_content_indicator_layout" />
+</com.narvii.feed.FeedListItem>

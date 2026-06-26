@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="37.0dp" android:paddingTop="2.0dp" android:paddingRight="37.0dp" android:paddingBottom="2.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginBottom="20.0dp">
+        <SeekBar android:layout_gravity="center_vertical" android:id="@id/hue_seek_bar" android:focusable="true" android:layout_width="match_parent" android:layout_height="40.0dp" android:maxHeight="40.0dp" android:indeterminateOnly="false" android:minHeight="40.0dp" android:thumb="@drawable/hsv_color_picker_seekbar_icon_rect" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="54.0dp">
+        <FrameLayout android:paddingRight="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:paddingEnd="10.0dp">
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/saturation_seek_bar" android:focusable="true" android:layout_width="match_parent" android:layout_height="40.0dp" android:maxHeight="40.0dp" android:indeterminateOnly="false" android:minHeight="40.0dp" android:thumb="@drawable/hsv_color_picker_seekbar_icon_rect" />
+        </FrameLayout>
+        <FrameLayout android:paddingLeft="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:paddingStart="10.0dp">
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/value_seek_bar" android:focusable="true" android:layout_width="match_parent" android:layout_height="40.0dp" android:maxHeight="40.0dp" android:indeterminateOnly="false" android:minHeight="40.0dp" android:thumb="@drawable/hsv_color_picker_seekbar_icon_rect" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/scene_primary_color" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto">
+    <com.narvii.list.overlay.OverlayListPlaceholder android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.mobeta.android.dslv.DragSortListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/list_selector" android:headerDividersEnabled="true" android:footerDividersEnabled="true" dslv:collapsed_height="2.0dp" dslv:drag_enabled="true" dslv:drag_scroll_start="0.33" dslv:float_alpha="0.6" dslv:max_drag_scroll_speed="1.0" dslv:slide_shuffle_speed="0.6" dslv:track_drag_sort="false" dslv:use_default_controller="false" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/select" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="10.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="10.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/chat_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/divide_line" android:background="#88888888" android:layout_width="match_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/selector_rect_white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ref_obj_margin" android:background="#fffafafa" android:layout_width="match_parent" android:layout_height="10.0dp" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/strike_obj_container" android:background="@drawable/selector_rect_white" android:padding="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.HorizontalRecyclerView android:id="@id/attach_media_recycleView" android:layout_width="match_parent" android:layout_height="42.0dp" />
+    </LinearLayout>
+</LinearLayout>

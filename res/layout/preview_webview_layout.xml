@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0" layout="@layout/webview_layout" />
+    <FrameLayout android:layout_gravity="bottom" android:background="#70000000" android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_community_detail_join_layout" />
+    </FrameLayout>
+</LinearLayout>

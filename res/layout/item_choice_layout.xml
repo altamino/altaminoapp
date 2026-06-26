@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/dialog_item_green" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dp" android:textColor="@color/item_choice_text_color" android:layout_gravity="start|center" android:id="@id/choice_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.narvii.widget.FontAwesomeView android:textColor="@color/flag_item_color" android:layout_gravity="end|center" android:id="@id/choice_indicator" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="8.0dp" android:text="@string/ion_checkmark_round" android:layout_marginEnd="8.0dp" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

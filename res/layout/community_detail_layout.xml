@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.PromotionalImageView android:id="@id/community_promotion_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:imageType="community-launch-image" />
+    <com.github.mmin18.widget.RealtimeBlurView android:id="@id/blur" android:layout_width="match_parent" android:layout_height="match_parent" app:realtimeBlurMaxFPS="5.0" app:realtimeOverlayColor="#00000000" />
+    <RelativeLayout android:id="@id/community_detail_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="#88000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/btn_join_layout" android:layout_below="@id/actionbar_back">
+            <include layout="@layout/list_layout" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/fake_action_bar_layout" android:background="#66000000" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <include android:id="@id/hover_join_container" android:visibility="invisible" layout="@layout/item_community_detail_join_layout" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.narvii.livelayer.LiveLayerOnlineBar android:id="@id/online_bar" app:minAvatarCount="2" app:showShadow="true" app:supportFold="true" style="@style/live_layer_online_bar_style" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/stub1" android:layout_width="0.0px" android:layout_height="0.0px" android:layout_marginLeft="20.0dp" android:layout_marginStart="20.0dp" />
+    <com.narvii.widget.FontAwesomeView android:textSize="22.0dp" android:textColor="#ff4cd964" android:gravity="center" android:id="@id/add" android:padding="10.0dp" android:layout_width="44.0dp" android:layout_height="44.0dp" android:text="@string/ion_ios_plus" />
+    <TextView android:textSize="18.0dp" android:textColor="#ff555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/catalog_add_category" android:singleLine="true" android:layout_marginStart="10.0dp" />
+</LinearLayout>

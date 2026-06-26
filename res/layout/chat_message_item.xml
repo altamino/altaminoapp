@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.chat.ChatMessageItem android:gravity="start|top" android:orientation="horizontal" android:padding="6.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="4.0dp" layout="@layout/user_avatar_layout_mini" />
+    <LinearLayout android:orientation="vertical" android:id="@id/stub1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" layout="@layout/item_chat_message_nickname_layout" />
+        <com.narvii.widget.ReversibleLinearLayout android:orientation="horizontal" android:id="@id/stub2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dp">
+            <com.narvii.monetization.bubble.BubbleViewContainer android:id="@id/chat_bubble_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" />
+            <include layout="@layout/chat_image_sticker" />
+            <include layout="@layout/chat_mood_sticker" />
+            <com.narvii.widget.SpinningView android:layout_gravity="center_vertical" android:id="@id/progress" android:layout_width="@dimen/spin_small_size" android:layout_height="@dimen/spin_small_size" narvii:spinColor="@color/chat_bubble_mine" narvii:spinSize="@dimen/spin_small_size" />
+            <com.narvii.widget.FontAwesomeView android:textSize="16.0dp" android:textColor="#fff2f2f2" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/chat_resend" android:background="@drawable/chat_resend" android:padding="4.0dp" android:layout_width="26.0dp" android:layout_height="26.0dp" android:text="@string/fa_repeat" />
+            <View android:layout_gravity="center_vertical" android:id="@id/chat_unread" android:background="@drawable/chat_unread_red_oval" android:visibility="gone" android:layout_width="9.0dp" android:layout_height="9.0dp" android:layout_marginLeft="7.0dp" android:layout_marginStart="7.0dp" />
+        </com.narvii.widget.ReversibleLinearLayout>
+    </LinearLayout>
+</com.narvii.chat.ChatMessageItem>

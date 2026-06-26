@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="#ff8899a6" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.FontAwesomeView android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:padding="3.0dp" android:layout_width="38.0dp" android:layout_height="38.0dp" android:text="@string/ion_ios_flag" />
+    <TextView android:textSize="16.0dp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/resolved_time" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

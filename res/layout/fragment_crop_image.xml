@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.crop.CropView android:id="@id/crop_view" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="13.0dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/crop_hint_tv" android:background="@drawable/crop_hint_round_shape" android:layout_width="208.0dp" android:layout_height="35.0dp" android:layout_marginBottom="68.0dp" android:text="@string/change_cover_image" />
+</FrameLayout>

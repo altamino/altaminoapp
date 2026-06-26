@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.narvii.chat.ChatMessageItem android:orientation="horizontal" android:id="@id/chat_message_item" android:padding="12.0dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="2.0dp" android:layout_marginTop="4.0dp" android:layout_marginStart="2.0dp" layout="@layout/user_avatar_layout_mini" />
+                <LinearLayout android:orientation="vertical" android:id="@id/stub1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.narvii.widget.NicknameView android:textSize="18.0dp" android:textColor="#ff24a4fe" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:singleLine="true" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+                    <com.narvii.widget.ReversibleLinearLayout android:orientation="horizontal" android:id="@id/stub2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:minWidth="100.0dp">
+                        <com.narvii.monetization.bubble.BubbleViewContainer android:id="@id/chat_bubble_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" />
+                        <include layout="@layout/chat_image_sticker" />
+                        <include layout="@layout/chat_mood_sticker" />
+                        <com.narvii.widget.SpinningView android:layout_gravity="center_vertical" android:id="@id/progress" android:layout_width="@dimen/spin_small_size" android:layout_height="@dimen/spin_small_size" narvii:spinSize="@dimen/spin_small_size" />
+                        <com.narvii.widget.FontAwesomeView android:textSize="16.0dp" android:textColor="#fff2f2f2" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/chat_resend" android:background="@drawable/chat_resend" android:padding="4.0dp" android:visibility="gone" android:layout_width="26.0dp" android:layout_height="26.0dp" android:text="@string/fa_repeat" />
+                    </com.narvii.widget.ReversibleLinearLayout>
+                </LinearLayout>
+            </com.narvii.chat.ChatMessageItem>
+            <View android:id="@id/chat_see_all_divider" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <Button android:textSize="20.0dp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/chat_see_all" android:background="@drawable/button_round_blue_l" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/see_all_chat" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" />
+        </LinearLayout>
+    </com.narvii.widget.NVScrollView>
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:visibility="gone" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/error_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/error_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.narvii.widget.FontAwesomeView android:textColor="@color/button_text_light" android:gravity="center" android:layout_gravity="center" android:id="@id/error_retry" android:padding="12.0dp" android:clickable="true" android:layout_width="60.0dp" android:layout_height="60.0dp" android:text="@string/ion_refresh" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.chat.video.view.LiveChannelEntryView android:id="@id/vv_entry" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.chat.video.view.JoinChannelBanner android:id="@id/rtc_preview_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/launch_containers" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/go_live_entry" android:background="@drawable/go_live_entry_background" android:paddingLeft="13.0dp" android:paddingTop="4.0dp" android:paddingRight="13.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginLeft="15.0dp" android:paddingStart="13.0dp" android:paddingEnd="13.0dp" android:layout_marginStart="15.0dp">
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff6fff00" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_go_live" />
+            <View android:layout_width="5.0dp" android:layout_height="1.0dp" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/go_live_green_arrow_mirror" />
+        </LinearLayout>
+    </LinearLayout>
+</com.narvii.chat.video.view.LiveChannelEntryView>

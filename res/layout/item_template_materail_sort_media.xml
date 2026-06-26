@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="65.0dp" android:layout_height="95.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/image_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="7.0dp">
+            <com.narvii.widget.NVImageView android:gravity="center" android:id="@id/image" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:hidePlayButton="true" />
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/image_edit" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="17.0dp" android:alpha="0.6">
+                <ImageView android:layout_gravity="center" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_media_edit" android:scaleType="centerCrop" android:alpha="0.8" />
+            </FrameLayout>
+        </FrameLayout>
+        <View android:id="@id/mask" android:background="#88ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="7.0dp" />
+        <com.narvii.widget.SmoothProgressBar android:layout_gravity="center" android:id="@id/progress" android:background="@drawable/download_green_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="6.0dp" android:layout_marginLeft="14.0dp" android:layout_marginRight="14.0dp" android:progressDrawable="@drawable/download_green_progress" android:layout_marginStart="14.0dp" android:layout_marginEnd="14.0dp" style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+        <ImageView android:layout_gravity="center" android:id="@id/retry" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_retry" />
+        <ImageView android:layout_gravity="end" android:id="@id/delete" android:padding="3.0dp" android:layout_width="23.0dp" android:layout_height="23.0dp" android:src="@drawable/poll_option_delete" android:scaleType="fitCenter" />
+    </FrameLayout>
+</FrameLayout>

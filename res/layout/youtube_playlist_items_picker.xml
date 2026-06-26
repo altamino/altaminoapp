@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:background="#88000000" android:fitsSystemWindows="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/click_remove_mask" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.widget.RadiusLayout android:id="@id/tipping_confirm_content" android:background="#ffffffff" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_corner_radius="9.0dp" app:layout_height="100%-300dp" app:layout_width="100%-45dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="40.0dp">
+                <TextView android:textSize="12.0dp" android:textColor="#ff9b9b9b" android:ellipsize="end" android:id="@id/playlist_url" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:maxLines="1" android:layout_weight="1.0" android:layout_marginEnd="10.0dp" />
+                <com.narvii.widget.TintButton android:id="@id/cancel" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/dialog_close" app:tintColor="#33000000" />
+            </LinearLayout>
+            <View android:background="#ffe6e5e8" android:layout_width="match_parent" android:layout_height="0.5dp" />
+            <include android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" layout="@layout/list_layout" />
+            <View android:background="#ffe6e5e8" android:layout_width="match_parent" android:layout_height="0.5dp" />
+            <com.narvii.widget.PressedFrameLayout android:id="@id/select_all" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.0dp" android:paddingTop="15.0dp" android:paddingRight="12.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/youtube_video_select_all_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_media_picker_youtube_playlist_item_radio_unselected" />
+                    <TextView android:textSize="13.0dp" android:textColor="#ffb9b9b9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dp" android:text="@string/select_all" android:layout_marginStart="7.0dp" />
+                </LinearLayout>
+            </com.narvii.widget.PressedFrameLayout>
+            <Button android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/finish_select" android:background="@drawable/account_button_round_green" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="28.0dp" android:layout_marginRight="28.0dp" android:layout_marginBottom="28.0dp" android:text="@string/done" />
+        </LinearLayout>
+    </com.narvii.widget.RadiusLayout>
+</com.github.mmin18.widget.FlexLayout>

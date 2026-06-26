@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="30.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:background="@drawable/sticker_collection_icon_bg" android:layout_width="80.0dp" android:layout_height="80.0dp">
+            <com.narvii.monetization.sticker.widget.StickerCacheImageView android:layout_gravity="center" android:id="@id/collection_icon" android:layout_width="74.0dp" android:layout_height="74.0dp" />
+        </FrameLayout>
+        <com.narvii.monetization.utils.StoreItemNameView android:id="@id/sticker_collection_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" />
+        <TextView android:textSize="13.0dp" android:textColor="#ff717379" android:ellipsize="end" android:gravity="center" android:id="@id/collection_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+        <com.narvii.monetization.StoreItemStatusView android:id="@id/store_item_status_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" />
+    </LinearLayout>
+    <com.narvii.widget.TintButton android:layout_gravity="end" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_actionbar_close" app:tintColor="#ffd2d2d4" />
+</FrameLayout>

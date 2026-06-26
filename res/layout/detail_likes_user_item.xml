@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/detail_likes_size" android:layout_height="@dimen/detail_likes_size" android:layout_margin="@dimen/detail_likes_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/user_avatar_layout_mini_nobadge" />
+    <ImageView android:layout_gravity="end|bottom" android:id="@id/avatar_badge" android:layout_width="18.0dp" android:layout_height="18.0dp" />
+</FrameLayout>

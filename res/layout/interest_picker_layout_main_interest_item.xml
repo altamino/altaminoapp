@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.RadiusLayout android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="8.0dp" app:layout_corner_radius="7.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/image" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/picked_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.3" />
+    <ImageView android:layout_gravity="center|top" android:id="@id/picked_check" android:padding="5.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="15.0dp" android:src="@drawable/ic_white_check" />
+    <com.narvii.widget.AutoSizingTextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/title" android:background="#b2000000" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="match_parent" android:layout_height="30.0dp" android:maxLines="2" app:autoSizeTextMaxSize="14.0dp" />
+</com.narvii.widget.RadiusLayout>

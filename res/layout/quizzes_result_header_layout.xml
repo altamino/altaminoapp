@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:id="@id/result_board" app:layout_centerX="50%" app:layout_height="this.width*0.73" app:layout_top="your_score_summary_hint.bottom+8dp" app:layout_width="80%">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_quizzess_bg_triangle" android:scaleType="fitCenter" />
+        <com.narvii.widget.VersatileLoaderView android:id="@id/beatView" android:paddingLeft="16.0dp" android:paddingTop="14.0dp" android:paddingRight="16.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" app:layout_centerY="50%" app:layout_height="0.728*this.width" app:mode2="1" />
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_quizzess_triangle" android:scaleType="fitCenter" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rate_result_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_centerY="70%">
+            <TextView android:textSize="@dimen/quiz_ranking_beat_no_size" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/beat_number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/quiz_ranking_beat_hint_size" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/beat_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.github.mmin18.widget.FlexLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/your_score_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_top="0">
+        <TextView android:textSize="24.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/score_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_score" />
+        <com.narvii.widget.ColorTextView android:textSize="50.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/your_score" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/your_score_summary_hint" android:background="@drawable/drawable_best_score" android:paddingLeft="8.0dp" android:paddingTop="4.0dp" android:paddingRight="8.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_best_score" android:maxLines="1" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" app:layout_centerX="50%" app:layout_top="your_score_container.bottom+4dp" />
+</com.github.mmin18.widget.FlexLayout>

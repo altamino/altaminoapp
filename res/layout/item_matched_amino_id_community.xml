@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/item_matched_amino_id_header" />
+    <include android:id="@id/matched_community_container" layout="@layout/item_community_card_base" />
+</LinearLayout>

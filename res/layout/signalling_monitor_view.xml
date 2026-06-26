@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#88000000" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="9.0dp" android:typeface="monospace" android:textColor="#fff6f6f6" android:gravity="bottom" android:id="@id/text" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Signalling Status.." />
+    <View android:layout_gravity="right|top" android:id="@id/status" android:background="@drawable/oval_green" android:layout_width="6.0dp" android:layout_height="6.0dp" />
+    <TextView android:textSize="9.0dp" android:typeface="monospace" android:textColor="#ffdd0000" android:layout_gravity="right|top" android:id="@id/status_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</FrameLayout>

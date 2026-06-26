@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tooltip_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/tooltip_margin_h" android:layout_marginRight="@dimen/tooltip_margin_h"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.PopupBubble android:layout_gravity="left" android:id="@id/popup_bubble" android:tag="tooltip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:popupBubbleRadius="5.0dp" style="@style/TooltipPopBubble">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.narvii.livelayer.LiveLayerOnlineBar android:id="@id/waiting_member_list" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:autoFitAvatarCountMax="3" app:avatarSize="20.0dp" app:showMore="false" />
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/waiting_member_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" />
+        </LinearLayout>
+    </com.narvii.widget.PopupBubble>
+</FrameLayout>

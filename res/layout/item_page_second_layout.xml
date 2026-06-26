@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/page_item_icon" android:padding="6.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:scaleType="centerInside" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="end|top" android:id="@id/page_item_badge" android:background="@drawable/drawer_badge" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dp" android:minWidth="16.0dp" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="11.0dp" android:textColor="@color/selector_color_white" android:ellipsize="end" android:gravity="center" android:id="@id/page_item_name" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginTop="2.0dp" android:maxLines="2" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" />
+</LinearLayout>

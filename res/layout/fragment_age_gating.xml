@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/account_signup_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent" narvii:layout_centerX="50%" narvii:layout_left="7%" narvii:layout_right="93%">
+            <TextView android:text="@string/whens_your_birthday" narvii:layout_centerX="50%" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="16dp" style="@style/account_big_title" />
+            <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:id="@id/country" android:background="@drawable/button_rect_transparent" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_chevron_down" android:drawablePadding="10.0dp" narvii:layout_centerX="50%" narvii:layout_top="prev.bottom+24dp" />
+            <TextView android:textSize="24.0dp" android:textColor="#ffffffff" android:id="@id/date" android:background="@drawable/button_rect_transparent" android:padding="10.0dp" android:layout_height="wrap_content" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="prev.bottom+16dp" />
+            <View android:background="#ffffffff" android:layout_height="1.5dp" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="prev.bottom+2dp" />
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/hint" android:layout_height="wrap_content" android:text="@string/age_gating_hint1" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="prev.bottom+12dp" />
+            <Button android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/account_text" android:gravity="center" android:id="@id/next" android:background="@drawable/button_round_account" android:layout_height="54.0dp" android:text="@string/next" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="prev.bottom+20dp" />
+        </com.github.mmin18.widget.FlexLayout>
+    </ScrollView>
+</LinearLayout>

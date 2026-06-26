@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.NVScrollView android:background="@color/post_background" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.item.post.DragSortParentLayout android:orientation="vertical" android:id="@id/root" android:layout_width="match_parent" android:layout_height="wrap_content" narvii:drag_sort_layout_id="@id/sticker_list">
+        <TextView android:text="@string/sticker_pack_name_required" style="@style/post_title_style" />
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/edit_rectangle_normal" android:layout_width="match_parent" android:layout_height="48.0dp">
+            <EditText android:textSize="14.0dp" android:textColor="#ff222222" android:id="@id/edit_name" android:background="@null" android:padding="10.0dp" android:layout_width="0.0px" android:layout_height="match_parent" android:hint="@string/sticker_collection_name_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="textCapWords" />
+            <TextView android:textSize="11.0dp" android:textColor="#ffaaaaaa" android:id="@id/name_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dp" />
+        </LinearLayout>
+        <TextView android:text="@string/add_stickers_required" style="@style/post_title_style" />
+        <com.narvii.monetization.sticker.post.StickerPostItemList android:orientation="vertical" android:id="@id/sticker_list" android:background="#ffffffff" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/add_sticker_layout" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:text="@string/description_optional" style="@style/post_title_style" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/edit_rectangle_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="14.0dp" android:textColor="#ff4a4a4a" android:gravity="top" android:id="@id/edit_description" android:background="@null" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="150.0dp" android:hint="@string/sticker_collection_description_edit_hint" android:inputType="textCapSentences|textMultiLine" />
+            <TextView android:textSize="11.0dp" android:textColor="#ffaaaaaa" android:layout_gravity="end" android:id="@id/desc_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="60.0dp" />
+    </com.narvii.item.post.DragSortParentLayout>
+</com.narvii.widget.NVScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:paddingLeft="16.0dp" android:paddingTop="16.0dp" android:paddingRight="16.0dp" android:paddingBottom="30.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.TintButton android:id="@id/fyi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fyi" />
+    <TextView android:textColor="#ff4a4a4a" android:layout_gravity="center" android:id="@id/max_recent_visitors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" />
+</LinearLayout>

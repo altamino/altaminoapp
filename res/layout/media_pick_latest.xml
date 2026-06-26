@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/media_pick_latest" android:background="@drawable/button_round_transparent" android:paddingTop="10.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textColor="#ff555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/media_image_picker_select_this_image" />
+    <ImageView android:id="@id/image" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="10.0dp" android:scaleType="centerCrop" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="@dimen/tip_broadcast_item_avatar_size" android:layout_height="@dimen/tip_broadcast_item_avatar_size" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" layout="@layout/user_avatar_layout_mini" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#99ffffff" android:ellipsize="end" android:id="@id/give_coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:layout_width="34.0dp" android:layout_height="34.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/amino_coin_big" />
+    <TextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="#ffffe555" android:id="@id/coins_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80.0dp" android:maxLines="1" android:shadowColor="#ccff7700" android:shadowDx="1.0" android:shadowDy="2.0" android:shadowRadius="4.0" android:textAlignment="viewStart" />
+</LinearLayout>

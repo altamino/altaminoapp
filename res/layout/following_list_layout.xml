@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/list_layout" />
+    <LinearLayout android:gravity="center" android:id="@id/follow_login_layout" android:background="#ffffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textSize="16.0dp" android:textColor="#ffffffff" android:id="@id/follow_login" android:background="@drawable/button_round_normal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="140.0dp" android:text="@string/login_or_signup" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    </LinearLayout>
+</FrameLayout>

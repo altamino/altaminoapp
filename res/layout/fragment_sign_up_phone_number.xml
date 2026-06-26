@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/account_signup_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent" narvii:layout_centerX="50%" narvii:layout_left="7%" narvii:layout_right="93%">
+            <TextView android:text="@string/account_phone_number" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="16dp" style="@style/account_edit_title" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="40.0dp" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="prev.bottom+6dp">
+                <TextView android:textSize="26.0dp" android:textColor="#ffffffff" android:id="@id/country_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+86" />
+                <View android:background="#ffffffff" android:layout_width="1.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" />
+                <EditText android:textSize="26.0dp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/edit_phone_number" android:background="@null" android:layout_width="match_parent" android:layout_height="40.0dp" android:singleLine="true" android:layout_weight="1.0" android:inputType="phone" android:textCursorDrawable="@null" />
+            </LinearLayout>
+            <include layout="@layout/flexlayout_edit_line_margin" />
+            <TextView android:id="@id/email_instead" android:text="@string/use_email_instead" narvii:layout_centerX="50%" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="prev.bottom+20dp" style="@style/account_small_action" />
+            <include layout="@layout/flex_signup_indicator_layout" />
+        </com.github.mmin18.widget.FlexLayout>
+    </ScrollView>
+</LinearLayout>

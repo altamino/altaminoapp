@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/coupons_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:textSize="15.0dp" android:textColor="#ffb9b9b9" android:layout_gravity="start|center" android:id="@id/apply_coupon_check_box" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="25.0dp" android:layout_marginRight="25.0dp" android:layout_marginBottom="25.0dp" android:checked="true" android:button="@drawable/membership_renew_bg" android:text="@string/fan_subscribe_follow_hint" android:singleLine="true" android:paddingStart="8.0dp" />
+        <TextView android:textSize="15.0dp" android:textColor="#ff1ad422" android:layout_gravity="end|center" android:id="@id/apply_coupon_discount_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="25.0dp" android:layout_marginRight="25.0dp" android:layout_marginBottom="25.0dp" />
+        <View android:layout_gravity="bottom" android:background="#ffe6e6e6" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dp" android:textColor="#ff777777" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" android:text="@string/total" android:layout_marginStart="20.0dp" />
+        <LinearLayout android:gravity="end" android:layout_gravity="end|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="15.0dp" android:layout_marginEnd="20.0dp">
+            <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:gravity="center_vertical" android:id="@id/redeem_coin_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/amino_coin_small" android:drawablePadding="4.0dp" android:drawableStart="@drawable/amino_coin_small" />
+            <TextView android:textSize="11.0dp" android:textColor="#ffacacac" android:id="@id/redeem_coin_subscription_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:background="#ffe6e6e6" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="14.0dp" android:textColor="#ffb9b9b9" android:id="@id/redeem_auto_renew_hint_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="15.0dp" android:text="@string/auto_renew_hint_info" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/redeem" android:background="@drawable/selector_subscribe_green" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="50.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="50.0dp">
+        <ImageView android:id="@id/purchase_loading" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/ic_loading_circle" android:layout_marginEnd="10.0dp" />
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/redeem_text" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/buy" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dp" android:textColor="#ffb9b9b9" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/earn_coins_text" android:layout_width="wrap_content" android:layout_height="40.0dp" android:minWidth="205.0dp" android:text="@string/membership_earn_coins" />
+</LinearLayout>

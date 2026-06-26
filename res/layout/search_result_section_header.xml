@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_result_section_header" android:background="#1affffff" android:paddingLeft="@dimen/default_padding_horizontal" android:paddingRight="0.0dp" android:layout_width="match_parent" android:layout_height="30.0dp" android:paddingStart="@dimen/default_padding_horizontal" android:paddingEnd="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/community_search_section_text_size" android:textColor="#88ffffff" android:id="@id/pre_key" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/community_search_keywords" android:layout_weight="1.0" />
+    <ImageView android:id="@id/filter" android:background="@drawable/button_rect_transparent_dark" android:paddingLeft="@dimen/default_padding_horizontal" android:paddingRight="@dimen/default_padding_horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_global_post_filter" />
+</LinearLayout>

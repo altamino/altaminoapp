@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff555555" android:layout_gravity="center_vertical" android:id="@id/all" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/all" android:layout_weight="1.0" />
+    <com.narvii.widget.FontAwesomeView android:textSize="20.0dp" android:textColor="#fff2f2f2" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/checkmark" android:background="@drawable/button_oval_blue" android:padding="7.0dp" android:visibility="invisible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:text="@string/fa_check" />
+</LinearLayout>

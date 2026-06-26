@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.narvii.widget.BottomDrawerContainer android:layout_gravity="bottom" android:id="@id/drawer_bottom_container" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:dismiss_threshold="100.0dp" app:top_threshold="@dimen/bottom_drawer_scroll_offset" app:translate_mode="1" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

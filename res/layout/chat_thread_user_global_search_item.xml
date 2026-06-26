@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.chat.thread.ThreadListItem android:paddingLeft="@dimen/default_padding_horizontal" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="84.0dp" android:paddingStart="@dimen/default_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/stub0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <include layout="@layout/rtc_indicator_container" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/stub1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="54.0dp" android:layout_height="wrap_content" android:layout_toRightOf="@id/stub0" android:layout_centerVertical="true" android:layout_toEndOf="@id/stub0">
+        <include layout="@layout/user_avatar_layout_mini" />
+    </LinearLayout>
+    <View android:id="@id/chat_thread_unread" android:background="@drawable/chat_thread_unread" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="2.0dp" android:layout_alignTop="@id/stub1" android:layout_alignRight="@id/stub1" android:layout_marginEnd="2.0dp" android:layout_alignEnd="@id/stub1" />
+    <TextView android:textSize="12.0dp" android:textColor="#90ffffff" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/title" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="8.0dp" android:singleLine="true" android:layout_toLeftOf="@id/datetime" android:layout_toRightOf="@id/stub1" android:layout_alignTop="@id/image" android:layout_alignParentTop="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/datetime" android:layout_toEndOf="@id/stub1" />
+    <include android:visibility="invisible" layout="@layout/chat_thread_content_bottom" />
+    <include layout="@layout/layout_community_global_search_info" />
+</com.narvii.chat.thread.ThreadListItem>

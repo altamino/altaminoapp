@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.topic.widgets.GeneralTopicCard android:id="@id/story_topic_card_view" android:layout_width="100.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.topic.widgets.TopicCardCoverView android:id="@id/img_container" app:layout_height="this.width*1.1" app:layout_width="match_parent" />
+    <com.narvii.story.widgets.StoryTopicView android:id="@id/topic_view" app:layout_bottom="img_container.bottom" app:layout_height="this.width*0.25" app:layout_width="match_parent" app:supportBackground="false" app:tagTextPadding="10.0dp" app:tagTextSize="11.0dp" />
+</com.narvii.topic.widgets.GeneralTopicCard>

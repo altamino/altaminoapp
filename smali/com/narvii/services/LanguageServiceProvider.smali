@@ -1,0 +1,141 @@
+.class public Lcom/narvii/services/LanguageServiceProvider;
+.super Ljava/lang/Object;
+.source "LanguageServiceProvider.java"
+
+# interfaces
+.implements Lcom/narvii/services/ServiceProvider;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/narvii/services/ServiceProvider<",
+        "Lcom/narvii/language/LanguageManager;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 9
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public create(Lcom/narvii/app/NVContext;)Lcom/narvii/language/LanguageManager;
+    .locals 1
+
+    .line 13
+    new-instance v0, Lcom/narvii/language/LanguageManager;
+
+    invoke-interface {p1}, Lcom/narvii/app/NVContext;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Lcom/narvii/language/LanguageManager;-><init>(Landroid/content/Context;)V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic create(Lcom/narvii/app/NVContext;)Ljava/lang/Object;
+    .locals 0
+
+    .line 9
+    invoke-virtual {p0, p1}, Lcom/narvii/services/LanguageServiceProvider;->create(Lcom/narvii/app/NVContext;)Lcom/narvii/language/LanguageManager;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public destroy(Lcom/narvii/app/NVContext;Lcom/narvii/language/LanguageManager;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public bridge synthetic destroy(Lcom/narvii/app/NVContext;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 9
+    check-cast p2, Lcom/narvii/language/LanguageManager;
+
+    invoke-virtual {p0, p1, p2}, Lcom/narvii/services/LanguageServiceProvider;->destroy(Lcom/narvii/app/NVContext;Lcom/narvii/language/LanguageManager;)V
+
+    return-void
+.end method
+
+.method public pause(Lcom/narvii/app/NVContext;Lcom/narvii/language/LanguageManager;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public bridge synthetic pause(Lcom/narvii/app/NVContext;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 9
+    check-cast p2, Lcom/narvii/language/LanguageManager;
+
+    invoke-virtual {p0, p1, p2}, Lcom/narvii/services/LanguageServiceProvider;->pause(Lcom/narvii/app/NVContext;Lcom/narvii/language/LanguageManager;)V
+
+    return-void
+.end method
+
+.method public resume(Lcom/narvii/app/NVContext;Lcom/narvii/language/LanguageManager;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public bridge synthetic resume(Lcom/narvii/app/NVContext;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 9
+    check-cast p2, Lcom/narvii/language/LanguageManager;
+
+    invoke-virtual {p0, p1, p2}, Lcom/narvii/services/LanguageServiceProvider;->resume(Lcom/narvii/app/NVContext;Lcom/narvii/language/LanguageManager;)V
+
+    return-void
+.end method
+
+.method public start(Lcom/narvii/app/NVContext;Lcom/narvii/language/LanguageManager;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public bridge synthetic start(Lcom/narvii/app/NVContext;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 9
+    check-cast p2, Lcom/narvii/language/LanguageManager;
+
+    invoke-virtual {p0, p1, p2}, Lcom/narvii/services/LanguageServiceProvider;->start(Lcom/narvii/app/NVContext;Lcom/narvii/language/LanguageManager;)V
+
+    return-void
+.end method
+
+.method public stop(Lcom/narvii/app/NVContext;Lcom/narvii/language/LanguageManager;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public bridge synthetic stop(Lcom/narvii/app/NVContext;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 9
+    check-cast p2, Lcom/narvii/language/LanguageManager;
+
+    invoke-virtual {p0, p1, p2}, Lcom/narvii/services/LanguageServiceProvider;->stop(Lcom/narvii/app/NVContext;Lcom/narvii/language/LanguageManager;)V
+
+    return-void
+.end method

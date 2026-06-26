@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View app:layout_height="screen.height" app:layout_width="screen.width" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <include layout="@layout/check_window_change_layout" />
+            <include layout="@layout/quiz_fullscreen_background_view" />
+            <com.narvii.widget.AutoSizingTextView android:textSize="20.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/question" android:paddingLeft="20.0dp" android:paddingTop="5.0dp" android:paddingRight="20.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" app:autoSizeTextMaxSize="20.0dp" app:layout_bottom="next.top" app:layout_top="50dp" />
+            <com.narvii.widget.ThumbImageView android:id="@id/media" android:layout_width="match_parent" android:scaleType="centerCrop" app:cornerRadius="4.0dp" app:defaultDrawable="@color/placeholder_lighter" app:layout_bottom="parent.height-answer_layout.height" app:layout_height="this.width*0.57" app:layout_left="10dp" app:layout_right="parent.width-10dp" />
+            <com.narvii.widget.SpinningView android:id="@id/media_loading" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" app:layout_centerX="media.centerX" app:layout_centerY="media.centerY" app:spinColor="#ffffffff" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/media_error" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_centerX="media.centerX" app:layout_centerY="media.centerY" app:layout_left="media.left" app:layout_right="media.right">
+                <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="20.0dp" android:text="@string/normal_error_long" />
+                <com.narvii.widget.FontAwesomeView android:textColor="#ffffffff" android:gravity="center" android:id="@id/retry" android:padding="12.0dp" android:clickable="true" android:layout_width="60.0dp" android:layout_height="60.0dp" android:text="@string/ion_refresh" />
+            </LinearLayout>
+            <com.narvii.widget.EqualGridLayout android:id="@id/answer_layout" android:padding="7.0dp" android:layout_width="match_parent" android:splitMotionEvents="false" app:column_count="2" app:layout_bottom="parent.height" app:layout_height="parent.height*0.3" app:row_count="2" />
+            <include layout="@layout/quiz_question_alarm" />
+            <include layout="@layout/quiz_question_progress_layout" />
+        </com.github.mmin18.widget.FlexLayout>
+    </LinearLayout>
+</com.github.mmin18.widget.FlexLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.SelectableTextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/title" android:paddingLeft="10.0dp" android:paddingTop="14.0dp" android:paddingRight="10.0dp" android:paddingBottom="4.0dp" android:layout_width="0.0pt" android:layout_height="wrap_content" android:maxLines="3" android:layout_weight="1.0" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    <include layout="@layout/fans_only_content_indicator_layout" />
+</LinearLayout>

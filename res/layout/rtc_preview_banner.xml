@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/vv_chat_banner_bg" android:paddingLeft="14.0dp" android:paddingRight="14.0dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="@dimen/rtc_preview_banner_height" android:layout_margin="10.0dp" android:paddingStart="14.0dp" android:paddingEnd="14.0dp">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.narvii.widget.NVImageView android:id="@id/indicator" android:layout_width="26.0dp" android:layout_height="wrap_content" android:src="@drawable/animation_audio_ongoing" android:scaleType="centerInside" app:showPressedMask="false" />
+        </FrameLayout>
+        <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="start" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_weight="1.0" android:layout_marginStart="6.0dp" />
+        <include android:layout_gravity="center_vertical" android:id="@id/avatar" android:padding="1.0dp" android:layout_width="@dimen/rtc_banner_avatar_size" android:layout_height="@dimen/rtc_banner_avatar_size" android:layout_marginLeft="20.0dp" android:layout_marginStart="20.0dp" layout="@layout/user_avatar_layout_mini_nobadge" />
+    </LinearLayout>
+</LinearLayout>

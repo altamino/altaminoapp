@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/list_layout" />
+        <include layout="@layout/sticker_pack_not_available" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/membership_expire_fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

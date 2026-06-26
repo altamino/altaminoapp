@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/list_layout" />
+    <com.narvii.app.theme.view.NVThemeLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/in_privacy_mode" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/image_private_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_private_mode_dark" />
+        <com.narvii.app.theme.view.NVThemeTextView android:textSize="14.0dp" android:textColor="#884a4a4a" android:gravity="center" android:id="@id/in_private_mode_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:text="@string/me_in_private_mode_hint" app:nv_dark_textColor="#88ffffff" />
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/private_mode_setting_layout" android:background="@drawable/green_radius_4" android:paddingLeft="30.0dp" android:paddingRight="30.0dp" android:layout_width="wrap_content" android:layout_height="42.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="10.0dp" android:minWidth="100.0dp" android:text="@string/prefs_settings" android:maxLines="1" android:singleLine="true" />
+    </com.narvii.app.theme.view.NVThemeLinearLayout>
+</FrameLayout>

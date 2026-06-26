@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.NVScrollView android:background="#ffe0e0e0" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16.0dp" android:textColor="#ff222222" android:gravity="start|center" android:id="@id/title" android:background="@drawable/post_clickable_section" android:padding="10.0dp" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="32.0dp" android:hint="@string/catalog_category_label" android:singleLine="true" android:inputType="textCapSentences" android:paddingStart="20.0dp" />
+        <FrameLayout android:background="@drawable/chat_cover_bg" android:layout_width="match_parent" android:layout_height="140.0dp" android:layout_marginLeft="14.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="14.0dp" android:layout_marginBottom="24.0dp" android:layout_marginStart="14.0dp" android:layout_marginEnd="14.0dp">
+            <com.narvii.widget.ThumbImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <TextView android:textSize="26.0dp" android:textColor="#fff2f2f2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/catalog_background" android:shadowColor="#cc000000" android:shadowDy="2.0" android:shadowRadius="6.0" />
+        </FrameLayout>
+        <Button android:id="@id/catalog_delete" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="@string/catalog_delete" style="@style/ButtonRed" />
+        <View android:layout_width="match_parent" android:layout_height="60.0dp" />
+    </LinearLayout>
+</com.narvii.widget.NVScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.monetization.store.view.TippingDialogFrameLayout android:background="#88000000" android:fitsSystemWindows="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/click_remove_mask" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/tipping_confirm_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ScrollView android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.widget.RadiusLayout android:background="#ff0c0030" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dp" app:layout_corner_radius_left_top="16.0dp" app:layout_corner_radius_right_top="16.0dp">
+                    <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:src="@drawable/tipping_dialog_background" android:scaleType="fitCenter" app:layout_height="this.width * 0.315" app:layout_width="parent.width" />
+                    </com.github.mmin18.widget.FlexLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="38.0dp" android:paddingBottom="40.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tipping_confirm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="40.0dp" android:text="@string/tipping_confirm_title" android:maxLines="1" />
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/tipping_members_view" android:paddingTop="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+                            <com.narvii.livelayer.LiveLayerOnlineBar android:id="@id/tipping_members_list" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.5dp" android:layout_marginEnd="6.5dp" app:autoFitAvatarCountMax="3" app:avatarSize="20.0dp" app:showMore="false" />
+                            <TextView android:textSize="12.0dp" android:textColor="#99ffffff" android:gravity="center_vertical" android:id="@id/tipping_members_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="25.0dp" />
+                        </LinearLayout>
+                        <HorizontalScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:id="@id/default_tipping_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <include android:id="@id/custom_tipping_price" layout="@layout/tipping_price_default_item" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                        <com.narvii.widget.PurchaseConfirmButton android:layout_gravity="center_horizontal" android:id="@id/confirm_button" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="20.0dp" app:text_confirm="@string/send" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="18.0dp" android:layout_marginRight="20.0dp">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <ImageView android:id="@id/amino_coin" android:layout_width="17.0dp" android:layout_height="17.0dp" android:src="@drawable/amino_coin_big" />
+                                <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/user_wallet_coins" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_weight="1.0" android:layout_marginStart="3.0dp" />
+                                <TextView android:textSize="15.0dp" android:textColor="#ff4380ff" android:id="@id/get_coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tipping_dialog_get_coins" />
+                            </LinearLayout>
+                            <TextView android:textSize="10.0dp" android:textColor="#80ffffff" android:id="@id/available_coins_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/available_coins" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.narvii.widget.RadiusLayout>
+                <include android:layout_gravity="center_horizontal" android:id="@id/my_user_avatar" android:layout_width="75.0dp" android:layout_height="75.0dp" layout="@layout/user_avatar_layout_large" />
+            </FrameLayout>
+        </ScrollView>
+    </FrameLayout>
+    <com.narvii.monetization.store.view.TippingFeedbackView android:id="@id/tipping_feedback_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.narvii.monetization.store.view.TippingDialogFrameLayout>

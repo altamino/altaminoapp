@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:paddingBottom="6.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="64.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/avatar_wrap" app:layout_centerX="50%" app:layout_height="this.width" app:layout_top="10dp" app:layout_width="min(80%,80dp)">
+        <com.narvii.widget.ThumbImageView android:id="@id/avatar" android:layout_width="match_parent" android:layout_height="match_parent" app:strokeWidth="0.0dp" style="@style/AvatarImageView" />
+        <ImageView android:background="@drawable/live_layer_grey_circle" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_livelayer_more_member" />
+    </FrameLayout>
+</com.github.mmin18.widget.FlexLayout>

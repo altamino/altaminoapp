@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.list.refresh.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.nested.NVCoordinateLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.nested.NVAppBarLayout android:id="@id/appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/topic_spring_behavior">
+            <com.github.mmin18.widget.FlexLayout android:orientation="vertical" android:id="@id/coordinate_top_content" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_nvscrollFlags="scroll|exitUntilCollapsed">
+                <com.narvii.widget.NVImageView android:id="@id/topic_background" android:scaleType="matrix" app:defaultDrawable="@drawable/ic_topic_default_cover_large" app:errorDrawable="@color/story_list_item_loading" app:layout_height="100%" app:layout_width="100%" />
+                <View android:layout_gravity="bottom" android:background="@drawable/topic_story_header_mask_gradient" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <LinearLayout android:orientation="vertical" android:id="@id/dynamic_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.narvii.widget.NVListOverlay android:layout_width="match_parent" android:layout_height="wrap_content" />
+                    <com.narvii.widget.AutoSizingTextView android:textSize="28.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/topic_title" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginLeft="60.0dp" android:layout_marginRight="60.0dp" android:maxLines="2" app:autoSizeTextMaxSize="28.0dp" app:autoSizeTextMinSize="20.0dp" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/online_member_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                        <View android:background="@drawable/oval_green" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginRight="4.0dp" android:layout_marginEnd="4.0dp" />
+                        <TextView android:textSize="12.0dp" android:textColor="#ff38d89c" android:id="@id/online_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_now_count" android:drawableLeft="@drawable/oval_green" android:drawableStart="@drawable/oval_green" />
+                    </LinearLayout>
+                    <com.narvii.widget.recycleview.NVRecyclerView android:layout_gravity="center" android:id="@id/recycle_layout" android:visibility="invisible" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="15.0dp" />
+                    <com.narvii.topic.widgets.TopicSubscribeView android:layout_gravity="center_horizontal" android:id="@id/topic_bookmark" android:layout_width="wrap_content" android:layout_height="35.0dp" android:layout_marginTop="30.0dp" android:layout_marginBottom="30.0dp" />
+                </LinearLayout>
+            </com.github.mmin18.widget.FlexLayout>
+        </com.narvii.nested.NVAppBarLayout>
+        <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_behavior="@string/body_behavior">
+            <FrameLayout android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/body_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.narvii.widget.NVPagerTabLayout android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="32.0dp" app:custom_tab_width="@dimen/coordinate_tab_width" app:scroll_divide_equal="false" />
+                    <com.narvii.widget.NVViewPager android:id="@id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </LinearLayout>
+            </FrameLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <com.narvii.paging.state.PageStatusView android:id="@id/page_status" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:background="#ff130e43" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/alpha_header_behavior">
+            <com.narvii.widget.StatusBarPlaceHolder android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/topic_title_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dp" android:layout_marginRight="60.0dp" android:minHeight="48.0dp" android:maxLines="1" />
+        </LinearLayout>
+        <include android:layout_gravity="end|bottom" android:id="@id/post_entry_view" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/post_entry" />
+    </com.narvii.nested.NVCoordinateLayout>
+</com.narvii.list.refresh.SwipeRefreshLayout>

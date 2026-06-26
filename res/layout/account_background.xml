@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.RealtimeBlurLayout android:layout_gravity="bottom" android:id="@id/nv_realtime_blur" android:layout_width="match_parent" android:layout_height="match_parent" narvii:blurLayoutOverlayColor="#22000000" narvii:blurLayoutRadius="36.0dp">
+        <include layout="@layout/full_screen_bg" />
+    </com.github.mmin18.widget.RealtimeBlurLayout>
+</FrameLayout>

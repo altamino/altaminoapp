@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.FontAwesomeView android:textSize="20.0dp" android:textColor="#ffcccccc" android:gravity="center" android:id="@id/radio" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" />
+    <TextView android:textSize="16.0dp" android:textColor="#ffcccccc" android:gravity="center" android:id="@id/text" android:paddingRight="40.0dp" android:layout_width="0.0px" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="40.0dp" />
+</LinearLayout>

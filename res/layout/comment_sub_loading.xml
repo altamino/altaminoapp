@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="36.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="@dimen/subcomment_indent" android:layout_height="0.0px" />
+    <View android:layout_width="6.0dp" android:layout_height="0.0px" />
+    <com.narvii.widget.SpinningView android:layout_width="@dimen/spin_small_size" android:layout_height="@dimen/spin_small_size" />
+</LinearLayout>

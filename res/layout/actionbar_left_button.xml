@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/actionbar_back" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/text" android:background="@drawable/radius_4_white_stroke_1" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:shadowColor="#99000000" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_marginStart="12.0dp" />
+</FrameLayout>

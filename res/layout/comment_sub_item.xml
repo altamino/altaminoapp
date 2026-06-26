@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.comment.list.CommentItem android:id="@id/comment_item" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="@dimen/subcomment_avatar_size" android:layout_height="@dimen/subcomment_avatar_size" android:layout_marginLeft="@dimen/subcomment_indent" android:layout_marginTop="8.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/subcomment_indent" android:layout_alignParentStart="true" layout="@layout/user_avatar_layout_mini" />
+    <include layout="@layout/comment_childs" />
+</com.narvii.comment.list.CommentItem>

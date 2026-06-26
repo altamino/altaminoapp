@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#ffe6e6e6" android:layout_width="match_parent" android:layout_height="1.0dp" app:layout_bottom="100%" />
+    <include android:layout_width="56.0dp" android:layout_height="56.0dp" app:layout_centerX="12%" app:layout_centerY="50%" app:showPressedMask="false" layout="@layout/user_avatar_layout_large" />
+    <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#fff5a623" android:id="@id/redeem_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_left="user_avatar_layout.right+10dp" app:layout_top="user_avatar_layout.top+5dp" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_left="user_avatar_layout.right+10dp" app:layout_top="redeem_item_title.bottom+5dp">
+        <ImageView android:id="@id/amino_coin" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginRight="4.0dp" android:src="@drawable/amino_coin_small" android:layout_marginEnd="4.0dp" />
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#fff5a623" android:id="@id/redeem_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.github.mmin18.widget.FlexLayout>

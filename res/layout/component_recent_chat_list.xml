@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/recent_chat_list_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="@string/chat_recent_chat_title" />
+    <com.narvii.widget.HorizontalRecyclerView android:id="@id/recent_chat_bar" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="85.0dp" android:layout_marginTop="10.0dp" />
+</LinearLayout>

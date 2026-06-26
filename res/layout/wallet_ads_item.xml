@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="@dimen/wallet_cell_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVDrawableAnimatedView android:id="@id/icon" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginLeft="15.0dp" android:layout_marginStart="15.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_weight="1.0" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp">
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/watch_video_for_free_coins" />
+        <TextView android:textSize="15.0dp" android:textColor="#fff4ab24" android:id="@id/coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/amino_coin_small" />
+    </LinearLayout>
+    <com.narvii.widget.SpinningView android:id="@id/progress" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="15.0dp" android:layout_marginEnd="15.0dp" app:spinStyle="1" />
+    <com.narvii.widget.TintButton android:gravity="center" android:id="@id/chevron_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:src="@drawable/chevron_right_mirror" android:layout_marginEnd="20.0dp" />
+</LinearLayout>

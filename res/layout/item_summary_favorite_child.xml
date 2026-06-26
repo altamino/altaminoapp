@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.feed.FeedSummaryItem android:orientation="horizontal" android:id="@id/feed_summary_item" android:background="@drawable/button_rect_white" android:paddingLeft="@dimen/item_padding_left_right" android:paddingTop="12.0dp" android:paddingRight="@dimen/item_padding_left_right" android:paddingBottom="12.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/item_padding_left_right" android:paddingEnd="@dimen/item_padding_left_right"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.CardView android:id="@id/item_card" android:layout_width="42.0dp" android:layout_height="50.0dp">
+        <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="3.0dp" app:defaultDrawable="@color/item_card_placeholder" app:strokeColor="#ffcccccc" app:strokeWidth="@dimen/item_card_stroke_width" />
+        <TextView android:id="@id/title" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="6.0dp" />
+        <include layout="@layout/fans_only_content_indicator_layout_wiki" />
+    </com.narvii.widget.CardView>
+    <LinearLayout android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_weight="1.0" android:layout_marginStart="12.0dp">
+        <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/feed_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="12.0dp" android:textColor="#ff7e7e7e" android:ellipsize="end" android:id="@id/feed_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="2" />
+    </LinearLayout>
+    <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/chevron_right" android:background="@drawable/chevron_right_mirror" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="15.0dp" android:layout_marginLeft="12.0dp" android:layout_marginStart="12.0dp" />
+</com.narvii.feed.FeedSummaryItem>

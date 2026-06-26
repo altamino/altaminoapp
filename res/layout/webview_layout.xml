@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <com.narvii.webview.NVWebView android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.widget.SmoothProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="3.0dp" android:progressDrawable="@drawable/web_view_progress" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </FrameLayout>
+    <com.github.mmin18.widget.FlexLayout android:orientation="horizontal" android:id="@id/webview_toolbar" android:background="#fff5f5f5" android:layout_width="match_parent" android:layout_height="@dimen/webview_toolbar_height">
+        <com.narvii.widget.TintButton android:gravity="center" android:id="@id/webview_back" android:layout_width="@dimen/webview_toolbar_height" android:layout_height="@dimen/webview_toolbar_height" android:src="@drawable/ic_webview_toolbar_back" android:scaleType="centerInside" narvii:layout_centerX="30dp" />
+        <com.narvii.widget.TintButton android:gravity="center" android:id="@id/webview_forward" android:layout_width="@dimen/webview_toolbar_height" android:layout_height="@dimen/webview_toolbar_height" android:src="@drawable/ic_webview_toolbar_forward" android:scaleType="centerInside" narvii:layout_centerX="30dp+(100%-60dp)/3" />
+        <com.narvii.widget.TintButton android:gravity="center" android:id="@id/webview_refresh" android:layout_width="@dimen/webview_toolbar_height" android:layout_height="@dimen/webview_toolbar_height" android:src="@drawable/ic_webview_toolbar_refresh" android:scaleType="centerInside" narvii:layout_centerX="30dp+(100%-60dp)/3*2" />
+        <com.narvii.widget.SpinningView android:id="@id/webview_stop" android:layout_width="@dimen/webview_toolbar_height" android:layout_height="@dimen/webview_toolbar_height" narvii:layout_centerX="30dp+(100%-60dp)/3*2" narvii:spinSize="20.0dp" narvii:spinStyle="2" />
+        <com.narvii.widget.TintButton android:id="@id/webview_action" android:layout_width="@dimen/webview_toolbar_height" android:layout_height="@dimen/webview_toolbar_height" android:src="@drawable/ic_webview_toolbar_more" android:scaleType="centerInside" narvii:layout_centerX="100%-30dp" />
+    </com.github.mmin18.widget.FlexLayout>
+</LinearLayout>

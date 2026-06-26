@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/community_container" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:id="@id/community_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" app:cornerRadius="2.0dp" app:defaultDrawable="@drawable/placeholder_community" app:imageType="community-icon" app:scalePlaceholder="true" />
+    <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:textColor="#aa000000" android:ellipsize="end" android:id="@id/community_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:maxLines="1" android:layout_marginStart="6.0dp" app:nv_dark_textColor="#aaffffff" />
+</LinearLayout>

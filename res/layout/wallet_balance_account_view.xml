@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.WalletBalanceView android:id="@id/wallet_balance_view" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.PressedFrameLayout android:layout_gravity="center_vertical" android:id="@id/store_header_coin_info_layout" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/amino_coin_big" android:layout_marginStart="8.0dp" />
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/wallet_balance" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:minWidth="20.0dp" android:text="100" android:maxLines="1" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:src="@drawable/wallet_ic_add" />
+        </LinearLayout>
+    </com.narvii.widget.PressedFrameLayout>
+    <com.narvii.monetization.utils.ClaimGiftHintLayout android:layout_gravity="center_vertical" android:id="@id/claim_gift_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.narvii.widget.WalletBalanceView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.NVViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/action_bar_overlay" android:background="@color/media_gallery_picker_overlay" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <include android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/hd_image_banner" />
+</FrameLayout>

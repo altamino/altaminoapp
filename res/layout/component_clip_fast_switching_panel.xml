@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/clip_option_panel" android:background="@drawable/clip_options_panel_bg" android:layout_width="280.0dp" android:layout_height="80.0dp">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="80.0dp">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/option_trim" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <ImageView android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_trim_dark" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:gravity="center" android:layout_width="match_parent" android:layout_height="20.0dp" android:text="@string/trim" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/option_crop" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <ImageView android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_crop_dark" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:gravity="center" android:layout_width="match_parent" android:layout_height="20.0dp" android:text="@string/crop" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/option_speed" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <ImageView android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_speed_dark" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:gravity="center" android:layout_width="match_parent" android:layout_height="20.0dp" android:text="@string/speed" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/option_music" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <ImageView android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_music_dark" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:gravity="center" android:layout_width="match_parent" android:layout_height="20.0dp" android:text="@string/music" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/option_remove" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <ImageView android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_trash_can_red" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.0dp" android:textStyle="bold" android:textColor="#fff6163c" android:gravity="center" android:layout_width="match_parent" android:layout_height="20.0dp" android:text="@string/remove" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:background="#ff000000" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/clip_list" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/clip_fast_switching_panel_item_size" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" />
+    </FrameLayout>
+</LinearLayout>

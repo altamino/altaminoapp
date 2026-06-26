@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/video_loading" android:visibility="invisible" android:layout_width="48.0dp" android:layout_height="48.0dp" app:spinColor="#ccffffff" app:spinStyle="2" />
+    <com.narvii.widget.NVImageView android:layout_gravity="center" android:id="@id/video_play_button" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_sr_media_play" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/video_error" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:text="@string/error" />
+        <com.narvii.widget.FontAwesomeView android:textColor="#ffffffff" android:gravity="center" android:id="@id/retry" android:padding="12.0dp" android:layout_width="60.0dp" android:layout_height="60.0dp" android:text="@string/ion_refresh" />
+    </LinearLayout>
+    <com.narvii.widget.FullHitFrameLayout android:layout_gravity="end|bottom" android:id="@id/volume_container" android:layout_width="40.0dp" android:layout_height="40.0dp">
+        <com.narvii.widget.EasyButton android:layout_gravity="end|bottom" android:id="@id/volume_btn" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_marginBottom="6.0dp" android:layout_marginEnd="10.0dp" />
+    </com.narvii.widget.FullHitFrameLayout>
+    <com.narvii.widget.FullHitFrameLayout android:layout_gravity="right|top" android:layout_width="30.0dp" android:layout_height="30.0dp">
+        <com.narvii.widget.EasyButton android:layout_gravity="right|top" android:id="@id/share_btn" android:background="@drawable/button_round_dark" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/ic_community_share" />
+    </com.narvii.widget.FullHitFrameLayout>
+</FrameLayout>

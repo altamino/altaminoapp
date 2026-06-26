@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/create_chat_bg" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="32.0dp" android:layout_marginRight="10.0dp" android:layout_marginEnd="10.0dp">
+        <include layout="@layout/create_chat_menu" />
+    </FrameLayout>
+</FrameLayout>

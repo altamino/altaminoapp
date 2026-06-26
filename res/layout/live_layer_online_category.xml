@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/cell_real" android:paddingLeft="10.0dp" android:paddingTop="@dimen/online_category_padding" android:paddingRight="0.0dp" android:paddingBottom="@dimen/online_category_padding" android:layout_width="match_parent" android:layout_height="@dimen/online_category_height" android:paddingStart="10.0dp" android:paddingEnd="0.0dp">
+        <com.narvii.widget.GradientView android:id="@id/gradient" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.widget.NVImageSwitcher android:id="@id/image_switcher" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/online_category_member_count_bg" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="10.0dp">
+                <include layout="@layout/live_layer_online_category_members_count" />
+                <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/members" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/members" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="50.0dp">
+                    <ImageView android:id="@id/icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:scaleType="centerInside" />
+                    <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:maxLines="2" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chevron_right_mirror_white" />
+                </LinearLayout>
+                <View android:background="#26ffffff" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp" />
+                <com.narvii.livelayer.LiveLayerOnlineBar android:id="@id/online_bar" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="8.0dp" app:autoFitAvatarSize="true" app:showMore="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

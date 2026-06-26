@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/hell_mode_entry" android:background="@drawable/hell_mode_button_bg" android:paddingLeft="34.0dp" android:paddingTop="8.0dp" android:paddingRight="34.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:paddingStart="34.0dp" android:paddingEnd="34.0dp">
+        <com.narvii.widget.EmojioneView android:layout_gravity="center_vertical" android:layout_width="26.0dp" android:layout_height="26.0dp" app:emojiShortName="smiling_imp" />
+        <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffe31c44" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="@string/play_in_hell_mode" android:layout_marginStart="6.0dp" />
+    </LinearLayout>
+</LinearLayout>

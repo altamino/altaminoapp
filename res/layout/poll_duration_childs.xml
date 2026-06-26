@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffcccccc" android:id="@id/poll_end_in_n_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="14.0dp" android:textColor="#ffcccccc" android:id="@id/poll_end_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</merge>

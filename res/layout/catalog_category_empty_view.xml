@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ff555555" android:paddingTop="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/catalog_no_category_title" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/empty_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <com.narvii.widget.FontAwesomeView android:textSize="16.0dp" android:textColor="@color/button_text_gray_w" android:gravity="center" android:padding="13.0dp" android:clickable="true" android:layout_width="44.0dp" android:layout_height="44.0dp" android:text="@string/fa_plus" />
+        <TextView android:textSize="14.0dp" android:textColor="#ff555555" android:gravity="center" android:paddingRight="36.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/catalog_no_category_hint" android:paddingEnd="36.0dp" />
+    </LinearLayout>
+</LinearLayout>

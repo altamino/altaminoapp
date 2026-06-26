@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff1b1b21" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/list_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/list_view" />
+        <include layout="@layout/empty_view" />
+        <com.narvii.widget.RadiusLayout android:layout_gravity="bottom" android:id="@id/subcategory_pick_button" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="48.0dp" app:layout_corner_radius="4.0dp">
+            <com.narvii.widget.PressedFrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/account_text" android:layout_gravity="center" android:id="@id/subcategory_pick_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="30.0dp" android:layout_height="30.0dp" app:spinColor="@color/account_text" app:spinStyle="2" />
+            </com.narvii.widget.PressedFrameLayout>
+        </com.narvii.widget.RadiusLayout>
+    </FrameLayout>
+</LinearLayout>

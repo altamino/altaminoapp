@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include app:layout_centerX="50%" app:layout_height="min(max(320dp,screen.width),400dp)*0.23" app:layout_width="min(max(320dp,screen.width),400dp)*0.23" layout="@layout/user_avatar_layout_large" />
+        <com.narvii.widget.TintButton android:id="@id/flag" android:paddingLeft="16.0dp" android:paddingTop="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_flag_grey" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" app:layout_bottom="user_avatar_layout.bottom" app:tintColor="@color/selector_thread_flag" />
+        <com.narvii.widget.ThumbImageView android:id="@id/amino_staff_badge" android:visibility="gone" android:src="@drawable/amino_staff" app:cornerRadius="20.0dp" app:layout_bottom="user_avatar_layout.bottom+2dp" app:layout_centerX="user_avatar_layout.centerX" app:layout_height="this.width*23/79" app:layout_width="user_avatar_layout.width*0.8" app:shadowColor="#66000000" app:shadowOffsetX="1.0dp" app:shadowOffsetY="1.0dp" app:shadowSize="2.0dp" />
+        <View android:id="@id/online_status_oval" android:background="@drawable/online_status_oval_stroke" app:layout_centerX="user_avatar_layout.right-user_avatar_layout.width*0.14" app:layout_centerY="user_avatar_layout.top+user_avatar_layout.height*0.14" app:layout_height="user_avatar_layout.height*0.14" app:layout_width="user_avatar_layout.width*0.14" />
+        <com.narvii.widget.MoodView android:id="@id/mood" android:layout_width="60.0dp" android:layout_height="48.0dp" app:layout_left="user_avatar_layout.left+user_avatar_layout.width*0.58" app:layout_top="user_avatar_layout.top-user_avatar_layout.height*0.08" />
+    </com.github.mmin18.widget.FlexLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="30.0dp" android:layout_marginBottom="20.0dp">
+        <com.narvii.widget.NicknameView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ff333333" android:layout_gravity="center_horizontal" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" app:hideRankingBadge="false" app:hideRole="true" app:roleScale="0.6" />
+        <TextView android:textSize="12.0dp" android:textColor="#ff9b9b9b" android:id="@id/amino_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0.0pt" android:layout_marginTop="4.0dp" android:layout_weight="1.0">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.narvii.user.title.UserTitleFlowView android:id="@id/user_title_flow" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" app:max_tag_lines="2" />
+                    <TextView android:textSize="13.0dp" android:textColor="#ff9b9b9b" android:gravity="center" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="25.0dp" android:text="@string/online_currently_online" android:maxLines="2" />
+                    <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dp">
+                        <Button android:textSize="15.0dp" android:textColor="@color/chat_theme_color" android:id="@id/online_user_start_chat" android:background="@drawable/online_user_dialog_chat_btn" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:minWidth="96.0dp" android:text="@string/online_user_start_chat" app:layout_centerX="30%" />
+                        <Button android:textSize="15.0dp" android:textColor="#ff333333" android:id="@id/online_user_profile" android:background="@drawable/online_user_dialog_profile_btn" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:minWidth="96.0dp" android:text="@string/online_user_profile" app:layout_centerX="online_user_start_chat.visible?70%:50%" />
+                    </com.github.mmin18.widget.FlexLayout>
+                </LinearLayout>
+                <ProgressBar android:layout_gravity="center" android:id="@id/request_progress" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:indeterminateDrawable="@drawable/progress" />
+                <LinearLayout android:orientation="vertical" android:id="@id/error_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp">
+                    <TextView android:textSize="14.0dp" android:textColor="#ff555555" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="20.0dp" android:text="@string/normal_error_long" />
+                    <com.narvii.widget.FontAwesomeView android:textColor="@color/button_text_gray_w" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/retry" android:padding="12.0dp" android:clickable="true" android:layout_width="60.0dp" android:layout_height="60.0dp" android:text="@string/ion_refresh" />
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+    </FrameLayout>
+</merge>

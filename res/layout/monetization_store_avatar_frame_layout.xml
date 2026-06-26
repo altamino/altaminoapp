@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.list.overlay.OverlayListPlaceholder android:background="#ff333334" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fff2f4f5" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.github.mmin18.widget.FlexLayout android:layout_gravity="center_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp">
+            <include android:layout_width="80.0dp" android:layout_height="80.0dp" narvii:layout_centerX="50%" layout="@layout/user_avatar_layout_large" />
+            <com.narvii.widget.SpinningView android:id="@id/avatar_frame_loading" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="36.0dp" narvii:layout_centerX="user_avatar_layout.centerX" narvii:layout_centerY="user_avatar_layout.centerY" narvii:spinColor="#ffffffff" narvii:spinSize="@dimen/spin_tiny_size" narvii:spinStyle="2" />
+            <ImageView android:id="@id/avatar_frame_error" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/ic_sticker_pack_not_available" android:scaleType="fitCenter" narvii:layout_centerX="user_avatar_layout.centerX" narvii:layout_centerY="user_avatar_layout.centerY" />
+            <com.narvii.widget.MoodView android:id="@id/mood" android:layout_width="60.0dp" android:layout_height="48.0dp" narvii:layout_left="user_avatar_layout.left+user_avatar_layout.width*0.58" narvii:layout_top="user_avatar_layout.top-user_avatar_layout.height*0.08" />
+        </com.github.mmin18.widget.FlexLayout>
+        <com.narvii.monetization.utils.StoreItemNameView android:textSize="@dimen/store_item_detail_name_size" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" />
+        <com.narvii.monetization.StoreItemStatusView android:id="@id/item_status_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" />
+        <View android:layout_width="match_parent" android:layout_height="20.0dp" />
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/list_layout" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.monetization.sticker.manage.StickerCollectionItem android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/collection_layout" android:background="@drawable/item_selector_white_grey" android:layout_width="match_parent" android:layout_height="75.0dp">
+        <ImageView android:id="@id/delete" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-8.0dp" android:src="@drawable/ic_item_delete" android:layout_marginEnd="-8.0dp" />
+        <FrameLayout android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+            <com.narvii.monetization.sticker.widget.StickerCacheImageView android:id="@id/collection_icon" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ImageView android:layout_gravity="end|bottom" android:id="@id/not_available_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sticker_pack_not_available" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/collection_layout_main" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.narvii.monetization.utils.StoreItemNameView android:id="@id/sticker_collection_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <include layout="@layout/sticker_pack_item_author_layout" />
+            <TextView android:textSize="12.0dp" android:textColor="#ff999999" android:id="@id/subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/_default" />
+        </LinearLayout>
+        <include android:layout_width="40.0dp" android:layout_height="30.0dp" layout="@layout/drag_sort_drag_handle" />
+    </LinearLayout>
+</com.narvii.monetization.sticker.manage.StickerCollectionItem>

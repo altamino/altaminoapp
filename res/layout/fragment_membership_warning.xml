@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@drawable/selector_membership_warning" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64.0dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:src="@drawable/membership_bar_card_active" android:layout_marginEnd="10.0dp" />
+        <TextView android:textSize="14.0dp" android:textColor="#ff717379" android:ellipsize="end" android:id="@id/expire_content" android:layout_width="0.0pt" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" />
+        <TextView android:textSize="11.0dp" android:textColor="@color/selector_orange" android:gravity="center" android:id="@id/renew" android:background="@drawable/selector_orange_stroke" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/membership_renew" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" android:layout_marginStart="10.0dp" />
+    </LinearLayout>
+    <View android:background="#ffcccccc" android:layout_width="match_parent" android:layout_height="0.5dp" />
+</FrameLayout>

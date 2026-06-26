@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.EmojioneView android:id="@id/emoji" android:padding="10.0dp" android:layout_width="60.0dp" android:layout_height="60.0dp" />
+    <TextView android:textSize="16.0dp" android:textColor="#ff040404" android:ellipsize="middle" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

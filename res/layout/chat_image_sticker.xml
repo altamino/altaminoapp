@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.ChatStickerView android:id="@id/chat_sticker" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/image" android:layout_width="0.0px" android:layout_height="0.0px" />
+    <com.narvii.chat.ChatFlexSizeImageView android:id="@id/placeholder" android:layout_width="@dimen/sticker_min_img_width" android:layout_height="@dimen/sticker_min_img_height" narvii:defaultDrawable="@color/chat_bubble_image_placeholder_bg" narvii:estimatedHeight="@dimen/sticker_min_img_width" narvii:estimatedWidth="@dimen/sticker_min_img_height" />
+</com.narvii.widget.ChatStickerView>

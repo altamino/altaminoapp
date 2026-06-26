@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="70.0dp" android:layout_height="50.0dp" app:layout_centerX="50%"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/alarm_bg" android:background="@drawable/quiz_question_alarm_normal" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.widget.AutoSizingTextView android:textSize="20.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableLeft="@drawable/ic_question_alarm" android:drawablePadding="8.0dp" android:drawableStart="@drawable/ic_question_alarm" app:autoSizeTextMaxSize="20.0dp" app:layout_centerX="50%" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/button_text_gray" android:id="@id/vote_add" android:background="@drawable/button_round_normal" android:layout_width="0.0px" android:layout_height="42.0dp" android:layout_marginRight="10.0dp" android:text="@string/add" android:layout_weight="1.0" android:layout_marginEnd="10.0dp" />
+    <Button android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/button_text_gray" android:id="@id/vote_view" android:background="@drawable/button_round_normal" android:layout_width="0.0px" android:layout_height="42.0dp" android:text="@string/detail_vote_view_result" android:layout_weight="1.0" />
+    <com.narvii.widget.FontAwesomeView android:textSize="8.0dp" android:textColor="@color/button_text_gray" android:gravity="center" android:id="@id/vote_actions" android:background="@drawable/button_round_normal" android:padding="6.0dp" android:layout_width="46.0dp" android:layout_height="42.0dp" android:layout_marginLeft="10.0dp" android:text="@string/fa_circle_3" android:layout_marginStart="10.0dp" />
+</LinearLayout>

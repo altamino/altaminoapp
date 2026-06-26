@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dp" android:textColor="#ff000000" android:gravity="center" android:paddingLeft="30.0dp" android:paddingTop="15.0dp" android:paddingRight="30.0dp" android:paddingBottom="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/disable_by_amino_team" android:paddingStart="30.0dp" android:paddingEnd="30.0dp" />
+    <View android:background="#ffbdbdbd" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="-10.0dp" android:layout_marginRight="-10.0dp" />
+    <Button android:textSize="17.0dp" android:textColor="#ff4990e2" android:layout_gravity="center" android:id="@id/action" android:background="@drawable/button_rect_transparent" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dp" android:layout_marginRight="-10.0dp" android:layout_marginBottom="-10.0dp" android:text="@android:string/ok" />
+</LinearLayout>

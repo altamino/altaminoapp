@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.tipping.TippingBoxView android:id="@id/tipping_box" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.narvii.livelayer.LiveLayerOnlineBar android:id="@id/member_list" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="20.0dp" app:autoFitAvatarCountMax="5" app:avatarSize="36.0dp" app:showMore="false" />
+    <TextView android:textSize="12.0dp" android:textColor="#ff717379" android:id="@id/tipped_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" />
+</LinearLayout>

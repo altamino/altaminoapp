@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/shadow" android:background="@drawable/scene_quiz_shadow_bg" app:layout_bottom="100%" app:layout_height="card_view.height" app:layout_right="100%" app:layout_width="card_view.width" />
+    <com.github.mmin18.widget.FlexLayout android:id="@id/card_view" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_height="match_parent-@dimen/scene_answer_item_padding_h*2" app:layout_width="match_parent-@dimen/scene_answer_item_padding_h*2">
+        <View android:id="@id/item_bg" android:background="@drawable/scene_quiz_answer_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.widget.NVImageView android:id="@id/shader" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:cornerRadius="@dimen/scene_answer_item_corner_radius" app:showPressedMask="false" />
+        <com.narvii.widget.NVImageView android:id="@id/answer_image" android:layout_width="match_parent" android:scaleType="centerCrop" app:cornerMask="12" app:cornerRadius="@dimen/scene_answer_item_corner_radius" app:defaultDrawable="@drawable/ic_quiz_answer_media_loading" app:layout_bottom="next.top" app:scalePlaceholder="true" />
+        <com.narvii.widget.AutoSizingTextView android:textSize="16.0dp" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/answer_text" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="3" app:autoSizeTextMaxSize="16.0dp" app:autoSizeTextMinSize="3.0dp" app:layout_bottom="100%" app:layout_height="answer_image.gone?parent.height:parent.height*0.4" app:layout_left="5dp" app:layout_right="100%-5dp" />
+    </com.github.mmin18.widget.FlexLayout>
+</com.github.mmin18.widget.FlexLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="10.0dp" android:layout_toRightOf="@id/stub1" android:layout_below="@id/title" android:layout_alignParentRight="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="10.0dp" android:layout_toEndOf="@id/stub1" android:layout_alignParentEnd="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="0.0pt" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0dp" android:textColor="#ff888888" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/disable_indicator" android:background="@drawable/radius_red" android:paddingLeft="4.0dp" android:paddingTop="2.0dp" android:paddingRight="4.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disabled" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" />
+    </FrameLayout>
+    <com.narvii.widget.FontAwesomeView android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/chat_mute_icon" android:visibility="gone" android:layout_width="13.0dp" android:layout_height="13.0dp" android:layout_marginLeft="6.0dp" android:text="@string/fa_bell_slash" android:layout_marginStart="6.0dp" />
+    <com.narvii.widget.NVImageView android:id="@id/organizer_trans_hint_icon" android:visibility="gone" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginLeft="6.0dp" android:src="@drawable/ic_organizer_trans_hint_icon" android:layout_marginStart="6.0dp" />
+</LinearLayout>

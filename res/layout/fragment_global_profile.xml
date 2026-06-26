@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/master_background" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.widget.FullscreenBackgroundView android:id="@id/background" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.list.refresh.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.nested.NVCoordinateLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.narvii.nested.NVAppBarLayout android:id="@id/appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/header_behavior">
+                <include android:id="@id/profile" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_nvscrollFlags="scroll|exitUntilCollapsed" layout="@layout/layout_global_profile_header" />
+            </com.narvii.nested.NVAppBarLayout>
+            <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_behavior="@string/body_behavior">
+                <LinearLayout android:orientation="vertical" android:id="@id/body_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.narvii.widget.NVPagerTabLayout android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="44.0dp" app:custom_tab_width="@dimen/coordinate_tab_width" app:scroll_divide_equal="false" />
+                    <com.narvii.widget.NVViewPager android:id="@id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+            <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:paddingBottom="4.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/alpha_header_behavior">
+                <com.narvii.widget.StatusBarPlaceHolder android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <com.narvii.widget.UserAvatarLayout android:layout_gravity="center" android:id="@id/avatar_top" android:padding="2.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="35.0dp" android:layout_height="35.0dp" narvii:avatarSizeRatio="0.78" narvii:noBadge="true" narvii:showSpeaking="true" narvii:sizeType="mini"
+                  xmlns:narvii="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </com.narvii.nested.NVCoordinateLayout>
+    </com.narvii.list.refresh.SwipeRefreshLayout>
+    <com.github.mmin18.widget.FlexLayout android:id="@id/login_page" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/login_main_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_centerY="40%">
+            <com.narvii.widget.ThumbImageView android:layout_width="80.0dp" android:layout_height="80.0dp" app:cornerRadius="1000.0dp" app:defaultDrawable="@drawable/ic_global_profile_big" />
+            <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/selector_text_amino_green" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/sign_up_and_login" />
+        </LinearLayout>
+    </com.github.mmin18.widget.FlexLayout>
+    <com.github.mmin18.widget.FlexLayout android:id="@id/disabled_user_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_centerY="40%">
+            <com.narvii.widget.ThumbImageView android:id="@id/disabled_user_avatar" android:layout_width="72.0dp" android:layout_height="72.0dp" app:cornerRadius="1000.0dp" app:defaultDrawable="@drawable/user_avatar_placeholder" />
+            <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/disabled_user_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15.0dp" />
+            <TextView android:textSize="10.0dp" android:textColor="#99ffffff" android:gravity="center" android:id="@id/disabled_user_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/disable_content_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90.0dp" android:text="@string/user_disabled_hint" />
+        </LinearLayout>
+    </com.github.mmin18.widget.FlexLayout>
+    <com.github.mmin18.widget.FlexLayout android:id="@id/team_amino_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_centerY="40%">
+            <include android:id="@id/amino_team_user_avatar" android:layout_width="72.0dp" android:layout_height="72.0dp" layout="@layout/user_avatar_layout_large" />
+            <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/amino_team_user_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15.0dp" />
+            <TextView android:textSize="12.0dp" android:textColor="#99ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="30.0dp" android:text="@string/amino_team_profile_hint" />
+            <Button android:textSize="14.0dp" android:textColor="@color/selector_text_create_amino_green" android:id="@id/submit_feedbak" android:background="@drawable/selector_stroke_green_radius_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="42.0dp" android:layout_marginTop="35.0dp" android:layout_marginRight="42.0dp" android:text="@string/submit_feedback" />
+        </LinearLayout>
+    </com.github.mmin18.widget.FlexLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.StatusBarPlaceHolder android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/fake_action_bar" android:layout_width="match_parent" android:layout_height="48.0dp">
+            <FrameLayout android:id="@id/actionbar_left" android:layout_width="48.0dp" android:layout_height="48.0dp">
+                <com.narvii.widget.TintButton android:background="@drawable/actionbar_left_btn" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_back_mirror" android:minWidth="46.0dp" android:minHeight="30.0dp" />
+            </FrameLayout>
+            <View android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <include android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" layout="@layout/wallet_balance_account_view_global_profile" />
+            <FrameLayout android:id="@id/share_view" android:background="@drawable/actionbar_left_btn" android:layout_width="56.0dp" android:layout_height="48.0dp">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_share" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/more_view" android:background="@drawable/actionbar_left_btn" android:layout_width="56.0dp" android:layout_height="48.0dp">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/actionbar_ops" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/settings_view" android:background="@drawable/actionbar_left_btn" android:layout_width="56.0dp" android:layout_height="48.0dp">
+                <ImageView android:layout_gravity="center" android:id="@id/settings_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_setting" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

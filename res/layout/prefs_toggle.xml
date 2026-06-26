@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeRelativeLayout android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/prefs_default_size" app:nv_dark_background="#1affffff"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/prefs_left_margin" android:layout_marginRight="80.0dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/prefs_left_margin" android:layout_marginEnd="80.0dp">
+        <com.narvii.app.theme.view.NVThemeTextView android:textSize="16.0dp" android:textColor="#ff4a4a4a" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+        <com.narvii.app.theme.view.NVThemeTextView android:textSize="14.0dp" android:textColor="@color/pref_desc_default_color" android:id="@id/desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/toggle_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true">
+        <CheckBox android:id="@id/check_box" android:layout_width="52.0dp" android:layout_height="30.0dp" android:button="@drawable/switch_bg" />
+    </FrameLayout>
+</com.narvii.app.theme.view.NVThemeRelativeLayout>

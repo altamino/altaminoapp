@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/chat_bg_frame" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:tag="resizeTarget" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.list.overlay.OverlayListPlaceholder android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.narvii.widget.NVScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/root" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:background="@drawable/chat_cover_new_bg" android:layout_width="match_parent" android:layout_height="172.0dp" android:layout_marginTop="20.0dp">
+                    <com.narvii.widget.ThumbImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" narvii:imageType="chat-cover" />
+                    <TextView android:textSize="12.0dp" android:textColor="#fff2f2f2" android:layout_gravity="center" android:id="@id/cover_image_hint" android:background="@drawable/bg_rect_black_10_corner" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_thread_change_cover" />
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/add_cover_image_hint" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center_horizontal" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginBottom="10.0dp" android:src="@drawable/ic_post_photo_add" />
+                        <TextView android:textSize="14.0dp" android:textColor="#fff2f2f2" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_thread_cover" />
+                    </LinearLayout>
+                </FrameLayout>
+                <EditText android:textSize="16.0dp" android:textColor="#fff2f2f2" android:textColorHint="#ccf2f2f2" android:gravity="start|center" android:id="@id/title" android:background="@drawable/rtc_post_bg_round" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_marginTop="32.0dp" android:hint="@string/post_title" android:singleLine="true" android:inputType="textCapSentences" android:textCursorDrawable="@drawable/account_edit_cursor_white" />
+                <com.narvii.widget.EditTextIMG android:textSize="16.0dp" android:textColor="#fff2f2f2" android:textColorHint="#ccf2f2f2" android:gravity="start|top" android:id="@id/content" android:background="@drawable/rtc_post_bg_round" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:hint="@string/welcome_message_hint" android:minLines="6" android:maxLength="65535" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/account_edit_cursor_white" />
+                <FrameLayout android:id="@id/topic_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="10.0dp">
+                    <TextView android:textSize="20.0dp" android:textColor="#80ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="#" />
+                    <com.narvii.util.layouts.NVFlowLayout android:id="@id/topic_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginStart="16.0dp" narvii:flow_gravity="-1" />
+                </FrameLayout>
+                <com.narvii.chat.ChatBackgroundPickerRecycler android:id="@id/chat_background_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:overScrollMode="never" />
+                <View android:background="#33ffffff" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="14.0dp" />
+                <TextView android:textSize="14.0dp" android:textColor="#ffe5e5e5" android:gravity="center_horizontal" android:id="@id/chat_show_guideline" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dp" android:text="@string/post_thread_guidelines" />
+                <View android:layout_width="match_parent" android:layout_height="80.0dp" />
+            </LinearLayout>
+        </com.narvii.widget.NVScrollView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/share_item_border" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:layout_width="match_parent" android:layout_height="63.0dp" android:paddingStart="40.0dp" android:paddingEnd="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/share_email" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <ImageView android:background="@drawable/share_email" android:padding="8.0dp" android:layout_width="@dimen/detail_share_button_size" android:layout_height="@dimen/detail_share_button_size" android:src="@drawable/share_email_icon" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/share_sms" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <ImageView android:background="@drawable/share_sms" android:padding="8.0dp" android:layout_width="@dimen/detail_share_button_size" android:layout_height="@dimen/detail_share_button_size" android:src="@drawable/share_sms_icon" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/share_clipboard" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <ImageView android:background="@drawable/share_clipboard" android:padding="8.0dp" android:layout_width="@dimen/detail_share_button_size" android:layout_height="@dimen/detail_share_button_size" android:src="@drawable/share_clipboard_icon" android:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/share_others" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <ImageView android:background="@drawable/share_others" android:padding="8.0dp" android:layout_width="@dimen/detail_share_button_size" android:layout_height="@dimen/detail_share_button_size" android:src="@drawable/share_others_icon" android:scaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>

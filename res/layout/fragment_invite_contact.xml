@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.SearchBar android:id="@id/search" android:background="@color/color_default" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16.0dp" android:textColor="#ff222222" android:textColorHint="@color/hint_color" android:id="@id/search_text" android:background="@drawable/search_bg" android:paddingLeft="36.0dp" android:paddingRight="32.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_margin="8.0dp" android:hint="@string/search" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch" android:paddingStart="36.0dp" android:paddingEnd="32.0dp" />
+        <ImageView android:gravity="center" android:padding="8.0dp" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@drawable/icon_search" android:layout_alignLeft="@id/search_text" android:layout_centerVertical="true" android:layout_alignStart="@id/search_text" />
+        <com.narvii.widget.FontAwesomeView android:textSize="16.0dp" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/search_clear" android:padding="8.0dp" android:layout_width="32.0dp" android:layout_height="32.0dp" android:text="@string/fa_times_circle" android:layout_alignRight="@id/search_text" android:layout_centerVertical="true" android:layout_alignEnd="@id/search_text" />
+    </com.narvii.widget.SearchBar>
+    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/final_step" android:background="#ff0076ff" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    <include layout="@layout/item_invite_contact_invitee" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/list_layout" />
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/send" android:background="@drawable/radius_green" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" />
+    </FrameLayout>
+</LinearLayout>

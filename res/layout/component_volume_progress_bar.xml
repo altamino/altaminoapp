@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_volume" android:layout_width="20.0dp" android:layout_height="16.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/ic_volume_high_white" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_alignParentStart="true" />
+    <TextView android:textSize="10.0dp" android:textColor="#88ffffff" android:gravity="center" android:id="@id/volume_progress_text" android:layout_width="25.0dp" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+    <SeekBar android:id="@id/volume_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="6.0dp" android:progressDrawable="@drawable/volume_bar_progress_bg" android:minHeight="6.0dp" android:thumb="@drawable/ic_volume_seekbar_thumb" android:layout_toLeftOf="@id/volume_progress_text" android:layout_toRightOf="@id/icon_volume" android:layout_centerVertical="true" android:layout_toStartOf="@id/volume_progress_text" android:layout_toEndOf="@id/icon_volume" />
+</merge>

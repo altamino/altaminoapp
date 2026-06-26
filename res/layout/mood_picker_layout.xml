@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/check_window_change_layout" />
+    <com.narvii.widget.NVListView android:id="@id/list" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/action_bar_overlay" android:background="@color/dark_theme_overlay" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="?android:actionBarSize" android:text="@string/mood_picker_title" />
+    </FrameLayout>
+    <com.narvii.list.ListHoverFrame android:gravity="center" android:id="@id/hover_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

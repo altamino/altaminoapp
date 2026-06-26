@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:paddingLeft="3.0dp" android:paddingBottom="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/image" narvii:layout_height="this.width*1.48" narvii:layout_left="3dp" narvii:layout_right="100%-6dp" narvii:layout_top="4dp" />
+    <com.narvii.widget.SpinningView android:layout_width="@dimen/spin_middle_size" android:layout_height="@dimen/spin_middle_size" narvii:layout_centerX="image.centerX" narvii:layout_centerY="image.centerY" narvii:spinColor="#ccffffff" narvii:spinSize="@dimen/spin_middle_size" />
+</com.github.mmin18.widget.FlexLayout>

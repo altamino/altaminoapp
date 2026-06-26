@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/blur_bg" android:background="#74000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/action_sheet_empty" android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/action_sheet_items" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/action_sheet_normal" android:gravity="center" android:id="@id/action_sheet_cancel" android:background="@drawable/button_action_sheet_round" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginTop="10.0dp" android:text="@string/cancel" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

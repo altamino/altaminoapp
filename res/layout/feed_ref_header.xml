@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:id="@id/avatar" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginLeft="4.0dp" android:layout_marginTop="4.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="4.0dp" android:layout_alignParentStart="true" style="@style/AvatarImageView" />
+    <com.narvii.widget.NicknameView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/text_clickable" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="4.0dp" android:layout_toRightOf="@id/avatar" android:layout_alignParentTop="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="4.0dp" android:layout_toEndOf="@id/avatar" narvii:hideRole="true" />
+</merge>

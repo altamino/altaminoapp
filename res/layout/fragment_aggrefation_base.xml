@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0pt" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/left_nav_container" android:layout_width="69.0dp" android:layout_height="match_parent">
+            <com.narvii.widget.NVListView android:id="@id/community_list" android:layout_width="69.0dp" android:layout_height="match_parent" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/content_frame" android:background="#11ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

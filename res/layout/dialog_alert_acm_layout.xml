@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:id="@id/root" android:background="#bb000000" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_listview_round" android:clipChildren="false" android:clipToPadding="false" narvii:layout_centerX="50%" narvii:layout_centerY="50%" narvii:layout_height="wrap_content" narvii:layout_width="parent.width*0.8">
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/alert_dialog_title" android:paddingLeft="30.0dp" android:paddingTop="15.0dp" android:paddingRight="30.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:paddingStart="30.0dp" android:paddingEnd="30.0dp" />
+        <TextView android:textSize="16.0dp" android:textColor="#ff363636" android:gravity="center" android:id="@id/alert_dialog_message" android:paddingLeft="15.0dp" android:paddingTop="20.0dp" android:paddingRight="10.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="20" android:paddingStart="15.0dp" android:paddingEnd="10.0dp" />
+        <include layout="@layout/list_divider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/alert_dialog_buttons" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" />
+    </LinearLayout>
+</com.github.mmin18.widget.FlexLayout>

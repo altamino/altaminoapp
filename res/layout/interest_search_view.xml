@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/search_layout" android:background="@android:color/transparent" android:paddingBottom="25.0dp" android:layout_width="match_parent" android:layout_height="52.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center_vertical" android:background="@drawable/bg_interest_search_view" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+    <com.narvii.widget.TintButton android:gravity="center" android:layout_gravity="start|center" android:id="@id/search_button" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="20.0dp" android:src="@drawable/ic_searchr" android:scaleType="centerInside" android:layout_marginStart="20.0dp" app:tintColor="#ffd6d6d6" />
+    <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search" android:singleLine="true" android:textAlignment="center" />
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/bubble_setting_item_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:id="@id/item_root" android:background="@drawable/selector_bubble_setting_item" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.github.mmin18.widget.FlexLayout android:id="@id/item_container" android:clipChildren="false" app:layout_height="max(this.width*0.869,80dp)" app:layout_top="0" app:layout_width="100%">
+            <com.narvii.widget.NVImageView android:id="@id/avatar_frame_preview" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" app:layout_centerX="50%" app:layout_centerY="50%" />
+            <com.github.mmin18.widget.FlexLayout android:id="@id/checked_indicator" android:background="@drawable/avatar_frame_checked_bg" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:padding="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_bubble_edit_checked" app:layout_centerX="100%-4dp" app:layout_centerY="4dp" />
+            </com.github.mmin18.widget.FlexLayout>
+            <View android:id="@id/membership_lock_bg" android:background="@drawable/selector_membership_lock" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ImageView android:id="@id/membership_lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_membership_lock" app:layout_right="100%" app:layout_top="0" />
+        </com.github.mmin18.widget.FlexLayout>
+    </com.github.mmin18.widget.FlexLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="2.0dp" />
+    <RelativeLayout android:id="@id/more_feature_label" android:background="@drawable/button_rect_transparent" android:paddingLeft="8.0dp" android:paddingTop="8.0dp" android:paddingRight="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8.0dp" android:paddingEnd="8.0dp">
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/more_feature_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_featured_post" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <com.narvii.widget.TintButton android:padding="6.0dp" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/see_all_mirror" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:tintColor="#ff000000" />
+    </RelativeLayout>
+    <com.narvii.widget.HorizontalRecyclerView android:id="@id/more_feature_content" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

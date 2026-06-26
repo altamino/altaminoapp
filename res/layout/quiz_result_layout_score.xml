@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout app:layout_height="this.width*320/375" app:layout_width="100%">
+        <ImageView android:id="@id/quiz_score_background" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_quiz_result_score_background_0" android:scaleType="fitCenter" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dp">
+            <com.narvii.widget.Color3DTextView android:textSize="64.0dp" android:textStyle="bold" android:gravity="center" android:id="@id/your_score" android:layout_width="wrap_content" android:layout_height="wrap_content" app:shadowColor="#ff7d67ff" app:shadowDyDimension="3.0dp" />
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_score" />
+            <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/quiz_score_detail_background" android:scaleType="fitCenter" app:layout_height="parent.width*90/375" app:layout_width="100%" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" app:layout_bottom="77%" app:layout_centerX="50%" app:layout_top="20%" app:layout_width="65%">
+                    <com.narvii.widget.AutoSizingTextView android:textSize="23.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/beat_title" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="2" android:textAlignment="center" app:autoSizeTextMaxSize="23.0dp" app:autoSizeTextMinSize="1.0dp" />
+                </LinearLayout>
+            </com.github.mmin18.widget.FlexLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="6.5dp" android:layout_height="6.5dp" android:layout_marginRight="3.5dp" android:src="@drawable/ic_quiz_result_score_summary_hint_star_left" android:layout_marginEnd="3.5dp" />
+                <TextView android:textSize="12.0dp" android:textColor="#b2ffffff" android:gravity="center" android:id="@id/your_score_summary_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_width="6.5dp" android:layout_height="6.5dp" android:layout_marginLeft="3.5dp" android:src="@drawable/ic_quiz_result_score_summary_hint_star_right" android:layout_marginStart="3.5dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</com.github.mmin18.widget.FlexLayout>

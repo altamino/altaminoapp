@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:id="@id/root" android:background="#bb000000" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" narvii:layout_centerX="50%" narvii:layout_centerY="50%" narvii:layout_height="wrap_content" narvii:layout_width="parent.width*0.75">
+        <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.github.mmin18.widget.FlexLayout android:id="@id/rl_create_new" narvii:layout_height="this.width * 1.36" narvii:layout_width="(parent.width-10dp)/2">
+                <View android:id="@id/item_bg" android:background="@drawable/bg_dialog_story_creation" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <View android:id="@id/item_cover_bg" android:background="@drawable/bg_dialog_create_story" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <com.github.mmin18.widget.FlexLayout android:background="@drawable/bg_dialog_create_story_inner" narvii:layout_centerX="parent.width*0.5" narvii:layout_centerY="parent.height*0.41" narvii:layout_height="this.width * 1.25" narvii:layout_width="parent.width*0.45">
+                    <ImageView android:src="@drawable/ic_story_add_scene_list" narvii:layout_centerX="parent.width*0.5" narvii:layout_centerY="parent.height*0.5" narvii:layout_height="this.width" narvii:layout_width="parent.width*0.43" />
+                </com.github.mmin18.widget.FlexLayout>
+                <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_story" narvii:layout_centerX="parent.width*0.5" narvii:layout_centerY="parent.height*0.79" />
+            </com.github.mmin18.widget.FlexLayout>
+            <com.github.mmin18.widget.FlexLayout android:id="@id/rl_view_drafts" android:background="@drawable/bg_dialog_story_creation" narvii:layout_height="this.width * 1.36" narvii:layout_right="parent.width" narvii:layout_width="(parent.width-10dp)/2">
+                <View android:background="@drawable/bg_rect_black_6_corner" android:alpha="0.08" narvii:layout_height="this.width * 1.36" narvii:layout_right="iv_draft_cover.right+11dp" narvii:layout_top="iv_draft_cover.top+20dp" narvii:layout_width="parent.width*0.31" />
+                <View android:background="@drawable/bg_rect_black_7_corner" android:alpha="0.08" narvii:layout_height="this.width * 1.29" narvii:layout_right="iv_draft_cover.right+6dp" narvii:layout_top="iv_draft_cover.top+10dp" narvii:layout_width="parent.width*0.38" />
+                <com.narvii.widget.NVImageView android:id="@id/iv_draft_cover" android:visibility="invisible" narvii:cornerRadius="8.0dp" narvii:layout_centerX="parent.width*0.5" narvii:layout_centerY="parent.height*0.41" narvii:layout_height="this.width * 1.25" narvii:layout_width="parent.width*0.45" />
+                <com.github.mmin18.widget.FlexLayout android:id="@id/draft_cover_default" narvii:layout_centerX="parent.width*0.5" narvii:layout_centerY="parent.height*0.41" narvii:layout_height="this.width * 1.25" narvii:layout_width="parent.width*0.45">
+                    <ImageView android:src="@drawable/compose_button_story" narvii:layout_centerX="parent.width*0.5" narvii:layout_centerY="parent.height*0.5" narvii:layout_height="this.width*1.45" narvii:layout_width="parent.width*0.45" />
+                </com.github.mmin18.widget.FlexLayout>
+                <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ff555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_drafts" narvii:layout_centerX="parent.width*0.5" narvii:layout_centerY="parent.height*0.79" />
+            </com.github.mmin18.widget.FlexLayout>
+        </com.github.mmin18.widget.FlexLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_delete" android:layout_width="35.0dp" android:layout_height="35.0dp" android:layout_marginTop="25.0dp" android:src="@drawable/ic_dialog_close_circle" />
+    </LinearLayout>
+</com.github.mmin18.widget.FlexLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/more_avatar_frame" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/bubble_setting_item_padding_vertical" android:paddingBottom="@dimen/bubble_setting_item_padding_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bubble_setting_item_padding_horizontal" android:paddingEnd="@dimen/bubble_setting_item_padding_horizontal">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:background="@drawable/selector_bg_more_black" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_monetization_store_avatar_frame" android:scaleType="fitCenter" />
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="@string/more_profile_frames" android:layout_marginStart="6.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

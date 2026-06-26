@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.StatusBarPlaceHolder android:background="#ff2da4e7" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.narvii.nested.FakeActionBar android:id="@id/fake_action_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.narvii.nested.NVCoordinateLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.design.widget.AppBarLayout android:id="@id/appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.nested.NVCollapsingFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                    <include layout="@layout/wallet_header_recycler" />
+                </com.narvii.nested.NVCollapsingFrameLayout>
+            </android.support.design.widget.AppBarLayout>
+            <com.narvii.app.theme.view.NVThemeFrameLayout android:id="@id/recycle_frame" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior" app:nv_dark_background="@color/color_default_primary">
+                <com.narvii.widget.recycleview.NVRecyclerView android:id="@id/recycle_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <com.narvii.paging.state.PageStatusView android:id="@id/status_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.narvii.app.theme.view.NVThemeFrameLayout>
+        </com.narvii.nested.NVCoordinateLayout>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

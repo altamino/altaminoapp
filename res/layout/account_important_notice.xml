@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.RealtimeBlurView android:layout_width="match_parent" android:layout_height="@dimen/bottom_drawer_notice_height" app:realtimeBlurRadius="20.0dp" app:realtimeOverlayColor="#fff49f24" />
+    <RelativeLayout android:background="@drawable/button_rect_transparent_0x2000" android:paddingLeft="6.0dp" android:paddingTop="8.0dp" android:paddingRight="6.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="6.0dp" android:paddingEnd="6.0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <com.narvii.widget.FontAwesomeView android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/oval_orange" android:padding="4.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:text="@string/ion_alert" />
+            <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="center_vertical" android:paddingLeft="10.0dp" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/important_notice" android:singleLine="true" android:layout_weight="1.0" android:paddingStart="10.0dp" />
+            <ImageView android:layout_gravity="end" android:id="@id/hide_button" android:padding="10.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_chevron_down" android:scaleType="centerInside" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="start|center" android:paddingRight="30.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="80.0dp" android:text="@string/new_notice" android:maxLines="3" android:layout_below="@id/title_layout" android:layout_centerInParent="true" android:layout_centerVertical="true" android:paddingEnd="30.0dp" android:layout_marginStart="80.0dp" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tooltip_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/tooltip_margin_h" android:layout_marginRight="@dimen/tooltip_margin_h"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.story.detail.StoryUserHintBubble android:layout_gravity="left" android:id="@id/popup_bubble" android:tag="tooltip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:highLightPadding="5.0dp" app:highlightStrokeColor="#b2ffffff" app:highlightStrokeWidth="2.0dp" app:popupBubbleColor="#ffffc700" app:popupBubblePaddingIncludeRadius="false" app:popupBubbleRadius="6.0dp" app:popupBubbleStrokeColor="#ffffffff" app:popupBubbleStrokeWidth="1.5dp" app:specialRadius="58.0dp">
+        <TextView android:textSize="15.0dp" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="21.0dp" android:layout_marginBottom="8.0dp" android:layout_weight="1.0" android:layout_marginStart="14.0dp" android:layout_marginEnd="21.0dp" style="@style/TooltipText" />
+    </com.narvii.story.detail.StoryUserHintBubble>
+</FrameLayout>

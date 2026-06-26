@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0dp" android:textColor="#ff0f86ff" android:gravity="center" android:background="#ffffffff" android:paddingLeft="32.0dp" android:paddingTop="5.0dp" android:paddingRight="32.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/manage_my_profile_frame"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

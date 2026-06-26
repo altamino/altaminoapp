@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="3.0" />
+    <FrameLayout android:id="@id/indicator_click_area" android:layout_width="20.0dp" android:layout_height="wrap_content">
+        <com.narvii.widget.TintButton android:id="@id/indicator_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_drawer_indicator_mirror" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_drawer_indicator_top" />
+    </FrameLayout>
+    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
+</LinearLayout>

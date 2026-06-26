@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.monetization.sticker.collection.HeaderLayout android:id="@id/detail_header" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/banner" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:defaultDrawable="@color/sticker_header_color" app:errorDrawable="@color/sticker_header_color" app:loadingDrawable="@color/sticker_collection_cover_loading" />
+    <View android:id="@id/gradient" android:background="@drawable/store_banner_bg_gradient" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.github.mmin18.widget.RealtimeBlurView android:id="@id/blur" android:layout_width="match_parent" android:layout_height="match_parent" app:realtimeBlurMaxFPS="5.0" app:realtimeBlurRadius="20.0dp" app:realtimeOverlayColor="#33000000" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/icon_bg" android:background="@drawable/sticker_collection_icon_bg" android:layout_width="80.0dp" android:layout_height="80.0dp" />
+    <com.narvii.monetization.sticker.widget.StickerImageView android:layout_gravity="center" android:id="@id/collection_icon" android:layout_width="80.0dp" android:layout_height="80.0dp" />
+</com.narvii.monetization.sticker.collection.HeaderLayout>

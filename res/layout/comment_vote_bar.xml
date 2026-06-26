@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/comment_votes" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.FontAwesomeView android:textSize="20.0dp" android:textColor="#ffbbbbbb" android:gravity="center" android:id="@id/vote_up" android:layout_width="match_parent" android:layout_height="24.0dp" android:text="@string/ion_chevron_up" />
+    <com.narvii.widget.AutoSizingTextView android:textSize="20.0dp" android:textColor="#ff888888" android:gravity="center" android:id="@id/vote_count" android:layout_width="match_parent" android:layout_height="28.0dp" android:layout_marginTop="-2.0dp" android:layout_marginBottom="-2.0dp" android:maxLines="1" narvii:autoSizeTextMaxSize="20.0dp" />
+    <com.narvii.widget.SpinningView android:id="@id/vote_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="24.0dp" narvii:spinStyle="2" />
+    <com.narvii.widget.FontAwesomeView android:textSize="20.0dp" android:textColor="#ffbbbbbb" android:gravity="center" android:id="@id/vote_down" android:layout_width="match_parent" android:layout_height="24.0dp" android:text="@string/ion_chevron_down" />
+</LinearLayout>

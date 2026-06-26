@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/bottom_drawer_suggest_community_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.RealtimeBlurView android:layout_width="match_parent" android:layout_height="@dimen/bottom_drawer_suggest_community_height" app:realtimeBlurRadius="20.0dp" app:realtimeOverlayColor="@color/bottom_toast_bg" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="@dimen/bottom_drawer_suggest_community_height">
+        <RelativeLayout android:gravity="center_vertical" android:paddingLeft="8.0dp" android:paddingTop="8.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="46.0dp" android:paddingStart="8.0dp">
+            <ImageView android:id="@id/hide_button" android:paddingTop="2.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="14.0dp" android:layout_marginRight="14.0dp" android:src="@drawable/ic_chevron_down" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_alignParentEnd="true" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/hide_button" android:layout_toStartOf="@id/hide_button">
+                <View android:textSize="16.0dp" android:background="@drawable/search_bar_bg_dark" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/search_btn_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+                    <com.narvii.widget.FontAwesomeView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ic_search" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="8.0dp" android:text="@string/ion_search" android:layout_marginStart="8.0dp" />
+                    <TextView android:textSize="14.0dp" android:textColor="#aaffffff" android:ellipsize="end" android:layout_gravity="center_vertical" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="@string/join_more_community" android:singleLine="true" android:layout_marginStart="6.0dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/suggest_communities_list_layout" android:paddingLeft="4.0dp" android:paddingTop="4.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="4.0dp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ItemCellWithPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/item_notice_community_info" />
+    <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+        <com.narvii.widget.NVImageView android:id="@id/indicator" android:layout_width="24.0dp" android:layout_height="24.0dp" app:showPressedMask="false" />
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginStart="8.0dp">
+            <com.narvii.app.theme.view.NVThemeTextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/notice_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:nv_dark_textColor="#ffffffff" />
+            <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:textColor="#ff000000" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" app:nv_dark_textColor="#ffffffff" />
+            <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/content" android:paddingLeft="0.0dp" android:paddingRight="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:paddingStart="0.0dp" android:paddingEnd="8.0dp" app:nv_dark_textColor="#ffffffff" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/notice_operator" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+                <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/from" app:nv_dark_textColor="#ffffffff" />
+                <include android:layout_gravity="center_vertical" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" layout="@layout/user_avatar_layout_mini_nobadge" />
+                <com.narvii.widget.NicknameView android:textSize="12.0dp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/nickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/notice_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginRight="20.0dp" android:layout_marginEnd="20.0dp" />
+</LinearLayout>

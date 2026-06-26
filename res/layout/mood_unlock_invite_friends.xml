@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/message_layout" android:background="@drawable/button_rect_transparent" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.narvii.widget.EmojioneView android:layout_width="45.0dp" android:layout_height="45.0dp" app:emojiShortName="speech_balloon" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/action_sheet_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/share_sms" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="#ffbdbdbd" android:layout_width="1.0dp" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/email_layout" android:background="@drawable/button_rect_transparent" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.narvii.widget.EmojioneView android:layout_width="45.0dp" android:layout_height="45.0dp" app:emojiShortName="incoming_envelope" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/action_sheet_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/share_email" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/prefs_default_size" app:nv_dark_background="#1affffff"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/prefs_left_margin" android:layout_weight="1.0" android:layout_marginStart="@dimen/prefs_left_margin">
+        <com.narvii.app.theme.view.NVThemeTextView android:textSize="16.0dp" android:textColor="#ff4a4a4a" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_wallet" android:singleLine="true" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+    </LinearLayout>
+    <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="12.0dp" android:src="@drawable/amino_coin_small" android:scaleType="centerInside" android:layout_marginStart="12.0dp" />
+    <com.narvii.app.theme.view.NVThemeTextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginRight="10.0dp" android:singleLine="true" android:layout_marginStart="3.0dp" android:layout_marginEnd="10.0dp" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+    <com.narvii.app.theme.view.NVThemeTintButton android:gravity="center" android:id="@id/chevron_right" android:layout_width="10.0dp" android:layout_height="15.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/chevron_right_mirror" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" app:nv_dark_tintColor="@color/dark_theme_chevron_right" />
+</com.narvii.app.theme.view.NVThemeLinearLayout>

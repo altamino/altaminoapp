@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff18034a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" app:layout_centerY="50%" app:layout_height="min(this.width*474/375,parent.height)">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/image_ip_welcome" android:scaleType="centerCrop" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <TextView android:textSize="30.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/welcome" />
+                <TextView android:textSize="12.0dp" android:textColor="#b2ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/interest_picker_welcome_hint" />
+            </LinearLayout>
+            <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <Button android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/account_text" android:id="@id/start" android:background="@drawable/selector_more_aminos" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="16.0dp" android:text="@string/start" android:shadowColor="#22000000" android:shadowDy="0.5" android:shadowRadius="2.0" app:layout_left="14%" app:layout_right="86%" />
+            </com.github.mmin18.widget.FlexLayout>
+        </RelativeLayout>
+    </com.github.mmin18.widget.FlexLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.StatusBarPlaceHolder android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0dp" android:textColor="#80ffffff" android:gravity="center" android:layout_gravity="end" android:id="@id/skip" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="48.0dp" android:text="@string/skip" />
+    </LinearLayout>
+</FrameLayout>

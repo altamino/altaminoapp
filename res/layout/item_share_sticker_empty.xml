@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/main" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.TintButton android:id="@id/empty_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_retry" app:tintColor="#ffcdcfd3" />
+        <TextView android:textSize="17.0dp" android:textColor="#ff494f54" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:text="@string/share_sticker_empty" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/selector_sticker_empty" android:id="@id/create_new_sticker" android:background="@drawable/selector_share_sticker_empty_add_new" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/create_a_new_sticker_pack" android:paddingStart="30.0dp" android:paddingEnd="30.0dp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.story.widgets.DispatchEventFrameLayout android:id="@id/parent_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.StatusBarPlaceHolder android:id="@id/status_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/share" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginRight="18.0dp" android:src="@drawable/share_community" android:layout_below="@id/status_bar" android:layout_alignParentRight="true" android:layout_marginEnd="18.0dp" android:layout_alignParentEnd="true" />
+        <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5.0dp" android:layout_above="@id/story_replay_next_view" android:layout_below="@id/share" layout="@layout/list_layout" />
+        <com.narvii.story.widgets.StoryReplayNextView android:id="@id/story_replay_next_view" android:layout_width="match_parent" android:layout_height="82.0dp" android:layout_alignParentBottom="true" />
+        <include android:id="@id/hover_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/share" layout="@layout/view_interestial_page_comment" />
+    </RelativeLayout>
+</com.narvii.story.widgets.DispatchEventFrameLayout>

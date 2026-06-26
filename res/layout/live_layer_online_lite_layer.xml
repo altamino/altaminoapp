@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/lite_layer" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/live_layer_fold_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.AutoSizingTextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/online_count" android:background="@drawable/online_bar_lite_layer_count_bg" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="40.0dp" android:layout_height="16.0dp" android:layout_marginLeft="-5.0dp" android:layout_marginTop="22.0dp" android:maxLines="1" android:layout_marginStart="-5.0dp" app:autoSizeTextMaxSize="12.0dp" />
+    <View android:id="@id/green_oval" android:background="@drawable/oval_green" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginLeft="22.0dp" android:layout_marginStart="22.0dp" />
+</FrameLayout>

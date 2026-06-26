@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/join_community_container" android:paddingLeft="@dimen/community_detail_join_margin" android:paddingTop="4.0dp" android:paddingRight="@dimen/community_detail_join_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/community_detail_join_margin" android:paddingEnd="@dimen/community_detail_join_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.JoinCommunityProgressLayout android:layout_gravity="center" android:id="@id/join_community" android:layout_width="match_parent" android:layout_height="50.0dp" app:progress_top_offset="@dimen/community_join_button_lift" app:pushButtonColor="#ff38d89c" app:pushButtonColorDark="#ff30c08a" app:pushButtonLift="@dimen/community_join_button_lift">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.narvii.widget.TintButton android:layout_gravity="start|center" android:id="@id/join_community_lock" android:visibility="invisible" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginLeft="20.0dp" android:src="@drawable/locked" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_alignParentStart="true" app:tintColor="#ffffffff" />
+            <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/join" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/join_the_community" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </com.narvii.widget.JoinCommunityProgressLayout>
+</LinearLayout>

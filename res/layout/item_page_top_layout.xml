@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_content_container" android:background="@color/draw_host_overlay_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/cur_page_indicator" android:visibility="invisible" android:layout_width="3.0dp" android:layout_height="match_parent" />
+        <LinearLayout android:paddingLeft="@dimen/draw_host_padding_horizontal" android:paddingTop="8.0dp" android:paddingRight="@dimen/draw_host_padding_horizontal" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/draw_host_padding_horizontal" android:paddingEnd="@dimen/draw_host_padding_horizontal">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/page_item_icon" android:padding="6.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:scaleType="centerInside" />
+            <TextView android:textSize="21.0dp" android:textStyle="bold" android:textColor="@color/selector_color_white" android:ellipsize="end" android:id="@id/page_item_name" android:padding="6.0dp" android:layout_width="0.0pt" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/chat_badge_text_size" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="end|center" android:id="@id/page_item_badge" android:background="@drawable/badge_red_roud" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="24.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/divider" android:background="@color/draw_host_overlay_color" android:layout_width="@dimen/draw_host_padding_horizontal" android:layout_height="0.6dp" />
+        <View android:background="#33ffffff" android:layout_width="match_parent" android:layout_height="0.6dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <ViewStub android:id="@id/comment_votes" android:visibility="gone" android:layout="@layout/comment_vote_bar" android:layout_width="@dimen/comment_votes_width" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/comment_like_width" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="@dimen/comment_like_width" android:layout_height="@dimen/comment_like_width">
+                <com.narvii.widget.FontAwesomeView android:textSize="15.0dp" android:textColor="@color/datetime" android:layout_gravity="center" android:id="@id/vote_heart2" android:padding="10.0dp" android:layout_width="@dimen/comment_like_width" android:layout_height="@dimen/comment_like_width" android:text="@string/fa_heart" />
+                <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/vote_progress2" android:visibility="invisible" android:layout_width="@dimen/comment_like_width" android:layout_height="@dimen/comment_like_width" narvii:spinSize="20.0dp" narvii:spinStyle="2" />
+            </FrameLayout>
+            <com.narvii.widget.AutoSizingTextView android:textSize="11.0dp" android:textStyle="bold" android:textColor="@color/datetime" android:gravity="center" android:id="@id/vote_count2" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="@dimen/comment_like_width" android:layout_height="wrap_content" android:layout_marginTop="-10.0dp" android:maxLines="1" android:singleLine="true" narvii:autoSizeTextMaxSize="11.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.narvii.widget.NicknameView android:textSize="13.0dp" android:textStyle="bold" android:textColor="@color/text_clickable" android:id="@id/nickname" android:background="@drawable/button_round_transparent_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:singleLine="true" android:layout_toRightOf="@id/user_avatar_layout" android:layout_alignTop="@id/user_avatar_layout" android:layout_alignWithParentIfMissing="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:layout_toEndOf="@id/user_avatar_layout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_toLeftOf="@id/right_layout" android:layout_toRightOf="@id/user_avatar_layout" android:layout_below="@id/nickname" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:layout_toStartOf="@id/right_layout" android:layout_toEndOf="@id/user_avatar_layout">
+        <com.narvii.widget.ExpandTextView android:textSize="13.0dp" android:textColor="#ff555555" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="6" narvii:expandId="@id/expand" />
+        <FrameLayout android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.narvii.monetization.sticker.widget.CommentStickerImageVIew android:id="@id/sticker_image" android:visibility="gone" android:layout_width="@dimen/comment_sticker_default_size" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" narvii:defaultDrawable="@color/sticker_placeholder_darker" />
+            <com.narvii.widget.EmojioneView android:id="@id/emoji_sticker" android:visibility="gone" android:layout_width="@dimen/comment_sticker_default_size" android:layout_height="@dimen/comment_sticker_default_size" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dp">
+            <TextView android:textSize="11.0dp" android:textColor="@color/datetime" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="11.0dp" android:textStyle="bold" android:textColor="@color/datetime" android:id="@id/comment_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginStart="8.0dp" />
+            <View android:layout_width="0.0pt" android:layout_height="1.0dp" android:layout_weight="1.0" />
+            <FrameLayout android:id="@id/expand" android:visibility="invisible" android:layout_width="48.0dp" android:layout_height="wrap_content">
+                <View android:layout_gravity="center" android:background="@drawable/button_round_expand" android:duplicateParentState="true" android:layout_width="32.0dp" android:layout_height="12.0dp" />
+                <com.narvii.widget.FontAwesomeView android:textColor="#ffeeeeee" android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="28.0dp" android:layout_height="28.0dp" android:text="@string/fa_circle_3" />
+            </FrameLayout>
+        </LinearLayout>
+        <com.narvii.comment.list.CommentImagesLayout android:id="@id/comment_images" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="4.0dp">
+            <com.narvii.widget.ThumbImageView android:id="@id/image1" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginRight="2.0dp" android:layout_marginEnd="2.0dp" narvii:defaultDrawable="@color/placeholder" />
+            <com.narvii.widget.ThumbImageView android:id="@id/image2" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginRight="2.0dp" android:layout_marginEnd="2.0dp" narvii:defaultDrawable="@color/placeholder" />
+            <com.narvii.widget.ThumbImageView android:id="@id/image3" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginRight="2.0dp" android:layout_marginEnd="2.0dp" narvii:defaultDrawable="@color/placeholder" />
+            <com.narvii.widget.ThumbImageView android:id="@id/image4" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginRight="2.0dp" android:layout_marginEnd="2.0dp" narvii:defaultDrawable="@color/placeholder" />
+            <com.narvii.widget.ThumbImageView android:id="@id/image5" android:layout_width="64.0dp" android:layout_height="64.0dp" narvii:defaultDrawable="@color/placeholder" />
+        </com.narvii.comment.list.CommentImagesLayout>
+    </LinearLayout>
+</merge>

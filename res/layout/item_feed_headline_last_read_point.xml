@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.feed.FeedListItem android:id="@id/headline_feed_item" android:background="#ffeeeff1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.PushEffectLayout android:gravity="center" android:orientation="horizontal" android:id="@id/last_pos_container" android:background="@drawable/button_amino_green" android:padding="12.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_headline_last_point" />
+            <TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dp" android:text="@string/headLine_last_read_point" android:layout_marginStart="7.0dp" />
+        </com.narvii.widget.PushEffectLayout>
+    </com.narvii.feed.FeedListItem>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/notification_turned_off_warning_bg" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64.0dp">
+        <com.narvii.widget.EmojioneView android:layout_width="46.0dp" android:layout_height="46.0dp" app:emojiShortName="fearful" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_weight="1.0" android:layout_marginStart="12.0dp">
+            <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_turned_off_warning" />
+            <TextView android:textSize="13.0dp" android:textColor="#ccffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/notification_turned_off_warning2" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffcccccc" android:layout_width="match_parent" android:layout_height="0.5dp" />
+</LinearLayout>

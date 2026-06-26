@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.UserAvatarLayout android:id="@id/user_avatar_layout" android:clipChildren="false" android:layout_width="@dimen/default_avatar_size_large" android:layout_height="@dimen/default_avatar_size_large" narvii:avatarSizeRatio="0.78" narvii:avatarStrokeWidthInDP="2.0" narvii:badgeWidthRatio="0.45" narvii:sizeType="large"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto" />

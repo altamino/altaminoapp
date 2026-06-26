@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/stub3" android:background="#74000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.github.mmin18.widget.FlexLayout android:layout_gravity="center|bottom" android:id="@id/stub2" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+        <View android:id="@id/white_rect" android:background="@drawable/online_user_dialog_rect" android:layout_width="match_parent" app:layout_bottom="stub1.bottom" app:layout_top="min(max(320dp,screen.width),400dp)*0.23*0.6" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/stub1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/user_dialog_main" />
+        </LinearLayout>
+    </com.github.mmin18.widget.FlexLayout>
+</FrameLayout>

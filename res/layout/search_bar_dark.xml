@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.SearchBar android:id="@id/search" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="16.0dp" android:textColor="#ffffffff" android:textColorHint="#ffffffff" android:id="@id/search_text" android:background="@drawable/search_bar_text_dark" android:paddingLeft="14.0dp" android:paddingRight="32.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_margin="8.0dp" android:layout_centerVertical="true" android:inputType="textCapSentences" android:imeOptions="actionSearch" android:paddingStart="14.0dp" android:paddingEnd="32.0dp" />
+    <Button android:textSize="16.0dp" android:textColor="#ffffffff" android:id="@id/search_btn" android:background="@drawable/search_bar_text_dark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_margin="8.0dp" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/search_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.narvii.widget.FontAwesomeView android:textSize="18.0dp" android:textColor="@color/light_blue" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ion_ios_search" android:layout_alignLeft="@id/search_text" android:layout_centerVertical="true" android:layout_alignStart="@id/search_text" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/light_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="@string/search" android:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <com.narvii.widget.FontAwesomeView android:textSize="18.0dp" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/search_clear" android:padding="10.0dp" android:layout_width="32.0dp" android:layout_height="32.0dp" android:text="@string/ion_android_close" android:layout_alignRight="@id/search_text" android:layout_centerVertical="true" android:layout_alignEnd="@id/search_text" />
+</com.narvii.widget.SearchBar>

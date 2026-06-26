@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.link.viewer.LinkSnippetImageLayout android:id="@id/chat_image_layout" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.link.viewer.LinkSnippetImageView android:id="@id/image" android:background="@drawable/link_snippet_image_loading_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/link_snippet_max_width" narvii:cornerRadius="@dimen/chat_bubble_corner_radius" narvii:estimateHeight="300.0dp" narvii:estimateWidth="@dimen/link_snippet_max_width" narvii:recordInProcessUploadMedia="false" narvii:strokeColor="#ffe1e4e6" narvii:strokeWidth="0.5dp" />
+    <ImageView android:layout_gravity="center" android:id="@id/placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_link_snippet_image_placeholder" />
+</com.narvii.link.viewer.LinkSnippetImageLayout>

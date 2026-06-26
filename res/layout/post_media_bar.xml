@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fffafafa" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="38.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/shadow_drop" android:layout_width="match_parent" android:layout_height="3.0dp" android:layout_alignParentTop="true" />
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15.0dp">
+            <LinearLayout android:orientation="horizontal" android:id="@id/fans_only_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" layout="@layout/influencer_post_indicator" />
+                <View android:background="#ffd2d2d4" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginLeft="16.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="4.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="15.0dp" />
+            </LinearLayout>
+            <ImageView android:id="@id/pick_media" android:background="@drawable/button_round_transparent" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="1.0dp" android:src="@drawable/ic_camera" android:layout_marginStart="1.0dp" />
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.narvii.widget.ThumbImageView android:id="@id/media_preview" android:background="@drawable/button_border_normal" android:padding="0.5dp" android:layout_width="20.0dp" android:layout_height="22.0dp" android:layout_marginLeft="5.0dp" android:scaleType="centerCrop" android:cropToPadding="true" android:layout_marginStart="5.0dp" />
+                <TextView android:textSize="9.0dp" android:textStyle="bold" android:textColor="#ffeeeeee" android:gravity="center" android:layout_gravity="end|top" android:id="@id/media_count" android:background="@drawable/number_bubble" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="-2.0dp" android:layout_alignParentTop="true" android:layout_marginStart="16.0dp" />
+            </FrameLayout>
+            <ImageView android:id="@id/pick_item" android:background="@drawable/button_round_transparent" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="15.0dp" android:src="@drawable/ic_blog_favorite" android:layout_marginStart="15.0dp" />
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/item_preview_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.narvii.widget.CardView android:id="@id/item_card_preview" android:layout_width="20.0dp" android:layout_height="24.0dp" android:layout_marginLeft="5.0dp" android:layout_marginStart="5.0dp">
+                    <com.narvii.widget.ThumbImageView android:id="@id/image" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" narvii:cornerRadius="2.0dp" narvii:defaultDrawable="@color/item_card_placeholder" narvii:strokeColor="@color/item_card_stroke" narvii:strokeWidth="@dimen/item_card_stroke_width" />
+                    <View android:id="@id/title" android:layout_width="match_parent" android:layout_height="4.0dp" />
+                </com.narvii.widget.CardView>
+                <TextView android:textSize="9.0dp" android:textStyle="bold" android:textColor="#ffeeeeee" android:gravity="center" android:id="@id/item_count" android:background="@drawable/number_bubble" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="18.0dp" android:layout_marginTop="-2.0dp" android:layout_marginStart="18.0dp" />
+            </FrameLayout>
+            <com.narvii.widget.BackgroundPickerView android:id="@id/background_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginStart="15.0dp" narvii:isLite="true" />
+            <ImageView android:id="@id/pick_location" android:background="@drawable/button_round_transparent" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="16.0dp" android:src="@drawable/ic_location" android:layout_marginStart="16.0dp" />
+            <com.narvii.widget.SpinningView android:id="@id/pick_locating_progress" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" narvii:spinColor="@color/post_inactive_bg" narvii:spinSize="@dimen/spin_tiny_size" narvii:spinStyle="2" />
+            <Button android:textSize="12.0dp" android:textColor="#ff282a2b" android:gravity="center" android:id="@id/post_categories" android:paddingLeft="10.0dp" android:paddingTop="0.0px" android:paddingRight="10.0dp" android:paddingBottom="0.0px" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginLeft="15.0dp" android:layout_marginRight="10.0dp" android:text="@string/categories" android:singleLine="true" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="10.0dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

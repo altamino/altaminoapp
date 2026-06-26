@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dp" android:paddingTop="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:layout_gravity="center_vertical" android:id="@id/community_icon" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="6.0dp" android:layout_marginStart="6.0dp" app:cornerRadius="3.0dp" app:imageType="community-icon" />
+    <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/community_name" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp" />
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/check_box" android:layout_width="52.0dp" android:layout_height="30.0dp" android:layout_marginRight="12.0dp" android:button="@drawable/switch_bg" android:layout_marginEnd="12.0dp" />
+    <include android:id="@id/drag_sort_view" layout="@layout/drag_sort_drag_handle" />
+</LinearLayout>

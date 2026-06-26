@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/recent_chat_list_item_width" android:layout_height="match_parent" android:layout_marginRight="20.0dp" android:layout_marginEnd="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:id="@id/image" android:layout_width="@dimen/recent_chat_list_item_width" android:layout_height="@dimen/recent_chat_list_item_width" android:scaleType="centerCrop" narvii:defaultDrawable="@color/placeholder" narvii:imageType="chat-cover" narvii:strokeColor="#ff888888" narvii:strokeWidth="0.5dp" />
+    <include android:visibility="gone" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_alignTop="@id/image" android:layout_alignRight="@id/image" android:layout_alignEnd="@id/image" layout="@layout/fans_only_content_indicator_layout_small" />
+    <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="2" android:layout_below="@id/image" />
+    <View android:id="@id/chat_thread_unread" android:background="@drawable/chat_thread_unread" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginTop="-3.0dp" android:layout_marginRight="-3.0dp" android:layout_alignTop="@id/image" android:layout_alignRight="@id/image" android:layout_marginEnd="-3.0dp" android:layout_alignEnd="@id/image" />
+</RelativeLayout>

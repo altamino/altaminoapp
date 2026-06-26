@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.tipping.TippingListItemCell android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/tipping_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/rank_frame" android:layout_width="26.0dp" android:layout_height="26.0dp" app:layout_centerY="50%" app:layout_left="10dp">
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/rank" android:layout_width="20.0dp" android:layout_height="20.0dp" android:alpha="0.5" />
+        <ImageView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/rank_icon" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <com.narvii.tipping.TippingThanksView android:id="@id/tipping_thanks_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="60.0dp" android:layout_height="match_parent" app:layout_right="100%-10dp" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerY="50%" app:layout_right="100%-10dp" layout="@layout/component_user_follow" />
+    <ImageView android:id="@id/user_relation_following" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/follow_check" app:layout_centerY="50%" app:layout_right="100%-10dp" />
+    <include android:layout_width="@dimen/default_avatar_size_mini" android:layout_height="@dimen/default_avatar_size_mini" app:layout_centerY="50%" app:layout_left="rank_frame.right+10dp" layout="@layout/user_avatar_layout_mini" />
+    <View android:id="@id/view_stub" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_centerY="50%" app:layout_left="user_avatar_layout.right+10dp" app:layout_right="75%" />
+    <com.narvii.widget.NicknameView android:textSize="16.0dp" android:textColor="@color/white" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" app:hideRole="true" app:layout_bottom="view_stub.top-2dp" app:layout_left="view_stub.left" app:layout_right="view_stub.right" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_left="view_stub.left" app:layout_right="view_stub.right" app:layout_top="view_stub.top+2dp">
+        <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/tipping_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.6" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tipping_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="17.0dp" android:layout_height="17.0dp" android:layout_marginRight="4.0dp" android:src="@drawable/amino_coin_big" android:layout_marginEnd="4.0dp" />
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tipping_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        </LinearLayout>
+    </FrameLayout>
+</com.narvii.tipping.TippingListItemCell>

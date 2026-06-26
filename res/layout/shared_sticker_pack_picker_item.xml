@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/cell_main_layout" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="#ffffffff" android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/collection_name" android:background="@drawable/shared_sticker_picker_name_bg" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="75.0dp" android:maxLines="2" android:layout_marginEnd="75.0dp" />
+        <FrameLayout android:layout_gravity="end|center" android:id="@id/icon_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="15.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="15.0dp">
+            <com.narvii.widget.ThumbImageView android:id="@id/icon_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="4.0dp" app:shadowColor="#33000000" app:shadowOffsetX="0.0dp" app:shadowOffsetY="4.0dp" app:shadowSize="8.0dp" />
+            <com.narvii.monetization.sticker.widget.StickerImageView android:layout_gravity="center" android:id="@id/collection_icon" android:layout_width="42.0dp" android:layout_height="42.0dp" app:defaultDrawable="@color/sticker_placeholder" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

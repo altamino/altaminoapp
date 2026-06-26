@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.HomeFrameLayout android:id="@id/list_frame" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/list_view" />
+    <include layout="@layout/empty_view" />
+    <FrameLayout android:id="@id/video_overlay" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.narvii.widget.HomeFrameLayout>

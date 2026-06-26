@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/account_signup_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="25.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_height="wrap_content" android:text="@string/choose_one_to_continue" app:layout_centerX="50%" app:layout_left="7%" app:layout_right="93%" app:layout_top="25%" />
+            <Button android:id="@id/phone" android:layout_height="wrap_content" android:text="@string/account_phone_number" app:layout_left="12%" app:layout_right="88%" app:layout_top="prev.bottom+5%" style="@style/ButtonLoginFillBackground" />
+            <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_top="prev.bottom+5%">
+                <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/or" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/or" android:textAllCaps="true" app:layout_centerX="50%" />
+                <View android:background="#ffffffff" android:layout_height="0.5dp" app:layout_centerY="50%" app:layout_left="5%" app:layout_right="or.left-6dp" />
+                <View android:background="#ffffffff" android:layout_height="0.5dp" app:layout_centerY="50%" app:layout_left="or.right+6dp" app:layout_right="95%" />
+            </com.github.mmin18.widget.FlexLayout>
+            <Button android:id="@id/email" android:layout_height="wrap_content" android:text="@string/account_email_address" app:layout_left="12%" app:layout_right="88%" app:layout_top="prev.bottom+6.5%" style="@style/ButtonLoginFillBackground" />
+        </com.github.mmin18.widget.FlexLayout>
+    </ScrollView>
+</LinearLayout>

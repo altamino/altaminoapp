@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#99606060" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/live_layer_category_title" />
+        <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.narvii.widget.recycleview.NVRichRecycleView android:id="@id/recycle_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView android:textSize="12.0dp" android:textColor="#bbffffff" android:id="@id/private_chat" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_live_layer_private_chat_lock" android:drawablePadding="8.0dp" android:drawableStart="@drawable/ic_live_layer_private_chat_lock" />
+    </LinearLayout>
+    <View android:layout_gravity="top" android:background="#1effffff" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="@dimen/default_padding_horizontal" android:layout_marginRight="@dimen/default_padding_horizontal" />
+</FrameLayout>

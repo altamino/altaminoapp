@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dp" android:textColor="#ff888888" android:id="@id/url" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" />
+    <EditText android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:hint="@string/insert_link_hint" android:singleLine="true" android:inputType="textCapSentences" />
+</LinearLayout>

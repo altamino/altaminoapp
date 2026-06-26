@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.chat.audio.AudioPlayerFixedWidth android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/audio_player" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="20.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.narvii.widget.TintButton android:id="@id/icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:scaleType="centerInside" />
+        <com.narvii.widget.SpinningView android:id="@id/spinner" android:layout_width="20.0dp" android:layout_height="20.0dp" app:spinColor="#ffffffff" app:spinSize="20.0dp" app:spinStyle="2" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="32.0dp" android:layout_weight="1.0">
+        <SeekBar android:layout_gravity="center" android:id="@id/seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/voice_message_progress_height" android:progressDrawable="@drawable/voice_message_seekbar_progress" android:minHeight="@dimen/voice_message_progress_height" android:thumb="@drawable/ic_audio_player_seekbar_thumb" android:thumbOffset="7.0dp" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/voice_message_progress_height" android:progressDrawable="@drawable/voice_message_seekbar_progress" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </FrameLayout>
+    <TextView android:textSize="14.0dp" android:gravity="center" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="26.0dp" />
+</com.narvii.chat.audio.AudioPlayerFixedWidth>

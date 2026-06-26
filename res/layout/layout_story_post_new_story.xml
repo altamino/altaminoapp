@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:padding="6.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:background="@drawable/selector_create_new_story" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img" android:layout_width="match_parent" android:scaleType="centerCrop" app:layout_height="this.width*250/175" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_centerY="50%">
+            <com.narvii.widget.TintButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_new_story" app:tintColor="@color/selector_white_grey" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/selector_white_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:text="@string/new_story" />
+        </LinearLayout>
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="start|center" android:id="@id/title" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2" app:layout_left="8dp" app:layout_right="100%-8dp" app:layout_top="img.bottom+4dp" />
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingTop="6.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:visibility="invisible" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" app:layout_top="title.bottom">
+            <include android:layout_width="25.0dp" android:layout_height="25.0dp" layout="@layout/user_avatar_layout_mini" />
+            <com.narvii.widget.NicknameView android:textColor="#aaffffff" android:id="@id/nickname" android:layout_width="0.0pt" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_weight="1.0" android:layout_marginStart="8.0dp" app:hideInfluencerBadge="true" app:hideRole="true" />
+            <ImageView android:id="@id/view_count_indicator" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" android:src="@drawable/ic_view_count_story" android:scaleType="centerInside" />
+            <TextView android:textSize="11.0dp" android:textColor="#aaffffff" android:id="@id/view_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.github.mmin18.widget.FlexLayout>
+</FrameLayout>

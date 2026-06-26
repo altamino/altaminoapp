@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/my_stats" android:paddingTop="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:text="@string/my_stats" />
+    <TextView android:textSize="13.0dp" android:textColor="#66ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:text="@string/stats_info" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/last_24_hours_layout" android:background="@drawable/ring_green" android:layout_width="220.0dp" android:layout_height="220.0dp">
+        <com.narvii.widget.AutoSizingTextView android:id="@id/last_24_hours" style="@style/achi_count_style" />
+        <com.narvii.widget.AutoSizingTextView android:textSize="17.0dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dp" android:layout_marginRight="44.0dp" android:text="@string/minutes" android:maxLines="1" app:autoSizeTextMaxSize="17.0dp" />
+        <TextView android:textSize="10.0dp" android:textColor="#bbffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/last_24_hours" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/last_week_layout" android:background="@drawable/ring_blue" android:layout_width="220.0dp" android:layout_height="220.0dp">
+        <com.narvii.widget.AutoSizingTextView android:id="@id/last_week" style="@style/achi_count_style" />
+        <com.narvii.widget.AutoSizingTextView android:textSize="17.0dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dp" android:layout_marginRight="44.0dp" android:text="@string/minutes" android:maxLines="1" app:autoSizeTextMaxSize="17.0dp" />
+        <TextView android:textSize="10.0dp" android:textColor="#bbffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/last_7_days" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/ring_yellow" android:layout_width="220.0dp" android:layout_height="220.0dp">
+        <com.narvii.widget.AutoSizingTextView android:id="@id/posts_created" style="@style/achi_count_style" />
+        <com.narvii.widget.AutoSizingTextView android:textSize="17.0dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dp" android:layout_marginRight="44.0dp" android:text="@string/posts_created" android:maxLines="1" app:autoSizeTextMaxSize="17.0dp" />
+        <TextView android:textSize="10.0dp" android:textColor="#bbffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_time" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/ring_purple" android:layout_width="220.0dp" android:layout_height="220.0dp">
+        <com.narvii.widget.AutoSizingTextView android:id="@id/followers_count" style="@style/achi_count_style" />
+        <com.narvii.widget.AutoSizingTextView android:textSize="17.0dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dp" android:layout_marginRight="44.0dp" android:text="@string/user_followers" android:maxLines="1" app:autoSizeTextMaxSize="17.0dp" />
+        <TextView android:textSize="10.0dp" android:textColor="#bbffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_time" />
+    </LinearLayout>
+</LinearLayout>

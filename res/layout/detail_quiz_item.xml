@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.feed.quizzes.QuizCoverView android:id="@id/quiz_cover" android:layout_width="match_parent" android:layout_height="wrap_content" narvii:layout_top="prev.bottom+10dp" />
+    <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/quiz_played_tag" android:background="#ff25cc82" android:padding="3.0dp" android:paddingLeft="4.0dp" android:paddingTop="2.0dp" android:paddingRight="4.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/played" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" narvii:layout_right="quiz_cover.right" narvii:layout_top="quiz_cover.top" />
+    <TextView android:textSize="12.0dp" android:id="@id/quiz_played_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" narvii:layout_top="quiz_cover.bottom+10dp" />
+    <TextView android:textSize="25.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/start_quiz" android:background="@drawable/blog_detail_start_quiz" android:paddingLeft="30.0dp" android:paddingTop="12.0dp" android:paddingRight="30.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_quiz" android:singleLine="true" android:drawableLeft="@drawable/ic_quiz_detail_start" android:drawablePadding="14.0dp" android:drawableStart="@drawable/ic_quiz_detail_start" narvii:layout_centerX="50%" narvii:layout_top="quiz_played_times.bottom+16dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/quiz_rankings_layout" android:background="@drawable/quiz_ranking_layout_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" narvii:layout_centerX="50%" narvii:layout_top="start_quiz.bottom+16dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:id="@id/quiz_rankings_icon" android:layout_width="16.0dp" android:layout_height="11.0dp" android:layout_marginRight="6.0dp" android:layout_marginEnd="6.0dp" />
+            <TextView android:textSize="14.0dp" android:textColor="#ff9b9b9b" android:id="@id/quiz_rankings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quiz_rankings" android:singleLine="true" />
+        </LinearLayout>
+        <View android:id="@id/quiz_rankings_line" android:background="#ff979797" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    </LinearLayout>
+</com.github.mmin18.widget.FlexLayout>

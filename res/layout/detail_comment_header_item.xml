@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/detail_header_item_margin_top" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cell_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/detail_header_item" />
+        <TextView android:textSize="15.0dp" android:textColor="#ff888888" android:id="@id/comment_count" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.narvii.widget.TintButton android:id="@id/user_comment_setting" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/user_profile_comment_setting" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+        <com.narvii.widget.TintButton android:id="@id/comment_slides" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="40.0dp" android:layout_height="37.0dp" android:src="@drawable/comment_slides" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    </LinearLayout>
+</LinearLayout>

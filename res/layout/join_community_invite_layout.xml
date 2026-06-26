@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.github.mmin18.widget.FlexLayout android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/join_community_invite" />
+        </com.github.mmin18.widget.FlexLayout>
+    </ScrollView>
+    <ImageView android:layout_gravity="start|top" android:id="@id/invite_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="40.0dp" android:src="@drawable/selector_community_request_close" android:layout_marginStart="20.0dp" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.feed.FeedListItem android:id="@id/headline_feed_item" android:tag="poll" android:background="@drawable/selector_headline_bg" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/community_info" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/community_info_layout" />
+        <TextView android:textSize="@dimen/headline_item_title_size" android:textStyle="bold" android:textColor="@color/headline_feed_title_color" android:ellipsize="end" android:gravity="start|center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="2" android:layout_below="@id/community_info" />
+        <include android:id="@id/poll_option_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:layout_below="@id/title" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" layout="@layout/item_headline_poll_option_list" />
+        <include android:id="@id/feed_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/poll_option_list" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" layout="@layout/feed_toolbar_headline" />
+    </com.narvii.feed.FeedListItem>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="system_external_camera" path="Amino/Camera" />
+    <external-files-path name="camera" path="Camera/" />
+    <external-files-path name="external_screenshot" path="screenshot/" />
+    <external-files-path name="external_CrashReport" path="CrashReport/" />
+    <files-path name="external_drafts" path="data/" />
+    <external-cache-path name="images" path="images/" />
+    <files-path name="inner_screenshot" path="screenshot" />
+    <files-path name="inner_CrashReport" path="CrashReport/" />
+    <external-cache-path name="external_avatar_record" path="avatar_record/" />
+    <external-cache-path name="external_giphy" path="giphy/" />
+    <cache-path name="inner_avatar_record" path="avatar_record/" />
+    <cache-path name="inner_giphy" path="giphy/" />
+    <root-path name="external_files" path="" />
+</paths>

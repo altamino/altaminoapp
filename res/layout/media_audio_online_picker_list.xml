@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff1b1b21" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/filter_and_sourt" android:layout_width="match_parent" android:layout_height="40.0dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20.0dp" android:layout_marginStart="20.0dp">
+            <TextView android:textSize="13.0dp" android:textColor="#4cffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by_0" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sort_filter" android:background="@drawable/click_color_transparent" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/sort_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/_default" />
+                <ImageView android:layout_width="9.0dp" android:layout_height="9.0dp" android:layout_marginLeft="3.0dp" android:src="@drawable/ic_arrow_down" android:scaleType="fitCenter" android:layout_marginStart="3.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5.0dp" android:layout_marginEnd="5.0dp">
+            <TextView android:textSize="13.0dp" android:textColor="#4cffffff" android:id="@id/filter_result_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.widget.NVImageView android:id="@id/filter_entrance" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_online_picker_filter" />
+                <com.narvii.widget.AutoSizingTextView android:textColor="#ffffffff" android:layout_gravity="end|top" android:id="@id/filter_count" android:background="@drawable/filter_count_background" android:padding="1.0dp" android:layout_width="16.0dp" android:layout_height="16.0dp" android:textAlignment="center" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/list_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/list_view" />
+        <include layout="@layout/empty_view" />
+    </FrameLayout>
+</LinearLayout>

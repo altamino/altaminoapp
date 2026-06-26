@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/chat_bg_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.FullsizeImageView android:id="@id/chat_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" narvii:imageType="chat-background" />
+    <com.narvii.widget.BlurImageView android:id="@id/chat_blur_background" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" narvii:blurRadius="60.0dp" narvii:lightenColor="#44ffffff" />
+    <View android:background="#1a000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

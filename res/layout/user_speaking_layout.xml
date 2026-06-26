@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.chat.video.view.CircleRippleView android:id="@id/speaking_ripple_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.chat.video.view.CircleView android:id="@id/speaking_ripple_holder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

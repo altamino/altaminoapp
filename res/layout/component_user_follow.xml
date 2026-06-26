@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/user_follow" android:background="@drawable/button_round_follow" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30.0dp">
+        <ImageView android:gravity="center" android:id="@id/user_follow_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_follow_plus_padding" />
+        <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/user_follow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="@string/user_follow" android:layout_marginStart="6.0dp" />
+    </LinearLayout>
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/user_follow_progress" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" narvii:spinColor="#ffeeeeee" narvii:spinStyle="2" />
+</FrameLayout>

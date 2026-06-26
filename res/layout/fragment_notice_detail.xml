@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/list_layout" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+        <com.narvii.widget.AutoSizingTextView android:textColor="@color/notice_appeal" android:gravity="center" android:layout_gravity="center" android:id="@id/appeal" android:background="@drawable/button_stroke_2_blue" android:layout_width="0.0pt" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:minHeight="40.0dp" android:text="@string/appeal" android:maxLines="1" android:layout_weight="1.0" narvii:autoSizeTextMaxSize="16.0dp" narvii:autoSizeTextMinSize="8.0dp" />
+        <com.narvii.widget.AutoSizingTextView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/got_it" android:background="@drawable/button_round_blue" android:layout_width="0.0pt" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:minHeight="40.0dp" android:text="@string/got_it" android:maxLines="1" android:layout_weight="1.0" narvii:autoSizeTextMaxSize="16.0dp" narvii:autoSizeTextMinSize="8.0dp" />
+    </LinearLayout>
+</FrameLayout>

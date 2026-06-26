@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.chat.video.view.UserSpeakingView android:id="@id/loading" android:visibility="gone" android:layout_width="@dimen/calling_avatar_size_small" android:layout_height="@dimen/calling_avatar_size_small" app:layout_centerX="50%" app:layout_centerY="40%" />
+    <include android:layout_gravity="center_horizontal" android:padding="@dimen/voice_avatar_padding" android:layout_width="@dimen/calling_avatar_size_small" android:layout_height="@dimen/calling_avatar_size_small" app:layout_centerX="50%" app:layout_centerY="40%" layout="@layout/user_avatar_layout_mini_nobadge" />
+    <com.narvii.chat.video.VVChatMembershipNameLayout android:layout_gravity="center_horizontal" android:id="@id/membership_nickname_layout" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" app:layout_centerX="50%" app:layout_top="user_avatar_layout.bottom+15dp">
+        <com.narvii.chat.video.layout.VVChatNickNameView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/influencer_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.narvii.chat.video.VVChatMembershipNameLayout>
+    <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_centerY="user_avatar_layout.bottom+10dp" />
+    <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:id="@id/status_omit" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_centerY="status.bottom+5dp" />
+    <TextView android:textColor="#ffffffff" android:id="@id/calling_hint_info" android:background="@drawable/calling_hint_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_top="status.bottom+15dp" style="@style/TextCellWithPadding" />
+</com.github.mmin18.widget.FlexLayout>

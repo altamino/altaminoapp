@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="10.0dp" />
+    <include android:layout_gravity="end" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" layout="@layout/fans_only_content_indicator_layout_small" />
+    <include layout="@layout/detail_user_vote_item_child" />
+</LinearLayout>

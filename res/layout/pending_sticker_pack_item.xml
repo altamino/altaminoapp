@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/collection_icon" android:padding="2.0dp" android:layout_width="50.0dp" android:layout_height="50.0dp" app:defaultDrawable="@color/sticker_placeholder" app:scalePlaceholder="true" />
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/store_item_name_size_default" android:textStyle="bold" android:textColor="#ff333334" android:id="@id/collection_name" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="6.0dp" />
+            <TextView android:textSize="12.0dp" android:textColor="#ffcccccc" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:layout_marginEnd="6.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <include android:layout_width="20.0dp" android:layout_height="20.0dp" layout="@layout/user_avatar_layout_mini_nobadge" />
+            <com.narvii.widget.NicknameView android:textSize="12.0dp" android:textColor="#ff4a90e2" android:id="@id/nickname" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_weight="1.0" android:layout_marginStart="2.0dp" app:hideRole="true" />
+            <TextView android:textSize="12.0dp" android:textColor="#ff999999" android:id="@id/sticker_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:layout_marginEnd="6.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

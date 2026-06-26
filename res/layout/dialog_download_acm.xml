@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.StatusBarPlaceHolder android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.TintButton android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="8.0dp" android:src="@drawable/ic_back_cross" app:tintColor="#88ffffff" />
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.github.mmin18.widget.FlexLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.widget.ThumbImageView android:src="@drawable/download_acm_bg" android:scaleType="centerCrop" app:cornerRadius="10.0dp" app:layout_centerX="50%" app:layout_height="parent.height" app:layout_width="parent.width*0.8" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_width="parent.width*0.8">
+                    <TextView android:textSize="23.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:paddingTop="16.0dp" android:paddingBottom="25.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="60.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="40.0dp" android:text="@string/download_acm_message" />
+                    <com.narvii.widget.PushButton android:id="@id/btn_create_community" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:layout_width="wrap_content" android:layout_height="64.0dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="40.0dp" app:layout_centerX="50%" app:layout_centerY="50%" app:pushButtonColor="#fff5a621" app:pushButtonWider="1.0dp">
+                        <com.narvii.widget.AutoSizingTextView android:textSize="24.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_community_download" app:autoSizeTextMaxSize="24.0dp" app:autoSizeTextMinSize="16.0dp" />
+                    </com.narvii.widget.PushButton>
+                </LinearLayout>
+            </com.github.mmin18.widget.FlexLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

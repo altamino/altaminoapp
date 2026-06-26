@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:padding="12.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="50.0dp" android:layout_height="50.0dp" layout="@layout/user_avatar_layout_large" />
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp">
+        <com.narvii.widget.NicknameView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/nickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" />
+        <TextView android:textSize="11.0dp" android:textColor="#ff333333" android:gravity="center" android:id="@id/profile" android:background="@drawable/online_user_dialog_profile_btn" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="22.0dp" android:minWidth="73.0dp" android:text="@string/online_user_profile" />
+    </LinearLayout>
+</LinearLayout>

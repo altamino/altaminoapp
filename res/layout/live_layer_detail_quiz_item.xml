@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.livelayer.detailview.LiveLayerDetailListItemView android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="146.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" narvii:cornerRadius="5.0dp" narvii:defaultDrawable="@drawable/live_layer_detail_item_placeholder" narvii:hidePlayButton="true" />
+    <TextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="#fff2f2f2" android:gravity="start" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="60.0dp" android:maxLines="2" android:shadowColor="#cc000000" android:shadowDy="3.0" android:shadowRadius="8.0" android:textAlignment="viewStart" android:layout_marginStart="15.0dp" android:layout_marginEnd="60.0dp" />
+    <include layout="@layout/fans_only_content_indicator_layout_live_chat" />
+    <com.narvii.widget.FullHitFrameLayout android:id="@id/start_quiz_layout" android:paddingLeft="10.0dp" android:paddingTop="20.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+        <LinearLayout android:gravity="center" android:id="@id/start_quiz" android:background="@drawable/quiz_play_btn" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:minWidth="100.0dp">
+            <com.narvii.widget.FontAwesomeView android:textColor="#ffffffff" android:id="@id/start_quiz_icon" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginRight="4.0dp" android:text="@string/fa_play" android:layout_marginEnd="4.0dp" />
+            <TextView android:textSize="15.0dp" android:textColor="#ffffffff" android:id="@id/start_quiz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_quiz" android:singleLine="true" />
+            <com.narvii.widget.SpinningView android:id="@id/start_quiz_loading" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" narvii:spinColor="#ffffffff" narvii:spinSize="15.0dp" narvii:spinStyle="2" />
+        </LinearLayout>
+    </com.narvii.widget.FullHitFrameLayout>
+    <include layout="@layout/live_layer_detail_item_bar" />
+</com.narvii.livelayer.detailview.LiveLayerDetailListItemView>

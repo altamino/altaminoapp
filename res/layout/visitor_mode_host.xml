@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.community.VisitorBarHost android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/visitor_mode_main" android:paddingTop="15.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dp" android:textColor="#99ffffff" android:gravity="center" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/in_visitor_mode" />
+        <LinearLayout android:id="@id/join_community_container" android:paddingLeft="@dimen/community_detail_join_margin" android:paddingTop="4.0dp" android:paddingRight="@dimen/community_detail_join_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/community_detail_join_margin" android:paddingEnd="@dimen/community_detail_join_margin">
+            <com.narvii.widget.JoinCommunityProgressLayout android:layout_gravity="center" android:id="@id/join_community" android:layout_width="match_parent" android:layout_height="50.0dp" app:progress_top_offset="@dimen/community_join_button_lift" app:pushButtonColor="#ff38d89c" app:pushButtonColorDark="#ff30c08a" app:pushButtonLift="@dimen/community_join_button_lift">
+                <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/join" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/join_the_community" />
+                </LinearLayout>
+            </com.narvii.widget.JoinCommunityProgressLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.narvii.community.VisitorBarHost>

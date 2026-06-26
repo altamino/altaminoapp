@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.SwipeToDeleteLayout android:id="@id/post_poll_option" android:layout_width="match_parent" android:layout_height="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/poll_opt_favorite" android:background="@drawable/post_quiz_question_bg" android:layout_width="match_parent" android:layout_height="52.0dp">
+        <com.narvii.widget.CardView android:id="@id/poll_opt_card" android:layout_width="34.0dp" android:layout_height="46.0dp" android:layout_marginLeft="12.0dp" android:layout_marginStart="12.0dp">
+            <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="4.0dp" app:defaultDrawable="@color/item_card_placeholder" app:strokeColor="@color/item_card_stroke" app:strokeWidth="@dimen/item_card_stroke_width" />
+            <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="none" android:gravity="center" android:id="@id/title" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="8.0dp" android:singleLine="true" />
+            <include layout="@layout/fans_only_content_indicator_layout_wiki" />
+        </com.narvii.widget.CardView>
+        <TextView android:textSize="15.0dp" android:textColor="#ff333333" android:textColorHint="#ffcccccc" android:gravity="center_vertical" android:id="@id/poll_opt_title" android:background="@null" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginRight="10.0dp" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="12.0dp" android:layout_marginEnd="10.0dp" />
+    </LinearLayout>
+    <Button android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/delete" android:background="@drawable/swipe_to_delete_btn" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="46.0dp" android:text="@string/delete" />
+</com.narvii.widget.SwipeToDeleteLayout>

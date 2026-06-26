@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/list_frame" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.FullscreenBackgroundView android:id="@id/quizzes_background" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:layout_gravity="top" android:id="@id/top_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:maxHeight="250.0dp" />
+    <FrameLayout android:id="@id/list_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+        <com.narvii.widget.NVListView android:scrollbarSize="0.0px" android:id="@android:id/list" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:scrollbars="none" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/list_selector" android:divider="@null" android:dividerHeight="0.0px" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" />
+        <include layout="@layout/empty_view" />
+    </FrameLayout>
+    <include android:id="@id/title_hover" layout="@layout/quizzes_result_list_title" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/next_quizzes_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

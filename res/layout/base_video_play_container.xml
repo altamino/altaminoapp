@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/gl_video_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/video_play_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.NVImageView android:id="@id/thumbnail" android:background="#ff000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:hidePlayButton="true" />
+        <include layout="@layout/layout_sr_video_loading" />
+        <com.narvii.chat.screenroom.widgets.SRVideoController android:id="@id/video_controller" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:layout_gravity="center" android:id="@id/add_video_layout" android:background="@drawable/radius_10_white_stroke_1" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_plus_add_video" />
+            <TextView android:textSize="16.0dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/add_new_video" android:layout_marginStart="10.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

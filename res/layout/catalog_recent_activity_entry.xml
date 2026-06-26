@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/recent_activity_entry" android:background="@color/light_blue" android:paddingLeft="11.0dp" android:paddingTop="8.0dp" android:paddingRight="11.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="11.0dp" android:paddingEnd="11.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="start" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:maxLines="2" android:layout_toLeftOf="@id/chevron_right" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:textAlignment="viewStart" android:layout_marginEnd="5.0dp" android:layout_toStartOf="@id/chevron_right" android:layout_alignParentStart="true" />
+    <com.narvii.widget.FontAwesomeView android:gravity="center" android:id="@id/chevron_right" android:background="@drawable/on_boarding_chevron_mirror" android:layout_width="8.0dp" android:layout_height="12.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

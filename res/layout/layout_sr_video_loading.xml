@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/loading_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.StatusBarPlaceHolder android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <ProgressBar android:id="@id/status_loading_spinner" android:layout_width="20.0dp" android:layout_height="20.0dp" style="?android:progressBarStyleLarge" />
+        <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/master_background" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/fake_action_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <include android:id="@id/disabled_bar" layout="@layout/detail_disabled_bar" />
+        <FrameLayout android:id="@id/_frame_layout_root" android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+            <com.narvii.widget.FullscreenBackgroundView android:id="@id/background" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <include layout="@layout/not_available_layout" />
+            <include layout="@layout/list_layout" />
+            <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/action_bar_overlay" android:background="@color/detail_action_bar_overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

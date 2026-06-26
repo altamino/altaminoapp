@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dp" android:textColor="@color/chat_item_tile" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="48.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="20.0dp" android:text="@string/announcement" android:layout_weight="1.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="20.0dp" />
+            <com.narvii.widget.FontAwesomeView android:id="@id/announcement_right_icon" android:visibility="visible" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="10.0dp" android:layout_marginEnd="10.0dp" style="@style/IconChevronRight" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/announcement_container" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dp" android:layout_marginBottom="16.0dp">
+            <TextView android:textSize="12.0dp" android:textColor="@color/chat_item_description" android:ellipsize="end" android:id="@id/announcement_content" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="20.0dp" android:maxLines="2" android:layout_weight="1.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="20.0dp" />
+            <com.narvii.widget.FontAwesomeView android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="10.0dp" android:layout_marginEnd="10.0dp" style="@style/IconChevronRight" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

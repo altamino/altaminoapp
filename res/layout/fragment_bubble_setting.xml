@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/membership_expire_fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bubble_setting" android:background="@drawable/selector_bubble_setting" android:paddingLeft="10.0dp" android:paddingTop="8.0dp" android:paddingRight="10.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+            <TextView android:textSize="12.0dp" android:textColor="#ff828892" android:layout_width="0.0pt" android:layout_height="wrap_content" android:text="@string/chat_bubble_setting" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_alert_push_setting" />
+        </LinearLayout>
+        <include layout="@layout/list_layout" />
+    </LinearLayout>
+</FrameLayout>

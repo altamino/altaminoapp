@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <com.github.mmin18.widget.RealtimeBlurView android:layout_width="match_parent" android:layout_height="match_parent" app:realtimeOverlayColor="#99000000" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/top_bar_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <ScrollView android:id="@id/scroll" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:id="@id/stub1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <EditText android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:textColorHint="#bbffffff" android:gravity="center" android:id="@id/title" android:background="@null" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="@dimen/scene_quiz_title_edit_height" android:layout_marginBottom="@dimen/scene_quiz_title_edit_margin_bottom" android:hint="@string/quiz_title" android:lines="3" android:maxLength="100" android:textCursorDrawable="@drawable/edit_cursor_white_normal" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/grid" android:layout_width="match_parent" android:layout_height="0.0dp">
+                    <LinearLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                        <include android:id="@id/answer_1" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/scene_quiz_edit_item" />
+                        <View android:layout_width="@dimen/scene_answer_item_margin" android:layout_height="wrap_content" />
+                        <include android:id="@id/answer_2" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/scene_quiz_edit_item" />
+                    </LinearLayout>
+                    <View android:layout_width="0.0dp" android:layout_height="@dimen/scene_answer_item_margin" />
+                    <LinearLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                        <include android:id="@id/answer_3" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/scene_quiz_edit_item" />
+                        <View android:layout_width="@dimen/scene_answer_item_margin" android:layout_height="wrap_content" />
+                        <include android:id="@id/answer_4" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/scene_quiz_edit_item" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@id/delete_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center|bottom" android:id="@id/delete_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/scene_edit_delete_margin_bottom" />
+    </FrameLayout>
+</FrameLayout>

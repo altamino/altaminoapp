@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.chat.screenroom.widgets.SRLiveUserLayout android:id="@id/live_user_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/sr_live_user_container_height" android:layout_marginTop="@dimen/sr_portrait_margin" android:layout_marginBottom="@dimen/sr_portrait_margin_bottom" />
+    <com.github.mmin18.widget.FlexLayout android:id="@id/rtc_video_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.chat.video.layout.VideoPresenterLayout android:id="@id/participant_layout" android:tag="callCompetitor" android:background="@drawable/bg_rect_black_20_alpha_6_corner" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.chat.video.layout.LiveCallingLayout android:id="@id/call_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:call_type="1" app:layout_height="min(screen.height*0.5,screen.width*1.0)" />
+    </com.github.mmin18.widget.FlexLayout>
+</LinearLayout>

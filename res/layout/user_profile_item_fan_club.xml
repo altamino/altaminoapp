@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/list_divider" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/ic_fan_club_logo" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp">
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:id="@id/tv_fan_club" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fan_club" />
+            <TextView android:textSize="14.0dp" android:textColor="#ffb3b3b3" android:id="@id/tv_fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.github.mmin18.widget.FlexLayout android:layout_gravity="center" android:id="@id/become_fans_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.narvii.widget.ThumbImageView android:id="@id/become_fans_bg" app:cornerRadius="16.0dp" app:layout_height="become_fans.height" app:layout_width="become_fans.width" app:shadowColor="#ffffffff" app:shadowOffsetX="0.0dp" app:shadowOffsetY="0.0dp" app:shadowSize="5.0dp" />
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/become_fans" android:background="@drawable/selector_become_fans" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:minHeight="32.0dp" android:text="@string/become_a_fan" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+        </com.github.mmin18.widget.FlexLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/influencer_right_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.narvii.livelayer.LiveLayerOnlineBar android:id="@id/member_list" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:avatarSize="26.0dp" app:maxAvatarCount="4" app:showMore="true" />
+            <com.narvii.widget.TintButton android:gravity="center" android:id="@id/chevron_right" android:layout_width="10.0dp" android:layout_height="15.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/chevron_right_mirror" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="10.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

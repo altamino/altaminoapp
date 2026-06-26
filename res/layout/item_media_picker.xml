@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:id="@id/image_view" android:padding="2.0dp" app:layout_height="parent.width" app:layout_width="parent.width" />
+    <FrameLayout android:id="@id/layout_add" android:padding="2.0dp" android:visibility="gone" app:layout_height="parent.width" app:layout_width="parent.width">
+        <View android:background="@drawable/dash_rectangle_gray_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.widget.TintButton android:layout_gravity="center" android:id="@id/create_scene" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_story_add_scene_list" app:tintColor="#ff9b9b9b" />
+    </FrameLayout>
+    <View android:id="@id/mask_view" android:background="#88ffffff" android:visibility="gone" app:layout_height="parent.width" app:layout_width="parent.width" />
+    <com.narvii.widget.PickerSelectedView android:id="@id/select" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_right="parent.width" app:layout_top="0" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/select_count" android:background="@drawable/background_select_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="30.0dp" app:layout_right="parent.width" app:layout_top="0" />
+    <ImageView android:id="@id/media_picker_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_media_picker_label_video" app:layout_bottom="parent.width-3dp" app:layout_left="4dp" />
+    <TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:id="@id/media_picker_video_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_bottom="parent.width-1dp" app:layout_left="media_picker_label.right + 3dp" style="@style/TextShadowEnable" />
+</com.github.mmin18.widget.FlexLayout>

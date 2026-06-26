@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/action" android:background="@drawable/button_rect_white" android:paddingTop="12.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp">
+            <TextView android:textSize="16.0dp" android:textColor="@color/chat_item_tile" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/add_co_host" android:layout_weight="1.0" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp">
+                <com.narvii.widget.NVImageView android:id="@id/avatar_3" android:padding="1.0dp" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginLeft="36.0dp" android:layout_marginStart="36.0dp" style="@style/AvatarImageView" />
+                <com.narvii.widget.NVImageView android:id="@id/avatar_2" android:padding="1.0dp" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginLeft="18.0dp" android:layout_marginStart="18.0dp" style="@style/AvatarImageView" />
+                <com.narvii.widget.NVImageView android:id="@id/avatar_1" android:padding="1.0dp" android:layout_width="26.0dp" android:layout_height="26.0dp" style="@style/AvatarImageView" />
+            </RelativeLayout>
+            <com.narvii.widget.FontAwesomeView android:id="@id/chat_mute_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" style="@style/IconChevronRight" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dp" android:textColor="@color/chat_item_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="30.0dp" android:text="@string/add_co_host_settings_description" android:layout_marginStart="10.0dp" android:layout_marginEnd="30.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.video.attachment.caption.CaptionColorRecyclerView android:id="@id/color_picker" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="50.0dp" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="10.0dp">
+        <TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:id="@id/opacity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="@string/opacity" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:textAllCaps="true" android:layout_marginStart="15.0dp" android:layout_alignParentStart="true" />
+        <TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:minWidth="35.0dp" android:text="100%" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="15.0dp" android:layout_alignParentEnd="true" />
+        <FrameLayout android:id="@id/seek_bar_parent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/progress_text" android:layout_toRightOf="@id/opacity" android:layout_centerVertical="true" android:layout_toStartOf="@id/progress_text" android:layout_toEndOf="@id/opacity">
+            <SeekBar android:layout_gravity="center" android:id="@id/seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="6.0dp" android:progressDrawable="@drawable/caption_opacity_progress_bg" android:minHeight="6.0dp" android:thumb="@drawable/ic_volume_seekbar_thumb" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

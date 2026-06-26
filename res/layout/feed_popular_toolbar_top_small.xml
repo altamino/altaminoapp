@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.feed.FeedToolbarLayout android:gravity="start|center" android:orientation="horizontal" android:paddingLeft="4.0dp" android:paddingStart="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_toolbar_vote" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="30.0dp" android:paddingStart="2.0dp" android:paddingEnd="2.0dp">
+        <com.narvii.widget.VoteIcon android:id="@id/feed_toolbar_vote_icon" android:padding="2.0dp" android:duplicateParentState="true" android:layout_width="21.0dp" android:layout_height="21.0dp" narvii:isDarkTheme="true" />
+        <com.narvii.widget.SpinningView android:id="@id/feed_toolbar_vote_progress" android:visibility="gone" android:layout_width="21.0dp" android:layout_height="21.0dp" narvii:spinSize="@dimen/spin_tiny_size" narvii:spinStyle="2" />
+        <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:id="@id/feed_toolbar_vote_count" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_toolbar_comment" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="30.0dp" android:paddingStart="2.0dp" android:paddingEnd="2.0dp">
+        <com.narvii.widget.TintButton android:id="@id/feed_toolbar_comment_icon" android:background="@drawable/button_round_transparent" android:padding="2.0dp" android:duplicateParentState="true" android:layout_width="21.0dp" android:layout_height="21.0dp" android:src="@drawable/ic_comment" />
+        <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:id="@id/feed_toolbar_comment_count" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" />
+    </LinearLayout>
+</com.narvii.feed.FeedToolbarLayout>

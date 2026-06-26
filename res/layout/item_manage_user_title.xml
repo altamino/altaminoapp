@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/drawer_category_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="40.0dp" android:layout_height="40.0dp" layout="@layout/drag_sort_remove_btn" />
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/title" style="@style/user_title_big_style" />
+    </FrameLayout>
+    <include android:layout_width="40.0dp" android:layout_height="30.0dp" layout="@layout/drag_sort_drag_handle" />
+</LinearLayout>

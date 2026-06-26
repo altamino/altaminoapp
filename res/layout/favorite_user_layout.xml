@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#0a030524" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/favorite_user_section_header" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.recycleview.NVRichRecycleView android:id="@id/recycle_layout" android:paddingLeft="@dimen/default_padding_horizontal" android:paddingRight="50.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_padding_horizontal" android:paddingEnd="50.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/goto_arrow_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <View android:background="@drawable/favorit_user_arraw_gradient" android:layout_width="10.0dp" android:layout_height="wrap_content" />
+            <com.narvii.widget.TintButton android:gravity="center_vertical" android:id="@id/goto_arrow" android:background="#fff5f5f6" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/chevron_right_mirror" app:tintColor="#ff333333" />
+            <View android:background="#fff5f5f6" android:layout_width="10.0dp" android:layout_height="match_parent" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:layout_gravity="bottom" android:background="#ffececec" android:layout_width="match_parent" android:layout_height="0.5dp" />
+</LinearLayout>

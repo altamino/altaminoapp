@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.monetization.utils.StoreItemNameView android:textSize="@dimen/store_item_detail_name_size" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.narvii.monetization.StoreItemStatusView android:id="@id/item_status_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" />
+</LinearLayout>

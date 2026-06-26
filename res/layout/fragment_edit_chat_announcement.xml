@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeLinearLayout android:id="@id/root" android:background="#fff6f6f6" android:layout_width="match_parent" android:layout_height="match_parent" app:nv_dark_background="@color/color_default_primary"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.app.theme.view.NVThemeRelativeLayout android:id="@id/edit_container" android:background="#ffffffff" android:layout_width="match_parent" app:layout_height="screen.width*0.67" app:nv_dark_background="#1affffff">
+            <com.narvii.widget.EditTextLink android:textSize="16.0dp" android:textColor="@android:color/white" android:gravity="start|top" android:id="@id/content" android:background="@null" android:padding="10.0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/edit_announcement_hint" android:maxLength="500" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/edit_cursor_blue_normal" />
+            <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:textColor="#999b9b9b" android:id="@id/stub1" android:padding="10.0dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edit_announcement_hint" android:alpha="0.6" app:nv_dark_textColor="#99ffffff" />
+        </com.narvii.app.theme.view.NVThemeRelativeLayout>
+        <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:textColor="#999b9b9b" android:id="@id/input_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_right="edit_container.width - 15dp" app:layout_top="edit_container.bottom + 8dp" app:nv_dark_textColor="#99ffffff" />
+    </com.github.mmin18.widget.FlexLayout>
+</com.narvii.app.theme.view.NVThemeLinearLayout>

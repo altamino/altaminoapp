@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/header_layout" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="200.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.NVImageView android:id="@id/topic_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <View android:background="@drawable/topic_story_header_mask_gradient" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.StatusBarPlaceHolder android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <TextView android:textSize="28.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@id/topic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dp" android:layout_marginRight="60.0dp" android:maxLines="2" />
+        </FrameLayout>
+        <HorizontalScrollView android:layout_gravity="bottom" android:id="@id/subtopic_list_scrollview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/subtopic_list" android:paddingLeft="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dividerPadding="5.0dp" android:paddingStart="12.0dp" />
+        </HorizontalScrollView>
+    </LinearLayout>
+</FrameLayout>

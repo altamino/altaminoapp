@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="start|center" android:id="@id/text" android:background="#33ffffff" android:paddingLeft="@dimen/default_padding_horizontal" android:paddingTop="2.0dp" android:paddingRight="@dimen/default_padding_horizontal" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="20.0dp" android:singleLine="true" android:paddingStart="@dimen/default_padding_horizontal" android:paddingEnd="@dimen/default_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

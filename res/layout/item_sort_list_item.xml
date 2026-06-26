@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/drag_sort_remove_btn" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.narvii.widget.ThumbImageView android:id="@id/image" android:layout_width="64.0dp" android:layout_height="64.0dp" />
+        <include layout="@layout/fans_only_content_indicator_layout_small" />
+    </FrameLayout>
+    <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/label" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+    <include layout="@layout/drag_sort_drag_handle" />
+</LinearLayout>

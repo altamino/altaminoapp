@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.feed.FeedListItem android:background="@drawable/ref_quote" android:paddingLeft="@dimen/ref_post_padding_horizantol" android:paddingTop="@dimen/ref_post_padding_vertical" android:paddingRight="@dimen/ref_post_padding_horizantol" android:paddingBottom="@dimen/ref_post_padding_vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ref_post_padding_horizantol" android:paddingEnd="@dimen/ref_post_padding_horizantol" narvii:isRef="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/feed_ref_user_header" />
+    <com.narvii.widget.CardLayout android:id="@id/stub1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="4.0dp" android:layout_below="@id/user_avatar_layout">
+        <com.narvii.widget.Card2View android:id="@id/feed_item_card2" android:background="@drawable/feed_ref_item_card_2" android:paddingLeft="10.0dp" android:paddingTop="6.0dp" android:paddingRight="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="6.0dp">
+            <TextView android:textSize="13.0dp" android:textColor="#ff555555" android:ellipsize="end" android:gravity="center" android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.narvii.widget.ThumbImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.ThumbImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.ThumbImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.ThumbImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.ThumbImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.ThumbImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.FontAwesomeView android:textSize="8.0dp" android:textColor="#aaffffff" android:gravity="center" android:id="@id/mask" android:background="#88000000" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/fa_circle_3" />
+        </com.narvii.widget.Card2View>
+        <com.narvii.widget.CardView android:id="@id/feed_item_card" android:layout_width="136.0dp" android:layout_height="164.0dp">
+            <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" narvii:cornerRadius="10.0dp" narvii:defaultDrawable="@color/item_card_placeholder" narvii:strokeColor="@color/item_card_stroke" narvii:strokeWidth="@dimen/item_card_stroke_width" />
+            <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="match_parent" android:layout_height="24.0dp" android:singleLine="true" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" />
+        </com.narvii.widget.CardView>
+    </com.narvii.widget.CardLayout>
+    <include layout="@layout/fans_only_content_indicator_ref_layout" />
+</com.narvii.feed.FeedListItem>

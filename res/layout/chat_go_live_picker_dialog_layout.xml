@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.RadiusLayout android:layout_gravity="bottom" android:id="@id/picker_content" android:background="#ff0c002e" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_corner_radius="15.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dp" android:text="@string/choose_a_live_mode" />
+        <com.narvii.widget.recycleview.NVRecyclerView android:layout_gravity="center_horizontal" android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/agree_others_speak_ll" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginTop="20.0dp">
+            <ImageView android:id="@id/agree_iv" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/agreement_checked" />
+            <TextView android:textSize="13.0dp" android:textColor="#ccffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dp" android:text="@string/Others_require_approval_to_speak" android:layout_marginStart="9.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/select_tv" android:background="@drawable/chat_go_live_picker_start_bg" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginLeft="18.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="18.0dp" android:layout_marginBottom="50.0dp" android:text="@string/select" android:layout_marginStart="18.0dp" android:layout_marginEnd="18.0dp" />
+    </LinearLayout>
+</com.narvii.widget.RadiusLayout>

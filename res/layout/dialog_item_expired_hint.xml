@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="30.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.NVImageView android:layout_gravity="center_horizontal" android:id="@id/item_preview" android:padding="2.0dp" android:layout_width="80.0dp" android:layout_height="69.0dp" android:layout_marginTop="10.0dp" android:scaleType="centerInside" app:defaultDrawable="@drawable/placeholder_community" />
+        <com.narvii.monetization.utils.StoreItemNameView android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" />
+        <TextView android:textSize="16.0dp" android:textColor="#ffff4040" android:gravity="center" android:id="@id/item_expired_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/item_view_in_store" android:background="@drawable/selector_actvite_green_round" android:paddingTop="13.0dp" android:paddingBottom="13.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_bubble_item_margin" android:text="@string/membership_renew" android:paddingStart="25.0dp" android:paddingEnd="25.0dp" />
+        <TextView android:textSize="16.0dp" android:textColor="#ffb3b3b3" android:layout_gravity="center_horizontal" android:id="@id/unavailable" android:paddingTop="13.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unavailable" android:maxLines="1" />
+    </LinearLayout>
+    <com.narvii.widget.TintButton android:layout_gravity="end" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_actionbar_close" app:tintColor="#ffd2d2d4" />
+</FrameLayout>

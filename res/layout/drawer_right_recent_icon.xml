@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:id="@id/drawer_right_recent_icon" android:paddingBottom="6.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.CommunityIconView android:id="@id/icon" app:layout_centerX="50%" app:layout_height="0.155*@dimen/drawer_right_width" app:layout_width="0.155*@dimen/drawer_right_width" style="@style/CommunityImageView" />
+    <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/badge" android:background="@drawable/drawer_badge_oval" android:layout_width="16.0dp" android:layout_height="16.0dp" app:layout_right="icon.right+4dp" app:layout_top="icon.top-4dp" />
+    <TextView android:textSize="11.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/title" android:layout_height="wrap_content" android:singleLine="true" app:layout_left="5%" app:layout_right="95%" app:layout_top="icon.bottom+4dp" />
+</com.github.mmin18.widget.FlexLayout>

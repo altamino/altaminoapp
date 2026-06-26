@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/benefits_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="58.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dp" android:textColor="#ffe1ae54" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_privileges" android:layout_centerInParent="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:src="@drawable/membership_privileges_diamon" android:layout_centerVertical="true" android:layout_marginStart="14.0dp" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dp" android:src="@drawable/membership_privileges_diamon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="14.0dp" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/subscribe_benefits_text" android:background="@drawable/membership_common_btn_bg" android:visibility="gone" android:layout_width="180.0dp" android:layout_height="40.0dp" android:text="@string/membership_subscribe" android:layout_centerInParent="true" />
+    <include android:layout_width="match_parent" android:layout_height="@dimen/list_divider_height" android:layout_alignParentBottom="true" layout="@layout/list_divider" />
+</RelativeLayout>

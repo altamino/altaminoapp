@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/post_entry_frame" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+        <View android:id="@id/theme_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.widget.ThumbImageView android:id="@id/post_entry_btn2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/cbb_post_entry_margin" narvii:cornerRadius="100.0dp" />
+        <ImageView android:layout_gravity="center" android:id="@id/post_entry_icon" android:layout_width="20.0dp" android:layout_height="wrap_content" android:src="@drawable/ic_compose_mirror" />
+    </FrameLayout>
+</RelativeLayout>

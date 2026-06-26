@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/shadow" android:background="@drawable/scene_quiz_shadow_bg" app:layout_bottom="100%" app:layout_height="card_view.height" app:layout_right="100%" app:layout_width="card_view.width" />
+    <com.github.mmin18.widget.FlexLayout android:id="@id/card_view" android:clipChildren="false" android:clipToPadding="false" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_height="match_parent-@dimen/scene_answer_item_padding_h*2" app:layout_width="match_parent-@dimen/scene_answer_item_padding_h*2">
+        <View android:id="@id/item_bg" android:background="@drawable/scene_quiz_answer_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.widget.NVImageView android:id="@id/shader" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_quiz_answer_shader_right" android:scaleType="centerCrop" app:cornerRadius="@dimen/scene_answer_item_corner_radius" app:showPressedMask="false" />
+        <com.narvii.widgets.SceneQuizAnswerImageView android:id="@id/answer_image" android:layout_width="match_parent" android:scaleType="centerCrop" app:cornerMask="12" app:cornerRadius="@dimen/scene_answer_item_corner_radius" app:defaultDrawable="@color/placeholder_darker" app:layout_bottom="edit_layout.top" app:scalePlaceholder="true" />
+        <com.narvii.widget.NVImageView android:id="@id/duplicate_mark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="@dimen/scene_answer_item_corner_radius" app:strokeColor="#ffff0000" app:strokeWidth="1.0dp" />
+        <FrameLayout android:id="@id/edit_layout" app:layout_bottom="100%" app:layout_height="min(parent.height*0.45,max(60dp,parent.height*0.36))" app:layout_left="12dp" app:layout_right="100%-12dp">
+            <com.narvii.widget.FullFocusEditText android:textSize="14.0dp" android:textColor="#ff000000" android:textColorHint="#ffb9b9b9" android:gravity="center" android:layout_gravity="center" android:id="@id/answer_edit_text" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:lines="2" android:maxLength="30" android:textCursorDrawable="@null" />
+        </FrameLayout>
+        <TextView android:textSize="11.0dp" android:textColor="#ffddd8de" android:id="@id/left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_bottom="100%-4dp" app:layout_right="100%-4dp" />
+    </com.github.mmin18.widget.FlexLayout>
+</com.github.mmin18.widget.FlexLayout>

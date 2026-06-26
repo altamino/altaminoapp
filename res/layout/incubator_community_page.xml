@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/list_layout" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/community_page_actionbar" android:layout_width="match_parent" android:layout_height="@dimen/community_page_actionbar_height">
+        <com.narvii.widget.TintButton android:gravity="center" android:id="@id/actionbar_back" android:padding="10.0dp" android:layout_width="48.0dp" android:layout_height="match_parent" android:src="@drawable/ic_back_mirror" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:shadowColor="#33000000" android:shadowDx="1.0" android:shadowDy="1.0" android:layout_centerHorizontal="true" />
+        <View android:id="@id/actionbar_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

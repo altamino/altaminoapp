@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.narvii.chat.ChatBubbleView android:id="@id/chat_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" narvii:widthMargin="@dimen/chat_bubble_width_margin" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:padding="12.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/store_item_preview" android:layout_width="52.0dp" android:layout_height="50.0dp" android:scaleType="fitCenter" app:defaultDrawable="@color/sticker_placeholder" />
+    <com.narvii.monetization.utils.StoreItemNameView android:textSize="14.0dp" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:maxLines="1" android:layout_marginStart="10.0dp" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.NVScrollView android:background="@color/post_background" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dp" android:textColor="#ff888888" android:gravity="center_horizontal" android:background="@drawable/chat_guideline_bg" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/post_thread_guidelines" />
+            <com.narvii.widget.FontAwesomeView android:textSize="18.0dp" android:textColor="#ff72a4e4" android:gravity="center" android:layout_gravity="end|bottom" android:id="@id/chat_show_guideline" android:padding="8.0dp" android:layout_width="32.0dp" android:layout_height="32.0dp" android:text="@string/fa_info_circle" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/chat_cover_bg" android:layout_width="match_parent" android:layout_height="140.0dp" android:layout_margin="14.0dp">
+            <com.narvii.widget.ThumbImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" narvii:imageType="chat-cover" />
+            <TextView android:textSize="26.0dp" android:textColor="#fff2f2f2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_thread_cover" android:shadowColor="#cc000000" android:shadowDy="2.0" android:shadowRadius="6.0" />
+        </FrameLayout>
+        <EditText android:textSize="16.0dp" android:textColor="#ff222222" android:gravity="start|center" android:id="@id/title" android:background="@drawable/post_clickable_section" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="32.0dp" android:hint="@string/post_title" android:singleLine="true" android:inputType="textCapSentences" />
+        <com.narvii.widget.EditTextIMG android:textSize="16.0dp" android:textColor="#ff222222" android:gravity="start|top" android:id="@id/content" android:background="@drawable/post_clickable_section" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:hint="@string/welcome_message_hint" android:minLines="12" android:maxLength="65535" android:inputType="textCapSentences|textMultiLine" />
+        <LinearLayout android:gravity="center" android:background="@drawable/post_clickable_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dp">
+            <GridLayout android:id="@id/grid" android:layout_width="320.0dp" android:layout_height="wrap_content" android:columnCount="4" />
+        </LinearLayout>
+        <View android:background="#33ffffff" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="14.0dp" />
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_publish_to_global" />
+        <LinearLayout android:orientation="vertical" android:id="@id/post_fans_only" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+            <include android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/influencer_story_indicator" />
+            <View android:background="#33ffffff" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="60.0dp" />
+    </LinearLayout>
+</com.narvii.widget.NVScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="108.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.CardView android:id="@id/item_card3" android:visibility="invisible" android:layout_width="46.0dp" android:layout_height="55.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true">
+        <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" narvii:cornerRadius="4.0dp" narvii:defaultDrawable="@color/item_card_placeholder" narvii:strokeColor="@color/item_card_stroke" narvii:strokeWidth="@dimen/item_card_stroke_width" />
+        <TextView android:textSize="8.0dp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="match_parent" android:layout_height="14.0dp" android:singleLine="true" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" />
+        <include layout="@layout/fans_only_content_indicator_layout_wiki" />
+    </com.narvii.widget.CardView>
+    <com.narvii.widget.CardView android:id="@id/item_card2" android:visibility="invisible" android:layout_width="62.0dp" android:layout_height="74.0dp" android:layout_marginRight="-24.0dp" android:layout_toLeftOf="@id/item_card3" android:layout_centerVertical="true" android:layout_marginEnd="-24.0dp" android:layout_toStartOf="@id/item_card3">
+        <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" narvii:cornerRadius="5.0dp" narvii:defaultDrawable="@color/item_card_placeholder" narvii:strokeColor="@color/item_card_stroke" narvii:strokeWidth="@dimen/item_card_stroke_width" />
+        <TextView android:textSize="9.0dp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="match_parent" android:layout_height="16.0dp" android:singleLine="true" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" />
+        <include layout="@layout/fans_only_content_indicator_layout_wiki" />
+    </com.narvii.widget.CardView>
+    <com.narvii.widget.CardView android:id="@id/item_card1" android:visibility="invisible" android:layout_width="72.0dp" android:layout_height="86.0dp" android:layout_marginRight="-30.0dp" android:layout_toLeftOf="@id/item_card2" android:layout_centerVertical="true" android:layout_marginEnd="-30.0dp" android:layout_toStartOf="@id/item_card2">
+        <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" narvii:cornerRadius="6.0dp" narvii:defaultDrawable="@color/item_card_placeholder" narvii:strokeColor="@color/item_card_stroke" narvii:strokeWidth="@dimen/item_card_stroke_width" />
+        <TextView android:textSize="10.0dp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="match_parent" android:layout_height="18.0dp" android:singleLine="true" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" />
+        <include layout="@layout/fans_only_content_indicator_layout_wiki" />
+    </com.narvii.widget.CardView>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginRight="10.0dp" android:layout_toLeftOf="@id/item_card1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="14.0dp" android:layout_marginEnd="10.0dp" android:layout_toStartOf="@id/item_card1" android:layout_alignParentStart="true">
+        <TextView android:textSize="22.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/label" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="11.0dp" android:textColor="#88ffffff" android:ellipsize="end" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="2" />
+    </LinearLayout>
+</RelativeLayout>

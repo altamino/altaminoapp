@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/community_detail_influencer_cell_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:clipChildren="false" android:clipToPadding="false" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_margin="10.0dp" layout="@layout/user_avatar_layout_large" />
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="10.0dp" android:layout_marginStart="3.0dp" android:layout_marginEnd="10.0dp">
+            <com.narvii.widget.NicknameView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" app:hideInfluencerBadge="false" app:hideRankingBadge="true" app:hideRole="true" app:roleScale="0.6" />
+            <TextView android:textSize="12.0dp" android:textColor="#bbffffff" android:id="@id/fan_club_member" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

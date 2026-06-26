@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.item.detail.HeaderLayout android:id="@id/item_header" android:background="#ff888888" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.SlideshowView android:id="@id/slideshow" android:background="@drawable/slideshow_bg" android:layout_width="match_parent" android:layout_height="match_parent" narvii:hidingHeight2="40.0dp" />
+    <com.github.mmin18.widget.RealtimeBlurView android:layout_gravity="center" android:id="@id/blur" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" narvii:realtimeBlurMaxFPS="5.0" narvii:realtimeBlurRadius="20.0dp" narvii:realtimeOverlayColor="#22ffffff" />
+    <View android:id="@id/gradient" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.narvii.widget.CardView android:id="@id/item_card" android:tag="fade" android:layout_width="118.0dp" android:layout_height="142.0dp" android:layout_above="@id/label" android:layout_centerHorizontal="true">
+        <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" narvii:cornerRadius="10.0dp" narvii:defaultDrawable="@color/item_card_placeholder" narvii:shadowColor="#88888888" narvii:shadowOffsetX="2.0dp" narvii:shadowOffsetY="2.0dp" narvii:shadowSize="4.0dp" narvii:strokeColor="#ffffffff" narvii:strokeWidth="@dimen/item_card_stroke_width" />
+        <View android:id="@id/title" android:layout_width="match_parent" android:layout_height="22.0dp" />
+        <include layout="@layout/fans_only_content_indicator_layout_wiki" />
+    </com.narvii.widget.CardView>
+    <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/label" android:tag="fade" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#cc000000" android:shadowDy="2.0" android:shadowRadius="3.0" android:layout_above="@id/keywords_layout" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/keywords_layout" android:tag="fade" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/vote_layout" android:layout_centerHorizontal="true">
+        <com.narvii.widget.KeywordsView android:layout_gravity="center_horizontal" android:id="@id/keywords" android:paddingLeft="4.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dp" android:paddingEnd="12.0dp" narvii:keywordMargin="8.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/vote_layout" android:tag="fade" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/vote_btn" android:tag="fade" android:background="@drawable/detail_vote_btn_light" android:layout_width="80.0dp" android:layout_height="32.0dp" android:layout_marginTop="10.0dp" android:layout_marginBottom="18.0dp">
+            <com.narvii.widget.VoteIcon android:id="@id/vote_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:scaleType="centerInside" android:layout_marginStart="10.0dp" />
+            <com.narvii.widget.SpinningView android:id="@id/vote_progress" android:visibility="gone" android:layout_width="21.0dp" android:layout_height="21.0dp" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp" narvii:spinColor="#ffffffff" narvii:spinStyle="2" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/feed_toolbar_white" android:gravity="center" android:id="@id/vote_count" android:duplicateParentState="true" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="10.0dp" android:singleLine="true" android:shadowColor="#cc000000" android:shadowDy="1.0" android:shadowRadius="1.5" android:layout_weight="1.0" android:layout_marginStart="6.0dp" android:layout_marginEnd="10.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/actionbar2" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0px" android:layout_marginBottom="-100.0dp" android:layout_alignParentTop="true">
+        <include android:visibility="gone" layout="@layout/actionbar_left_button" />
+        <com.narvii.widget.CardView android:id="@id/item_card2" android:layout_width="34.0dp" android:layout_height="40.0dp" android:layout_marginLeft="50.0dp" android:layout_marginStart="50.0dp">
+            <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" narvii:cornerRadius="3.0dp" narvii:defaultDrawable="@color/item_card_placeholder" narvii:strokeColor="#ffffffff" narvii:strokeWidth="@dimen/item_card_stroke_width" />
+            <TextView android:id="@id/title" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="6.0dp" />
+            <include layout="@layout/fans_only_content_indicator_layout_wiki" />
+        </com.narvii.widget.CardView>
+        <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="112.0dp" android:singleLine="true" android:shadowColor="#cc000000" android:shadowDy="2.0" android:shadowRadius="3.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="112.0dp" />
+    </LinearLayout>
+    <View android:id="@id/item_gold_line" android:background="@color/gold" android:layout_width="match_parent" android:layout_height="3.0dp" android:layout_alignParentBottom="true" />
+</com.narvii.item.detail.HeaderLayout>

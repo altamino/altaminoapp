@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/parent_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:id="@id/vertical_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/top" android:layout_width="match_parent" app:layout_height="25%" />
+        <View android:id="@id/bottom" android:layout_width="match_parent" app:layout_height="75%" app:layout_top="prev.bottom" />
+    </com.github.mmin18.widget.FlexLayout>
+    <com.github.mmin18.widget.FlexLayout android:id="@id/horizontal_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/left" android:layout_height="match_parent" app:layout_width="25%" />
+        <View android:id="@id/right" android:layout_height="match_parent" app:layout_left="prev.right" app:layout_width="75%" />
+    </com.github.mmin18.widget.FlexLayout>
+</FrameLayout>

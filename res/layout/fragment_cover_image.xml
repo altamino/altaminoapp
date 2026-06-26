@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/overlay" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:textSize="14.0dp" android:gravity="center" android:id="@id/tab_screen_shoot" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="@string/tab_screenshots" app:layout_bottom="100%-20dp" app:layout_left="0%+48dp" app:layout_right="50%" />
+    <Button android:textSize="14.0dp" android:gravity="center" android:id="@id/tab_custom" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="@string/tab_custom" app:layout_bottom="100%-20dp" app:layout_left="50%" app:layout_right="100%-48dp" />
+    <FrameLayout android:id="@id/video_time_line_component_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/scene_editor_time_line_item_height" app:layout_bottom="tab_custom.top-30dp">
+        <com.narvii.video.widget.MediaTimeLineComponent android:id="@id/video_time_line_component" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:frameCountInBaseRect="22" app:frameOffset="11">
+            <com.narvii.widget.HorizontalRecyclerView android:id="@id/video_time_line" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            <View android:layout_gravity="center" android:background="@drawable/cover_image_timeline_pointer" android:layout_width="10.0dp" android:layout_height="50.0dp" />
+        </com.narvii.video.widget.MediaTimeLineComponent>
+    </FrameLayout>
+    <FrameLayout android:id="@id/custom_image_rl" android:background="@drawable/cover_image_thumb_dash_shape" android:padding="2.0dp" android:layout_height="62.0dp" app:layout_bottom="tab_custom.top-24dp" app:layout_centerX="50%" app:layout_width="this.height*0.5625">
+        <com.narvii.widget.NVImageView android:layout_gravity="center" android:id="@id/image_thumb_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:showPressedMask="false" />
+        <com.narvii.widget.TintButton android:layout_gravity="center" android:id="@id/select_cover_image_btn" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/ic_story_add_scene_list" app:tintColor="#ff9b9b9b" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/edit_background_view" android:background="#99000000" android:layout_width="match_parent" android:layout_height="17.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_cover_image_edit" />
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:textSize="12.0dp" android:textColor="#ff9b9b9b" android:id="@id/swipe_hint_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swipe_to_select_cover_hint" app:layout_bottom="video_time_line_component_container.top-20dp" app:layout_centerX="50%" />
+    <FrameLayout android:id="@id/video_container" android:background="#ff000000" android:layout_height="wrap_content" app:layout_bottom="swipe_hint_tv.top-15dp" app:layout_centerX="50%" app:layout_top="overlay.bottom+10dp" app:layout_width="this.height*0.5625">
+        <com.narvii.video.widget.videoview.NVEditorPreviewVideoVIew android:id="@id/video_view_player" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.widget.NVImageView android:id="@id/custom_image_view" android:layout_width="match_parent" android:layout_height="match_parent" app:showPressedMask="false" />
+    </FrameLayout>
+    <ImageView android:id="@id/player_button" android:layout_width="1.0dp" android:layout_height="1.0dp" />
+</com.github.mmin18.widget.FlexLayout>

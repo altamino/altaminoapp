@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/actionbar_back" android:padding="10.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_back_no_shadow" />
+    <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="52.0dp" android:text="@string/account_restore_account" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ffb5b5b5" android:gravity="end|center" android:id="@id/next" android:background="@drawable/button_round_transparent_dark" android:padding="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:minHeight="52.0dp" android:text="@string/next" android:maxLines="2" android:shadowColor="#33000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_toRightOf="@id/title" android:layout_alignParentRight="true" android:textAlignment="viewEnd" android:layout_marginStart="4.0dp" android:layout_toEndOf="@id/title" android:layout_alignParentEnd="true" />
+</RelativeLayout>

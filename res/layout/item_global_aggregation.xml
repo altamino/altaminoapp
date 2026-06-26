@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <View narvii:layout_height="this.width" narvii:layout_width="100%" />
+    <ImageView android:id="@id/global_selected_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_current_community_indicator" narvii:layout_centerY="50%" narvii:layout_left="0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" narvii:layout_centerX="50%" narvii:layout_centerY="50%">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_global_chat" />
+        <TextView android:textSize="11.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/global" />
+    </LinearLayout>
+    <com.narvii.widget.AutoScaleTextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/global_notification_count" android:background="@drawable/community_notification_badge_o" android:visibility="gone" narvii:defaultAtHeight="24.0dp" narvii:layout_centerX="icon_layout.right-2dp" narvii:layout_centerY="icon_layout.top+2dp" narvii:layout_height="this.width" narvii:layout_width="18dp" narvii:minScaleTextSize="12.0dp" />
+</com.github.mmin18.widget.FlexLayout>

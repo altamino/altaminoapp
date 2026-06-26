@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#fff6f7f9" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="50.0dp" android:layout_marginTop="80.0dp" android:layout_marginRight="50.0dp" android:layout_marginBottom="80.0dp">
+        <com.narvii.widget.ChatStickerView android:id="@id/chat_sticker" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.narvii.widget.NVImageView android:id="@id/image" android:layout_width="0.0px" android:layout_height="0.0px" />
+            <com.narvii.chat.ChatFlexSizeImageView android:id="@id/placeholder" android:layout_width="@dimen/sticker_min_img_width" android:layout_height="@dimen/sticker_min_img_height" narvii:defaultDrawable="@color/chat_bubble_image_placeholder_bg" narvii:estimatedHeight="@dimen/sticker_min_img_width" narvii:estimatedWidth="@dimen/sticker_min_img_height" />
+        </com.narvii.widget.ChatStickerView>
+        <com.narvii.widget.EmojioneView android:id="@id/mood_sticker" android:layout_width="@dimen/chat_mood_sticker_size" android:layout_height="@dimen/chat_mood_sticker_size" />
+        <TextView android:textSize="16.0dp" android:textColor="#ff717379" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/collection_layout" android:background="#ffffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="75.0dp">
+        <FrameLayout android:background="@drawable/sticker_collection_icon_bg_stroke_grey" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+            <com.narvii.monetization.sticker.widget.StickerImageView android:id="@id/collection_icon" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.narvii.monetization.utils.StoreItemNameView android:id="@id/sticker_collection_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <include layout="@layout/sticker_pack_item_author_layout" />
+            <TextView android:textSize="12.0dp" android:textColor="#ff999999" android:id="@id/subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/_default" />
+        </LinearLayout>
+        <com.narvii.monetization.StoreItemStatusView android:layout_gravity="center_vertical" android:id="@id/store_item_status_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="20.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="20.0dp" />
+    </LinearLayout>
+</FrameLayout>

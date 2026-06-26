@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff666666" android:gravity="start" android:id="@id/item_property_title" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+    <LinearLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="2.0">
+        <com.narvii.widget.FontAwesomeRatingBar android:id="@id/item_property_value" android:clickable="false" android:layout_width="140.0dp" android:layout_height="24.0dp" narvii:rating1Color="#fff1ad27" narvii:rating1Text="@string/fa_star" narvii:ratingMax="5" />
+    </LinearLayout>
+</merge>

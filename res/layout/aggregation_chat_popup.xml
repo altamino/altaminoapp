@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.SameChildWidthLinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:layout_marginEnd="6.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/inbound" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+            <TextView android:textSize="14.0dp" android:textColor="#ff2b2b2b" android:id="@id/inbound_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:text="@string/allow_inbound_chat_requests" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="1.0dp">
+            <View android:id="@id/divider" android:background="#fff4f4f4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/manage" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+            <TextView android:textSize="14.0dp" android:textColor="#ff2b2b2b" android:id="@id/manage_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:text="@string/manage_my_chat" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+        </LinearLayout>
+    </com.narvii.widget.SameChildWidthLinearLayout>
+</FrameLayout>

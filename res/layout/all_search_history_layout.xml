@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.util.layouts.NVFlowLayout android:id="@id/flow_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:flow_gravity="-1" app:max_tag_lines="2" />
+</FrameLayout>

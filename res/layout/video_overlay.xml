@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/video_overlay_frame" android:layout_width="1.0px" android:layout_height="1.0px">
+        <View android:id="@id/video_overlay_bg" android:background="#ff000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.narvii.video.SharedVideoView android:layout_gravity="center" android:id="@id/video_overlay_video" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/video_overlay_loading" android:visibility="invisible" android:layout_width="48.0dp" android:layout_height="48.0dp" app:spinColor="#ccffffff" app:spinStyle="2" />
+            <com.narvii.widget.FullHitFrameLayout android:layout_gravity="end|bottom" android:layout_width="40.0dp" android:layout_height="40.0dp">
+                <com.narvii.widget.EasyButton android:layout_gravity="end|bottom" android:id="@id/video_overlay_volume" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_marginBottom="6.0dp" android:layout_marginEnd="10.0dp" />
+            </com.narvii.widget.FullHitFrameLayout>
+            <com.narvii.widget.FullHitFrameLayout android:layout_gravity="right|top" android:layout_width="30.0dp" android:layout_height="30.0dp">
+                <com.narvii.widget.EasyButton android:layout_gravity="right|top" android:id="@id/video_overlay_share" android:background="@drawable/button_round_dark" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/ic_community_share" />
+            </com.narvii.widget.FullHitFrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/video_overlay_controls" android:visibility="invisible" android:layout_width="200.0dp" android:layout_height="150.0dp">
+        <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:layout_gravity="start|top" android:id="@id/debug_video_status" android:background="#88000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="Fetching url..." android:layout_marginStart="2.0dp" />
+        <com.narvii.widget.FullHitFrameLayout android:layout_gravity="end|bottom" android:layout_width="40.0dp" android:layout_height="40.0dp">
+            <com.narvii.widget.EasyButton android:layout_gravity="end|bottom" android:id="@id/video_overlay_right_corner_volume" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_marginBottom="6.0dp" android:layout_marginEnd="10.0dp" />
+        </com.narvii.widget.FullHitFrameLayout>
+    </FrameLayout>
+</FrameLayout>

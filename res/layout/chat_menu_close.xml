@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mini" android:paddingLeft="15.0dp" android:paddingTop="15.0dp" android:paddingRight="15.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pip" android:scaleType="centerInside" android:minWidth="30.0dp" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/selector_white_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/mini_window" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/close" android:paddingLeft="15.0dp" android:paddingTop="10.0dp" android:paddingRight="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+        <com.narvii.widget.TintButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:scaleType="centerInside" android:minWidth="30.0dp" app:tintColor="#ffea1212" />
+        <TextView android:textSize="14.0dp" android:textColor="#ffea1212" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/close_the_chat" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.members.NewMemberListRow android:orientation="vertical" android:background="#ffffffff" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="130.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="30.0dp">
+        <TextView android:textSize="14.0dp" android:textColor="#ff444444" android:gravity="center" android:id="@id/option_see_all" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/see_all" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/icon_chat" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_chat_to_new_member" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff222222" android:gravity="start|center" android:id="@id/new_member_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:text="@string/chat_to_new_members" android:layout_toLeftOf="@id/option_see_all" android:layout_toRightOf="@id/icon_chat" android:layout_toStartOf="@id/option_see_all" android:layout_toEndOf="@id/icon_chat" />
+    </RelativeLayout>
+    <com.narvii.widget.recycleview.NVHorizontalRecycleView android:id="@id/new_members_list" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="80.0dp" />
+</com.narvii.members.NewMemberListRow>

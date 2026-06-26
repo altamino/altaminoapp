@@ -1,0 +1,54 @@
+.class final Lcom/narvii/community/AggregationBaseFragment$removeUnusedFragment$1;
+.super Ljava/lang/Object;
+.source "AggregationBaseFragment.kt"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/narvii/community/AggregationBaseFragment;->removeUnusedFragment()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/narvii/community/AggregationBaseFragment;
+
+
+# direct methods
+.method constructor <init>(Lcom/narvii/community/AggregationBaseFragment;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/narvii/community/AggregationBaseFragment$removeUnusedFragment$1;->this$0:Lcom/narvii/community/AggregationBaseFragment;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 110
+    iget-object v0, p0, Lcom/narvii/community/AggregationBaseFragment$removeUnusedFragment$1;->this$0:Lcom/narvii/community/AggregationBaseFragment;
+
+    invoke-virtual {v0}, Lcom/narvii/community/AggregationBaseFragment;->getSelectedNdcId()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lcom/narvii/community/AggregationBaseFragment;->getFallbackIndexWhenCurrentLeave(I)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lcom/narvii/community/AggregationBaseFragment;->onItemSelected(I)V
+
+    return-void
+.end method

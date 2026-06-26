@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@android:id/empty" android:paddingTop="15.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_story_discover_empty" />
+    <TextView android:textSize="16.0dp" android:textColor="#88ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/story_discover_empty" />
+    <com.narvii.widget.FontAwesomeView android:textColor="@color/button_text_gray_w" android:gravity="center" android:id="@id/empty_retry" android:padding="12.0dp" android:clickable="true" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="10.0dp" android:text="@string/ion_refresh" />
+</LinearLayout>

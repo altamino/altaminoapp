@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/check_window_change_layout" />
+    <include layout="@layout/list_layout" />
+    <com.narvii.list.ListHoverFrame android:gravity="center" android:id="@id/hover_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.list.overlay.OverlayLayout android:id="@id/overlay" android:clipChildren="false" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="0.0px" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/headline_default_padding_horizontal" android:paddingRight="@dimen/headline_default_padding_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/headline_default_padding_horizontal" android:paddingEnd="@dimen/headline_default_padding_horizontal">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_amino_recent" />
+            <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/recent" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <com.narvii.widget.HorizontalRecyclerView android:id="@id/recent_amino_layout" android:paddingLeft="@dimen/headline_default_padding_horizontal" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:paddingStart="@dimen/headline_default_padding_horizontal" />
+    </LinearLayout>
+</FrameLayout>

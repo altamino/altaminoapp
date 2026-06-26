@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/top_offset" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dp" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+        <com.narvii.widget.VolumeIndicator android:layout_gravity="center_horizontal" android:id="@id/volume_level_indicator_top" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="5.0dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/account_info" android:paddingLeft="8.0dp" android:paddingTop="4.0dp" android:paddingRight="8.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="8.0dp" android:paddingEnd="8.0dp">
+            <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/nickname" android:background="@drawable/round_dark_corner_25" android:layout_width="0.0px" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="20" android:shadowColor="#ff000000" android:shadowRadius="1.0" android:layout_weight="1.0" style="@style/TextCellWithPadding" />
+            <ImageView android:gravity="center_vertical" android:id="@id/audio_muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:src="@drawable/ic_voice_muted" android:scaleType="centerInside" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <com.narvii.widget.VolumeIndicator android:layout_gravity="center_horizontal" android:id="@id/volume_level_indicator_bottom" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="5.0dp" />
+    </LinearLayout>
+</LinearLayout>

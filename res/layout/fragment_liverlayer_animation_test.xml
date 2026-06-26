@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/testComment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Comment" />
+    <FrameLayout android:layout_width="@dimen/comment_cell_width_double" android:layout_height="@dimen/comment_cell_height_double">
+        <com.narvii.widget.CommentLiveIndicator android:id="@id/comment_indicator" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <Button android:id="@id/testPoll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Poll" />
+    <FrameLayout android:layout_width="@dimen/poll_cell_width" android:layout_height="@dimen/poll_cell_height">
+        <com.narvii.widget.PollLiveIndicator android:id="@id/poll_live_indicator" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.community.CBBHost android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="horizontal" android:id="@id/main_layout" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/cbb_height" android:layout_margin="@dimen/cbb_margin">
+            <com.narvii.widget.ThumbImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/cbb_background" narvii:cornerRadius="34.0dp" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/cbb_padding_h" android:paddingRight="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cbb_menu" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/cbb_tab_size" android:layout_height="@dimen/cbb_tab_size">
+                    <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.narvii.widget.PressedFrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:src="@drawable/ic_cbb_menu" style="@style/cbb_tab_icon" />
+                        </com.narvii.widget.PressedFrameLayout>
+                        <View android:layout_gravity="end" android:id="@id/badge" android:background="@drawable/drawer_badge_o" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginTop="-2.0dp" />
+                    </FrameLayout>
+                    <TextView android:text="@string/menu" style="@style/cbb_tab_text" />
+                </LinearLayout>
+                <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cbb_online" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/cbb_tab_size" android:layout_height="@dimen/cbb_tab_size">
+                    <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="28.0dp">
+                        <com.narvii.widget.PressedFrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/cbb_online_icon" android:src="@drawable/ic_cbb_online" style="@style/cbb_tab_icon" />
+                        </com.narvii.widget.PressedFrameLayout>
+                        <com.github.mmin18.widget.FlexLayout android:id="@id/online_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.narvii.livelayer.CBBLiveLayerOnlineBar android:id="@id/online_bar" android:padding="1.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" narvii:avatarSize="26.0dp" narvii:layout_left="2dp" />
+                            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/member_count" android:background="@drawable/cbb_online_member_count_bg" android:paddingLeft="4.5dp" android:paddingTop="1.0dp" android:paddingRight="4.5dp" android:paddingBottom="1.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/cbb_online_member_min_size" android:minHeight="@dimen/cbb_online_member_min_size" android:includeFontPadding="false" narvii:layout_centerX="47dp" narvii:layout_centerY="online_bar.top+2dp" />
+                        </com.github.mmin18.widget.FlexLayout>
+                    </FrameLayout>
+                    <TextView android:text="@string/online" style="@style/cbb_tab_text" />
+                </LinearLayout>
+                <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cbb_post_entry" android:layout_width="@dimen/cbb_tab_size" android:layout_height="@dimen/cbb_tab_size">
+                    <include layout="@layout/cbb_post_entry" />
+                </FrameLayout>
+                <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cbb_chat" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/cbb_tab_size" android:layout_height="@dimen/cbb_tab_size">
+                    <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.narvii.widget.PressedFrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/cbb_chat_icon" android:src="@drawable/ic_cbb_chat" style="@style/cbb_tab_icon" />
+                        </com.narvii.widget.PressedFrameLayout>
+                        <View android:layout_gravity="end" android:id="@id/badge" android:background="@drawable/drawer_badge_o" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginTop="-2.0dp" />
+                    </FrameLayout>
+                    <TextView android:id="@id/cbb_chat_text" android:text="@string/chats" style="@style/cbb_tab_text" />
+                </LinearLayout>
+                <View android:id="@id/cbb_chat_divider" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cbb_me" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/cbb_tab_size" android:layout_height="@dimen/cbb_tab_size">
+                    <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <include android:layout_width="@dimen/cbb_tab_icon_size" android:layout_height="@dimen/cbb_tab_icon_size" layout="@layout/user_avatar_layout_mini_nobadge" />
+                        <View android:layout_gravity="end" android:id="@id/badge" android:background="@drawable/drawer_badge_o" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginTop="-2.0dp" />
+                    </FrameLayout>
+                    <TextView android:id="@id/cbb_me_text" android:text="@string/me" style="@style/cbb_tab_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</com.narvii.community.CBBHost>

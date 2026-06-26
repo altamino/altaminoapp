@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/root" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/content" android:background="@drawable/round_white" android:padding="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dp" android:layout_marginRight="35.0dp" android:layout_marginStart="35.0dp" android:layout_marginEnd="35.0dp">
+        <com.narvii.widget.TintButton android:layout_gravity="end" android:id="@id/close" android:padding="6.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_template_close" app:tintColor="#ffd2d2d4" />
+        <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/streak_repair_title" />
+        <FrameLayout android:background="#ff4a4a4a" android:paddingLeft="20.0dp" android:paddingTop="16.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="-10.0dp" android:layout_marginStart="-10.0dp" android:layout_marginEnd="-10.0dp">
+            <com.narvii.checkin.CheckInStreakRepairLayout android:id="@id/check_in_streak_repair_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="82.0dp">
+                <View android:id="@id/light" android:background="@drawable/ic_check_in_strike_repair_light" android:visibility="invisible" android:layout_width="30.0dp" android:layout_height="22.5dp" android:layout_marginTop="-3.0dp" android:layout_marginBottom="-6.0dp" android:layout_below="@id/checked" />
+                <com.narvii.checkin.CheckInStreakBar android:id="@id/check_in_streak_bar" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/light" app:StreakMode="1" app:childMaxSize="22.0dp" app:circleSize="14.0dp" />
+                <include android:id="@id/checked" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" layout="@layout/check_in_streak_normal_cell" />
+            </com.narvii.checkin.CheckInStreakRepairLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/ongoing_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+                <TextView android:textSize="13.0dp" android:textColor="#ffb4b4b4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/streak_repair_choice_hint" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginStart="8.0dp">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/choice_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+                        <CheckBox android:id="@id/choice_1_check" android:clickable="false" android:layout_width="22.0dp" android:layout_height="22.0dp" android:checked="true" android:button="@drawable/check_box_streak_repair" />
+                        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ff333334" android:id="@id/choice_1_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/free_for_amino_plus" android:layout_marginStart="10.0dp" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0dp" android:textStyle="bold" android:id="@id/learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginTop="4.0dp" android:layout_marginStart="32.0dp" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/choice_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:layout_marginStart="8.0dp">
+                    <CheckBox android:id="@id/choice_2_check" android:clickable="false" android:layout_width="22.0dp" android:layout_height="22.0dp" android:button="@drawable/check_box_streak_repair" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:src="@drawable/amino_coin_small" android:layout_marginStart="10.0dp" />
+                    <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ff333334" android:id="@id/choice_2_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="300" android:layout_marginStart="6.0dp" />
+                </LinearLayout>
+                <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/fix_streak" android:background="@drawable/button_round_fix_streak" android:paddingLeft="40.0dp" android:paddingTop="10.0dp" android:paddingRight="40.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:paddingStart="40.0dp" android:paddingEnd="40.0dp">
+                    <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/fix_container_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_ahead_repair_streak" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/fix_container_fixing" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/fixing_indicator" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+                        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="@string/fixing" android:layout_marginStart="4.0dp" />
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView android:textSize="12.0dp" android:textColor="#ffb9b9b9" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/earn_coins_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="10.0dp" android:minWidth="205.0dp" android:text="@string/membership_earn_coins" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/repair_done_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_streak_repair_done" />
+                <TextView android:textSize="15.0dp" android:textColor="#ff4a4a4a" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/repair_done" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

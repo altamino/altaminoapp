@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.video.widget.MediaTimeLineComponent android:id="@id/audio_time_line_component" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dp" app:frameCountInBaseRect="22" app:frameOffset="11"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.video.widget.ViceTimeLineWrapperView android:id="@id/vice_time_line_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.narvii.widget.HorizontalRecyclerView android:id="@id/audio_time_line" android:layout_width="wrap_content" android:layout_height="@dimen/scene_editor_time_line_item_height" />
+        <com.narvii.video.widget.ViceTimeLineCutterView android:id="@id/vice_time_line_cutter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/scene_editor_time_line_item_height" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/track_content_panel" android:layout_width="wrap_content" android:layout_height="@dimen/scene_editor_time_line_item_height">
+            <ImageView android:id="@id/track_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="5.0dp" android:scaleType="fitCenter" android:layout_marginStart="10.0dp" android:layout_marginEnd="5.0dp" />
+            <TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/clip_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+            <com.narvii.widget.NVImageView android:id="@id/track_sticker_icon" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="5.0dp" android:scaleType="fitCenter" android:layout_marginStart="10.0dp" android:layout_marginEnd="5.0dp" app:showPressedMask="false" />
+        </LinearLayout>
+    </com.narvii.video.widget.ViceTimeLineWrapperView>
+</com.narvii.video.widget.MediaTimeLineComponent>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0pt" android:layout_weight="1.0">
+        <View android:background="@drawable/gradient_white_bottom" android:layout_width="match_parent" app:layout_bottom="bg_bottom.top" app:layout_height="46%" />
+        <View android:id="@id/bg_bottom" android:background="#ffffffff" android:layout_width="match_parent" app:layout_bottom="100%" app:layout_height="20%" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_post_lock_for_fans_only" app:layout_bottom="hint.top-15dp" app:layout_centerX="50%" />
+        <TextView android:textSize="16.0dp" android:textColor="#ff303030" android:gravity="center" android:id="@id/hint" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fans_only_hint" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" app:layout_bottom="become_fans.top-15dp" />
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/become_fans" android:background="@drawable/selector_become_fans" android:paddingLeft="18.0dp" android:paddingRight="18.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="40.0dp" android:text="@string/become_a_fan" android:paddingStart="18.0dp" android:paddingEnd="18.0dp" app:layout_bottom="95%" app:layout_centerX="50%" />
+    </com.github.mmin18.widget.FlexLayout>
+    <View android:id="@id/margin_bottom_placeholder" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="0.0dp" />
+</LinearLayout>

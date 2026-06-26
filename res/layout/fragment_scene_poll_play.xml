@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/background" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.github.mmin18.widget.FlexLayout android:id="@id/flex_layout" android:paddingLeft="30.0dp" android:paddingTop="20.0dp" android:paddingRight="30.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.narvii.widget.AutoSizingTextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="70.0dp" android:maxLines="3" />
+        <LinearLayout android:orientation="vertical" android:id="@id/options_container" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_top="title.bottom+(options_container.height > screen.height/2 ? 15dp :30dp)" app:layout_width="80%" />
+        <TextView android:textSize="12.0dp" android:textColor="#b3ffffff" android:gravity="center" android:id="@id/vote_count" android:background="@drawable/vote_count_background" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="20.0dp" app:layout_centerX="50%" app:layout_top="options_container.bottom" />
+        <TextView android:textSize="13.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/change_vote" android:background="@drawable/change_vote_background" android:layout_height="35.0dp" android:text="@string/detail_vote_change_vote" app:layout_centerX="50%" app:layout_top="(vote_count.visible?vote_count.bottom:options_container.bottom)+20dp" app:layout_width="80%-5dp" />
+        <TextView android:textSize="15.0dp" android:textColor="#b3ffffff" android:gravity="center" android:id="@id/skip_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_top="(change_vote.visible?change_vote.bottom:vote_count.bottom)+(options_container.height>screen.height/2?10dp:40dp)" />
+    </com.github.mmin18.widget.FlexLayout>
+</RelativeLayout>

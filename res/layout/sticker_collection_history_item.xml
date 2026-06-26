@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.monetization.sticker.manage.StickerCollectionItem android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/collection_layout" android:background="@drawable/item_selector_white_grey" android:layout_width="match_parent" android:layout_height="85.0dp">
+        <FrameLayout android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+            <com.narvii.monetization.sticker.widget.StickerCacheImageView android:id="@id/collection_icon" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ImageView android:layout_gravity="end|bottom" android:id="@id/not_available_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sticker_pack_not_available" />
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/edit" android:background="@drawable/selector_black_alpha_50" android:visibility="gone" android:layout_width="match_parent" android:layout_height="25.0dp">
+                <com.narvii.widget.TintButton android:layout_gravity="center" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_sticker_pack_edit" app:tintColor="#ffffffff" />
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/collection_layout_main" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.narvii.monetization.utils.StoreItemNameView android:id="@id/sticker_collection_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <include layout="@layout/sticker_pack_item_author_layout" />
+            <TextView android:textSize="12.0dp" android:textColor="#ff999999" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+        </LinearLayout>
+        <CheckBox android:layout_gravity="end|center" android:id="@id/active" android:layout_width="52.0dp" android:layout_height="30.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:checked="false" android:button="@drawable/switch_bg" />
+    </LinearLayout>
+</com.narvii.monetization.sticker.manage.StickerCollectionItem>

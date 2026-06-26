@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.community.widget.CommunitySummaryInfoLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/community_icon_name" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:layout_weight="1.0" android:layout_marginEnd="6.0dp">
+        <com.narvii.widget.ThumbImageView android:id="@id/community_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" app:cornerRadius="3.0dp" app:defaultDrawable="@drawable/placeholder_community" app:imageType="community-icon" app:scalePlaceholder="true" />
+        <com.narvii.widget.ShrinkLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp">
+            <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#bbffffff" android:ellipsize="end" android:id="@id/community_name" android:tag="shrink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="11.0dp" android:textColor="#aaffffff" android:id="@id/feed_date_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+        </com.narvii.widget.ShrinkLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/member_info_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/online_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:layout_marginEnd="4.0dp" />
+        <TextView android:textSize="12.0dp" android:textColor="#ff38d89c" android:id="@id/membersInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:singleLine="true" android:layout_marginStart="4.0dp" />
+    </LinearLayout>
+</com.narvii.community.widget.CommunitySummaryInfoLayout>

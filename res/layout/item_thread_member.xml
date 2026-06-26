@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:gravity="center_horizontal" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include narvii:layout_centerX="50%" narvii:layout_height="this.width" narvii:layout_top="15dp" narvii:layout_width="max(52dp, parent.width*0.8)" layout="@layout/user_avatar_layout_mini" />
+    <FrameLayout android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" narvii:layout_centerX="50%" narvii:layout_left="4dp" narvii:layout_top="prev.bottom+4dp">
+        <com.narvii.widget.NicknameView android:textSize="11.0dp" android:textColor="#ff222222" android:layout_gravity="center" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" narvii:hideRole="true" />
+    </FrameLayout>
+    <TextView android:textSize="10.0dp" android:textColor="#ffaaaaaa" android:ellipsize="end" android:gravity="center" android:id="@id/chat_member_invited" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_status_invited" android:singleLine="true" narvii:layout_centerX="50%" narvii:layout_left="4dp" narvii:layout_right="100%-4dp" narvii:layout_top="prev.bottom+4dp" />
+</com.github.mmin18.widget.FlexLayout>

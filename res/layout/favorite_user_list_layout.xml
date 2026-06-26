@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/list_frame" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mobeta.android.dslv.DragSortListView android:id="@android:id/list" android:paddingBottom="@dimen/add_favorite_user_height" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/list_selector" android:headerDividersEnabled="true" android:footerDividersEnabled="true" dslv:collapsed_height="2.0dp" dslv:drag_enabled="true" dslv:drag_scroll_start="0.33" dslv:float_alpha="0.6" dslv:max_drag_scroll_speed="1.0" dslv:slide_shuffle_speed="0.6" dslv:track_drag_sort="false" dslv:use_default_controller="false" />
+        <include layout="@layout/favorite_user_add_new_layout" />
+    </FrameLayout>
+    <include layout="@layout/empty_view" />
+</FrameLayout>

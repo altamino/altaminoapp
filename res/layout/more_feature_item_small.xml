@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="@dimen/more_featured_item_width_s" android:layout_height="@dimen/more_featured_item_height_s"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4.0dp" app:cardCornerRadius="3.0dp" app:cardElevation="2.5dp" app:cardMaxElevation="4.0dp">
+        <com.narvii.feed.PopularFeedListItem android:orientation="vertical" android:id="@id/feed_item_base" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="4.0dp" app:defaultDrawable="@color/placeholder_popular" app:hidePlayButton="true" />
+                <LinearLayout android:gravity="start" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/text_bg_gradual_corner" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/feature_top_feed_title_size" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/text" android:tag="top" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="130.0dp" android:maxLines="3" android:shadowColor="#ff333333" android:shadowDx="1.0" android:shadowDy="1.0" />
+                    <include android:id="@id/feed_toolbar" android:layout_width="match_parent" android:layout_height="40.0dp" layout="@layout/feed_popular_toolbar_top_small" />
+                    <View android:id="@id/divider" android:background="@color/feature_feed_divider" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="2.0dp" />
+                </LinearLayout>
+                <include layout="@layout/fans_only_content_indicator_layout" />
+            </FrameLayout>
+        </com.narvii.feed.PopularFeedListItem>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

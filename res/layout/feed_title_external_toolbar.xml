@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.feed.FeedToolbarExternalLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignTop="@id/user_click" android:layout_alignBottom="@id/user_click" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_external_toolbar_more" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10.0dp" android:layout_marginEnd="10.0dp">
+        <com.narvii.widget.TintButton android:gravity="center" android:id="@id/feed_external_toolbar_more_icon" android:background="@drawable/button_round_transparent" android:padding="4.0dp" android:duplicateParentState="true" android:layout_width="28.0dp" android:layout_height="match_parent" android:src="@drawable/ic_share_more" />
+    </LinearLayout>
+</com.narvii.feed.FeedToolbarExternalLayout>

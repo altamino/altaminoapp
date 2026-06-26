@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="92.0dp" android:layout_height="@dimen/item_card_height" android:paddingStart="4.0dp" android:paddingEnd="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="8.0dp" app:defaultDrawable="@color/white" app:strokeColor="@color/item_card_stroke" app:strokeWidth="@dimen/item_card_stroke_width" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout" android:paddingTop="6.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.TintButton android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_wiki_gallery_more" />
+        <TextView android:textSize="14.0dp" android:textColor="#ff9b9b9b" android:gravity="center" android:id="@id/name" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/see_all" android:maxLines="2" />
+    </LinearLayout>
+</FrameLayout>

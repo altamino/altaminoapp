@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingTop="@dimen/date_section_header_padding_v" android:paddingBottom="@dimen/date_section_header_padding_v" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#88ffffff" android:layout_width="2.0dp" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp" android:layout_marginStart="4.0dp" />
+    <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="start|center" android:id="@id/time" android:paddingLeft="6.0dp" android:paddingRight="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" android:paddingStart="6.0dp" android:paddingEnd="15.0dp" />
+    <View android:background="@drawable/date_section_gradient_line" android:layout_width="match_parent" android:layout_height="1.0dp" />
+</LinearLayout>

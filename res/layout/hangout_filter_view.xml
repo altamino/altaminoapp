@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.SameChildWidthLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="132.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/item1" android:paddingLeft="18.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:paddingStart="18.0dp">
+            <TextView android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recommended" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="150.0dp" android:layout_height="wrap_content">
+            <View android:layout_gravity="bottom" android:background="#33f4f4f4" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="18.0dp" android:layout_marginStart="18.0dp" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/item2" android:paddingLeft="18.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:paddingStart="18.0dp">
+            <TextView android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/popular" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="150.0dp" android:layout_height="wrap_content">
+            <View android:layout_gravity="bottom" android:background="#33f4f4f4" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="18.0dp" android:layout_marginStart="18.0dp" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/item3" android:paddingLeft="18.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:paddingStart="18.0dp">
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/latest" />
+        </LinearLayout>
+    </com.narvii.widget.SameChildWidthLinearLayout>
+</FrameLayout>

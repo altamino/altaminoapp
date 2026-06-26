@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.RadiusLayout android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" android:id="@id/divider" android:background="#33ffffff" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="31.0dp" android:layout_height="31.0dp" android:src="@drawable/ic_quiz_result_medal_title" />
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/top_players" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/top_players" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score" />
+    </LinearLayout>
+</com.narvii.widget.RadiusLayout>

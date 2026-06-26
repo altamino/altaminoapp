@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/stub2" android:layout_width="1.0px" android:layout_height="1.0px" android:layout_centerInParent="true" />
+    <com.narvii.widget.ThumbImageView android:id="@id/image1" android:layout_width="@dimen/chat_avatar_size" android:layout_height="@dimen/chat_avatar_size" android:layout_toLeftOf="@id/stub2" android:layout_toStartOf="@id/stub2" />
+    <com.narvii.widget.ThumbImageView android:id="@id/image2" android:layout_width="@dimen/chat_avatar_size" android:layout_height="@dimen/chat_avatar_size" android:layout_toRightOf="@id/stub2" android:layout_above="@id/stub2" android:layout_toEndOf="@id/stub2" />
+    <com.narvii.widget.ThumbImageView android:id="@id/image3" android:layout_width="@dimen/chat_avatar_size" android:layout_height="@dimen/chat_avatar_size" android:layout_toRightOf="@id/stub2" android:layout_below="@id/stub2" android:layout_toEndOf="@id/stub2" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:layout_gravity="center_vertical" android:id="@id/avatar" android:layout_width="36.0dp" android:layout_height="36.0dp" style="@style/AvatarImageView" />
+    <com.narvii.widget.NicknameView android:textSize="12.0dp" android:textColor="#ff555555" android:layout_gravity="center_vertical" android:id="@id/nickname" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp" app:hideRole="true" />
+    <com.narvii.widget.FontAwesomeView android:textSize="20.0dp" android:textColor="#fff2f2f2" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/checkmark" android:background="@drawable/button_oval_blue" android:padding="7.0dp" android:visibility="invisible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:text="@string/fa_check" />
+</LinearLayout>

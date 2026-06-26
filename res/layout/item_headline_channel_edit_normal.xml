@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="@dimen/headline_default_padding_horizontal" android:paddingRight="@dimen/headline_default_padding_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/headline_default_padding_horizontal" android:paddingEnd="@dimen/headline_default_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.NVImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="15.0dp" android:layout_height="20.0dp" android:layout_marginRight="8.0dp" android:scaleType="centerInside" android:layout_marginEnd="8.0dp" />
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/title" android:paddingRight="10.0dp" android:layout_width="0.0pt" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textAllCaps="true" android:paddingEnd="10.0dp" />
+        <CheckBox android:layout_gravity="end|center" android:id="@id/actived" android:layout_width="52.0dp" android:layout_height="30.0dp" android:layout_marginRight="8.0dp" android:checked="false" android:button="@drawable/switch_bg" android:layout_marginEnd="8.0dp" />
+        <include android:layout_gravity="end|center" android:id="@id/drag_handle" android:layout_width="40.0dp" android:layout_height="30.0dp" layout="@layout/drag_sort_drag_handle" />
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/list_divider_height" layout="@layout/list_divider" />
+</LinearLayout>

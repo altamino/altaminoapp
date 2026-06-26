@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/account_background" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+      xmlns:narvii="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/account_restore_toolbar" />
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.narvii.widget.TextInputLayout android:orientation="vertical" android:id="@id/email_input_layout" android:layout_height="wrap_content" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="10dp">
+                    <include layout="@layout/account_email_edit" />
+                </com.narvii.widget.TextInputLayout>
+                <com.narvii.widget.TextInputLayout android:orientation="vertical" android:id="@id/pass_input_layout" android:layout_height="wrap_content" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="prev.bottom+14dp" narvii:show_password_toggle="true">
+                    <include layout="@layout/account_password_edit" />
+                </com.narvii.widget.TextInputLayout>
+                <Button android:enabled="false" android:textSize="16.0dp" android:id="@id/restore" android:background="@drawable/account_button_round_white" android:layout_height="52.0dp" android:minHeight="40.0dp" android:text="@string/account_restore" narvii:layout_left="12%" narvii:layout_right="88%" narvii:layout_top="prev.bottom+30dp" style="@style/ButtonLogin" />
+                <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="@color/account_signup_clickable_text_white" android:layout_gravity="end" android:id="@id/forget_password" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_forget_password" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" narvii:layout_centerX="50%" narvii:layout_top="prev.bottom+12dp" />
+            </com.github.mmin18.widget.FlexLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

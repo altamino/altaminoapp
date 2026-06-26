@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flag_empty" app:layout_centerX="50%" app:layout_centerY="30%" />
+    <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/empty_content" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/flag_resolve_empty_info1" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" app:layout_centerX="50%" app:layout_centerY="57%" />
+    <TextView android:textSize="15.0dp" android:textColor="#ff555555" android:gravity="center" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/flag_resolve_empty_info2" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" app:layout_centerX="50%" app:layout_top="empty_content.bottom+4dp" />
+    <com.narvii.widget.FontAwesomeView android:textColor="@color/button_text_gray_w" android:gravity="center" android:id="@id/empty_retry" android:padding="12.0dp" android:clickable="true" android:layout_width="60.0dp" android:layout_height="60.0dp" android:text="@string/ion_refresh" app:layout_centerX="50%" app:layout_top="prev.bottom+6dp" />
+</com.github.mmin18.widget.FlexLayout>

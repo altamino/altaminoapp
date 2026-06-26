@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.feed.FeedListItem android:background="@drawable/ref_quote" android:paddingLeft="@dimen/ref_post_padding_horizantol" android:paddingTop="@dimen/ref_post_padding_vertical" android:paddingRight="@dimen/ref_post_padding_horizantol" android:paddingBottom="@dimen/ref_post_padding_vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ref_post_padding_horizantol" android:paddingEnd="@dimen/ref_post_padding_horizantol" narvii:isRef="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textColor="#ff555555" android:gravity="center" android:id="@id/null_text" android:layout_width="match_parent" android:layout_height="56.0dp" android:text="@string/feed_null" />
+</com.narvii.feed.FeedListItem>

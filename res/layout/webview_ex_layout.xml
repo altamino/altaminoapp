@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/webview_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/webview_block" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.FontAwesomeView android:textColor="#ffdd0000" android:layout_width="64.0dp" android:layout_height="64.0dp" android:text="@string/ion_alert_circled" />
+        <TextView android:textSize="16.0dp" android:textColor="#ff333333" android:gravity="center_horizontal" android:paddingBottom="64.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="32.0dp" android:layout_marginRight="20.0dp" android:text="@string/webview_blocked" />
+    </LinearLayout>
+</FrameLayout>

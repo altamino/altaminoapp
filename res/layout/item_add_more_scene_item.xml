@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <View android:background="#33d8d8d8" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.narvii.widget.TintButton android:id="@id/tb_add" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/ic_scene_added" narvii:tintColor="@color/story_theme_color" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/story_theme_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/add_a_new_scene" android:layout_marginStart="5.0dp" />
+    </LinearLayout>
+</RelativeLayout>

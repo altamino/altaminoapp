@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:padding="@dimen/shared_photo_item_padding" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:id="@id/cover" android:layout_width="match_parent" app:defaultDrawable="@color/add_photo_placeholder" app:layout_height="this.width" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_photo" app:layout_centerX="50%" app:layout_centerY="50%" />
+        <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/album_add_photos" />
+    </LinearLayout>
+</com.github.mmin18.widget.FlexLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.PushButton android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginLeft="30.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="30.0dp" android:layout_marginBottom="10.0dp" app:pushButtonColor="@color/color_default">
+        <com.narvii.widget.AutoSizingTextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/text" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" app:autoSizeTextMaxSize="18.0dp" app:autoSizeTextMinSize="12.0dp" />
+    </com.narvii.widget.PushButton>
+</LinearLayout>

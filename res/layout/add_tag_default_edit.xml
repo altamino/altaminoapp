@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.AutoFocusDisabledEditText android:textColorHint="#ffffffff" android:id="@id/add_tag" android:background="@drawable/add_community_tag_bg" android:maxLines="1" android:inputType="textCapWords" android:imeOptions="actionNext" android:textCursorDrawable="@drawable/edit_cursor_white_normal" style="@style/tag_edit_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

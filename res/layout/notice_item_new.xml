@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingTop="7.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="32.0dp" android:layout_height="38.0dp">
+        <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="32.0dp" android:layout_height="32.0dp">
+            <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/user_avatar_layout_mini" />
+            <com.narvii.widget.NVImageView android:id="@id/icon2" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" app:showPressedMask="false" />
+            <com.narvii.widget.CommunityIconView android:id="@id/community_icon" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="2.0dp" app:defaultDrawable="@drawable/placeholder_community" />
+        </FrameLayout>
+        <com.narvii.widget.NVImageView android:layout_gravity="end|bottom" android:id="@id/icon" android:layout_width="14.0dp" android:layout_height="14.0dp" android:scaleType="fitCenter" app:showPressedMask="false" />
+    </FrameLayout>
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_weight="1.0" android:layout_marginStart="8.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.narvii.app.theme.view.NVThemeTextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#cc000000" android:ellipsize="end" android:id="@id/name" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" app:nv_dark_textColor="#ffffffff" />
+            <com.narvii.app.theme.view.NVThemeTextView android:textSize="10.0dp" android:textColor="#99000000" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:nv_dark_textColor="#99ffffff" />
+        </LinearLayout>
+        <com.narvii.app.theme.view.NVThemeTextView android:textSize="14.0dp" android:textColor="#cc000000" android:ellipsize="end" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="2" app:nv_dark_textColor="#ffffffff" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/text2_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+            <com.narvii.app.theme.view.NVThemeView android:background="#99000000" android:layout_width="2.0dp" android:layout_height="13.0dp" app:nv_dark_background="#99ffffff" />
+            <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:textColor="#99000000" android:ellipsize="end" android:id="@id/text2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:maxLines="1" android:layout_marginStart="6.0dp" app:nv_dark_textColor="#99ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

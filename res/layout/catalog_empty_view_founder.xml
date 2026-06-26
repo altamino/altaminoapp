@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.list.overlay.OverlayListPlaceholder android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/gold" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/catalog_add" android:background="@drawable/button_oval_white_rect" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+            <ImageView android:background="@drawable/circle_transplant" android:padding="10.0dp" android:layout_width="55.0dp" android:layout_height="55.0dp" android:src="@drawable/ic_catalog_plus" android:scaleType="centerInside" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginStart="12.0dp">
+                <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="@color/gold" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/catalog_empty" />
+                <TextView android:textSize="16.0dp" android:textColor="@color/gold" android:id="@id/catalog_empty_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/catalog_add_category" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/gold" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+    </LinearLayout>
+    <com.narvii.widget.FontAwesomeView android:textColor="@color/button_text_gray_w" android:gravity="center" android:id="@id/empty_retry" android:padding="12.0dp" android:clickable="true" android:layout_width="60.0dp" android:layout_height="60.0dp" android:text="@string/ion_refresh" app:layout_centerX="50%" app:layout_centerY="50%" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_bottom="parent.height" app:layout_centerX="50%" layout="@layout/catalog_submit_favorite" />
+</com.github.mmin18.widget.FlexLayout>

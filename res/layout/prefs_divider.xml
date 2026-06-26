@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeFrameLayout android:layout_width="match_parent" android:layout_height="@dimen/list_divider_height" app:nv_dark_background="#1affffff"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="@dimen/list_divider_height" android:layout_marginLeft="20.0dp" android:layout_marginStart="20.0dp" layout="@layout/list_divider" />
+</com.narvii.app.theme.view.NVThemeFrameLayout>

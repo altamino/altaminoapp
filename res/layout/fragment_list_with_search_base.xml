@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/search_layout_container" android:background="#3f000000" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="@dimen/community_base_height">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:id="@id/search_layout" android:background="@drawable/selector_black_alpha_50_corner_4" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/master_home_top_tab_margin_horizontal" android:layout_marginRight="@dimen/master_home_top_tab_margin_horizontal" android:layout_marginStart="@dimen/master_home_top_tab_margin_horizontal" android:layout_marginEnd="@dimen/master_home_top_tab_margin_horizontal">
+            <com.narvii.widget.TintButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/ic_search" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="@dimen/master_home_top_tab_search_inner_padding" android:src="@drawable/ic_searchr" android:scaleType="centerInside" android:layout_marginStart="@dimen/master_home_top_tab_search_inner_padding" />
+            <TextView android:textSize="14.0dp" android:textColor="#aaffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/search" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/list_layout" />
+</LinearLayout>

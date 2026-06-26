@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="@dimen/vote_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/feed_ref_header" />
+    <com.narvii.widget.UserClickView android:id="@id/user_click" android:layout_width="0.0px" android:layout_height="0.0px" android:layout_alignRight="@id/nickname" android:layout_alignBottom="@id/avatar" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignEnd="@id/nickname" android:layout_alignParentStart="true" />
+    <com.narvii.widget.CardView android:id="@id/vote_item" android:layout_width="108.0dp" android:layout_height="132.0dp" android:layout_marginTop="4.0dp" android:layout_below="@id/nickname" android:layout_alignLeft="@id/nickname" android:layout_alignStart="@id/nickname">
+        <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" narvii:cornerRadius="4.0dp" narvii:defaultDrawable="@color/item_card_placeholder" narvii:strokeColor="@color/item_card_stroke" narvii:strokeWidth="@dimen/item_card_stroke_width" />
+        <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="none" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="24.0dp" android:singleLine="true" />
+        <include layout="@layout/fans_only_content_indicator_layout_wiki" />
+    </com.narvii.widget.CardView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0px" android:layout_height="42.0dp" android:layout_toRightOf="@id/vote_item" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/vote_item" android:layout_alignParentEnd="true">
+        <Button android:textStyle="bold" android:textColor="#ffeeeeee" android:id="@id/vote_action" android:background="@drawable/button_round_blue" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+        <FrameLayout android:id="@id/vote_action2" android:background="@drawable/button_round_normal" android:visibility="gone" android:layout_width="46.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp">
+            <com.narvii.widget.FontAwesomeView android:textSize="8.0dp" android:textColor="#ffaaaaaa" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fa_circle_3" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

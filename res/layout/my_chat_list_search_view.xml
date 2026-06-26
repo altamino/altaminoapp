@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="#0a030524" android:paddingLeft="14.0dp" android:paddingRight="14.0dp" android:layout_width="match_parent" android:layout_height="54.0dp" android:paddingStart="14.0dp" android:paddingEnd="14.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/selector_my_chat_list_search" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_centerInParent="true" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.narvii.widget.TintButton android:gravity="center" android:id="@id/ic_search" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="@dimen/master_home_top_tab_search_inner_padding" android:src="@drawable/ic_searchr" android:scaleType="centerInside" android:layout_marginStart="@dimen/master_home_top_tab_search_inner_padding" app:tintColor="#ffd6d6d6" />
+        <TextView android:textSize="14.0dp" android:textColor="#ffd6d6d6" android:gravity="center" android:layout_width="0.0pt" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/search_my_chats" android:layout_weight="1.0" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+</RelativeLayout>

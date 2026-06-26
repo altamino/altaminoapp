@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/selector_rect_white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/ref_obj_margin" android:background="#fffafafa" android:layout_width="match_parent" android:layout_height="10.0dp" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/strike_obj_container" android:background="@drawable/selector_rect_white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.narvii.widget.ThumbImageView android:layout_gravity="center_vertical" android:id="@id/obj_avatar" android:padding="1.0dp" android:layout_width="@dimen/strike_warning_avatar_size" android:layout_height="@dimen/strike_warning_avatar_size" android:layout_marginRight="10.0dp" android:layout_marginEnd="10.0dp" />
+            <com.narvii.widget.EmojioneView android:id="@id/mood_sticker" android:visibility="gone" android:layout_width="@dimen/chat_mood_sticker_size" android:layout_height="@dimen/chat_mood_sticker_size" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0pt" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dp" android:textColor="#ff303030" android:id="@id/obj_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0dp" android:textColor="#ff7e7e7e" android:ellipsize="end" android:id="@id/obj_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" />
+        </LinearLayout>
+        <com.narvii.widget.TintButton android:layout_gravity="end|center" android:id="@id/obj_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:src="@drawable/strike_next_right_mirror" android:layout_marginStart="8.0dp" app:tintColor="#ffccd6dd" />
+    </LinearLayout>
+</LinearLayout>

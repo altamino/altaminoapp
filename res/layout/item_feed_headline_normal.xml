@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.feed.FeedListItem android:id="@id/headline_feed_item" android:background="@drawable/selector_headline_bg" android:padding="@dimen/headline_default_padding_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/community_info" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/community_info_layout" />
+        <FrameLayout android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="6.0dp" android:layout_below="@id/community_info">
+            <include layout="@layout/item_feed_normal_headline" />
+        </FrameLayout>
+        <include android:id="@id/feed_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/content_container" layout="@layout/feed_toolbar_headline" />
+    </com.narvii.feed.FeedListItem>
+</LinearLayout>

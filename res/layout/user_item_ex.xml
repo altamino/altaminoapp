@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/user_item_height" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/user_avatar_layout_mini" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="14.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="14.0dp">
+        <com.narvii.widget.NicknameView android:textSize="17.0dp" android:textColor="#ff555555" android:id="@id/nickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffaaaaaa" android:ellipsize="end" android:id="@id/address" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffaaaaaa" android:ellipsize="end" android:id="@id/amino_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:singleLine="true" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffaaaaaa" android:ellipsize="end" android:id="@id/extra_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/user_relation_following" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/follow_check" />
+    <com.narvii.widget.FullHitFrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/user_follow" android:background="@drawable/button_round_follow" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="@dimen/follow_button_width" android:layout_height="wrap_content" android:minHeight="@dimen/follow_button_height" android:paddingStart="4.0dp" android:paddingEnd="4.0dp">
+            <ImageView android:id="@id/user_follow_icon" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_follow_plus" android:scaleType="centerInside" />
+            <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#ffeeeeee" android:id="@id/user_follow_text" android:paddingLeft="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_follow" android:maxLines="2" android:paddingStart="4.0dp" />
+            <com.narvii.widget.SpinningView android:id="@id/user_follow_progress" android:visibility="gone" android:layout_width="@dimen/spin_tiny_size" android:layout_height="@dimen/spin_tiny_size" narvii:spinColor="#ffeeeeee" narvii:spinStyle="2" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/disabled" android:background="@drawable/radius_red" android:paddingLeft="10.0dp" android:paddingTop="4.0dp" android:paddingRight="10.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disabled" />
+    </com.narvii.widget.FullHitFrameLayout>
+</LinearLayout>

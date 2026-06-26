@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:padding="@dimen/shared_photo_item_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.monetization.sticker.widget.StickerCacheImageView android:id="@id/sticker" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_height="this.width" />
+    <View android:id="@id/disabled" android:background="#88ff595f" android:visibility="gone" app:layout_bottom="sticker.bottom" app:layout_left="sticker.left" app:layout_right="sticker.right" app:layout_top="sticker.top" />
+    <ImageView android:id="@id/delete" android:paddingLeft="20.0dp" android:paddingBottom="20.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_item_delete" android:paddingStart="20.0dp" app:layout_right="100%" app:layout_top="0dp" />
+</com.github.mmin18.widget.FlexLayout>

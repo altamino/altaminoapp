@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tooltip_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/tooltip_margin_h" android:layout_marginRight="@dimen/tooltip_margin_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.PopupBubble android:layout_gravity="left" android:id="@id/popup_bubble" android:tag="tooltip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TooltipPopBubble">
+        <LinearLayout android:padding="@dimen/tooltip_container_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="top" android:id="@id/finger_start" android:visibility="gone" android:layout_width="27.0dp" android:layout_height="40.0dp" android:layout_marginRight="@dimen/tooltip_finger_margin_h" android:layout_marginEnd="@dimen/tooltip_finger_margin_h" />
+            <TextView android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/hint_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TooltipText" />
+            <ImageView android:layout_gravity="top" android:id="@id/finger_end" android:visibility="gone" android:layout_width="27.0dp" android:layout_height="40.0dp" android:layout_marginLeft="@dimen/tooltip_finger_margin_h" android:layout_marginStart="@dimen/tooltip_finger_margin_h" />
+        </LinearLayout>
+    </com.narvii.widget.PopupBubble>
+</FrameLayout>

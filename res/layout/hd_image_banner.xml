@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hq_banner_root" android:background="#ff000000" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/hq_selected" android:padding="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/check_hq_image" />
+    <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="@string/hd_image" android:layout_marginStart="4.0dp" />
+    <ImageView android:background="@drawable/monetization_item_amino_plus_background_all_corner" android:paddingLeft="5.0dp" android:paddingTop="3.0dp" android:paddingRight="5.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:src="@drawable/ic_amino_plus_text_icon" android:scaleType="centerInside" android:paddingStart="5.0dp" android:paddingEnd="5.0dp" android:layout_marginStart="4.0dp" />
+</LinearLayout>

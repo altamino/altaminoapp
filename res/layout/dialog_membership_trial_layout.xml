@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/bg" android:background="#b3000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.github.mmin18.widget.FlexLayout android:id="@id/main_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_width="80%">
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_content" android:background="@drawable/membership_trial_layout_bg_gradient" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.github.mmin18.widget.FlexLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.widget.NVImageView android:layout_width="wrap_content" android:layout_height="30.0dp" android:src="@drawable/amino_plus_icon" app:layout_centerX="50%" app:layout_top="18dp" />
+                <com.narvii.widget.AutoSizingTextView android:textSize="26.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="match_parent" android:layout_marginLeft="14.0dp" android:layout_marginRight="14.0dp" android:text="@string/membership_trial_hint" android:maxLines="4" app:autoSizeTextMaxSize="26.0dp" app:autoSizeTextMinSize="12.0dp" app:layout_height="min(130dp,screen.height-250dp-next.height)" app:layout_left="10dp" app:layout_right="100%-10dp" app:layout_top="prev.bottom+20dp" />
+                <com.narvii.widget.RatioLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_top="prev.bottom+20dp" app:ratio="0.2591">
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/membership_free_image" />
+                </com.narvii.widget.RatioLayout>
+            </com.github.mmin18.widget.FlexLayout>
+            <FrameLayout android:background="@drawable/membership_trial_layout_bottom_white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="100.0dp">
+                <com.github.mmin18.widget.FlexLayout android:layout_gravity="center" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+                    <com.narvii.widget.ThumbImageView android:id="@id/try_free_btn_bg" android:src="@drawable/try_free_btn_bg" app:cornerRadius="25.0dp" app:layout_height="50dp" app:layout_width="try_free.width" app:shadowColor="#55000000" app:shadowOffsetX="0.0dp" app:shadowOffsetY="2.0dp" app:shadowSize="5.0dp" />
+                    <com.narvii.widget.AutoSizingTextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/try_free" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:layout_width="wrap_content" android:layout_height="50.0dp" android:text="@string/membership_try_for_free" app:autoSizeTextMaxSize="22.0dp" app:autoSizeTextMinSize="12.0dp" />
+                </com.github.mmin18.widget.FlexLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <com.narvii.widget.PopButton android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dialog_close_circle" android:alpha="0.8" app:layout_centerX="50%" app:layout_top="dialog_content.bottom+20dp" app:tintColor="#ffffffff" />
+    </com.github.mmin18.widget.FlexLayout>
+</com.github.mmin18.widget.FlexLayout>

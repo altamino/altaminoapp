@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.RadiusLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="73.0dp" app:layout_corner_radius_left_top="15.0dp" app:layout_corner_radius_right_top="15.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="#33ffffff" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" android:paddingEnd="20.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/balance_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp">
+            <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="6.0dp" android:src="@drawable/amino_coin_big" android:layout_marginEnd="6.0dp" />
+            <TextView android:textSize="21.0dp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dp" android:textColor="@color/white" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tipping_total_coins" android:layout_alignParentBottom="true" android:alpha="0.6" />
+        <TextView android:textSize="14.0dp" android:textColor="#ff4380ff" android:id="@id/nav_to_wallet" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tipping_check_my_wallet" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</com.narvii.widget.RadiusLayout>

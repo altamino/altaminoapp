@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeFrameLayout android:id="@id/list_frame" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ranking_top_hover" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/title_hover" layout="@layout/quizzes_result_list_title" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" layout="@layout/list_view" />
+        <com.narvii.story.widgets.StoryReplayNextView android:id="@id/story_quiz_replay_next_view" android:paddingTop="15.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.StatusBarPlaceHolder android:id="@id/status_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/share" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginRight="18.0dp" android:src="@drawable/share_community" android:layout_below="@id/status_bar" android:layout_alignParentRight="true" android:layout_marginEnd="18.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <include layout="@layout/empty_view" />
+</com.narvii.app.theme.view.NVThemeFrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#80ffffff" android:gravity="center" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_bookmarked_topics_hint" />
+    <Button android:textSize="14.0dp" android:textColor="#ffffffff" android:id="@id/explore_topics_button" android:background="@drawable/button_stroke_white_round_5" android:padding="11.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="40.0dp" android:text="@string/explore_topics" />
+</com.narvii.app.theme.view.NVThemeLinearLayout>

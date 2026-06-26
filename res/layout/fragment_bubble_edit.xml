@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff333334" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.StatusBarPlaceHolder android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/fake_action_bar" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back" />
+        <TextView android:textSize="19.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/actionbar_title" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/custom_your_bubble" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_weight="1.0" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+        <TextView android:textSize="16.0dp" android:textColor="#ffffffff" android:id="@id/save_bubble" android:background="@drawable/selector_save_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/save" android:layout_marginEnd="4.0dp" style="@style/TextCellWithPadding" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.github.mmin18.widget.FlexLayout android:orientation="vertical" android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/bubble_preview_container" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:minHeight="220.0dp" app:layout_height="35%">
+                <com.narvii.monetization.bubble.BubbleEditView android:layout_gravity="center" android:id="@id/bubble_editor" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/bubble_picker_container" android:background="#ffffffff" android:layout_width="match_parent" app:layout_height="65%" app:layout_top="bubble_preview_container.bottom" />
+            <LinearLayout android:orientation="vertical" android:id="@id/sticker_picker_container" android:background="@drawable/hide_striker_bg" android:visibility="gone" android:layout_width="match_parent" app:layout_bottom="100%" app:layout_height="70%">
+                <LinearLayout android:orientation="vertical" android:id="@id/hide_sticker" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_drag_down_indicator" />
+                    <View android:background="#fff6f7f9" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/sticker_frame" android:layout_width="match_parent" android:layout_height="0.0pt" android:layout_weight="1.0" />
+            </LinearLayout>
+        </com.github.mmin18.widget.FlexLayout>
+        <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:visibility="gone" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" app:layout_centerX="50%" app:layout_centerY="50%" app:spinColor="#ffffffff" />
+    </FrameLayout>
+</LinearLayout>

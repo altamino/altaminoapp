@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.feed.FeedListItem android:tag="item" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/user_head" layout="@layout/feed_user_header" />
+    <com.narvii.widget.CardLayout android:id="@id/stub1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/user_head">
+        <com.narvii.widget.Card2View android:id="@id/feed_item_card2" android:background="@drawable/feed_item_card_2" android:paddingLeft="14.0dp" android:paddingTop="8.0dp" android:paddingRight="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="14.0dp" android:paddingEnd="8.0dp">
+            <TextView android:textSize="13.0dp" android:textColor="#ff888888" android:ellipsize="end" android:gravity="center" android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.narvii.widget.SecretImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.SecretImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.SecretImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.SecretImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.SecretImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.SecretImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.narvii.widget.FontAwesomeView android:textSize="8.0dp" android:textColor="#aaffffff" android:gravity="center" android:id="@id/mask" android:background="#88000000" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/fa_circle_3" />
+        </com.narvii.widget.Card2View>
+        <com.narvii.widget.CardView android:id="@id/feed_item_card" android:layout_width="@dimen/feed_list_item_card_width" android:layout_height="@dimen/feed_list_item_card_height">
+            <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" narvii:cornerRadius="12.0dp" narvii:defaultDrawable="@color/item_card_placeholder" narvii:strokeColor="@color/item_card_stroke" narvii:strokeWidth="@dimen/item_card_stroke_width" />
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="match_parent" android:layout_height="26.0dp" android:singleLine="true" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" />
+        </com.narvii.widget.CardView>
+    </com.narvii.widget.CardLayout>
+    <include android:id="@id/feed_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/feed_toolbar_height" android:layout_marginTop="2.0dp" android:layout_below="@id/stub1" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" layout="@layout/feed_toolbar" />
+    <include layout="@layout/fans_only_content_indicator_layout" />
+</com.narvii.feed.FeedListItem>

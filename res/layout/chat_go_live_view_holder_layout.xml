@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.ScaleView android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/scale_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.RadiusLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_corner_radius="15.0dp">
+        <com.github.mmin18.widget.FlexLayout android:layout_gravity="center" android:id="@id/container" android:background="#0fffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/mode_iv" android:layout_width="match_parent" app:layout_centerX="50%" app:layout_height="this.width*0.45" />
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff22e9a2" android:gravity="center" android:id="@id/mode_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/video_sharing" app:layout_centerX="50%" app:layout_top="mode_iv.bottom+12dp" />
+            <TextView android:textSize="12.0dp" android:textColor="#ff22e9a2" android:gravity="center" android:id="@id/mode_hint_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="17.0dp" android:text="@string/video_sharing_hint" app:layout_centerX="50%" app:layout_top="mode_title_tv.bottom" />
+        </com.github.mmin18.widget.FlexLayout>
+    </com.narvii.widget.RadiusLayout>
+</com.narvii.widget.ScaleView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="64.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/rtc_indicator_container" />
+    </FrameLayout>
+    <include layout="@layout/user_avatar_layout_mini" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp">
+        <com.narvii.widget.NicknameView android:textSize="17.0dp" android:textColor="#ff555555" android:id="@id/nickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffaaaaaa" android:ellipsize="end" android:id="@id/address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/user_picker_uncheck" android:background="@drawable/button_oval_empty" android:layout_width="32.0dp" android:layout_height="32.0dp" />
+    <com.narvii.widget.FontAwesomeView android:textSize="20.0dp" android:textColor="#fff2f2f2" android:gravity="center" android:id="@id/user_picker_check" android:background="@drawable/button_oval_blue" android:padding="7.0dp" android:layout_width="32.0dp" android:layout_height="32.0dp" android:text="@string/fa_check" />
+</LinearLayout>

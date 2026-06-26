@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_main_layout" android:paddingTop="20.0dp" android:paddingBottom="80.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shared_folder_empty_sad_face" />
+            <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="30.0dp" android:text="@string/shared_folder_empty_message" />
+            <FrameLayout android:id="@id/upload_layout" android:background="@drawable/upload_more_photos" android:addStatesFromChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:paddingLeft="16.0dp" android:paddingTop="12.0dp" android:paddingRight="16.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_new_photos" android:drawableLeft="@drawable/ic_upload_more_photos" android:drawablePadding="16.0dp" android:drawableStart="@drawable/ic_upload_more_photos" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

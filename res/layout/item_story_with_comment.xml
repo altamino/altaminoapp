@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.paging.PageView android:tag="StoryDetailPage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.story.widgets.StoryItemView android:orientation="vertical" android:id="@id/story_item" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/item_story_content" />
+            <TextView android:textColor="#ff6a6a6a" android:textColorHint="#ff6a6a6a" android:gravity="start|center" android:layout_gravity="bottom" android:id="@id/comment_bar" android:background="@color/story_bottom_bar" android:paddingLeft="10.0dp" android:paddingRight="0.0dp" android:layout_width="match_parent" android:layout_height="@dimen/master_tab_bar_height" android:hint="@string/add_comment_hint" android:paddingStart="10.0dp" android:paddingEnd="0.0dp" />
+            <include layout="@layout/item_story_view_container" />
+        </FrameLayout>
+    </com.narvii.story.widgets.StoryItemView>
+</com.narvii.paging.PageView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.chat.ChatImageView android:id="@id/image" android:layout_width="0.0px" android:layout_height="0.0px" narvii:cornerRadius="@dimen/chat_bubble_corner_radius" narvii:estimateHeight="@dimen/chat_bubble_max_img_height" narvii:estimateWidth="@dimen/chat_bubble_max_img_width" narvii:imageType="chat-message" />
+    <com.narvii.chat.ChatFlexSizeImageView android:id="@id/placeholder" android:layout_width="0.0px" android:layout_height="0.0px" android:scaleType="centerInside" narvii:defaultDrawable="@drawable/chat_image_placeholder_icon" narvii:estimatedHeight="@dimen/chat_bubble_max_img_height" narvii:estimatedWidth="@dimen/chat_bubble_max_img_width" narvii:imageType="chat-message" />
+    <View android:id="@id/stub1" android:layout_width="0.0px" android:layout_height="0.0px" />
+</merge>

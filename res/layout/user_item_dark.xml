@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/user_item_height" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+        <include layout="@layout/user_avatar_layout_mini" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="14.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="14.0dp">
+            <com.narvii.widget.NicknameView android:textSize="17.0dp" android:textColor="#ffffffff" android:id="@id/nickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0dp" android:textColor="#b3ffffff" android:ellipsize="end" android:id="@id/address" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0dp" android:textColor="#b3ffffff" android:ellipsize="end" android:id="@id/amino_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:singleLine="true" />
+            <TextView android:textSize="12.0dp" android:textColor="#b3ffffff" android:ellipsize="end" android:id="@id/extra_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dp" android:textColor="#b3ffffff" android:ellipsize="end" android:id="@id/time_ago" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <com.narvii.widget.FullHitFrameLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/disabled" android:background="@drawable/radius_red" android:paddingLeft="10.0dp" android:paddingTop="4.0dp" android:paddingRight="10.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disabled" />
+        </com.narvii.widget.FullHitFrameLayout>
+    </LinearLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp" layout="@layout/list_divider_dark" />
+</LinearLayout>

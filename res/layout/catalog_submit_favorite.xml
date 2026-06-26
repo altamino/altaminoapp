@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/catalog_add" android:paddingTop="20.0dp" android:paddingBottom="60.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dp" android:textColor="@color/gold" android:id="@id/submit_favorite" android:background="@drawable/button_round_submit_favorite" android:paddingLeft="26.0dp" android:paddingTop="8.0dp" android:paddingRight="26.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/catalog_submit_favorite" android:paddingStart="26.0dp" android:paddingEnd="26.0dp" />
+    <TextView android:textSize="12.0dp" android:textColor="#88ffffff" android:gravity="center" android:paddingLeft="26.0dp" android:paddingTop="8.0dp" android:paddingRight="26.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/catalog_submit_favorite_desc" android:paddingStart="26.0dp" android:paddingEnd="26.0dp" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/clip_fast_switching_panel_item_size" android:layout_height="@dimen/clip_fast_switching_panel_item_size" android:layout_marginRight="@dimen/clip_fast_switching_panel_item_margin" android:layout_marginEnd="@dimen/clip_fast_switching_panel_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/clip_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" narvii:cornerRadius="8.0dp" />
+    <TextView android:textSize="11.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/clip_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/action" android:background="@drawable/button_rect_white" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:textSize="16.0dp" android:textColor="@color/chat_item_tile" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/chat_change_background" android:layout_weight="1.0" android:layout_marginStart="10.0dp" />
+        <FrameLayout android:layout_width="23.399994dp" android:layout_height="36.0dp">
+            <com.narvii.widget.NVImageView android:id="@id/background_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.github.mmin18.widget.RealtimeBlurView android:id="@id/background_thumbnail_blur" android:layout_width="match_parent" android:layout_height="match_parent" app:realtimeBlurMaxFPS="5.0" app:realtimeBlurRadius="3.0dp" app:realtimeOverlayColor="#44ffffff" />
+        </FrameLayout>
+        <com.narvii.widget.FontAwesomeView android:id="@id/chat_mute_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="15.0dp" android:layout_marginRight="10.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="10.0dp" style="@style/IconChevronRight" />
+    </LinearLayout>
+</LinearLayout>

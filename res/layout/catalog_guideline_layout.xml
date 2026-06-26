@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/catalog_guideline" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="#f2333333" android:paddingTop="22.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dp" android:textColor="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="14.0dp" android:text="@string/catalog_welcome_title" android:layout_marginStart="10.0dp" />
+        <com.narvii.widget.FontAwesomeView android:textSize="32.0dp" android:textStyle="bold" android:textColor="@color/button_text_light" android:gravity="center" android:layout_gravity="end|top" android:id="@id/close" android:padding="10.0dp" android:layout_width="44.0dp" android:layout_height="44.0dp" android:text="@string/ion_android_close" />
+    </FrameLayout>
+    <TextView android:textSize="15.0dp" android:textColor="#ffcccccc" android:background="#f2333333" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/catalog_welcome_message" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    <View android:background="@drawable/shadow_drop" android:layout_width="match_parent" android:layout_height="6.0dp" />
+</LinearLayout>

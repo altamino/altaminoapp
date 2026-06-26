@@ -1,0 +1,6 @@
+/build
+/dist
+**/java_src/**
+java_src/**
+java_src
+altamino.jks

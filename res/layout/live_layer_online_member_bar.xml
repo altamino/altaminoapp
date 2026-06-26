@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.livelayer.ws.ClipLayout android:id="@id/main_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/online_text_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24.0dp">
+            <com.narvii.widget.NVImageView android:id="@id/bar" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="#cc000000" android:layout_alignLeft="@id/content" android:layout_alignRight="@id/content" android:layout_alignStart="@id/content" android:layout_alignEnd="@id/content" app:cornerRadius="12.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <View android:id="@id/green_oval" android:background="@drawable/oval_green" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginLeft="23.0dp" android:layout_marginRight="4.0dp" android:layout_marginStart="23.0dp" android:layout_marginEnd="4.0dp" />
+                <TextView android:textSize="11.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/online_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:singleLine="true" android:layout_marginEnd="12.0dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.narvii.livelayer.ws.ClipLayout>
+    <include android:id="@id/recent_avatar" android:visibility="gone" layout="@layout/live_layer_online_member_avatar" />
+    <View android:id="@id/live_layer_halo" android:background="@drawable/live_layer_halo" android:visibility="invisible" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginLeft="-3.0dp" android:layout_marginTop="-3.0dp" />
+</merge>

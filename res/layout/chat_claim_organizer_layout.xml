@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/organizer_trans_request_layout" android:minHeight="170.0dp" layout="@layout/chat_claim_organizer_request_layout" />
+    <include android:id="@id/organizer_trans_confirm_layout" android:minHeight="170.0dp" layout="@layout/chat_claim_organizer_confirm_layout" />
+    <include android:id="@id/organizer_trans_claim_layout" android:minHeight="170.0dp" layout="@layout/chat_claim_organizer_claim_layout" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center|bottom" android:id="@id/list_frame" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" app:spinColor="#ffffffff" />
+    <com.narvii.widget.NVListView android:scrollbarSize="0.0px" android:id="@android:id/list" android:scrollbars="none" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/list_selector" android:divider="@null" android:dividerHeight="0.0px" />
+    <include android:id="@android:id/empty" layout="@layout/empty_leader_board" />
+</FrameLayout>

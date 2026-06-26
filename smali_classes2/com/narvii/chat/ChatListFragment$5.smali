@@ -1,0 +1,100 @@
+.class Lcom/narvii/chat/ChatListFragment$5;
+.super Ljava/lang/Object;
+.source "ChatListFragment.java"
+
+# interfaces
+.implements Lcom/narvii/util/Callback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/narvii/chat/ChatListFragment;->checkCommunityJoined()Z
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/narvii/util/Callback<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/narvii/chat/ChatListFragment;
+
+.field final synthetic val$ndcId:I
+
+
+# direct methods
+.method constructor <init>(Lcom/narvii/chat/ChatListFragment;I)V
+    .locals 0
+
+    .line 1754
+    iput-object p1, p0, Lcom/narvii/chat/ChatListFragment$5;->this$0:Lcom/narvii/chat/ChatListFragment;
+
+    iput p2, p0, Lcom/narvii/chat/ChatListFragment$5;->val$ndcId:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public call(Ljava/lang/Boolean;)V
+    .locals 2
+
+    .line 1757
+    iget-object p1, p0, Lcom/narvii/chat/ChatListFragment$5;->this$0:Lcom/narvii/chat/ChatListFragment;
+
+    invoke-static {p1}, Lcom/narvii/chat/ChatListFragment;->access$2600(Lcom/narvii/chat/ChatListFragment;)Lcom/narvii/chat/global/GlobalChatHelper;
+
+    move-result-object p1
+
+    iget v0, p0, Lcom/narvii/chat/ChatListFragment$5;->val$ndcId:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Lcom/narvii/chat/global/GlobalChatHelper;->communityDetailIntent(Ljava/lang/Integer;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object p1
+
+    .line 1758
+    iget-object v0, p0, Lcom/narvii/chat/ChatListFragment$5;->this$0:Lcom/narvii/chat/ChatListFragment;
+
+    invoke-virtual {v0}, Landroid/support/v4/app/Fragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 1759
+    iget-object v0, p0, Lcom/narvii/chat/ChatListFragment$5;->this$0:Lcom/narvii/chat/ChatListFragment;
+
+    invoke-virtual {v0, p1}, Landroid/support/v4/app/Fragment;->startActivity(Landroid/content/Intent;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public bridge synthetic call(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1754
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p0, p1}, Lcom/narvii/chat/ChatListFragment$5;->call(Ljava/lang/Boolean;)V
+
+    return-void
+.end method

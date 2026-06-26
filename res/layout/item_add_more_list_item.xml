@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/drag_sort_add_btn" />
+    <TextView android:textSize="16.0dp" android:textColor="#ff888888" android:gravity="center" android:paddingLeft="0.0px" android:paddingRight="24.0dp" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/item_sort_add_more" android:layout_weight="1.0" android:paddingStart="0.0px" android:paddingEnd="24.0dp" />
+</LinearLayout>

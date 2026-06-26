@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tip_box_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center|bottom" android:id="@id/box_bg" android:background="@drawable/tipping_box_bg" android:layout_width="@dimen/tip_box_bg_width" android:layout_height="@dimen/tip_box_bg_height" />
+    <com.narvii.widget.PressedFrameLayout android:layout_gravity="center|bottom" android:id="@id/content" android:duplicateParentState="true" android:layout_width="@dimen/tip_box_content_width" android:layout_height="@dimen/tip_box_content_height" android:layout_marginBottom="3.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:layout_gravity="center_horizontal" android:id="@id/box_slot" android:background="@drawable/tipping_box_slot" android:layout_width="85.0dp" android:layout_height="5.0dp" android:layout_marginTop="1.0dp" />
+            <com.narvii.widget.AutoSizingTextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tip_author" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/tip_the_author" android:singleLine="true" android:includeFontPadding="false" app:autoSizeTextMaxSize="16.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/coins_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <View android:background="@drawable/amino_coin_big" android:layout_width="22.0dp" android:layout_height="22.0dp" />
+                <com.narvii.widget.AutoSizingTextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" android:singleLine="true" app:autoSizeTextMaxSize="16.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.narvii.widget.PressedFrameLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/viewer_coin_layout" android:layout_width="@dimen/tip_box_bg_width" android:layout_height="@dimen/tipping_box_viewer_coin_container_height" android:layout_marginTop="10.0dp" android:layout_marginBottom="45.5dp">
+        <com.narvii.widget.NVImageView android:id="@id/viewer_star" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" app:showPressedMask="false" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/viewer_love" android:padding="1.0dp" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/tipping_love" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/viewer_coin" android:visibility="gone" android:layout_width="@dimen/tipping_box_viewer_coin_size" android:layout_height="@dimen/tipping_box_viewer_coin_size" android:layout_marginTop="10.0dp" android:src="@drawable/amino_coin_big" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/author_coin_layout" android:visibility="gone" android:layout_width="@dimen/tip_box_bg_width" android:layout_height="24.0dp" android:layout_marginTop="10.0dp" android:layout_marginBottom="45.5dp">
+        <ImageView android:layout_gravity="center|bottom" android:id="@id/author_coin" android:visibility="gone" android:layout_width="74.0dp" android:layout_height="21.0dp" android:src="@drawable/amino_coin_two_upper_half" android:scaleType="centerCrop" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:nv_dark_background="@color/color_default_primary"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="12.0dp" android:layout_weight="1.0" android:layout_marginStart="32.0dp" android:layout_marginEnd="12.0dp">
+            <com.narvii.app.theme.view.NVThemeTextView android:textSize="15.0dp" android:textStyle="bold" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/earn_free_coins_with_ads" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/earn_free_coins_this_week" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+                    <com.narvii.app.theme.view.NVThemeTextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/optin_ads_earn_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/amino_coin_small" android:drawablePadding="3.0dp" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+                </LinearLayout>
+                <View android:layout_width="26.0dp" android:layout_height="match_parent" />
+                <View android:background="#ffcccccc" android:layout_width="1.0dp" android:layout_height="match_parent" />
+                <View android:layout_width="26.0dp" android:layout_height="match_parent" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/earn_free_coins_total" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+                    <com.narvii.app.theme.view.NVThemeTextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/optin_ads_earn_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/amino_coin_small" android:drawablePadding="3.0dp" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <CheckBox android:id="@id/optin_ads_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_marginRight="20.0dp" android:button="@drawable/switch_bg" android:layout_marginEnd="20.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/earn_more_coins" android:background="@drawable/wallet_optin_ads_round_gray_bg" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="15.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="17.0dp" android:layout_weight="1.0" android:layout_marginStart="17.0dp">
+            <com.narvii.app.theme.view.NVThemeTextView android:textSize="15.0dp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/earn_more_coins2" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+            <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/earn_more_coins_message" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+        </LinearLayout>
+        <CheckBox android:id="@id/earn_more_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:button="@drawable/switch_bg" android:layout_marginEnd="5.0dp" />
+    </LinearLayout>
+</com.narvii.app.theme.view.NVThemeLinearLayout>

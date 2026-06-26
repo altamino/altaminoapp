@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="12.0dp" android:paddingTop="6.0dp" android:paddingRight="12.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.FlexSizeImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" narvii:defaultDrawable="@drawable/placeholder_photo_transparent" narvii:keepRatio="true" narvii:preferredRatio="0.65" />
+    <TextView android:textSize="12.0dp" android:textColor="#fff2f2f2" android:ellipsize="end" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/text" android:background="#66000000" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:elevation="3.0dp" />
+    <com.narvii.widget.ShareMediaBar android:id="@id/share_media_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

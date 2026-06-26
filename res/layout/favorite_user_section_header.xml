@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ItemCellWithPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:background="@drawable/oval_orange" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_favorite_user_star" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/my_favorite_members" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" android:layout_toEndOf="@id/icon" />
+    <com.narvii.widget.TintButton android:id="@id/manage" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/more_dot" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:tintColor="#ff9b9b9b" />
+</RelativeLayout>

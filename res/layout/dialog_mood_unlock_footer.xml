@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/list_divider" />
+    <FrameLayout android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.FontAwesomeView android:layout_gravity="center" android:id="@id/close" android:background="@drawable/dialog_close" android:layout_width="25.0dp" android:layout_height="25.0dp" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/activeness_level">
+        <clip android:gravity="right" android:clipOrientation="horizontal">
+            <shape>
+                <corners android:radius="2.0dp" />
+                <gradient android:startColor="#ffff6e00" android:endColor="#ff5ec0ae" android:angle="0.0" />
+            </shape>
+        </clip>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="2.0dp" />
+            <stroke android:width="@dimen/activeness_bar_width" android:color="#ffebebeb" />
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+</layer-list>

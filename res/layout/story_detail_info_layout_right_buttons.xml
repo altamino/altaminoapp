@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tipping_btn" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <com.narvii.widget.TintButton android:id="@id/tipping_icon" android:padding="3.0dp" android:layout_width="35.0dp" android:layout_height="35.0dp" android:src="@drawable/amino_coin_big" android:scaleType="centerInside" />
+        <TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tipping_count" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vote_btn" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <com.narvii.story.detail.StoryVoteIcon android:id="@id/vote_icon" android:layout_width="35.0dp" android:layout_height="35.0dp" android:scaleType="centerInside" />
+        <com.narvii.widget.SpinningView android:id="@id/vote_progress" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_margin="3.5dp" narvii:spinColor="#ffffffff" narvii:spinStyle="2" />
+        <TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/vote_count" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/comment_btn" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <com.narvii.widget.TintButton android:id="@id/comment_icon" android:layout_width="35.0dp" android:layout_height="35.0dp" android:src="@drawable/ic_comment_story" android:scaleType="centerInside" />
+        <TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/comment_count" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_btn" android:layout_width="match_parent" android:layout_height="52.0dp">
+        <com.narvii.widget.TintButton android:id="@id/share_icon" android:layout_width="35.0dp" android:layout_height="35.0dp" android:src="@drawable/ic_share_story" android:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/more_btn" android:layout_width="match_parent" android:layout_height="52.0dp">
+        <com.narvii.widget.TintButton android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_more_story" android:scaleType="centerInside" />
+    </LinearLayout>
+</merge>

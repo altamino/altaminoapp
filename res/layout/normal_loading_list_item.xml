@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:tag="loading" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.SpinningView android:id="@id/spinner" android:layout_width="@dimen/spin_small_size" android:layout_height="@dimen/spin_small_size" />
+    <TextView android:textSize="12.0dp" android:textColor="#ff666666" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/normal_loading" android:layout_marginStart="10.0dp" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.FontAwesomeView android:textSize="20.0dp" android:textColor="#ff31c023" android:gravity="center" android:id="@id/click_remove" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="match_parent" android:minHeight="?android:listPreferredItemHeight" android:text="@string/ion_plus_circled"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/acm_default_bg_color" android:paddingBottom="100.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/prefs_background" android:layout_width="match_parent" android:layout_height="@dimen/prefs_default_size">
+        <TextView android:textSize="14.0dp" android:textColor="@color/color_default" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:layout_marginBottom="9.0dp" android:text="@string/amino_card" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_marginStart="18.0dp" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <com.github.mmin18.widget.FlexLayout android:id="@id/share_content_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View app:layout_centerX="50%" app:layout_height="this.width" app:layout_width="85.3%" />
+        <include layout="@layout/share_community_content_layout" />
+    </com.github.mmin18.widget.FlexLayout>
+    <com.narvii.widget.PushButton android:id="@id/share_amino_card" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" app:pushButtonColor="#ff9359ff" app:pushButtonLift="4.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/prefs_default_size" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:src="@drawable/ic_invite_member_share_amino_card" android:scaleType="centerInside" android:layout_marginEnd="10.0dp" />
+            <LinearLayout android:orientation="vertical" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.widget.AutoSizingTextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_amino_card" android:maxLines="1" app:autoSizeTextMaxSize="20.0dp" app:autoSizeTextMinSize="16.0dp" />
+                <TextView android:textSize="14.0dp" android:textColor="#ccffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_amino_card_desc" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.narvii.widget.PushButton>
+</LinearLayout>

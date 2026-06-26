@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/feature_label_container" android:layout_width="wrap_content" android:layout_height="18.0dp" android:minWidth="16.0dp" android:minHeight="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:layout_gravity="end|center" android:id="@id/label_icon" android:layout_width="18.0dp" android:layout_height="18.0dp" android:scaleType="centerInside" />
+    <com.narvii.widget.AutoSizingTextView android:textSize="10.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@id/label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:autoSizeTextMaxSize="10.0dp" app:autoSizeTextMinSize="9.0dp" />
+</FrameLayout>

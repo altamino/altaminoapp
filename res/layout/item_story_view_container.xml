@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/poll_quiz_container" android:background="#cc000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/interestial_page_container" android:background="#cc000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/interestial_page_current" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.StatusBarPlaceHolder android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.narvii.widgets.StoryProgressBar android:id="@id/story_progress" android:paddingLeft="30.0dp" android:paddingRight="30.0dp" android:layout_width="match_parent" android:layout_height="@dimen/story_progress_bar_height" android:layout_marginTop="4.0dp" android:paddingStart="30.0dp" android:paddingEnd="30.0dp" />
+    </LinearLayout>
+</FrameLayout>

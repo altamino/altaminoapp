@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.FontAwesomeView android:textColor="#ffeeeeee" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="20.0dp" android:text="@string/fa_star" />
+    <TextView android:textSize="14.0dp" android:textColor="#ffcfcfcf" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="32.0dp" android:maxWidth="180.0dp" android:text="@string/online_favorite_empty" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/click_remove_mask" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.livelayer.BackgroundBlurWithTopRadiusLayout android:layout_gravity="bottom" android:id="@id/theme_background_wrapper" android:layout_width="match_parent" android:layout_height="match_parent" app:blurLayoutOverlayColor="#b3000000" app:blurLayoutRadius="30.0dp">
+        <com.narvii.widget.NVImageView android:layout_gravity="bottom" android:id="@id/theme_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </com.narvii.livelayer.BackgroundBlurWithTopRadiusLayout>
+    <com.narvii.widget.SwipeableLayout android:id="@id/frame" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

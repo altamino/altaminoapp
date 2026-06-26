@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <TextView android:text="@string/account_phone_number" narvii:layout_top="16dp" style="@style/account_edit_title" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="40.0dp" narvii:layout_top="prev.bottom+6dp">
+        <com.narvii.account.mobile.MyPhoneCountryCodePicker android:textSize="26.0dp" android:textColor="#ffffffff" android:id="@id/country_picker" android:background="@drawable/button_rect_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:background="#ffffffff" android:layout_width="1.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" />
+        <com.narvii.widget.ClearEditText android:textSize="26.0dp" android:textColor="#ffffffff" android:textColorHint="#ffffffff" android:gravity="center_vertical" android:id="@id/edit" android:background="@null" android:layout_width="match_parent" android:layout_height="40.0dp" android:singleLine="true" android:layout_weight="1.0" android:inputType="phone" android:textCursorDrawable="@drawable/account_edit_cursor_white" />
+    </LinearLayout>
+    <include layout="@layout/flexlayout_edit_line" />
+    <TextView android:textSize="12.0dp" android:textColor="#ffff0000" android:id="@id/input_error_hint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/invalid_email" />
+</merge>

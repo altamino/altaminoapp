@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/community_container" android:paddingTop="10.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+        <com.narvii.widget.ThumbImageView android:id="@id/community_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" app:cornerRadius="2.0dp" app:defaultDrawable="@drawable/placeholder_community" app:imageType="community-icon" app:scalePlaceholder="true" />
+        <TextView android:textSize="12.0dp" android:textColor="#ff9b9b9b" android:ellipsize="end" android:id="@id/community_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:maxLines="1" android:layout_marginStart="6.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0dp" android:textColor="#ff999999" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/from" />
+        <include android:layout_gravity="center_vertical" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="8.0dp" android:layout_marginStart="8.0dp" layout="@layout/user_avatar_layout_mini" />
+        <com.narvii.widget.NicknameView android:textSize="12.0dp" android:textColor="#ff4a90e2" android:layout_gravity="center_vertical" android:id="@id/nickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <View android:background="#fff5f5f5" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <LinearLayout android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:layout_gravity="start" android:id="@id/label" android:paddingLeft="8.0dp" android:paddingTop="4.0dp" android:paddingRight="8.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/warning" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+        <View android:layout_width="0.0pt" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0dp" android:textColor="#ff999999" android:layout_gravity="end|center" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <TextView android:textSize="16.0dp" android:textColor="#fff85757" android:id="@id/mute_time" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mute_time" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    <LinearLayout android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+        <TextView android:textSize="16.0dp" android:textColor="#ff3b3f40" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

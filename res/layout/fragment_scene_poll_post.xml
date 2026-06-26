@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <com.github.mmin18.widget.RealtimeBlurView android:layout_width="match_parent" android:layout_height="match_parent" app:realtimeOverlayColor="#99000000" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.list.overlay.OverlayListPlaceholder android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.narvii.widget.NVScrollView android:id="@id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:id="@id/top_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/root" android:paddingLeft="42.0dp" android:paddingRight="42.0dp" android:paddingBottom="90.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="42.0dp" android:paddingEnd="42.0dp">
+                    <EditText android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:textColorHint="#b3ffffff" android:gravity="center" android:id="@id/title" android:background="@null" android:layout_width="match_parent" android:layout_height="100.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="40.0dp" android:hint="@string/poll_title" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/edit_cursor_white_normal" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/options_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RelativeLayout android:id="@id/add_option" android:background="@drawable/poll_option_add_background" android:layout_width="match_parent" android:layout_height="55.0dp">
+                        <com.narvii.widget.FontAwesomeView android:textColor="#96ffffff" android:layout_width="21.0dp" android:layout_height="21.0dp" android:text="@string/fa_plus" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.narvii.widget.NVScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@id/delete_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center|bottom" android:id="@id/delete_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dp" />
+    </FrameLayout>
+</FrameLayout>

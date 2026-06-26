@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingLeft="12.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="10.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/flag_count_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/flag_count_layout" android:layout_alignParentStart="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/user_info_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.narvii.widget.ThumbImageView android:layout_gravity="center_vertical" android:id="@id/avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="20.0dp" android:maxHeight="20.0dp" narvii:scalePlaceholder="true" />
+                <TextView android:textSize="13.0dp" android:textColor="@color/account_foreground_color_standalone" android:layout_gravity="center_vertical" android:id="@id/nickname" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:maxLines="1" android:singleLine="true" android:paddingEnd="10.0dp" android:layout_marginStart="8.0dp" />
+            </LinearLayout>
+            <TextView android:id="@id/strike_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/flag_count_layout" android:background="@drawable/circle_red" android:layout_width="52.0dp" android:layout_height="52.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="20.0dp" android:textColor="#ffffffff" android:id="@id/flagged_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.narvii.widget.FontAwesomeView android:textColor="#ffffffff" android:id="@id/flagged_count_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="2.0dp" android:text="@string/ion_ios_flag" android:layout_marginStart="2.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textColor="#ff000000" android:id="@id/flag_type" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="8.0dp" android:singleLine="true" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="9.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="9.0dp" android:paddingEnd="10.0dp">
+        <com.narvii.flag.FlagTagLayout android:id="@id/tags_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="7.5" narvii:flow_gravity="-1" narvii:max_tag_lines="2" />
+        <TextView android:textColor="@color/flag_time_color" android:gravity="right" android:id="@id/flag_time" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.5" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/resolved_layout" android:background="@android:drawable/dialog_holo_light_frame" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+        <com.github.mmin18.widget.FlexLayout android:background="@drawable/resolved_bar" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-12.0dp">
+            <TextView android:textSize="18.0dp" android:textColor="#ffffffff" android:id="@id/resolved_time" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" narvii:layout_centerY="60%" />
+        </com.github.mmin18.widget.FlexLayout>
+    </LinearLayout>
+</LinearLayout>

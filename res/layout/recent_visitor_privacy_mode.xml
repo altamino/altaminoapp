@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/user_item_height" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.narvii.widget.NVImageView android:id="@id/image" android:layout_width="52.0dp" android:layout_height="52.0dp" app:cornerRadius="1000.0dp" app:showPressedMask="false" />
+        <TextView android:textSize="17.0dp" android:textColor="#ffaaaaaa" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" />
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp" layout="@layout/list_divider" />
+</LinearLayout>

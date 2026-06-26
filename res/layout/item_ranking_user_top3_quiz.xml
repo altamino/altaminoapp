@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.Top3UserLayout android:layout_gravity="bottom" android:paddingBottom="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:clipChildren="false" android:clipToPadding="false" narvii:layout_height="parent.width*0.6+154dp" narvii:layout_width="parent.width">
+        <TextView android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/user_ranking_no" android:layout_width="30.0dp" android:layout_height="30.0dp" narvii:layout_bottom="100%-4dp" narvii:layout_centerX="50%" />
+        <TextView android:textSize="11.0dp" android:textColor="#80ffffff" android:gravity="center" android:id="@id/quiz_no_played" android:layout_width="match_parent" android:layout_height="15.0dp" narvii:layout_bottom="user_ranking_no.top-6dp" />
+        <TextView android:textSize="12.0dp" android:textColor="#ccffffff" android:gravity="center" android:id="@id/ranking_score" android:layout_width="match_parent" android:layout_height="15.0dp" narvii:layout_bottom="quiz_no_played.top" />
+        <FrameLayout android:id="@id/ranking_badge_layout" narvii:layout_bottom="ranking_score.top-1dp" narvii:layout_centerX="50%" narvii:layout_height="25dp" narvii:layout_width="100%">
+            <View android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.narvii.widget.RankingTitleView android:layout_gravity="center" android:id="@id/ranking_badge" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="25.0dp" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" narvii:allowShowProgress="false" narvii:badgeHeight="25.0dp" narvii:badge_small="true" narvii:textMinWidthTimes="2.0" narvii:textSize="8.0dp" />
+        </FrameLayout>
+        <com.narvii.widget.NicknameView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/name" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="24.0dp" android:lines="1" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" narvii:hideInfluencerBadge="false" narvii:hideMembershipBadge="true" narvii:hideRankingBadge="true" narvii:hideRole="true" narvii:layout_bottom="ranking_badge_layout.top+1dp" narvii:layout_centerX="50%" />
+        <include android:duplicateParentState="true" android:clipChildren="false" android:clipToPadding="false" narvii:layout_bottom="name.top-19dp" narvii:layout_centerX="50%" narvii:layout_height="this.width" narvii:layout_width="60%" layout="@layout/user_avatar_layout_mini_nobadge" />
+    </com.github.mmin18.widget.FlexLayout>
+</com.narvii.widget.Top3UserLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dp" android:textColor="@color/action_sheet_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_get_more_followers" />
+    <TextView android:textSize="13.0dp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_share_profile" />
+    <ImageView android:id="@id/image" android:layout_width="96.0dp" android:layout_height="96.0dp" android:layout_marginTop="8.0dp" android:scaleType="centerInside" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.feed.FeedToolbarLayout android:gravity="start|center" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="31.0dp" android:layout_height="31.0dp" android:layout_marginLeft="9.0dp" android:layout_marginStart="9.0dp" layout="@layout/user_avatar_layout_mini" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_toolbar_vote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:minWidth="64.0dp" android:layout_marginStart="14.0dp">
+        <com.narvii.widget.VoteIcon android:id="@id/feed_toolbar_vote_icon" android:padding="6.0dp" android:duplicateParentState="true" android:layout_width="30.0dp" android:layout_height="30.0dp" narvii:isDarkTheme="true" />
+        <com.narvii.widget.SpinningView android:id="@id/feed_toolbar_vote_progress" android:padding="6.0dp" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" narvii:spinSize="@dimen/spin_tiny_size" narvii:spinStyle="2" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/feed_toolbar_vote_count" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:duplicateParentState="true" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_toolbar_comment" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="76.0dp" android:paddingStart="4.0dp" android:paddingEnd="4.0dp">
+        <com.narvii.widget.TintButton android:id="@id/feed_toolbar_comment_icon" android:background="@drawable/button_round_transparent" android:padding="6.0dp" android:duplicateParentState="true" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_comment" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/feed_toolbar_comment_count" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:duplicateParentState="true" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" />
+    </LinearLayout>
+    <View android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_toolbar_share" android:layout_width="40.0dp" android:layout_height="match_parent">
+        <com.narvii.widget.TintButton android:gravity="center" android:id="@id/feed_toolbar_share_icon" android:background="@drawable/button_round_transparent" android:padding="6.0dp" android:duplicateParentState="true" android:layout_width="28.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_share_grey" />
+    </LinearLayout>
+</com.narvii.feed.FeedToolbarLayout>

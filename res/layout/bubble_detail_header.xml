@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.monetization.bubble.detail.HeaderLayout android:id="@id/detail_header" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/bubble_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:defaultDrawable="@drawable/placeholder_community" app:scalePlaceholder="true" />
+    <com.github.mmin18.widget.RealtimeBlurView android:id="@id/blur" android:layout_width="match_parent" android:layout_height="match_parent" app:realtimeBlurMaxFPS="5.0" app:realtimeOverlayColor="#00000000" />
+    <com.narvii.widget.NVImageView android:layout_gravity="center" android:id="@id/bubble_preview" android:background="@drawable/bubble_icon_stroke_bg" android:padding="1.0dp" android:layout_width="@dimen/bubble_detail_icon_size" android:layout_height="@dimen/bubble_detail_icon_size" android:scaleType="fitCenter" app:cornerRadius="2.0dp" />
+</com.narvii.monetization.bubble.detail.HeaderLayout>

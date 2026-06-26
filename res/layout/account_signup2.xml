@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/account_signup_toolbar" />
+    <ScrollView android:id="@id/scroll" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" narvii:layout_top="prev.bottom">
+        <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@id/big_title" android:text="@string/create_your_profile" narvii:layout_centerX="50%" narvii:layout_left="10%" narvii:layout_right="90%" narvii:layout_top="16dp" style="@style/account_big_title" />
+            <View android:id="@id/avatar_click" android:background="@drawable/account_avatar_oval" narvii:layout_centerX="next.centerX" narvii:layout_centerY="next.centerY" narvii:layout_height="next.height+6dp" narvii:layout_width="next.width+6dp" />
+            <com.narvii.widget.ThumbImageView android:id="@id/avatar" android:clickable="true" android:layout_width="100.0dp" android:layout_height="100.0dp" narvii:layout_centerX="50%" narvii:layout_top="big_title.gone?10dp:big_title.bottom+16dp" style="@style/AvatarImageView" />
+            <com.narvii.widget.TintButton android:id="@id/avatar_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_avatar_placeholder" narvii:layout_centerX="avatar.centerX" narvii:layout_centerY="avatar.centerY-8dp" narvii:tintColor="#ffffffff" />
+            <TextView android:textSize="11.0dp" android:textColor="#ffffffff" android:id="@id/avatar_placeholder2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_hint_photo" android:textAllCaps="true" narvii:layout_centerX="avatar_placeholder.centerX" narvii:layout_top="prev.bottom+10dp" />
+            <TextView android:id="@id/nickname_title" android:text="@string/account_hint_nickname" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="avatar.bottom+16dp" style="@style/account_edit_title" />
+            <com.narvii.widget.ClearEditText android:textSize="20.0dp" android:textColor="#ffffffff" android:textColorHint="#ffeeeeee" android:id="@id/nickname" android:background="@null" android:padding="0.0px" android:layout_height="40.0dp" android:singleLine="true" android:completionThreshold="2" android:inputType="text" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/account_edit_cursor_white" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="prev.bottom+6dp" />
+            <View android:background="#ffffffff" android:layout_height="1.0dp" narvii:layout_left="prev.left" narvii:layout_right="prev.right" narvii:layout_top="prev.bottom+1dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_height="wrap_content" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="nickname.bottom+20dp">
+                <CheckBox android:id="@id/agree" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:button="@drawable/agreement_check" />
+                <TextView android:textSize="12.0dp" android:textColor="#ccffffff" android:id="@id/agree_text" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/account_agreement" android:layout_weight="1.0" narvii:layout_top="nickname.bottom+20dp" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dp" android:textColor="#ffff595f" android:id="@id/agree_error" android:paddingBottom="96.0dp" android:visibility="gone" android:layout_height="wrap_content" android:text="@string/account_agreement_error" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="prev.bottom+10dp" />
+            <Button android:enabled="false" android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/account_text" android:gravity="center" android:id="@id/next" android:background="@drawable/button_round_account_plus" android:layout_height="54.0dp" android:text="@string/finish_signing_up" narvii:layout_left="7%" narvii:layout_right="93%" narvii:layout_top="prev.bottom+10dp" />
+        </com.github.mmin18.widget.FlexLayout>
+    </ScrollView>
+</LinearLayout>

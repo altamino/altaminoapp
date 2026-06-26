@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/list_frame" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginBottom="8.0dp" android:layout_marginStart="12.0dp">
+            <com.narvii.widget.NicknameView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ff24a4fe" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" app:hideRole="true" />
+            <TextView android:id="@id/comment_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+            <FrameLayout android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.narvii.monetization.sticker.widget.CommentStickerImageVIew android:id="@id/sticker_image" android:visibility="gone" android:layout_width="@dimen/comment_sticker_default_size" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" app:defaultDrawable="@color/sticker_placeholder_darker" />
+                <com.narvii.widget.EmojioneView android:id="@id/emoji_sticker" android:visibility="gone" android:layout_width="@dimen/comment_sticker_default_size" android:layout_height="@dimen/comment_sticker_default_size" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" />
+            </FrameLayout>
+            <TextView android:textColor="#ffbbbbbb" android:id="@id/comment_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+        </LinearLayout>
+        <View android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <Button android:textSize="20.0dp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/comment_see_all" android:background="@drawable/button_round_blue_l" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/see_related_page" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" />
+    </LinearLayout>
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+    <include layout="@layout/error_view" />
+</FrameLayout>

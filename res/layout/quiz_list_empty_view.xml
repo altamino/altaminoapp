@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|bottom" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingTop="100.0dp" android:paddingRight="10.0dp" android:paddingBottom="100.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/empty_view_text_size" android:textStyle="bold" android:textColor="@color/empty_text_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/empty_content" android:paddingTop="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quiz_empty_info" />
+    <com.narvii.widget.FontAwesomeView android:textColor="@color/button_text_gray_w" android:gravity="center" android:id="@id/empty_retry" android:padding="12.0dp" android:clickable="true" android:layout_width="60.0dp" android:layout_height="60.0dp" android:text="@string/ion_refresh" />
+</LinearLayout>

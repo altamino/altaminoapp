@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.influencer.StoryInfluencerPostIndicator android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/influencer_post_lock_indicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="55.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="25.0dp" android:layout_height="25.0dp">
+        <com.narvii.widget.TintButton android:layout_gravity="center" android:id="@id/influencer_lock" android:layout_width="15.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_influencer_post_lock" android:scaleType="centerCrop" app:tintColor="@color/selector_influencer_post_lock" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp">
+        <TextView android:textSize="14.0dp" android:textColor="@color/selector_influencer_post_lock" android:id="@id/fans_only" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fans_only" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/toggle_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:layout_centerVertical="true" android:layout_marginEnd="8.0dp">
+        <ImageView android:id="@id/check" android:layout_width="52.0dp" android:layout_height="30.0dp" />
+    </FrameLayout>
+</com.narvii.influencer.StoryInfluencerPostIndicator>

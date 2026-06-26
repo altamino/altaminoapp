@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.RadiusLayout android:layout_width="match_parent" app:layout_corner_radius="4.0dp" app:layout_height="this.width * 96 / 163">
+        <com.narvii.widget.NVImageView android:id="@id/category_background" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_music_category_default_cover" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="12.0dp">
+            <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/track_album_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/track_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" />
+        </LinearLayout>
+    </com.narvii.widget.RadiusLayout>
+</com.github.mmin18.widget.FlexLayout>

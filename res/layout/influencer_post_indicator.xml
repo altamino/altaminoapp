@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.influencer.CommonInfluencerPostIndicator android:orientation="horizontal" android:id="@id/influencer_post_lock_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.TintButton android:layout_gravity="center_vertical" android:id="@id/influencer_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_influencer_post_lock" app:tintColor="@color/selector_influencer_post_lock" />
+    <TextView android:textColor="@color/selector_influencer_post_lock" android:layout_gravity="center_vertical" android:id="@id/fans_only" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/fans_only" android:layout_marginStart="8.0dp" />
+</com.narvii.influencer.CommonInfluencerPostIndicator>

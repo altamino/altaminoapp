@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="58.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="@dimen/detail_avatar_size" android:layout_height="@dimen/detail_avatar_size" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp" layout="@layout/user_avatar_layout_mini" />
+    <com.narvii.widget.NicknameView android:textSize="15.0dp" android:textColor="@color/text_clickable" android:id="@id/nickname" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp" app:hideRole="true" />
+    <TextView android:textSize="13.0dp" android:textColor="@color/datetime" android:ellipsize="none" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:singleLine="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mood_pick" android:background="@drawable/button_round_transparent" android:paddingTop="14.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/stub1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/online_mood_select" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <com.narvii.widget.EmojionePlusView android:id="@id/icon" android:tag="big" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="16.0dp" android:layout_alignRight="@id/stub1" android:layout_alignParentTop="@id/stub1" />
+        <TextView android:textSize="11.0dp" android:textColor="@color/action_sheet_normal" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/mood_choose" android:layout_below="@id/stub1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include layout="@layout/dialog_action_sheet_divider" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/online_status_online" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <FrameLayout android:layout_width="40.0dp" android:layout_height="40.0dp">
+            <View android:layout_gravity="center" android:background="@drawable/online_status_oval" android:layout_width="12.0dp" android:layout_height="12.0dp" />
+        </FrameLayout>
+        <TextView android:textSize="16.0dp" android:textColor="@color/action_sheet_normal" android:gravity="center" android:id="@id/text" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/online_status_online" android:singleLine="true" android:layout_weight="1.0" />
+        <com.narvii.widget.FontAwesomeView android:textSize="20.0dp" android:textColor="@color/action_sheet_normal" android:gravity="center" android:id="@id/check" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:text="@string/fa_check" />
+    </LinearLayout>
+    <include android:id="@id/online_status_offline_divider" layout="@layout/dialog_action_sheet_divider" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/online_status_offline" android:layout_width="match_parent" android:layout_height="52.0dp">
+        <FrameLayout android:layout_width="40.0dp" android:layout_height="40.0dp">
+            <View android:layout_gravity="center" android:background="@drawable/online_status_oval_offline" android:layout_width="12.0dp" android:layout_height="12.0dp" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0dp" android:textColor="@color/action_sheet_normal" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/online_status_offline" android:singleLine="true" />
+            <TextView android:textSize="11.0dp" android:textColor="#ffcccccc" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/online_go_offline_tips" android:singleLine="true" />
+        </LinearLayout>
+        <com.narvii.widget.FontAwesomeView android:textSize="20.0dp" android:textColor="@color/action_sheet_normal" android:gravity="center" android:id="@id/check" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:text="@string/fa_check" />
+    </LinearLayout>
+</LinearLayout>

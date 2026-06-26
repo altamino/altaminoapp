@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/histogram_hint_view_bg" android:layout_width="@dimen/histogramHintViewWidth" android:layout_height="@dimen/histogramHintViewHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="8.0dp" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center|bottom" android:id="@id/hint_date" android:layout_width="match_parent" android:layout_height="12.0dp" android:maxLines="1" />
+    <TextView android:textSize="8.0dp" android:textStyle="bold" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/hint_coins" android:layout_width="wrap_content" android:layout_height="20.0dp" android:maxLines="1" android:drawableLeft="@drawable/amino_coin_tiny" android:drawablePadding="2.0dp" android:drawableStart="@drawable/amino_coin_tiny" />
+</LinearLayout>

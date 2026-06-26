@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout android:orientation="vertical" android:id="@id/swipe_refresh" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.app.theme.view.NVThemeFrameLayout android:id="@id/recycle_frame" android:layout_width="match_parent" android:layout_height="match_parent" app:nv_dark_background="@color/color_default_primary">
+        <com.narvii.widget.recycleview.NVRecyclerView android:id="@id/recycle_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.paging.state.PageStatusView android:id="@id/status_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include android:id="@id/login_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/login_hint_layout" />
+    </com.narvii.app.theme.view.NVThemeFrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

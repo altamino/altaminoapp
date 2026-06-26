@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="70.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/youtube_video_select" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_media_picker_youtube_playlist_item_radio_unselected" />
+    <FrameLayout android:layout_width="70.0dp" android:layout_height="50.0dp" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp">
+        <com.narvii.widget.NVImageView android:id="@id/screenroom_playlist_thumbnail" android:background="#ffd0cfd0" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="2.0dp" app:defaultDrawable="@drawable/ic_playlist_cover_placeholder" app:hidePlayButton="true" app:loadingDrawable="@drawable/ic_playlist_cover_placeholder" />
+        <com.narvii.widget.NVImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="#1a000000" app:cornerRadius="2.0dp" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:layout_gravity="end|bottom" android:id="@id/screenroom_playlist_duration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:layout_marginBottom="4.0dp" android:text="12:11" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_marginEnd="4.0dp" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp">
+        <TextView android:textSize="14.0dp" android:textColor="#ff4a4a4a" android:ellipsize="end" android:id="@id/screenroom_playlist_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <ImageView android:id="@id/screenroom_playlist_source_icon" android:layout_width="wrap_content" android:layout_height="12.0dp" android:src="@drawable/ic_playlist_youtube" />
+            <TextView android:textSize="12.0dp" android:textColor="#ff939393" android:ellipsize="end" android:id="@id/screenroom_playlist_source_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:maxLines="1" android:layout_marginStart="5.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

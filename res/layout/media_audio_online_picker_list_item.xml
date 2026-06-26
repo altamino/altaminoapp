@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#4c39393f" android:layout_width="match_parent" android:layout_height="88.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.media.online.audio.MusicSliderView android:id="@id/music_seekbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:maxHeight="150.0dp" android:max="10000" android:progressDrawable="@drawable/audio_online_picker_seekbar" android:minHeight="150.0dp" android:thumb="@android:color/transparent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="18.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="18.0dp" android:paddingEnd="15.0dp">
+        <FrameLayout android:layout_width="64.0dp" android:layout_height="64.0dp">
+            <com.narvii.widget.NVImageView android:id="@id/track_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="4.0dp" app:defaultDrawable="@drawable/ic_online_audio_cover_default" />
+            <com.narvii.media.online.audio.MusicPlayStatusView android:layout_gravity="center" android:id="@id/playing_status" android:layout_width="20.0dp" android:layout_height="20.0dp">
+                <ImageView android:id="@id/idle_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_sr_media_play" />
+                <com.narvii.widget.NVImageView android:id="@id/playing_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <com.narvii.widget.SpinningView android:id="@id/spinning_view" android:layout_width="match_parent" android:layout_height="match_parent" app:spinColor="#ffffffff" app:spinSize="15.0dp" app:spinStyle="2" app:spinTime="1000" />
+            </com.narvii.media.online.audio.MusicPlayStatusView>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="11.0dp" android:layout_weight="1.0" android:layout_marginStart="11.0dp">
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/track_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0dp" android:textColor="#7fffffff" android:ellipsize="end" android:id="@id/track_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:maxLines="1" android:textAllCaps="true" />
+            <TextView android:textSize="12.0dp" android:textColor="#7fffffff" android:ellipsize="end" android:id="@id/track_tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:maxLines="1" />
+        </LinearLayout>
+        <TextView android:textColor="#7fffffff" android:id="@id/track_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/music_download_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:layout_marginStart="13.0dp">
+            <com.narvii.widget.CircleProgressBar android:id="@id/music_download_progress" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" app:max="100" app:progressStyle="stroke" app:roundBackgroundColor="#33ffffff" app:roundProgressColor="#ffffffff" app:roundWidth="3.0dp" />
+            <com.narvii.widget.NVImageView android:id="@id/music_download_pick" android:visibility="visible" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_online_audio_picker_pick" />
+            <com.narvii.widget.NVImageView android:id="@id/music_download_download" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_online_audio_picker_download" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

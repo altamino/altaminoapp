@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.feed.PopularFeedListItem android:orientation="vertical" android:id="@id/feed_item_base" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/divider" android:background="@color/feature_feed_divider" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_alignParentBottom="true" />
+        <include android:id="@id/feed_toolbar" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="@dimen/feature_feed_tool_bar_margin_bottom" android:layout_marginBottom="@dimen/feature_feed_tool_bar_margin_bottom" android:layout_above="@id/divider" layout="@layout/feed_popular_toolbar_dark_theme" />
+        <TextView android:textSize="11.0dp" android:textColor="#ffffffff" android:id="@id/corner_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="11.0dp" android:textColor="#ffffffff" android:id="@id/poll_quiz_extra_text" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="true" android:layout_above="@id/feed_toolbar" />
+        <TextView android:textSize="@dimen/feature_top_feed_title_size_extra_large" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="6" android:layout_above="@id/poll_quiz_extra_text" android:layout_below="@id/corner_icon" android:layout_alignWithParentIfMissing="true" android:lineSpacingMultiplier="0.9" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+        <include layout="@layout/fans_only_content_indicator_layout" />
+    </RelativeLayout>
+</com.narvii.feed.PopularFeedListItem>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:orientation="vertical" android:id="@id/chat_member_invite" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/stub1" android:background="@drawable/chat_invite" android:layout_marginTop="15.0dp" app:layout_centerX="50%" app:layout_height="this.width" app:layout_top="15dp" app:layout_width="max(52dp, parent.width*0.8)">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_permission_plus" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="11.0dp" android:textColor="#ff222222" android:ellipsize="end" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite" android:singleLine="true" app:layout_centerX="50%" app:layout_left="4dp" app:layout_right="100%-4dp" app:layout_top="prev.bottom+4dp" />
+</com.github.mmin18.widget.FlexLayout>

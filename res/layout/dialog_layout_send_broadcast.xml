@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="#bb000000" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:background="@drawable/dialog_grey_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="26.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="26.0dp" android:layout_marginBottom="4.0dp" android:minWidth="300.0dp" android:layout_marginStart="26.0dp" android:layout_marginEnd="26.0dp">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/dialog_white_title_bar" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="50.0dp">
+            <TextView android:textSize="16.0dp" android:textColor="@color/dialog_action_text_color" android:gravity="center_vertical" android:id="@id/cancel" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" />
+            <TextView android:textSize="18.0dp" android:textColor="#ff4a5055" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/send_broadcast_dialog_title" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0dp" android:textColor="@color/dialog_action_text_color" android:gravity="center_vertical" android:id="@id/submit" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/submit" />
+        </LinearLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:scrollbarStyle="insideInset" android:textSize="16.0dp" android:textColor="#ff404040" android:gravity="top" android:id="@id/content" android:background="@null" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="120.0dp" android:hint="@string/broadcast_edit_hint" />
+                <View android:background="#ffccd6dd" android:layout_width="match_parent" android:layout_height="@dimen/list_divider_height" android:layout_marginBottom="5.0dp" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:id="@id/post_preview" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.narvii.widget.NVImageView android:id="@id/post_img" android:layout_width="32.0dp" android:layout_height="32.0dp" android:scaleType="centerCrop" app:cornerRadius="3.0dp" app:defaultDrawable="@color/broadcast_link_img" />
+                    <TextView android:textSize="13.0dp" android:textColor="#ff343434" android:id="@id/post_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:maxLines="2" />
+                </LinearLayout>
+                <View android:background="#ffccd6dd" android:layout_width="match_parent" android:layout_height="@dimen/list_divider_height" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                    <TextView android:textSize="12.0dp" android:textColor="#ff676f75" android:id="@id/audience_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="5.0dp" android:layout_marginEnd="5.0dp" />
+                    <TextView android:textSize="13.0dp" android:textColor="#ffa2abb1" android:id="@id/audience" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                    <TextView android:textSize="12.0dp" android:textColor="#ff676f75" android:id="@id/time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="5.0dp" android:layout_marginEnd="5.0dp" />
+                    <TextView android:textSize="13.0dp" android:textColor="#ff4990e2" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

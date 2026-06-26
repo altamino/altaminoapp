@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.RadiusLayout android:id="@id/refresh_layout" android:layout_width="match_parent" android:layout_height="85.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/story_quiz_ranking_refresh" android:scaleType="fitCenter" />
+        <TextView android:textSize="16.0dp" android:textColor="#80ffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="8.0dp" android:text="@string/quiz_result_empty_1" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+</com.narvii.widget.RadiusLayout>

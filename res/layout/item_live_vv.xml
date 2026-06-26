@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp">
+        <com.narvii.widget.NVImageView android:layout_gravity="center" android:id="@id/vv_bg" android:layout_width="@dimen/live_square_item_size" android:layout_height="@dimen/live_square_item_size" android:scaleType="centerCrop" app:cornerRadius="4.0dp" app:layout_centerX="50%" app:layout_centerY="50%" />
+        <com.narvii.widget.NVImageView android:id="@id/image_overlay" android:visibility="gone" android:src="@drawable/selector_black_overlay_corner_4" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_height="vv_bg.height" app:layout_width="vv_bg.width" />
+        <com.narvii.amino.speeddial.VVActiveUserLayout android:id="@id/user_container" android:padding="3.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/live_square_item_size" android:layout_height="@dimen/live_square_item_size" app:layout_left="vv_bg.left" app:layout_top="vv_bg.top" />
+        <com.narvii.amino.speeddial.widgets.BoundLightView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.github.mmin18.widget.FlexLayout>
+    <TextView android:textSize="11.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="@dimen/live_square_item_size" android:layout_height="wrap_content" android:layout_marginTop="-3.0dp" android:text="@string/vv_chat" android:maxLines="2" android:shadowColor="#ff000000" android:shadowRadius="1.0" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.drawer.DrawerRightHost android:background="#ff333333" android:layout_width="@dimen/drawer_right_width" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.drawer.DrawerRealtimeBlurView android:id="@id/blur_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:realtimeBlurRadius="30.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clickable="true" android:layout_width="match_parent" android:layout_height="46.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search" android:background="@drawable/drawer_right_search_btn" android:layout_width="0.0px" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_weight="1.0">
+            <com.narvii.widget.FontAwesomeView android:textColor="#ffffffff" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="6.0dp" android:text="@string/fa_search" android:layout_marginStart="6.0dp" />
+            <TextView android:textSize="14.0dp" android:textColor="#aaffffff" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/join_more_community" android:layout_weight="1.0" android:layout_marginStart="10.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.narvii.list.refresh.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="46.0dp">
+        <com.narvii.widget.NVListView android:id="@android:id/list" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.narvii.list.refresh.SwipeRefreshLayout>
+</com.narvii.drawer.DrawerRightHost>

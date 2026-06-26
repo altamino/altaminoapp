@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.TintButton android:layout_gravity="end" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_actionbar_close" app:tintColor="#ffd2d2d4" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="120.0dp" android:layout_height="90.0dp" android:src="@drawable/ic_membership_logo_mid" android:scaleType="fitCenter" />
+    <TextView android:textSize="16.0dp" android:textColor="#ff333334" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/hint_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+    <com.github.mmin18.widget.FlexLayout android:layout_gravity="center_horizontal" android:id="@id/subscribe_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="10.0dp">
+        <com.narvii.widget.ThumbImageView android:id="@id/subscribe_bg" app:cornerRadius="20.0dp" app:defaultDrawable="@drawable/membership_common_btn_bg" app:layout_height="subscribe.height" app:layout_width="subscribe.width" />
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/subscribe" android:layout_width="wrap_content" android:layout_height="40.0dp" android:paddingStart="50.0dp" android:paddingEnd="50.0dp" />
+    </com.github.mmin18.widget.FlexLayout>
+</LinearLayout>

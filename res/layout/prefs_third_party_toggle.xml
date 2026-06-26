@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeRelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/prefs_default_size" app:nv_dark_background="#1affffff"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.app.theme.view.NVThemeTextView android:textSize="16.0dp" android:textColor="#ff4a4a4a" android:gravity="start|center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/prefs_left_margin" android:layout_marginRight="80.0dp" android:minHeight="@dimen/prefs_default_size" android:layout_alignParentLeft="true" android:layout_marginStart="@dimen/prefs_left_margin" android:layout_marginEnd="80.0dp" android:layout_alignParentStart="true" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+    <FrameLayout android:id="@id/toggle_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true">
+        <com.narvii.app.theme.view.NVThemeView android:id="@id/check_box" android:background="@drawable/switch_off" android:layout_width="52.0dp" android:layout_height="30.0dp" app:nv_dark_background="@drawable/switch_off_dt" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/connected" android:background="@drawable/account_connected_round_green" android:paddingLeft="6.0dp" android:paddingTop="4.0dp" android:paddingRight="6.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_connected" android:includeFontPadding="false" />
+    </FrameLayout>
+</com.narvii.app.theme.view.NVThemeRelativeLayout>

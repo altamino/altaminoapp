@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80.0dp" android:minHeight="30.0dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/status_container" android:paddingLeft="15.0dp" android:paddingTop="6.0dp" android:paddingRight="15.0dp" android:paddingBottom="6.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="80.0dp" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/status_indicator" android:paddingLeft="0.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_membership_icon_small" android:paddingStart="0.0dp" android:paddingEnd="4.0dp" />
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/status_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:indeterminateDrawable="@drawable/progress" />
+        <TextView android:textSize="16.0dp" android:textColor="#ffb3b3b3" android:layout_gravity="center" android:id="@id/unavailable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unavailable" android:maxLines="1" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/downloading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="6.0dp" android:max="100" android:progressDrawable="@drawable/store_item_downloading_progress_green" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </FrameLayout>
+    <TextView android:textSize="12.0dp" android:textColor="#ff666666" android:gravity="center" android:id="@id/status_extra_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+</LinearLayout>

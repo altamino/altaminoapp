@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/drag_sort_remove_btn" />
+    <include android:layout_width="@dimen/default_avatar_size_mini" android:layout_height="@dimen/default_avatar_size_mini" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp" layout="@layout/user_avatar_layout_mini" />
+    <com.narvii.widget.NicknameView android:textSize="17.0dp" android:textColor="#ff555555" android:ellipsize="end" android:id="@id/nickname" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="6.0dp" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="6.0dp" />
+    <include layout="@layout/drag_sort_drag_handle" />
+</LinearLayout>

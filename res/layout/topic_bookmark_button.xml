@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/bookmark_normal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="140.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+        <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_topic_bookmark" />
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="@string/bookmark_raw" android:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/bookmark_normal_selected" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="100.0dp">
+        <ImageView android:layout_gravity="center" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_topic_bookmark_selected" />
+    </FrameLayout>
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/bookmark_loading" android:layout_width="@dimen/spin_tiny_size" android:layout_height="@dimen/spin_tiny_size" app:spinColor="#ffeeeeee" app:spinStyle="2" />
+</merge>

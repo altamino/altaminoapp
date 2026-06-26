@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp">
+        <com.narvii.widget.VoteIcon android:id="@id/feed_vote_heart" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+        <com.narvii.widget.VoteIcon android:id="@id/feed_vote_smile" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+        <com.narvii.widget.VoteIcon android:id="@id/feed_vote_frown" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+        <com.narvii.widget.VoteIcon android:id="@id/feed_vote_surprise" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+        <com.narvii.widget.VoteIcon android:id="@id/feed_vote_undecided" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" />
+    </LinearLayout>
+    <include layout="@layout/feed_popup_members" />
+</LinearLayout>

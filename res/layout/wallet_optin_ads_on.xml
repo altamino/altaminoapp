@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wallet_cell_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.NVDrawableAnimatedView android:id="@id/icon" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginLeft="15.0dp" android:layout_marginStart="15.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_weight="1.0" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp">
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/earn_free_coins_with_ads" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.narvii.widget.AutoFitTextView android:textSize="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dp" android:text="@string/earn_free_coins_this_week" />
+                <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/optin_ads_earn_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/amino_coin_small" android:drawablePadding="3.0dp" />
+            </LinearLayout>
+            <View android:layout_width="26.0dp" android:layout_height="match_parent" />
+            <View android:background="#ffcccccc" android:layout_width="1.0dp" android:layout_height="match_parent" />
+            <View android:layout_width="26.0dp" android:layout_height="match_parent" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.narvii.widget.AutoFitTextView android:textSize="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dp" android:text="@string/earn_free_coins_total" />
+                <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/optin_ads_earn_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/amino_coin_small" android:drawablePadding="3.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0dp" android:textColor="#ff000000" android:id="@id/earn_more_coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/earn_more_coins" />
+    </LinearLayout>
+    <com.narvii.widget.TintButton android:gravity="center" android:id="@id/chevron_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:src="@drawable/chevron_right_mirror" android:layout_marginEnd="20.0dp" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/list_frame" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.FullsizeImageView android:id="@id/list_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <View android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/list_view" />
+    <include layout="@layout/empty_view" />
+    <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center|top" android:id="@id/checkin_streak_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/actionbar_share_mask" android:background="@color/dark_theme_overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

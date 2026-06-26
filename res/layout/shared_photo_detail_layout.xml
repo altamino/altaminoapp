@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff111111" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/disabled_bar" layout="@layout/detail_disabled_bar" />
+    <FrameLayout android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/list_layout" />
+        <FrameLayout android:id="@id/touch_area" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.narvii.nvplayerview.NVVideoView android:layout_gravity="center" android:id="@id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <FrameLayout android:id="@id/image_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.narvii.sharedfolder.SharedPhotoTouchImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" narvii:preload="true" narvii:supportUhq="true" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/image_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+            </FrameLayout>
+            <View android:background="#16000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/detail_layout" android:paddingBottom="16.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/overlay_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <View android:background="#32ffffff" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="10.0dp" />
+                <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dp" android:paddingRight="5.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_marginTop="10.0dp" android:paddingStart="16.0dp" android:paddingEnd="5.0dp" narvii:layout_height="min(wrap_content,parent.height*0.5)" narvii:layout_width="parent.width*0.7">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/user_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <include android:layout_width="@dimen/detail_avatar_size" android:layout_height="@dimen/detail_avatar_size" layout="@layout/user_avatar_layout_mini" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp">
+                                <com.narvii.widget.NicknameView android:textSize="15.0dp" android:textColor="@color/text_clickable_white" android:id="@id/nickname" android:layout_width="match_parent" android:layout_height="wrap_content" narvii:hideRole="true" narvii:shadowColor="#38000000" narvii:shadowOffsetX="0.0dp" narvii:shadowOffsetY="2.0dp" narvii:shadowSize="2.0dp" />
+                                <TextView android:textSize="12.0dp" android:textColor="#ccffffff" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:shadowColor="#38000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:maxLines="3" android:shadowColor="#38000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+                    </LinearLayout>
+                    <com.narvii.widget.NVListView android:id="@id/album_list" android:scrollbars="none" android:descendantFocusability="afterDescendants" android:layout_height="wrap_content" android:listSelector="@drawable/list_selector" narvii:layout_height="min(wrap_content,parent.height*0.5)" narvii:layout_right="parent.width" narvii:layout_width="parent.width*0.3" />
+                    <com.narvii.widget.NVListView android:id="@id/comment_list" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:scrollbars="none" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:listSelector="@drawable/list_selector" narvii:layout_bottom="parent.height" narvii:layout_height="min(wrap_content,parent.height*0.5)" />
+                </com.github.mmin18.widget.FlexLayout>
+                <View android:background="#32ffffff" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="10.0dp" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/vote_btn" android:background="@drawable/shared_photo_detail_vote_btn" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginRight="12.0dp" android:minWidth="80.0dp" android:layout_marginEnd="12.0dp">
+                        <com.narvii.widget.VoteIcon android:id="@id/vote_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:scaleType="centerInside" android:layout_marginStart="10.0dp" />
+                        <com.narvii.widget.SpinningView android:id="@id/vote_progress" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp" narvii:spinColor="#ffffffff" narvii:spinStyle="2" />
+                        <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/vote_count" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/comment_btn" android:background="@drawable/shared_photo_detail_vote_btn" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="36.0dp">
+                        <com.narvii.widget.TintButton android:padding="4.0dp" android:duplicateParentState="true" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_comment" narvii:tintColor="#ffffffff" />
+                        <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:id="@id/add_comment" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_comment_hint" android:singleLine="true" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

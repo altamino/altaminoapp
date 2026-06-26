@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/prefs_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dp" android:paddingTop="20.0dp" android:paddingRight="16.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:text="@string/account_email" style="@style/account_settings_small_title" />
+        <TextView android:id="@id/email" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" style="@style/account_settings_big_text" />
+        <TextView android:id="@id/desc" style="@style/account_settings_desc" />
+        <TextView android:id="@id/add_email" android:visibility="gone" android:layout_marginTop="30.0dp" android:text="@string/add_email" style="@style/account_settings_action" />
+        <TextView android:id="@id/verify_email" android:visibility="gone" android:layout_marginTop="30.0dp" android:text="@string/verify_email" style="@style/account_settings_action" />
+        <TextView android:id="@id/change_email" android:visibility="gone" android:layout_marginTop="20.0dp" android:text="@string/change_email" style="@style/account_settings_action" />
+    </LinearLayout>
+</ScrollView>

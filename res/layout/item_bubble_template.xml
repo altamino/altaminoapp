@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/bubble_template_padding" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:background="@drawable/selector_bubble_edit_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.github.mmin18.widget.FlexLayout app:layout_height="max(this.width*0.6, 60dp)" app:layout_top="0" app:layout_width="100%">
+            <View android:id="@id/checked_indicator" android:background="@drawable/bubble_edit_checked_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.narvii.widget.NVImageView android:id="@id/temp_preview" android:src="@drawable/ic_default_bubble" android:scaleType="fitCenter" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_height="this.width*0.45" app:layout_width="78%" />
+        </com.github.mmin18.widget.FlexLayout>
+    </com.github.mmin18.widget.FlexLayout>
+</FrameLayout>

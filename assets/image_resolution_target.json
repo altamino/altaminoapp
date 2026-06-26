@@ -1,0 +1,259 @@
+{
+  "1": {
+    "default": {
+      "128": {
+        "type": "c", 
+        "width": 128, 
+        "height": 128
+      }, 
+      "68": {
+        "type": "c", 
+        "width": 68, 
+        "height": 68
+      }, 
+      "00": {
+        "type": "t", 
+        "width": 512, 
+        "height": 512
+      }, 
+      "hq": {
+        "type": "t", 
+        "width": 1024, 
+        "height": 1024
+      }, 
+      "uhq": {
+        "type": "t", 
+        "width": 2048, 
+        "height": 2048
+      }
+    }, 
+    "gif": {
+      "128": {
+        "type": "c", 
+        "width": 128, 
+        "height": 128
+      }, 
+      "68": {
+        "type": "c", 
+        "width": 68, 
+        "height": 68
+      }, 
+      "00": {
+        "type": "t", 
+        "width": 320, 
+        "height": 320
+      }, 
+      "hq": {
+        "type": "t", 
+        "width": 640, 
+        "height": 640
+      }
+    }, 
+    "videocover": {
+      "128": {
+        "type": "c", 
+        "width": 128, 
+        "height": 128
+      }, 
+      "raw": {
+        "type": "r"
+      }, 
+      "00": {
+        "type": "t", 
+        "width": 512, 
+        "height": 512
+      }
+    }
+  }, 
+  "2": {
+    "default": {
+      "280": {
+        "type": "c", 
+        "width": 280, 
+        "height": 280
+      }, 
+      "00": {
+        "type": "t", 
+        "width": 800, 
+        "height": 800
+      }, 
+      "hq": {
+        "type": "t", 
+        "width": 1024, 
+        "height": 1024
+      }, 
+      "uhq": {
+        "type": "t", 
+        "width": 2048, 
+        "height": 2048
+      }
+    }, 
+    "gif": {
+      "280": {
+        "type": "c", 
+        "width": 200, 
+        "height": 200
+      }, 
+      "00": {
+        "type": "t", 
+        "width": 320, 
+        "height": 320
+      }, 
+      "hq": {
+        "type": "t", 
+        "width": 640, 
+        "height": 640
+      }
+    }, 
+    "videocover": {
+      "raw": {
+        "type": "r"
+      }, 
+      "00": {
+        "type": "t", 
+        "width": 800, 
+        "height": 800
+      }, 
+      "280": {
+        "type": "c", 
+        "width": 280, 
+        "height": 280
+      }
+    }
+  }, 
+  "3": {
+    "default": {
+      "00": {
+        "type": "t", 
+        "width": 1280, 
+        "height": 1280
+      }
+    }, 
+    "gif": {
+      "00": {
+        "type": "t", 
+        "width": 640, 
+        "height": 640
+      }
+    }
+  }, 
+  "4": {
+    "default": {
+      "128": {
+        "type": "c", 
+        "width": 128, 
+        "height": 128
+      }, 
+      "00": {
+        "type": "c", 
+        "width": 750, 
+        "height": 375
+      }
+    }, 
+    "gif": {
+      "128": {
+        "type": "c", 
+        "width": 128, 
+        "height": 128
+      }, 
+      "00": {
+        "type": "c", 
+        "width": 500, 
+        "height": 250
+      }
+    }
+  }, 
+  "5": {
+    "default": {
+      "00": {
+        "type": "t", 
+        "width": 1280, 
+        "height": 1280
+      }
+    }, 
+    "gif": {
+      "00": {
+        "type": "t", 
+        "width": 640, 
+        "height": 640
+      }
+    }
+  }, 
+  "6": {
+    "default": {
+      "128": {
+        "type": "t", 
+        "width": 128, 
+        "height": 128
+      }, 
+      "68": {
+        "type": "t", 
+        "width": 68, 
+        "height": 68
+      }, 
+      "00": {
+        "type": "t", 
+        "width": 256, 
+        "height": 256
+      }
+    }, 
+    "gif": {
+      "128": {
+        "type": "t", 
+        "width": 128, 
+        "height": 128
+      }, 
+      "68": {
+        "type": "t", 
+        "width": 68, 
+        "height": 68
+      }, 
+      "00": {
+        "type": "t", 
+        "width": 256, 
+        "height": 256
+      }
+    }
+  }, 
+  "7": {
+    "default": {
+      "00": {
+        "type": "t", 
+        "width": 512, 
+        "height": 512
+      }, 
+      "hq": {
+        "type": "t", 
+        "width": 1024, 
+        "height": 1024
+      }, 
+      "uhq": {
+        "type": "t", 
+        "width": 2048, 
+        "height": 2048
+      }
+    }, 
+    "gif": {
+      "00": {
+        "type": "t", 
+        "width": 320, 
+        "height": 320
+      }, 
+      "hq": {
+        "type": "t", 
+        "width": 640, 
+        "height": 640
+      }
+    }, 
+    "videocover": {
+      "raw": {
+        "type": "r"
+      }, 
+      "00": {
+        "type": "t", 
+        "width": 512, 
+        "height": 512
+      }
+    }
+  }
+}

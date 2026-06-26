@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_left="10dp" app:layout_top="5%">
+        <FrameLayout android:layout_gravity="center_vertical" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.narvii.chat.video.view.UserSpeakingView android:id="@id/loading" android:layout_width="@dimen/video_calling_avatar_size" android:layout_height="@dimen/video_calling_avatar_size" />
+            <include android:layout_gravity="center_horizontal" android:padding="@dimen/voice_avatar_padding" android:layout_width="@dimen/video_calling_avatar_size" android:layout_height="@dimen/video_calling_avatar_size" layout="@layout/user_avatar_layout_mini_nobadge" style="@style/AvatarImageView" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingRight="50.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:paddingEnd="50.0dp" android:layout_marginStart="10.0dp">
+            <com.narvii.chat.video.VVChatMembershipNameLayout android:layout_gravity="center_horizontal" android:id="@id/membership_nickname_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.narvii.chat.video.layout.VVChatNickNameView android:textSize="22.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/influencer_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowRadius="1.0" app:roleScale="0.6" />
+            </com.narvii.chat.video.VVChatMembershipNameLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowRadius="1.0" />
+                <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:id="@id/status_omit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowRadius="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="#ffffffff" android:id="@id/calling_hint_info" android:background="@drawable/calling_hint_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_bottom="cancel_private_call.top-10%" app:layout_centerX="50%" style="@style/TextCellWithPadding" />
+    <com.narvii.widget.PopButton android:layout_gravity="center|bottom" android:id="@id/cancel_private_call" android:background="@drawable/call_decline_bg" android:visibility="gone" android:src="@drawable/ic_invite_call_decline" android:scaleType="centerInside" app:layout_bottom="95%" app:layout_centerX="50%" app:layout_height="this.width" app:layout_width="20%" />
+</com.github.mmin18.widget.FlexLayout>

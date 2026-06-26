@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:background="#ff3a3b41" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.StatusBarPlaceHolder android:id="@id/status_bar_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_top="0dp" />
+    <RelativeLayout android:id="@id/contentPanel" android:background="@drawable/editor_component_panel_bg" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="208.0dp" app:layout_bottom="100%">
+        <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/video_playback_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <View android:id="@id/divider" android:background="#88ffffff" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_toRightOf="@id/video_playback_time" android:layout_alignTop="@id/video_playback_time" android:layout_alignBottom="@id/video_playback_time" android:layout_marginStart="5.0dp" android:layout_toEndOf="@id/video_playback_time" />
+        <TextView android:textSize="12.0dp" android:textColor="#88ffffff" android:id="@id/video_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_toRightOf="@id/divider" android:layout_alignParentBottom="true" android:layout_marginStart="5.0dp" android:layout_toEndOf="@id/divider" />
+        <com.narvii.video.widget.MediaTimeLineComponent android:id="@id/video_time_line_component" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/video_playback_time" app:frameCountInBaseRect="22" app:frameOffset="11">
+            <com.narvii.widget.HorizontalRecyclerView android:id="@id/video_time_line" android:layout_width="wrap_content" android:layout_height="@dimen/scene_editor_time_line_item_height" />
+        </com.narvii.video.widget.MediaTimeLineComponent>
+        <FrameLayout android:id="@id/vice_time_line_panel_scroll" android:background="#ff222222" android:paddingTop="7.0dp" android:layout_width="match_parent" android:layout_height="78.0dp" android:layout_marginBottom="7.0dp" android:fillViewport="true" android:layout_above="@id/video_time_line_component">
+            <ScrollView android:layout_gravity="bottom" android:id="@id/vice_timeline_scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/vice_time_line_panel" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </ScrollView>
+        </FrameLayout>
+        <RelativeLayout android:id="@id/options_panel" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_above="@id/vice_time_line_panel_scroll">
+            <ImageView android:id="@id/option_done" android:padding="2.0dp" android:layout_width="40.0dp" android:layout_height="match_parent" android:src="@drawable/ic_white_check" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+            <ImageView android:id="@id/player_button" android:padding="2.5dp" android:layout_width="30.0dp" android:layout_height="match_parent" android:src="@drawable/ic_action_play" android:layout_centerInParent="true" />
+            <TextView android:textColor="#ffffffff" android:id="@id/debug_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dp" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/option_cancel" android:layout_width="40.0dp" android:layout_height="match_parent" android:src="@drawable/post_entry_close" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+            <View android:background="#ff222222" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_toRightOf="@id/option_cancel" android:layout_marginStart="5.0dp" android:layout_toEndOf="@id/option_cancel" />
+            <ImageView android:id="@id/option_add_pip_video" android:layout_width="40.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginTop="3.0dp" android:src="@drawable/ic_add_pip_video" android:scaleType="centerInside" android:layout_toRightOf="@id/option_cancel" android:alpha="0.5" android:layout_marginStart="10.0dp" android:layout_toEndOf="@id/option_cancel" />
+        </RelativeLayout>
+        <View android:background="@drawable/media_timeline_pointer_bg" android:layout_width="@dimen/scene_editor_time_line_pointer_width" android:layout_height="wrap_content" android:layout_alignTop="@id/vice_time_line_panel_scroll" android:layout_alignBottom="@id/video_time_line_component" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/video_container" android:background="#ff000000" app:layout_bottom="contentPanel.top-10dp" app:layout_centerX="50%" app:layout_top="status_bar_placeholder.bottom+10dp" app:layout_width="this.height*0.5625">
+        <com.narvii.video.widget.videoview.NVEditorPreviewVideoVIew android:id="@id/video_view_player" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.video.attachment.DrawRectView android:id="@id/draw_rect" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/attachment_tab" android:layout_width="match_parent" app:layout_bottom="100%" app:layout_height="contentPanel.height" />
+</com.github.mmin18.widget.FlexLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/full_screen_bg" />
+    <com.github.mmin18.widget.RealtimeBlurView android:id="@id/blur" android:layout_width="match_parent" android:layout_height="match_parent" app:realtimeOverlayColor="#dd333333" />
+    <ScrollView android:id="@id/scroll" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/fake_action_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.github.mmin18.widget.FlexLayout android:id="@id/share_content_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View app:layout_centerX="50%" app:layout_height="this.width" app:layout_width="85.3%" />
+            </com.github.mmin18.widget.FlexLayout>
+            <com.github.mmin18.widget.FlexLayout android:id="@id/share_dialog_buttons" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp">
+                <FrameLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" app:layout_centerX="50%" app:layout_width="90%">
+                    <com.github.mmin18.widget.FlexLayout android:layout_gravity="center_horizontal" android:id="@id/share_button_container" android:layout_width="wrap_content" android:layout_height="44.0dp">
+                        <com.narvii.share.ShareDialogButton android:id="@id/share_dialog_first_button" android:layout_height="match_parent" app:layout_width="screen.width*0.425-4dp" />
+                        <com.narvii.share.ShareDialogButton android:id="@id/share_dialog_second_button" android:layout_height="match_parent" app:layout_left="prev.right" app:layout_width="screen.width*0.425-4dp" />
+                    </com.github.mmin18.widget.FlexLayout>
+                </FrameLayout>
+            </com.github.mmin18.widget.FlexLayout>
+            <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                <GridLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/share_targets_layout" android:layout_height="wrap_content" android:horizontalSpacing="0.0dp" android:verticalSpacing="0.0dp" android:numColumns="4" app:layout_centerX="50%" app:layout_width="screen.width*0.88" />
+            </com.github.mmin18.widget.FlexLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.chat.ChatInputRootLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/typing_user_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp">
+        <TextView android:textSize="11.0dp" android:textColor="#ffffffff" android:ellipsize="middle" android:id="@id/typing_user" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:shadowColor="#aa000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="3.0" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/chat_input_main" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.github.mmin18.widget.RealtimeBlurView android:id="@id/chat_input_blur" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/reply_main" android:layout_alignBottom="@id/chat_buttons" app:realtimeBlurRadius="20.0dp" app:realtimeOverlayColor="#80ffffff" />
+            <FrameLayout android:id="@id/reply_main" android:paddingLeft="10.0dp" android:paddingTop="8.0dp" android:paddingRight="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+                <com.narvii.chat.ChatReplyLayout android:id="@id/reply_layout" android:layout_width="match_parent" android:layout_height="43.0dp" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/chat_buttons" android:paddingLeft="3.0dp" android:paddingTop="5.0dp" android:paddingRight="3.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/chat_input_bar_height" android:layout_below="@id/reply_main">
+                <FrameLayout android:layout_gravity="bottom" android:id="@id/chat_add_button" android:paddingLeft="3.0dp" android:paddingTop="5.0dp" android:paddingRight="3.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.narvii.widget.TintButton android:gravity="center" android:layout_gravity="center" android:id="@id/chat_add" android:background="@drawable/selector_rtc_bottom_button_bg" android:padding="4.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/ic_chat_input_plus_no_circle" android:scaleType="centerInside" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="bottom" android:id="@id/chat_sticker_button" android:paddingLeft="3.0dp" android:paddingTop="5.0dp" android:paddingRight="3.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.narvii.chat.input.ChatInputPanelSwitcherButton android:layout_gravity="center" android:id="@id/sticker_button" android:background="@drawable/selector_rtc_bottom_button_bg" android:padding="4.0dp" android:visibility="visible" android:layout_width="34.0dp" android:layout_height="34.0dp" android:scaleType="centerInside" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center" android:paddingLeft="3.0dp" android:paddingTop="5.0dp" android:paddingRight="3.0dp" android:paddingBottom="5.0dp" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.narvii.chat.input.MentionedEditText android:textSize="14.0dp" android:textStyle="normal" android:textColor="#ffffffff" android:textColorHint="#b2ffffff" android:gravity="start|center" android:id="@id/chat_edit" android:background="@drawable/chat_input_edit_round_normal" android:paddingLeft="17.0dp" android:paddingRight="4.0dp" android:focusable="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="100.0dp" android:minHeight="34.0dp" android:hint="@string/chat_message" android:inputType="textCapSentences|textMultiLine" android:imeOptions="flagNoFullscreen|flagNoExtractUi" android:textCursorDrawable="@null" android:paddingStart="17.0dp" android:paddingEnd="4.0dp" />
+                    <Button android:textSize="15.0dp" android:textStyle="normal" android:textColor="#a0ffffff" android:gravity="start|center" android:id="@id/view_only_button" android:background="@drawable/chat_input_edit_round_normal" android:paddingLeft="17.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="34.0dp" android:text="@string/chat_message" android:paddingStart="17.0dp" />
+                    <Button android:textSize="15.0dp" android:textStyle="normal" android:textColor="#ffffffff" android:gravity="start|center" android:id="@id/chat_button" android:background="@drawable/edit_round_red" android:paddingLeft="17.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="34.0dp" android:text="@string/chat_message" android:paddingStart="17.0dp" />
+                    <com.narvii.chat.audio.AudioBoardLayout android:id="@id/voice_board_layout" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="34.0dp">
+                        <TextView android:textSize="14.0dp" android:textColor="#fff5a623" android:layout_gravity="center" android:id="@id/voice_board_toast" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_voice_board_toast_warning" android:drawablePadding="6.0dp" android:drawableStart="@drawable/ic_voice_board_toast_warning" />
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/record_time_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <View android:id="@id/record_indicator" android:background="@color/voice_message_primary_color" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginRight="6.0dp" android:layout_marginEnd="6.0dp" />
+                            <TextView android:textSize="14.0dp" android:textColor="@color/voice_message_primary_color" android:layout_gravity="center" android:id="@id/record_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </com.narvii.chat.audio.AudioBoardLayout>
+                </FrameLayout>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_gravity="bottom" android:id="@id/chat_send_container" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="50.0dp" android:layout_height="wrap_content">
+                        <com.narvii.widget.TintButton android:layout_gravity="center" android:id="@id/chat_send" android:padding="2.0dp" android:layout_width="50.0dp" android:layout_height="26.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/ic_chat_bottom_send" app:tintColor="@color/selector_chat_send" />
+                    </FrameLayout>
+                    <com.narvii.chat.input.ChatInputRightViewContainer android:layout_gravity="bottom" android:id="@id/chat_right_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:id="@id/sr_landscape_buttons" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginStart="5.0dp">
+            <FrameLayout android:id="@id/sr_input_container" android:paddingLeft="5.0dp" android:paddingTop="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/sr_input" android:background="@drawable/selector_rtc_bottom_button_bg" android:padding="4.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/ic_rtc_bottom_reply" android:scaleType="centerInside" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/sr_mute_view" android:paddingLeft="5.0dp" android:paddingTop="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.narvii.chat.video.view.CheckableImageView android:gravity="center" android:layout_gravity="center" android:id="@id/mute_button" android:background="@drawable/selector_rtc_bottom_button_bg" android:padding="4.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/selector_rtc_bottom_mute" android:scaleType="centerInside" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/panel_layout" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/sticker_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/voice_record_panel_height_min" />
+        <com.narvii.chat.audio.AudioRecordLayout android:id="@id/audio_record_layout" android:tag="keyboard_panel" android:background="#ffffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/voice_record_panel_height_min">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="60.0dp">
+                    <TextView android:textColor="@color/voice_message_primary_color" android:layout_gravity="center" android:id="@id/release_to_send" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/release_to_send" />
+                    <TextView android:textColor="@color/voice_message_cancel_color" android:layout_gravity="center" android:id="@id/release_to_delete" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/release_to_delete" />
+                    <TextView android:textColor="@color/voice_message_primary_color" android:layout_gravity="center" android:id="@id/hold_to_talk" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hold_to_talk" />
+                </FrameLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <FrameLayout android:layout_gravity="center" android:id="@id/audio_record" android:clipChildren="false" android:clipToPadding="false" android:layout_width="110.0dp" android:layout_height="110.0dp">
+                    <com.narvii.chat.audio.AudioVolumeRippleView android:layout_gravity="center" android:id="@id/volume_ripple" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="100.0dp" />
+                    <View android:id="@id/record_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    <ImageView android:layout_gravity="center" android:id="@id/record_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_voice_message_recorder_big" />
+                </FrameLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <FrameLayout android:layout_width="match_parent" android:layout_height="60.0dp">
+                    <TextView android:textColor="#969b9b9b" android:layout_gravity="center" android:id="@id/slide_down_to_delete" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/slide_down_to_delete" android:drawableLeft="@drawable/ic_audio_record_remove_bin_black_small" android:drawablePadding="6.0dp" android:drawableStart="@drawable/ic_audio_record_remove_bin_black_small" />
+                    <com.github.mmin18.widget.FlexLayout android:id="@id/remove_bin" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <View android:background="@drawable/audio_record_remove_oval_bg" android:layout_height="120.0dp" app:layout_centerX="50%" app:layout_top="20dp" app:layout_width="50%" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_audio_record_remove_bin" app:layout_centerX="50%" app:layout_centerY="40dp" />
+                    </com.github.mmin18.widget.FlexLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </com.narvii.chat.audio.AudioRecordLayout>
+    </FrameLayout>
+</com.narvii.chat.ChatInputRootLayout>

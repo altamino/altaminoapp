@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:id="@id/wallet_dialog_root" android:background="#88000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/wallet_dialog_white_bg" android:clickable="true" app:layout_centerX="50%" app:layout_centerY="45%" app:layout_height="wrap_content" app:layout_width="((280dp>parent.width)?parent.width*0.9:parent.width*0.85)">
+        <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/header_no_enough_coin" android:background="@drawable/wallet_dialog_red_bg" android:layout_width="match_parent" android:layout_height="32.0dp" android:text="@string/not_enough_coins2" />
+        <com.github.mmin18.widget.FlexLayout android:id="@id/header_layout" android:layout_width="match_parent" app:layout_height="parent.width*0.3" app:layout_top="header_no_enough_coin.bottom">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/wallet_dialog_header_bg" app:layout_centerX="50%" app:layout_centerY="50%" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/balance_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_centerY="40%">
+                <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/amino_coin_big" android:layout_marginEnd="10.0dp" />
+                <TextView android:textSize="28.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/balance_lower_case" android:alpha="0.8" app:layout_centerX="50%" app:layout_centerY="70%" />
+        </com.github.mmin18.widget.FlexLayout>
+        <com.github.mmin18.widget.FlexLayout android:id="@id/layout_content" android:layout_width="match_parent" app:layout_height="parent.width*0.8" app:layout_top="header_layout.bottom">
+            <LinearLayout android:orientation="horizontal" android:id="@id/item_layout_1" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" app:layout_height="parent.height*0.5">
+                <include android:id="@id/item1" layout="@layout/wallet_dialog_item" />
+                <include android:id="@id/item2" layout="@layout/wallet_dialog_item" />
+                <include android:id="@id/item3" layout="@layout/wallet_dialog_item" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/item_layout_2" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_marginBottom="10.0dp" app:layout_height="parent.height*0.5" app:layout_top="item_layout_1.bottom">
+                <include android:id="@id/item4" layout="@layout/wallet_dialog_item" />
+                <include android:id="@id/item5" layout="@layout/wallet_dialog_item" />
+                <include android:id="@id/item6" layout="@layout/wallet_dialog_item" />
+            </LinearLayout>
+            <include android:id="@id/loading" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" layout="@layout/normal_loading_list_item_dark" />
+            <include android:id="@id/error" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" layout="@layout/normal_error_list_item_dark" />
+        </com.github.mmin18.widget.FlexLayout>
+        <View android:id="@id/margin_bottom_placeholder" android:layout_width="match_parent" android:layout_height="20.0dp" app:layout_top="layout_content.bottom" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/earn_more_layout" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" app:layout_centerX="50%" app:layout_top="layout_content.bottom">
+            <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ff11f7d1" android:gravity="center" android:id="@id/earn_more_coins" android:layout_width="0.0px" android:layout_height="60.0dp" android:text="@string/watch_a_video_for_free_coins" android:layout_weight="1.0" />
+            <com.narvii.widget.TintButton android:gravity="center" android:id="@id/chevron_right" android:layout_width="8.0dp" android:layout_height="12.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/chevron_right_mirror" android:layout_marginStart="8.0dp" app:tintColor="#ff11f7d1" />
+        </LinearLayout>
+    </com.github.mmin18.widget.FlexLayout>
+    <com.narvii.widget.PopButton android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dialog_close_circle" android:alpha="0.8" app:layout_centerX="50%" app:layout_centerY="prev.bottom+40dp" app:tintColor="#ffffffff" />
+</com.github.mmin18.widget.FlexLayout>

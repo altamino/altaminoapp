@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.account.AccountSignUpIndicatorView android:id="@id/signup_indicator" narvii:layout_height="this.width" narvii:layout_right="95%" narvii:layout_top="96%-screen.width*0.182" narvii:layout_width="screen.width*0.182"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto" />

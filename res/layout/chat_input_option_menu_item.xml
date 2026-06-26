@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.chat.video.view.CheckableImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="26.0dp" android:layout_height="26.0dp" android:scaleType="centerInside" />
+        <com.narvii.widget.AutoSizingTextView android:textSize="12.0dp" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/share_sms" android:maxLines="1" narvii:autoSizeTextMaxSize="12.0dp" narvii:autoSizeTextMinSize="9.0dp" />
+    </LinearLayout>
+</FrameLayout>

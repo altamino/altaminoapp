@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/online_bar_layout" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginBottom="8.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginStart="8.0dp" android:layout_alignParentEnd="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.livelayer.LiveLayerOnlineBar android:layout_gravity="end" android:id="@id/online_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" narvii:animateLayoutChanges="false" narvii:autoFitAvatarCountMax="4" narvii:avatarSize="26.0dp" narvii:barColor="#55000000" narvii:onlineText="@string/chat_online_bar_active_member" narvii:onlineTextOne="@string/chat_online_bar_active_member_one" narvii:showMore="true" narvii:showRightCorner="false" narvii:textMarginEnd="10.0dp" />
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#19ffffff" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="110.0dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/group_follow" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.narvii.widget.NVImageView android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/ic_notification_group_follow" />
+            <TextView android:textSize="11.0dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/user_followers" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/group_vote" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.narvii.widget.NVImageView android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/ic_notification_group_vote" />
+            <TextView android:textSize="11.0dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/likes" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/group_comment" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.narvii.widget.NVImageView android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/ic_notification_group_comment" />
+            <TextView android:textSize="11.0dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/comments" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

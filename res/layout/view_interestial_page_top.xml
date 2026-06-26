@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/amino_team_user_avatar" android:layout_width="90.0dp" android:layout_height="90.0dp" android:layout_marginTop="50.0dp" layout="@layout/user_avatar_layout_large" />
+    <TextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="18.0dp" android:layout_marginRight="15.0dp" android:maxLines="1" android:lines="1" android:textAlignment="center" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+    <TextView android:textSize="12.0dp" android:textColor="#99ffffff" android:id="@id/amino_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:maxLines="1" android:lines="1" android:textAlignment="center" />
+    <FrameLayout android:id="@id/follow_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <com.narvii.user.follow.UserFollowView android:id="@id/follow_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/like_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:background="@drawable/ic_like_interestial_bg" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="28.0dp">
+                <com.narvii.widget.NVImageView android:layout_gravity="center" android:id="@id/like_image" android:padding="8.0dp" android:layout_width="57.0dp" android:layout_height="57.0dp" />
+                <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" app:spinColor="#ffeeeeee" app:spinStyle="2" />
+            </FrameLayout>
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/like_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="20.0dp" android:maxLines="1" android:lines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tipping_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="90.0dp" android:layout_marginStart="90.0dp">
+            <FrameLayout android:background="@drawable/ic_like_interestial_bg" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="28.0dp">
+                <ImageView android:layout_gravity="center" android:id="@id/tipping_image" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/amino_coin_big" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tipping_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="20.0dp" android:maxLines="1" android:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

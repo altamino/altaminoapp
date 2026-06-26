@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:background="#ff0f0045" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/header_layout" android:layout_width="match_parent" app:layout_height="parent.height*0.15">
+        <TextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/promote_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0dp" android:textColor="@color/white" android:id="@id/promote_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:alpha="0.7" />
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout android:orientation="vertical" android:id="@id/swipe_refresh" android:layout_width="match_parent" app:layout_height="parent.height*0.6" app:layout_top="header_layout.bottom">
+        <FrameLayout android:id="@id/recycle_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.narvii.widget.recycleview.NVRecyclerView android:id="@id/recycle_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.narvii.paging.state.PageStatusView android:id="@id/status_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <com.github.mmin18.widget.FlexLayout android:background="#ff0f0045" android:layout_width="match_parent" app:layout_bottom="parent.height" app:layout_height="parent.height*0.25">
+        <Button android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/text_clickable_enable_white" android:id="@id/choose" android:background="@drawable/green_button_bg" android:text="@string/select" app:layout_centerX="parent.width*0.5" app:layout_height="parent.height*0.27" app:layout_top="parent.height*0.12" app:layout_width="parent.width*0.44" />
+        <TextView android:textSize="16.0dp" android:textColor="@color/white" android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" app:layout_bottom="parent.height*0.88" app:layout_centerX="parent.width*0.5" />
+    </com.github.mmin18.widget.FlexLayout>
+</com.github.mmin18.widget.FlexLayout>

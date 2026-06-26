@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.livelayer.detailview.LiveLayerDetailListItemView android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="146.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.NVImageSwitcher android:id="@id/image_switcher" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/browsing_label" android:paddingLeft="8.0dp" android:paddingTop="6.0dp" android:paddingRight="8.0dp" android:paddingBottom="6.0dp" android:layout_width="40.0dp" android:layout_height="30.0dp" android:layout_marginTop="12.0dp" />
+    <TextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="#fff2f2f2" android:gravity="start" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="60.0dp" android:maxLines="2" android:shadowColor="#cc000000" android:shadowDy="3.0" android:shadowRadius="8.0" android:layout_toRightOf="@id/browsing_label" android:textAllCaps="true" android:textAlignment="viewStart" android:layout_marginStart="8.0dp" android:layout_marginEnd="60.0dp" android:layout_toEndOf="@id/browsing_label" />
+    <FrameLayout android:id="@id/live_layer_additional_layout" android:paddingLeft="10.0dp" android:paddingTop="20.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+    <include layout="@layout/live_layer_detail_item_bar" />
+    <include layout="@layout/fans_only_content_indicator_layout_live_chat" />
+</com.narvii.livelayer.detailview.LiveLayerDetailListItemView>

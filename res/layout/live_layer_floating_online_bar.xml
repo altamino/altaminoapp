@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/online_bar_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.livelayer.LiverHintBubble android:id="@id/liver_layer_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" style="@style/TooltipPopBubble">
+            <LinearLayout android:padding="@dimen/tooltip_container_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:background="@drawable/ic_finger_down" android:layout_width="27.0dp" android:layout_height="40.0dp" android:layout_marginRight="@dimen/tooltip_finger_margin_h" android:layout_marginEnd="@dimen/tooltip_finger_margin_h" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/liver_layer_hint" style="@style/TooltipText" />
+            </LinearLayout>
+        </com.narvii.livelayer.LiverHintBubble>
+        <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.narvii.livelayer.LiveLayerOnlineBar android:id="@id/floating_online_bar" android:clipChildren="false" android:clipToPadding="false" app:minAvatarCount="2" app:showShadow="true" app:supportFold="true" style="@style/live_layer_online_bar_style" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

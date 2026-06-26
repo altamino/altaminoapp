@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingTop="32.0dp" android:paddingRight="10.0dp" android:paddingBottom="32.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textStyle="bold" android:id="@id/chat_join" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_join_conversation" style="@style/ButtonChatTheme" />
+    <Button android:textStyle="bold" android:id="@id/chat_leave" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_leave_conversation" style="@style/ButtonRed" />
+    <Button android:textStyle="bold" android:id="@id/see_chat_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/see_chat_list" style="@style/ButtonGrey" />
+</LinearLayout>

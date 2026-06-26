@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/flip_back" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.ThumbImageView android:id="@id/flip_back_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="#ffffffff" android:scaleType="fitCenter" app:cornerRadius="5.0dp" app:shadowColor="#88f9c053" app:shadowOffsetY="0.0dp" app:shadowSize="4.0dp" app:showPressedMask="false" />
+        <View android:background="@drawable/lottery_card_result_stroke" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4.0dp" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/result_failed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_lottery_result_failed" />
+                </com.github.mmin18.widget.FlexLayout>
+                <TextView android:textSize="13.0dp" android:textColor="#ff333334" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/no_prize" android:maxLines="2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/result_coins" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="55.0">
+                    <ImageView android:id="@id/coins_icon" android:layout_width="match_parent" app:layout_centerY="50%" app:layout_height="parent.height*0.7" />
+                </com.github.mmin18.widget.FlexLayout>
+                <com.github.mmin18.widget.FlexLayout android:gravity="center" android:orientation="vertical" android:background="#ffffab2f" android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="45.0">
+                    <com.narvii.widget.AutoSizingTextView android:textSize="38.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/coins_count" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="match_parent" android:maxLines="1" android:includeFontPadding="false" app:autoSizeTextMaxSize="38.0dp" app:layout_height="min(parent.height-coins_text.height-5dp,wrap_content)" app:layout_top="(parent.height-this.height-coins_text.height)/2" />
+                    <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/coins_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" app:layout_top="coins_count.bottom" />
+                </com.github.mmin18.widget.FlexLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/result_sticker" android:padding="4.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.narvii.monetization.sticker.widget.StickerImageView android:id="@id/sticker_image" android:layout_width="match_parent" app:defaultDrawable="@color/sticker_placeholder" app:layout_height="this.width" />
+                </com.github.mmin18.widget.FlexLayout>
+                <TextView android:textSize="13.0dp" android:textColor="#ffff7800" android:gravity="center" android:id="@id/send_sticker" android:background="@drawable/selector_actvite_yellow_stroke" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="22.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:text="@string/send" android:maxLines="1" android:singleLine="true" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/flip_front" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.ThumbImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/lottery_card_back_bg" app:cornerRadius="5.0dp" app:shadowColor="#88f9c053" app:shadowOffsetY="0.0dp" app:shadowSize="4.0dp" />
+    </FrameLayout>
+</merge>

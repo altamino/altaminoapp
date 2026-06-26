@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.feed.FeedListItem android:id="@id/headline_feed_item" android:tag="quiz" android:background="@drawable/selector_headline_bg" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/community_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/community_info_layout" />
+        <TextView android:textSize="@dimen/headline_item_title_size" android:textStyle="bold" android:textColor="@color/headline_feed_title_color" android:ellipsize="end" android:gravity="start|center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="2" android:layout_below="@id/community_info" />
+        <TextView android:textSize="10.0dp" android:textColor="#ff949494" android:id="@id/quiz_played_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="true" android:layout_below="@id/title" />
+        <com.github.mmin18.widget.FlexLayout android:id="@id/stub1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/quiz_played_times" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+            <com.narvii.feed.quizzes.QuizCoverView android:id="@id/quiz_cover" android:layout_width="match_parent" android:layout_height="wrap_content" app:container_layout_id="@layout/quiz_cover_view_headline" />
+            <com.narvii.widget.FullHitFrameLayout android:paddingLeft="10.0dp" android:paddingTop="20.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_bottom="quiz_cover.bottom" app:layout_left="quiz_cover.left">
+                <LinearLayout android:gravity="center" android:id="@id/start_quiz" android:background="@drawable/quiz_play_btn" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:minWidth="100.0dp">
+                    <com.narvii.widget.FontAwesomeView android:textColor="#ffffffff" android:id="@id/start_quiz_icon" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginRight="4.0dp" android:text="@string/fa_play" android:layout_marginEnd="4.0dp" />
+                    <TextView android:textSize="15.0dp" android:textColor="#ffffffff" android:id="@id/start_quiz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_quiz" android:singleLine="true" />
+                    <com.narvii.widget.SpinningView android:id="@id/start_quiz_loading" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" app:spinColor="#ffffffff" app:spinSize="15.0dp" app:spinStyle="2" />
+                </LinearLayout>
+            </com.narvii.widget.FullHitFrameLayout>
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/quiz_played_tag" android:background="#ff25cc82" android:padding="3.0dp" android:paddingLeft="4.0dp" android:paddingTop="2.0dp" android:paddingRight="4.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/played" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" app:layout_right="100%" app:layout_top="0" />
+        </com.github.mmin18.widget.FlexLayout>
+        <include android:id="@id/feed_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/stub1" layout="@layout/feed_toolbar_headline" />
+    </com.narvii.feed.FeedListItem>
+</LinearLayout>

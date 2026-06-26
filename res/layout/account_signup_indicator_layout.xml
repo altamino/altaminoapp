@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:padding="3.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:id="@id/status_bg" narvii:cornerRadius="38.0dp" narvii:layout_height="this.width" narvii:layout_width="min(parent.width, parent.height)-4dp" narvii:shadowColor="#aa000000" narvii:shadowOffsetX="1.0dp" narvii:shadowOffsetY="3.0dp" narvii:shadowSize="2.0dp" />
+    <ImageView android:src="@drawable/oval_account_green" narvii:layout_height="this.width" narvii:layout_width="min(parent.width, parent.height)-4dp" />
+    <ImageView android:id="@id/status" narvii:layout_centerX="prev.top+prev.width/2" narvii:layout_centerY="prev.left+prev.height/2" narvii:layout_height="prev.height*0.5" narvii:layout_width="prev.width*0.5" />
+    <com.narvii.widget.CheckMarkView android:id="@id/success" android:visibility="gone" narvii:layout_centerX="status_bg.top+status_bg.width/2" narvii:layout_centerY="status_bg.left+status_bg.height/2" narvii:layout_height="status_bg.height*0.5" narvii:layout_width="status_bg.width*0.5" />
+</com.github.mmin18.widget.FlexLayout>

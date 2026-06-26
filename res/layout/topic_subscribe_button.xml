@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.topic.widgets.TopicBookmarkView android:id="@id/bookmark" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/topic_bookmark_notification" android:visibility="gone" android:layout_width="34.0dp" android:layout_height="34.0dp" android:layout_marginLeft="6.0dp" android:layout_marginStart="6.0dp">
+        <com.narvii.widget.GradientView android:id="@id/notification_gradient" android:layout_width="34.0dp" android:layout_height="34.0dp" />
+        <ImageView android:layout_gravity="center" android:id="@id/notification_ring" android:layout_width="34.0dp" android:layout_height="34.0dp" />
+        <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/notification_progress" android:layout_width="26.0dp" android:layout_height="26.0dp" app:spinColor="#ffeeeeee" app:spinStyle="2" />
+    </FrameLayout>
+</merge>

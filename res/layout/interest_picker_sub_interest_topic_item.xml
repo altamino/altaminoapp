@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.suggest.interest.InterestTopicView android:id="@id/interest_item_view" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_margin="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:lines="1" />
+    <ImageView android:id="@id/more" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="match_parent" android:src="@drawable/ic_more_story" android:alpha="0.7" />
+</com.narvii.suggest.interest.InterestTopicView>

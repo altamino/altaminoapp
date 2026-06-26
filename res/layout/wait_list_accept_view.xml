@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/wait_list_accept_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/accept" android:background="@drawable/button_round_waiting_list_accept" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accept" />
+    <TextView android:textSize="12.0dp" android:textColor="#88000000" android:id="@id/cancel" android:background="@drawable/transparent_layout_bg_dark" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" />
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="@dimen/spin_tiny_size" android:layout_height="@dimen/spin_tiny_size" narvii:spinColor="#ffeeeeee" narvii:spinStyle="2" />
+</FrameLayout>

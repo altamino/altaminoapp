@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/post_entry_dialog" android:background="#cc000000" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="20.0dp" android:paddingEnd="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="2.0" />
+    <TextView android:textSize="30.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/post_entry_poll_type" />
+    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="3.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="10.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="14.0dp" android:layout_weight="1.0" android:layout_marginEnd="14.0dp">
+            <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="start" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/post_entry_poll_type_plain" android:paddingStart="20.0dp" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/post_new_plain_poll" android:background="@drawable/selector_circle_blue" android:layout_width="@dimen/vote_button_size" android:layout_height="@dimen/vote_button_size">
+            <TextView android:textSize="18.0dp" android:textColor="#ffeeeeee" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vote_choose" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <View android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="10.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="14.0dp" android:layout_weight="1.0" android:layout_marginEnd="14.0dp">
+            <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="start" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="@string/post_entry_poll_type_collection" android:paddingStart="20.0dp" />
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="start" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/post_entry_poll_rule1" android:paddingStart="20.0dp" />
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="start" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/post_entry_poll_rule2" android:paddingStart="20.0dp" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/post_new_collection_poll" android:background="@drawable/selector_circle_blue" android:layout_width="@dimen/vote_button_size" android:layout_height="@dimen/vote_button_size">
+            <TextView android:textSize="18.0dp" android:textColor="#ffeeeeee" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vote_choose" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="4.0" />
+</LinearLayout>

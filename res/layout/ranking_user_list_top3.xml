@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/item_padding_left_right" android:paddingRight="@dimen/item_padding_left_right" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/item_padding_left_right" android:paddingEnd="@dimen/item_padding_left_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/second_container" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/first_container" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.3" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/third_container" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0" />
+</LinearLayout>

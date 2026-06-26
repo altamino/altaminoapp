@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/narvii/video/attachment/DrawRectView$onPipVideoMuteListener;
+.super Ljava/lang/Object;
+.source "DrawRectView.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/narvii/video/attachment/DrawRectView;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "onPipVideoMuteListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onPipVideoMute(Z)V
+.end method

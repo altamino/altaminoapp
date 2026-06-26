@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:id="@id/root" android:background="#11000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout app:layout_height="match_parent-46dp" app:layout_right="parent.width" app:layout_width="60%">
+        <View android:id="@id/gradient" android:background="@drawable/shared_sticker_picker_list_gradient" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/list_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.narvii.widget.NVListView android:layout_gravity="bottom" android:id="@android:id/list" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_selector" />
+        </FrameLayout>
+    </FrameLayout>
+</com.github.mmin18.widget.FlexLayout>

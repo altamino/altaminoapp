@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.monetization.store.view.TippingRippleView android:id="@id/ripple_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.github.mmin18.widget.FlexLayout android:id="@id/tipping_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/coin_motion_iv" android:background="@drawable/tipping_coin_shiny" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/coin_motion_iv2" android:background="@drawable/tipping_coin_shiny" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.github.mmin18.widget.FlexLayout android:id="@id/avatar_view" android:paddingTop="20.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_centerY="33%">
+            <include android:id="@id/avatar_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="120.0dp" android:layout_height="120.0dp" app:layout_centerX="50%" layout="@layout/user_avatar_layout_large" />
+            <ImageView android:id="@id/nickname_background_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tipping_nickname_background" app:layout_centerY="avatar_layout.bottom+4dp" />
+            <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/nickname_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#14000000" android:shadowDy="1.0" android:shadowRadius="4.0" app:layout_centerX="50%" app:layout_centerY="avatar_layout.bottom" app:layout_left="nickname_background_iv.left+25dp" app:layout_right="nickname_background_iv.right-25dp" />
+        </com.github.mmin18.widget.FlexLayout>
+        <com.narvii.widget.NVImageView android:id="@id/fireworks_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_centerY="thank_you_tv.centerY-18dp" app:loopCount="1" app:showPressedMask="false" />
+        <TextView android:textSize="35.0dp" android:textStyle="bold" android:textColor="#ffffec66" android:id="@id/thank_you_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/thank_you" android:shadowColor="#ffff9e00" android:shadowDx="1.0" android:shadowDy="2.0" android:shadowRadius="4.0" app:layout_centerX="50%" app:layout_top="avatar_view.bottom+20dp" />
+        <ImageView android:id="@id/coin_iv" android:background="@drawable/tipping_coin_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_centerX="50%" app:layout_centerY="thank_you_tv.centerY" />
+        <com.narvii.widget.NVImageView android:id="@id/coin_shiny_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_right="coin_iv.right-5dp" app:layout_top="coin_iv.top+7dp" app:loopCount="1" app:showPressedMask="false" />
+        <ImageView android:id="@id/coin_motion_iv3" android:background="@drawable/tipping_coin_shiny" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/coin_motion_iv4" android:background="@drawable/tipping_coin_shiny" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/coin_count_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tipping_coin_count_light" app:layout_centerX="coin_count_tv.centerX" app:layout_centerY="coin_count_tv.centerY" />
+        <TextView android:textSize="36.0dp" android:textStyle="bold" android:textColor="#ffffe858" android:id="@id/coin_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+500" app:layout_left="50%+42dp" app:layout_top="avatar_view.top+6dp" />
+        <com.narvii.widget.cofetti.CofettiView android:id="@id/cofetti_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.github.mmin18.widget.FlexLayout>
+</FrameLayout>

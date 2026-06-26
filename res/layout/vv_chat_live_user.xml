@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/live_user_layout_root" android:layout_width="170.0dp" android:layout_height="@dimen/live_user_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/live_user_layout_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:id="@id/live_user_count_container" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <View android:background="@drawable/pure_green_oval" android:layout_width="8.0dp" android:layout_height="8.0dp" />
+            <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/live_user_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <com.narvii.widget.FadingEdgeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-2.0dp" android:layout_marginRight="33.0dp" android:layout_marginStart="-2.0dp" android:layout_marginEnd="33.0dp" app:fadingEdgeFlag="8" app:fadingEdgeLength="6.0dp">
+            <com.narvii.chat.video.view.LiveUserRecyclerView android:id="@id/live_user_recycler" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.narvii.widget.FadingEdgeLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="end|center" android:orientation="vertical" android:id="@id/invite" android:background="@drawable/oval_mask_3000" android:clipChildren="false" android:clipToPadding="false" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="1.0dp" android:layout_marginRight="1.0dp">
+        <com.narvii.widget.TintButton android:layout_gravity="center" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/ic_plus_white" app:tintColor="#bbffffff" />
+    </FrameLayout>
+</FrameLayout>

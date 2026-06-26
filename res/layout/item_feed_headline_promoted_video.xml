@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.feed.FeedListItem android:id="@id/headline_feed_item" android:background="@drawable/selector_headline_bg" android:paddingTop="@dimen/headline_default_padding_horizontal" android:paddingBottom="@dimen/headline_default_padding_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/header_container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/community_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/headline_default_padding_horizontal" android:layout_marginRight="@dimen/headline_default_padding_horizontal" android:layout_marginStart="@dimen/headline_default_padding_horizontal" android:layout_marginEnd="@dimen/headline_default_padding_horizontal" layout="@layout/community_info_layout" />
+            <include android:id="@id/user_head" android:visibility="gone" layout="@layout/feed_user_header_headline" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="6.0dp" android:layout_below="@id/header_container">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff2c2d2c" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" />
+                <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+                    <FrameLayout android:id="@id/feed_image1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.narvii.widget.FlexSizeImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitStart" android:minWidth="100.0dp" android:minHeight="100.0dp" app:defaultDrawable="@color/placeholder" app:keepRatio="true" app:maxHeightPercentage="0.6" app:preferredRatio="0.75" />
+                        <TextView android:textSize="10.0dp" android:textColor="#fff2f2f2" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/feed_caption1" android:background="#77000000" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                    </FrameLayout>
+                </com.github.mmin18.widget.FlexLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <include android:id="@id/feed_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/headline_default_padding_horizontal" android:layout_marginRight="@dimen/headline_default_padding_horizontal" android:layout_below="@id/content_container" android:layout_marginStart="@dimen/headline_default_padding_horizontal" android:layout_marginEnd="@dimen/headline_default_padding_horizontal" layout="@layout/feed_toolbar_headline" />
+    </com.narvii.feed.FeedListItem>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:nv_dark_background="@color/color_default_primary"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.app.theme.view.NVThemeLinearLayout android:orientation="horizontal" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_marginTop="@dimen/prefs_default_margin" android:layoutDirection="ltr" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" app:nv_dark_background="#1affffff">
+        <EditText android:textSize="16.0dp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/edit_username" android:background="@null" android:layout_width="0.0dp" android:layout_height="match_parent" android:lines="1" android:singleLine="true" android:maxLength="50" android:layout_weight="1.0" android:textCursorDrawable="@drawable/edit_cursor_blue_normal" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/edit_delete" android:layout_width="17.0dp" android:layout_height="17.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/ic_edit_delete" android:layout_marginStart="10.0dp" />
+    </com.narvii.app.theme.view.NVThemeLinearLayout>
+    <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:layout_gravity="end" android:id="@id/input_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="15.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" app:nv_dark_textColor="#88ffffff" />
+</com.narvii.app.theme.view.NVThemeLinearLayout>

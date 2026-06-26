@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.nested.NVCoordinateLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/master_background" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.widget.NVViewPager android:id="@id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.master.widget.MasterBottomBar android:layout_gravity="bottom" android:id="@id/master_bottom_bar" android:background="@color/master_bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_tab" android:background="#f21a1a1a" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/master_tab_bar_height">
+        <com.narvii.widget.NVPagerTabLayout android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="match_parent" app:indicator_color="@color/color_default" app:indicator_h_offset="-1.0dp" app:indicator_show="false" app:indicator_v_offset="2.0dp" app:tab_mode="1" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/master_tab_offset" android:background="@drawable/feature_bg_gradient" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.StatusBarPlaceHolder android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.narvii.master.MasterTopBar android:id="@id/master_top_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/bottom_layout" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+        <View android:id="@id/bottom_bg" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.widget.RoundFrameLayout android:layout_gravity="bottom" android:id="@id/bottom_container" android:background="#dd000000" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="match_parent" android:layout_height="450.0dp" />
+    </FrameLayout>
+</com.narvii.nested.NVCoordinateLayout>

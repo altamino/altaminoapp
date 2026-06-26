@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/prefs_default_size" app:nv_dark_background="#1affffff"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/prefs_left_margin" android:layout_marginRight="8.0dp" android:layout_weight="1.0" android:layout_marginStart="@dimen/prefs_left_margin" android:layout_marginEnd="8.0dp">
+        <com.narvii.app.theme.view.NVThemeTextView android:textSize="16.0dp" android:textColor="#ff4a4a4a" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/membership" android:singleLine="true" app:nv_dark_textColor="@color/prefs_text_color_dark" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:paddingTop="6.0dp" android:paddingBottom="4.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_marginEnd="10.0dp">
+        <com.narvii.widget.ThumbImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:shadowOffsetY="1.0dp" app:shadowSize="2.0dp" />
+        <TextView android:textSize="10.0dp" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <com.narvii.app.theme.view.NVThemeTintButton android:gravity="center" android:id="@id/chevron_right" android:layout_width="10.0dp" android:layout_height="15.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/chevron_right_mirror" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" app:nv_dark_tintColor="@color/dark_theme_chevron_right" />
+</com.narvii.app.theme.view.NVThemeLinearLayout>

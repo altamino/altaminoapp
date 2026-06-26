@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:id="@id/grid" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="6.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/drawer_right_recent_icon" />
+    <include layout="@layout/drawer_right_recent_icon" />
+    <include layout="@layout/drawer_right_recent_icon" />
+    <include layout="@layout/drawer_right_recent_icon" />
+    <include layout="@layout/drawer_right_recent_icon" />
+    <include layout="@layout/drawer_right_recent_icon" />
+    <include layout="@layout/drawer_right_recent_icon" />
+    <include layout="@layout/drawer_right_recent_icon" />
+</GridLayout>

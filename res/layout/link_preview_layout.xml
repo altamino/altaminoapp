@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.blog.post.LinkPostPreviewLayout android:layout_gravity="bottom" android:id="@id/link_preview_layout" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="76.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/link_preview_content" layout="@layout/link_preview_content" />
+    <include android:id="@id/link_preview_fail" layout="@layout/link_preview_fail" />
+    <include android:id="@id/link_preview_loading" layout="@layout/link_preview_loading" />
+</com.narvii.blog.post.LinkPostPreviewLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="55.0dp" android:layout_marginBottom="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/option_image_rl" android:background="@drawable/poll_option_background" android:layout_width="55.0dp" android:layout_height="55.0dp">
+            <com.narvii.widget.ThumbImageView android:id="@id/option_placeholder_iv" android:layout_width="28.0dp" android:layout_height="21.0dp" android:layout_centerInParent="true" app:defaultDrawable="@drawable/poll_option_image_placeholder" />
+            <com.narvii.widget.ThumbImageView android:id="@id/option_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:cornerRadius="6.0dp" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/option_input_rl" android:background="@drawable/poll_option_background" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_marginLeft="8.0dp" android:layout_weight="1.0" android:layout_marginStart="8.0dp">
+            <EditText android:textSize="14.0dp" android:textColor="@color/white" android:textColorHint="#99ffffff" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/option_et" android:background="@null" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:maxLength="30" android:inputType="textCapSentences" android:textCursorDrawable="@drawable/edit_cursor_white_normal" />
+            <TextView android:textSize="10.0dp" android:textColor="#80ffffff" android:id="@id/option_text_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:layout_marginBottom="5.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/option_delete_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6.0dp" android:layout_marginRight="-6.0dp" android:src="@drawable/poll_option_delete" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="-6.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

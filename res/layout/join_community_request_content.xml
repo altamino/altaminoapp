@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/community_join_round_white" android:padding="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="160.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_community_join_request_lock" />
+    <TextView android:textSize="20.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/landing_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/enter_invitation_code" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/landing_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="14.0dp" android:layout_gravity="center" android:id="@id/landing_invite_edit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="@string/paste_here" android:singleLine="true" style="@style/request_join_community_edit" />
+            <Button android:id="@id/landing_submit" android:background="@drawable/button_round_green" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/submit" style="@style/request_join_community_button" />
+            <com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:id="@id/or" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/or" android:textAllCaps="true" app:layout_centerX="50%" />
+                <View android:background="#ffffffff" android:layout_height="0.5dp" app:layout_centerY="50%" app:layout_left="5%" app:layout_right="or.left-6dp" />
+                <View android:background="#ffffffff" android:layout_height="0.5dp" app:layout_centerY="50%" app:layout_left="or.right+6dp" app:layout_right="95%" />
+            </com.github.mmin18.widget.FlexLayout>
+            <Button android:id="@id/landing_request_to_join" android:background="@drawable/button_round_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/request_to_join" style="@style/request_join_community_button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/request_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:gravity="top" android:layout_gravity="center" android:id="@id/request_edit" android:layout_width="match_parent" android:layout_height="160.0dp" android:layout_marginTop="15.0dp" android:hint="@string/message_to_leader_hint" android:inputType="textCapWords|textMultiLine" android:textCursorDrawable="@null" style="@style/request_join_community_edit" />
+            <TextView android:textColor="#ffcccccc" android:layout_gravity="end" android:id="@id/request_text_count_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:id="@id/request_submit" android:background="@drawable/button_round_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/submit" style="@style/request_join_community_button" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/grid_item_card" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/grid_item_vote" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp">
+        <com.narvii.widget.VoteIcon android:layout_gravity="center" android:id="@id/grid_item_vote_icon" android:layout_width="24.0dp" android:layout_height="match_parent" android:scaleType="centerInside" narvii:isDarkTheme="true" />
+        <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/grid_item_vote_progress" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="match_parent" narvii:spinSize="@dimen/spin_tiny_size" narvii:spinStyle="2" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/feed_toolbar_normal_dark" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/grid_item_vote_count" android:paddingLeft="6.0dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dp" />
+    </LinearLayout>
+</LinearLayout>

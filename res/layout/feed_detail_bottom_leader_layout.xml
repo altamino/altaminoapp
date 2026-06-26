@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/leader_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_mod_menu" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:background="@drawable/ic_bottom_mode_bg_orange" android:layout_width="40.0dp" android:layout_height="23.0dp" android:text="MOD" />
+        <TextView android:textSize="9.0dp" android:textColor="@color/selector_feed_bottom_text" android:ellipsize="end" android:gravity="center" android:id="@id/bottom_mod_menu_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/mod_menu" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_feature" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <com.narvii.widget.TintButton android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="23.0dp" android:src="@drawable/ic_feed_bottom_feature_post" android:scaleType="centerInside" app:tintColor="@color/selector_feed_bottom_feature" />
+        <TextView android:textSize="9.0dp" android:textColor="@color/selector_feed_bottom_text" android:ellipsize="end" android:gravity="center" android:id="@id/bottom_feature_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/feature_post" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_broadcast" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <com.narvii.widget.TintButton android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="23.0dp" android:src="@drawable/ic_feed_bottom_broadcast" android:scaleType="centerInside" app:tintColor="@color/selector_feed_bottom_broadcast" />
+        <TextView android:textSize="9.0dp" android:textColor="@color/selector_feed_bottom_text" android:ellipsize="end" android:gravity="center" android:id="@id/bottom_broadcast_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/bottom_broadcast" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_go_next_leader" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <com.narvii.widget.TintButton android:layout_gravity="center" android:id="@id/next_icon_leader" android:layout_width="wrap_content" android:layout_height="23.0dp" android:src="@drawable/ic_feed_bottom_go_next" />
+        <TextView android:textSize="9.0dp" android:textColor="@color/selector_feed_bottom_text" android:ellipsize="end" android:gravity="center" android:id="@id/bottom_go_next_leader_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/next_post" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/list_frame" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/list_view" />
+    <include layout="@layout/empty_view" />
+    <com.narvii.list.overlay.OverlayLayout android:id="@id/overlay" android:clipChildren="false" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="0.0px" />
+    <com.narvii.list.refresh.SwipeRefreshLayout android:id="@id/swipe_refresh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

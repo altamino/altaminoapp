@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.monetization.sticker.post.StickerPostItem android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/icon_layout" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="10.0dp">
+            <com.narvii.widget.NVImageView android:id="@id/icon" android:layout_width="match_parent" android:layout_height="match_parent" app:defaultDrawable="@color/placeholder" />
+            <ImageView android:id="@id/thumbnail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sticker_pack_thumbnail" />
+        </FrameLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <EditText android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff333333" android:textColorHint="#ffa2a2a2" android:gravity="center_vertical" android:id="@id/edit_name" android:background="@null" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/sticker_name" android:singleLine="true" android:layout_centerVertical="true" android:inputType="textCapWords" android:imeOptions="actionDone" />
+            <TextView android:textSize="11.0dp" android:textColor="#ffaaaaaa" android:id="@id/countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:layout_marginBottom="14.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="4.0dp" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <com.narvii.widget.FontAwesomeView android:textColor="#ffcccccc" android:gravity="center" android:id="@id/drag_handle" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:text="@string/ion_drag" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+    </LinearLayout>
+    <View android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="@dimen/list_divider_height" android:layout_marginLeft="10.0dp" android:layout_marginRight="0.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="0.0dp" />
+</com.narvii.monetization.sticker.post.StickerPostItem>

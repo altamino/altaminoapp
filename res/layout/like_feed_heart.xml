@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/on_boarding_overlay" android:background="#b2ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/on_boarding_heart" android:layout_width="70.0dp" android:layout_height="62.0dp" android:src="@drawable/like_feed_heart" />
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/on_boarding_process" android:layout_width="60.0dp" android:layout_height="60.0dp" narvii:spinColor="#fffd456d" narvii:spinSize="60.0dp" narvii:spinStyle="2" />
+</FrameLayout>

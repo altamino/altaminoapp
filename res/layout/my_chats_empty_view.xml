@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/explorer_public_chat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <include layout="@layout/explorer_public_chat_child" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100.0dp" android:layout_above="@id/explorer_public_chat">
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/empty_text_color" android:layout_gravity="center_horizontal" android:paddingTop="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_chat_empty_info_1" />
+        <com.narvii.widget.FontAwesomeView android:textColor="@color/button_text_gray_w" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/empty_retry" android:padding="12.0dp" android:clickable="true" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="8.0dp" android:text="@string/ion_refresh" />
+    </LinearLayout>
+</RelativeLayout>

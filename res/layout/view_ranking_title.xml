@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:layout_gravity="start|center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/progress_bar" android:progressDrawable="@null" app:layout_centerY="badge.visible?50%:this.height/2" app:layout_height="badge.height*0.7" app:layout_left="badge.visible?10dp:0dp" app:layout_right="min(text.right,parent.width)" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <com.narvii.widget.ScaledImageView android:id="@id/badge" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/text" android:paddingLeft="4.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/badge" android:layout_centerVertical="true" android:paddingStart="4.0dp" android:paddingEnd="8.0dp" android:layout_toEndOf="@id/badge" app:layout_centerY="50%" app:layout_left="badge.right" app:layout_width="parent.width-badge.width" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="start|center" android:id="@id/role" android:paddingLeft="6.0dp" android:paddingTop="2.0dp" android:paddingRight="6.0dp" android:paddingBottom="2.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:singleLine="true" android:layout_marginEnd="4.0dp" app:layout_centerY="50%" app:layout_left="badge.right+4dp" app:layout_width="parent.width-badge.width-4dp" />
+    </com.github.mmin18.widget.FlexLayout>
+    <com.narvii.widget.ScaledImageView android:layout_gravity="start|center" android:id="@id/badge_animate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dp" />
+</merge>

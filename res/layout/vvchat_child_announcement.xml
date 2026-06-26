@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/announcement_container" android:background="@drawable/chat_message_invite_bg" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="15.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="15.0dp" android:paddingStart="5.0dp" android:paddingEnd="5.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="7.0dp" android:src="@drawable/chat_announcement_mirror" android:layout_marginEnd="7.0dp" />
+    <com.narvii.widget.MarqueeTextView android:textSize="13.0dp" android:textColor="@color/white" android:id="@id/announcement_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

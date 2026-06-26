@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:layout_width="64.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.TintButton android:layout_gravity="center|top" android:id="@id/button" android:background="@drawable/button_over_empty_white" android:padding="17.0dp" android:layout_width="51.0dp" android:layout_height="51.0dp" android:layout_marginTop="4.0dp" android:src="@drawable/ic_plus_white" app:tintColor="#ffd2d4d8" />
+</FrameLayout>

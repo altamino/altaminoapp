@@ -1,0 +1,22 @@
+version: 3.0.2
+apkFileName: AltAmino.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 23
+  targetSdkVersion: 28
+versionInfo:
+  versionCode: 33599
+  versionName: 3.4.33599
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- gif
+- mp3
+- png
+- assets/default_config.json
+- com/appsflyer/internal/a.
+- com/appsflyer/internal/b.
+- okhttp3/internal/publicsuffix/publicsuffixes.gz

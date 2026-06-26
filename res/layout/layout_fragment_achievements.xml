@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.SlideshowView android:id="@id/slideshow" android:background="@drawable/slideshow_bg" android:layout_width="match_parent" android:layout_height="match_parent" narvii:hidingHeight2="40.0dp" />
+    <View android:id="@id/bg" android:background="#ff303030" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.list.overlay.OverlayListPlaceholder android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:background="@color/dark_theme_overlay" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <include layout="@layout/list_layout" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.ScrollInterceptNestedFrameLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.RealtimeBlurView android:layout_width="match_parent" android:layout_height="match_parent" app:realtimeOverlayColor="#88000000" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_width="66.0dp" android:layout_height="66.0dp" layout="@layout/user_avatar_layout_large" />
+        <com.narvii.widget.NicknameView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" app:hideInfluencerBadge="false" app:hideRole="true" app:roleScale="0.65" />
+        <TextView android:textSize="16.0dp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="30.0dp" android:text="@string/fans_only_hint_chat" android:layout_marginStart="30.0dp" android:layout_marginEnd="30.0dp" />
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/become_fans" android:background="@drawable/selector_become_fans" android:paddingLeft="18.0dp" android:paddingRight="18.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:minWidth="140.0dp" android:minHeight="40.0dp" android:text="@string/become_a_fan" android:paddingStart="18.0dp" android:paddingEnd="18.0dp" />
+    </LinearLayout>
+</com.narvii.widget.ScrollInterceptNestedFrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.story.detail.StoryUserView android:orientation="horizontal" android:paddingBottom="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="54.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.story.detail.StoryUserViewNotificationBackgroundView android:id="@id/notification_bar" android:layout_width="0.0dp" android:layout_height="44.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/notification_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/fake_user_view" android:visibility="invisible" android:layout_width="44.0dp" android:layout_height="44.0dp" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/notification_hint" android:layout_width="78.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/enable_notification" android:lines="2" android:layout_marginStart="10.0dp" />
+        <com.narvii.widget.PressedFrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="50.0dp" android:layout_height="32.0dp">
+            <com.narvii.widget.NVImageView android:id="@id/notification_icon" android:paddingLeft="6.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/follow_notification" android:paddingStart="6.0dp" android:paddingEnd="12.0dp" narvii:showPressedMask="false" />
+            <ImageView android:id="@id/notification_success_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="6.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/follow_success_notification" android:layout_marginStart="6.0dp" android:layout_marginEnd="12.0dp" />
+        </com.narvii.widget.PressedFrameLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/user_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="54.0dp">
+        <include android:clipChildren="false" android:clipToPadding="false" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_margin="2.0dp" layout="@layout/user_avatar_layout_mini" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/user_follow_container" android:layout_width="30.0dp" android:layout_height="18.0dp" android:layout_marginTop="-8.0dp">
+            <FrameLayout android:id="@id/user_follow" android:background="@drawable/button_round_follow_radius_9" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/user_follow_icon" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/ic_follow_plus_padding" />
+                <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/user_follow_progress" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" narvii:spinColor="#ffeeeeee" narvii:spinStyle="2" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/user_follow_checked" android:background="@drawable/button_round_follow_checked_radius_9" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/ic_white_check" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</com.narvii.story.detail.StoryUserView>

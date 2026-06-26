@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="64.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/btn_unblock" android:background="@drawable/block_red" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" />
+    <com.narvii.widget.ThumbImageView android:id="@id/avatar" android:layout_width="52.0dp" android:layout_height="52.0dp" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp" style="@style/AvatarImageView" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp">
+        <com.narvii.widget.NicknameView android:textSize="17.0dp" android:textColor="#ff555555" android:id="@id/nickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffaaaaaa" android:ellipsize="end" android:id="@id/address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

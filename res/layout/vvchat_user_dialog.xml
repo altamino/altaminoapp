@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/stub3" android:background="#74000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.github.mmin18.widget.FlexLayout android:layout_gravity="center|bottom" android:id="@id/stub2" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+        <View android:id="@id/white_rect" android:background="@drawable/online_user_dialog_rect" android:layout_width="match_parent" app:layout_bottom="stub1.bottom" app:layout_top="min(max(320dp,screen.width),400dp)*0.23*0.6" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/stub1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/user_dialog_main" />
+            <LinearLayout android:orientation="vertical" android:id="@id/on_hold_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+                <View android:background="#ffd4d4d4" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="-10.0dp" android:layout_marginRight="-10.0dp" android:layout_marginStart="-10.0dp" android:layout_marginEnd="-10.0dp" />
+            </LinearLayout>
+            <TextView android:textSize="16.0dp" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@id/speaker_action_container" android:background="@drawable/selector_text_bg_d4d4d4" android:padding="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/leave_chat_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#ffd4d4d4" android:layout_width="match_parent" android:layout_height="1.0dp" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+                <TextView android:textSize="16.0dp" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@id/leave_chat" android:background="@drawable/selector_text_bg_d4d4d4" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/leave_this_chat" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.narvii.widget.TintButton android:id="@id/flag" android:padding="16.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_flag_grey" app:layout_left="white_rect.left" app:layout_top="white_rect.top" app:tintColor="@color/selector_thread_flag" />
+        <TextView android:textColor="#ffff0000" android:id="@id/kick" android:background="@drawable/rtc_kick_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kick" app:layout_right="white_rect.right-10dp" app:layout_top="white_rect.top+10dp" style="@style/TextCellWithPadding" />
+    </com.github.mmin18.widget.FlexLayout>
+</FrameLayout>

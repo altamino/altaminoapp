@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:id="@id/feed_images" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <View narvii:layout_height="parent.width*0.227" narvii:layout_width="100%" />
+    <FrameLayout android:id="@id/feed_image1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" narvii:layout_height="parent.width*0.227" narvii:layout_left="0" narvii:layout_right="32.5%">
+        <com.narvii.widget.ThumbImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" narvii:defaultDrawable="@color/placeholder" />
+        <TextView android:textSize="10.0dp" android:textColor="#fff2f2f2" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/feed_caption1" android:background="#77000000" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/feed_image2" narvii:layout_height="parent.width*0.227" narvii:layout_left="33.3%" narvii:layout_right="65.8%">
+        <com.narvii.widget.ThumbImageView android:id="@id/image1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" narvii:defaultDrawable="@color/placeholder" />
+        <TextView android:textSize="10.0dp" android:textColor="#fff2f2f2" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/feed_caption2" android:background="#77000000" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/feed_image3" narvii:layout_height="parent.width*0.227" narvii:layout_left="66.6%" narvii:layout_right="100%">
+        <com.narvii.widget.ThumbImageView android:id="@id/image2" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" narvii:defaultDrawable="@color/placeholder" />
+        <TextView android:textSize="10.0dp" android:textColor="#fff2f2f2" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/feed_caption3" android:background="#77000000" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </FrameLayout>
+</com.github.mmin18.widget.FlexLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ScrollViewWithMaxHeight android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="false" app:maxHeight="85.0dp">
+        <com.narvii.util.layouts.NVFlowLayout android:id="@id/invitee_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:flow_gravity="-1" />
+    </com.narvii.widget.ScrollViewWithMaxHeight>
+    <include layout="@layout/list_divider" />
+</LinearLayout>

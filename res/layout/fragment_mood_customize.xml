@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ff333334" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.list.overlay.OverlayListPlaceholder android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="175.0dp">
+            <LinearLayout android:orientation="vertical" android:paddingTop="15.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.github.mmin18.widget.FlexLayout android:layout_gravity="center" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="100.0dp"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+                    <include app:layout_centerX="50%" app:layout_height="this.width" app:layout_top="10dp" app:layout_width="min(80%,80dp)" layout="@layout/user_avatar_layout_large" />
+                    <com.narvii.widget.MoodView android:id="@id/mood" android:layout_width="60.0dp" android:layout_height="48.0dp" app:layout_centerX="user_avatar_layout.left+user_avatar_layout.width*0.85" app:layout_centerY="user_avatar_layout.width*0.3" />
+                </com.github.mmin18.widget.FlexLayout>
+                <TextView android:textSize="14.0dp" android:textColor="@color/selector_white_grey" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/reset" android:background="@drawable/choose_mood_reset" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginTop="10.0dp" android:text="@string/reset" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/stick_picker" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

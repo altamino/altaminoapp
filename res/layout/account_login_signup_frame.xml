@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/account_background" />
+    <FrameLayout android:id="@id/frame" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/submit_frame" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="0.0px" android:layout_height="20.0dp" android:layout_weight="1.0" />
+        <com.narvii.widget.SpinningView android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" narvii:spinColor="#88ffffff" />
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/account_overlay_text" android:id="@id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="3.0" />
+    </LinearLayout>
+    <fragment android:name="com.narvii.account.GoogleLoginFragment" android:id="@id/google_login_fragment" android:layout_width="0.0px" android:layout_height="0.0px" />
+</RelativeLayout>

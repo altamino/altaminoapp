@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/all_likes" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAllCaps="false" android:textAlignment="center" />
+    <View android:layout_gravity="bottom" android:id="@id/list_divider" android:background="@color/list_divider_dark" android:layout_width="match_parent" android:layout_height="@dimen/list_divider_height" />
+    <include layout="@layout/list_layout" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_selector_white_grey" android:layout_width="match_parent" android:layout_height="75.0dp" android:paddingStart="@dimen/item_padding_horizontal_ex" android:paddingEnd="@dimen/item_padding_horizontal_ex">
+        <ImageView android:id="@id/delete" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:src="@drawable/ic_item_delete" android:layout_marginEnd="10.0dp" />
+        <FrameLayout android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginLeft="8.0dp" android:layout_marginStart="8.0dp">
+            <com.narvii.widget.NVImageView android:id="@id/collection_icon" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <View android:id="@id/disabled" android:background="@drawable/sticker_picker_item_disabled" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0pt" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp">
+            <com.narvii.monetization.utils.StoreItemNameView android:id="@id/sticker_collection_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0dp" android:textColor="#ff999999" android:id="@id/sticker_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginRight="6.0dp" android:layout_marginEnd="6.0dp" />
+        </LinearLayout>
+        <include layout="@layout/drag_sort_drag_handle" />
+    </LinearLayout>
+    <include layout="@layout/left_white_divider" />
+</LinearLayout>

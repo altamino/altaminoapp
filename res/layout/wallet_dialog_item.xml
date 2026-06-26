@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/background" android:background="@drawable/wallet_dialog_item_bg" android:duplicateParentState="true" app:layout_bottom="80%" app:layout_centerX="50%" app:layout_top="2%" app:layout_width="90%" />
+    <com.narvii.widget.NVImageView android:id="@id/icon" app:layout_centerX="50%" app:layout_centerY="30%" app:layout_height="this.width" app:layout_width="parent.height*0.3" />
+    <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ffffe555" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1,23,123" android:shadowColor="#ffff7700" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="2.0" app:layout_centerX="50%" app:layout_centerY="58%" />
+    <com.narvii.widget.AutoSizingTextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/price" android:background="@drawable/wallet_price_btn" android:duplicateParentState="true" android:text="$ 123124" app:layout_centerX="50%" app:layout_centerY="80%" app:layout_height="this.width*0.28" app:layout_width="76%" />
+</com.github.mmin18.widget.FlexLayout>

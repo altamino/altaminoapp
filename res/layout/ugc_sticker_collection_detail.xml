@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="15.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/source_view_container" android:background="#ffecf0f5" android:layout_width="match_parent" android:layout_height="36.0dp">
+        <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" layout="@layout/sticker_pack_item_author_layout" />
+    </FrameLayout>
+    <com.narvii.monetization.utils.StoreItemNameView android:textSize="20.0dp" android:id="@id/sticker_collection_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="8.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/author_layout" android:paddingLeft="16.0dp" android:paddingTop="2.0dp" android:paddingRight="16.0dp" android:paddingBottom="2.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0dp" android:textColor="#ffb9b9b9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:text="@string/submitted_by" android:layout_marginEnd="5.0dp" />
+        <include android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="2.0dp" android:layout_marginRight="2.0dp" layout="@layout/user_avatar_layout_mini_nobadge" />
+        <com.narvii.widget.NicknameView android:textSize="12.0dp" android:textColor="#ff4a90e2" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginStart="2.0dp" app:hideRole="true" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dp" android:textColor="#ff717379" android:gravity="center_horizontal" android:id="@id/collection_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="16.0dp" />
+    <com.narvii.monetization.StoreItemStatusView android:layout_gravity="center_horizontal" android:id="@id/store_item_status_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="16.0dp" />
+    <TextView android:textSize="12.0dp" android:textColor="#ff717379" android:id="@id/used_times" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="16.0dp" android:singleLine="true" />
+</LinearLayout>

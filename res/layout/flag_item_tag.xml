@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:paddingLeft="@dimen/flag_item_padding_left_right" android:paddingTop="@dimen/flag_item_padding_top_bottom" android:paddingRight="@dimen/flag_item_padding_left_right" android:paddingBottom="@dimen/flag_item_padding_top_bottom" android:layout_width="wrap_content" android:layout_height="match_parent" android:lines="1" android:paddingStart="@dimen/flag_item_padding_left_right" android:paddingEnd="@dimen/flag_item_padding_left_right" android:elevation="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.chat.video.layout.VVContentLayout android:id="@id/vv_live_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.narvii.chat.screenroom.widgets.SRLiveUserLayout android:id="@id/live_user_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/sr_live_user_container_height" android:layout_marginTop="@dimen/sr_portrait_margin" android:layout_marginBottom="@dimen/sr_portrait_margin_bottom" />
+            <com.github.mmin18.widget.FlexLayout android:orientation="vertical" android:id="@id/voice_main_layout" android:background="@drawable/bg_rect_black_20_alpha_6_corner" android:paddingTop="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.chat.video.layout.VoicePresenterLayout android:id="@id/participant_layout" android:tag="callCompetitor" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <com.narvii.chat.video.layout.LiveCallingLayout android:id="@id/call_layout" android:visibility="gone" android:layout_width="match_parent" app:layout_height="min(screen.height*0.33,screen.width*1.0)" />
+            </com.github.mmin18.widget.FlexLayout>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_vv_folder_indicator" />
+        </LinearLayout>
+    </com.narvii.chat.video.layout.VVContentLayout>
+</FrameLayout>

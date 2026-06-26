@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.feed.FeedListItem android:tag="repostQuiz" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/user_head" layout="@layout/feed_user_header" />
+    <TextView android:textSize="14.0dp" android:textColor="#ff555555" android:ellipsize="end" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:maxLines="3" android:layout_below="@id/user_head" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+    <include android:id="@id/ref" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="10.0dp" android:layout_below="@id/content" layout="@layout/feed_ref_quiz" />
+    <include android:id="@id/feed_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/feed_toolbar_height" android:layout_marginTop="2.0dp" android:layout_below="@id/ref" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" layout="@layout/feed_toolbar" />
+</com.narvii.feed.FeedListItem>

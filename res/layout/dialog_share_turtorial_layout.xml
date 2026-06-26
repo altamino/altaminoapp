@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="#bb000000" android:fitsSystemWindows="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/alert_dialog_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="26.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="26.0dp" android:layout_marginBottom="4.0dp" android:minWidth="300.0dp" android:layout_marginStart="26.0dp" android:layout_marginEnd="26.0dp">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_target_layout" android:layout_width="73.0dp" android:layout_height="73.0dp" android:layout_marginTop="-50.0dp">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/share_target_icon" android:layout_width="43.0dp" android:layout_height="43.0dp" android:layout_marginTop="10.0dp" android:scaleType="centerInside" />
+            <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/share_target_name" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ff444444" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/alert_dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/important" android:maxLines="2" android:textAllCaps="true" />
+        <ScrollView android:id="@id/alert_dialog_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/tutorial_items" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:id="@id/alert_dialog_buttons" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="10.0dp" />
+    </LinearLayout>
+</FrameLayout>

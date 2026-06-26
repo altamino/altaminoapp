@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.monetization.coupons.CouponCardCoinsLayout android:id="@id/coupon_card_layout" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="130.0dp" android:layout_margin="15.0dp" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" app:divide_position="0.7557252">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_height="0.75*parent.height">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/amino_coin_big" />
+                    <TextView android:textSize="36.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/coupons_coins_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="100" android:layout_marginStart="6.0dp" />
+                </LinearLayout>
+                <TextView android:textSize="18.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/coupons_card_source_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:background="@drawable/coupon_card_use_it_background" android:layout_width="70.0dp" android:layout_height="30.0dp">
+                <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#ffff1e7c" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/use_it" />
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" app:layout_bottom="100%" app:layout_height="0.25*parent.height">
+            <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="start|center" android:id="@id/coupons_card_coins_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        </FrameLayout>
+    </com.narvii.monetization.coupons.CouponCardCoinsLayout>
+</FrameLayout>

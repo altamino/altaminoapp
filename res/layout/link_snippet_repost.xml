@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.TintButton android:gravity="center" android:layout_width="20.0dp" android:layout_height="12.5dp" android:src="@drawable/ic_link_share_repost" app:tintColor="@color/feed_toolbar_grey" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/feed_toolbar_normal" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reposted" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+</LinearLayout>

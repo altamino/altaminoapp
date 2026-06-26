@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/title" style="@style/on_boarding_title" />
+    <View style="@style/on_boarding_title_divider" />
+    <LinearLayout android:orientation="vertical" android:id="@id/fill_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/agent_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp">
+            <include android:layout_gravity="center_horizontal" android:layout_width="58.0dp" android:layout_height="58.0dp" android:layout_marginLeft="20.0dp" android:layout_marginStart="20.0dp" layout="@layout/user_avatar_layout_mini" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.narvii.widget.NicknameView android:textSize="16.0dp" android:textColor="#ff303030" android:id="@id/nickname" android:paddingLeft="12.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="20.0dp" narvii:hideRole="true" />
+                <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:ellipsize="middle" android:gravity="center" android:background="@drawable/role_bg_default" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="3.0dp" android:text="@string/role_leader" android:singleLine="true" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" android:layout_marginStart="12.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp">
+            <TextView android:textSize="14.0dp" android:textColor="#ff222222" android:gravity="start" android:id="@id/text" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

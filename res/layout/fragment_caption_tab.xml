@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/attachment_tab_bg" android:layout_width="match_parent" android:layout_height="50.0dp">
+            <ImageView android:layout_gravity="start" android:id="@id/close" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/ic_white_cross" android:scaleType="centerInside" />
+            <ImageView android:layout_gravity="end" android:id="@id/submit" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/ic_white_check" android:scaleType="centerInside" />
+        </FrameLayout>
+        <com.narvii.widget.NVViewPager android:id="@id/viewpager" android:background="@color/attachment_tab_bg" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_horizontal" android:background="#ff35353b" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/caption_tab_keyboard" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/caption_tab_item" />
+            <com.narvii.widget.NVPagerTabLayout android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="50.0dp" android:layout_weight="3.0" app:indicator_color="#ff36d4b1" app:indicator_v_offset="4.0dp" app:tab_mode="1" app:tab_padding="0.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

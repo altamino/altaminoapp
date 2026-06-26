@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wallet_cell_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.NVDrawableAnimatedView android:id="@id/icon" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginLeft="15.0dp" android:layout_marginStart="15.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_weight="1.0" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp">
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/earn_free_coins_with_ads" />
+        <TextView android:textSize="13.0dp" android:textColor="#ff000000" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/earn_free_coins_empty" />
+    </LinearLayout>
+    <CheckBox android:id="@id/optin_ads_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:button="@drawable/switch_bg" android:layout_marginEnd="20.0dp" />
+</LinearLayout>

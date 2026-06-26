@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0dp" android:textColor="#88ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_login_yet" app:layout_bottom="login.top-10dp" app:layout_centerX="50%" />
+    <Button android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/selector_login_hint_text" android:gravity="center" android:id="@id/login" android:background="@drawable/button_login_stroke_corenr" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_height="wrap_content" android:text="@string/sign_up_and_login" app:layout_centerX="50%" app:layout_centerY="48%" app:layout_width="76%" />
+</com.github.mmin18.widget.FlexLayout>

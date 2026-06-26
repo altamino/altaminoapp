@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.SecretImageView android:id="@id/quiz_cover_image" android:background="@color/placeholder" android:layout_width="match_parent" narvii:layout_height="this.width*0.5" />
+    <View android:id="@id/quiz_cover_alternative" android:background="@color/quiz_placeholder" android:visibility="gone" android:layout_width="match_parent" narvii:layout_height="this.width*0.48" />
+    <TextView android:textSize="24.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/quiz_title" android:layout_height="wrap_content" android:maxLines="3" narvii:layout_centerY="quiz_cover_alternative.top+quiz_cover_alternative.height*0.45" narvii:layout_left="quiz_cover_alternative.left+quiz_cover_alternative.width*0.1" narvii:layout_right="quiz_cover_alternative.right-quiz_cover_alternative.width*0.1" />
+</merge>

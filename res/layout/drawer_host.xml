@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.drawer.DrawerHost android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <include android:layout_width="@dimen/drawer_left_community_width" android:layout_height="match_parent" layout="@layout/drawer_host_community_list" />
+        <include layout="@layout/drawer_host_content" />
+    </LinearLayout>
+</com.narvii.drawer.DrawerHost>

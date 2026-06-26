@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="start|center" android:id="@id/interest_indicator" android:background="#fff45faa" android:visibility="invisible" android:layout_width="@dimen/interest_indicator_width" android:layout_height="match_parent" />
+    <com.narvii.widget.AutoSizingTextView android:textSize="@dimen/interest_size_unselected" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/interest_name" android:padding="5.0dp" android:layout_width="0.0pt" android:layout_height="@dimen/interest_title_height" android:maxLines="2" android:layout_weight="1.0" narvii:autoSizeMaxTextSize="@dimen/interest_size_unselected" narvii:autoSizeMinTextSize="8.0dp" />
+</LinearLayout>

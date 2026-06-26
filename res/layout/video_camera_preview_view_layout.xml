@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/camera_renderer_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.github.mmin18.widget.FlexLayout android:id="@id/user_info_layer" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.BlurImageView android:id="@id/user_info_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.narvii.chat.video.view.UserSpeakingView android:id="@id/user_speaking" android:minWidth="40.0dp" android:minHeight="40.0dp" app:layout_centerX="user_avatar_layout.centerX" app:layout_centerY="user_avatar_layout.centerY" app:layout_height="this.width" app:layout_width="user_avatar_layout.width" />
+        <include android:padding="@dimen/voice_avatar_padding" app:layout_centerX="50%" app:layout_centerY="40%" app:layout_height="this.width" app:layout_width="46%" layout="@layout/user_avatar_layout_mini_nobadge_noavatar" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/round_dark_corner_25" android:paddingLeft="6.0dp" android:paddingTop="2.0dp" android:paddingRight="6.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" app:layout_centerX="50%" app:layout_top="user_avatar_layout.bottom+13dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/nickname_badge" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_badge_membership" android:scaleType="fitCenter" />
+            <com.narvii.chat.video.layout.VVChatNickNameView android:id="@id/nickname" style="@style/vvchat_nick_name" />
+        </LinearLayout>
+    </com.github.mmin18.widget.FlexLayout>
+</FrameLayout>

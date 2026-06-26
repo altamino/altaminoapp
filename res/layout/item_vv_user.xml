@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.chat.video.view.UserSpeakingView android:layout_gravity="center" android:id="@id/ripple" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.narvii.widget.NVImageView android:id="@id/avatar" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/AvatarImageView" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true" app:nv_dark_background="#ff1d1e1f"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.list.overlay.OverlayListPlaceholder android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <FrameLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="130.0dp">
+        <com.narvii.scene.template.view.SceneTemplateMaterialSortLayout android:layout_gravity="center" android:id="@id/sort_layout" android:layout_width="match_parent" android:layout_height="130.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/wme_frame" android:layout_width="match_parent" android:layout_height="1.0px" />
+</com.narvii.app.theme.view.NVThemeLinearLayout>

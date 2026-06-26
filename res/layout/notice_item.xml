@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="40.0dp" android:layout_height="40.0dp">
+        <com.narvii.widget.NVImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    </FrameLayout>
+    <include android:layout_width="46.0dp" android:layout_height="46.0dp" layout="@layout/user_avatar_layout_mini" />
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp">
+        <com.narvii.app.theme.view.NVThemeTextView android:textSize="14.0dp" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" app:nv_dark_textColor="#ffd0d0e8" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/datetime" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:padding="4.0dp" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginRight="4.0dp" android:src="@drawable/ic_notice_chevron_mirror" android:scaleType="centerInside" android:layout_marginEnd="4.0dp" style="@style/IconChevronRight" />
+</LinearLayout>

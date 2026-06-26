@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="70.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:background="#ffd0cfd0" android:layout_width="70.0dp" android:layout_height="50.0dp" android:layout_marginLeft="35.0dp" android:layout_marginStart="35.0dp" app:cornerRadius="2.0dp" app:defaultDrawable="@drawable/ic_playlist_cover_placeholder" app:loadingDrawable="@drawable/ic_playlist_cover_placeholder" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0" android:layout_marginStart="10.0dp">
+        <TextView android:textSize="14.0dp" android:textColor="#ff9b9b9b" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_room_playlist_add_a_video" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

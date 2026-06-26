@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:orientation="vertical" android:background="#00000000" android:layout_width="280.0dp" android:layout_height="340.0dp">
+        <com.narvii.widget.ThumbImageView android:id="@id/rate_background" android:background="@drawable/rate_round_white" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="8.0dp" />
+        <LinearLayout android:orientation="vertical" android:background="#00000000" android:layout_width="match_parent" android:layout_height="340.0dp">
+            <LinearLayout android:orientation="vertical" android:background="#00000000" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="240.0dp">
+                <com.narvii.widget.AutoSizingTextView android:textSize="20.0dp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/rate_community_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="6.0dp" android:maxLines="2" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:autoSizeTextMaxSize="20.0dp" app:autoSizeTextMinSize="14.0dp" />
+                <com.narvii.widget.ThumbImageView android:layout_gravity="center_horizontal" android:id="@id/rate_community_icon" android:layout_width="100.0dp" android:layout_height="100.0dp" app:cornerRadius="10.0dp" app:defaultDrawable="@drawable/placeholder_community" app:imageType="community-icon" />
+                <com.narvii.widget.AutoSizingTextView android:textSize="14.0dp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/rate_community_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dp" android:maxLines="1" app:autoSizeTextMaxSize="14.0dp" app:autoSizeTextMinSize="8.0dp" app:minTextSize="8.0dp" />
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.narvii.widget.ShinyTitle android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="35.0dp">
+                        <ImageView android:id="@id/rate_one_star" android:padding="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_star" />
+                        <ImageView android:id="@id/rate_two_star" android:padding="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_star" />
+                        <ImageView android:padding="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_star" />
+                        <ImageView android:id="@id/rate_four_star" android:padding="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_star" />
+                        <ImageView android:id="@id/rate_five_star" android:padding="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_star" />
+                    </com.narvii.widget.ShinyTitle>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rate_now" android:background="@drawable/rate_love_background" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="50.0dp">
+                <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rate_app_rate_now" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_love_icon" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rate_never" android:background="@drawable/rate_round_bottom" android:layout_width="match_parent" android:layout_height="50.0dp">
+                <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff270b9f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rate_app_do_not_like" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_feedback_icon" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="start|top" android:id="@id/rate_close" android:background="@drawable/button_round_transparent" android:padding="8.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="2.0dp" android:layout_marginTop="2.0dp" android:src="@drawable/rate_close_icon" android:layout_marginStart="2.0dp" />
+    </FrameLayout>
+</LinearLayout>

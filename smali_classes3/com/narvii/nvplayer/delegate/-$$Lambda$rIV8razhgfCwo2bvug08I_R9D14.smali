@@ -1,0 +1,34 @@
+.class public final synthetic Lcom/narvii/nvplayer/delegate/-$$Lambda$rIV8razhgfCwo2bvug08I_R9D14;
+.super Ljava/lang/Object;
+.source "lambda"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field private final synthetic f$0:Lcom/narvii/nvplayer/delegate/StoryFeedListVideoDelegate;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/narvii/nvplayer/delegate/StoryFeedListVideoDelegate;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/narvii/nvplayer/delegate/-$$Lambda$rIV8razhgfCwo2bvug08I_R9D14;->f$0:Lcom/narvii/nvplayer/delegate/StoryFeedListVideoDelegate;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/narvii/nvplayer/delegate/-$$Lambda$rIV8razhgfCwo2bvug08I_R9D14;->f$0:Lcom/narvii/nvplayer/delegate/StoryFeedListVideoDelegate;
+
+    invoke-virtual {v0}, Lcom/narvii/nvplayerview/delegate/NVVideoListDelegate;->refreshPlayerPosition()V
+
+    return-void
+.end method

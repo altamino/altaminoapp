@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.monetization.sticker.picker.StickerPickerItem android:id="@id/sticker_picker_item" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mmin18.widget.FlexLayout android:id="@id/sticker_picker_main" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View app:layout_height="min(400dp,screen.width)*0.9*0.25" app:layout_width="this.height" />
+        <View android:id="@id/stub1" android:background="@drawable/sticker_picker_item_bg" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_height="prev.height*0.85" app:layout_width="prev.height*0.85" />
+        <com.narvii.widget.NVImageView android:id="@id/thumbnail" app:defaultDrawable="@color/sticker_placeholder" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_height="prev.height-8dp" app:layout_width="prev.height-8dp" app:scalePlaceholder="true" />
+        <ImageView android:id="@id/error" android:background="@drawable/ic_rtc_prop_pricker_download_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_bottom="thumbnail.bottom" app:layout_right="thumbnail.right" />
+        <View android:id="@id/selected" android:background="@drawable/sticker_picker_item_selected" android:visibility="gone" app:layout_centerX="50%" app:layout_centerY="50%" app:layout_height="stub1.height" app:layout_width="stub1.width" />
+        <ImageView android:id="@id/membership_lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_amino_plus_mini_lock" app:layout_right="stub1.right" app:layout_top="stub1.top" />
+        <View android:id="@id/disabled" android:background="@drawable/sticker_picker_item_disabled" android:visibility="gone" app:layout_bottom="stub1.bottom" app:layout_left="stub1.left" app:layout_right="stub1.right" app:layout_top="stub1.top" />
+    </com.github.mmin18.widget.FlexLayout>
+</com.narvii.monetization.sticker.picker.StickerPickerItem>

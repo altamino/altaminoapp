@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/button_round_transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffd7e1e6" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <RelativeLayout android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/language_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff4a90e2" android:ellipsize="end" android:gravity="center" android:id="@id/language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="13.0dp" android:textColor="#ff4a90e2" android:ellipsize="end" android:gravity="center" android:id="@id/local_language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/language_picked" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/language_picker_check" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

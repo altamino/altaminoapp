@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/normal_user_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_share" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="23.0dp" android:src="@drawable/selector_bottom_share" />
+            <TextView android:textSize="9.0dp" android:textColor="@color/selector_feed_bottom_text" android:ellipsize="end" android:gravity="center" android:id="@id/bottom_share_normal_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/share" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_tipping" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="23.0dp" android:src="@drawable/amino_coin_big" />
+            <TextView android:textSize="9.0dp" android:textColor="@color/selector_feed_bottom_text" android:ellipsize="end" android:gravity="center" android:id="@id/bottom_tipping_normal_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/tip" android:singleLine="true" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bottom_vote" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.narvii.widget.BottomVoteIcon android:id="@id/vote_icon" android:layout_width="wrap_content" android:layout_height="23.0dp" android:src="@drawable/ic_feed_bottom_vote" android:scaleType="centerInside" />
+            <com.narvii.widget.SpinningView android:id="@id/vote_progress" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp" narvii:spinColor="#ffd4364e" narvii:spinStyle="2" />
+            <TextView android:textSize="14.0dp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/vote_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="9.0dp" android:textColor="@color/selector_feed_bottom_text" android:ellipsize="end" android:gravity="center" android:id="@id/bottom_vote_normal_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/like" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_save" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <com.narvii.widget.TintButton android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="23.0dp" android:src="@drawable/ic_fee_bottom_save_post" android:scaleType="centerInside" narvii:tintColor="@color/selector_save_post" />
+        <TextView android:textSize="9.0dp" android:textColor="@color/selector_feed_bottom_text" android:ellipsize="end" android:gravity="center" android:id="@id/bottom_bookmark_normal_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/save" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_go_next_normal" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0">
+        <com.narvii.widget.TintButton android:layout_gravity="center" android:id="@id/next_icon_normal" android:layout_width="wrap_content" android:layout_height="23.0dp" android:src="@drawable/ic_feed_bottom_go_next" />
+        <TextView android:textSize="9.0dp" android:textColor="@color/selector_feed_bottom_text" android:ellipsize="end" android:gravity="center" android:id="@id/bottom_go_next_normal_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/next_post" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

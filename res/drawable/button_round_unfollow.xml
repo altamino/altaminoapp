@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="4.0dp" />
+            <solid android:color="#ff176e0e" />
+            <stroke android:width="0.5sp" android:color="#11000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="4.0dp" />
+            <solid android:color="@color/user_unfollow_bg" />
+            <stroke android:width="0.5sp" android:color="#11000000" />
+        </shape>
+    </item>
+</selector>

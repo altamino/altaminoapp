@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="@dimen/actionbar_button_corner_radius" />
+            <solid android:color="#ffa2a2a2" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="@dimen/actionbar_button_corner_radius" />
+            <solid android:color="#ff6a000e" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/actionbar_button_corner_radius" />
+            <solid android:color="#ffb90019" />
+        </shape>
+    </item>
+</selector>

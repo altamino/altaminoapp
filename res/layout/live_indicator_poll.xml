@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="@dimen/poll_cell_min_width" android:minHeight="@dimen/poll_cell_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/cell1" android:background="@drawable/poll_bg_base" app:layout_height="26.8%" app:layout_left="0" app:layout_top="1" app:layout_width="74.3%" />
+    <View android:id="@id/cell2" android:background="@drawable/poll_bg_base" app:layout_height="26.8%" app:layout_left="0" app:layout_top="prev.bottom+9.7%" app:layout_width="74.3%" />
+    <View android:id="@id/cell3" android:background="@drawable/poll_bg_base" app:layout_height="26.8%" app:layout_left="0" app:layout_top="prev.bottom+9.7%" app:layout_width="74.3%" />
+    <FrameLayout android:id="@id/polling_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_centerY="cell2.centerY" app:layout_height="cell2.height" app:layout_width="100%">
+        <View android:id="@id/polling_base" android:background="@drawable/poll_bg_check" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="start|center" android:id="@id/polling_check" android:paddingRight="0.0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:src="@drawable/check_right_mirror" android:paddingEnd="0.0dp" android:layout_marginStart="6.0dp" />
+    </FrameLayout>
+</com.github.mmin18.widget.FlexLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:orientation="vertical" android:background="@color/color_default_primary" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.app.theme.view.NVThemeRelativeLayout android:id="@id/edit_container" android:layout_width="match_parent" app:layout_height="screen.width*0.67" app:nv_dark_background="#1affffff">
+        <com.narvii.widget.EditTextLink android:textSize="16.0dp" android:textColor="@android:color/white" android:gravity="start|top" android:id="@id/content" android:background="@null" android:padding="10.0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/add_your_description_here" android:maxLength="500" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/edit_cursor_blue_normal" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffd3d4e1" android:id="@id/stub1" android:padding="10.0dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_your_description_here" android:alpha="0.6" />
+    </com.narvii.app.theme.view.NVThemeRelativeLayout>
+    <com.narvii.app.theme.view.NVThemeTextView android:textSize="12.0dp" android:id="@id/input_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_right="edit_container.width - 15dp" app:layout_top="edit_container.bottom + 8dp" app:nv_dark_textColor="#88ffffff" />
+</com.github.mmin18.widget.FlexLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f5ff" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/prefs_background" android:layout_width="match_parent" android:layout_height="@dimen/prefs_default_size">
+        <TextView android:textSize="14.0dp" android:textColor="@color/color_default" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:layout_marginBottom="9.0dp" android:text="@string/current_invite_code" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_marginStart="18.0dp" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/link_layout" android:background="@drawable/button_round_white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp">
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@id/code" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="13.0dp" android:textColor="#ff9b9b9b" android:gravity="center" android:id="@id/link" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="6.0dp">
+        <TextView android:textSize="14.0dp" android:textColor="#ff9b9b9b" android:layout_gravity="start|center" android:id="@id/count_down" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewStart" />
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ff0076ff" android:layout_gravity="start|center" android:id="@id/regenerate" android:background="@drawable/button_oval_white_round" android:paddingLeft="4.0dp" android:paddingTop="2.0dp" android:paddingRight="4.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/regenerate" />
+    </LinearLayout>
+    <com.narvii.widget.PushButton android:id="@id/contact" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" app:pushButtonColor="#ff03cd7b" app:pushButtonLift="4.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/prefs_default_size" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:src="@drawable/ic_invite_members_contact" android:scaleType="centerInside" android:layout_marginEnd="10.0dp" />
+            <LinearLayout android:orientation="vertical" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.widget.AutoSizingTextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/invite_your_contact" android:maxLines="1" app:autoSizeTextMaxSize="20.0dp" app:autoSizeTextMinSize="16.0dp" />
+                <TextView android:textSize="14.0dp" android:textColor="#ccffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_contact_desc" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.narvii.widget.PushButton>
+    <com.narvii.widget.PushButton android:id="@id/share" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" app:pushButtonColor="#ff0a7cff" app:pushButtonLift="4.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/prefs_default_size" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:src="@drawable/ic_invite_members_share" android:scaleType="centerInside" android:layout_marginEnd="10.0dp" />
+            <LinearLayout android:orientation="vertical" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.narvii.widget.AutoSizingTextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_invite_url" android:maxLines="1" app:autoSizeTextMaxSize="20.0dp" app:autoSizeTextMinSize="16.0dp" />
+                <TextView android:textSize="14.0dp" android:textColor="#ccffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_invite_url_desc" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.narvii.widget.PushButton>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/leader_controller" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp">
+        <TextView android:textSize="14.0dp" android:textColor="#ff9b9b9b" android:gravity="center" android:id="@id/invite_history" android:background="@drawable/button_oval_white_round" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_history" />
+        <View android:layout_width="30.0dp" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0dp" android:textColor="#ff9b9b9b" android:gravity="center" android:id="@id/valid_links" android:background="@drawable/button_oval_white_round" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/existing_invite_codes" />
+    </LinearLayout>
+</LinearLayout>

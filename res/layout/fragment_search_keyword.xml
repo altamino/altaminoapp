@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.StatusBarPlaceHolder android:id="@id/status_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.narvii.widget.SearchBar android:id="@id/search" android:background="@color/color_default" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/search_bar_childs" />
+    </com.narvii.widget.SearchBar>
+    <com.narvii.widget.NVPagerTabLayout android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="@dimen/new_feed_bar_height" app:tab_mode="1" />
+    <com.narvii.theme.BackgroundColorView android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <com.narvii.widget.NVViewPager android:id="@id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

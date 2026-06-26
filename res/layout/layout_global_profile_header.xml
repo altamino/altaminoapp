@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.master.home.widgets.GlobalProfileHeaderView android:gravity="center" android:orientation="vertical" android:paddingLeft="17.0dp" android:paddingTop="20.0dp" android:paddingRight="17.0dp" android:paddingBottom="17.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.list.overlay.OverlayListPlaceholder android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.UserAvatarLayout android:id="@id/user_avatar_layout" android:padding="2.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="76.0dp" android:layout_height="76.0dp" narvii:avatarSizeRatio="0.78" narvii:avatarStrokeWidthInDP="2.0" narvii:badgeWidthRatio="0.45" narvii:showLive="true" narvii:showSpeaking="true" narvii:sizeType="large" />
+        <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <com.narvii.master.home.widgets.GlobalProfileFollowView android:id="@id/follow_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/chat_entry" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_global_chat_entry" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/edit_button" android:background="@drawable/selector_white_corner_4" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="32.0dp">
+            <ImageView android:gravity="center" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/ic_global_profile_edit" />
+            <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/edit_profile" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.narvii.widget.NicknameView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="start" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_alignParentTop="true" narvii:allowShowUnsubscribe="true" narvii:hideRankingBadge="true" narvii:hideRole="true" />
+    <TextView android:textSize="13.0dp" android:textColor="#99ffffff" android:layout_gravity="start" android:id="@id/amino_id" android:paddingTop="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+    <LinearLayout android:layout_gravity="center_vertical" android:paddingTop="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.narvii.widget.RadiusLayout android:id="@id/followers_wrapper" android:background="#1affffff" android:layout_width="0.0dp" android:layout_height="50.0dp" android:layout_weight="1.0" narvii:layout_corner_radius_left_bottom="4.0dp" narvii:layout_corner_radius_left_top="4.0dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.narvii.widget.AutoSizingTextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/followers_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" narvii:autoSizeTextMaxSize="18.0dp" narvii:autoSizeTextMinSize="13.0dp" />
+                <TextView android:textSize="11.0dp" android:textColor="#99ffffff" android:gravity="center" android:id="@id/followers_count_unit_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:text="@string/user_followers" android:maxLines="1" android:singleLine="true" />
+            </LinearLayout>
+        </com.narvii.widget.RadiusLayout>
+        <FrameLayout android:id="@id/followings_wrapper" android:background="#1affffff" android:layout_width="0.0dp" android:layout_height="50.0dp" android:layout_marginLeft="2.0dp" android:layout_marginRight="2.0dp" android:layout_weight="1.0" android:layout_marginStart="2.0dp" android:layout_marginEnd="2.0dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.narvii.widget.AutoSizingTextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/followings_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" narvii:autoSizeTextMaxSize="18.0dp" narvii:autoSizeTextMinSize="13.0dp" />
+                <TextView android:textSize="11.0dp" android:textColor="#99ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:text="@string/user_following" android:maxLines="1" android:singleLine="true" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/visitor_wrapper" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dp" android:layout_height="50.0dp" android:layout_weight="1.0">
+            <com.narvii.widget.RadiusLayout android:background="#1affffff" android:layout_width="match_parent" android:layout_height="match_parent" narvii:layout_corner_radius_right_bottom="4.0dp" narvii:layout_corner_radius_right_top="4.0dp" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.narvii.widget.AutoSizingTextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/visitor_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" narvii:autoSizeTextMaxSize="18.0dp" narvii:autoSizeTextMinSize="13.0dp" />
+                    <ImageView android:layout_gravity="center" android:id="@id/center_visit_privacy_private" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_visit_privacy_private_big" />
+                </FrameLayout>
+                <TextView android:textSize="11.0dp" android:textColor="#99ffffff" android:gravity="center" android:id="@id/visitor_count_unit_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:text="@string/user_visit" android:maxLines="1" android:singleLine="true" />
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="end|top" android:clipChildren="false" android:clipToPadding="false" android:layout_width="40.0dp" android:layout_height="20.0dp" android:layout_marginTop="-10.0dp" android:layout_marginRight="-20.0dp" android:layout_marginEnd="-20.0dp">
+                <include android:visibility="gone" layout="@layout/visitor_increase_view_layout" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="end|bottom" android:id="@id/visit_privacy_private" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:layout_marginBottom="7.0dp" android:src="@drawable/ic_visit_privacy_private" android:layout_marginEnd="5.0dp" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:layout_gravity="start" android:id="@id/bio" android:paddingTop="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/tap_to_add_bio_hint" android:lineSpacingMultiplier="1.1" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="start" android:orientation="horizontal" android:id="@id/hint_frame" android:paddingTop="8.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="10.0dp">
+        <TextView android:textSize="12.0dp" android:textColor="@color/selector_profile_see_all" android:id="@id/hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_all" />
+        <com.narvii.widget.TintButton android:id="@id/hint_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:src="@drawable/ic_show_more_indicator" android:layout_marginStart="4.0dp" narvii:tintColor="@color/selector_profile_see_all" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/membership_layout" android:background="@drawable/selector_white_corner_4" android:padding="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dp">
+        <ImageView android:id="@id/membership_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/membership_bar_card_active" />
+        <TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:id="@id/membership_hint" android:layout_width="0.0pt" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_weight="1.0" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <com.narvii.master.home.widgets.ProfileLinkedCommuView android:id="@id/linked_communities" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" />
+</com.narvii.master.home.widgets.GlobalProfileHeaderView>

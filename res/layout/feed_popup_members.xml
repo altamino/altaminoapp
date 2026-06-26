@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/feed_member1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp">
+        <com.narvii.widget.ThumbImageView android:id="@id/avatar" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/AvatarImageView" />
+        <com.narvii.widget.VoteIcon android:layout_gravity="end|bottom" android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="-4.0dp" android:layout_marginBottom="-2.0dp" android:layout_marginEnd="-4.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/feed_member2" android:clipChildren="false" android:clipToPadding="false" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp">
+        <com.narvii.widget.ThumbImageView android:id="@id/avatar" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/AvatarImageView" />
+        <com.narvii.widget.VoteIcon android:layout_gravity="end|bottom" android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="-4.0dp" android:layout_marginBottom="-2.0dp" android:layout_marginEnd="-4.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/feed_member3" android:clipChildren="false" android:clipToPadding="false" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp">
+        <com.narvii.widget.ThumbImageView android:id="@id/avatar" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/AvatarImageView" />
+        <com.narvii.widget.VoteIcon android:layout_gravity="end|bottom" android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="-4.0dp" android:layout_marginBottom="-2.0dp" android:layout_marginEnd="-4.0dp" />
+        <com.narvii.widget.SpinningView android:id="@id/progress" android:layout_width="match_parent" android:layout_height="match_parent" narvii:spinColor="#ff888888" narvii:spinSize="@dimen/spin_tiny_size" narvii:spinStyle="2" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/feed_member4" android:clipChildren="false" android:clipToPadding="false" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp">
+        <com.narvii.widget.ThumbImageView android:id="@id/avatar" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/AvatarImageView" />
+        <com.narvii.widget.VoteIcon android:layout_gravity="end|bottom" android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="-4.0dp" android:layout_marginBottom="-2.0dp" android:layout_marginEnd="-4.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/feed_member5" android:clipChildren="false" android:clipToPadding="false" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp">
+        <com.narvii.widget.ThumbImageView android:id="@id/avatar" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/AvatarImageView" />
+        <com.narvii.widget.FontAwesomeView android:textSize="6.0dp" android:textColor="#aaffffff" android:gravity="center" android:id="@id/more" android:background="@drawable/oval_mask" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/fa_circle_3" />
+        <com.narvii.widget.VoteIcon android:layout_gravity="end|bottom" android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="-4.0dp" android:layout_marginBottom="-2.0dp" android:layout_marginEnd="-4.0dp" />
+    </FrameLayout>
+</LinearLayout>

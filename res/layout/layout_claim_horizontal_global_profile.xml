@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.PressedFrameLayout android:layout_gravity="bottom" android:id="@id/hint" android:paddingLeft="32.0dp" android:paddingTop="4.0dp" android:paddingRight="10.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="32.0dp" android:paddingEnd="10.0dp" app:layout_right="end|right">
+        <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/claim_gifts" />
+    </com.narvii.widget.PressedFrameLayout>
+    <com.github.mmin18.widget.FlexLayout android:layout_gravity="start|center" android:id="@id/gift_container" android:layout_width="30.0dp" android:layout_height="wrap_content">
+        <ImageView android:id="@id/claim_gift" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_claim_gift" android:scaleType="centerInside" app:layout_centerX="50%" />
+        <ImageView android:layout_width="13.0dp" android:layout_height="13.0dp" android:src="@drawable/amino_coin_small" android:scaleType="centerInside" app:layout_left="claim_gift.centerX+2dp" app:layout_top="claim_gift.centerY-1dp" />
+    </com.github.mmin18.widget.FlexLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="12.0dp" android:paddingEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.AutoSizingTextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff18a4f5" android:gravity="center|top" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" app:autoSizeTextMaxSize="14.0dp" app:autoSizeTextMinSize="10.0dp" />
+    <com.narvii.widget.AutoSizingTextView android:textSize="10.0dp" android:textColor="#ff18a4f5" android:gravity="center_horizontal" android:id="@id/subTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:lines="1" app:autoSizeTextMaxSize="10.0dp" app:autoSizeTextMinSize="6.0dp" />
+</LinearLayout>

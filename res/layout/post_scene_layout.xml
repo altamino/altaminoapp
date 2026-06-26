@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/overlay" android:background="@color/scene_primary_color" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.list.overlay.OverlayListPlaceholder android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="12.0dp" android:layout_weight="1.0">
+        <com.narvii.widget.RadiusLayout android:layout_gravity="center" android:id="@id/radius_layout" android:layout_width="wrap_content" android:layout_height="match_parent" narvii:layout_corner_radius="0.0dp">
+            <com.narvii.scene.view.PlayerContainerLayout android:layout_gravity="center" android:id="@id/player_container" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_placeholder_view" android:background="@drawable/ic_scene_preview_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:layout_width="76.0dp" android:layout_height="76.0dp" android:src="@drawable/ic_add_clip_purple" android:scaleType="centerCrop" />
+                    <TextView android:textSize="14.0dp" android:textColor="@android:color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/add_a_video" android:alpha="0.6" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error_placeholder_view" android:background="@color/scene_default_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="12.0dp" android:textColor="@android:color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/failed_to_play" android:alpha="0.5" />
+                    <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/ic_headline_last_point" android:layout_centerInParent="true" android:alpha="0.5" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/player_view" android:background="@color/scene_default_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <FrameLayout android:id="@id/preview_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" android:keepScreenOn="true" />
+                    <ImageView android:id="@id/video_play_button" android:visibility="visible" android:layout_width="54.0dp" android:layout_height="54.0dp" android:src="@drawable/ic_sr_media_play" android:layout_centerInParent="true" />
+                    <FrameLayout android:id="@id/fl_warning" android:background="@drawable/edit_top_right_button_bg" android:padding="3.0dp" android:visibility="visible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                        <com.narvii.widget.TintButton android:id="@id/iv_warning" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_scene_warning_white" />
+                    </FrameLayout>
+                </RelativeLayout>
+                <ImageView android:id="@id/round_corner_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_scene_round_corner_cover" android:scaleType="fitXY" />
+            </com.narvii.scene.view.PlayerContainerLayout>
+        </com.narvii.widget.RadiusLayout>
+    </FrameLayout>
+    <com.narvii.scene.view.NvStoryBackgroundMusicButton android:id="@id/background_music_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" />
+    <RelativeLayout android:id="@id/manage_layout" android:paddingLeft="16.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:paddingStart="16.0dp" android:paddingEnd="10.0dp">
+        <TextView android:textSize="12.0dp" android:textColor="#ff4a4a4a" android:id="@id/tv_time_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0:00.0" android:layout_centerVertical="true" />
+        <View android:id="@id/time_split" android:background="#884a4a4a" android:layout_width="1.0dp" android:layout_height="12.0dp" android:layout_marginLeft="3.0dp" android:layout_marginRight="3.0dp" android:layout_toRightOf="@id/tv_time_current" android:layout_centerVertical="true" android:layout_marginStart="3.0dp" android:layout_marginEnd="3.0dp" android:layout_toEndOf="@id/tv_time_current" />
+        <TextView android:textSize="12.0dp" android:textColor="#884a4a4a" android:id="@id/tv_time_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0:00.0" android:layout_toRightOf="@id/time_split" android:layout_centerVertical="true" android:layout_toEndOf="@id/time_split" />
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:id="@id/tv_manage_scene" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manage" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@id/empty_manage_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:text="@string/tap_to_add_a_scene" />
+    <com.narvii.scene.view.SceneRecyclerView android:id="@id/scene_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="20.0dp" />
+    <FrameLayout android:id="@id/create_scene_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginBottom="20.0dp">
+        <com.narvii.widget.TintButton android:layout_gravity="center" android:id="@id/iv_create_scene" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/ic_scene_added" narvii:tintColor="@color/story_theme_color" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff7d7d7d" android:id="@id/tv_advanced_story" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="@string/advanced_editing_telling_" />
+</LinearLayout>

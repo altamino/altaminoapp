@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <View android:background="#99000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:tag="resizeTarget" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.widget.StatusBarPlaceHolder android:id="@id/status_bar_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <EditText android:textSize="25.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:textColorHint="#88ffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/edit_text" android:background="@drawable/caption_edit_text_bg" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:hint="@string/text" android:maxLines="3" android:maxLength="100" android:textCursorDrawable="@drawable/edit_cursor_blue" />
+        </FrameLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.narvii.video.attachment.caption.CaptionColorRecyclerView android:id="@id/color_picker" android:layout_width="match_parent" android:layout_height="50.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

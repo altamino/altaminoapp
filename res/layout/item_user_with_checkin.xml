@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="64.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/user_avatar_layout_mini" />
+    <com.narvii.widget.NicknameView android:textSize="17.0dp" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/nickname" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="14.0dp" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="14.0dp" />
+    <LinearLayout android:gravity="center" android:layout_gravity="end|center" android:orientation="vertical" android:background="@drawable/checkin_days_bg" android:padding="6.0dp" android:layout_width="52.0dp" android:layout_height="52.0dp">
+        <com.narvii.widget.AutoSizingTextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center|bottom" android:layout_gravity="center_horizontal" android:id="@id/check_in_days" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="0.0dp" android:minHeight="0.0dp" android:maxLines="1" app:autoSizeMaxTextSize="18.0dp" />
+        <TextView android:textSize="9.0dp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dp" android:text="@string/streak" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

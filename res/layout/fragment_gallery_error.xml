@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/error" android:paddingTop="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error" />
+    <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="20.0dp" android:text="@string/normal_error_long" />
+    <com.narvii.widget.FontAwesomeView android:textColor="#ffeeeeee" android:gravity="center" android:id="@id/retry" android:padding="12.0dp" android:clickable="true" android:layout_width="60.0dp" android:layout_height="60.0dp" android:text="@string/ion_refresh" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/post_category_item" android:background="@drawable/post_clickable_section" android:layout_width="match_parent" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/post_category_remove" android:layout_width="44.0dp" android:layout_height="match_parent" layout="@layout/drag_sort_remove_btn" />
+    <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/mark_blue_text" android:id="@id/post_category_label" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_toRightOf="@id/post_category_remove" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="4.0dp" android:layout_toEndOf="@id/post_category_remove" android:layout_alignParentEnd="true" />
+    <include android:layout_width="match_parent" android:layout_height="@dimen/list_divider_height" android:layout_alignParentBottom="true" layout="@layout/list_divider" />
+</RelativeLayout>

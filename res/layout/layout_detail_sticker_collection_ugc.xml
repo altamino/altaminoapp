@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/list_layout" />
+    <com.narvii.list.overlay.OverlayListPlaceholder android:id="@id/overlay" android:background="#ff242424" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/submit_layout" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/submit" android:background="@drawable/button_amino_green_corner" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="24.0dp" android:layout_marginBottom="10.0dp" android:minHeight="50.0dp" android:text="@string/publish_this_sticker_pack" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/approve_layout" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/reject" android:background="@drawable/button_rect_red" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0px" android:layout_height="match_parent" android:minHeight="50.0dp" android:text="@string/reject" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/accept" android:background="@drawable/button_rect_green" android:layout_width="0.0px" android:layout_height="match_parent" android:text="@string/accept" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

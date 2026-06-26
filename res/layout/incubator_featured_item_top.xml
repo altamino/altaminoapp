@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="240.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.narvii.widget.Flipper android:id="@id/flipper" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <View android:background="@drawable/feature_bg_gradient" android:visibility="gone" android:layout_width="match_parent" android:layout_height="4.0dp" />
+</LinearLayout>

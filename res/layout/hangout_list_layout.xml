@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.app.theme.view.NVThemeFrameLayout android:id="@id/list_frame" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/list_view" />
+    <include layout="@layout/empty_view" />
+    <FrameLayout android:id="@id/video_overlay" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/filter_view" android:background="@drawable/bg_rect_black_70_alpha_15_corner" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginEnd="10.0dp">
+        <ImageView android:layout_width="18.0dp" android:layout_height="14.0dp" android:layout_marginRight="6.0dp" android:src="@drawable/ic_down_indicator" android:layout_marginEnd="6.0dp" />
+        <TextView android:textSize="12.0dp" android:textColor="#ccffffff" android:id="@id/filter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recommended" />
+    </LinearLayout>
+</com.narvii.app.theme.view.NVThemeFrameLayout>

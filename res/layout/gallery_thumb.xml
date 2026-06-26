@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:id="@id/image" android:layout_width="160.0dp" android:layout_height="140.0dp" narvii:defaultDrawable="@color/placeholder" />
+    <TextView android:textSize="11.0dp" android:textColor="#fff8f8f8" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/text" android:background="#88000000" android:padding="1.0dp" android:layout_width="160.0dp" android:layout_height="wrap_content" android:maxLines="2" />
+</FrameLayout>

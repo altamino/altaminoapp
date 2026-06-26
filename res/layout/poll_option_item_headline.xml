@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout android:paddingTop="4.0dp" android:paddingBottom="@dimen/poll_option_item_padding_bottom" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.ThumbImageView android:id="@id/image" android:layout_width="52.0dp" android:layout_height="52.0dp" android:scaleType="centerCrop" app:defaultDrawable="@color/placeholder" app:layout_centerX="26dp" app:strokeColor="#ffe4e4e4" app:strokeWidth="0.5dp" />
+    <com.narvii.widget.CardView android:id="@id/item_card" android:layout_width="48.0dp" android:layout_height="56.0dp" app:layout_centerX="28dp">
+        <com.narvii.widget.SecretImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="6.0dp" app:defaultDrawable="@color/item_card_placeholder" app:strokeColor="@color/item_card_stroke" app:strokeWidth="@dimen/item_card_stroke_width" />
+        <TextView android:id="@id/title" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="7.0dp" />
+        <include layout="@layout/fans_only_content_indicator_layout_wiki" />
+    </com.narvii.widget.CardView>
+    <View android:id="@id/stub1" android:layout_width="0.0px" app:layout_height="image.visible?image.height:(item_card.visible?item_card.height:52dp)" app:layout_left="image.visible?image.right:(item_card.visible?item_card.right:0)" />
+    <com.narvii.widget.LongPushButton android:id="@id/push_btn" android:clickable="true" android:layout_height="@dimen/poll_vote_btn_height" app:layout_centerY="stub1.centerY" app:layout_left="stub1.right+(image.visible?10dp:(item_card.visible?10dp:0))" app:layout_right="100%-10dp" app:pushButtonWider="1.0dp">
+        <TextView android:textSize="15.0dp" android:textColor="#ffffffff" android:layout_gravity="start|center" android:id="@id/title1" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dp" android:singleLine="true" android:shadowColor="#ff333333" android:shadowDy="1.0" android:layout_marginEnd="32.0dp" />
+        <TextView android:textSize="13.0dp" android:textStyle="bold" android:textColor="#fff4f4f4" android:layout_gravity="center" android:id="@id/hold_longer" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hold_longer" />
+        <com.narvii.widget.SpinningView android:layout_gravity="end|center" android:id="@id/progress" android:visibility="invisible" android:layout_width="32.0dp" android:layout_height="20.0dp" android:layout_marginRight="10.0dp" android:layout_marginEnd="10.0dp" app:spinColor="#ffffffff" />
+    </com.narvii.widget.LongPushButton>
+    <com.narvii.poll.VoteBar android:id="@id/vote_bar" android:visibility="invisible" android:layout_width="match_parent" app:layout_centerY="stub1.centerY" app:layout_height="0-8dp+@dimen/poll_vote_btn_height" app:layout_left="stub1.right+(image.visible?10dp:(item_card.visible?10dp:0))" app:layout_right="100%-12dp">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingRight="45.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="10.0dp" android:paddingEnd="45.0dp">
+            <com.narvii.widget.FontAwesomeView android:textColor="#ffffffff" android:id="@id/check" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="6.0dp" android:text="@string/fa_check" android:layout_marginEnd="6.0dp" />
+            <TextView android:textSize="15.0dp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff333333" android:shadowDy="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="end|center" android:id="@id/vote_bar_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_marginEnd="10.0dp" />
+    </com.narvii.poll.VoteBar>
+    <com.narvii.poll.VotersLayout android:id="@id/poll_option_voters" android:paddingTop="1.0dp" android:paddingBottom="1.0dp" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_height="wrap_content" app:layout_left="stub1.right+12dp" app:layout_right="100%-12dp" app:layout_top="vote_bar.bottom+6dp" />
+</com.github.mmin18.widget.FlexLayout>

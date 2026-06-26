@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/create" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/theme_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <com.github.mmin18.widget.RealtimeBlurView android:id="@id/blur_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:realtimeBlurMaxFPS="5.0" app:realtimeOverlayColor="@android:color/transparent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.list.overlay.OverlayListPlaceholder android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:id="@id/dark_theme_overlay" android:background="@color/dark_theme_overlay" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.narvii.list.overlay.OverlayListPlaceholder android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/list_layout" />
+    </LinearLayout>
+</FrameLayout>

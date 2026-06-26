@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content_rl" android:background="#ff3a3b41" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.StatusBarPlaceHolder android:id="@id/status_bar_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:background="@drawable/editor_component_panel_bg" android:paddingBottom="46.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_alignParentBottom="true">
+        <com.narvii.video.widget.MediaOptionPanel android:id="@id/options_panel" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_margin="10.0dp" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/media_timeline_cutter_text_color" android:layout_gravity="start" android:id="@id/time_line_controller_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:layout_marginStart="10.0dp" />
+        <com.narvii.pre_editing.widget.PreEditTimeLineComponent android:id="@id/video_time_line_component" android:layout_width="match_parent" android:layout_height="84.0dp" android:layout_marginTop="6.0dp" app:frame_item_count="12" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/video_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/contentPanel" android:layout_below="@id/status_bar_placeholder">
+        <com.narvii.nvplayerview.NVVideoView android:id="@id/video_view_player" android:layout_width="match_parent" android:layout_height="match_parent" app:backgroundColor="#ff3a3b41" />
+        <ImageView android:layout_gravity="center" android:id="@id/player_button" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/media_player_play" />
+        <com.narvii.widget.SpinningView android:layout_gravity="center" android:id="@id/video_progress_view" android:visibility="gone" android:layout_width="@dimen/spin_large_size" android:layout_height="@dimen/spin_large_size" />
+    </FrameLayout>
+</RelativeLayout>
