@@ -1,0 +1,41 @@
+package com.facebook.ads.redexgen.X;
+
+import tv.danmaku.ijk.media.player.IMediaPlayer;
+
+/* JADX WARN: Classes with same name are omitted:
+  assets.dex
+  assets/audience_network.dex
+ */
+/* loaded from: assets/assets/audience_network.dex */
+public class C2 implements InterfaceC0442Bk {
+    public final /* synthetic */ CI A00;
+
+    public C2(CI ci) {
+        this.A00 = ci;
+    }
+
+    @Override // com.facebook.ads.redexgen.X.InterfaceC0442Bk
+    public final AbstractC0528Es A31() throws Exception {
+        C2 c2 = this;
+        AbstractC0528Es abstractC0528EsA07 = null;
+        String strA06 = FD.A00(c2.A00.A00).A06(IMediaPlayer.MEDIA_INFO_VIDEO_DECODED_START);
+        char c = strA06 != null ? (char) 2 : (char) 4;
+        while (true) {
+            switch (c) {
+                case 2:
+                    c2 = c2;
+                    strA06 = strA06;
+                    abstractC0528EsA07 = c2.A00.A08(strA06);
+                    c = 3;
+                    break;
+                case 3:
+                    return abstractC0528EsA07;
+                case 4:
+                    c2 = c2;
+                    abstractC0528EsA07 = c2.A00.A07(F6.A05);
+                    c = 3;
+                    break;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+package com.facebook.ads.redexgen.X;
+
+/* JADX WARN: Classes with same name are omitted:
+  assets.dex
+  assets/audience_network.dex
+ */
+/* loaded from: assets/assets/audience_network.dex */
+public class RC extends C9X {
+    public final /* synthetic */ RF A00;
+
+    public RC(RF rf) {
+        this.A00 = rf;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    @Override // com.facebook.ads.redexgen.X.AbstractC01971t
+    /* renamed from: A00, reason: merged with bridge method [inline-methods] */
+    public final void A03(C0667Kc c0667Kc) {
+        this.A00.A02.finish();
+    }
+}

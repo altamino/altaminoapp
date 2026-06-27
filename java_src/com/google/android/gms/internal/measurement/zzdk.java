@@ -1,0 +1,27 @@
+package com.google.android.gms.internal.measurement;
+
+/* loaded from: classes2.dex */
+final class zzdk {
+    private static final Class<?> zzabq = zzcm("libcore.io.Memory");
+    private static final boolean zzabr;
+
+    static boolean zzkb() {
+        return (zzabq == null || zzabr) ? false : true;
+    }
+
+    static Class<?> zzkc() {
+        return zzabq;
+    }
+
+    private static <T> Class<T> zzcm(String str) {
+        try {
+            return (Class<T>) Class.forName(str);
+        } catch (Throwable unused) {
+            return null;
+        }
+    }
+
+    static {
+        zzabr = zzcm("org.robolectric.Robolectric") != null;
+    }
+}

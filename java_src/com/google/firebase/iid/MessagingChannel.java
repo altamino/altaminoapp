@@ -1,0 +1,23 @@
+package com.google.firebase.iid;
+
+import com.google.android.gms.common.annotation.KeepForSdk;
+import com.google.android.gms.tasks.Task;
+
+@KeepForSdk
+/* loaded from: classes2.dex */
+public interface MessagingChannel {
+    @KeepForSdk
+    Task<String> getToken(String str, String str2, String str3, String str4);
+
+    @KeepForSdk
+    boolean isAvailable();
+
+    @KeepForSdk
+    boolean needsRefresh();
+
+    @KeepForSdk
+    Task<Void> subscribeToTopic(String str, String str2, String str3);
+
+    @KeepForSdk
+    Task<Void> unsubscribeFromTopic(String str, String str2, String str3);
+}

@@ -1,0 +1,146 @@
+package com.google.android.gms.internal.ads;
+
+/* loaded from: classes2.dex */
+public final class zzkm {
+    public byte[] data;
+    private int limit;
+    private int position;
+
+    public zzkm() {
+    }
+
+    public zzkm(int i) {
+        this.data = new byte[i];
+        this.limit = this.data.length;
+    }
+
+    public zzkm(byte[] bArr) {
+        this.data = bArr;
+        this.limit = bArr.length;
+    }
+
+    public final void zzb(byte[] bArr, int i) {
+        this.data = bArr;
+        this.limit = i;
+        this.position = 0;
+    }
+
+    public final int limit() {
+        return this.limit;
+    }
+
+    public final int getPosition() {
+        return this.position;
+    }
+
+    public final void setPosition(int i) {
+        zzkh.checkArgument(i >= 0 && i <= this.limit);
+        this.position = i;
+    }
+
+    public final void zzac(int i) {
+        setPosition(this.position + i);
+    }
+
+    public final void zzb(byte[] bArr, int i, int i2) {
+        System.arraycopy(this.data, this.position, bArr, i, i2);
+        this.position += i2;
+    }
+
+    public final int readUnsignedByte() {
+        byte[] bArr = this.data;
+        int i = this.position;
+        this.position = i + 1;
+        return bArr[i] & 255;
+    }
+
+    public final int readUnsignedShort() {
+        byte[] bArr = this.data;
+        int i = this.position;
+        this.position = i + 1;
+        int i2 = (bArr[i] & 255) << 8;
+        int i3 = this.position;
+        this.position = i3 + 1;
+        return (bArr[i3] & 255) | i2;
+    }
+
+    public final long zzge() {
+        byte[] bArr = this.data;
+        this.position = this.position + 1;
+        this.position = this.position + 1;
+        long j = ((bArr[r1] & 255) << 24) | ((bArr[r5] & 255) << 16);
+        this.position = this.position + 1;
+        long j2 = j | ((bArr[r5] & 255) << 8);
+        this.position = this.position + 1;
+        return j2 | (255 & bArr[r5]);
+    }
+
+    public final int readInt() {
+        byte[] bArr = this.data;
+        int i = this.position;
+        this.position = i + 1;
+        int i2 = (bArr[i] & 255) << 24;
+        int i3 = this.position;
+        this.position = i3 + 1;
+        int i4 = i2 | ((bArr[i3] & 255) << 16);
+        int i5 = this.position;
+        this.position = i5 + 1;
+        int i6 = i4 | ((bArr[i5] & 255) << 8);
+        int i7 = this.position;
+        this.position = i7 + 1;
+        return (bArr[i7] & 255) | i6;
+    }
+
+    public final long readLong() {
+        byte[] bArr = this.data;
+        this.position = this.position + 1;
+        this.position = this.position + 1;
+        long j = ((bArr[r1] & 255) << 56) | ((bArr[r5] & 255) << 48);
+        this.position = this.position + 1;
+        long j2 = j | ((bArr[r5] & 255) << 40);
+        this.position = this.position + 1;
+        long j3 = j2 | ((bArr[r5] & 255) << 32);
+        this.position = this.position + 1;
+        long j4 = j3 | ((bArr[r5] & 255) << 24);
+        this.position = this.position + 1;
+        long j5 = j4 | ((bArr[r5] & 255) << 16);
+        this.position = this.position + 1;
+        long j6 = j5 | ((bArr[r5] & 255) << 8);
+        this.position = this.position + 1;
+        return j6 | (255 & bArr[r5]);
+    }
+
+    public final int zzgf() {
+        byte[] bArr = this.data;
+        int i = this.position;
+        this.position = i + 1;
+        int i2 = (bArr[i] & 255) << 8;
+        int i3 = this.position;
+        this.position = i3 + 1;
+        int i4 = (bArr[i3] & 255) | i2;
+        this.position += 2;
+        return i4;
+    }
+
+    public final int zzgg() {
+        int i = readInt();
+        if (i >= 0) {
+            return i;
+        }
+        StringBuilder sb = new StringBuilder(29);
+        sb.append("Top bit not zero: ");
+        sb.append(i);
+        throw new IllegalStateException(sb.toString());
+    }
+
+    public final long zzgh() {
+        long j = readLong();
+        if (j >= 0) {
+            return j;
+        }
+        StringBuilder sb = new StringBuilder(38);
+        sb.append("Top bit not zero: ");
+        sb.append(j);
+        throw new IllegalStateException(sb.toString());
+    }
+}

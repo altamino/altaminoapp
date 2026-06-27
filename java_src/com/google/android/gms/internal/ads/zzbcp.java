@@ -1,0 +1,13 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+
+@zzard
+/* loaded from: classes2.dex */
+public abstract class zzbcp {
+    public abstract zzbco zza(Context context, zzbdf zzbdfVar, int i, boolean z, zzadi zzadiVar, zzbde zzbdeVar);
+
+    protected static boolean zza(zzbdf zzbdfVar) {
+        return zzbdfVar.zzaag().zzabx();
+    }
+}

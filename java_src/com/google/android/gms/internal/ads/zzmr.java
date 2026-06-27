@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.ads;
+
+import com.google.android.exoplayer2.extractor.ts.PsExtractor;
+import com.narvii.chat.video.RtcChatManager;
+import com.narvii.media.MediaRecordManager;
+import java.nio.ByteBuffer;
+
+/* loaded from: classes2.dex */
+public final class zzmr {
+    private static final int[] zzaxn = {1, 2, 2, 2, 2, 3, 3, 4, 4, 5, 6, 6, 6, 7, 8, 8};
+    private static final int[] zzaxo = {-1, 8000, 16000, 32000, -1, -1, 11025, MediaRecordManager.SAMPLING_RATE, RtcChatManager.SAMPLE_RATE, -1, -1, 12000, 24000, MediaRecordManager.ENCODE_BIT_RATE, -1, -1};
+    private static final int[] zzaxp = {64, 112, 128, PsExtractor.AUDIO_STREAM, 224, 256, 384, 448, 512, 640, 768, 896, 1024, 1152, 1280, 1536, 1920, 2048, 2304, 2560, 2688, 2816, 2823, 2944, 3072, 3840, 4096, 6144, 7680};
+
+    public static int zzj(ByteBuffer byteBuffer) {
+        int iPosition = byteBuffer.position();
+        return ((((byteBuffer.get(iPosition + 5) & 252) >> 2) | ((byteBuffer.get(iPosition + 4) & 1) << 6)) + 1) << 5;
+    }
+}
