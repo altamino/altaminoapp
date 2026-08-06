@@ -1734,7 +1734,7 @@ Amino ID must follow these rules:
     <string name="filter_by">FILTER BY</string>
     <string name="filter_results_count">%1$d results</string>
     <string name="finish_signing_up">Finish Signing Up</string>
-    <string name="firebase_database_url">https://golden-shine-845.firebaseio.com</string>
+    <string name="firebase_database_url"></string>
     <string name="firebase_dynamic_link_host">aminoapps.page.link</string>
     <string name="first_check_in_message">Check back in tomorrow for bonus REP️</string>
     <string name="first_launch_notify_message">Did you know you can create your own Community for your friends, organization, club, etc.?</string>
@@ -1832,7 +1832,7 @@ Amino ID must follow these rules:
     <string name="fyber_appid2">108031</string>
     <string name="fyber_secret_token">d1fe6c6a7dc4c7247da40dd9b10eb1ef</string>
     <string name="gallery">Gallery</string>
-    <string name="gcm_defaultSenderId">641940763521</string>
+    <string name="gcm_defaultSenderId">658041110108</string>
     <string name="generate">Generate</string>
     <string name="get">Get</string>
     <string name="get_1_free_coins">Get 1 Free Coin</string>
@@ -1856,12 +1856,12 @@ Amino ID must follow these rules:
     <string name="go_back">Go Back</string>
     <string name="go_following_hint">Why not drop a visit to the members you’re following? They might visit you back soon!</string>
     <string name="go_to_settings">Go to Settings</string>
-    <string name="google_api_key">AIzaSyAF4unETLsWW5xbfDwRWtfh7PUMk_XdH1o</string>
-    <string name="google_app_id">1:641940763521:android:e486e7524a0dbf77</string>
-    <string name="google_crash_reporting_api_key">AIzaSyAF4unETLsWW5xbfDwRWtfh7PUMk_XdH1o</string>
+    <string name="google_api_key">AIzaSyDzHb3JE07ZbkXcehk1tZaZ3YdH8MwFVG4</string>
+    <string name="google_app_id">1:658041110108:android:e17cf718b9cd2e2e68b099</string>
+    <string name="google_crash_reporting_api_key">AIzaSyDzHb3JE07ZbkXcehk1tZaZ3YdH8MwFVG4</string>
     <string name="google_login_down">Google service is down. Please use your email to log in or sign up.</string>
     <string name="google_service_not_available">Google service is not available on your phone.</string>
-    <string name="google_storage_bucket">golden-shine-845.appspot.com</string>
+    <string name="google_storage_bucket">altamino.firebasestorage.app</string>
     <string name="got_it">Got it</string>
     <string name="got_it2">Got It!</string>
     <string name="got_n_coins">You earned %1$s coins!</string>
@@ -3639,7 +3639,7 @@ cannot play video"</string>
     <string name="profile_and_main_menu">You have a profile. Customize it!</string>
     <string name="profile_frames">Profile Frames</string>
     <string name="profile_visiting_options">Profile Visitors Options</string>
-    <string name="project_id">golden-shine-845</string>
+    <string name="project_id">altamino</string>
     <string name="promote">Promote</string>
     <string name="promote_your_post">Promote your post with a Story</string>
     <string name="public_mode">Public Mode</string>

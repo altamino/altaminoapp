@@ -2078,7 +2078,7 @@
 
     const/4 v2, 0x0
 
-    if-eqz p2, :cond_f
+    if-eqz p2, :cond_10
 
     const/4 p2, 0x1
 
@@ -2327,6 +2327,72 @@
     invoke-virtual {p4}, Lcom/narvii/logging/LogEvent$Builder;->send()Lcom/narvii/logging/LogEvent;
 
     :cond_f
+    return-void
+
+    .line 700
+    :cond_10
+    iget-boolean p1, p0, Lcom/narvii/account/LoginActivity;->isRequesting:Z
+
+    if-eqz p1, :cond_12
+
+    .line 701
+    invoke-virtual {p0, v1}, Lcom/narvii/account/LoginActivity;->setSubmitting(Lcom/narvii/account/AccountBaseFragment;)V
+
+    .line 702
+    iput-boolean v2, p0, Lcom/narvii/account/LoginActivity;->creatingAccount:Z
+
+    .line 703
+    iput-boolean v2, p0, Lcom/narvii/account/LoginActivity;->isRequesting:Z
+
+    .line 704
+    iput p3, p0, Lcom/narvii/account/LoginActivity;->statErrorCode:I
+
+    if-eqz p4, :cond_12
+
+    .line 706
+    div-int/lit8 p3, p3, 0x64
+
+    if-ne p3, v0, :cond_11
+
+    invoke-static {p0}, Lcom/narvii/util/http/ApiService;->shouldShowErrMessage(Landroid/content/Context;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_11
+
+    .line 707
+    new-instance p1, Landroid/app/AlertDialog$Builder;
+
+    invoke-direct {p1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    .line 708
+    invoke-virtual {p1, p4}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    const p2, 0x104000a
+
+    .line 709
+    sget-object p3, Lcom/narvii/util/Utils;->DIALOG_BUTTON_EMPTY_LISTENER:Landroid/content/DialogInterface$OnClickListener;
+
+    invoke-virtual {p1, p2, p3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    .line 710
+    invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+
+    return-void
+
+    .line 712
+    :cond_11
+    invoke-virtual {p0}, Lcom/narvii/app/NVActivity;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-static {p1, p4, v2}, Lcom/narvii/util/NVToast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Lcom/narvii/util/NVToast;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/narvii/util/NVToast;->show()V
+
+    :cond_12
     return-void
 .end method
 
