@@ -40,7 +40,7 @@
             <intent-filter>
                 <action android:name="com.narvii.intent.action.MAIN"/>
             </intent-filter>
-            <intent-filter android:autoVerify="true">
+            <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
@@ -55,7 +55,7 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="narviiapp"/>
             </intent-filter>
-            <intent-filter>
+            <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
