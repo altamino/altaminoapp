@@ -1970,7 +1970,7 @@
 
     move-result-object v2
 
-    const/high16 v3, 0x48000000    # 131072.0f
+    const/high16 v3, 0x4c000000    # 131072.0f
 
     invoke-static {v2, v1, v0, v3}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 

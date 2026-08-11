@@ -334,7 +334,7 @@
     return-object p1
 
     :cond_0
-    const/high16 p4, 0x8000000
+    const/high16 p4, 0xc000000
 
     .line 25
     invoke-static {p1, p3, p2, p4}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;

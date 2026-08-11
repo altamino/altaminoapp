@@ -40,7 +40,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 10
+    .locals 13
 
     .line 42
     new-instance v0, Landroid/support/v4/util/SimpleArrayMap;
@@ -253,6 +253,45 @@
 
     invoke-virtual {v0, v9, v1}, Landroid/support/v4/util/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 66
+    sget-object v0, Lcom/narvii/permisson/PermissionUtils;->PERMISSION_NAMES:Landroid/support/v4/util/SimpleArrayMap;
+
+    sget v1, Lcom/narvii/lib/R$string;->permission_storage:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v10, "android.permission.READ_MEDIA_IMAGES"
+
+    invoke-virtual {v0, v10, v1}, Landroid/support/v4/util/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 67
+    sget-object v0, Lcom/narvii/permisson/PermissionUtils;->PERMISSION_NAMES:Landroid/support/v4/util/SimpleArrayMap;
+
+    sget v1, Lcom/narvii/lib/R$string;->permission_storage:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v11, "android.permission.READ_MEDIA_VIDEO"
+
+    invoke-virtual {v0, v11, v1}, Landroid/support/v4/util/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 68
+    sget-object v0, Lcom/narvii/permisson/PermissionUtils;->PERMISSION_NAMES:Landroid/support/v4/util/SimpleArrayMap;
+
+    sget v1, Lcom/narvii/lib/R$string;->permission_storage:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v12, "android.permission.READ_MEDIA_AUDIO"
+
+    invoke-virtual {v0, v12, v1}, Landroid/support/v4/util/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 69
     sget-object v0, Lcom/narvii/permisson/PermissionUtils;->PERMISSION_RATIONALES:Landroid/support/v4/util/SimpleArrayMap;
 
@@ -341,6 +380,39 @@
 
     invoke-virtual {v0, v9, v1}, Landroid/support/v4/util/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 77
+    sget-object v0, Lcom/narvii/permisson/PermissionUtils;->PERMISSION_RATIONALES:Landroid/support/v4/util/SimpleArrayMap;
+
+    sget v1, Lcom/narvii/lib/R$string;->permission_storage_rationale:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v10, v1}, Landroid/support/v4/util/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 78
+    sget-object v0, Lcom/narvii/permisson/PermissionUtils;->PERMISSION_RATIONALES:Landroid/support/v4/util/SimpleArrayMap;
+
+    sget v1, Lcom/narvii/lib/R$string;->permission_storage_rationale:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v11, v1}, Landroid/support/v4/util/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 79
+    sget-object v0, Lcom/narvii/permisson/PermissionUtils;->PERMISSION_RATIONALES:Landroid/support/v4/util/SimpleArrayMap;
+
+    sget v1, Lcom/narvii/lib/R$string;->permission_storage_rationale:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v12, v1}, Landroid/support/v4/util/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     return-void
 .end method
 
@@ -354,64 +426,111 @@
 .end method
 
 .method private static hasSelfPermission(Landroid/content/Context;Ljava/lang/String;)Z
-    .locals 2
+    .locals 3
 
     .line 112
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x17
+    const/16 v1, 0x21
 
-    if-lt v0, v1, :cond_0
-
-    sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
-
-    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    .line 113
-    invoke-virtual {v0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "xiaomi"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 114
-    invoke-static {p0, p1}, Lcom/narvii/permisson/PermissionUtils;->hasSelfPermissionForXiaomi(Landroid/content/Context;Ljava/lang/String;)Z
-
-    move-result p0
-
-    return p0
-
-    :cond_0
-    const/4 v0, 0x0
+    if-ge v0, v1, :cond_storage_map
 
     .line 117
     :try_start_0
-    invoke-static {p0, p1}, Landroid/support/v4/content/PermissionChecker;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
+    invoke-virtual {p0, p1}, Landroid/content/Context;->checkSelfPermission(Ljava/lang/String;)I
 
-    move-result p0
+    move-result v0
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-nez p0, :cond_1
+    if-nez v0, :cond_denied
 
     const/4 v0, 0x1
 
+    return v0
+
+    :cond_denied
+    const/4 v0, 0x0
+
+    return v0
+
     :catch_0
-    :cond_1
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_storage_map
+    const-string v1, "android.permission.READ_EXTERNAL_STORAGE"
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const-string v2, "android.permission.WRITE_EXTERNAL_STORAGE"
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    or-int/2addr v0, v2
+
+    if-eqz v0, :cond_plain33
+
+    const-string v1, "android.permission.READ_MEDIA_IMAGES"
+
+    invoke-virtual {p0, v1}, Landroid/content/Context;->checkSelfPermission(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-eqz v0, :cond_granted33
+
+    const-string v1, "android.permission.READ_MEDIA_VIDEO"
+
+    invoke-virtual {p0, v1}, Landroid/content/Context;->checkSelfPermission(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-eqz v0, :cond_granted33
+
+    const-string v1, "android.permission.READ_EXTERNAL_STORAGE"
+
+    invoke-virtual {p0, v1}, Landroid/content/Context;->checkSelfPermission(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-eqz v0, :cond_granted33
+
+    const-string v1, "android.permission.WRITE_EXTERNAL_STORAGE"
+
+    invoke-virtual {p0, v1}, Landroid/content/Context;->checkSelfPermission(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-eqz v0, :cond_granted33
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_granted33
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_plain33
+    invoke-virtual {p0, p1}, Landroid/content/Context;->checkSelfPermission(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-nez v0, :cond_plain33_denied
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_plain33_denied
+    const/4 v0, 0x0
+
     return v0
 .end method
 
@@ -577,73 +696,19 @@
 .end method
 
 .method public static varargs shouldShowRequestPermissionRationale(Landroid/app/Activity;[Ljava/lang/String;)Z
-    .locals 4
+    .locals 1
 
-    .line 134
-    array-length v0, p1
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v0, :cond_1
-
-    aget-object v3, p1, v2
-
-    .line 135
-    invoke-static {p0, v3}, Landroid/support/v4/app/ActivityCompat;->shouldShowRequestPermissionRationale(Landroid/app/Activity;Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    return v1
+    return v0
 .end method
 
 .method public static varargs shouldShowRequestPermissionRationale(Landroid/support/v4/app/Fragment;[Ljava/lang/String;)Z
-    .locals 4
+    .locals 1
 
-    .line 143
-    array-length v0, p1
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v0, :cond_1
-
-    aget-object v3, p1, v2
-
-    .line 144
-    invoke-virtual {p0, v3}, Landroid/support/v4/app/Fragment;->shouldShowRequestPermissionRationale(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    return v1
+    return v0
 .end method
 
 .method public static showPermissionDeniedDialog(Landroid/content/Context;)V

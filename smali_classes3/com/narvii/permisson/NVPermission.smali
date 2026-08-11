@@ -487,7 +487,7 @@
 
 # virtual methods
 .method public request()V
-    .locals 3
+    .locals 10
 
     .line 81
     iget-object v0, p0, Lcom/narvii/permisson/NVPermission;->pendingPermissions:[Ljava/lang/String;
@@ -498,6 +498,114 @@
 
     .line 85
     :cond_0
+
+    # map legacy storage perms to READ_MEDIA_ (Android 13+ / API 33)
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x21
+
+    if-lt v0, v1, :cond_skip_translate
+
+    iget-object v0, p0, Lcom/narvii/permisson/NVPermission;->pendingPermissions:[Ljava/lang/String;
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :loop_count
+    if-ge v2, v1, :loop_count_end
+
+    aget-object v4, v0, v2
+
+    const-string v5, "android.permission.READ_EXTERNAL_STORAGE"
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-nez v6, :storage_count
+
+    const-string v5, "android.permission.WRITE_EXTERNAL_STORAGE"
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :count_not_storage
+
+    :storage_count
+    add-int/lit8 v3, v3, 0x1
+
+    :count_not_storage
+    add-int/lit8 v2, v2, 0x1
+
+    goto :loop_count
+
+    :loop_count_end
+    if-eqz v3, :cond_skip_translate
+
+    move v2, v1
+
+    add-int/2addr v1, v3
+
+    new-array v4, v1, [Ljava/lang/String;
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    :loop_build
+    if-ge v5, v2, :loop_build_end
+
+    aget-object v7, v0, v5
+
+    const-string v8, "android.permission.READ_EXTERNAL_STORAGE"
+
+    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-nez v9, :storage_build
+
+    const-string v8, "android.permission.WRITE_EXTERNAL_STORAGE"
+
+    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :build_not_storage
+
+    :storage_build
+    const-string v8, "android.permission.READ_MEDIA_IMAGES"
+
+    aput-object v8, v4, v6
+
+    add-int/lit8 v6, v6, 0x1
+
+    const-string v8, "android.permission.READ_MEDIA_VIDEO"
+
+    aput-object v8, v4, v6
+
+    add-int/lit8 v6, v6, 0x1
+
+    goto :build_next
+
+    :build_not_storage
+    aput-object v7, v4, v6
+
+    add-int/lit8 v6, v6, 0x1
+
+    :build_next
+    add-int/lit8 v5, v5, 0x1
+
+    goto :loop_build
+
+    :loop_build_end
+    iput-object v4, p0, Lcom/narvii/permisson/NVPermission;->pendingPermissions:[Ljava/lang/String;
+
+    :cond_skip_translate
     iget-object v0, p0, Lcom/narvii/permisson/NVPermission;->rationaleTitle:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z

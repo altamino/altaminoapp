@@ -58,7 +58,7 @@
 
     invoke-direct {v2, v1, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const/4 v3, 0x0
+    const v3, 0x4000000 # FLAG_IMMUTABLE
 
     invoke-static {v1, v3, v2, v3}, Landroid/app/PendingIntent;->getService(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 

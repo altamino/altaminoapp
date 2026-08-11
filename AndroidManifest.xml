@@ -30,9 +30,13 @@
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-feature android:glEsVersion="0x20000" android:required="true"/>
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
-    <application android:allowBackup="true" android:fullBackupContent="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.narvii.app.incubator.IncubatorApplication" android:networkSecurityConfig="@xml/nsc_mitm" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AminoTheme">
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application android:requestLegacyExternalStorage="true" android:allowBackup="true" android:fullBackupContent="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.narvii.app.incubator.IncubatorApplication" android:networkSecurityConfig="@xml/nsc_mitm" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AminoTheme">
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.narvii.master.MasterActivity" android:screenOrientation="portrait">
+        <activity android:exported="true" android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.narvii.master.MasterActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -48,7 +52,7 @@
             </intent-filter>
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.narvii.amino.MainActivity" android:screenOrientation="portrait"/>
-        <activity android:label="@string/app_name" android:name="com.narvii.app.ForwardActivity" android:screenOrientation="behind">
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.narvii.app.ForwardActivity" android:screenOrientation="behind">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -82,7 +86,7 @@
             </intent-filter>
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.narvii.app.FragmentWrapperActivity" android:screenOrientation="portrait"/>
-        <activity android:label="@string/app_name" android:name="com.narvii.story.ShareStoryActivity" android:screenOrientation="portrait">
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.narvii.story.ShareStoryActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.narvii.amino.mastes.shareStory"/>
                 <category android:name="android.intent.category.DEFAULT"/>

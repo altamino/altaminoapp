@@ -4,11 +4,11 @@ usesFramework:
   ids:
   - 1
 sdkInfo:
-  minSdkVersion: 23
-  targetSdkVersion: 28
+  minSdkVersion: 24
+  targetSdkVersion: 35
 versionInfo:
-  versionCode: 33601
-  versionName: 3.4.33601
+  versionCode: 33602
+  versionName: 3.4.33602
 resourcesInfo:
   packageId: 127
 doNotCompress:
