@@ -2980,6 +2980,12 @@
     .locals 5
 
     .line 1044
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1f
+
+    if-ge v0, v1, :cond_0
+
     iget v0, p0, Lcom/narvii/widget/NVListView;->overscrollY:I
 
     if-eqz v0, :cond_0

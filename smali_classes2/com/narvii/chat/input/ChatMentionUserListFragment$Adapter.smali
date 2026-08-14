@@ -196,7 +196,7 @@
 .end method
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 3
+    .locals 4
 
     .line 144
     invoke-super {p0, p1, p2, p3}, Lcom/narvii/list/NVPagedAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
@@ -230,6 +230,25 @@
 
     check-cast p1, Lcom/narvii/model/User;
 
+    invoke-virtual {p3, p1}, Lcom/narvii/chat/util/ChatHelper;->isBot(Lcom/narvii/model/User;)Z
+
+    move-result v3
+
+    if-eqz v3, :goto_not_bot_alt
+
+    invoke-virtual {p0}, Lcom/narvii/list/NVAdapter;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    const v3, 0x7f0f11b6
+
+    invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_bot_done_alt
+
+    :goto_not_bot_alt
     invoke-virtual {p1}, Lcom/narvii/model/User;->uid()Ljava/lang/String;
 
     move-result-object p1
@@ -237,6 +256,8 @@
     invoke-virtual {p3, v1, p1}, Lcom/narvii/chat/util/ChatHelper;->getHostLabelName(Lcom/narvii/model/ChatThread;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
+
+    :goto_bot_done_alt
 
     const-string p3, "cell.host_label"
 

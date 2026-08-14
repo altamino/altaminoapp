@@ -15,7 +15,7 @@
 
 .field public static mobileSignUpProvider:I = 0x8
 
-.field public static showPhoneNumberItem:Z = true
+.field public static showPhoneNumberItem:Z = false
 
 
 # instance fields
@@ -135,43 +135,14 @@
 
     invoke-virtual {v0}, Lcom/narvii/logging/LogEvent$Builder;->send()Lcom/narvii/logging/LogEvent;
 
-    .line 513
-    new-instance v0, Lcom/narvii/util/dialog/ActionSheetDialog;
+    # altamino: no action sheet - go straight to email login
+    new-instance v0, Lcom/narvii/account/LoginOrSignupFragment$7;
 
-    invoke-virtual {p0}, Lcom/narvii/app/NVFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Lcom/narvii/util/dialog/ActionSheetDialog;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/narvii/account/LoginOrSignupFragment$7;-><init>(Lcom/narvii/account/LoginOrSignupFragment;)V
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0f0051
-
-    .line 514
-    invoke-virtual {v0, v2, v1}, Lcom/narvii/util/dialog/ActionSheetDialog;->addItem(IZ)V
-
-    const v2, 0x7f0f0035
-
-    .line 515
-    invoke-virtual {v0, v2, v1}, Lcom/narvii/util/dialog/ActionSheetDialog;->addItem(IZ)V
-
-    .line 518
-    new-instance v1, Lcom/narvii/account/LoginOrSignupFragment$7;
-
-    invoke-direct {v1, p0}, Lcom/narvii/account/LoginOrSignupFragment$7;-><init>(Lcom/narvii/account/LoginOrSignupFragment;)V
-
-    invoke-virtual {v0, v1}, Lcom/narvii/util/dialog/ActionSheetDialog;->setOnClickListener(Landroid/content/DialogInterface$OnClickListener;)V
-
-    .line 565
-    new-instance v1, Lcom/narvii/account/LoginOrSignupFragment$8;
-
-    invoke-direct {v1, p0}, Lcom/narvii/account/LoginOrSignupFragment$8;-><init>(Lcom/narvii/account/LoginOrSignupFragment;)V
-
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
-
-    .line 571
-    invoke-virtual {v0}, Lcom/narvii/util/dialog/ActionSheetDialog;->show()V
+    invoke-virtual {v0, v1, v1}, Lcom/narvii/account/LoginOrSignupFragment$7;->onClick(Landroid/content/DialogInterface;I)V
 
     return-void
 .end method
@@ -2121,74 +2092,24 @@
 
     invoke-virtual {v0}, Lcom/narvii/logging/LogEvent$Builder;->send()Lcom/narvii/logging/LogEvent;
 
-    .line 409
-    new-instance v0, Lcom/narvii/util/dialog/ActionSheetDialog;
+    # altamino: no action sheet - go straight to email signup
+    const/4 v0, 0x1
 
-    invoke-virtual {p0}, Lcom/narvii/app/NVFragment;->getContext()Landroid/content/Context;
+    new-array v0, v0, [I
 
-    move-result-object v2
+    const/4 v1, 0x0
 
-    invoke-direct {v0, v2}, Lcom/narvii/util/dialog/ActionSheetDialog;-><init>(Landroid/content/Context;)V
+    const v2, 0x7f0f0035
 
-    const/4 v2, 0x4
+    aput v2, v0, v1
 
-    new-array v2, v2, [I
-
-    .line 412
-    sget-boolean v3, Lcom/narvii/account/LoginOrSignupFragment;->showPhoneNumberItem:Z
-
-    const/4 v4, 0x0
-
-    if-eqz v3, :cond_0
-
-    const v3, 0x7f0f0fed
-
-    .line 413
-    invoke-virtual {v0, v3}, Landroid/app/Dialog;->setTitle(I)V
-
-    const v3, 0x7f0f0051
-
-    .line 414
-    invoke-virtual {v0, v3, v4}, Lcom/narvii/util/dialog/ActionSheetDialog;->addItem(IZ)V
-
-    aput v3, v2, v4
-
-    const/4 v3, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v3, 0x0
-
-    :goto_0
-    const v5, 0x7f0f0035
-
-    .line 419
-    invoke-virtual {v0, v5, v4}, Lcom/narvii/util/dialog/ActionSheetDialog;->addItem(IZ)V
-
-    add-int/lit8 v6, v3, 0x1
-
-    .line 420
-    aput v5, v2, v3
-
-    const v5, 0x7f0f003d
-
-    .line 425
     new-instance v3, Lcom/narvii/account/LoginOrSignupFragment$4;
 
-    invoke-direct {v3, p0, v2}, Lcom/narvii/account/LoginOrSignupFragment$4;-><init>(Lcom/narvii/account/LoginOrSignupFragment;[I)V
+    invoke-direct {v3, p0, v0}, Lcom/narvii/account/LoginOrSignupFragment$4;-><init>(Lcom/narvii/account/LoginOrSignupFragment;[I)V
 
-    invoke-virtual {v0, v3}, Lcom/narvii/util/dialog/ActionSheetDialog;->setOnClickListener(Landroid/content/DialogInterface$OnClickListener;)V
+    const/4 v0, 0x0
 
-    .line 471
-    new-instance v2, Lcom/narvii/account/LoginOrSignupFragment$5;
-
-    invoke-direct {v2, p0}, Lcom/narvii/account/LoginOrSignupFragment$5;-><init>(Lcom/narvii/account/LoginOrSignupFragment;)V
-
-    invoke-virtual {v0, v2}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
-
-    .line 477
-    invoke-virtual {v0}, Lcom/narvii/util/dialog/ActionSheetDialog;->show()V
+    invoke-virtual {v3, v0, v0}, Lcom/narvii/account/LoginOrSignupFragment$4;->onClick(Landroid/content/DialogInterface;I)V
 
     .line 479
     :cond_1
@@ -2305,7 +2226,7 @@
 
     iput-object v0, p0, Lcom/narvii/account/LoginOrSignupFragment;->eventLogProfileService:Lcom/narvii/services/EventLogProfileService;
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     .line 129
     sput-boolean v0, Lcom/narvii/account/LoginOrSignupFragment;->showPhoneNumberItem:Z

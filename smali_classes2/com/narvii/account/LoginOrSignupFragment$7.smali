@@ -56,7 +56,7 @@
 
     const/4 v7, 0x0
 
-    if-eqz p2, :cond_3
+    if-eqz p2, :cond_2
 
     if-eq p2, v5, :cond_2
 

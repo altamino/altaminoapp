@@ -94,7 +94,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x1
+    const/4 p1, 0x0
 
     .line 162
     sput-boolean p1, Lcom/narvii/account/LoginOrSignupFragment;->showPhoneNumberItem:Z

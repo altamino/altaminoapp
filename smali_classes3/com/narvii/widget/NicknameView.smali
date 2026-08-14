@@ -426,7 +426,12 @@
 
     iput-boolean v3, p0, Lcom/narvii/widget/NicknameView;->hideRole:Z
 
-    const/4 v3, 0x1
+    .line 155
+    sget v3, Lcom/narvii/lib/R$styleable;->NicknameView_useBigBadge:I
+
+    invoke-virtual {p2, v3, v2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v3
 
     iput-boolean v3, p0, Lcom/narvii/widget/NicknameView;->useBigBadge:Z
 

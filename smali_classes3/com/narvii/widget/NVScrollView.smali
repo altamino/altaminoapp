@@ -1175,6 +1175,12 @@
     const/4 v2, 0x0
 
     :goto_0
+    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1f
+
+    if-ge v4, v1, :cond_3
+
     if-eqz v2, :cond_3
 
     .line 315

@@ -44,7 +44,7 @@
 
 # virtual methods
 .method public run()V
-    .locals 8
+    .locals 9
 
     const-string v0, ".gif"
 
@@ -132,7 +132,9 @@
 
     .line 298
     :try_start_1
-    invoke-static {v0}, Lcom/narvii/media/SaveImageFragment;->getNewFile(Ljava/lang/String;)Ljava/io/File;
+    iget-object v8, p0, Lcom/narvii/media/SaveImageFragment$4;->this$0:Lcom/narvii/media/SaveImageFragment;
+
+    invoke-virtual {v8, v0}, Lcom/narvii/media/SaveImageFragment;->getNewFile(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
     :try_end_1
@@ -250,8 +252,6 @@
 
     .line 323
     invoke-interface {v3, v0}, Lcom/narvii/media/SaveImageFragment$SaveImageCallBack;->onSaveSuccess(Ljava/io/File;)V
-
-    goto :goto_4
 
     .line 325
     :cond_6

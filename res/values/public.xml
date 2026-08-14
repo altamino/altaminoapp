@@ -14077,6 +14077,11 @@
     <public type="string" name="aminolight_settings_toggle_fakecheckin" id="0x7f0f11af" />
     <public type="string" name="aminolight_settings_send_active" id="0x7f0f11b0" />
     <public type="string" name="aminolight_settings_show_visitor_count" id="0x7f0f11b1" />
+    <public type="string" name="aminolight_update_title" id="0x7f0f11b2" />
+    <public type="string" name="aminolight_update_message" id="0x7f0f11b3" />
+    <public type="string" name="aminolight_update_download" id="0x7f0f11b4" />
+    <public type="string" name="aminolight_update_later" id="0x7f0f11b5" />
+    <public type="string" name="aminolight_chat_bot_label" id="0x7f0f11b6" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f100000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f100001" />
     <public type="style" name="AminoActionBarOverFlow" id="0x7f100002" />

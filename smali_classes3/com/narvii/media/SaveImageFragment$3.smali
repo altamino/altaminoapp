@@ -86,8 +86,6 @@
 
     invoke-interface {v1, p1}, Lcom/narvii/media/SaveImageFragment$SaveImageCallBack;->onSaveSuccess(Ljava/io/File;)V
 
-    goto :goto_0
-
     .line 245
     :cond_0
     iget-object p1, p0, Lcom/narvii/media/SaveImageFragment$3;->val$origUrl:Ljava/lang/String;
@@ -116,7 +114,7 @@
 .end method
 
 .method protected parseNetworkResponse(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Response;
-    .locals 4
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -192,7 +190,9 @@
     if-nez v2, :cond_0
 
     .line 210
-    invoke-static {v1}, Lcom/narvii/media/SaveImageFragment;->getNewFile(Ljava/lang/String;)Ljava/io/File;
+    iget-object v4, p0, Lcom/narvii/media/SaveImageFragment$3;->this$0:Lcom/narvii/media/SaveImageFragment;
+
+    invoke-virtual {v4, v1}, Lcom/narvii/media/SaveImageFragment;->getNewFile(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v2
 

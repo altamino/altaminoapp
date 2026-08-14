@@ -661,6 +661,152 @@
     return-object v0
 .end method
 
+.method public final isBot(Lcom/narvii/model/User;)Z
+    .locals 4
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_false
+
+    # tagList contains a tag with "bot"/"бот"
+    iget-object v1, p1, Lcom/narvii/model/User;->tagList:Ljava/util/List;
+
+    if-eqz v1, :cond_amino
+
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_tags
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_amino
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    if-eqz v2, :goto_tags
+
+    invoke-virtual {v2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "bot"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_tag_ru
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_tag_ru
+    const-string v3, "бот"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :goto_tags
+
+    const/4 v0, 0x1
+
+    return v0
+
+    # altamino: 2) aminoId ends with "bot" (case-insensitive)
+    :cond_amino
+    iget-object v1, p1, Lcom/narvii/model/User;->aminoId:Ljava/lang/String;
+
+    if-eqz v1, :cond_titles
+
+    invoke-virtual {v1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "bot"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_titles
+
+    const/4 v0, 0x1
+
+    return v0
+
+    # altamino: 3) any custom title contains "bot" / "бот"
+    :cond_titles
+    invoke-virtual {p1}, Lcom/narvii/model/User;->customTitles()Ljava/util/List;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_false
+
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_titles
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_false
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/narvii/model/api/UserTitle;
+
+    if-eqz v2, :goto_titles
+
+    iget-object v2, v2, Lcom/narvii/model/api/UserTitle;->title:Ljava/lang/String;
+
+    if-eqz v2, :goto_titles
+
+    invoke-virtual {v2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "bot"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_titles_ru
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_titles_ru
+    const-string v3, "бот"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :goto_titles
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_false
+    return v0
+.end method
+
 .method public final getHostLabelName(Lcom/narvii/model/ChatThread;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 

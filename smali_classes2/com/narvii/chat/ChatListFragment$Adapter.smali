@@ -1475,7 +1475,7 @@
 .end method
 
 .method protected getItemView(Ljava/lang/Object;Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 10
+    .locals 11
 
     .line 1262
     check-cast p1, Lcom/narvii/model/ChatMessage;
@@ -1595,6 +1595,27 @@
 
     move-result-object v5
 
+    iget-object v10, p1, Lcom/narvii/model/ChatMessage;->author:Lcom/narvii/model/User;
+
+    invoke-virtual {v0, v10}, Lcom/narvii/chat/util/ChatHelper;->isBot(Lcom/narvii/model/User;)Z
+
+    move-result v10
+
+    if-eqz v10, :goto_not_bot_alt
+
+    invoke-virtual {p0}, Lcom/narvii/list/NVAdapter;->getContext()Landroid/content/Context;
+
+    move-result-object v6
+
+    const v10, 0x7f0f11b6
+
+    invoke-virtual {v6, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :goto_bot_done_alt
+
+    :goto_not_bot_alt
     invoke-virtual {p1}, Lcom/narvii/model/ChatMessage;->uid()Ljava/lang/String;
 
     move-result-object v6
@@ -1602,6 +1623,8 @@
     invoke-virtual {v0, v5, v6}, Lcom/narvii/chat/util/ChatHelper;->getHostLabelName(Lcom/narvii/model/ChatThread;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
+
+    :goto_bot_done_alt
 
     const v0, 0x7f0b00c8
 

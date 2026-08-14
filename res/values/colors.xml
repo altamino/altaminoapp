@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="business_bg">#ff000000</color>
+    <color name="business_surface">#ff141414</color>
+    <color name="business_text">#ffffffff</color>
+    <color name="business_text_sub">#b3ffffff</color>
+    <color name="business_divider">#26ffffff</color>
+    <color name="business_accent">#ff00ce7d</color>
+    <color name="business_bubble_mine">#ff4e99ef</color>
+    <color name="business_bubble_text">#ffffffff</color>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#ff7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
@@ -76,7 +84,7 @@
     <color name="chat_author_color_4">#ff00d6df</color>
     <color name="chat_author_color_5">#ffd000e8</color>
     <color name="chat_bubble_image_placeholder_bg">#32cccccc</color>
-    <color name="chat_bubble_mine">#ff4e99ef</color>
+    <color name="chat_bubble_mine">@color/business_bubble_mine</color>
     <color name="chat_bubble_normal">#ffffffff</color>
     <color name="chat_bubble_unknown">#ffbbbbbb</color>
     <color name="chat_bubble_video_placeholder_bg">#32000000</color>
@@ -86,7 +94,7 @@
     <color name="chat_item_tile">#ff4a4a4a</color>
     <color name="chat_nickname_color">#ffd4d4d4</color>
     <color name="chat_text_default_color">#ff222222</color>
-    <color name="chat_text_default_color_mine">#ffffffff</color>
+    <color name="chat_text_default_color_mine">@color/business_bubble_text</color>
     <color name="chat_theme_color">#ff46c635</color>
     <color name="chat_theme_color_alpha_50">#8046c635</color>
     <color name="chat_theme_color_pressed">#ff408f03</color>
@@ -94,7 +102,7 @@
     <color name="color_default">#ff00ce7d</color>
     <color name="color_default_dark">#ff565657</color>
     <color name="color_default_pressed">#ff09c279</color>
-    <color name="color_default_primary">#ff000000</color>
+    <color name="color_default_primary">@color/business_bg</color>
     <color name="color_highlight">#ffd1ffec</color>
     <color name="color_notify">#ff270b9f</color>
     <color name="com_facebook_blue">#ff3b5998</color>
@@ -244,7 +252,7 @@
     <color name="main_green_normal">#ff11f7d1</color>
     <color name="main_green_pressed">#ffdedede</color>
     <color name="mask_pressed">#38000000</color>
-    <color name="master_bottom_bar">#f2000000</color>
+    <color name="master_bottom_bar">@color/business_bg</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -331,10 +339,10 @@
     <color name="pref_switch_green">#ff6ec617</color>
     <color name="pref_warning">#fff6a623</color>
     <color name="prefs_background">#fff3f5ff</color>
-    <color name="prefs_divider_dark">#0cd3d3ec</color>
-    <color name="prefs_section_color_dark">#88d0d0e8</color>
-    <color name="prefs_text_color_dark">#ffd0d0e8</color>
-    <color name="prefs_text_color_dark_70p">#b3d0d0e8</color>
+    <color name="prefs_divider_dark">@color/business_divider</color>
+    <color name="prefs_section_color_dark">@color/business_text_sub</color>
+    <color name="prefs_text_color_dark">@color/business_text</color>
+    <color name="prefs_text_color_dark_70p">@color/business_text_sub</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -439,5 +447,5 @@
     <color name="vote_red">#ffa8000e</color>
     <color name="white">#ffffffff</color>
     <color name="window_background">#ffffffff</color>
-    <color name="window_background_dark">#ff000000</color>
+    <color name="window_background_dark">@color/business_bg</color>
 </resources>

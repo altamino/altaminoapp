@@ -54,7 +54,20 @@
     .line 48
     iput-object p1, p0, Lcom/narvii/share/ShareButtonSaveImage;->pending:Lcom/narvii/share/SharePayload;
 
-    .line 50
+    .line 49
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-lt v0, v1, :cond_sdk30
+
+    const/16 v0, 0xc9
+
+    invoke-virtual {p0, v0}, Lcom/narvii/share/ShareButtonSaveImage;->onPermissionGranted(I)V
+
+    return-void
+
+    :cond_sdk30
     iget-object p1, p0, Lcom/narvii/share/ShareButtonCustomInfo;->nvContext:Lcom/narvii/app/NVContext;
 
     instance-of v0, p1, Lcom/narvii/app/NVFragment;

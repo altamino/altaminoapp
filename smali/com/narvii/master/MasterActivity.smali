@@ -535,6 +535,8 @@
     .line 104
     invoke-super {p0, p1}, Lcom/narvii/app/NVActivity;->onCreate(Landroid/os/Bundle;)V
 
+    invoke-static {p0}, Lcom/narvii/util/UpdateChecker;->checkAndShow(Landroid/content/Context;)V
+
     .line 105
     invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 

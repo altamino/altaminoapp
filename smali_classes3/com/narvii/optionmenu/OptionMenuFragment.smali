@@ -636,6 +636,19 @@
     .locals 2
 
     .line 343
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-lt v0, v1, :cond_sdk30
+
+    const/16 v0, 0x6c
+
+    invoke-virtual {p0, v0}, Lcom/narvii/optionmenu/OptionMenuFragment;->onPermissionGranted(I)V
+
+    return-void
+
+    :cond_sdk30
     invoke-static {p0}, Lcom/narvii/permisson/NVPermission;->builder(Landroid/support/v4/app/Fragment;)Lcom/narvii/permisson/NVPermission$Builder;
 
     move-result-object v0

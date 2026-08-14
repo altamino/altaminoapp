@@ -296,13 +296,21 @@
     .locals 11
 
     .line 557
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-ge v0, v1, :cond_sdk30
+
     new-instance p1, Ljava/io/File;
 
-    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+    sget-object v0, Landroid/os/Environment;->DIRECTORY_DOWNLOADS:Ljava/lang/String;
+
+    invoke-static {v0}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
-    const-string v1, "Amino"
+    const-string v1, "AltAmino"
 
     invoke-direct {p1, v0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -330,6 +338,28 @@
 
     .line 561
     :cond_0
+    goto :goto_sdk30
+
+    :cond_sdk30
+    new-instance p1, Ljava/io/File;
+
+    iget-object v0, p0, Lcom/narvii/media/SaveImageHelper;->context:Lcom/narvii/app/NVContext;
+
+    invoke-interface {v0}, Lcom/narvii/app/NVContext;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    sget-object v1, Landroid/os/Environment;->DIRECTORY_PICTURES:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v0
+
+    const-string v1, "AltAmino"
+
+    invoke-direct {p1, v0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    :goto_sdk30
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -652,13 +682,21 @@
     .locals 9
 
     .line 626
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1e
+
+    if-ge v1, v2, :cond_sdk30
+
     new-instance v0, Ljava/io/File;
 
-    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+    sget-object v1, Landroid/os/Environment;->DIRECTORY_DOWNLOADS:Ljava/lang/String;
+
+    invoke-static {v1}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v1
 
-    const-string v2, "Amino"
+    const-string v2, "AltAmino"
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -686,6 +724,28 @@
 
     .line 630
     :cond_0
+    goto :goto_sdk30
+
+    :cond_sdk30
+    new-instance v0, Ljava/io/File;
+
+    iget-object v1, p0, Lcom/narvii/media/SaveImageHelper;->context:Lcom/narvii/app/NVContext;
+
+    invoke-interface {v1}, Lcom/narvii/app/NVContext;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    sget-object v2, Landroid/os/Environment;->DIRECTORY_PICTURES:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v1
+
+    const-string v2, "AltAmino"
+
+    invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    :goto_sdk30
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     .line 631
@@ -1203,12 +1263,32 @@
 .end method
 
 .method private saveToGallery(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
-    .locals 7
+    .locals 12
 
     const/4 p2, 0x0
 
     .line 505
     :try_start_0
+    move-object v8, p1
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_legacy_uri
+
+    const-string v0, "external_primary"
+
+    invoke-static {v0}, Landroid/provider/MediaStore$Images$Media;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v9
+
+    goto :goto_uri
+
+    :cond_legacy_uri
+    sget-object v9, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+
+    :goto_uri
     new-instance v0, Landroid/content/ContentValues;
 
     const/4 v1, 0x7
@@ -1222,7 +1302,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "Amino_"
+    const-string v3, "AltAmino_"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1240,7 +1320,9 @@
 
     const-string v1, "_display_name"
 
-    const-string v2, "Amino"
+    invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v2
 
     .line 507
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
@@ -1273,6 +1355,21 @@
     :cond_0
     invoke-virtual {v0, v1, p3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 p3, 0x1e
+
+    if-lt v1, p3, :cond_sdk30
+
+    const-string p3, "relative_path"
+
+    const-string v1, "Pictures/AltAmino"
+
+    invoke-virtual {v0, p3, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_cv
+
+    :cond_sdk30
     const-string p3, "_data"
 
     .line 511
@@ -1281,6 +1378,8 @@
     move-result-object v1
 
     invoke-virtual {v0, p3, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    :goto_cv
 
     .line 513
     iget-object p3, p0, Lcom/narvii/media/SaveImageHelper;->context:Lcom/narvii/app/NVContext;
@@ -1294,7 +1393,7 @@
     move-result-object p3
 
     .line 514
-    sget-object v2, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+    move-object v2, v9
 
     const/4 v3, 0x0
 
@@ -1323,6 +1422,8 @@
     move-result-object p1
 
     .line 517
+    if-eqz p1, :cond_1
+
     invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v1
@@ -1341,7 +1442,7 @@
     move-result-wide v1
 
     .line 519
-    sget-object v3, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+    move-object v3, v9
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1370,7 +1471,7 @@
 
     .line 524
     :cond_1
-    sget-object v1, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+    move-object v1, v9
 
     .line 525
     invoke-virtual {p3, v1, v0}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
@@ -1379,7 +1480,52 @@
 
     .line 527
     :goto_0
+    if-eqz p1, :cond_close
+
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
+
+    :cond_close
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1e
+
+    if-lt v1, v2, :cond_done
+
+    if-eqz p2, :cond_done
+
+    new-instance v1, Ljava/io/FileInputStream;
+
+    invoke-direct {v1, v8}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    invoke-virtual {p3, p2}, Landroid/content/ContentResolver;->openOutputStream(Landroid/net/Uri;)Ljava/io/OutputStream;
+
+    move-result-object v2
+
+    const/16 v3, 0x1000
+
+    new-array v3, v3, [B
+
+    :goto_copy
+    invoke-virtual {v1, v3}, Ljava/io/FileInputStream;->read([B)I
+
+    move-result v4
+
+    const/4 v5, -0x1
+
+    if-eq v4, v5, :cond_copy_done
+
+    const/4 v5, 0x0
+
+    invoke-virtual {v2, v3, v5, v4}, Ljava/io/OutputStream;->write([BII)V
+
+    goto :goto_copy
+
+    :cond_copy_done
+    invoke-virtual {v2}, Ljava/io/OutputStream;->close()V
+
+    invoke-virtual {v1}, Ljava/io/FileInputStream;->close()V
+
+    :cond_done
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1430,11 +1576,6 @@
     .locals 1
 
     .line 116
-    iget-object p1, p0, Lcom/narvii/media/SaveImageHelper;->saveImageCallBack:Lcom/narvii/media/SaveImageFragment$SaveImageCallBack;
-
-    if-nez p1, :cond_1
-
-    .line 117
     iget-object p1, p0, Lcom/narvii/media/SaveImageHelper;->context:Lcom/narvii/app/NVContext;
 
     invoke-interface {p1}, Lcom/narvii/app/NVContext;->getContext()Landroid/content/Context;

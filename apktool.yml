@@ -1,14 +1,14 @@
 version: 3.0.2
-apkFileName: AltAmino.apk
+apkFileName: AltAmino33603.apk
 usesFramework:
   ids:
   - 1
 sdkInfo:
   minSdkVersion: 24
-  targetSdkVersion: 35
+  targetSdkVersion: 34
 versionInfo:
-  versionCode: 33602
-  versionName: 3.4.33602
+  versionCode: 33603
+  versionName: 3.4.33603
 resourcesInfo:
   packageId: 127
 doNotCompress:

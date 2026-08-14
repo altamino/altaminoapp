@@ -1469,14 +1469,13 @@
 
     invoke-direct {v4, v1, v2, v3}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    # altamino: temporarily hide the ыtories tab
+    nop
+
+    # altamino: comment tab is now the first tab
+    nop
 
     .line 831
-    iget v1, p0, Lcom/narvii/master/home/profile/GlobalProfileFragment;->commentTabIndex:I
-
-    add-int/lit8 v1, v1, 0x1
-
-    iput v1, p0, Lcom/narvii/master/home/profile/GlobalProfileFragment;->commentTabIndex:I
 
     const v1, 0x7f0f113e
 

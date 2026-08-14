@@ -79,8 +79,6 @@
     .line 365
     invoke-interface {v1, p1}, Lcom/narvii/media/SaveImageFragment$SaveImageCallBack;->onSaveSuccess(Ljava/io/File;)V
 
-    goto :goto_0
-
     .line 367
     :cond_0
     iget-object p1, p0, Lcom/narvii/media/SaveImageHelper$3;->val$origUrl:Ljava/lang/String;
@@ -89,7 +87,6 @@
 
     invoke-virtual {v0, p1, v1}, Lcom/narvii/media/SaveImageHelper;->onSuccess(Ljava/lang/String;Landroid/net/Uri;)V
 
-    :goto_0
     return-void
 .end method
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Amino_plus_membership">Amino会员</string>
+    <string name="Amino_plus_membership">AltAmino会员</string>
     <string name="_default">默认</string>
     <string name="_empty">无内容</string>
     <string name="_free">免费</string>
@@ -169,14 +169,14 @@
     <string name="allow_commenting_on_my_profile">允许其他人在我的个人主页评论</string>
     <string name="allow_inbound_chat_requests">允许他人向我发送聊天请求</string>
     <string name="already_in_community">你已在当前社区</string>
-    <string name="amino_bonus">Amino奖金：%1$s</string>
-    <string name="amino_card">Amino社区名片</string>
+    <string name="amino_bonus">AltAmino奖金：%1$s</string>
+    <string name="amino_card">AltAmino社区名片</string>
     <string name="amino_disabled">抱歉，这个社区已被禁用</string>
     <string name="amino_id_copied">社区ID已复制</string>
     <string name="amino_id_illegal_limit">无效的社区ID</string>
     <string name="amino_id_length_limit">社区ID不能超过%1$d个字符</string>
     <string name="amino_id_with_name">社区 ID: %1$s</string>
-    <string name="amino_plus">Amino+</string>
+    <string name="amino_plus">AltAmino+</string>
     <string name="amino_staff_message">该用户是Amino团队官方人员</string>
     <string name="analyzing">分析中...</string>
     <string name="and">和</string>
@@ -493,7 +493,7 @@
     <string name="communities">社区</string>
     <string name="communities_1">1个社区</string>
     <string name="communities_n">%1$d个社区</string>
-    <string name="community">Amino</string>
+    <string name="community">AltAmino</string>
     <string name="community_all_members">所有成员</string>
     <string name="community_create_shortcut">创建快捷方式</string>
     <string name="community_create_shortcut_fail">无法下载快捷方式的图标</string>
@@ -544,7 +544,6 @@
     <string name="copy_link">复制链接</string>
     <string name="copy_to_my_favorites">将它嵌到你的主页</string>
     <string name="copyright_all_rights_reserved">版权所有</string>
-    <string name="copyright_narvii_inc">©2021 Narvii Inc.</string>
     <string name="coupons">优惠券</string>
     <string name="coupons_title">优惠券</string>
     <string name="coupons_title_with_discount">优惠券：-%1$d</string>
@@ -738,7 +737,7 @@
 必须以数字或字母开头
 不能有连续的下划线或连字符
 必须在%1$d-%2$d个字符之间"</string>
-    <string name="edit_amino_id_hint_simple">Amino ID 只能更改一次。</string>
+    <string name="edit_amino_id_hint_simple">AltAmino ID 只能更改一次。</string>
     <string name="edit_bio">编辑自我介绍</string>
     <string name="edit_categories">编辑文件夹</string>
     <string name="edit_chat_bubble">编辑聊天气泡</string>
@@ -928,7 +927,7 @@
     <string name="forward_placeholder">该页面已失效</string>
     <string name="free">公共的</string>
     <string name="free_coins_offer_wall">免费金币任务墙</string>
-    <string name="free_for_amino_plus">Amino+免费</string>
+    <string name="free_for_amino_plus">AltAmino+免费</string>
     <string name="free_for_everyone">公开的帖子</string>
     <string name="from">来自</string>
     <string name="from_my_uploads">来自我上传的图片</string>
@@ -1042,7 +1041,7 @@
     <string name="item_sort_add_more">从我的百科条目中选择</string>
     <string name="join">加入</string>
     <string name="join_a_community">加入社区</string>
-    <string name="join_amino_plus_streak_repair">Amino+会员可享受每月免费1次全部社区补签的权利。</string>
+    <string name="join_amino_plus_streak_repair">AltAmino+会员可享受每月免费1次全部社区补签的权利。</string>
     <string name="join_amio_hint">你需要加入%1$s社区才能获得这个头像边框。</string>
     <string name="join_chat_note">你需要先接受邀请。</string>
     <string name="join_chat_note_public">你想要在这个聊天室发消息吗？</string>
@@ -1208,7 +1207,7 @@
     <string name="membership_expire_warning_with_renew_0">你的Amino会员已过期。现在续费吧！</string>
     <string name="membership_expire_warning_with_renew_1">你的Amino会员在1天前已过期。现在续费吧！</string>
     <string name="membership_expire_warning_with_renew_n">你的Amino会员在%1$d天前已过期。现在续费吧！</string>
-    <string name="membership_logo_text">Amino会员</string>
+    <string name="membership_logo_text">AltAmino会员</string>
     <string name="membership_owned_coins">你还有 %1$s 个金币。</string>
     <string name="membership_privileges_text_1">解锁你社区专属的表情包，或者创建你个人的。</string>
     <string name="membership_privileges_text_2">可以表达所有心情的头像挂件， 会时刻更新</string>
@@ -1251,7 +1250,7 @@
     <string name="membership_status_wallet_inactive">点击这里，成为Amino+会员吧！</string>
     <string name="membership_status_wallet_inactive_trial">今日免费试用Amino+！</string>
     <string name="membership_subscribe">成为Amino+</string>
-    <string name="membership_subscribtion_descrption">Amino+可以享受以下所有的高级权益。</string>
+    <string name="membership_subscribtion_descrption">AltAmino+可以享受以下所有的高级权益。</string>
     <string name="membership_subscribtion_renew_descrption">续费你的会员，你将重新拥有会员特权。</string>
     <string name="membership_subscribtion_start_date">订阅开始日期：</string>
     <string name="membership_tap_to_earn_coin">点击此处，来免费获得金币吧！</string>
@@ -1445,7 +1444,7 @@
     <string name="notice_purchased_chat_bubble0">%1$s购买了这个聊天气泡。</string>
     <string name="notice_purchased_sticker_pack">%1$s购买了这个表情包：%2$s</string>
     <string name="notice_purchased_sticker_pack0">%1$s购买了这个表情包。</string>
-    <string name="notice_team_amino_trans_money">Amino团队给你转了钱款。</string>
+    <string name="notice_team_amino_trans_money">AltAmino团队给你转了钱款。</string>
     <string name="notice_text_approve_poll">你的百科条目已被添加到投票中-%2$s</string>
     <string name="notice_text_approve_poll0">你的百科条目已被添加到投票中。</string>
     <string name="notice_text_become_fans">%1$s加入了你的粉丝俱乐部。</string>
@@ -2001,10 +2000,10 @@
     <string name="role_curator">监管员</string>
     <string name="role_leader">管理员</string>
     <string name="role_name_news_feed">新闻内容</string>
-    <string name="role_name_official">Amino团队</string>
-    <string name="role_name_official_catalog">Amino 百科</string>
+    <string name="role_name_official">AltAmino团队</string>
+    <string name="role_name_official_catalog">AltAmino 百科</string>
     <string name="role_official">官方的</string>
-    <string name="role_system">Amino团队</string>
+    <string name="role_system">AltAmino团队</string>
     <string name="rotate">旋转</string>
     <string name="rss_channel_filter_all">全部资源</string>
     <string name="rtc_chat_beauty_enlarger">美瞳</string>
@@ -2254,7 +2253,7 @@
     <string name="store">商店</string>
     <string name="store_current_wallet">你还有 %1$s 个金币。</string>
     <string name="store_current_wallet_1">你还剩余1个金币。</string>
-    <string name="store_extra_hint_membership">Amino会员只需花费%1$s购买</string>
+    <string name="store_extra_hint_membership">AltAmino会员只需花费%1$s购买</string>
     <string name="store_extra_hint_membership_origin_price">原始价格：%1$s</string>
     <string name="store_extra_hint_membership_save">你节省了%1$s金币</string>
     <string name="store_item_renew_close_warning">你确定要关闭这个头像边框的自动续费吗？</string>
@@ -2313,7 +2312,7 @@
     <string name="submitted">已提交</string>
     <string name="submitted_by">提交者：</string>
     <string name="subscribe">订阅</string>
-    <string name="subscribe_amino_tint_info">Amino+会员可以解锁所有的优质商品。</string>
+    <string name="subscribe_amino_tint_info">AltAmino+会员可以解锁所有的优质商品。</string>
     <string name="subscribe_amino_tint_try_today">今日免费试用！</string>
     <string name="subscription_empty_hint">你还没有任何订阅。</string>
     <string name="subscriptions">订阅</string>
@@ -2340,7 +2339,7 @@
     <string name="tap_to_join">联合主播</string>
     <string name="tap_to_open_it">点击来打开。</string>
     <string name="task_complete">完成！</string>
-    <string name="tax_number">Amino税费：%1$s</string>
+    <string name="tax_number">AltAmino税费：%1$s</string>
     <string name="tell_friend">告诉一位朋友</string>
     <string name="template">样本</string>
     <string name="text">文字</string>

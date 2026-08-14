@@ -21,6 +21,7 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
         <item name="themeAmino">true</item>
         <item name="themeTranslucentStatus">true</item>
     </style>
@@ -31,6 +32,7 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
         <item name="themeAmino">true</item>
         <item name="themeDark">true</item>
         <item name="themeTranslucentStatus">true</item>
@@ -1091,7 +1093,7 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
-    <style name="DialogAlert" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth">
+    <style name="DialogAlert" parent="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowTitleStyle">@android:style/TextAppearance.Holo.DialogWindowTitle</item>

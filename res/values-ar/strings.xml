@@ -29,7 +29,7 @@
     <string name="account">حساب</string>
     <string name="account_agreement">أوافق على أمينو %1$s و %2$s .</string>
     <string name="account_agreement_error">أنت بحاجة إلى الموافقة على شروط الخدمة وسياسة الخصوصية من أجل التسجيل.</string>
-    <string name="account_amino_id">Amino ID</string>
+    <string name="account_amino_id">AltAmino ID</string>
     <string name="account_avatar_missing">اخفاق في تحميل الصورة. تستطيع تحديث البروفايل لاحقا. (%1$s)</string>
     <string name="account_change">تغيير</string>
     <string name="account_change_password">تغيير كلمة المرور</string>
@@ -49,7 +49,7 @@
     <string name="account_finish_signup_notification">لم تنتهي التسجيل في %1$s أمينو بعد. انقر هنا للمتابعة.</string>
     <string name="account_forget_password">نسيت كلمة المرور؟</string>
     <string name="account_google">جوجل</string>
-    <string name="account_have_no_account_now">ليس لديك حساب Amino بعد.</string>
+    <string name="account_have_no_account_now">ليس لديك حساب AltAmino بعد.</string>
     <string name="account_hint_nickname">اسم المستخدم</string>
     <string name="account_hint_photo">صورة</string>
     <string name="account_invalid_email">البريد الإلكتروني غير صالح!</string>
@@ -174,7 +174,7 @@
     <string name="album_locked_message">تم تعيين هذا الألبوم “للقراءة فقط” من قبل القادة و &amp; المنسقين.</string>
     <string name="album_read_only_message">يحق فقط للقادة و &amp; المنسقين تعديل معلومات هذا الألبوم وإضافة/إزالة الصور.</string>
     <string name="albums">الألبومات</string>
-    <string name="alert_coin_not_enough_renew_avatar_frame">لم نتمكن من تجديد إطارات ملفك الشخصي لأنك لا تملك قروش كافية او نظراً لانتهاء عضوية Amino+.</string>
+    <string name="alert_coin_not_enough_renew_avatar_frame">لم نتمكن من تجديد إطارات ملفك الشخصي لأنك لا تملك قروش كافية او نظراً لانتهاء عضوية AltAmino+.</string>
     <string name="alert_coin_not_enough_renew_fan_club">ليس لديك ما يكفي من القروش لتجديد اشتراك عضوية نادي المعجبين تلقائيًا.</string>
     <string name="alert_coin_not_enough_renew_membership">ليس لديك ما يكفي من القروش لتجديد عضويتك.</string>
     <string name="alert_new_deduction_coupon_not_used">لقد حصلت على 100 قرش. إستخدمهم وإلا ستخسرهم.</string>
@@ -233,10 +233,10 @@
     <string name="amino_bonus">بونس من أمينو: %1$s</string>
     <string name="amino_card">بطاقة منتدى أمينو</string>
     <string name="amino_disabled">عذراً، تم تعطيل هذا المنتدى.</string>
-    <string name="amino_id_copied">تم نسخ Amino ID</string>
-    <string name="amino_id_illegal_limit">Amino ID غير صالح</string>
-    <string name="amino_id_length_limit">لا يمكن أن يتجاوز Amino ID %1$d أحرف.</string>
-    <string name="amino_id_with_name">Amino ID: %1$s</string>
+    <string name="amino_id_copied">تم نسخ AltAmino ID</string>
+    <string name="amino_id_illegal_limit">AltAmino ID غير صالح</string>
+    <string name="amino_id_length_limit">لا يمكن أن يتجاوز AltAmino ID %1$d أحرف.</string>
+    <string name="amino_id_with_name">AltAmino ID: %1$s</string>
     <string name="amino_plus">أمينو+</string>
     <string name="amino_staff_message">هذا المستخدم هو موظف رسمي في فريق أمينو.</string>
     <string name="amino_team_profile_hint">اقتراحاتك تهمنا، ونحب أن نسمع منك!</string>
@@ -356,7 +356,7 @@
     <string name="can_not_the_video">عفواً، لا يمكنك تعديل مشاهد قصة بعد نشرها.</string>
     <string name="can_not_turn_on_when_private">لا يمكنك تشغيل هذه التنبيهات عندما تكون على الوضع الخاص.</string>
     <string name="cancel">إلغاء</string>
-    <string name="cancel_fan_club_auto_renew_hint">"من أجل ترك هذا المنتدى، تحتاج إلى إلغاء اشتراكك في نادي المعجبين بالذهاب إلى Amino:
+    <string name="cancel_fan_club_auto_renew_hint">"من أجل ترك هذا المنتدى، تحتاج إلى إلغاء اشتراكك في نادي المعجبين بالذهاب إلى AltAmino:
  إعدادات > نوادي المعجبين الخاصه بي"</string>
     <string name="canceled">تم الإلغاء</string>
     <string name="catalog">وكيبيديا</string>
@@ -494,7 +494,7 @@
     <string name="chat_not_present">غير موجود</string>
     <string name="chat_open">فتح</string>
     <string name="chat_organizer">المضيف</string>
-    <string name="chat_organizer_responsible">إن المضيف هو المسؤول عن إدارة المحادثة وضمان الإمتثال لإرشادات وقواعد Amino.</string>
+    <string name="chat_organizer_responsible">إن المضيف هو المسؤول عن إدارة المحادثة وضمان الإمتثال لإرشادات وقواعد AltAmino.</string>
     <string name="chat_participation_mode_text_only">نص فقط</string>
     <string name="chat_participation_mode_video_voice">فيديو</string>
     <string name="chat_participation_mode_voice_only">صوت</string>
@@ -518,7 +518,7 @@
     <string name="chat_to_new_members">رحب بالأعضاء الجدد!</string>
     <string name="chat_unknown_type">رسالة غير معروفة. يرجى تحديث التطبيق إلى أجدد إصدار.</string>
     <string name="chat_unpin_fast">إزالة التثبيت</string>
-    <string name="chat_video_membership_hint">يجب أن تكون عضواً في Amino+ لتحميل فيديو في الدردشات.</string>
+    <string name="chat_video_membership_hint">يجب أن تكون عضواً في AltAmino+ لتحميل فيديو في الدردشات.</string>
     <string name="chat_view_profile">عرض البروفايل</string>
     <string name="chatroom">غرفة دردشة</string>
     <string name="chats">دردشات</string>
@@ -646,7 +646,7 @@
     <string name="community_detail">التفاصيل</string>
     <string name="community_detail_empty_content">وصف فارغ</string>
     <string name="community_entering">جاري الدخول...</string>
-    <string name="community_id">Amino ID</string>
+    <string name="community_id">AltAmino ID</string>
     <string name="community_join_request_approve">تم قبول طلب الإنضمام</string>
     <string name="community_join_request_reject">تم رفض طلب الإنضمام</string>
     <string name="community_join_request_sent">تم تسليم الطلب</string>
@@ -658,7 +658,7 @@
     <string name="community_request_title">اكتب ملاحظة!</string>
     <string name="community_requested_before">طلبت الإنضمام إلى هذا المنتدى سابقاً.</string>
     <string name="community_search_keywords">نتائج البحث بواسطة الكلمات المفتاحية</string>
-    <string name="community_search_matched">مطابقة مع Amino ID / الرابط</string>
+    <string name="community_search_matched">مطابقة مع AltAmino ID / الرابط</string>
     <string name="community_send_request">إرسال الطلب</string>
     <string name="community_setup">إعداد المنتدى</string>
     <string name="complete_your_profile">اكمل بروفايلك</string>
@@ -693,7 +693,6 @@
     <string name="copy_link">نسخ الرابط</string>
     <string name="copy_to_my_favorites">ثبت إلى بروفايلك</string>
     <string name="copyright_all_rights_reserved">جميع الحقوق محفوظة.</string>
-    <string name="copyright_narvii_inc">©2021 Narvii Inc.</string>
     <string name="coupons">قسائم</string>
     <string name="coupons_title">قسائم</string>
     <string name="coupons_title_with_discount">قسائم: -%1$d</string>
@@ -902,13 +901,13 @@
     <string name="echo_hint">قم بتوصيل سماعات الأذن للحصول على أفضل تجربة.</string>
     <string name="edit">تعديل</string>
     <string name="edit_album_info">تعديل معلومات الألبوم</string>
-    <string name="edit_amino_id">تعديل Amino ID</string>
-    <string name="edit_amino_id_hint">"لا يمكنك تغيير Amino ID مرة أخرى بعد تعيينه، وسيتم عرضه تماماً كما هو مكتوب! يجب أن يتبع Amino ID هذه القواعد: 
+    <string name="edit_amino_id">تعديل AltAmino ID</string>
+    <string name="edit_amino_id_hint">"لا يمكنك تغيير AltAmino ID مرة أخرى بعد تعيينه، وسيتم عرضه تماماً كما هو مكتوب! يجب أن يتبع AltAmino ID هذه القواعد: 
 - يمكن أن يحتوي فقط على أحرف وأرقام وشرطات سفلية وواصلات 
 - يجب أن يبدأ برقم أو حرف 
 - لا يمكن أن يكون له شرطات سفلية أو واصلات متوالية 
 - يجب أن يكون بين %1$d - %2$d أحرف"</string>
-    <string name="edit_amino_id_hint_simple">لن تتمكن من تغيير Amino ID بعد تعيينه.</string>
+    <string name="edit_amino_id_hint_simple">لن تتمكن من تغيير AltAmino ID بعد تعيينه.</string>
     <string name="edit_announcement">تعديل الإعلان</string>
     <string name="edit_announcement_hint">أضف إعلانك هنا...</string>
     <string name="edit_bio">تعديل السيرة الذاتية</string>
@@ -948,8 +947,8 @@
     <string name="enter_community">ادخل المنتدى</string>
     <string name="enter_confirmation_code">أدخل شفرة التحقق</string>
     <string name="enter_invitation_code">ادخل رابط / رمز الدعوة</string>
-    <string name="enter_password_to_link_account">الرجاء إدخال كلمة مرور Amino لربط %1$s حسابك</string>
-    <string name="enter_password_to_remove_account">الرجاء إدخال كلمة مرور Amino لإزالة %1$s حسابك</string>
+    <string name="enter_password_to_link_account">الرجاء إدخال كلمة مرور AltAmino لربط %1$s حسابك</string>
+    <string name="enter_password_to_remove_account">الرجاء إدخال كلمة مرور AltAmino لإزالة %1$s حسابك</string>
     <string name="error">خطأ</string>
     <string name="everyone">الجميع</string>
     <string name="existing">موجود</string>
@@ -1013,7 +1012,7 @@
     <string name="favorite_user_not_available">للأسف، لقد ترك هذا العضو المنتدى.</string>
     <string name="fcm_fallback_notification_channel_label">متنوعة</string>
     <string name="feature_chat_time_hint">إلى متى تريد عرض غرفة الدردشة هذه؟</string>
-    <string name="feature_hint">هذه الخاصية ليست متاحة للجميع بعد. يمكنك الوصول مبكراً إلى هذه الخاصية عبر الانضمام إلى Amino+.</string>
+    <string name="feature_hint">هذه الخاصية ليست متاحة للجميع بعد. يمكنك الوصول مبكراً إلى هذه الخاصية عبر الانضمام إلى AltAmino+.</string>
     <string name="feature_post">انشر هذه المشاركة</string>
     <string name="feature_this_member">ميز هذا العضو</string>
     <string name="feature_time_1_day">1 يوم</string>
@@ -1107,7 +1106,7 @@
     <string name="flg_message_info">للإبلاغ عن رسالة، يرجى الضغط على اسم الدردشة في الجانب العلوي الأيسر من غرفة المشاهدة وثم الابلاغ عن الرسالة.</string>
     <string name="flg_participant_info">للإبلاغ عن عضو، يرجى الضغط على الافاتار لسحب البروفايل المصغر للعضو حيث ستجد زر الإبلاغ على أعلى الجانب الأيسر.</string>
     <string name="flip_camera">قلب الكاميرا</string>
-    <string name="floating_permission_message_live">إذا كنت ترغب في تصفح Amino أثناء الدردشة المباشرة، اضغط فوق \"موافق\" وقم بتبديل \"أذونات السماح\" في إعدادات النظام.</string>
+    <string name="floating_permission_message_live">إذا كنت ترغب في تصفح AltAmino أثناء الدردشة المباشرة، اضغط فوق \"موافق\" وقم بتبديل \"أذونات السماح\" في إعدادات النظام.</string>
     <string name="floating_permission_title">نحن بحاجة إلى إذنك!</string>
     <string name="folder_empty">هذا الملف فارغ حالياً</string>
     <string name="folders">ملفات</string>
@@ -1194,7 +1193,7 @@
     <string name="host">مضيف</string>
     <string name="host_co_host_invite_others_to_speak">يجب دعوة الأعضاء مباشرة بواسطة المضيف أو المضيف المشارك لتكون مشاركًا صوتيًا.</string>
     <string name="hot">مشوقة</string>
-    <string name="iab_billing_unavailable_message">فشل الشراء. يرجى التأكد من وجود أحدث نسخة من Google Play على جهازك، وتنزيل Amino من Google Play قبل المحاولة مرة أخرى.</string>
+    <string name="iab_billing_unavailable_message">فشل الشراء. يرجى التأكد من وجود أحدث نسخة من Google Play على جهازك، وتنزيل AltAmino من Google Play قبل المحاولة مرة أخرى.</string>
     <string name="id_with_name">ID: %1$s</string>
     <string name="ignore">تجاهل</string>
     <string name="ignore_the_changes_for_the_polls">لا يمكن تعديل الاستطلاعات التي لديها 5 أصوات أو أكثر:</string>
@@ -1222,7 +1221,7 @@
     <string name="insert_link_btn">ادخال</string>
     <string name="insert_link_hint">عنوان الرابط (اختيارى)</string>
     <string name="insert_link_title">ادخال رابط</string>
-    <string name="interest_picker_age_hint">عذراً، لست في السن القانوني لاستخدام Amino.</string>
+    <string name="interest_picker_age_hint">عذراً، لست في السن القانوني لاستخدام AltAmino.</string>
     <string name="interest_picker_age_picker">ادخل عمرك</string>
     <string name="interest_picker_main_interest_hint">خصص المحتوى الذي تراه.</string>
     <string name="interest_picker_main_interest_title">اختر %1$d أو أكثر من الاهتمامات</string>
@@ -1444,7 +1443,7 @@
     <string name="membership_earn_coins">اكسب قروش مجانية ></string>
     <string name="membership_error_not_supported">حالة العضوية غير مدعومة. يرجى الاتصال بنا من خلال مركز المساعدة https://support.altamino.top.</string>
     <string name="membership_error_renew_in_ios">تم شراء اشتراكك عبر متجر Apple App Store. يجب الانتظار حتى تنتهي صلاحيتها إذا كنت ترغب في تجديدها على Google Play.</string>
-    <string name="membership_error_renew_in_master">تم شراء اشتراكك في تطبيق Amino Master. يجب عليك تجديده في نفس التطبيق.</string>
+    <string name="membership_error_renew_in_master">تم شراء اشتراكك في تطبيق AltAmino Master. يجب عليك تجديده في نفس التطبيق.</string>
     <string name="membership_error_renew_in_standalone">تم شراء اشتراكك في تطبيق (%1$s) المستقل. يجب عليك تجديده في نفس التطبيق.</string>
     <string name="membership_error_renew_no_purchase">تم شراء اشتراكك على حساب آخر في Google Play. يجب الانتظار حتى تنتهي صلاحيتها إذا كنت ترغب في تجديدها على حساب Google Play الحالي الخاص بك.</string>
     <string name="membership_expire_warning_0">انتهت صلاحية اشتراكك في +Amino .</string>
@@ -1917,7 +1916,7 @@
     <string name="personal_data">بيانات شخصية</string>
     <string name="personal_data_msg">عدم مشاركة بياناتي الشخصية</string>
     <string name="personal_data_msg2">سيعطل خيار الإيقاف تجربتك الشخصية ويؤدي لظهور عدد أقل من الإعلانات ذات الصلة.</string>
-    <string name="phone_number_change_desc">لن نشارك رقم هاتفك مع الآخرين. اقرأ سياسة Amino للخصوصية لمعرفة المزيد.</string>
+    <string name="phone_number_change_desc">لن نشارك رقم هاتفك مع الآخرين. اقرأ سياسة AltAmino للخصوصية لمعرفة المزيد.</string>
     <string name="photo">صورة</string>
     <string name="photo_disabled_message">لا يمكن للآخرين مشاهدة هذه الصورة لأنها خالفت القواعد والإرشادات</string>
     <string name="photo_library">"مكتبة الصور "</string>
@@ -2146,7 +2145,7 @@
     <string name="publish_to_global">نشر للعام</string>
     <string name="publish_to_global_comfirm">تمكين خاصية \"النشر للعام\" سيعطل \"للمعجبين فقط\" وسيجعل هذه القصة عامة. هل أنت متأكد من تغيير \"للمعجبين فقط\" الى \"نشر للعام\"؟</string>
     <string name="publish_to_global_limit">لا يمكنك تمكين \"نشر للعام\" على غرفة دردشة في منتدى خاص.</string>
-    <string name="purchase_benefits_amino_plus_hint_text">بعد الشهر الأول، ستكون هناك رسوم متكررة تبلغ %1$s قروش في الشهر لـ Amino+.</string>
+    <string name="purchase_benefits_amino_plus_hint_text">بعد الشهر الأول، ستكون هناك رسوم متكررة تبلغ %1$s قروش في الشهر لـ AltAmino+.</string>
     <string name="purchase_benefits_amino_plus_hint_title">يأتي هذا الإطار مع أمينو+.</string>
     <string name="purchase_dialog_title">ضع طلبك</string>
     <string name="purchase_guide_to_master_dialog_content">لإكمال عملية الشراء ، يجب عليك تحميل تطبيق أمينو الرئيسي.</string>
@@ -2329,7 +2328,7 @@
     <string name="role_name_official">فريق أمينو</string>
     <string name="role_name_official_catalog">وكيبيديا أمينو</string>
     <string name="role_official">رسمي</string>
-    <string name="role_system">فريق عمل Amino</string>
+    <string name="role_system">فريق عمل AltAmino</string>
     <string name="room_come_live_hint_live">غرفة الدردشة هذه على وشك البدء في الوضع المباشر! هل ترغب في إنهاء الدردشة المباشرة الأخرى والانضمام إلى هذه الدردشة؟</string>
     <string name="rotate">استدارة</string>
     <string name="rss_channel_filter_all">جميع المصادر</string>
@@ -2398,7 +2397,7 @@
     <string name="search_catalog_hint">ادخل كلمات مفتاحية</string>
     <string name="search_chats">دردشات</string>
     <string name="search_collections">مقالات وكيبيديا</string>
-    <string name="search_community">الكلمات الرئيسية / الرابط / Amino ID</string>
+    <string name="search_community">الكلمات الرئيسية / الرابط / AltAmino ID</string>
     <string name="search_empty_info1">لم يتم العثور على هذا المنتدى</string>
     <string name="search_for_a_chat">إبحث عن دردشة</string>
     <string name="search_for_a_post">إبحث عن منشورة</string>
@@ -2509,10 +2508,10 @@
     <string name="share_media_text">تمت المشاركة من %1$s</string>
     <string name="share_messenger">مسنجر</string>
     <string name="share_on_amino">شارك على أمينو</string>
-    <string name="share_other_global_profile_text">تحقق من هذا البروفايل على Amino</string>
+    <string name="share_other_global_profile_text">تحقق من هذا البروفايل على AltAmino</string>
     <string name="share_other_profile_text_template">تحقق من هذا البروفايل على %1$s</string>
     <string name="share_others">اخرى</string>
-    <string name="share_own_global_profile_text">تحقق من بروفايلي على Amino</string>
+    <string name="share_own_global_profile_text">تحقق من بروفايلي على AltAmino</string>
     <string name="share_own_profile_text_template">تحقق من بروفايلي على %1$s</string>
     <string name="share_pinterest">Pinterest</string>
     <string name="share_pinterest_hint1">تذكر أن تلصق الرابط في وصف صورة Pinterest الخاص بك.</string>
@@ -2520,7 +2519,7 @@
     <string name="share_quiz_link_instagram_hint1">غلبت %1$s من لاعبين هذا %2$s الإختبار</string>
     <string name="share_quiz_link_instagram_hint2">هذا %1$s الإختبار يستحق المشاهدة!</string>
     <string name="share_reddit">Reddit</string>
-    <string name="share_reddit_hint1">ألف منشورة صور على reddit واربط كرت إختبار Amino من مكتبة صورك.</string>
+    <string name="share_reddit_hint1">ألف منشورة صور على reddit واربط كرت إختبار AltAmino من مكتبة صورك.</string>
     <string name="share_reddit_hint2">تذكر أن تلصق الرابط في عنوان Reddit الخاص بك.</string>
     <string name="share_reddit_hint_community">ألف منشورة صور على Reddit وأربط بطاقة منتدى أمينو من مكتبة صورك.</string>
     <string name="share_shared_album_text_template">Check out the %1$S album from %2$S</string>
@@ -2530,7 +2529,7 @@
     <string name="share_snapchat_hint1">تذكر أن تلصق الرابط في موضوع الدردشة حتى أصدقائك يمكنهم العثور عليه!</string>
     <string name="share_sticker_empty">لا توجد حزم ملصقات مشتركة حتى الآن.</string>
     <string name="share_store_item_text_template">شاهد ماذا وجدت على أمينو: %1$s</string>
-    <string name="share_story_topic_text_template">عليك أن تتحقق من \"%1$s\" على Amino!</string>
+    <string name="share_story_topic_text_template">عليك أن تتحقق من \"%1$s\" على AltAmino!</string>
     <string name="share_tag_quiz">#إختبار</string>
     <string name="share_template_1">تحقق من هذه المشاركة على %1$s</string>
     <string name="share_text_default_template">تحقق من هذا:</string>
@@ -2580,7 +2579,7 @@
     <string name="speed_clip_too_short_hint">يجب ألا تقل مدة مقاطع الفيديو عن ثانية واحدة.</string>
     <string name="split">Split</string>
     <string name="standalone_deprecated_button">حمل الآن</string>
-    <string name="standalone_deprecated_message">لن يتم تحديث هذا التطبيق المستقل في المستقبل. لمواصلة الاستخدام، يجب تحميل تطبيق Amino الرئيسي. سيتم نقل منشوراتك ومتابعينك ونقاطك على الفور.</string>
+    <string name="standalone_deprecated_message">لن يتم تحديث هذا التطبيق المستقل في المستقبل. لمواصلة الاستخدام، يجب تحميل تطبيق AltAmino الرئيسي. سيتم نقل منشوراتك ومتابعينك ونقاطك على الفور.</string>
     <string name="standalone_deprecated_title">نحن نقلنا!</string>
     <string name="start">ابدأ</string>
     <string name="start_a_chat">بدء الدردشة!</string>
@@ -2869,7 +2868,7 @@
     <string name="users_favorites">مقالات وكيبيديا ل %1$s</string>
     <string name="verify_email">تثبيت الايميل</string>
     <string name="verify_number">تحقق</string>
-    <string name="verify_number_desc">اضغط فوق التحقق من الرقم للحصول على رمز التحقق في رسالة قصيرة من Amino. قد تُطبّق رسوم الرسائل القصيرة المعتادة.</string>
+    <string name="verify_number_desc">اضغط فوق التحقق من الرقم للحصول على رمز التحقق في رسالة قصيرة من AltAmino. قد تُطبّق رسوم الرسائل القصيرة المعتادة.</string>
     <string name="verifying">جاري التحقق...</string>
     <string name="version_fmt">اصدار %1$s</string>
     <string name="video">فيديو</string>

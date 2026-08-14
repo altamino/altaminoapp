@@ -29,7 +29,51 @@
 .method public draw(Landroid/graphics/Canvas;)Z
     .locals 0
 
+    invoke-virtual {p0}, Landroid/widget/EdgeEffect;->finish()V
+
     const/4 p1, 0x0
 
     return p1
+.end method
+
+.method public onAbsorb(I)V
+    .locals 0
+
+    invoke-virtual {p0}, Landroid/widget/EdgeEffect;->finish()V
+
+    return-void
+.end method
+
+.method public onPull(F)V
+    .locals 0
+
+    invoke-virtual {p0}, Landroid/widget/EdgeEffect;->finish()V
+
+    return-void
+.end method
+
+.method public onPull(FF)V
+    .locals 0
+
+    invoke-virtual {p0}, Landroid/widget/EdgeEffect;->finish()V
+
+    return-void
+.end method
+
+.method public onPullDistance(FF)F
+    .locals 1
+
+    invoke-virtual {p0}, Landroid/widget/EdgeEffect;->finish()V
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public onRelease()V
+    .locals 0
+
+    invoke-virtual {p0}, Landroid/widget/EdgeEffect;->finish()V
+
+    return-void
 .end method

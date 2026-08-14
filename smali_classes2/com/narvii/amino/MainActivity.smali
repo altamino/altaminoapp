@@ -613,6 +613,9 @@
     .line 113
     invoke-virtual {v0, v2}, Lcom/narvii/app/theme/NVThemeActivity;->setContentView(I)V
 
+    .line 116
+    invoke-static {v0}, Lcom/narvii/util/UpdateChecker;->checkAndShow(Landroid/content/Context;)V
+
     const-string v2, "config"
 
     .line 114

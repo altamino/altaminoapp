@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Amino_plus_membership">Amino+ membership</string>
+    <string name="Amino_plus_membership">AltAmino+ membership</string>
     <string name="Others_require_approval_to_speak">Members require approval to be a Voice Participant</string>
     <string name="_copy">Copy</string>
     <string name="_default">Default</string>
@@ -40,9 +40,9 @@
     <string name="accept">Accept</string>
     <string name="accept_sticker_confirm">Are you sure you want to accept this sticker pack?</string>
     <string name="account">Account</string>
-    <string name="account_agreement">"I agree to Amino's %1$s and %2$s."</string>
+    <string name="account_agreement">"I agree to AltAmino's %1$s and %2$s."</string>
     <string name="account_agreement_error">You need to agree to the Terms of Service and Privacy Policy in order to sign up.</string>
-    <string name="account_amino_id">Amino ID</string>
+    <string name="account_amino_id">AltAmino ID</string>
     <string name="account_avatar_missing">Failed to upload picture. You can update your profile later. (%1$s)</string>
     <string name="account_change">Change</string>
     <string name="account_change_password">Change Password</string>
@@ -59,10 +59,10 @@
     <string name="account_enter_phone">Enter your phone number</string>
     <string name="account_error_email_registered">This email has already been registered by another account.</string>
     <string name="account_facebook">Trashbook</string>
-    <string name="account_finish_signup_notification">"You haven't finished signing up to %1$s Amino yet. Tap here to continue."</string>
+    <string name="account_finish_signup_notification">"You haven't finished signing up to %1$s AltAmino yet. Tap here to continue."</string>
     <string name="account_forget_password">Forgot Password?</string>
     <string name="account_google">Google</string>
-    <string name="account_have_no_account_now">You don’t have an Amino account yet.</string>
+    <string name="account_have_no_account_now">You don’t have an AltAmino account yet.</string>
     <string name="account_hint_nickname">Username</string>
     <string name="account_hint_photo">Photo</string>
     <string name="account_invalid_email">Invalid email address!</string>
@@ -182,7 +182,7 @@
     <string name="age_gating_hint1">You must be <b>at least 16 years old</b>" to register. Your birthday won't be shown publicly."</string>
     <string name="age_gating_hint1_13">You must be <b>at least 13 years old</b>" to register. Your birthday won't be shown publicly."</string>
     <string name="age_gating_hint2">"Your birthday won't be shown publicly."</string>
-    <string name="age_gating_message">Sorry, you are not eligible to create an Amino account.</string>
+    <string name="age_gating_message">Sorry, you are not eligible to create an AltAmino account.</string>
     <string name="agora_app_id_dev">94c566a87b534307830a74602c909166</string>
     <string name="agora_app_id_dev_screen_room">94c566a87b534307830a74602c909166</string>
     <string name="agora_app_id_dev_video">94c566a87b534307830a74602c909166</string>
@@ -195,7 +195,7 @@
     <string name="album_locked_message">This album has been set to “Read Only” by the Leaders &amp; Curators.</string>
     <string name="album_read_only_message">Only Leaders &amp; Curators can edit this album’s info and add/remove photos.</string>
     <string name="albums">Albums</string>
-    <string name="alert_coin_not_enough_renew_avatar_frame">"We couldn't renew your Profile Frames because you either don't have enough Coins or your Amino+ membership has expired."</string>
+    <string name="alert_coin_not_enough_renew_avatar_frame">"We couldn't renew your Profile Frames because you either don't have enough Coins or your AltAmino+ membership has expired."</string>
     <string name="alert_coin_not_enough_renew_fan_club">"You don't have enough Coins to auto renew your Fan Club subscription."</string>
     <string name="alert_coin_not_enough_renew_membership">"You don't have enough Coins to auto renew your membership."</string>
     <string name="alert_new_deduction_coupon_not_used">You received a credit for 100 Coins. Use it or lose it!</string>
@@ -246,7 +246,7 @@
     <string name="all_titles">All Titles</string>
     <string name="all_uppercase">ALL</string>
     <string name="allow">Allow</string>
-    <string name="allow_amino_permission">Allow Amino the following permissions?</string>
+    <string name="allow_amino_permission">Allow AltAmino the following permissions?</string>
     <string name="allow_commenting_on_my_profile">Allow Commenting On My Profile</string>
     <string name="allow_commenting_on_this_post">Allow Comments on this Post</string>
     <string name="allow_inbound_chat_requests">Allow Inbound Chat Requests</string>
@@ -262,14 +262,14 @@
     <string name="amazon_unitid_mrec_abovecomment">31c79f0b-fd27-411d-b217-b210ee327224</string>
     <string name="amazon_unitid_mrec_feed">bbe202e7-2868-4033-8081-7e3c8056e9df</string>
     <string name="amazon_unitid_mrec_postbody">f3d14454-51fd-4550-9de2-45c8748ee1b1</string>
-    <string name="amino_bonus">Amino bonus: %1$s</string>
-    <string name="amino_card">Amino Community Card</string>
+    <string name="amino_bonus">AltAmino bonus: %1$s</string>
+    <string name="amino_card">AltAmino Community Card</string>
     <string name="amino_disabled">This Community has been disabled.</string>
-    <string name="amino_id_copied">Amino ID Copied</string>
-    <string name="amino_id_illegal_limit">Invalid Amino ID</string>
-    <string name="amino_id_length_limit">Amino ID cannot exceed %1$d characters.</string>
-    <string name="amino_id_with_name">Amino ID: %1$s</string>
-    <string name="amino_plus">Amino+</string>
+    <string name="amino_id_copied">AltAmino ID Copied</string>
+    <string name="amino_id_illegal_limit">Invalid AltAmino ID</string>
+    <string name="amino_id_length_limit">AltAmino ID cannot exceed %1$d characters.</string>
+    <string name="amino_id_with_name">AltAmino ID: %1$s</string>
+    <string name="amino_plus">AltAmino+</string>
     <string name="amino_staff_message">This user is an official staff member of Team AltAmino.</string>
     <string name="amino_team_profile_hint">Your feedback is important to us, and we would love to hear from you!</string>
     <string name="analyzing">Analyzing…</string>
@@ -325,7 +325,7 @@
     <string name="APKTOOL_DUMMY_142" />
     <string name="APKTOOL_DUMMY_143" />
     <string name="avatar_created">Avatar created!</string>
-    <string name="avatar_frame_auto_renew_hint">You must have an Amino+ membership to auto-renew a profile frame.</string>
+    <string name="avatar_frame_auto_renew_hint">You must have an AltAmino+ membership to auto-renew a profile frame.</string>
     <string name="avatar_frame_expired_0_day">Your frame has just expired</string>
     <string name="avatar_frame_expired_1_day">Your frame expired 1 day ago</string>
     <string name="avatar_frame_expired_n_day">Your frame expired %1$d days ago</string>
@@ -404,7 +404,7 @@
     <string name="can_not_the_video">"Oops, you can't edit the Scenes of a Story after it's published."</string>
     <string name="can_not_turn_on_when_private">You can’t turn on these notifications while in Private Mode.</string>
     <string name="cancel">Cancel</string>
-    <string name="cancel_fan_club_auto_renew_hint">"In order to leave this Community, you need to cancel your Fan Club subscription by going to Amino:
+    <string name="cancel_fan_club_auto_renew_hint">"In order to leave this Community, you need to cancel your Fan Club subscription by going to AltAmino:
 Settings > My Fan Clubs"</string>
     <string name="canceled">Cancelled</string>
     <string name="catalog">Wiki</string>
@@ -560,7 +560,7 @@ Settings > My Fan Clubs"</string>
     <string name="chat_online_bar_active_member_one">1</string>
     <string name="chat_open">Open</string>
     <string name="chat_organizer">Host</string>
-    <string name="chat_organizer_responsible">"The Host is responsible for moderating the chat and guaranteeing everyone's compliance with the Amino guidelines."</string>
+    <string name="chat_organizer_responsible">"The Host is responsible for moderating the chat and guaranteeing everyone's compliance with the AltAmino guidelines."</string>
     <string name="chat_participation_mode_text_only">Text Only</string>
     <string name="chat_participation_mode_video_voice">Video</string>
     <string name="chat_participation_mode_voice_only">Voice</string>
@@ -584,7 +584,7 @@ Settings > My Fan Clubs"</string>
     <string name="chat_to_new_members">Welcome our new members!</string>
     <string name="chat_unknown_type">Unknown message type. Please upgrade your app to the latest version.</string>
     <string name="chat_unpin_fast">Unpin</string>
-    <string name="chat_video_membership_hint">You must be an Amino+ member to upload a video in chats.</string>
+    <string name="chat_video_membership_hint">You must be an AltAmino+ member to upload a video in chats.</string>
     <string name="chat_view_profile">View Profile</string>
     <string name="chatroom">Chatroom</string>
     <string name="chats">Chats</string>
@@ -707,14 +707,14 @@ Settings > My Fan Clubs"</string>
     <string name="communities">Communities</string>
     <string name="communities_1">1 Community</string>
     <string name="communities_n">%1$d Communities</string>
-    <string name="community">Amino</string>
+    <string name="community">AltAmino</string>
     <string name="community_all_members">All Members</string>
     <string name="community_create_shortcut">Create Shortcut</string>
     <string name="community_create_shortcut_fail">Failed to download icon for shortcut</string>
     <string name="community_detail">Details</string>
     <string name="community_detail_empty_content">Empty Description</string>
     <string name="community_entering">Entering...</string>
-    <string name="community_id">Amino ID</string>
+    <string name="community_id">AltAmino ID</string>
     <string name="community_join_request_approve">Join Request Approved</string>
     <string name="community_join_request_reject">Join Request Rejected</string>
     <string name="community_join_request_sent">Request Submitted</string>
@@ -726,7 +726,7 @@ Settings > My Fan Clubs"</string>
     <string name="community_request_title">Leave a Note!</string>
     <string name="community_requested_before">You already requested to join this Community.</string>
     <string name="community_search_keywords">Search Results by Keywords</string>
-    <string name="community_search_matched">Matched by Amino ID / Link</string>
+    <string name="community_search_matched">Matched by AltAmino ID / Link</string>
     <string name="community_send_request">Send Request</string>
     <string name="community_setup">Community Setup</string>
     <string name="complete_your_profile">Complete Your Profile</string>
@@ -761,7 +761,8 @@ Settings > My Fan Clubs"</string>
     <string name="copy_link">Copy Link</string>
     <string name="copy_to_my_favorites">Pin to your profile</string>
     <string name="copyright_all_rights_reserved">All Rights Reserved.</string>
-    <string name="copyright_narvii_inc">Original app by Narvii Inc. Modified for work with AltAmino by imperialwool in 2024.</string>
+    <string name="copyright_narvii_inc">Modified for work with AltAmino
+by imperialwool and alertaigul in 2026.</string>
     <string name="coupons">Coupons</string>
     <string name="coupons_title">Coupons</string>
     <string name="coupons_title_with_discount">Coupons: -%1$d</string>
@@ -947,8 +948,8 @@ This doesn’t delete the photos in this album. To delete the photos, do so in t
     <string name="download_acm_hint">Download “Amino Community Manager” to manage your Community.</string>
     <string name="download_acm_message">Download “Amino Community Manager” to start your own Community.</string>
     <string name="download_audio_error">Failed to download music.</string>
-    <string name="download_master_info">In order to join this Community, you need to download the main Amino App.</string>
-    <string name="download_master_info_title">Main Amino App Required</string>
+    <string name="download_master_info">In order to join this Community, you need to download the main AltAmino App.</string>
+    <string name="download_master_info_title">Main AltAmino App Required</string>
     <string name="downloading">Downloading...</string>
     <string name="draft_untitled">Untitled</string>
     <string name="drag_to_sort">Drag to reorder</string>
@@ -963,7 +964,7 @@ This doesn’t delete the photos in this album. To delete the photos, do so in t
     <string name="duration_one_min">1 min</string>
     <string name="dynamic_cropping">Dynamic Cropping</string>
     <string name="earlier">Earlier</string>
-    <string name="earn_free_coins_empty">Earn while using Amino.</string>
+    <string name="earn_free_coins_empty">Earn while using AltAmino.</string>
     <string name="earn_free_coins_n">You would have earned %1$s coins if you had this enabled. Turn it on now!</string>
     <string name="earn_free_coins_r">Earn Free Coins</string>
     <string name="earn_free_coins_this_week">LAST 7 DAYS</string>
@@ -977,15 +978,15 @@ This doesn’t delete the photos in this album. To delete the photos, do so in t
     <string name="echo_hint">Plug in your earphones to get the best experience.</string>
     <string name="edit">Edit</string>
     <string name="edit_album_info">Edit Album Info</string>
-    <string name="edit_amino_id">Edit Amino ID</string>
-    <string name="edit_amino_id_hint">"You cannot change your Amino ID again after you set it, and it will display exactly as it's written (case-sensitive)!
+    <string name="edit_amino_id">Edit AltAmino ID</string>
+    <string name="edit_amino_id_hint">"You cannot change your AltAmino ID again after you set it, and it will display exactly as it's written (case-sensitive)!
 
-Amino ID must follow these rules:
+AltAmino ID must follow these rules:
 - Can only contain letters, numbers, underscores, and hyphens
 - Must start with a number or letter
 - Cannot have consecutive underscores or hyphens
 - Must be between %1$d - %2$d characters"</string>
-    <string name="edit_amino_id_hint_simple">"You won't be able to change your Amino ID after you set it."</string>
+    <string name="edit_amino_id_hint_simple">"You won't be able to change your AltAmino ID after you set it."</string>
     <string name="edit_announcement">Edit Announcement</string>
     <string name="edit_announcement_hint">Add your Announcement here...</string>
     <string name="edit_bio">Edit Bio</string>
@@ -1026,8 +1027,8 @@ Amino ID must follow these rules:
     <string name="enter_community">Enter Community</string>
     <string name="enter_confirmation_code">Enter verification code</string>
     <string name="enter_invitation_code">Enter the invitation code / link</string>
-    <string name="enter_password_to_link_account">Please enter your Amino password to link your %1$s account.</string>
-    <string name="enter_password_to_remove_account">Please enter your Amino password to remove your %1$s account.</string>
+    <string name="enter_password_to_link_account">Please enter your AltAmino password to link your %1$s account.</string>
+    <string name="enter_password_to_remove_account">Please enter your AltAmino password to remove your %1$s account.</string>
     <string name="error">Error</string>
     <string name="everyone">Everyone</string>
     <string name="existing">Existing</string>
@@ -1706,7 +1707,7 @@ Amino ID must follow these rules:
     <string name="favorite_user_not_available">Unfortunately, this member has left the community.</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="feature_chat_time_hint">How long do you want to feature this Chatroom for?</string>
-    <string name="feature_hint">This feature is not yet available for everyone. You can gain early access of this feature by joining Amino+.</string>
+    <string name="feature_hint">This feature is not yet available for everyone. You can gain early access of this feature by joining AltAmino+.</string>
     <string name="feature_post">Feature Post</string>
     <string name="feature_this_member">Feature This Member</string>
     <string name="feature_time_1_day">1 Day</string>
@@ -1735,7 +1736,7 @@ Amino ID must follow these rules:
     <string name="filter_results_count">%1$d results</string>
     <string name="finish_signing_up">Finish Signing Up</string>
     <string name="firebase_database_url"></string>
-    <string name="firebase_dynamic_link_host">aminoapps.page.link</string>
+    <string name="firebase_dynamic_link_host">AltAminoapps.page.link</string>
     <string name="first_check_in_message">Check back in tomorrow for bonus REP️</string>
     <string name="first_launch_notify_message">Did you know you can create your own Community for your friends, organization, club, etc.?</string>
     <string name="fixed">Fixed</string>
@@ -1805,7 +1806,7 @@ Amino ID must follow these rules:
     <string name="flg_participant_info">To flag a member, tap on their avatar to pull up the mini profile and you’ll find a flag icon on the top left-hand side.</string>
     <string name="flip_camera">Flip Camera</string>
     <string name="APKTOOL_DUMMY_704" />
-    <string name="floating_permission_message_live">If you want to browse Amino while you live chat, tap OK and toggle on Allow Permissions in the system settings.</string>
+    <string name="floating_permission_message_live">If you want to browse AltAmino while you live chat, tap OK and toggle on Allow Permissions in the system settings.</string>
     <string name="APKTOOL_DUMMY_706" />
     <string name="APKTOOL_DUMMY_707" />
     <string name="APKTOOL_DUMMY_708" />
@@ -1822,7 +1823,7 @@ Amino ID must follow these rules:
     <string name="forward_placeholder">This page is not available</string>
     <string name="free">Public</string>
     <string name="free_coins_offer_wall">Free Coins Offer Wall</string>
-    <string name="free_for_amino_plus">Free for Amino+ members</string>
+    <string name="free_for_amino_plus">Free for AltAmino+ members</string>
     <string name="free_for_everyone">Public Post</string>
     <string name="free_talk">Open to Everyone</string>
     <string name="from">From</string>
@@ -1914,7 +1915,7 @@ cannot play video"</string>
     <string name="ia_video_before_skip_format">Skip in (%d)</string>
     <string name="ia_video_download_text">Download</string>
     <string name="ia_video_skip_text">Skip Ad</string>
-    <string name="iab_billing_unavailable_message">Purchase failed. Please make sure your Google Play is up-to-date, and download Amino from Google Play before trying again.</string>
+    <string name="iab_billing_unavailable_message">Purchase failed. Please make sure your Google Play is up-to-date, and download AltAmino from Google Play before trying again.</string>
     <string name="iab_epk">cAvoI2blj4t2CTEYA5EMacq3E+H6BMGWGOaHRiSKgJIoF6/DAbJkbgJ1nSFcJ5TQ+EEQrRzhjclEOcssimaZ1jdYhbfrfajxECmbdUVSKHEZVgyq2NDgCjoXus9HtTIcxl4x93Oz2u5DHvifX/eBQuXPlrqz7HBKbnJ+2yadyDFhbjROl9qdfVkj4Pi9OxqjtQ0Mq+fE5Z+lU4fTrGder3kousXEDTqb454lFELu+doxcBUl1T+MklDdKW94zC36D7ZdZx9IqMnqk2ge4z2bMvS4tb8/Syb6JytmIIHewhL28Br5OGHQHFokXYzAOEeAOMxs4VX28Q6Aaez3x7/ecJQBfu7pLYg3OBCvsgyG22FzSPpfxacuUCFMDjQh+QZwrPjHqvYGLTMcU9v7A7TNDw==</string>
     <string name="id_with_name">ID:%1$s</string>
     <string name="ignore">Ignore</string>
@@ -1945,7 +1946,7 @@ cannot play video"</string>
     <string name="insert_link_btn">Insert</string>
     <string name="insert_link_hint">Link Title (optional)</string>
     <string name="insert_link_title">Insert Link</string>
-    <string name="interest_picker_age_hint">Sorry, you are not eligible to use Amino.</string>
+    <string name="interest_picker_age_hint">Sorry, you are not eligible to use AltAmino.</string>
     <string name="interest_picker_age_picker">"What's your age?"</string>
     <string name="APKTOOL_DUMMY_792" />
     <string name="interest_picker_main_interest_hint">Personalize the content you see.</string>
@@ -2731,7 +2732,7 @@ cannot play video"</string>
     <string name="item_sort_add_more">Select From My Wiki Entries</string>
     <string name="join">Join</string>
     <string name="join_a_community">Join a community</string>
-    <string name="join_amino_plus_streak_repair">Get 1 free Check-In Streak Repair for all your Communities each month with Amino+.</string>
+    <string name="join_amino_plus_streak_repair">Get 1 free Check-In Streak Repair for all your Communities each month with AltAmino+.</string>
     <string name="join_amio_hint">You need to join the %1$s Community to get this Profile Frame.</string>
     <string name="join_chat_note">You need to accept the invite first!</string>
     <string name="join_chat_note_public">Do you want to send messages in this chat?</string>
@@ -2907,7 +2908,7 @@ cannot play video"</string>
     <string name="media_youtube_verify_fail_title">Verification Failed!</string>
     <string name="member">Member</string>
     <string name="member_1">1 Member</string>
-    <string name="member_ship_only">You must be an Amino+ member to use this. Subscribe now!</string>
+    <string name="member_ship_only">You must be an AltAmino+ member to use this. Subscribe now!</string>
     <string name="members">Members</string>
     <string name="members_i_am_following">Members I’m following</string>
     <string name="members_n">%1$s Members</string>
@@ -2918,25 +2919,25 @@ cannot play video"</string>
     <string name="membership_earn_coins">Earn free coins ></string>
     <string name="membership_error_not_supported">Unsupported membership status. Please email Team AltAmino at support@altamino.top.</string>
     <string name="membership_error_renew_in_ios">Your subscription was purchased via the Apple App Store. You must wait until it expires if you want to renew it on Google Play.</string>
-    <string name="membership_error_renew_in_master">Your subscription was purchased in the Amino Master app. You have to renew it in the same app.</string>
+    <string name="membership_error_renew_in_master">Your subscription was purchased in the AltAmino Master app. You have to renew it in the same app.</string>
     <string name="membership_error_renew_in_standalone">Your subscription was purchased in the Standalone app (%1$s). You have to renew it in the same app.</string>
     <string name="membership_error_renew_no_purchase">Your subscription was purchased on another Google Play account. You must wait until it expires if you want to renew it on your current Google Play account.</string>
-    <string name="membership_expire_warning_0">Your Amino+ subscription has just expired.</string>
-    <string name="membership_expire_warning_1">Your Amino+ subscription expired 1 day ago.</string>
-    <string name="membership_expire_warning_n">Your Amino+ subscription expired %1$d days ago.</string>
-    <string name="membership_expire_warning_with_renew_0">Your Amino+ subscription has just expired. Renew it now!</string>
-    <string name="membership_expire_warning_with_renew_1">Your Amino+ subscription expired 1 day ago. Renew it now!</string>
-    <string name="membership_expire_warning_with_renew_n">Your Amino+ subscription expired %1$d days ago. Renew it now!</string>
+    <string name="membership_expire_warning_0">Your AltAmino+ subscription has just expired.</string>
+    <string name="membership_expire_warning_1">Your AltAmino+ subscription expired 1 day ago.</string>
+    <string name="membership_expire_warning_n">Your AltAmino+ subscription expired %1$d days ago.</string>
+    <string name="membership_expire_warning_with_renew_0">Your AltAmino+ subscription has just expired. Renew it now!</string>
+    <string name="membership_expire_warning_with_renew_1">Your AltAmino+ subscription expired 1 day ago. Renew it now!</string>
+    <string name="membership_expire_warning_with_renew_n">Your AltAmino+ subscription expired %1$d days ago. Renew it now!</string>
     <string name="membership_join_now">Join Now</string>
-    <string name="membership_logo_text">Amino+ Membership</string>
+    <string name="membership_logo_text">AltAmino+ Membership</string>
     <string name="membership_owned_coins">You have %1$s coins left.</string>
     <string name="membership_privileges_text_1">Unlock sticker packs tailored to your community, or even create your own.</string>
     <string name="membership_privileges_text_2">Moods for every feeling, updated all the time.</string>
     <string name="membership_privileges_text_3">Burst out of the bubble with fresh looks for your chats.</string>
-    <string name="membership_privileges_text_4">"Post the highest quality images Amino's ever seen, all the way up to 2048x2048."</string>
-    <string name="membership_privileges_text_5">Flaunt your status with an exclusive Amino+ profile badge.</string>
+    <string name="membership_privileges_text_4">"Post the highest quality images AltAmino's ever seen, all the way up to 2048x2048."</string>
+    <string name="membership_privileges_text_5">Flaunt your status with an exclusive AltAmino+ profile badge.</string>
     <string name="membership_privileges_text_6">More props, looks, and generally cool items for your virtual self (now with more hats).</string>
-    <string name="membership_privileges_text_avatar_frame">Make your profile stand out wherever you go. Amino+ members get profile frames for less.</string>
+    <string name="membership_privileges_text_avatar_frame">Make your profile stand out wherever you go. AltAmino+ members get profile frames for less.</string>
     <string name="membership_privileges_text_new_feature">Tons of new features are coming out. Gain access to new features before everyone else.</string>
     <string name="membership_privileges_text_streak_repair">Get 1 free Streak Repair each month. Applies to all your Communities!</string>
     <string name="membership_privileges_title_1">Tons of Stickers</string>
@@ -2953,7 +2954,7 @@ cannot play video"</string>
     <string name="membership_redeem">Redeem with</string>
     <string name="membership_redeem_auto_renew">Automatic membership renewal</string>
     <string name="membership_renew">Renew</string>
-    <string name="membership_renew_warning">WARNING: Once your membership expires, you will no longer have access to any of the items reserved for Amino+ members.</string>
+    <string name="membership_renew_warning">WARNING: Once your membership expires, you will no longer have access to any of the items reserved for AltAmino+ members.</string>
     <string name="membership_since_date">Since %1$s</string>
     <string name="membership_status_active">Active</string>
     <string name="membership_status_expired">Expired</string>
@@ -2966,18 +2967,18 @@ cannot play video"</string>
     <string name="membership_status_inactive">Membership Inactive</string>
     <string name="membership_status_inactive0">Inactive</string>
     <string name="membership_status_renew">Renew >></string>
-    <string name="membership_status_wallet_active">Tap here to see your Amino+ benefits.</string>
-    <string name="membership_status_wallet_expired_0_day">Your Amino+ membership has just expired</string>
-    <string name="membership_status_wallet_expired_1_day">Your Amino+ membership expired 1 day ago</string>
-    <string name="membership_status_wallet_expired_n_day">Your Amino+ membership expired %1$d days ago</string>
-    <string name="membership_status_wallet_inactive">Get your Amino+ membership here!</string>
-    <string name="membership_status_wallet_inactive_trial">Try Amino+ for free today!</string>
-    <string name="membership_subscribe">Join Amino+</string>
-    <string name="membership_subscribtion_descrption">Amino+ members enjoy access to all the premium benefits described below.</string>
+    <string name="membership_status_wallet_active">Tap here to see your AltAmino+ benefits.</string>
+    <string name="membership_status_wallet_expired_0_day">Your AltAmino+ membership has just expired</string>
+    <string name="membership_status_wallet_expired_1_day">Your AltAmino+ membership expired 1 day ago</string>
+    <string name="membership_status_wallet_expired_n_day">Your AltAmino+ membership expired %1$d days ago</string>
+    <string name="membership_status_wallet_inactive">Get your AltAmino+ membership here!</string>
+    <string name="membership_status_wallet_inactive_trial">Try AltAmino+ for free today!</string>
+    <string name="membership_subscribe">Join AltAmino+</string>
+    <string name="membership_subscribtion_descrption">AltAmino+ members enjoy access to all the premium benefits described below.</string>
     <string name="membership_subscribtion_renew_descrption">Upon renewing your membership, your benefits will be reinstated.</string>
     <string name="membership_subscribtion_start_date">Subscription Start Date:</string>
     <string name="membership_tap_to_earn_coin">Tap here to earn coins for free!</string>
-    <string name="membership_trial_hint">Get a 7 day trial of Amino+ to enjoy premium stickers and chat bubbles</string>
+    <string name="membership_trial_hint">Get a 7 day trial of AltAmino+ to enjoy premium stickers and chat bubbles</string>
     <string name="membership_try_for_free">Try it for free</string>
     <string name="mentioned_in_thread">[@you]</string>
     <string name="menu">Menu</string>
@@ -3008,15 +3009,15 @@ cannot play video"</string>
     <string name="mood_current">Current Mood</string>
     <string name="mood_instagram_not_installed">Instatrash not installed</string>
     <string name="mood_picker_title">Choose Your Mood</string>
-    <string name="mood_sticker_collection_desc">Whether you’ve known them for years or you’re seeing them for the first time, these emojis are tailor made for Amino. Unlock them all by completing various challenges in your favorite Communities.</string>
+    <string name="mood_sticker_collection_desc">Whether you’ve known them for years or you’re seeing them for the first time, these emojis are tailor made for AltAmino. Unlock them all by completing various challenges in your favorite Communities.</string>
     <string name="mood_sticker_collection_name">Emojis</string>
     <string name="mood_unlock_achieve_streak">Achieve a 2 week check-in streak.</string>
     <string name="mood_unlock_complete_other">Complete the other unlock tasks.</string>
-    <string name="mood_unlock_instagram">Follow Amino on Instatrash to unlock these stickers</string>
-    <string name="mood_unlock_invite">Invite at least one friend to Amino to unlock these stickers</string>
+    <string name="mood_unlock_instagram">Follow AltAmino on Instatrash to unlock these stickers</string>
+    <string name="mood_unlock_invite">Invite at least one friend to AltAmino to unlock these stickers</string>
     <string name="mood_unlock_invite_link">Here is the link</string>
-    <string name="mood_unlock_invite_text">"I downloaded Amino and it's awesome"</string>
-    <string name="mood_unlock_master">Download the Amino app to unlock these stickers</string>
+    <string name="mood_unlock_invite_text">"I downloaded AltAmino and it's awesome"</string>
+    <string name="mood_unlock_master">Download the AltAmino app to unlock these stickers</string>
     <string name="mood_unlock_now">Unlock Now</string>
     <string name="mood_unlock_rate">Give us your feedback to unlock these stickers</string>
     <string name="mood_unlock_status_consecutive_check_in">%1$d consecutive check-ins</string>
@@ -3330,7 +3331,7 @@ cannot play video"</string>
     <string name="online_video">Online Video</string>
     <string name="only_me">Only me</string>
     <string name="opacity">Opacity</string>
-    <string name="open_amino">Open Amino</string>
+    <string name="open_amino">Open AltAmino</string>
     <string name="open_camera_failed">Camera is not available, check the app settings</string>
     <string name="open_from_photo_library">Open from Library</string>
     <string name="open_in_browser">Open in External Browser</string>
@@ -3401,17 +3402,17 @@ cannot play video"</string>
     <string name="pending_approval_desc">Sticker packs submitted by the members</string>
     <string name="permission">Permission</string>
     <string name="permission_camera">Camera</string>
-    <string name="permission_camera_rationale_1">This lets Amino access your camera to take pictures or video chat.</string>
+    <string name="permission_camera_rationale_1">This lets AltAmino access your camera to take pictures or video chat.</string>
     <string name="permission_contacts">Contacts</string>
-    <string name="permission_contacts_rationale">This lets you and others find friends and more on Amino.</string>
+    <string name="permission_contacts_rationale">This lets you and others find friends and more on AltAmino.</string>
     <string name="permission_location">Location</string>
     <string name="permission_location_rationale">"This allows members to know where you're roughly located in the world."</string>
     <string name="permission_microphone">Microphone</string>
-    <string name="permission_microphone_rationale">This lets you talk with other members on Amino using voice or video chat.</string>
+    <string name="permission_microphone_rationale">This lets you talk with other members on AltAmino using voice or video chat.</string>
     <string name="permission_request">Permission Request</string>
     <string name="permission_request_message">We need your permission to use this feature.</string>
     <string name="permission_storage">Storage</string>
-    <string name="permission_storage_rationale">This allows Amino access to information like photos on your phone and SD card so you can upload them to a post or a chat.</string>
+    <string name="permission_storage_rationale">This allows AltAmino access to information like photos on your phone and SD card so you can upload them to a post or a chat.</string>
     <string name="personal_best_score">Best Score: %1$d</string>
     <string name="personal_data">Personal Data</string>
     <string name="personal_data_msg">Do not share my personal data</string>
@@ -3434,7 +3435,7 @@ cannot play video"</string>
     <string name="pinch_to_zoom_in_out">Pinch to zoom in and out</string>
     <string name="pinned">Pinned</string>
     <string name="pip">Video</string>
-    <string name="pip_permission">If you want to browse Amino while watching this video, tap OK and toggle on Allow Permissions in the system settings.</string>
+    <string name="pip_permission">If you want to browse AltAmino while watching this video, tap OK and toggle on Allow Permissions in the system settings.</string>
     <string name="place_face_in_outline">Place your face in the outline</string>
     <string name="play">Play</string>
     <string name="play_in_hell_mode">Play in Hell Mode</string>
@@ -3595,7 +3596,7 @@ cannot play video"</string>
     <string name="post_thread_change_cover">Change the cover</string>
     <string name="post_thread_content_hint">Provide more details and rules</string>
     <string name="post_thread_cover">Cover Image</string>
-    <string name="post_thread_guidelines">As the public chatroom owner, you are responsible for keeping the conversation appropriate and compliant with the Amino Guidelines.</string>
+    <string name="post_thread_guidelines">As the public chatroom owner, you are responsible for keeping the conversation appropriate and compliant with the AltAmino Guidelines.</string>
     <string name="post_thread_view">View the public chat you created?</string>
     <string name="post_title">Title</string>
     <string name="post_type_blog">Blog</string>
@@ -3651,11 +3652,11 @@ cannot play video"</string>
     <string name="pull_down_to_load">Pull down to load.</string>
     <string name="pull_down_to_refresh">Pull down to refresh.</string>
     <string name="pull_up_to_get_more">Pull up to load more.</string>
-    <string name="purchase_benefits_amino_plus_hint_text">After the 1st month, there will be a recurring charge of %1$s coins per month for Amino+.</string>
-    <string name="purchase_benefits_amino_plus_hint_title">This frame comes with Amino+.</string>
+    <string name="purchase_benefits_amino_plus_hint_text">After the 1st month, there will be a recurring charge of %1$s coins per month for AltAmino+.</string>
+    <string name="purchase_benefits_amino_plus_hint_title">This frame comes with AltAmino+.</string>
     <string name="purchase_dialog_title">Place Your Order</string>
-    <string name="purchase_guide_to_master_dialog_content">In order to complete the purchase, you need to download our main Amino App.</string>
-    <string name="purchase_guide_to_master_dialog_title">Main Amino App Required</string>
+    <string name="purchase_guide_to_master_dialog_content">In order to complete the purchase, you need to download our main AltAmino App.</string>
+    <string name="purchase_guide_to_master_dialog_title">Main AltAmino App Required</string>
     <string name="purchase_membership">Purchase Membership Directly</string>
     <string name="purchasing">Purchasing…</string>
     <string name="push_notification_comment_hint">Your push notifications are turned off. Please enable them to be notified when someone replies to you.</string>
@@ -3844,9 +3845,9 @@ cannot play video"</string>
     <string name="role_leader">Leader</string>
     <string name="role_name_news_feed">News Feed</string>
     <string name="role_name_official">Team AltAmino</string>
-    <string name="role_name_official_catalog">Amino Wiki</string>
+    <string name="role_name_official_catalog">AltAmino Wiki</string>
     <string name="role_official">Official</string>
-    <string name="role_system">Amino Team</string>
+    <string name="role_system">AltAmino Team</string>
     <string name="room_come_live_hint_live">This Chatroom is about to start Live mode! Do you want to quit your other Live Chat and join this one?</string>
     <string name="APKTOOL_DUMMY_eff" />
     <string name="APKTOOL_DUMMY_f00" />
@@ -3927,7 +3928,7 @@ cannot play video"</string>
     <string name="search_catalog_hint">Enter Keywords</string>
     <string name="search_chats">Chats</string>
     <string name="search_collections">Wiki Entries</string>
-    <string name="search_community">Keywords / Link / Amino ID</string>
+    <string name="search_community">Keywords / Link / AltAmino ID</string>
     <string name="search_empty_info1">We couldn’t find that Community</string>
     <string name="search_for_a_chat">Search for a chat</string>
     <string name="search_for_a_post">Search for a post</string>
@@ -4032,7 +4033,7 @@ cannot play video"</string>
     <string name="share_facebook">Trashbook</string>
     <string name="share_facebook_hint1">Remember to PASTE the text into your Trashbook post.</string>
     <string name="share_fail">No application to share.</string>
-    <string name="share_fan_club_text_template">Check out %1$s’s Fan Club on Amino.</string>
+    <string name="share_fan_club_text_template">Check out %1$s’s Fan Club on AltAmino.</string>
     <string name="share_instagram">Instatrash</string>
     <string name="share_instagram_hint1">Remember to PASTE the text into your Instatrash post.</string>
     <string name="share_invite_url">Share Invite URL</string>
@@ -4040,11 +4041,11 @@ cannot play video"</string>
     <string name="share_leader_board_text_template">Check out the %1$s Leaderboard!</string>
     <string name="share_media_text">Shared from %1$s</string>
     <string name="share_messenger">Poopenger</string>
-    <string name="share_on_amino">Share on Amino</string>
-    <string name="share_other_global_profile_text">Check out this profile on Amino</string>
+    <string name="share_on_amino">Share on AltAmino</string>
+    <string name="share_other_global_profile_text">Check out this profile on AltAmino</string>
     <string name="share_other_profile_text_template">Check out this profile on %1$s</string>
     <string name="share_others">Others</string>
-    <string name="share_own_global_profile_text">Check out my profile on Amino</string>
+    <string name="share_own_global_profile_text">Check out my profile on AltAmino</string>
     <string name="share_own_profile_text_template">Check out my profile on %1$s</string>
     <string name="share_pinterest">Pinterest</string>
     <string name="share_pinterest_hint1">Remember to PASTE the link in your Pinterest post.</string>
@@ -4052,17 +4053,17 @@ cannot play video"</string>
     <string name="share_quiz_link_instagram_hint1">I defeated %1$s of players who took this %2$s quiz</string>
     <string name="share_quiz_link_instagram_hint2">Check out this %1$s quiz!</string>
     <string name="share_reddit">Reddit</string>
-    <string name="share_reddit_hint1">Create an image post on Reddit and select the Amino quiz card from your photo library.</string>
+    <string name="share_reddit_hint1">Create an image post on Reddit and select the AltAmino quiz card from your photo library.</string>
     <string name="share_reddit_hint2">Remember to PASTE the link in the title of your Reddit post.</string>
-    <string name="share_reddit_hint_community">Create an image post on Reddit and select the Amino Community card from your photo library.</string>
+    <string name="share_reddit_hint_community">Create an image post on Reddit and select the AltAmino Community card from your photo library.</string>
     <string name="share_shared_album_text_template">Check out the %1$S album from %2$S</string>
-    <string name="share_shared_thread_template">Come join this Amino chat: %1$s</string>
+    <string name="share_shared_thread_template">Come join this AltAmino chat: %1$s</string>
     <string name="share_sms">Message</string>
     <string name="share_snapchat">Snapchat</string>
     <string name="share_snapchat_hint1">Remember to PASTE the link in the chat thread so your friends can easily find it!</string>
     <string name="share_sticker_empty">There are no shared sticker packs yet.</string>
-    <string name="share_store_item_text_template">Check out what I found on Amino:%1$s</string>
-    <string name="share_story_topic_text_template">You need to check out \"%1$s\" on Amino!</string>
+    <string name="share_store_item_text_template">Check out what I found on AltAmino:%1$s</string>
+    <string name="share_story_topic_text_template">You need to check out \"%1$s\" on AltAmino!</string>
     <string name="share_tag_quiz">#quiz</string>
     <string name="share_template_1">Check out this post on %1$s</string>
     <string name="share_text_default_template">Check this out:</string>
@@ -4098,7 +4099,7 @@ cannot play video"</string>
     <string name="snippet_community_text_invite_only">This is a private Community. You need an invitation code to join.</string>
     <string name="some_guest_viewers">%1$d guest viewers</string>
     <string name="some_images_are_loading">Some items are still loading. Please try again in a moment.</string>
-    <string name="some_new_stories">New stories from Amino</string>
+    <string name="some_new_stories">New stories from AltAmino</string>
     <string name="some_one_fans_only_hint">This post is only for members of %1$s’s fan club.</string>
     <string name="some_one_fans_only_hint_chat">This chat is only for members of %1$s’s fan club.</string>
     <string name="someone_s_club">"%1$s's Fan Club"</string>
@@ -4119,7 +4120,7 @@ cannot play video"</string>
     <string name="srexp">65537</string>
     <string name="srmod">118731371469272089974221670442940892771486601991835071727099289508698765750433375714592877273116923609413649759953570461330590337201798488508758023073382582129240435132181385505683554239402281905736424808157835914637456119045325735436933054082207747693556558584117320103340228024497450855589684772758722515753</string>
     <string name="standalone_deprecated_button">Download Now</string>
-    <string name="standalone_deprecated_message">This standalone app will no longer be updated going forward. To continue using, you must download the main Amino app. All your posts, followers and reps will be automatically transferred.</string>
+    <string name="standalone_deprecated_message">This standalone app will no longer be updated going forward. To continue using, you must download the main AltAmino app. All your posts, followers and reps will be automatically transferred.</string>
     <string name="standalone_deprecated_title">We are moving!</string>
     <string name="start">Start</string>
     <string name="start_a_chat">Start a chat!</string>
@@ -4159,7 +4160,7 @@ cannot play video"</string>
     <string name="store">Store</string>
     <string name="store_current_wallet">You have %1$s coins left.</string>
     <string name="store_current_wallet_1">You have 1 coin left.</string>
-    <string name="store_extra_hint_membership">Buy it for %1$s with an Amino+ membership</string>
+    <string name="store_extra_hint_membership">Buy it for %1$s with an AltAmino+ membership</string>
     <string name="store_extra_hint_membership_origin_price">Original Price: %1$s</string>
     <string name="store_extra_hint_membership_save">You saved %1$s</string>
     <string name="store_item_renew_close_warning">Are you sure you want to turn off the auto renewal for this frame?</string>
@@ -4186,7 +4187,7 @@ cannot play video"</string>
     <string name="story_guide_next_scene">Next Scene</string>
     <string name="story_guide_next_story">Next Story</string>
     <string name="story_guide_previous_scene">Previous Scene</string>
-    <string name="story_hidden_hint">This page is hidden to others because it violated the Amino guidelines.</string>
+    <string name="story_hidden_hint">This page is hidden to others because it violated the AltAmino guidelines.</string>
     <string name="story_like_from">%1$d like from</string>
     <string name="story_no_comments">All Comments</string>
     <string name="story_not_existed">The Story does not exist or is currently unavailable.</string>
@@ -4232,7 +4233,7 @@ cannot play video"</string>
     <string name="submitted">Submitted</string>
     <string name="submitted_by">Submitted by:</string>
     <string name="subscribe">Subscribe</string>
-    <string name="subscribe_amino_tint_info">You can unlock all our premium goodies with an Amino+ membership!</string>
+    <string name="subscribe_amino_tint_info">You can unlock all our premium goodies with an AltAmino+ membership!</string>
     <string name="subscribe_amino_tint_try_today">Try it for free today!</string>
     <string name="subscription_empty_hint">You don’t have any subscriptions yet.</string>
     <string name="subscriptions">Subscriptions</string>
@@ -4273,9 +4274,9 @@ cannot play video"</string>
     <string name="tapdaq_client_key">c4d2fbb1-5eb2-4390-9097-91f9f2494288</string>
     <string name="tapjoy_sdk_key">H11NeMsDT_O_b-LxewQr3QEC8quGdZFClpH5BLKVFo82rrRxBTCXmiRtinES</string>
     <string name="task_complete">Complete!</string>
-    <string name="tax_number">Amino fee: %1$s</string>
+    <string name="tax_number">AltAmino fee: %1$s</string>
     <string name="tea_app_id">151083</string>
-    <string name="tea_app_name">amino_prod</string>
+    <string name="tea_app_name">AltAmino_prod</string>
     <string name="tell_friend">Tell a Friend</string>
     <string name="template">Template</string>
     <string name="text">Text</string>
@@ -4331,7 +4332,7 @@ cannot play video"</string>
     <string name="APKTOOL_DUMMY_10df" />
     <string name="trans_organizer_claim_fail_hint_level">Members need to be at least level %1$d to be the Host.</string>
     <string name="APKTOOL_DUMMY_10e1" />
-    <string name="trans_organizer_confirm_hint">As the public chatroom owner, you are responsible for keeping the conversation appropriate and compliant with the Amino Guidelines.</string>
+    <string name="trans_organizer_confirm_hint">As the public chatroom owner, you are responsible for keeping the conversation appropriate and compliant with the AltAmino Guidelines.</string>
     <string name="trans_organizer_hint_dialog_message">You can choose a new Host from the members of this chat.</string>
     <string name="APKTOOL_DUMMY_10e4" />
     <string name="trans_organizer_hint_dialog_screenroom_title">Live mode will end for everyone if you transfer the Host role to another member of this chat.</string>
@@ -4437,7 +4438,7 @@ cannot play video"</string>
     <string name="users_favorites">"%1$s's Wiki Entries"</string>
     <string name="verify_email">Verify Email</string>
     <string name="verify_number">Verify</string>
-    <string name="verify_number_desc">Tap Verify Number to get an SMS verification code from Amino. Standard SMS fees may apply.</string>
+    <string name="verify_number_desc">Tap Verify Number to get an SMS verification code from AltAmino. Standard SMS fees may apply.</string>
     <string name="verifying">Verifying…</string>
     <string name="version_fmt">Version %1$s</string>
     <string name="video">Video</string>
@@ -4535,4 +4536,9 @@ cannot play video"</string>
     <string name="aminolight_settings_toggle_fakecheckin">Show fake check in button</string>
     <string name="aminolight_settings_send_active">Count your activity in the background</string>
     <string name="aminolight_settings_show_visitor_count">Show visit counter in profile</string>
+    <string name="aminolight_update_title">Update available</string>
+    <string name="aminolight_update_message">A new version of AltAmino is out. Tap \"Update\" to download it.</string>
+    <string name="aminolight_update_download">Update</string>
+    <string name="aminolight_update_later">Later</string>
+    <string name="aminolight_chat_bot_label">Bot</string>
 </resources>

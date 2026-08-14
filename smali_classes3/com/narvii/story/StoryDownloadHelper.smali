@@ -582,11 +582,13 @@
     .line 239
     new-instance v0, Ljava/io/File;
 
-    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+    sget-object v2, Landroid/os/Environment;->DIRECTORY_DOWNLOADS:Ljava/lang/String;
+
+    invoke-static {v2}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v2
 
-    const-string v3, "Amino/SavedStory"
+    const-string v3, "AltAmino/SavedStory"
 
     invoke-direct {v0, v2, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 

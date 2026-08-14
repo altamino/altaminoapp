@@ -3,6 +3,7 @@
 .source "CommentPostActivity.java"
 
 # interfaces
+.implements Landroid/view/View$OnApplyWindowInsetsListener;
 .implements Landroid/view/View$OnClickListener;
 .implements Landroid/view/View$OnLongClickListener;
 .implements Lcom/narvii/monetization/sticker/picker/StickerSelectListener;
@@ -185,59 +186,7 @@
 .end method
 
 .method private changeSegmentBackground(Z)V
-    .locals 4
-
-    .line 403
-    invoke-static {p0}, Lcom/narvii/util/AndroidBug5497Workaround;->getKeyboardHeight(Landroid/app/Activity;)I
-
-    move-result v0
-
-    if-lez v0, :cond_0
-
-    .line 404
-    invoke-virtual {p0, v0}, Lcom/narvii/comment/post/CommentPostActivity;->getValidPanelHeight(I)I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f07031d
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v0
-
-    .line 405
-    :goto_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    move-result-object v1
-
-    new-instance v2, Lcom/narvii/widget/TopTransparentDrawable;
-
-    const v3, -0xa0a09
-
-    if-eqz p1, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v0, 0x0
-
-    :goto_1
-    invoke-direct {v2, v3, v0}, Lcom/narvii/widget/TopTransparentDrawable;-><init>(II)V
-
-    invoke-virtual {v1, v2}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
-
+    .locals 0
     return-void
 .end method
 
@@ -1162,6 +1111,46 @@
     return-void
 .end method
 
+.method public onApplyWindowInsets(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+    .locals 2
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-lt v0, v1, :cond_legacy
+
+    invoke-static {}, Landroid/view/WindowInsets$Type;->ime()I
+
+    move-result v0
+
+    invoke-static {}, Landroid/view/WindowInsets$Type;->navigationBars()I
+
+    move-result v1
+
+    or-int/2addr v0, v1
+
+    invoke-virtual {p2, v0}, Landroid/view/WindowInsets;->getInsets(I)Landroid/graphics/Insets;
+
+    move-result-object v0
+
+    iget v0, v0, Landroid/graphics/Insets;->bottom:I
+
+    goto :goto_pad
+
+    :cond_legacy
+    invoke-virtual {p2}, Landroid/view/WindowInsets;->getSystemWindowInsetBottom()I
+
+    move-result v0
+
+    :goto_pad
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v1, v1, v1, v0}, Landroid/view/View;->setPadding(IIII)V
+
+    return-object p2
+.end method
+
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
 
@@ -1193,6 +1182,15 @@
 
     .line 145
     invoke-virtual {p0, v1}, Lcom/narvii/app/theme/NVThemeActivity;->setContentView(I)V
+
+    # altamino: handle IME/nav insets manually (see onApplyWindowInsets)
+    const v1, 0x1020002
+
+    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p0}, Landroid/view/View;->setOnApplyWindowInsetsListener(Landroid/view/View$OnApplyWindowInsetsListener;)V
 
     .line 146
     invoke-static {p0}, Lcom/narvii/util/AndroidBug5497Workaround;->assistActivity(Landroid/app/Activity;)V

@@ -36,10 +36,10 @@
     <string name="account_enter_phone">전화번호를 입력해주세요</string>
     <string name="account_error_email_registered">해당 이메일 주소는 이미 사용 중입니다.</string>
     <string name="account_facebook">페이스북</string>
-    <string name="account_finish_signup_notification">%1$s Amino 회원가입이 아직 완료되지 않았습니다. 계속 하시려면 여기를 눌러주세요.</string>
+    <string name="account_finish_signup_notification">%1$s AltAmino 회원가입이 아직 완료되지 않았습니다. 계속 하시려면 여기를 눌러주세요.</string>
     <string name="account_forget_password">비밀번호를 잊으셨습니까?</string>
     <string name="account_google">구글</string>
-    <string name="account_have_no_account_now">아직 Amino 계정이 없습니다.</string>
+    <string name="account_have_no_account_now">아직 AltAmino 계정이 없습니다.</string>
     <string name="account_hint_nickname">닉네임</string>
     <string name="account_hint_photo">사진</string>
     <string name="account_invalid_email">이메일 주소가 잘못되었습니다!</string>
@@ -132,7 +132,7 @@
     <string name="allow_commenting_on_my_profile">내 프로필에 댓글 허용</string>
     <string name="allow_inbound_chat_requests">인바운드 채팅 요청 허용</string>
     <string name="already_in_community">이미 이 아미노에 가입하셨습니다</string>
-    <string name="amino_staff_message">이 사용자는 Amino 팀의 공식 스탭입니다.</string>
+    <string name="amino_staff_message">이 사용자는 AltAmino 팀의 공식 스탭입니다.</string>
     <string name="announcement">공지사항</string>
     <string name="announcements">공지사항</string>
     <string name="announcements_empty_text">현재 공지사항이 없습니다...</string>
@@ -357,7 +357,7 @@
     <string name="community_create_shortcut_fail">바로가기 아이콘 다운로드에 실패했습니다</string>
     <string name="community_detail">세부내용</string>
     <string name="community_detail_empty_content">설명 없음</string>
-    <string name="community_id">Amino ID</string>
+    <string name="community_id">AltAmino ID</string>
     <string name="community_join_request_approve">가입 요청 승인됨</string>
     <string name="community_join_request_reject">가입 요청 거절됨</string>
     <string name="community_join_request_sent">요청 완료</string>
@@ -483,9 +483,9 @@
     <string name="dialog_delete_confirm">정말 삭제하시겠습니까?</string>
     <string name="dialog_delete_confirm_catalog">이 위키 항목을 삭제하시면 추후 복구할 수 없습니다. 그래도 삭제하시겠습니까?</string>
     <string name="disable">차단하기</string>
-    <string name="disable_by_amino_team">Amino 팀이 차단한 페이지는 볼 수 없습니다.</string>
+    <string name="disable_by_amino_team">AltAmino 팀이 차단한 페이지는 볼 수 없습니다.</string>
     <string name="disabled">차단됨</string>
-    <string name="disabled_by_team_amino">팀 Amino에 의해 비활성화됨</string>
+    <string name="disabled_by_team_amino">팀 AltAmino에 의해 비활성화됨</string>
     <string name="disabled_from_shared_folder">공유 폴더에서 비활성화됨</string>
     <string name="disabled_post">차단된 게시물</string>
     <string name="disabled_post_empty">현재 차단된 게시물이 없습니다</string>
@@ -493,8 +493,8 @@
     <string name="done">완료</string>
     <string name="downlading_from_giphy">Giphy에서 다운로드 중</string>
     <string name="download">다운로드</string>
-    <string name="download_master_info">이 아미노에 가입하시려면 Amino 메인 앱을 다운로드하셔야 합니다.</string>
-    <string name="download_master_info_title">Amino 메인 앱이 필요합니다</string>
+    <string name="download_master_info">이 아미노에 가입하시려면 AltAmino 메인 앱을 다운로드하셔야 합니다.</string>
+    <string name="download_master_info_title">AltAmino 메인 앱이 필요합니다</string>
     <string name="draft_untitled">제목 없음</string>
     <string name="drawer_community_detail">아미노 소개</string>
     <string name="drawer_options">옵션</string>
@@ -511,8 +511,8 @@
     <string name="endorsed_aminos">운영진 선택</string>
     <string name="enter_community">아미노 입장하기</string>
     <string name="enter_invitation_code">초대 코드 / 링크를 입력하세요.</string>
-    <string name="enter_password_to_link_account">%1$s 계정을 연결하려면 회원님의 Amino 비밀번호를 입력하세요.</string>
-    <string name="enter_password_to_remove_account">%1$s 계정을 삭제하시려면 회원님의 Amino 비밀번호를 입력하세요.</string>
+    <string name="enter_password_to_link_account">%1$s 계정을 연결하려면 회원님의 AltAmino 비밀번호를 입력하세요.</string>
+    <string name="enter_password_to_remove_account">%1$s 계정을 삭제하시려면 회원님의 AltAmino 비밀번호를 입력하세요.</string>
     <string name="error">오류</string>
     <string name="everyone">모두</string>
     <string name="existing">기존</string>
@@ -730,7 +730,7 @@
     <string name="mood_unlock_achieve_streak">2주 연속 출석하기</string>
     <string name="mood_unlock_complete_other">다른 해제 미션 완수하기</string>
     <string name="mood_unlock_invite_link">링크는 다음과 같아요</string>
-    <string name="mood_unlock_invite_text">Amino 앱을 다운로드 받았는데 정말 좋아요</string>
+    <string name="mood_unlock_invite_text">AltAmino 앱을 다운로드 받았는데 정말 좋아요</string>
     <string name="mood_unlock_now">지금 해제</string>
     <string name="mood_unlock_status_consecutive_check_in">%1$d일째 연속 출석 중</string>
     <string name="mood_unlock_status_tasks_remaining">미션 %1$d개 남음</string>
@@ -853,7 +853,7 @@
     <string name="online_status_online">온라인</string>
     <string name="online_user_profile">프로필</string>
     <string name="online_user_start_chat">대화 시작</string>
-    <string name="open_amino">Amino 열기</string>
+    <string name="open_amino">AltAmino 열기</string>
     <string name="open_camera_failed">카메라를 사용할 수 없습니다, 앱 설정을 확인하세요</string>
     <string name="open_in_browser">외부 브라우저로 열기</string>
     <string name="or">혹은</string>
@@ -1118,10 +1118,10 @@
     <string name="retry">다시 시도하기</string>
     <string name="role_curator">큐레이터</string>
     <string name="role_leader">운영자</string>
-    <string name="role_name_official">팀 Amino</string>
+    <string name="role_name_official">팀 AltAmino</string>
     <string name="role_name_official_catalog">아미노 위키</string>
     <string name="role_official">공식</string>
-    <string name="role_system">Amino 팀</string>
+    <string name="role_system">AltAmino 팀</string>
     <string name="rtc_chat_beauty_filter_normal">오리지널</string>
     <string name="rtc_chat_beauty_smoother">부드럽게</string>
     <string name="rtc_member">1 멤버</string>
@@ -1177,7 +1177,7 @@
     <string name="send_strike_info">경고를 보내시면 일정 시간 동안 이 멤버의 활동이 금지 됩니다. 첫 위반이라면 메시지 보내는 것을 권합니다.</string>
     <string name="set_a_password">비밀번호 생성하기</string>
     <string name="set_your_language">언어를 설정하세요</string>
-    <string name="settings_amino_announcements">팀 Amino 공지사항</string>
+    <string name="settings_amino_announcements">팀 AltAmino 공지사항</string>
     <string name="settings_clear_cache">캐시 지우기</string>
     <string name="share">공유하기</string>
     <string name="share_album_text">%2$s의 %1$s앨범을 확인해보세요</string>
