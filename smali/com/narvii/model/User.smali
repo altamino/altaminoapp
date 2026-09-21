@@ -135,6 +135,8 @@
 
 .field public isAvailableCandidate:Z
 
+.field public isBot:Z
+
 .field public isGlobal:Z
 
 .field public isNicknameVerified:Z

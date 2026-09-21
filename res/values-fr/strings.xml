@@ -2131,7 +2131,7 @@ Paramètres> Mes Fan Clubs"</string>
     <string name="price_with_expired_time_others">%1$d/ %2$d jours</string>
     <string name="privacy_open">Ouvert</string>
     <string name="privacy_policy">Politique de Confidentialité</string>
-    <string name="privacy_policy_url">https://narvii.com/privacy.html</string>
+    <string name="privacy_policy_url">https://altamino.top/privacy</string>
     <string name="private_call_limit">L’autre membre doit accepter votre demande de chat avant de pouvoir démarrer le mode Live.</string>
     <string name="private_mode">Mode Privé</string>
     <string name="private_mode_hint">"En Mode Privé, vous apparaissez en tant que visiteur anonyme parmi les Visiteurs Récents de l'autre utilisateur. Aussi, vous ne pouvez pas voir qui a regardé votre Profil."</string>
@@ -2755,7 +2755,7 @@ Paramètres> Mes Fan Clubs"</string>
     <string name="topic_push_notification_subscribe_hint">Vos notifications Push ne sont pas activées. Activez les notifications pour être notifié quand %1$s a de nouvelles mises à jour.</string>
     <string name="topic_s">Sujets</string>
     <string name="tos">"Conditions d'Utilisation"</string>
-    <string name="tos_url">https://narvii.com/tos.html</string>
+    <string name="tos_url">https://altamino.top/tos</string>
     <string name="tos_yes">"Oui je suis d'accord"</string>
     <string name="total">Total</string>
     <string name="total_balance">Solde total disponible</string>

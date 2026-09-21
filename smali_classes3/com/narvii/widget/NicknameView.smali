@@ -2538,6 +2538,17 @@
     move-result v2
 
     :goto_3
+    if-eqz p1, :isbot_skip
+
+    iget-boolean v3, p1, Lcom/narvii/model/User;->isBot:Z
+
+    if-eqz v3, :isbot_skip
+
+    const-string p2, "Bot"
+
+    const v2, -0x9f8275
+
+    :isbot_skip
     invoke-virtual {p0, p2, v2}, Lcom/narvii/widget/NicknameView;->setRole1(Ljava/lang/String;I)V
 
     const/4 p2, 0x1

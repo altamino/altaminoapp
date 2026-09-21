@@ -1840,7 +1840,7 @@
     <string name="price_with_expired_time_others">%1$d/%2$d 天</string>
     <string name="privacy_open">打开</string>
     <string name="privacy_policy">隐私条款</string>
-    <string name="privacy_policy_url">https://narvii.com/privacy.html</string>
+    <string name="privacy_policy_url">https://altamino.top/privacy</string>
     <string name="private_call_limit">你只能呼叫已接受你的聊天请求的用户。</string>
     <string name="probation_message">观察期警告</string>
     <string name="profile">个人主页</string>
@@ -2373,7 +2373,7 @@
     <string name="topic_characters_limit">一个主题不能超过%1$d个字符</string>
     <string name="topic_s">主题</string>
     <string name="tos">服务条款</string>
-    <string name="tos_url">https://narvii.com/tos.html</string>
+    <string name="tos_url">https://altamino.top/tos</string>
     <string name="tos_yes">是的，我同意</string>
     <string name="total">总共</string>
     <string name="total_balance">总共可用余额：</string>

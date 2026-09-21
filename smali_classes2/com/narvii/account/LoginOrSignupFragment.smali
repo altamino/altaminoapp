@@ -171,7 +171,13 @@
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
     .line 571
-    invoke-virtual {v0}, Lcom/narvii/util/dialog/ActionSheetDialog;->show()V
+    new-instance v1, Lcom/narvii/account/LoginOrSignupFragment$7;
+
+    invoke-direct {v1, p0}, Lcom/narvii/account/LoginOrSignupFragment$7;-><init>(Lcom/narvii/account/LoginOrSignupFragment;)V
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v0, v2}, Lcom/narvii/account/LoginOrSignupFragment$7;->onClick(Landroid/content/DialogInterface;I)V
 
     return-void
 .end method
@@ -2188,7 +2194,9 @@
     invoke-virtual {v0, v2}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
     .line 477
-    invoke-virtual {v0}, Lcom/narvii/util/dialog/ActionSheetDialog;->show()V
+    add-int/lit8 v6, v6, -0x1
+
+    invoke-virtual {v3, v0, v6}, Lcom/narvii/account/LoginOrSignupFragment$4;->onClick(Landroid/content/DialogInterface;I)V
 
     .line 479
     :cond_1

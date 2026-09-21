@@ -2131,7 +2131,7 @@ Die Amino-ID muss diese Regeln berücksichtigen:
     <string name="price_with_expired_time_others">%1$d pro %2$d Tage</string>
     <string name="privacy_open">Öffnen</string>
     <string name="privacy_policy">Datenschutzrichtlinien</string>
-    <string name="privacy_policy_url">https://narvii.com/privacy.html</string>
+    <string name="privacy_policy_url">https://altamino.top/privacy</string>
     <string name="private_call_limit">Das andere Mitglied muss erst deine Chatanfrage annehmen, bevor du den Live-Modus starten kannst.</string>
     <string name="private_mode">Privatmodus</string>
     <string name="private_mode_hint">Im Privatmodus wirst du bei den neuesten Besuchern des anderen Nutzern als anonymer Besucher angezeigt. Du kannst ebenfalls nicht sehen, wer dein Profil besucht hat.</string>
@@ -2755,7 +2755,7 @@ Die Amino-ID muss diese Regeln berücksichtigen:
     <string name="topic_push_notification_subscribe_hint">Deine Push-Benachrichtigungen sind nicht aktiviert. Aktiviere sie, um benachrichtigt zu werden, wenn %1$s neue Updates hat.</string>
     <string name="topic_s">Themen</string>
     <string name="tos">Geschäftsbedingungen</string>
-    <string name="tos_url">https://narvii.com/tos.html</string>
+    <string name="tos_url">https://altamino.top/tos</string>
     <string name="tos_yes">Ja, ich stimme zu</string>
     <string name="total">Summe:</string>
     <string name="total_balance">Gesamtsumme verfügbar</string>

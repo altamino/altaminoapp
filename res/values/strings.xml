@@ -3629,7 +3629,7 @@ cannot play video"</string>
     <string name="price_with_expired_time_others">%1$d/%2$d days</string>
     <string name="privacy_open">Open</string>
     <string name="privacy_policy">Privacy Policy</string>
-    <string name="privacy_policy_url">https://narvii.com/privacy.html</string>
+    <string name="privacy_policy_url">https://altamino.top/privacy</string>
     <string name="private_call_limit">The other member must accept your chat request before you can start Live mode.</string>
     <string name="APKTOOL_DUMMY_e26" />
     <string name="private_mode">Private Mode</string>
@@ -4317,7 +4317,7 @@ cannot play video"</string>
     <string name="topic_s">Topics</string>
     <string name="topic_spring_behavior">com.narvii.topic.TopicTabFragment$Behavior</string>
     <string name="tos">Terms of Service</string>
-    <string name="tos_url">https://narvii.com/tos.html</string>
+    <string name="tos_url">https://altamino.top/tos</string>
     <string name="tos_yes">Yes, I Agree</string>
     <string name="total">Total</string>
     <string name="total_balance">Total balance available</string>

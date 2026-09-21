@@ -2111,7 +2111,7 @@ O ID Amino deve seguir estas regras:
     <string name="price_with_expired_time_others">%1$d/%2$d dias</string>
     <string name="privacy_open">Aberta</string>
     <string name="privacy_policy">Política de Privacidade</string>
-    <string name="privacy_policy_url">https://narvii.com/privacy.html#portuguese</string>
+    <string name="privacy_policy_url">https://altamino.top/privacy</string>
     <string name="private_call_limit">Você só pode iniciar uma ligação com um membro que já aceitou seu pedido de chat.</string>
     <string name="private_mode">Modo Privado</string>
     <string name="private_mode_hint">No Modo Privado, você aparece como visitante anônimo nos Visitantes Recentes do outro usuário. Você também não pode ver quem visitou o seu perfil.</string>
@@ -2728,7 +2728,7 @@ O ID Amino deve seguir estas regras:
     <string name="topic_push_notification_subscribe_hint">Suas notificações não estão ativadas. ative-as para ser notificado quando %1$s tiver novas atualizações.</string>
     <string name="topic_s">Tópicos</string>
     <string name="tos">Termos de Serviço</string>
-    <string name="tos_url">https://narvii.com/tos.html#portuguese</string>
+    <string name="tos_url">https://altamino.top/tos</string>
     <string name="tos_yes">Sim, eu concordo</string>
     <string name="total">Total</string>
     <string name="total_balance">Balanço total disponível</string>

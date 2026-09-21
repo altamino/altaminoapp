@@ -2129,7 +2129,7 @@
     <string name="price_with_expired_time_others">%1$d/%2$d أيام</string>
     <string name="privacy_open">فتح</string>
     <string name="privacy_policy">سياسة الخصوصية</string>
-    <string name="privacy_policy_url">https://narvii.com/privacy.html</string>
+    <string name="privacy_policy_url">https://altamino.top/privacy</string>
     <string name="private_call_limit">يمكنك البدء في الاتصال مع أحد الأعضاء بعد قبوله الوضع المباشر.</string>
     <string name="private_mode">الوضع الخاص</string>
     <string name="private_mode_hint">في الوضع الخاص، تظهر بصفة زائر مجهول للزوّار الجدد للمستخدم الآخر. كما لا يمكن معرفة من زار ملفك التعريفي.</string>
@@ -2753,7 +2753,7 @@
     <string name="topic_push_notification_subscribe_hint">إشعاراتك اللحظية ليست مفعّلة. فعّل الإشعارات لتحصل على إشعار يقوم %1$s بأي تحديثات جديدة.</string>
     <string name="topic_s">مواضيع</string>
     <string name="tos">شروط الخدمة</string>
-    <string name="tos_url">https://narvii.com/tos.html</string>
+    <string name="tos_url">https://altamino.top/tos</string>
     <string name="tos_yes">نعم، موافق</string>
     <string name="total">المجموع</string>
     <string name="total_balance">الرصيد الإجمالي المتاح</string>
