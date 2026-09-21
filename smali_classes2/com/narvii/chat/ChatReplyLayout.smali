@@ -40,6 +40,8 @@
 .field private final title$delegate:Lkotlin/Lazy;
 
 
+.field public editMode:Z
+
 # direct methods
 .method static constructor <clinit>()V
     .locals 5
@@ -1338,6 +1340,20 @@
 
     :goto_3
     invoke-virtual {v0, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    iget-boolean v1, p0, Lcom/narvii/chat/ChatReplyLayout;->editMode:Z
+
+    if-eqz v1, :cond_no_editmode
+
+    const v1, 0x7f0f03cd
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    :cond_no_editmode
 
     .line 60
     invoke-virtual {p0}, Lcom/narvii/chat/ChatReplyLayout;->getContent()Landroid/widget/TextView;

@@ -4178,6 +4178,8 @@
 
     .line 1614
     :cond_c
+    invoke-static {p0, v5, v3, p3}, Lcom/narvii/chat/ChatListFragment$Adapter;->addEditItem(Lcom/narvii/chat/ChatListFragment$Adapter;Lcom/narvii/util/dialog/ActionSheetDialog;Ljava/util/ArrayList;Lcom/narvii/model/ChatMessage;)V
+
     invoke-virtual {p3}, Lcom/narvii/model/ChatMessage;->isStickerMessage()Z
 
     move-result p4
@@ -5395,4 +5397,73 @@
     const-class v0, Lcom/narvii/chat/MessageListResponse;
 
     return-object v0
+.end method
+
+.method static addEditItem(Lcom/narvii/chat/ChatListFragment$Adapter;Lcom/narvii/util/dialog/ActionSheetDialog;Ljava/util/ArrayList;Lcom/narvii/model/ChatMessage;)V
+    .locals 4
+
+    if-eqz p3, :cond_end
+
+    iget v0, p3, Lcom/narvii/model/ChatMessage;->type:I
+
+    if-nez v0, :cond_end
+
+    iget v0, p3, Lcom/narvii/model/ChatMessage;->mediaType:I
+
+    if-nez v0, :cond_end
+
+    iget-object v0, p3, Lcom/narvii/model/ChatMessage;->messageId:Ljava/lang/String;
+
+    if-eqz v0, :cond_end
+
+    iget-object v0, p3, Lcom/narvii/model/ChatMessage;->author:Lcom/narvii/model/User;
+
+    if-eqz v0, :cond_end
+
+    invoke-virtual {v0}, Lcom/narvii/model/User;->id()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lcom/narvii/list/NVAdapter;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/narvii/util/Utils;->getNVContext(Landroid/content/Context;)Lcom/narvii/app/NVContext;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_end
+
+    const-string v2, "account"
+
+    invoke-interface {v1, v2}, Lcom/narvii/app/NVContext;->getService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/narvii/account/AccountService;
+
+    if-eqz v1, :cond_end
+
+    invoke-virtual {v1}, Lcom/narvii/account/AccountService;->getUserId()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/narvii/util/Utils;->isEqualsNotNull(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_end
+
+    const-string v0, "edit"
+
+    invoke-virtual {p2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const v0, 0x7f0f03cd
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Lcom/narvii/util/dialog/ActionSheetDialog;->addItem(IZ)V
+
+    :cond_end
+    return-void
 .end method

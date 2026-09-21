@@ -2116,6 +2116,10 @@
 .method public setText(Ljava/lang/CharSequence;Lcom/narvii/model/ChatMessage;ZLcom/fasterxml/jackson/databind/node/ObjectNode;ZI)V
     .locals 14
 
+    invoke-static/range {p1 .. p2}, Lcom/narvii/chat/ChatBubbleView;->markEdited(Ljava/lang/CharSequence;Lcom/narvii/model/ChatMessage;)Ljava/lang/CharSequence;
+
+    move-result-object p1
+
     move-object v0, p0
 
     move-object/from16 v1, p2
@@ -2787,4 +2791,63 @@
 
     :cond_10
     return-void
+.end method
+
+.method static markEdited(Ljava/lang/CharSequence;Lcom/narvii/model/ChatMessage;)Ljava/lang/CharSequence;
+    .locals 6
+
+    if-eqz p0, :cond_ret
+
+    if-eqz p1, :cond_ret
+
+    iget-boolean v0, p1, Lcom/narvii/model/ChatMessage;->isEdited:Z
+
+    if-eqz v0, :cond_ret
+
+    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
+
+    move-result v0
+
+    if-eqz v0, :cond_ret
+
+    new-instance v1, Landroid/text/SpannableStringBuilder;
+
+    invoke-direct {v1, p0}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v1}, Landroid/text/SpannableStringBuilder;->length()I
+
+    move-result v2
+
+    const-string v3, " (edited)"
+
+    invoke-virtual {v1, v3}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    invoke-virtual {v1}, Landroid/text/SpannableStringBuilder;->length()I
+
+    move-result v3
+
+    new-instance v4, Landroid/text/style/RelativeSizeSpan;
+
+    const v5, 0x3f4ccccd
+
+    invoke-direct {v4, v5}, Landroid/text/style/RelativeSizeSpan;-><init>(F)V
+
+    const/16 v5, 0x21
+
+    invoke-virtual {v1, v4, v2, v3, v5}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
+
+    new-instance v4, Landroid/text/style/StyleSpan;
+
+    const/4 v5, 0x2
+
+    invoke-direct {v4, v5}, Landroid/text/style/StyleSpan;-><init>(I)V
+
+    const/16 v5, 0x21
+
+    invoke-virtual {v1, v4, v2, v3, v5}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
+
+    return-object v1
+
+    :cond_ret
+    return-object p0
 .end method
