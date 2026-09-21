@@ -2818,7 +2818,7 @@
 
     move-result v2
 
-    const-string v3, " (edited)"
+    const-string v3, " (edit)"
 
     invoke-virtual {v1, v3}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
