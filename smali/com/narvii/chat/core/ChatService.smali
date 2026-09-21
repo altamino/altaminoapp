@@ -5819,6 +5819,20 @@
     :goto_5
     if-eqz p1, :cond_12
 
+    iget-object v5, p1, Lcom/narvii/chat/util/ChatMessageDto;->chatMessage:Lcom/narvii/model/ChatMessage;
+
+    if-eqz v5, :cond_ws_not_edit
+
+    iget-boolean v5, v5, Lcom/narvii/model/ChatMessage;->isEdited:Z
+
+    if-eqz v5, :cond_ws_not_edit
+
+    invoke-direct {p0, v3, p1}, Lcom/narvii/chat/core/ChatService;->dispatchChatMessageListChange(Ljava/lang/String;Lcom/narvii/chat/util/ChatMessageDto;)V
+
+    goto/16 :goto_7
+
+    :cond_ws_not_edit
+
     .line 1686
     iget v5, p1, Lcom/narvii/chat/util/ChatMessageDto;->ndcId:I
 

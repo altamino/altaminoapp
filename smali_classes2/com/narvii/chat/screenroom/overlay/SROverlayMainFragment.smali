@@ -303,6 +303,18 @@
 .method public onNewChatMessage(ILcom/narvii/chat/util/ChatMessageDto;)V
     .locals 0
 
+    iget-object p1, p2, Lcom/narvii/chat/util/ChatMessageDto;->chatMessage:Lcom/narvii/model/ChatMessage;
+
+    if-eqz p1, :cond_sr_go
+
+    iget-boolean p1, p1, Lcom/narvii/model/ChatMessage;->isEdited:Z
+
+    if-eqz p1, :cond_sr_go
+
+    return-void
+
+    :cond_sr_go
+
     .line 214
     iget-object p1, p0, Lcom/narvii/chat/screenroom/overlay/SROverlayMainFragment;->chatRecycleView:Lcom/narvii/chat/video/overlay/AvChatMessageListView;
 

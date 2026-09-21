@@ -5467,3 +5467,66 @@
     :cond_end
     return-void
 .end method
+
+.method applyEditedMessage(Lcom/narvii/model/ChatMessage;)V
+    .locals 6
+
+    if-eqz p1, :loop_end
+
+    iget-object v0, p1, Lcom/narvii/model/ChatMessage;->messageId:Ljava/lang/String;
+
+    if-eqz v0, :loop_end
+
+    invoke-virtual {p0}, Lcom/narvii/chat/ChatListFragment$Adapter;->list()Ljava/util/List;
+
+    move-result-object v1
+
+    if-eqz v1, :loop_end
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    :loop_start
+    if-ge v3, v2, :loop_end
+
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    instance-of v5, v4, Lcom/narvii/model/ChatMessage;
+
+    if-eqz v5, :loop_next
+
+    check-cast v4, Lcom/narvii/model/ChatMessage;
+
+    iget-object v5, v4, Lcom/narvii/model/ChatMessage;->messageId:Ljava/lang/String;
+
+    invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :loop_next
+
+    iget-object v5, p1, Lcom/narvii/model/ChatMessage;->content:Ljava/lang/String;
+
+    iput-object v5, v4, Lcom/narvii/model/ChatMessage;->content:Ljava/lang/String;
+
+    const/4 v5, 0x1
+
+    iput-boolean v5, v4, Lcom/narvii/model/ChatMessage;->isEdited:Z
+
+    invoke-virtual {p0}, Lcom/narvii/chat/ChatListFragment$Adapter;->notifyDataSetChanged()V
+
+    return-void
+
+    :loop_next
+    add-int/lit8 v3, v3, 0x1
+
+    goto :loop_start
+
+    :loop_end
+    return-void
+.end method

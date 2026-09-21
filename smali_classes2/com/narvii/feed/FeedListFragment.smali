@@ -23,6 +23,14 @@
 
     invoke-direct {v0, p0}, Lcom/narvii/list/MergeAdapter;-><init>(Lcom/narvii/app/NVContext;)V
 
+    invoke-virtual {p0, p1}, Lcom/narvii/feed/FeedListFragment;->createFeedAdapter(Landroid/os/Bundle;)Lcom/narvii/feed/FeedListAdapter;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Lcom/narvii/list/MergeAdapter;->addAdapter(Landroid/widget/ListAdapter;Z)V
+
     return-object v0
 .end method
 

@@ -1485,6 +1485,25 @@
 .method public onNewChatMessage(ILcom/narvii/chat/util/ChatMessageDto;)V
     .locals 9
 
+    iget-object p1, p2, Lcom/narvii/chat/util/ChatMessageDto;->chatMessage:Lcom/narvii/model/ChatMessage;
+
+    if-eqz p1, :cond_ws_normal
+
+    iget-boolean v0, p1, Lcom/narvii/model/ChatMessage;->isEdited:Z
+
+    if-eqz v0, :cond_ws_normal
+
+    iget-object v0, p0, Lcom/narvii/chat/ChatListFragment;->adapter:Lcom/narvii/chat/ChatListFragment$Adapter;
+
+    if-eqz v0, :cond_ws_done
+
+    invoke-virtual {v0, p1}, Lcom/narvii/chat/ChatListFragment$Adapter;->applyEditedMessage(Lcom/narvii/model/ChatMessage;)V
+
+    :cond_ws_done
+    return-void
+
+    :cond_ws_normal
+
     .line 486
     iget-boolean p1, p0, Lcom/narvii/chat/ChatListFragment;->reachBottom:Z
 
