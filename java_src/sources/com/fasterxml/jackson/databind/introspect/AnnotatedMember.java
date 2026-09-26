@@ -1,0 +1,48 @@
+package com.fasterxml.jackson.databind.introspect;
+
+import com.fasterxml.jackson.databind.util.ClassUtil;
+import java.io.Serializable;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Member;
+import java.util.Collections;
+
+/* JADX INFO: loaded from: classes10.dex */
+public abstract class AnnotatedMember extends Annotated implements Serializable {
+    private static final long serialVersionUID = 7364428299211355871L;
+    protected final transient AnnotationMap _annotations;
+
+    @Override // com.fasterxml.jackson.databind.introspect.Annotated
+    protected AnnotationMap getAllAnnotations() {
+        return this._annotations;
+    }
+
+    public abstract Class<?> getDeclaringClass();
+
+    public abstract Member getMember();
+
+    public abstract Object getValue(Object obj) throws UnsupportedOperationException, IllegalArgumentException;
+
+    public abstract void setValue(Object obj, Object obj2) throws UnsupportedOperationException, IllegalArgumentException;
+
+    public final void addIfNotPresent(Annotation annotation) {
+        this._annotations.addIfNotPresent(annotation);
+    }
+
+    public final void addOrOverride(Annotation annotation) {
+        this._annotations.add(annotation);
+    }
+
+    @Override // com.fasterxml.jackson.databind.introspect.Annotated
+    public Iterable<Annotation> annotations() {
+        AnnotationMap annotationMap = this._annotations;
+        return annotationMap == null ? Collections.emptyList() : annotationMap.annotations();
+    }
+
+    protected AnnotatedMember(AnnotationMap annotationMap) {
+        this._annotations = annotationMap;
+    }
+
+    public final void fixAccess() {
+        ClassUtil.checkAndFixAccess(getMember());
+    }
+}

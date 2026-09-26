@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alert_dialog_button"
+    android:layout_width="0px"
+    android:layout_height="48dp"
+    android:layout_weight="1"
+    style="@style/ButtonGreen"/>

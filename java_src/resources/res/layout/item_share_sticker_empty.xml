@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.narvii.widget.TintButton
+            android:id="@+id/empty_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_retry"
+            app:tintColor="#cdcfd3"/>
+        <TextView
+            android:textSize="17dp"
+            android:textColor="#494f54"
+            android:id="@+id/empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/share_sticker_empty"/>
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/selector_sticker_empty"
+            android:id="@+id/create_new_sticker"
+            android:background="@drawable/selector_share_sticker_empty_add_new"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/create_a_new_sticker_pack"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"/>
+    </LinearLayout>
+</FrameLayout>

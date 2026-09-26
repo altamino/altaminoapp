@@ -1,0 +1,121 @@
+package android.support.v4.os;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.os.RemoteException;
+import androidx.annotation.NonNull;
+import androidx.annotation.RestrictTo;
+
+/* JADX INFO: loaded from: classes4.dex */
+@SuppressLint({"BanParcelableUsage"})
+@RestrictTo
+public class ResultReceiver implements Parcelable {
+    public static final Parcelable.Creator<ResultReceiver> CREATOR = new a();
+    final Handler mHandler;
+    final boolean mLocal;
+    android.support.v4.os.a mReceiver;
+
+    class a implements Parcelable.Creator<ResultReceiver> {
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        public ResultReceiver createFromParcel(Parcel parcel) {
+            return new ResultReceiver(parcel);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
+        public ResultReceiver[] newArray(int i10) {
+            return new ResultReceiver[i10];
+        }
+
+        a() {
+        }
+    }
+
+    class b extends android.support.v4.os.a.AbstractBinderC0020a {
+        b() {
+        }
+
+        @Override // android.support.v4.os.a
+        public void L(int i10, Bundle bundle) {
+            ResultReceiver resultReceiver = ResultReceiver.this;
+            Handler handler = resultReceiver.mHandler;
+            if (handler != null) {
+                handler.post(resultReceiver.new c(i10, bundle));
+            } else {
+                resultReceiver.a(i10, bundle);
+            }
+        }
+    }
+
+    class c implements Runnable {
+        final int mResultCode;
+        final Bundle mResultData;
+
+        c(int i10, Bundle bundle) {
+            this.mResultCode = i10;
+            this.mResultData = bundle;
+        }
+
+        @Override // java.lang.Runnable
+        public void run() {
+            ResultReceiver.this.a(this.mResultCode, this.mResultData);
+        }
+    }
+
+    public ResultReceiver(Handler handler) {
+        this.mLocal = true;
+        this.mHandler = handler;
+    }
+
+    protected void a(int i10, Bundle bundle) {
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(@NonNull Parcel parcel, int i10) {
+        synchronized (this) {
+            try {
+                if (this.mReceiver == null) {
+                    this.mReceiver = new b();
+                }
+                parcel.writeStrongBinder(this.mReceiver.asBinder());
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    ResultReceiver(Parcel parcel) {
+        this.mLocal = false;
+        this.mHandler = null;
+        this.mReceiver = android.support.v4.os.a.AbstractBinderC0020a.x1(parcel.readStrongBinder());
+    }
+
+    public void c(int i10, Bundle bundle) {
+        if (this.mLocal) {
+            Handler handler = this.mHandler;
+            if (handler != null) {
+                handler.post(new c(i10, bundle));
+                return;
+            } else {
+                a(i10, bundle);
+                return;
+            }
+        }
+        android.support.v4.os.a aVar = this.mReceiver;
+        if (aVar != null) {
+            try {
+                aVar.L(i10, bundle);
+            } catch (RemoteException unused) {
+            }
+        }
+    }
+}

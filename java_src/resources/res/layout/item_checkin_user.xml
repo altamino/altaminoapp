@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/detail_likes_margin">
+    <include
+        app:layout_centerX="50%"
+        app:layout_height="this.width"
+        app:layout_width="85%"
+        app:strokeColor="#fff"
+        app:strokeWidth="0.5dp"
+        layout="@layout/user_avatar_layout_mini"/>
+    <com.narvii.widget.NicknameView
+        android:textSize="9dp"
+        android:textColor="#fff"
+        android:id="@+id/nickname"
+        android:paddingLeft="6dp"
+        android:paddingTop="2dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        app:hideMembershipBadge="true"
+        app:hideRole="true"
+        app:layout_centerX="50%"
+        app:layout_top="user_avatar_layout.bottom+2dp"/>
+</com.github.mmin18.widget.FlexLayout>

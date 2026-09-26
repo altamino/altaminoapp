@@ -1,0 +1,12 @@
+package androidx.databinding.adapters;
+
+import android.annotation.TargetApi;
+import androidx.annotation.RestrictTo;
+import androidx.databinding.BindingMethods;
+
+/* JADX INFO: loaded from: classes7.dex */
+@BindingMethods
+@TargetApi(14)
+@RestrictTo
+public class SwitchBindingAdapter {
+}

@@ -1,0 +1,5 @@
+package androidx.compose.animation;
+
+/* JADX INFO: loaded from: classes10.dex */
+public final class TransitionKt {
+}

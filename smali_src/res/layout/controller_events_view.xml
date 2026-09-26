@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/controller_events_view_0" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="50.0dp" android:text="@string/controller_logs" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <Spinner android:id="@id/controller_spinners" android:layout_width="wrap_content" android:layout_height="0.0dp" android:text="@string/environment" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintLeft_toRightOf="@id/title" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/title" />
+    <TextView android:gravity="center_vertical" android:id="@id/tv_desc" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/controller_spinners" />
+</androidx.constraintlayout.widget.ConstraintLayout>

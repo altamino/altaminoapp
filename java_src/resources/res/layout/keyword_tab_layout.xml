@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <com.narvii.widget.AutoSizingTextView
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:textColor="@color/incubator_tab"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:id="@+id/tab_title"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:autoSizeTextMaxSize="13dp"
+        app:autoSizeTextMinSize="3dp"/>
+</FrameLayout>

@@ -1,0 +1,12 @@
+.class public interface abstract Landroidx/compose/ui/layout/Measured;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract c0(Landroidx/compose/ui/layout/AlignmentLine;)I
+    .param p1    # Landroidx/compose/ui/layout/AlignmentLine;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+.end method

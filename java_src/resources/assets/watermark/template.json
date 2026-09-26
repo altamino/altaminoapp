@@ -1,0 +1,20 @@
+{
+    "id": "d19152e4-5c0b-5346-9b8a-1e6aaaaaaaa",
+    "version": 1,
+    "minInputCount": 4,
+    "inputCount": 4,
+    "videoEnabled": true,
+    "segments": [
+        {
+            "channel": 3,
+            "channelInputs": [0, 1, 2],
+            "shader": ["watermark/1.glsl"]
+        },
+        {
+            "channel": 1,
+            "channelInputs": [3],
+            "frameCount": 60,
+            "shader": ["watermark/2.glsl"]
+        }
+    ]
+}

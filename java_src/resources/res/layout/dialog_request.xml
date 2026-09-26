@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/flag_object_preview"/>
+        <EditText
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:gravity="top"
+            android:id="@+id/request_edit"
+            android:background="@drawable/editbg"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxHeight="100dp"
+            android:inputType="textMultiLine"
+            android:textCursorDrawable="@drawable/edit_cursor_black"/>
+    </LinearLayout>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/request_progress"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:indeterminateDrawable="@drawable/progress"/>
+</FrameLayout>

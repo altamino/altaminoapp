@@ -1,0 +1,25 @@
+package com.google.android.exoplayer2;
+
+import java.util.HashSet;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class x1 {
+    public static final boolean ASSERTIONS_ENABLED = true;
+    public static final String TAG = "ExoPlayerLib";
+    public static final boolean TRACE_ENABLED = true;
+    public static final String VERSION = "2.18.2";
+    public static final int VERSION_INT = 2018002;
+    public static final String VERSION_SLASHY = "ExoPlayerLib/2.18.2";
+    private static final HashSet<String> registeredModules = new HashSet<>();
+    private static String registeredModulesString = "goog.exo.core";
+
+    public static synchronized void a(String str) {
+        if (registeredModules.add(str)) {
+            registeredModulesString += ", " + str;
+        }
+    }
+
+    public static synchronized String b() {
+        return registeredModulesString;
+    }
+}

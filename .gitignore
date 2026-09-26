@@ -1,3 +1,4 @@
-/build
+*build
 /dist
 altamino.jks
+original.apk

@@ -1,0 +1,29 @@
+package com.google.android.gms.internal.p000authapi;
+
+import android.content.Context;
+import android.os.RemoteException;
+import com.google.android.gms.auth.api.credentials.Credential;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.Result;
+import com.google.android.gms.common.api.Status;
+
+/* JADX INFO: loaded from: classes11.dex */
+final class zbi extends zbm {
+    final /* synthetic */ Credential zba;
+
+    @Override // com.google.android.gms.common.api.internal.BasePendingResult
+    protected final /* bridge */ /* synthetic */ Result createFailedResult(Status status) {
+        return status;
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    zbi(zbl zblVar, GoogleApiClient googleApiClient, Credential credential) {
+        super(googleApiClient);
+        this.zba = credential;
+    }
+
+    @Override // com.google.android.gms.internal.p000authapi.zbm
+    protected final void zba(Context context, zbt zbtVar) throws RemoteException {
+        zbtVar.zbc(new zbk(this), new zbp(this.zba));
+    }
+}

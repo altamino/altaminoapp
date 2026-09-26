@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.narvii.master.widget.MasterTabPlaceHolder
+        android:id="@+id/search_bar_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.narvii.widget.NVPagerTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:custom_tab_width="@dimen/coordinate_tab_width"
+        app:scroll_divide_equal="false"/>
+    <com.narvii.widget.NVViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

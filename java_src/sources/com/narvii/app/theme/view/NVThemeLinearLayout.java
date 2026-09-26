@@ -1,0 +1,81 @@
+package com.narvii.app.theme.view;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import android.widget.LinearLayout;
+import com.narvii.app.theme.NVThemeObserver;
+import com.narvii.lib.R;
+import kotlin.jvm.internal.k;
+import kotlin.jvm.internal.t;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* JADX INFO: loaded from: classes8.dex */
+public final class NVThemeLinearLayout extends LinearLayout implements NVThemeObserver, NVDarkBackground {
+
+    @Nullable
+    private Drawable darkBackgroundDrawable;
+
+    @Nullable
+    private Drawable lightBackgroundDrawable;
+    private int nvThemeValue;
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public NVThemeLinearLayout(@NotNull Context context) {
+        this(context, null, 0, 6, null);
+        t.j(context, "context");
+    }
+
+    private final boolean isDarkNvTheme() {
+        return this.nvThemeValue == 2;
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public NVThemeLinearLayout(@NotNull Context context, @Nullable AttributeSet attributeSet) {
+        this(context, attributeSet, 0, 4, null);
+        t.j(context, "context");
+    }
+
+    @Override // com.narvii.app.theme.NVThemeObserver
+    public void onThemeChange(int i10) {
+        Drawable drawable;
+        this.nvThemeValue = i10;
+        if (i10 != 1) {
+            if (i10 == 2 && (drawable = this.darkBackgroundDrawable) != null) {
+                setBackground(drawable);
+                return;
+            }
+            return;
+        }
+        Drawable drawable2 = this.lightBackgroundDrawable;
+        if (drawable2 != null) {
+            setBackground(drawable2);
+        }
+    }
+
+    @Override // com.narvii.app.theme.view.NVDarkBackground
+    public void setDarkBackgroundDrawable(@Nullable Drawable drawable) {
+        this.darkBackgroundDrawable = drawable;
+        if (isDarkNvTheme()) {
+            setBackground(this.darkBackgroundDrawable);
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public NVThemeLinearLayout(@NotNull Context context, @Nullable AttributeSet attributeSet, int i10) {
+        super(context, attributeSet, i10);
+        t.j(context, "context");
+        this.nvThemeValue = 1;
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, R.styleable.NVDarkTheme);
+        t.i(typedArrayObtainStyledAttributes, "obtainStyledAttributes(...)");
+        this.darkBackgroundDrawable = NVThemeView.Companion.getDarkBackgroundDrawable(typedArrayObtainStyledAttributes, context);
+        typedArrayObtainStyledAttributes.recycle();
+        this.lightBackgroundDrawable = getBackground();
+    }
+
+    public /* synthetic */ NVThemeLinearLayout(Context context, AttributeSet attributeSet, int i10, int i11, k kVar) {
+        this(context, (i11 & 2) != 0 ? null : attributeSet, (i11 & 4) != 0 ? 0 : i10);
+    }
+}

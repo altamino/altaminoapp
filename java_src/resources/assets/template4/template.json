@@ -1,0 +1,78 @@
+{
+    "id": "d19152e4-5c0b-5346-9b8a-1e63808cfbcc",
+    "version": 1,
+    "fps": 25,
+    "minInputCount": 2,
+    "inputCount": 10,
+    "outputFrameCount": 374,
+    "videoEnabled": false,
+    "backgroundMusic": "template4/bgMusic.aac",
+    "segments": [
+        {
+            "channel": 1,
+            "channelInputs": [0],
+            "frameCount": 55,
+            "shader": ["template4/1.glsl"]
+        },
+        {
+            "channel": 1,
+            "channelInputs": [1],
+            "frameCount": 18,
+            "shader": ["template4/2.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [1, 2],
+            "frameCount": 35,
+            "shader": ["template4/3_1.glsl", "template4/3_2.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [2, 3],
+            "frameCount": 19,
+            "shader": ["template4/4_1.glsl", "template4/4_2.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [3, 4],
+            "frameCount": 27,
+            "shader": ["template4/5.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [4, 5],
+            "frameCount": 55,
+            "shader": ["template4/6_1.glsl", "template4/6_2.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [5, 6],
+            "frameCount": 25,
+            "shader": ["template4/7_1.glsl", "template4/7_2.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [6, 7],
+            "frameCount": 51,
+            "shader": ["template4/8_1.glsl", "template4/8_2.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [7, 8],
+            "frameCount": 29,
+            "shader": ["template4/9_1.glsl", "template4/9_2.glsl"]
+        },
+        {
+            "channel": 2,
+            "channelInputs": [8, 9],
+            "frameCount": 40,
+            "shader": ["template4/10_1.glsl", "template4/10_2.glsl"]
+        },
+        {
+            "channel": 1,
+            "channelInputs": [9],
+            "frameCount": 20,
+            "shader": ["template4/11.glsl"]
+        }
+    ]
+}

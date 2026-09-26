@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.chat.input.ChatInputOptionMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <GridLayout
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:id="@+id/chat_input_option_menu_container"
+        android:background="@drawable/chat_input_option_menu_background"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"
+        android:numColumns="4"/>
+    <com.narvii.widget.FontAwesomeView
+        android:textColor="#e5ffffff"
+        android:layout_gravity="end"
+        android:id="@+id/arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/ion_arrow_down_b"
+        android:layout_marginEnd="4dp"/>
+</com.narvii.chat.input.ChatInputOptionMenu>

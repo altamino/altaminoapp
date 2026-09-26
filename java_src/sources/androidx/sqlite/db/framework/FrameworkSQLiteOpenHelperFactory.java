@@ -1,0 +1,15 @@
+package androidx.sqlite.db.framework;
+
+import androidx.sqlite.db.SupportSQLiteOpenHelper;
+import kotlin.jvm.internal.t;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: loaded from: classes10.dex */
+public final class FrameworkSQLiteOpenHelperFactory implements SupportSQLiteOpenHelper.Factory {
+    @Override // androidx.sqlite.db.SupportSQLiteOpenHelper.Factory
+    @NotNull
+    public SupportSQLiteOpenHelper a(@NotNull SupportSQLiteOpenHelper.Configuration configuration) {
+        t.j(configuration, "configuration");
+        return new FrameworkSQLiteOpenHelper(configuration.context, configuration.name, configuration.callback, configuration.useNoBackupDirectory, configuration.allowDataLossOnRecovery);
+    }
+}

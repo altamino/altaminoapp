@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/action"
+        android:background="@drawable/button_rect_white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/chat_item_tile"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/chat_screenroom_permission"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"/>
+        <com.narvii.widget.FontAwesomeView
+            android:id="@+id/chat_mute_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            style="@style/IconChevronRight"/>
+    </LinearLayout>
+</LinearLayout>

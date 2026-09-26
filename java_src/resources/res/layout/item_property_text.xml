@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="#666"
+        android:gravity="start"
+        android:id="@+id/item_property_title"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"/>
+    <TextView
+        android:textSize="14dp"
+        android:textColor="#666"
+        android:gravity="start"
+        android:id="@+id/item_property_value"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+</merge>

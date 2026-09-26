@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/error_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_height="70%"
+        app:layout_right="100%-8dp"
+        app:layout_width="78%">
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#555"
+            android:id="@+id/error"
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error"/>
+        <TextView
+            android:textSize="14dp"
+            android:textColor="#555"
+            android:gravity="center"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/normal_error_long"/>
+        <com.narvii.widget.FontAwesomeView
+            android:textColor="@color/button_text_gray_w"
+            android:gravity="center"
+            android:id="@+id/retry"
+            android:padding="12dp"
+            android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="@string/ion_refresh"/>
+    </LinearLayout>
+</com.github.mmin18.widget.FlexLayout>

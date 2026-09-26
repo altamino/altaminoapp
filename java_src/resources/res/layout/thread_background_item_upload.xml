@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="64dp"
+        android:layout_height="96dp">
+        <com.narvii.widget.NVImageView
+            android:id="@+id/chat_background_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#33ffffff"
+            android:scaleType="centerCrop"
+            app:cornerRadius="4dp"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="19dp"
+            android:src="@drawable/ic_chat_background_user_upload"
+            android:scaleType="centerInside"/>
+    </FrameLayout>
+</FrameLayout>

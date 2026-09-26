@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.narvii.widget.NVImageView
+        android:id="@+id/item_color_drawable"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:cornerRadius="3dp"/>
+    <View
+        android:id="@+id/item_color_selected"
+        android:background="@drawable/color_picker_default_color_selected"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+</FrameLayout>

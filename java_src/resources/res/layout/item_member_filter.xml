@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="#fff"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.narvii.widget.ThumbImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/avatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        style="@style/AvatarImageView"/>
+    <com.narvii.widget.NicknameView
+        android:textSize="12dp"
+        android:textColor="#555"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/nickname"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        app:hideRole="true"/>
+    <com.narvii.widget.FontAwesomeView
+        android:textSize="20dp"
+        android:textColor="#f2f2f2"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/checkmark"
+        android:background="@drawable/button_oval_blue"
+        android:padding="7dp"
+        android:visibility="invisible"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:text="@string/fa_check"/>
+</LinearLayout>

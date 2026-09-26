@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.TintButton
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/milestone"
+        android:layout_width="40dp"
+        android:layout_height="52dp"
+        android:src="@drawable/ic_question_milestone"/>
+    <View
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_question_milestone_stroke"
+        android:layout_width="42dp"
+        android:layout_height="54dp"/>
+    <include
+        android:layout_gravity="center_horizontal"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="6dp"
+        app:strokeWidth="0.5dp"
+        layout="@layout/user_avatar_layout_mini_nobadge"/>
+</merge>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/bookmark_normal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minWidth="140dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_topic_bookmark"/>
+        <TextView
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/bookmark_raw"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/bookmark_normal_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minWidth="100dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_topic_bookmark_selected"/>
+    </FrameLayout>
+    <com.narvii.widget.SpinningView
+        android:layout_gravity="center"
+        android:id="@+id/bookmark_loading"
+        android:layout_width="@dimen/spin_tiny_size"
+        android:layout_height="@dimen/spin_tiny_size"
+        app:spinColor="#eee"
+        app:spinStyle="2"/>
+</merge>

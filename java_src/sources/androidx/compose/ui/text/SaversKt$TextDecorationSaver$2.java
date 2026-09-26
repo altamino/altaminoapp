@@ -1,0 +1,25 @@
+package androidx.compose.ui.text;
+
+import androidx.compose.ui.text.style.TextDecoration;
+import e8.l;
+import kotlin.jvm.internal.t;
+import kotlin.jvm.internal.v;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* JADX INFO: loaded from: classes2.dex */
+final class SaversKt$TextDecorationSaver$2 extends v implements l<Object, TextDecoration> {
+    public static final SaversKt$TextDecorationSaver$2 INSTANCE = new SaversKt$TextDecorationSaver$2();
+
+    SaversKt$TextDecorationSaver$2() {
+        super(1);
+    }
+
+    @Override // e8.l
+    @Nullable
+    /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    public final TextDecoration invoke(@NotNull Object it) {
+        t.j(it, "it");
+        return new TextDecoration(((Integer) it).intValue());
+    }
+}

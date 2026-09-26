@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="15dp"
+    android:textColor="#222"
+    android:gravity="start"
+    android:id="@+id/alert_dialog_edit"
+    android:background="@drawable/edit_round_normal"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:layout_marginBottom="20dp"
+    android:singleLine="true"
+    android:inputType="text"
+    android:textCursorDrawable="@drawable/edit_cursor_black_1dp"/>

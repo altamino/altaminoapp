@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.EmojioneView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mood_sticker"
+    android:visibility="gone"
+    android:layout_width="@dimen/chat_mood_sticker_size"
+    android:layout_height="@dimen/chat_mood_sticker_size"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"/>

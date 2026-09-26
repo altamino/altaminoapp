@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.RadiusLayout android:layout_width="match_parent" android:layout_height="105.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="8.0dp" app:layout_corner_radius="7.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.narvii.widget.NVImageView android:id="@id/image" android:background="@color/main_interest_item_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="end|top" android:id="@id/picked_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_marginTop="15.0dp" android:src="@drawable/ic_interest_checked" />
+    <com.narvii.widget.AutoSizingTextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#fff" android:ellipsize="end" android:gravity="start|bottom" android:layout_gravity="bottom" android:id="@id/title" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="36.0dp" android:maxLines="2" app:autoSizeTextMaxSize="12.0dp" />
+</com.narvii.widget.RadiusLayout>

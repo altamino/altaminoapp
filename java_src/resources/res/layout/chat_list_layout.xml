@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.narvii.widget.SpinningView
+        android:layout_gravity="center"
+        android:id="@android:id/progress"
+        android:layout_width="@dimen/spin_large_size"
+        android:layout_height="@dimen/spin_large_size"/>
+    <com.narvii.chat.ChatListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/list_selector"/>
+    <FrameLayout
+        android:layout_gravity="bottom"
+        android:id="@+id/new_message_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="13dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:id="@+id/new_message"
+            android:background="@drawable/selector_round_blue"
+            android:paddingLeft="12dp"
+            android:paddingTop="4dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="25dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+    </FrameLayout>
+</FrameLayout>

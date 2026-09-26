@@ -1,0 +1,489 @@
+.class public final Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/viewbinding/ViewBinding;
+
+
+# instance fields
+.field public final communityInfo:Lcom/narvii/amino/databinding/CommunityInfoLayoutBinding;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final contentContainer:Lcom/github/mmin18/widget/FlexLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final feedCaption1:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final feedImage1:Landroid/widget/FrameLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final feedToolbar:Lcom/narvii/amino/databinding/FeedToolbarHeadlineBinding;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final headlineFeedItem:Lcom/narvii/feed/FeedListItem;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final image:Lcom/narvii/widget/ThumbImageView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field private final rootView:Landroid/widget/LinearLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final title:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Landroid/widget/LinearLayout;Lcom/narvii/amino/databinding/CommunityInfoLayoutBinding;Lcom/github/mmin18/widget/FlexLayout;Landroid/widget/TextView;Landroid/widget/FrameLayout;Lcom/narvii/amino/databinding/FeedToolbarHeadlineBinding;Lcom/narvii/feed/FeedListItem;Lcom/narvii/widget/ThumbImageView;Landroid/widget/TextView;)V
+    .locals 0
+    .param p1    # Landroid/widget/LinearLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lcom/narvii/amino/databinding/CommunityInfoLayoutBinding;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Lcom/github/mmin18/widget/FlexLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p5    # Landroid/widget/FrameLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p6    # Lcom/narvii/amino/databinding/FeedToolbarHeadlineBinding;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p7    # Lcom/narvii/feed/FeedListItem;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p8    # Lcom/narvii/widget/ThumbImageView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p9    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    iput-object p1, p0, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->rootView:Landroid/widget/LinearLayout;
+
+    .line 6
+    .line 7
+    iput-object p2, p0, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->communityInfo:Lcom/narvii/amino/databinding/CommunityInfoLayoutBinding;
+
+    .line 8
+    .line 9
+    iput-object p3, p0, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->contentContainer:Lcom/github/mmin18/widget/FlexLayout;
+
+    .line 10
+    .line 11
+    iput-object p4, p0, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->feedCaption1:Landroid/widget/TextView;
+
+    .line 12
+    .line 13
+    iput-object p5, p0, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->feedImage1:Landroid/widget/FrameLayout;
+
+    .line 14
+    .line 15
+    iput-object p6, p0, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->feedToolbar:Lcom/narvii/amino/databinding/FeedToolbarHeadlineBinding;
+
+    .line 16
+    .line 17
+    iput-object p7, p0, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->headlineFeedItem:Lcom/narvii/feed/FeedListItem;
+
+    .line 18
+    .line 19
+    iput-object p8, p0, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->image:Lcom/narvii/widget/ThumbImageView;
+
+    .line 20
+    .line 21
+    iput-object p9, p0, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->title:Landroid/widget/TextView;
+
+    .line 22
+    return-void
+.end method
+
+.method public static bind(Landroid/view/View;)Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;
+    .locals 12
+    .param p0    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    const v0, 0x7f0a0370
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->a(Landroid/view/View;I)Landroid/view/View;
+
+    .line 7
+    move-result-object v1
+
+    .line 8
+    .line 9
+    if-eqz v1, :cond_0
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-static {v1}, Lcom/narvii/amino/databinding/CommunityInfoLayoutBinding;->bind(Landroid/view/View;)Lcom/narvii/amino/databinding/CommunityInfoLayoutBinding;
+
+    .line 13
+    move-result-object v4
+
+    .line 14
+    .line 15
+    .line 16
+    const v0, 0x7f0a039f
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->a(Landroid/view/View;I)Landroid/view/View;
+
+    .line 20
+    move-result-object v1
+
+    .line 21
+    move-object v5, v1
+
+    .line 22
+    .line 23
+    check-cast v5, Lcom/github/mmin18/widget/FlexLayout;
+
+    .line 24
+    .line 25
+    if-eqz v5, :cond_0
+
+    .line 26
+    .line 27
+    .line 28
+    const v0, 0x7f0a056c
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->a(Landroid/view/View;I)Landroid/view/View;
+
+    .line 32
+    move-result-object v1
+
+    .line 33
+    move-object v6, v1
+
+    .line 34
+    .line 35
+    check-cast v6, Landroid/widget/TextView;
+
+    .line 36
+    .line 37
+    if-eqz v6, :cond_0
+
+    .line 38
+    .line 39
+    .line 40
+    const v0, 0x7f0a0576
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->a(Landroid/view/View;I)Landroid/view/View;
+
+    .line 44
+    move-result-object v1
+
+    .line 45
+    move-object v7, v1
+
+    .line 46
+    .line 47
+    check-cast v7, Landroid/widget/FrameLayout;
+
+    .line 48
+    .line 49
+    if-eqz v7, :cond_0
+
+    .line 50
+    .line 51
+    .line 52
+    const v0, 0x7f0a0588
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->a(Landroid/view/View;I)Landroid/view/View;
+
+    .line 56
+    move-result-object v1
+
+    .line 57
+    .line 58
+    if-eqz v1, :cond_0
+
+    .line 59
+    .line 60
+    .line 61
+    invoke-static {v1}, Lcom/narvii/amino/databinding/FeedToolbarHeadlineBinding;->bind(Landroid/view/View;)Lcom/narvii/amino/databinding/FeedToolbarHeadlineBinding;
+
+    .line 62
+    move-result-object v8
+
+    .line 63
+    .line 64
+    .line 65
+    const v0, 0x7f0a0652
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->a(Landroid/view/View;I)Landroid/view/View;
+
+    .line 69
+    move-result-object v1
+
+    .line 70
+    move-object v9, v1
+
+    .line 71
+    .line 72
+    check-cast v9, Lcom/narvii/feed/FeedListItem;
+
+    .line 73
+    .line 74
+    if-eqz v9, :cond_0
+
+    .line 75
+    .line 76
+    .line 77
+    const v0, 0x7f0a06eb
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->a(Landroid/view/View;I)Landroid/view/View;
+
+    .line 81
+    move-result-object v1
+
+    .line 82
+    move-object v10, v1
+
+    .line 83
+    .line 84
+    check-cast v10, Lcom/narvii/widget/ThumbImageView;
+
+    .line 85
+    .line 86
+    if-eqz v10, :cond_0
+
+    .line 87
+    .line 88
+    .line 89
+    const v0, 0x7f0a0e9e
+
+    .line 90
+    .line 91
+    .line 92
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->a(Landroid/view/View;I)Landroid/view/View;
+
+    .line 93
+    move-result-object v1
+
+    .line 94
+    move-object v11, v1
+
+    .line 95
+    .line 96
+    check-cast v11, Landroid/widget/TextView;
+
+    .line 97
+    .line 98
+    if-eqz v11, :cond_0
+
+    .line 99
+    .line 100
+    new-instance v0, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;
+
+    .line 101
+    move-object v3, p0
+
+    .line 102
+    .line 103
+    check-cast v3, Landroid/widget/LinearLayout;
+
+    .line 104
+    move-object v2, v0
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-direct/range {v2 .. v11}, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;-><init>(Landroid/widget/LinearLayout;Lcom/narvii/amino/databinding/CommunityInfoLayoutBinding;Lcom/github/mmin18/widget/FlexLayout;Landroid/widget/TextView;Landroid/widget/FrameLayout;Lcom/narvii/amino/databinding/FeedToolbarHeadlineBinding;Lcom/narvii/feed/FeedListItem;Lcom/narvii/widget/ThumbImageView;Landroid/widget/TextView;)V
+
+    .line 108
+    return-object v0
+
+    .line 109
+    .line 110
+    .line 111
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 112
+    move-result-object p0
+
+    .line 113
+    .line 114
+    .line 115
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+
+    .line 116
+    move-result-object p0
+
+    .line 117
+    .line 118
+    new-instance v0, Ljava/lang/NullPointerException;
+
+    .line 119
+    .line 120
+    const-string v1, "Missing required view with ID: "
+
+    .line 121
+    .line 122
+    .line 123
+    invoke-virtual {v1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 124
+    move-result-object p0
+
+    .line 125
+    .line 126
+    .line 127
+    invoke-direct {v0, p0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    .line 128
+    throw v0
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;)Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;
+    .locals 2
+    .param p0    # Landroid/view/LayoutInflater;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    .line 1
+    invoke-static {p0, v0, v1}, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;
+    .locals 2
+    .param p0    # Landroid/view/LayoutInflater;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    const v0, 0x7f0d03fa
+
+    const/4 v1, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p0
+
+    if-eqz p2, :cond_0
+
+    .line 3
+    invoke-virtual {p1, p0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    .line 4
+    :cond_0
+    invoke-static {p0}, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->bind(Landroid/view/View;)Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic getRoot()Landroid/view/View;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 2
+    invoke-virtual {p0}, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->getRoot()Landroid/widget/LinearLayout;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getRoot()Landroid/widget/LinearLayout;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/narvii/amino/databinding/ItemFeedHeadlineLessImageBinding;->rootView:Landroid/widget/LinearLayout;
+
+    return-object v0
+.end method

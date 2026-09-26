@@ -1,0 +1,45 @@
+package com.fasterxml.jackson.databind.ser.std;
+
+import com.fasterxml.jackson.databind.BeanProperty;
+import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.JsonSerializer;
+import com.fasterxml.jackson.databind.jsontype.TypeSerializer;
+import com.fasterxml.jackson.databind.ser.ContainerSerializer;
+import com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer;
+import com.fasterxml.jackson.databind.ser.impl.IteratorSerializer;
+
+/* JADX INFO: loaded from: classes7.dex */
+public class StdContainerSerializers {
+    protected StdContainerSerializers() {
+    }
+
+    public static ContainerSerializer<?> collectionSerializer(JavaType javaType, boolean z6, TypeSerializer typeSerializer, JsonSerializer<Object> jsonSerializer) {
+        return new CollectionSerializer(javaType, z6, typeSerializer, null, jsonSerializer);
+    }
+
+    public static ContainerSerializer<?> indexedListSerializer(JavaType javaType, boolean z6, TypeSerializer typeSerializer, JsonSerializer<Object> jsonSerializer) {
+        return new IndexedListSerializer(javaType, z6, typeSerializer, null, jsonSerializer);
+    }
+
+    @Deprecated
+    public static ContainerSerializer<?> collectionSerializer(JavaType javaType, boolean z6, TypeSerializer typeSerializer, BeanProperty beanProperty, JsonSerializer<Object> jsonSerializer) {
+        return collectionSerializer(javaType, z6, typeSerializer, jsonSerializer);
+    }
+
+    public static JsonSerializer<?> enumSetSerializer(JavaType javaType) {
+        return new EnumSetSerializer(javaType, null);
+    }
+
+    @Deprecated
+    public static ContainerSerializer<?> indexedListSerializer(JavaType javaType, boolean z6, TypeSerializer typeSerializer, BeanProperty beanProperty, JsonSerializer<Object> jsonSerializer) {
+        return indexedListSerializer(javaType, z6, typeSerializer, jsonSerializer);
+    }
+
+    public static ContainerSerializer<?> iterableSerializer(JavaType javaType, boolean z6, TypeSerializer typeSerializer) {
+        return new IterableSerializer(javaType, z6, typeSerializer, (BeanProperty) null);
+    }
+
+    public static ContainerSerializer<?> iteratorSerializer(JavaType javaType, boolean z6, TypeSerializer typeSerializer) {
+        return new IteratorSerializer(javaType, z6, typeSerializer, (BeanProperty) null);
+    }
+}

@@ -1,0 +1,55 @@
+.class public final Landroidx/compose/ui/focus/FocusRequester$Companion$FocusRequesterFactory;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroidx/compose/runtime/internal/StabilityInferred;
+.end annotation
+
+.annotation runtime Landroidx/compose/ui/ExperimentalComposeUiApi;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/ui/focus/FocusRequester$Companion;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "FocusRequesterFactory"
+.end annotation
+
+
+# static fields
+.field public static final $stable:I
+
+.field public static final INSTANCE:Landroidx/compose/ui/focus/FocusRequester$Companion$FocusRequesterFactory;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Landroidx/compose/ui/focus/FocusRequester$Companion$FocusRequesterFactory;
+
+    invoke-direct {v0}, Landroidx/compose/ui/focus/FocusRequester$Companion$FocusRequesterFactory;-><init>()V
+
+    sput-object v0, Landroidx/compose/ui/focus/FocusRequester$Companion$FocusRequesterFactory;->INSTANCE:Landroidx/compose/ui/focus/FocusRequester$Companion$FocusRequesterFactory;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method

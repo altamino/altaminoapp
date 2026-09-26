@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:tag="layout/activity_assembly_debug_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/toolbar_container" layout="@layout/default_toolbar" />
+        <fragment android:name="ai.medialab.medialabads2.ui.AssemblyDebugFragment" android:id="@id/frag_assembly_debug" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_anchor="@id/toolbar_container" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

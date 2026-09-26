@@ -1,0 +1,99 @@
+.class public Lcom/narvii/master/invitation/Invitation;
+.super Lcom/narvii/model/NVObject;
+.source "SourceFile"
+
+
+# instance fields
+.field public author:Lcom/narvii/model/User;
+
+.field public createdTime:Ljava/util/Date;
+    .annotation runtime Lcom/fasterxml/jackson/databind/annotation/JsonDeserialize;
+        using = Lcom/narvii/util/JacksonUtils$DateDeserializer;
+    .end annotation
+
+    .annotation runtime Lcom/fasterxml/jackson/databind/annotation/JsonSerialize;
+        using = Lcom/narvii/util/JacksonUtils$DateSerializer;
+    .end annotation
+.end field
+
+.field public duration:I
+
+.field public invitationId:Ljava/lang/String;
+
+.field public inviteCode:Ljava/lang/String;
+
+.field public link:Ljava/lang/String;
+
+.field public modifiedTime:Ljava/util/Date;
+    .annotation runtime Lcom/fasterxml/jackson/databind/annotation/JsonDeserialize;
+        using = Lcom/narvii/util/JacksonUtils$DateDeserializer;
+    .end annotation
+
+    .annotation runtime Lcom/fasterxml/jackson/databind/annotation/JsonSerialize;
+        using = Lcom/narvii/util/JacksonUtils$DateSerializer;
+    .end annotation
+.end field
+
+.field public ndcId:I
+
+.field public status:I
+
+.field public type:I
+
+.field public usedUid:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lcom/narvii/model/NVObject;-><init>()V
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public id()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/narvii/master/invitation/Invitation;->invitationId:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public objectType()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public parentId()Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public status()I
+    .locals 1
+
+    iget v0, p0, Lcom/narvii/master/invitation/Invitation;->status:I
+
+    return v0
+.end method
+
+.method public uid()Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method

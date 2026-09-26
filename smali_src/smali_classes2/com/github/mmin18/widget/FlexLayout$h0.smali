@@ -1,0 +1,55 @@
+.class Lcom/github/mmin18/widget/FlexLayout$h0;
+.super Lcom/github/mmin18/widget/FlexLayout$m0;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/github/mmin18/widget/FlexLayout;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;IIII)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct/range {p0 .. p5}, Lcom/github/mmin18/widget/FlexLayout$m0;-><init>(Ljava/lang/String;IIII)V
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lcom/github/mmin18/widget/FlexLayout;IIFF)F
+    .locals 0
+
+    .line 1
+    cmpl-float p1, p4, p4
+
+    if-nez p1, :cond_1
+
+    const/4 p1, 0x0
+
+    cmpl-float p2, p4, p1
+
+    if-nez p2, :cond_0
+
+    const/high16 p1, 0x3f800000    # 1.0f
+
+    :cond_0
+    return p1
+
+    :cond_1
+    const/high16 p1, 0x7fc00000    # Float.NaN
+
+    return p1
+.end method

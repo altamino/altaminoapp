@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/drawer_right_recent_icon"
+    android:padding="6dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.narvii.widget.CommunityIconView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            style="@style/CommunityImageView"/>
+        <TextView
+            android:textSize="12dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_gravity="end|top"
+            android:id="@+id/badge"
+            android:background="@drawable/drawer_badge_oval"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="-6dp"
+            android:layout_marginRight="-6dp"
+            android:layout_marginEnd="-6dp"/>
+    </FrameLayout>
+    <TextView
+        android:textSize="11dp"
+        android:textColor="#4a4a4a"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:singleLine="true"/>
+</LinearLayout>

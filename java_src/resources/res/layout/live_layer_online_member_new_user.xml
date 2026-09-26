@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="11dp"
+        android:textColor="#fff"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/user_came"
+        android:background="@drawable/online_new_user_bg"
+        android:paddingLeft="25dp"
+        android:paddingRight="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:singleLine="true"
+        android:paddingStart="25dp"
+        android:paddingEnd="12dp"/>
+    <com.narvii.widget.UserAvatarLayout xmlns:narvii="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_avatar_layout"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="@dimen/live_layer_online_avatar_width"
+        android:layout_height="@dimen/live_layer_online_avatar_width"
+        narvii:avatarShadowOffsetY="1dp"
+        narvii:avatarSizeRatio="0.78"
+        narvii:disableFullAvatarFrame="true"
+        narvii:noBadge="true"
+        narvii:sizeType="mini"/>
+</FrameLayout>

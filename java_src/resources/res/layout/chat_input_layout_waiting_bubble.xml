@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tooltip_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/tooltip_margin_h"
+    android:layout_marginRight="@dimen/tooltip_margin_h">
+    <com.narvii.widget.PopupBubble
+        android:layout_gravity="left"
+        android:id="@+id/popup_bubble"
+        android:tag="tooltip"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:popupBubbleRadius="5dp"
+        style="@style/TooltipPopBubble">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.narvii.livelayer.LiveLayerOnlineBar
+                android:id="@+id/waiting_member_list"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:autoFitAvatarCountMax="3"
+                app:avatarSize="20dp"
+                app:showMore="false"/>
+            <TextView
+                android:textSize="12dp"
+                android:textColor="#fff"
+                android:id="@+id/waiting_member_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+    </com.narvii.widget.PopupBubble>
+</FrameLayout>

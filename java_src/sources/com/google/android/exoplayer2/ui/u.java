@@ -1,0 +1,49 @@
+package com.google.android.exoplayer2.ui;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class u {
+    public static final int ExoMediaButton = 2131951976;
+    public static final int ExoMediaButton_FastForward = 2131951977;
+    public static final int ExoMediaButton_Next = 2131951978;
+    public static final int ExoMediaButton_Pause = 2131951979;
+    public static final int ExoMediaButton_Play = 2131951980;
+    public static final int ExoMediaButton_Previous = 2131951981;
+    public static final int ExoMediaButton_Rewind = 2131951982;
+    public static final int ExoMediaButton_VR = 2131951983;
+    public static final int ExoStyledControls = 2131951984;
+    public static final int ExoStyledControls_Button = 2131951985;
+    public static final int ExoStyledControls_Button_Bottom = 2131951986;
+    public static final int ExoStyledControls_Button_Bottom_AudioTrack = 2131951987;
+    public static final int ExoStyledControls_Button_Bottom_CC = 2131951988;
+    public static final int ExoStyledControls_Button_Bottom_FullScreen = 2131951989;
+    public static final int ExoStyledControls_Button_Bottom_OverflowHide = 2131951990;
+    public static final int ExoStyledControls_Button_Bottom_OverflowShow = 2131951991;
+    public static final int ExoStyledControls_Button_Bottom_PlaybackSpeed = 2131951992;
+    public static final int ExoStyledControls_Button_Bottom_RepeatToggle = 2131951993;
+    public static final int ExoStyledControls_Button_Bottom_Settings = 2131951994;
+    public static final int ExoStyledControls_Button_Bottom_Shuffle = 2131951995;
+    public static final int ExoStyledControls_Button_Bottom_VR = 2131951996;
+    public static final int ExoStyledControls_Button_Center = 2131951997;
+    public static final int ExoStyledControls_Button_Center_FfwdWithAmount = 2131951998;
+    public static final int ExoStyledControls_Button_Center_Next = 2131951999;
+    public static final int ExoStyledControls_Button_Center_PlayPause = 2131952000;
+    public static final int ExoStyledControls_Button_Center_Previous = 2131952001;
+    public static final int ExoStyledControls_Button_Center_RewWithAmount = 2131952002;
+    public static final int ExoStyledControls_TimeBar = 2131952003;
+    public static final int ExoStyledControls_TimeText = 2131952004;
+    public static final int ExoStyledControls_TimeText_Duration = 2131952005;
+    public static final int ExoStyledControls_TimeText_Position = 2131952006;
+    public static final int ExoStyledControls_TimeText_Separator = 2131952007;
+    public static final int TextAppearance_Compat_Notification = 2131952251;
+    public static final int TextAppearance_Compat_Notification_Info = 2131952252;
+    public static final int TextAppearance_Compat_Notification_Info_Media = 2131952253;
+    public static final int TextAppearance_Compat_Notification_Line2 = 2131952254;
+    public static final int TextAppearance_Compat_Notification_Line2_Media = 2131952255;
+    public static final int TextAppearance_Compat_Notification_Media = 2131952256;
+    public static final int TextAppearance_Compat_Notification_Time = 2131952257;
+    public static final int TextAppearance_Compat_Notification_Time_Media = 2131952258;
+    public static final int TextAppearance_Compat_Notification_Title = 2131952259;
+    public static final int TextAppearance_Compat_Notification_Title_Media = 2131952260;
+    public static final int Widget_Compat_NotificationActionContainer = 2131952615;
+    public static final int Widget_Compat_NotificationActionText = 2131952616;
+}

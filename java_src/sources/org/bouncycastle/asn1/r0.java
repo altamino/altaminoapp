@@ -1,0 +1,8 @@
+package org.bouncycastle.asn1;
+
+/* JADX INFO: loaded from: classes10.dex */
+public class r0 extends c1 {
+    r0(int i10, e0 e0Var) {
+        super(64, i10, e0Var);
+    }
+}

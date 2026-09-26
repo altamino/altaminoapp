@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="170dp">
+    <TextView
+        android:textSize="18dp"
+        android:textColor="#333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"/>
+    <FrameLayout
+        android:id="@+id/claim_organizer_claim"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="15dp">
+        <com.narvii.widget.NVImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#00ce7d"
+            narvii:cornerRadius="22dp"/>
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </FrameLayout>
+</LinearLayout>

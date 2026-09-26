@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.suggest.interest.ThreadPostAddTopicView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/interest_item_view"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:layout_margin="4dp">
+    <TextView
+        android:textSize="12dp"
+        android:textColor="#ffffff"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:lines="1"/>
+</com.narvii.suggest.interest.ThreadPostAddTopicView>

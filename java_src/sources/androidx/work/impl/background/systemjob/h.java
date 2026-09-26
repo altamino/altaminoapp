@@ -1,0 +1,7 @@
+package androidx.work.impl.background.systemjob;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final /* synthetic */ class h {
+    public static /* synthetic */ void a() {
+    }
+}

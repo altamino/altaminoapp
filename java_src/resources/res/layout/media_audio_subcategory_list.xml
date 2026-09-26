@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#1b1b21"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/list_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.narvii.widget.SpinningView
+            android:layout_gravity="center"
+            android:id="@android:id/progress"
+            android:layout_width="@dimen/spin_large_size"
+            android:layout_height="@dimen/spin_large_size"/>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/list_view_amino"/>
+        <include layout="@layout/empty_view"/>
+        <com.narvii.widget.RadiusLayout
+            android:layout_gravity="bottom"
+            android:id="@+id/subcategory_pick_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="48dp"
+            app:layout_corner_radius="4dp">
+            <com.narvii.widget.PressedFrameLayout
+                android:id="@+id/pressed_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/account_text"
+                    android:layout_gravity="center"
+                    android:id="@+id/subcategory_pick_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.narvii.widget.SpinningView
+                    android:layout_gravity="center"
+                    android:id="@+id/progress_pressed_frame"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:spinColor="@color/account_text"
+                    app:spinStyle="2"/>
+            </com.narvii.widget.PressedFrameLayout>
+        </com.narvii.widget.RadiusLayout>
+    </FrameLayout>
+</LinearLayout>

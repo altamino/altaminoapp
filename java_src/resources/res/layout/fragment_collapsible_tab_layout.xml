@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.list.refresh.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.narvii.widget.headercollapse.NVHeaderCollapsibleLayout
+        android:id="@+id/collapsible_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultExpand="true"
+        app:overshootDistance="10000"/>
+</com.narvii.list.refresh.SwipeRefreshLayout>

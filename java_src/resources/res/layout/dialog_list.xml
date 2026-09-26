@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#0000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.narvii.widget.NVListView
+        android:layout_gravity="center"
+        android:id="@+id/list"
+        android:background="@drawable/dialog_listview_round"
+        android:descendantFocusability="afterDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"/>
+</FrameLayout>

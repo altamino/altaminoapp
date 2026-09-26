@@ -1,0 +1,76 @@
+package com.fasterxml.jackson.databind.exc;
+
+import com.fasterxml.jackson.core.JsonLocation;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import kotlinx.serialization.json.internal.b;
+
+/* JADX INFO: loaded from: classes2.dex */
+public abstract class PropertyBindingException extends JsonMappingException {
+    private static final int MAX_DESC_LENGTH = 200;
+    protected transient String _propertiesAsString;
+    protected final Collection<Object> _propertyIds;
+    protected final String _propertyName;
+    protected final Class<?> _referringClass;
+
+    public String getPropertyName() {
+        return this._propertyName;
+    }
+
+    public Class<?> getReferringClass() {
+        return this._referringClass;
+    }
+
+    public Collection<Object> getKnownPropertyIds() {
+        Collection<Object> collection = this._propertyIds;
+        if (collection == null) {
+            return null;
+        }
+        return Collections.unmodifiableCollection(collection);
+    }
+
+    @Override // com.fasterxml.jackson.core.JsonProcessingException
+    public String getMessageSuffix() {
+        String str = this._propertiesAsString;
+        if (str != null || this._propertyIds == null) {
+            return str;
+        }
+        StringBuilder sb = new StringBuilder(100);
+        int size = this._propertyIds.size();
+        if (size == 1) {
+            sb.append(" (one known property: \"");
+            sb.append(String.valueOf(this._propertyIds.iterator().next()));
+            sb.append(b.STRING);
+        } else {
+            sb.append(" (");
+            sb.append(size);
+            sb.append(" known properties: ");
+            Iterator<Object> it = this._propertyIds.iterator();
+            while (it.hasNext()) {
+                sb.append(b.STRING);
+                sb.append(String.valueOf(it.next()));
+                sb.append(b.STRING);
+                if (sb.length() > 200) {
+                    sb.append(" [truncated]");
+                    break;
+                }
+                if (it.hasNext()) {
+                    sb.append(", ");
+                }
+            }
+        }
+        sb.append("])");
+        String string = sb.toString();
+        this._propertiesAsString = string;
+        return string;
+    }
+
+    protected PropertyBindingException(String str, JsonLocation jsonLocation, Class<?> cls, String str2, Collection<Object> collection) {
+        super(str, jsonLocation);
+        this._referringClass = cls;
+        this._propertyName = str2;
+        this._propertyIds = collection;
+    }
+}

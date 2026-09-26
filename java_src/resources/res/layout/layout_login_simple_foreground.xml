@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/background_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+    <ImageView
+        android:id="@+id/ic_foreground"
+        android:scaleType="centerCrop"
+        narvii:layout_height="parent.width * 1.78"
+        narvii:layout_width="parent.width"/>
+</com.github.mmin18.widget.FlexLayout>

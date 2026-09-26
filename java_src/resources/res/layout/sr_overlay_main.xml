@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_message_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.narvii.chat.video.overlay.AvChatMessageListView
+        android:layout_gravity="start|bottom"
+        android:id="@+id/chat_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="@dimen/rtc_bottom_chat_list_margin"/>
+</FrameLayout>
