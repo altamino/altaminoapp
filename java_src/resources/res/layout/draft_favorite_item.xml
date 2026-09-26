@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="64dp">
+    <ImageView
+        android:id="@+id/delete"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-8dp"
+        android:src="@drawable/ic_item_delete"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-8dp"/>
+    <com.narvii.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="44dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="18dp">
+        <com.narvii.widget.ThumbImageView
+            android:id="@+id/image"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            app:cornerRadius="4dp"
+            app:defaultDrawable="@color/item_card_placeholder"
+            app:strokeColor="#ccc"
+            app:strokeWidth="@dimen/item_card_stroke_width"/>
+        <TextView
+            android:id="@+id/title"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"/>
+    </com.narvii.widget.CardView>
+    <com.narvii.widget.ThumbImageView
+        android:id="@+id/image_empty"
+        android:visibility="gone"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="12dp"
+        android:scaleType="center"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="12dp"
+        app:defaultDrawable="@color/placeholder"
+        app:strokeColor="#888"
+        app:strokeWidth="0.5dp"/>
+    <include layout="@layout/draft_item_base"/>
+</LinearLayout>

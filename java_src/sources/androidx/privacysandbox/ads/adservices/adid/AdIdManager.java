@@ -1,0 +1,116 @@
+package androidx.privacysandbox.ads.adservices.adid;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import androidx.annotation.DoNotInline;
+import androidx.annotation.RequiresExtension;
+import androidx.annotation.RequiresPermission;
+import androidx.core.os.OutcomeReceiverKt;
+import kotlin.coroutines.jvm.internal.h;
+import kotlin.jvm.internal.k;
+import kotlin.jvm.internal.t;
+import kotlinx.coroutines.p;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import w7.w;
+
+/* JADX INFO: loaded from: classes6.dex */
+public abstract class AdIdManager {
+
+    @NotNull
+    public static final Companion Companion = new Companion(null);
+
+    /* JADX INFO: Access modifiers changed from: private */
+    @SuppressLint({"ClassVerificationFailure", "NewApi"})
+    @RequiresExtension
+    static final class Api33Ext4Impl extends AdIdManager {
+
+        @NotNull
+        private final android.adservices.adid.AdIdManager mAdIdManager;
+
+        public Api33Ext4Impl(@NotNull android.adservices.adid.AdIdManager mAdIdManager) {
+            t.j(mAdIdManager, "mAdIdManager");
+            this.mAdIdManager = mAdIdManager;
+        }
+
+        /* JADX WARN: Illegal instructions before constructor call */
+        public Api33Ext4Impl(@NotNull Context context) {
+            t.j(context, "context");
+            Object systemService = context.getSystemService((Class<Object>) a.a());
+            t.i(systemService, "context.getSystemService…:class.java\n            )");
+            this(b.a(systemService));
+        }
+
+        private final AdId c(android.adservices.adid.AdId adId) {
+            String adId2 = adId.getAdId();
+            t.i(adId2, "response.adId");
+            return new AdId(adId2, adId.isLimitAdTrackingEnabled());
+        }
+
+        @RequiresPermission
+        private final Object d(kotlin.coroutines.d<? super android.adservices.adid.AdId> dVar) throws Throwable {
+            p pVar = new p(kotlin.coroutines.intrinsics.c.c(dVar), 1);
+            pVar.x();
+            this.mAdIdManager.getAdId(new androidx.media3.exoplayer.dash.offline.a(), OutcomeReceiverKt.a(pVar));
+            Object objU = pVar.u();
+            if (objU == kotlin.coroutines.intrinsics.d.e()) {
+                h.c(dVar);
+            }
+            return objU;
+        }
+
+        /* JADX WARN: Code duplicated, block: B:7:0x0013  */
+        @Override // androidx.privacysandbox.ads.adservices.adid.AdIdManager
+        @RequiresPermission
+        @DoNotInline
+        @Nullable
+        public Object a(@NotNull kotlin.coroutines.d<? super AdId> dVar) throws Throwable {
+            AdIdManager$Api33Ext4Impl$getAdId$1 adIdManager$Api33Ext4Impl$getAdId$1;
+            Api33Ext4Impl api33Ext4Impl;
+            if (dVar instanceof AdIdManager$Api33Ext4Impl$getAdId$1) {
+                adIdManager$Api33Ext4Impl$getAdId$1 = (AdIdManager$Api33Ext4Impl$getAdId$1) dVar;
+                int i10 = adIdManager$Api33Ext4Impl$getAdId$1.label;
+                if ((i10 & Integer.MIN_VALUE) != 0) {
+                    adIdManager$Api33Ext4Impl$getAdId$1.label = i10 - Integer.MIN_VALUE;
+                } else {
+                    adIdManager$Api33Ext4Impl$getAdId$1 = new AdIdManager$Api33Ext4Impl$getAdId$1(this, dVar);
+                }
+            } else {
+                adIdManager$Api33Ext4Impl$getAdId$1 = new AdIdManager$Api33Ext4Impl$getAdId$1(this, dVar);
+            }
+            Object objD = adIdManager$Api33Ext4Impl$getAdId$1.result;
+            Object objE = kotlin.coroutines.intrinsics.d.e();
+            int i11 = adIdManager$Api33Ext4Impl$getAdId$1.label;
+            if (i11 == 0) {
+                w.b(objD);
+                adIdManager$Api33Ext4Impl$getAdId$1.L$0 = this;
+                adIdManager$Api33Ext4Impl$getAdId$1.label = 1;
+                objD = d(adIdManager$Api33Ext4Impl$getAdId$1);
+                if (objD == objE) {
+                    return objE;
+                }
+                api33Ext4Impl = this;
+            } else {
+                if (i11 != 1) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                api33Ext4Impl = (Api33Ext4Impl) adIdManager$Api33Ext4Impl$getAdId$1.L$0;
+                w.b(objD);
+            }
+            return api33Ext4Impl.c(c.a(objD));
+        }
+    }
+
+    public static final class Companion {
+        public /* synthetic */ Companion(k kVar) {
+            this();
+        }
+
+        private Companion() {
+        }
+    }
+
+    @RequiresPermission
+    @Nullable
+    public abstract Object a(@NotNull kotlin.coroutines.d<? super AdId> dVar);
+}

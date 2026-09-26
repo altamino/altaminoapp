@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+    <com.narvii.widget.ThumbImageView
+        android:id="@+id/avatar"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        style="@style/AvatarImageView"/>
+    <com.narvii.widget.NicknameView
+        android:textSize="17dp"
+        android:textColor="#555"
+        android:id="@+id/nickname"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"/>
+    <include layout="@layout/drag_sort_drag_handle"/>
+</LinearLayout>

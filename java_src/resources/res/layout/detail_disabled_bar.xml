@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18dp"
+    android:textColor="#fff"
+    android:gravity="center"
+    android:background="@color/disabled"
+    android:paddingLeft="20dp"
+    android:paddingTop="14dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/detail_disabled_message"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"/>

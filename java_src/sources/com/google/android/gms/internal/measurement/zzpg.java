@@ -1,0 +1,39 @@
+package com.google.android.gms.internal.measurement;
+
+import com.google.common.base.u;
+import com.google.common.base.v;
+
+/* JADX INFO: loaded from: classes7.dex */
+public final class zzpg implements u<zzpj> {
+    private static zzpg zza = new zzpg();
+    private final u<zzpj> zzb = v.b(new zzpi());
+
+    public static boolean zza() {
+        return ((zzpj) zza.get()).zza();
+    }
+
+    public static boolean zzb() {
+        return ((zzpj) zza.get()).zzb();
+    }
+
+    public static boolean zzc() {
+        return ((zzpj) zza.get()).zzc();
+    }
+
+    public static boolean zzd() {
+        return ((zzpj) zza.get()).zzd();
+    }
+
+    public static boolean zze() {
+        return ((zzpj) zza.get()).zze();
+    }
+
+    public static boolean zzf() {
+        return ((zzpj) zza.get()).zzf();
+    }
+
+    @Override // com.google.common.base.u
+    public final /* synthetic */ zzpj get() {
+        return this.zzb.get();
+    }
+}

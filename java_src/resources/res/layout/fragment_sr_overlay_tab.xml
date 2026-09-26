@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.narvii.widget.NVViewPager
+        android:id="@+id/viewpager"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.narvii.widget.NVPagerTabLayout
+        android:layout_gravity="bottom"
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        app:indicator_h_offset="-1dp"
+        app:indicator_v_offset="2dp"
+        app:tab_mode="1"/>
+</FrameLayout>

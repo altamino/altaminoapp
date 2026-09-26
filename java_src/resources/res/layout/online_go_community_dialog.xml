@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/headline_join_amino_first"
+        app:layout_centerY="46%"
+        app:layout_left="12%"
+        app:layout_right="88%"/>
+    <com.narvii.widget.PushButton
+        android:id="@+id/action"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        app:layout_centerX="50%"
+        app:layout_top="max(55%,prev.bottom+10dp)"
+        app:pushButtonColor="#6fd4a3">
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:text="@string/join"/>
+    </com.narvii.widget.PushButton>
+</com.github.mmin18.widget.FlexLayout>

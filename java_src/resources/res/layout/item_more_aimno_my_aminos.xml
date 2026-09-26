@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.narvii.widget.AutoSizingTextView
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/account_text"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/more_aminos"
+        android:background="@drawable/selector_more_aminos"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:text="@string/more_communities"
+        android:maxLines="1"
+        android:textAllCaps="true"
+        app:autoSizeTextMaxSize="14dp"
+        app:autoSizeTextMinSize="8dp"
+        app:layout_centerX="50%"
+        app:layout_centerY="50%"
+        app:layout_width="80%"/>
+</com.github.mmin18.widget.FlexLayout>

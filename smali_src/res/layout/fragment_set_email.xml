@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_gradient" android:paddingTop="@dimen/status_bar_margin" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:id="@id/actionbar_back" android:padding="10.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_back_no_shadowmirror" />
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="52.0dp" android:text="@string/update_email" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never">
+        <androidx.constraintlayout.widget.ConstraintLayout android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_email" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/setEmailTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/enter_your_email" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/icon" />
+            <com.narvii.widget.TextInputLayout android:orientation="vertical" android:id="@id/input_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="35.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/setEmailTitle">
+                <EditText android:id="@id/fake_edit" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" android:inputType="textEmailAddress" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white_50a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_email" />
+                <com.narvii.widget.AutoCompleteEmailView android:textSize="@dimen/text_input_size" android:textColor="#fff" android:textColorHint="#fff" android:gravity="center_vertical" android:id="@id/edit" android:background="@null" android:layout_width="match_parent" android:layout_height="40.0dp" android:singleLine="true" android:inputType="textEmailAddress" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/account_edit_cursor_white" />
+                <View android:id="@id/divider" android:background="@color/white_50a" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                <TextView android:textSize="12.0sp" android:textColor="#f00" android:id="@id/input_error_hint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/invalid_email" />
+            </com.narvii.widget.TextInputLayout>
+            <Button android:enabled="false" android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/account_text" android:id="@id/verify_email" android:background="@drawable/button_round_default" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginTop="50.0dp" android:text="@string/verify_email" android:textAllCaps="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/input_layout" app:layout_constraintVertical_bias="0.0" style="@style/ButtonLogin" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

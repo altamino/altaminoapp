@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_member_invite"
+    android:clickable="true"
+    android:layout_width="80dp"
+    android:layout_height="108dp">
+    <RelativeLayout
+        android:id="@+id/stub1"
+        android:background="@drawable/chat_invite"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_permission_plus"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView
+        android:textSize="11dp"
+        android:textColor="#222"
+        android:id="@+id/text"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="4dp"
+        android:text="Invite"
+        android:singleLine="true"
+        android:layout_below="@+id/stub1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"/>
+</RelativeLayout>

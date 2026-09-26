@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="end"
+        android:id="@+id/share_media_bar1"
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.narvii.widget.FontAwesomeView
+            android:textSize="18dp"
+            android:textColor="@color/button_text_light"
+            android:gravity="center"
+            android:id="@+id/share_media_entry"
+            android:background="@drawable/button_round_dark"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/fa_share_alt"/>
+    </LinearLayout>
+</LinearLayout>

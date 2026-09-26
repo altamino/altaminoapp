@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="13dp"
+    android:textColor="#fff"
+    android:ellipsize="end"
+    android:paddingLeft="@dimen/flag_item_padding_left_right"
+    android:paddingTop="@dimen/flag_item_padding_top_bottom"
+    android:paddingRight="@dimen/flag_item_padding_left_right"
+    android:paddingBottom="@dimen/flag_item_padding_top_bottom"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:lines="1"
+    android:paddingStart="@dimen/flag_item_padding_left_right"
+    android:paddingEnd="@dimen/flag_item_padding_left_right"
+    android:elevation="2dp"/>

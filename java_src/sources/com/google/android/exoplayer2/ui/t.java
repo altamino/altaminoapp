@@ -1,0 +1,50 @@
+package com.google.android.exoplayer2.ui;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class t {
+    public static final int exo_controls_cc_disabled_description = 2131887220;
+    public static final int exo_controls_cc_enabled_description = 2131887221;
+    public static final int exo_controls_custom_playback_speed = 2131887222;
+    public static final int exo_controls_fastforward_description = 2131887223;
+    public static final int exo_controls_fullscreen_enter_description = 2131887224;
+    public static final int exo_controls_fullscreen_exit_description = 2131887225;
+    public static final int exo_controls_hide = 2131887226;
+    public static final int exo_controls_next_description = 2131887227;
+    public static final int exo_controls_overflow_hide_description = 2131887228;
+    public static final int exo_controls_overflow_show_description = 2131887229;
+    public static final int exo_controls_pause_description = 2131887230;
+    public static final int exo_controls_play_description = 2131887231;
+    public static final int exo_controls_playback_speed = 2131887232;
+    public static final int exo_controls_previous_description = 2131887233;
+    public static final int exo_controls_repeat_all_description = 2131887234;
+    public static final int exo_controls_repeat_off_description = 2131887235;
+    public static final int exo_controls_repeat_one_description = 2131887236;
+    public static final int exo_controls_rewind_description = 2131887237;
+    public static final int exo_controls_seek_bar_description = 2131887238;
+    public static final int exo_controls_settings_description = 2131887239;
+    public static final int exo_controls_show = 2131887240;
+    public static final int exo_controls_shuffle_off_description = 2131887241;
+    public static final int exo_controls_shuffle_on_description = 2131887242;
+    public static final int exo_controls_stop_description = 2131887243;
+    public static final int exo_controls_time_placeholder = 2131887244;
+    public static final int exo_controls_vr_description = 2131887245;
+    public static final int exo_item_list = 2131887255;
+    public static final int exo_track_bitrate = 2131887256;
+    public static final int exo_track_mono = 2131887257;
+    public static final int exo_track_resolution = 2131887258;
+    public static final int exo_track_role_alternate = 2131887259;
+    public static final int exo_track_role_closed_captions = 2131887260;
+    public static final int exo_track_role_commentary = 2131887261;
+    public static final int exo_track_role_supplementary = 2131887262;
+    public static final int exo_track_selection_auto = 2131887263;
+    public static final int exo_track_selection_none = 2131887264;
+    public static final int exo_track_selection_title_audio = 2131887265;
+    public static final int exo_track_selection_title_text = 2131887266;
+    public static final int exo_track_selection_title_video = 2131887267;
+    public static final int exo_track_stereo = 2131887268;
+    public static final int exo_track_surround = 2131887269;
+    public static final int exo_track_surround_5_point_1 = 2131887270;
+    public static final int exo_track_surround_7_point_1 = 2131887271;
+    public static final int exo_track_unknown = 2131887272;
+    public static final int status_bar_notification_info_overflow = 2131890484;
+}

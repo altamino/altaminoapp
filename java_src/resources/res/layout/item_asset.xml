@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/asset_item_selector"
+    android:layout_width="80dp"
+    android:layout_height="80dp">
+    <View
+        android:background="@drawable/asset_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"/>
+    <com.narvii.widget.NVImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:scaleType="fitCenter"
+        app:cornerRadius="5dp"
+        app:showPressedMask="false"/>
+    <ImageView
+        android:layout_gravity="end|bottom"
+        android:id="@+id/not_downloaded"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_asset_not_downloaded"/>
+    <FrameLayout
+        android:layout_gravity="end|bottom"
+        android:id="@+id/downloading_layout"
+        android:background="@drawable/oval_asset_action_bg"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_margin="5dp">
+        <com.narvii.widget.CircleProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/downloading"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:max="100"
+            app:roundBackgroundColor="#00000000"
+            app:roundProgressColor="#ffffff"
+            app:roundWidth="2dp"/>
+    </FrameLayout>
+</FrameLayout>

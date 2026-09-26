@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.livelayer.detailview.LiveLayerDetailListItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="146dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+    <com.narvii.widget.SecretImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        narvii:cornerRadius="@dimen/live_detail_chat_corner"
+        narvii:defaultDrawable="@drawable/live_layer_detail_item_placeholder"
+        narvii:hidePlayButton="true"/>
+    <TextView
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2"
+        android:gravity="start"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="60dp"
+        android:maxLines="2"
+        android:shadowColor="#0000"
+        android:shadowDy="3"
+        android:shadowRadius="8"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="60dp"/>
+    <include layout="@layout/fans_only_content_indicator_layout_live_chat"/>
+    <View
+        android:background="@drawable/popular_text_backgroud_gradual"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"/>
+    <include
+        android:id="@+id/feed_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/divider"
+        android:layout_alignParentBottom="true"
+        layout="@layout/live_layer_feed_toolbar"/>
+    <FrameLayout
+        android:id="@+id/live_layer_additional_layout"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+    <include layout="@layout/live_layer_detail_item_bar"/>
+</com.narvii.livelayer.detailview.LiveLayerDetailListItemView>

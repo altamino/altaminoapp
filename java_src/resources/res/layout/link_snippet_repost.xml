@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <com.narvii.widget.TintButton
+        android:gravity="center"
+        android:layout_width="20dp"
+        android:layout_height="12.5dp"
+        android:src="@drawable/ic_link_share_repost"
+        app:tintColor="@color/feed_toolbar_grey"/>
+    <TextView
+        android:textSize="12dp"
+        android:textColor="@color/feed_toolbar_normal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reposted"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"/>
+</LinearLayout>

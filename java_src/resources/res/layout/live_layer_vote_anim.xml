@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.lottie.LottieAnimationView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="start|bottom"
+    android:id="@+id/vote_anim"
+    android:layout_width="60dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="-10dp"
+    android:layout_marginStart="-10dp"
+    app:lottie_fileName="live_layer_vote.json"
+    app:lottie_loop="true"/>

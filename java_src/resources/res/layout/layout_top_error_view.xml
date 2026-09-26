@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/error_container"
+    android:padding="@dimen/page_status_top_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#555"
+        android:id="@+id/error"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error"/>
+    <TextView
+        android:textSize="14dp"
+        android:textColor="#555"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/normal_error_long"/>
+    <com.narvii.widget.FontAwesomeView
+        android:textColor="@color/button_text_gray_w"
+        android:gravity="center"
+        android:id="@+id/retry"
+        android:padding="12dp"
+        android:clickable="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="@string/ion_refresh"/>
+</LinearLayout>

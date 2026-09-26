@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.chat.video.floating.ThreadFloatingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="@dimen/thread_floating_width"
+    android:layout_height="@dimen/thread_floating_height">
+    <com.narvii.widget.ThumbImageView
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        style="@style/AvatarImageView"/>
+    <ImageView
+        android:layout_gravity="end|top"
+        android:id="@+id/close"
+        android:padding="@dimen/floating_close_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_floating_close"/>
+    <ImageView
+        android:layout_gravity="end|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/floating_close_padding"
+        android:src="@drawable/ic_floating_chat"
+        android:layout_marginEnd="@dimen/floating_close_padding"/>
+</com.narvii.chat.video.floating.ThreadFloatingLayout>

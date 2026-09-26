@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+    <include
+        app:layout_centerX="50%"
+        app:layout_height="wrap_content"
+        app:layout_width="90%"
+        layout="@layout/item_cell_topic_module_related"/>
+</com.github.mmin18.widget.FlexLayout>

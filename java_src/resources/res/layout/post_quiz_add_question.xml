@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/post_quiz_add_question"
+    android:background="@drawable/post_quiz_add_question"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="14dp"
+    android:layout_marginRight="10dp">
+    <com.narvii.widget.FontAwesomeView
+        android:textColor="#00ce7d"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/fa_plus"/>
+    <TextView
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="#00ce7d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/post_quiz_add_question"
+        android:layout_marginStart="10dp"/>
+</LinearLayout>

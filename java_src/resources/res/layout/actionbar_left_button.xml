@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_back"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="14dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:id="@+id/text"
+        android:background="@drawable/radius_4_white_stroke_1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="12dp"
+        android:shadowColor="#0000"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:layout_marginStart="12dp"/>
+</FrameLayout>

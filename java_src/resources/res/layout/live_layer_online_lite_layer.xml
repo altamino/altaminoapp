@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/lite_layer"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/live_layer_fold_height">
+    <com.narvii.widget.AutoSizingTextView
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/online_count"
+        android:background="@drawable/online_bar_lite_layer_count_bg"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_width="40dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="22dp"
+        android:maxLines="1"
+        android:layout_marginStart="-5dp"
+        app:autoSizeTextMaxSize="12dp"/>
+    <View
+        android:id="@+id/green_oval"
+        android:background="@drawable/oval_green"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"/>
+</FrameLayout>

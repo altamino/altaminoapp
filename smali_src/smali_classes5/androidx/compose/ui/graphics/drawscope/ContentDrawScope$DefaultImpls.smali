@@ -1,0 +1,14 @@
+.class public final Landroidx/compose/ui/graphics/drawscope/ContentDrawScope$DefaultImpls;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "DefaultImpls"
+.end annotation

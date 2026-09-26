@@ -1,0 +1,231 @@
+package com.google.android.gms.measurement.internal;
+
+import androidx.annotation.VisibleForTesting;
+import com.google.android.gms.common.internal.Preconditions;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Locale;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
+
+/* JADX INFO: loaded from: classes10.dex */
+abstract class zzac {
+    String zza;
+    int zzb;
+    Boolean zzc;
+    Boolean zzd;
+    Long zze;
+    Long zzf;
+
+    @VisibleForTesting
+    private static Boolean zza(BigDecimal bigDecimal, com.google.android.gms.internal.measurement.zzew.zzd zzdVar, double d) {
+        BigDecimal bigDecimal2;
+        BigDecimal bigDecimal3;
+        BigDecimal bigDecimal4;
+        Preconditions.checkNotNull(zzdVar);
+        if (zzdVar.zzh() && zzdVar.zza() != com.google.android.gms.internal.measurement.zzew.zzd.zzb.UNKNOWN_COMPARISON_TYPE) {
+            com.google.android.gms.internal.measurement.zzew.zzd.zzb zzbVarZza = zzdVar.zza();
+            com.google.android.gms.internal.measurement.zzew.zzd.zzb zzbVar = com.google.android.gms.internal.measurement.zzew.zzd.zzb.BETWEEN;
+            if (zzbVarZza == zzbVar) {
+                if (!zzdVar.zzl() || !zzdVar.zzk()) {
+                    return null;
+                }
+            } else if (!zzdVar.zzi()) {
+                return null;
+            }
+            com.google.android.gms.internal.measurement.zzew.zzd.zzb zzbVarZza2 = zzdVar.zza();
+            if (zzdVar.zza() == zzbVar) {
+                if (zzmz.zzb(zzdVar.zzf()) && zzmz.zzb(zzdVar.zze())) {
+                    try {
+                        BigDecimal bigDecimal5 = new BigDecimal(zzdVar.zzf());
+                        bigDecimal4 = new BigDecimal(zzdVar.zze());
+                        bigDecimal3 = bigDecimal5;
+                        bigDecimal2 = null;
+                    } catch (NumberFormatException unused) {
+                    }
+                }
+                return null;
+            }
+            if (!zzmz.zzb(zzdVar.zzd())) {
+                return null;
+            }
+            try {
+                bigDecimal2 = new BigDecimal(zzdVar.zzd());
+                bigDecimal3 = null;
+                bigDecimal4 = null;
+            } catch (NumberFormatException unused2) {
+            }
+            if (zzbVarZza2 == zzbVar) {
+                if (bigDecimal3 == null) {
+                    return null;
+                }
+            } else if (bigDecimal2 != null) {
+            }
+            int i10 = zzw.zzb[zzbVarZza2.ordinal()];
+            boolean z6 = false;
+            if (i10 != 1) {
+                if (i10 != 2) {
+                    if (i10 != 3) {
+                        if (i10 != 4 || bigDecimal3 == null) {
+                            return null;
+                        }
+                        if (bigDecimal.compareTo(bigDecimal3) >= 0 && bigDecimal.compareTo(bigDecimal4) <= 0) {
+                            z6 = true;
+                        }
+                        return Boolean.valueOf(z6);
+                    }
+                    if (bigDecimal2 != null) {
+                        if (d == com.google.firebase.remoteconfig.a.DEFAULT_VALUE_FOR_DOUBLE) {
+                            return Boolean.valueOf(bigDecimal.compareTo(bigDecimal2) == 0);
+                        }
+                        if (bigDecimal.compareTo(bigDecimal2.subtract(new BigDecimal(d).multiply(new BigDecimal(2)))) > 0 && bigDecimal.compareTo(bigDecimal2.add(new BigDecimal(d).multiply(new BigDecimal(2)))) < 0) {
+                            z6 = true;
+                        }
+                        return Boolean.valueOf(z6);
+                    }
+                } else if (bigDecimal2 != null) {
+                    return Boolean.valueOf(bigDecimal.compareTo(bigDecimal2) > 0);
+                }
+            } else if (bigDecimal2 != null) {
+                return Boolean.valueOf(bigDecimal.compareTo(bigDecimal2) < 0);
+            }
+        }
+        return null;
+    }
+
+    abstract int zza();
+
+    abstract boolean zzb();
+
+    abstract boolean zzc();
+
+    zzac(String str, int i10) {
+        this.zza = str;
+        this.zzb = i10;
+    }
+
+    @VisibleForTesting
+    static Boolean zza(String str, com.google.android.gms.internal.measurement.zzew.zzf zzfVar, zzfr zzfrVar) {
+        String strZze;
+        List<String> list;
+        Preconditions.checkNotNull(zzfVar);
+        if (str == null || !zzfVar.zzj() || zzfVar.zzb() == com.google.android.gms.internal.measurement.zzew.zzf.zza.UNKNOWN_MATCH_TYPE) {
+            return null;
+        }
+        com.google.android.gms.internal.measurement.zzew.zzf.zza zzaVarZzb = zzfVar.zzb();
+        com.google.android.gms.internal.measurement.zzew.zzf.zza zzaVar = com.google.android.gms.internal.measurement.zzew.zzf.zza.IN_LIST;
+        if (zzaVarZzb == zzaVar) {
+            if (zzfVar.zza() == 0) {
+                return null;
+            }
+        } else if (!zzfVar.zzi()) {
+            return null;
+        }
+        com.google.android.gms.internal.measurement.zzew.zzf.zza zzaVarZzb2 = zzfVar.zzb();
+        boolean zZzg = zzfVar.zzg();
+        if (!zZzg && zzaVarZzb2 != com.google.android.gms.internal.measurement.zzew.zzf.zza.REGEXP && zzaVarZzb2 != zzaVar) {
+            strZze = zzfVar.zze().toUpperCase(Locale.ENGLISH);
+        } else {
+            strZze = zzfVar.zze();
+        }
+        String str2 = strZze;
+        if (zzfVar.zza() == 0) {
+            list = null;
+        } else {
+            List<String> listZzf = zzfVar.zzf();
+            if (!zZzg) {
+                ArrayList arrayList = new ArrayList(listZzf.size());
+                Iterator<String> it = listZzf.iterator();
+                while (it.hasNext()) {
+                    arrayList.add(it.next().toUpperCase(Locale.ENGLISH));
+                }
+                listZzf = Collections.unmodifiableList(arrayList);
+            }
+            list = listZzf;
+        }
+        return zza(str, zzaVarZzb2, zZzg, str2, list, zzaVarZzb2 == com.google.android.gms.internal.measurement.zzew.zzf.zza.REGEXP ? str2 : null, zzfrVar);
+    }
+
+    private static Boolean zza(String str, com.google.android.gms.internal.measurement.zzew.zzf.zza zzaVar, boolean z6, String str2, List<String> list, String str3, zzfr zzfrVar) {
+        if (str == null) {
+            return null;
+        }
+        if (zzaVar == com.google.android.gms.internal.measurement.zzew.zzf.zza.IN_LIST) {
+            if (list == null || list.isEmpty()) {
+                return null;
+            }
+        } else if (str2 == null) {
+            return null;
+        }
+        if (!z6 && zzaVar != com.google.android.gms.internal.measurement.zzew.zzf.zza.REGEXP) {
+            str = str.toUpperCase(Locale.ENGLISH);
+        }
+        switch (zzw.zza[zzaVar.ordinal()]) {
+            case 1:
+                if (str3 == null) {
+                    return null;
+                }
+                try {
+                    return Boolean.valueOf(Pattern.compile(str3, z6 ? 0 : 66).matcher(str).matches());
+                } catch (PatternSyntaxException unused) {
+                    if (zzfrVar != null) {
+                        zzfrVar.zzu().zza("Invalid regular expression in REGEXP audience filter. expression", str3);
+                    }
+                    return null;
+                }
+            case 2:
+                return Boolean.valueOf(str.startsWith(str2));
+            case 3:
+                return Boolean.valueOf(str.endsWith(str2));
+            case 4:
+                return Boolean.valueOf(str.contains(str2));
+            case 5:
+                return Boolean.valueOf(str.equals(str2));
+            case 6:
+                if (list == null) {
+                    return null;
+                }
+                return Boolean.valueOf(list.contains(str));
+            default:
+                return null;
+        }
+    }
+
+    static Boolean zza(double d, com.google.android.gms.internal.measurement.zzew.zzd zzdVar) {
+        try {
+            return zza(new BigDecimal(d), zzdVar, Math.ulp(d));
+        } catch (NumberFormatException unused) {
+            return null;
+        }
+    }
+
+    static Boolean zza(long j6, com.google.android.gms.internal.measurement.zzew.zzd zzdVar) {
+        try {
+            return zza(new BigDecimal(j6), zzdVar, com.google.firebase.remoteconfig.a.DEFAULT_VALUE_FOR_DOUBLE);
+        } catch (NumberFormatException unused) {
+            return null;
+        }
+    }
+
+    static Boolean zza(String str, com.google.android.gms.internal.measurement.zzew.zzd zzdVar) {
+        if (!zzmz.zzb(str)) {
+            return null;
+        }
+        try {
+            return zza(new BigDecimal(str), zzdVar, com.google.firebase.remoteconfig.a.DEFAULT_VALUE_FOR_DOUBLE);
+        } catch (NumberFormatException unused) {
+            return null;
+        }
+    }
+
+    @VisibleForTesting
+    static Boolean zza(Boolean bool, boolean z6) {
+        if (bool == null) {
+            return null;
+        }
+        return Boolean.valueOf(bool.booleanValue() != z6);
+    }
+}

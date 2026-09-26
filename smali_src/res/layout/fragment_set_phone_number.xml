@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_gradient" android:paddingTop="@dimen/status_bar_margin" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:id="@id/actionbar_back" android:padding="10.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_back_no_shadowmirror" />
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="52.0dp" android:text="@string/update_phone_number" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never">
+        <androidx.constraintlayout.widget.ConstraintLayout android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mobile" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/titleTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/enter_your_phone_number" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/icon" />
+            <com.narvii.widget.TextInputLayout android:orientation="vertical" android:id="@id/phone_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/titleTV">
+                <include layout="@layout/account_mobile" />
+            </com.narvii.widget.TextInputLayout>
+            <Button android:enabled="false" android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/account_text" android:id="@id/verify_phone" android:background="@drawable/button_round_default" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginTop="40.0dp" android:text="@string/verify_phone_number" android:textAllCaps="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/phone_input_layout" style="@style/ButtonLogin" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

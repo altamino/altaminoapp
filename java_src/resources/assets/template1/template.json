@@ -1,0 +1,49 @@
+{
+    "id": "df01f985-205a-55fa-bd03-ce718a30d74f",
+    "version": 1,
+    "fps": 25,
+    "minInputCount": 1,
+    "inputCount": 6,
+    "outputFrameCount": 375,
+    "videoEnabled": false,
+    "backgroundMusic": "template1/bgMusic.aac",
+    "segments": [
+        {
+            "channel": 1,
+            "channelInputs": [0],
+            "frameCount": 50,
+            "shader": ["template1/1.glsl"]
+        },
+        {
+            "channel": 1,
+            "channelInputs": [1],
+            "frameCount": 42,
+            "shader": ["template1/2.glsl"]
+        },
+        {
+            "channel": 1,
+            "channelInputs": [2],
+            "frameCount": 85,
+            "shader": ["template1/3.glsl"]
+        },
+        {
+            "channel": 1,
+            "channelInputs": [3],
+            "frameCount": 44,
+            "shader": ["template1/4.glsl"]
+        },
+        {
+            "channel": 1,
+            "channelInputs": [4],
+            "frameCount": 51,
+            "shader": ["template1/5.glsl"]
+        },
+        {
+            "channel": 1,
+            "channelInputs": [5],
+            "frameCount": 103,
+            "shader": ["template1/6_1.glsl", "template1/6_2.glsl"]
+        }
+    ]
+}
+

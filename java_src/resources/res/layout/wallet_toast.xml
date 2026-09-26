@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:gravity="center"
+        android:id="@+id/toast_message"
+        android:background="@drawable/wallet_toast_bg"
+        android:paddingLeft="40dp"
+        android:paddingTop="24dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="@dimen/store_item_name_size_default"
+        android:textStyle="bold"
+        android:textColor="#333334"
+        android:ellipsize="end"
+        android:id="@+id/collection_name"
+        android:tag="shrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_marginEnd="6dp"/>
+    <ImageView
+        android:id="@+id/amino_plus_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_amino_plus_mini_new"/>
+    <TextView
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/_new"
+        android:background="@drawable/shared_sticker_pack_new_bg"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:minHeight="16dp"
+        android:text="New"
+        android:textAllCaps="true"
+        android:layout_marginStart="4dp"/>
+</merge>

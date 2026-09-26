@@ -1,0 +1,77 @@
+.class public final Landroidx/navigation/ui/AppBarConfigurationKt$AppBarConfiguration$3;
+.super Lkotlin/jvm/internal/v;
+.source "SourceFile"
+
+# interfaces
+.implements Le8/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/v;",
+        "Le8/a<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nAppBarConfiguration.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AppBarConfiguration.kt\nandroidx/navigation/ui/AppBarConfigurationKt$AppBarConfiguration$3\n*L\n1#1,279:1\n*E\n"
+.end annotation
+
+
+# static fields
+.field public static final INSTANCE:Landroidx/navigation/ui/AppBarConfigurationKt$AppBarConfiguration$3;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Landroidx/navigation/ui/AppBarConfigurationKt$AppBarConfiguration$3;
+
+    invoke-direct {v0}, Landroidx/navigation/ui/AppBarConfigurationKt$AppBarConfiguration$3;-><init>()V
+
+    sput-object v0, Landroidx/navigation/ui/AppBarConfigurationKt$AppBarConfiguration$3;->INSTANCE:Landroidx/navigation/ui/AppBarConfigurationKt$AppBarConfiguration$3;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lkotlin/jvm/internal/v;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b()Ljava/lang/Boolean;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroidx/navigation/ui/AppBarConfigurationKt$AppBarConfiguration$3;->b()Ljava/lang/Boolean;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method

@@ -1,0 +1,65 @@
+package com.narvii.amino.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import com.narvii.amino.master.R;
+import com.narvii.widget.NicknameView;
+
+/* JADX INFO: loaded from: classes11.dex */
+public final class DetailItemUserItemBinding implements ViewBinding {
+
+    @NonNull
+    public final TextView datetime;
+
+    @NonNull
+    public final NicknameView nickname;
+
+    @NonNull
+    private final LinearLayout rootView;
+
+    @NonNull
+    public static DetailItemUserItemBinding inflate(@NonNull LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+
+    @NonNull
+    public LinearLayout getRoot() {
+        return this.rootView;
+    }
+
+    @NonNull
+    public static DetailItemUserItemBinding inflate(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z6) {
+        View viewInflate = layoutInflater.inflate(R.layout.detail_item_user_item, viewGroup, false);
+        if (z6) {
+            viewGroup.addView(viewInflate);
+        }
+        return bind(viewInflate);
+    }
+
+    private DetailItemUserItemBinding(@NonNull LinearLayout linearLayout, @NonNull TextView textView, @NonNull NicknameView nicknameView) {
+        this.rootView = linearLayout;
+        this.datetime = textView;
+        this.nickname = nicknameView;
+    }
+
+    @NonNull
+    public static DetailItemUserItemBinding bind(@NonNull View view) {
+        int i10 = R.id.datetime;
+        TextView textView = (TextView) ViewBindings.a(view, R.id.datetime);
+        if (textView != null) {
+            i10 = R.id.nickname;
+            NicknameView nicknameView = (NicknameView) ViewBindings.a(view, R.id.nickname);
+            if (nicknameView != null) {
+                return new DetailItemUserItemBinding((LinearLayout) view, textView, nicknameView);
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    }
+}

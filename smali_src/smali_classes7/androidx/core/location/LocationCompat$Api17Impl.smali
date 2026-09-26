@@ -1,0 +1,48 @@
+.class Landroidx/core/location/LocationCompat$Api17Impl;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroidx/annotation/RequiresApi;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/location/LocationCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "Api17Impl"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method
+
+.method static a(Landroid/location/Location;)J
+    .locals 2
+    .annotation build Landroidx/annotation/DoNotInline;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/location/Location;->getElapsedRealtimeNanos()J
+
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    return-wide v0
+.end method

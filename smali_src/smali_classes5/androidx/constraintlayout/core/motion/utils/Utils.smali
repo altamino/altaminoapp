@@ -1,0 +1,29 @@
+.class public Landroidx/constraintlayout/core/motion/utils/Utils;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/constraintlayout/core/motion/utils/Utils$DebugHandle;
+    }
+.end annotation
+
+
+# static fields
+.field static ourHandle:Landroidx/constraintlayout/core/motion/utils/Utils$DebugHandle;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method

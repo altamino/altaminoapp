@@ -1,0 +1,33 @@
+package androidx.compose.animation.core;
+
+import androidx.compose.runtime.Composable;
+import androidx.compose.runtime.Composer;
+import e8.q;
+import kotlin.jvm.internal.t;
+import kotlin.jvm.internal.v;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* JADX INFO: loaded from: classes5.dex */
+public final class TransitionKt$animateValue$1 extends v implements q<Transition.Segment<Object>, Composer, Integer, SpringSpec<Object>> {
+    public static final TransitionKt$animateValue$1 INSTANCE = new TransitionKt$animateValue$1();
+
+    public TransitionKt$animateValue$1() {
+        super(3);
+    }
+
+    @Composable
+    @NotNull
+    public final SpringSpec<Object> a(@NotNull Transition.Segment<Object> segment, @Nullable Composer composer, int i10) {
+        t.j(segment, "$this$null");
+        composer.G(-895531546);
+        SpringSpec<Object> springSpecI = AnimationSpecKt.i(0.0f, 0.0f, null, 7, null);
+        composer.Q();
+        return springSpecI;
+    }
+
+    @Override // e8.q
+    public /* bridge */ /* synthetic */ SpringSpec<Object> invoke(Transition.Segment<Object> segment, Composer composer, Integer num) {
+        return a(segment, composer, num.intValue());
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/user_title_flow_more_bg"
+    android:layout_width="32dp"
+    android:layout_height="@dimen/user_title_flow_height"
+    android:layout_marginLeft="@dimen/user_title_margin_h"
+    android:layout_marginTop="@dimen/user_title_margin_v"
+    android:layout_marginRight="@dimen/user_title_margin_h"
+    android:layout_marginBottom="@dimen/user_title_margin_v">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_user_title_more"/>
+</FrameLayout>

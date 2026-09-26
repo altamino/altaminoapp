@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="40dp"
+    android:paddingBottom="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.narvii.widget.AutoSizingTextView
+        android:textColor="@color/explorer_chat_color"
+        android:gravity="center"
+        android:id="@+id/explore_chat"
+        android:background="@drawable/button_more_chat_corner"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/more_chat_from_community"
+        android:maxLines="1"
+        app:layout_centerX="50%"
+        app:layout_width="80%"/>
+</com.github.mmin18.widget.FlexLayout>

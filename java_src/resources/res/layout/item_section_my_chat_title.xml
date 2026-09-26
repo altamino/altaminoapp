@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/ItemCellWithPadding">
+    <com.narvii.widget.TintButton
+        android:id="@+id/icon"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginRight="4dp"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="4dp"/>
+    <TextView
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="#484848"
+        android:gravity="start"
+        android:id="@+id/title"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="1"/>
+    <com.narvii.widget.TintButton
+        android:layout_gravity="center_vertical"
+        android:id="@+id/setting"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/more_dot"
+        app:tintColor="#9b9b9b"/>
+</LinearLayout>

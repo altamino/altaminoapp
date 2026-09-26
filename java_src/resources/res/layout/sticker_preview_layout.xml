@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.PopupBubble xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="left"
+    android:id="@+id/popup_bubble"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:popupBubbleColor="#fff"
+    app:popupBubbleShadowColor="#0000"
+    app:popupBubbleShadowSize="2dp"
+    app:popupBubbleStrokeColor="#d2d2d4"
+    app:popupBubbleStrokeWidth="1dp">
+    <com.narvii.monetization.sticker.widget.StickerImageView
+        android:id="@+id/sticker_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/image_loading"
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        style="?android:attr/progressBarStyleLarge"/>
+</com.narvii.widget.PopupBubble>

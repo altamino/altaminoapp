@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+    <com.narvii.widget.NVImageView
+        android:id="@+id/ads_image"
+        android:scaleType="centerCrop"
+        app:cornerRadius="5dp"
+        app:defaultDrawable="@color/story_list_item_loading"
+        app:errorDrawable="@color/story_list_item_loading"
+        app:layout_height="this.width*0.35"
+        app:layout_left="17dp"
+        app:layout_right="100%-17dp"
+        app:layout_width="100%"/>
+</com.github.mmin18.widget.FlexLayout>

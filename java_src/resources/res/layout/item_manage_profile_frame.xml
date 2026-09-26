@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="14dp"
+    android:textColor="#0f86ff"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:paddingLeft="32dp"
+    android:paddingTop="5dp"
+    android:paddingRight="32dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/manage_my_profile_frame"/>

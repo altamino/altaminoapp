@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/headline_default_padding_horizontal"
+    android:paddingTop="80dp"
+    android:paddingRight="@dimen/headline_default_padding_horizontal"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/headline_default_padding_horizontal"
+    android:paddingEnd="@dimen/headline_default_padding_horizontal">
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/selector_headline_channel_text_color"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/manage_topic"
+        android:background="@drawable/selector_headline_channel_manager"
+        android:paddingLeft="50dp"
+        android:paddingTop="12dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manager_my_topic"
+        android:singleLine="true"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"/>
+</LinearLayout>

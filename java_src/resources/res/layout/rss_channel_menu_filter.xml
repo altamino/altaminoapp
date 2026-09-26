@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/channel_menu_filter_height"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_chat_filter"/>
+    <TextView
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:ellipsize="end"
+        android:id="@+id/text"
+        android:paddingLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="90dp"
+        android:text="@string/rss_channel_filter_all"
+        android:singleLine="true"
+        android:paddingStart="8dp"/>
+</LinearLayout>

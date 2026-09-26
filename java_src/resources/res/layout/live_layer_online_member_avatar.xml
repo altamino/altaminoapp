@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.narvii.widget.UserAvatarLayout
+        android:id="@+id/user_avatar_layout"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="@dimen/master_home_section_header_size"
+        android:layout_height="@dimen/live_layer_online_avatar_width"
+        app:avatarShadowOffsetY="1dp"
+        app:avatarSizeRatio="0.78"
+        app:disableFullAvatarFrame="true"
+        app:noBadge="true"
+        app:sizeType="mini"/>
+    <com.narvii.widget.NVImageView
+        android:layout_gravity="center"
+        android:id="@+id/overlay"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="#40000000"
+        android:scaleType="centerInside"
+        app:cornerRadius="1000dp"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/more"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more_online_bar"
+        android:scaleType="centerInside"/>
+</FrameLayout>

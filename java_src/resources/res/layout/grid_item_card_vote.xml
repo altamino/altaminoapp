@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <include layout="@layout/grid_item_card"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/grid_item_vote"
+        android:paddingBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp">
+        <com.narvii.widget.VoteIcon
+            android:layout_gravity="center"
+            android:id="@+id/grid_item_vote_icon"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"/>
+        <com.narvii.widget.SpinningView
+            android:layout_gravity="center"
+            android:id="@+id/grid_item_vote_progress"
+            android:visibility="gone"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            narvii:spinSize="@dimen/spin_tiny_size"
+            narvii:spinStyle="2"/>
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/feed_toolbar_normal"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/grid_item_vote_count"
+            android:paddingLeft="6dp"
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"/>
+    </LinearLayout>
+</LinearLayout>

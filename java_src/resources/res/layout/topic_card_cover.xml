@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <com.narvii.widget.NVImageView
+        android:src="@drawable/general_topic_card_bg"
+        app:layout_centerY="50%"
+        app:layout_height="90%"
+        app:layout_width="100%"/>
+    <com.narvii.widget.NVImageView
+        android:layout_gravity="center"
+        android:id="@+id/img"
+        app:cornerRadius="6dp"
+        app:defaultDrawable="@drawable/topic_style_default_small_bg"
+        app:errorDrawable="@drawable/topic_style_default_small_bg"
+        app:layout_centerX="50%"
+        app:layout_height="100%"
+        app:layout_width="70%"/>
+    <com.narvii.widget.NVImageView
+        android:id="@+id/subscribe_tag"
+        android:background="@drawable/bg_rect_black_10_corner"
+        android:visibility="gone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_subscribe_on"
+        android:scaleType="centerCrop"
+        app:layout_right="img.right-3dp"
+        app:layout_top="3dp"
+        app:showPressedMask="false"/>
+</merge>

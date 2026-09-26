@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="bottom|center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/text"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/leader_board_empty"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+    <com.narvii.widget.FontAwesomeView
+        android:textSize="36dp"
+        android:textColor="@color/button_text_gray_w"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/empty_retry"
+        android:padding="12dp"
+        android:clickable="true"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="@string/ion_refresh"/>
+</LinearLayout>

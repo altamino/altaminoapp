@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/post_background"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="#666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/post_title"/>
+        <EditText
+            android:textSize="16dp"
+            android:textColor="#222"
+            android:id="@+id/title"
+            android:background="@null"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:inputType="textCapSentences"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <include layout="@layout/list_divider"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        <com.narvii.widget.EditTextIMG
+            android:textSize="16dp"
+            android:textColor="#222"
+            android:gravity="start|top"
+            android:id="@+id/content"
+            android:background="#fff"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/compose_hint_link_edit"
+            android:inputType="textMultiLine"/>
+        <include
+            android:id="@+id/post_embed_image_hint"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            layout="@layout/post_embed_image_hint_small"/>
+    </FrameLayout>
+    <include
+        android:id="@+id/link_preview_layout"
+        layout="@layout/link_preview_layout"/>
+    <include layout="@layout/post_media_bar"/>
+</LinearLayout>

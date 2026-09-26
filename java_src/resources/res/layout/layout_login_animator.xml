@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mmin18.widget.FlexLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:narvii="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/background_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+    <ImageView
+        android:id="@+id/ic_orb_core"
+        android:alpha="0.4"
+        narvii:layout_height="parent.width * 1.28"
+        narvii:layout_width="parent.width"/>
+    <ImageView
+        android:id="@+id/ic_orb_core_1"
+        android:alpha="0.86"
+        narvii:layout_centerX="25%"
+        narvii:layout_centerY="parent.width * 0.43"
+        narvii:layout_height="parent.width * 0.3"
+        narvii:layout_width="30%"/>
+    <ImageView
+        android:id="@+id/ic_orb_gear_1"
+        android:alpha="0.3"
+        narvii:layout_centerX="32.5%"
+        narvii:layout_centerY="parent.width * 0.475"
+        narvii:layout_height="parent.width * 0.5"
+        narvii:layout_width="50%"/>
+    <ImageView
+        android:id="@+id/ic_orb_gear_2"
+        android:alpha="0.4"
+        narvii:layout_centerX="40%"
+        narvii:layout_centerY="parent.width * 0.55"
+        narvii:layout_height="parent.width * 0.75"
+        narvii:layout_width="75%"/>
+    <ImageView
+        android:id="@+id/ic_orb_object_1"
+        android:alpha="0.5"
+        narvii:layout_centerX="29%"
+        narvii:layout_centerY="parent.width * 0.45"
+        narvii:layout_height="parent.width * 0.41"
+        narvii:layout_width="41%"/>
+    <ImageView
+        android:id="@+id/ic_orb_object_2"
+        android:alpha="0.6"
+        narvii:layout_centerX="31%"
+        narvii:layout_centerY="parent.width * 0.455"
+        narvii:layout_height="parent.width * 0.44"
+        narvii:layout_width="44%"/>
+    <ImageView
+        android:id="@+id/ic_orb_object_3"
+        android:alpha="0.6"
+        narvii:layout_centerX="32.5%"
+        narvii:layout_centerY="parent.width * 0.47"
+        narvii:layout_height="parent.width * 0.53"
+        narvii:layout_width="53%"/>
+    <ImageView
+        android:id="@+id/ic_orb_object_4"
+        android:alpha="0.6"
+        narvii:layout_centerX="34%"
+        narvii:layout_centerY="parent.width * 0.49"
+        narvii:layout_height="parent.width * 0.62"
+        narvii:layout_width="62%"/>
+    <ImageView
+        android:id="@+id/ic_orb_object_5"
+        android:alpha="0.6"
+        narvii:layout_centerX="33%"
+        narvii:layout_centerY="parent.width * 0.5"
+        narvii:layout_height="parent.width * 0.70"
+        narvii:layout_width="70%"/>
+    <ImageView
+        android:id="@+id/ic_orb_object_6"
+        android:alpha="0.6"
+        narvii:layout_centerX="35%"
+        narvii:layout_centerY="parent.width * 0.48"
+        narvii:layout_height="parent.width * 0.78"
+        narvii:layout_width="78%"/>
+    <ImageView
+        android:id="@+id/ic_orb_dotted_1"
+        android:alpha="0.7"
+        narvii:layout_centerX="50%"
+        narvii:layout_centerY="parent.width * 0.5"
+        narvii:layout_height="parent.width * 1.6"
+        narvii:layout_width="160%"/>
+    <ImageView
+        android:id="@+id/ic_orb_dotted_2"
+        android:alpha="0.7"
+        narvii:layout_centerX="27%"
+        narvii:layout_centerY="parent.width * 0.44"
+        narvii:layout_height="parent.width * 0.4"
+        narvii:layout_width="40%"/>
+    <ImageView
+        android:id="@+id/ic_orb_dotted_3"
+        android:alpha="0.7"
+        narvii:layout_centerX="35%"
+        narvii:layout_centerY="parent.width * 0.47"
+        narvii:layout_height="parent.width * 0.55"
+        narvii:layout_width="55%"/>
+    <ImageView
+        android:id="@+id/ic_orb_dotted_4"
+        android:alpha="0.7"
+        narvii:layout_centerX="42%"
+        narvii:layout_centerY="parent.width * 0.52"
+        narvii:layout_height="parent.width * 0.90"
+        narvii:layout_width="90%"/>
+    <ImageView
+        android:id="@+id/ic_orb_ellipse_1"
+        android:alpha="0.7"
+        narvii:layout_centerX="35%"
+        narvii:layout_centerY="parent.width * 0.47"
+        narvii:layout_height="parent.width * 0.55"
+        narvii:layout_width="55%"/>
+    <ImageView
+        android:id="@+id/ic_orb_ellipse_2"
+        android:alpha="0.7"
+        narvii:layout_centerX="47%"
+        narvii:layout_centerY="parent.width * 0.52"
+        narvii:layout_height="parent.width * 0.8"
+        narvii:layout_width="80%"/>
+    <ImageView
+        android:id="@+id/ic_orb_dash_1"
+        android:alpha="0.2"
+        narvii:layout_centerX="40%"
+        narvii:layout_centerY="parent.width * 0.52"
+        narvii:layout_height="parent.width * 0.7"
+        narvii:layout_width="70%"/>
+    <ImageView
+        android:id="@+id/ic_orb_dash_2"
+        android:alpha="0.4"
+        narvii:layout_centerX="45%"
+        narvii:layout_centerY="parent.width * 0.5"
+        narvii:layout_height="parent.width * 0.8"
+        narvii:layout_width="80%"/>
+    <ImageView
+        android:id="@+id/ic_orb_dash_4"
+        android:alpha="0.3"
+        narvii:layout_centerX="42%"
+        narvii:layout_centerY="parent.width * 0.52"
+        narvii:layout_height="parent.width * 1.6"
+        narvii:layout_width="160%"/>
+    <ImageView
+        android:id="@+id/ic_orb_ring_1"
+        android:alpha="0.4"
+        narvii:layout_centerX="37%"
+        narvii:layout_centerY="parent.width * 0.47"
+        narvii:layout_height="parent.width * 0.70"
+        narvii:layout_width="70%"/>
+    <ImageView
+        android:id="@+id/ic_orb_ring_2"
+        android:alpha="0.4"
+        narvii:layout_centerX="47%"
+        narvii:layout_centerY="parent.width * 0.51"
+        narvii:layout_height="parent.width * 0.85"
+        narvii:layout_width="85%"/>
+    <ImageView
+        android:id="@+id/ic_orb_ring_3"
+        android:alpha="0.4"
+        narvii:layout_centerX="35%"
+        narvii:layout_centerY="parent.width * 0.45"
+        narvii:layout_height="parent.width * 1.4"
+        narvii:layout_width="140%"/>
+    <RelativeLayout
+        android:id="@+id/orb_10"
+        narvii:layout_centerX="27%"
+        narvii:layout_centerY="parent.width * 0.42"
+        narvii:layout_height="parent.width * 0.3"
+        narvii:layout_width="30%">
+        <ImageView
+            android:id="@+id/ic_orb_10"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="1"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/orb_12"
+        narvii:layout_centerX="27%"
+        narvii:layout_centerY="parent.width * 0.31"
+        narvii:layout_height="parent.width * 0.70"
+        narvii:layout_width="70%">
+        <ImageView
+            android:id="@+id/ic_orb_12"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="1"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/orb_16"
+        narvii:layout_centerX="27%"
+        narvii:layout_centerY="parent.width * 0.42"
+        narvii:layout_height="parent.width * 0.3"
+        narvii:layout_width="30%">
+        <ImageView
+            android:id="@+id/ic_orb_16"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="1"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/orb_24"
+        android:alpha="1"
+        narvii:layout_centerX="30%"
+        narvii:layout_centerY="parent.width * 0.44"
+        narvii:layout_height="parent.width * 0.4"
+        narvii:layout_width="40%">
+        <ImageView
+            android:id="@+id/ic_orb_24"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="1"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/orb_32"
+        narvii:layout_centerX="30%"
+        narvii:layout_centerY="parent.width * 0.45"
+        narvii:layout_height="parent.width * 0.5"
+        narvii:layout_width="50%">
+        <ImageView
+            android:id="@+id/ic_orb_32"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="1"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/orb_36"
+        android:alpha="1"
+        narvii:layout_centerX="37%"
+        narvii:layout_centerY="parent.width * 0.52"
+        narvii:layout_height="parent.width * 0.9"
+        narvii:layout_width="90%">
+        <ImageView
+            android:id="@+id/ic_orb_36"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="1"/>
+    </RelativeLayout>
+</com.github.mmin18.widget.FlexLayout>

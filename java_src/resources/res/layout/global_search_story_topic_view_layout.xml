@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.story.widgets.StoryTopicView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/story_topic_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:layout_margin="5dp"
+    app:background_style="semitransparent_with_stroke"
+    app:supportBackground="true"
+    app:tagTextPadding="12dp"
+    app:tagTextSize="14dp"/>

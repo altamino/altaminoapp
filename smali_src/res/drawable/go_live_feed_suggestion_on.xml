@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:layout_width="match_parent" android:shape="oval">
+            <solid android:color="#f3b23e" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/ic_fav_light" android:left="7.0dp" android:top="7.0dp" android:right="7.0dp" android:bottom="7.0dp" />
+</layer-list>

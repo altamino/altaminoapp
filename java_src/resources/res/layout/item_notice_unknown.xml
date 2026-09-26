@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/ItemCellWithPadding">
+    <include layout="@layout/item_notice_community_info"/>
+    <com.narvii.app.theme.view.NVThemeTextView
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/important_notice_text_error"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:nv_dark_textColor="#fff"/>
+    <com.narvii.widget.PushButton
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/update"
+        android:paddingLeft="18dp"
+        android:paddingTop="6dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        app:pushButtonColor="#0662ce"
+        app:pushButtonLift="1dp">
+        <TextView
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"/>
+    </com.narvii.widget.PushButton>
+</LinearLayout>

@@ -1,0 +1,12 @@
+.class public interface abstract Landroidx/compose/ui/input/pointer/PointerIconService;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a(Landroidx/compose/ui/input/pointer/PointerIcon;)V
+    .param p1    # Landroidx/compose/ui/input/pointer/PointerIcon;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+.end method

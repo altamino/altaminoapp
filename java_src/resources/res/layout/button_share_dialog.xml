@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@drawable/button_share_dialog_round"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp">
+    <com.narvii.widget.AutoSizingTextView
+        android:textSize="14dp"
+        android:textColor="@color/button_text_gray_dark"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:maxLines="2"
+        android:drawablePadding="10dp"
+        app:autoSizeTextMaxSize="14dp"
+        app:autoSizeTextMinSize="10dp"/>
+</LinearLayout>

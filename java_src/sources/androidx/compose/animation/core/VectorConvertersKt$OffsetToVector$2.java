@@ -1,0 +1,27 @@
+package androidx.compose.animation.core;
+
+import androidx.compose.ui.geometry.Offset;
+import androidx.compose.ui.geometry.OffsetKt;
+import e8.l;
+import kotlin.jvm.internal.t;
+import kotlin.jvm.internal.v;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: loaded from: classes6.dex */
+final class VectorConvertersKt$OffsetToVector$2 extends v implements l<AnimationVector2D, Offset> {
+    public static final VectorConvertersKt$OffsetToVector$2 INSTANCE = new VectorConvertersKt$OffsetToVector$2();
+
+    VectorConvertersKt$OffsetToVector$2() {
+        super(1);
+    }
+
+    public final long a(@NotNull AnimationVector2D it) {
+        t.j(it, "it");
+        return OffsetKt.a(it.f(), it.g());
+    }
+
+    @Override // e8.l
+    public /* bridge */ /* synthetic */ Offset invoke(AnimationVector2D animationVector2D) {
+        return Offset.d(a(animationVector2D));
+    }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingTop="4dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp">
+    <com.narvii.widget.AutoSizingTextView
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="#18a4f5"
+        android:gravity="top|center_horizontal"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        app:autoSizeTextMaxSize="14dp"
+        app:autoSizeTextMinSize="10dp"/>
+    <com.narvii.widget.AutoSizingTextView
+        android:textSize="10dp"
+        android:textColor="#18a4f5"
+        android:gravity="center_horizontal"
+        android:id="@+id/subTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:lines="1"
+        app:autoSizeTextMaxSize="10dp"
+        app:autoSizeTextMinSize="6dp"/>
+</LinearLayout>

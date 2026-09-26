@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.narvii.widget.SpinningView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="top|center_horizontal"
+    android:id="@android:id/progress"
+    android:layout_width="@dimen/spin_large_size"
+    android:layout_height="@dimen/spin_large_size"
+    android:layout_marginTop="@dimen/page_status_top_margin"/>

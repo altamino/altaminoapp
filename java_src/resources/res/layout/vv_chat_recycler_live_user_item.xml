@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="32dp"
+    android:layout_height="34dp">
+    <include
+        android:layout_gravity="center"
+        android:layout_width="@dimen/live_user_avatar_size"
+        android:layout_height="@dimen/live_user_avatar_size"
+        layout="@layout/user_avatar_layout_mini_nobadge"/>
+</FrameLayout>

@@ -39,9 +39,9 @@ JADX          := jadx
 
 # ---- Unpack settings ----
 INPUT_APK     ?= original.apk
-UNPACK_DIR    := unpacked
-APKTOOL_OUT   := $(UNPACK_DIR)/apktool
-JADX_OUT      := $(UNPACK_DIR)/jadx
+UNPACK_DIR    := .
+APKTOOL_OUT   := $(UNPACK_DIR)/smali_src
+JADX_OUT      := $(UNPACK_DIR)/java_src
 JADX_FLAGS    ?= --show-bad-code
 APKTOOL_FLAGS ?=
 

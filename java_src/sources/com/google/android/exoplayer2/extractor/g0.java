@@ -1,0 +1,58 @@
+package com.google.android.exoplayer2.extractor;
+
+/* JADX INFO: loaded from: classes7.dex */
+public final class g0 {
+    private int bitOffset;
+    private final int byteLimit;
+    private int byteOffset;
+    private final byte[] data;
+
+    public int b() {
+        return (this.byteOffset * 8) + this.bitOffset;
+    }
+
+    private void a() {
+        int i10;
+        int i11 = this.byteOffset;
+        com.google.android.exoplayer2.util.a.g(i11 >= 0 && (i11 < (i10 = this.byteLimit) || (i11 == i10 && this.bitOffset == 0)));
+    }
+
+    public boolean c() {
+        boolean z6 = (((this.data[this.byteOffset] & 255) >> this.bitOffset) & 1) == 1;
+        e(1);
+        return z6;
+    }
+
+    public int d(int i10) {
+        int i11 = this.byteOffset;
+        int iMin = Math.min(i10, 8 - this.bitOffset);
+        int i12 = i11 + 1;
+        int i13 = ((this.data[i11] & 255) >> this.bitOffset) & (255 >> (8 - iMin));
+        while (iMin < i10) {
+            i13 |= (this.data[i12] & 255) << iMin;
+            iMin += 8;
+            i12++;
+        }
+        int i14 = i13 & ((-1) >>> (32 - i10));
+        e(i10);
+        return i14;
+    }
+
+    public void e(int i10) {
+        int i11 = i10 / 8;
+        int i12 = this.byteOffset + i11;
+        this.byteOffset = i12;
+        int i13 = this.bitOffset + (i10 - (i11 * 8));
+        this.bitOffset = i13;
+        if (i13 > 7) {
+            this.byteOffset = i12 + 1;
+            this.bitOffset = i13 - 8;
+        }
+        a();
+    }
+
+    public g0(byte[] bArr) {
+        this.data = bArr;
+        this.byteLimit = bArr.length;
+    }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="caption_tab_item_width">65dp</dimen>
+    <dimen name="detail_share_button_size">38dp</dimen>
+    <dimen name="drawer_left_avatar_size">98dp</dimen>
+    <dimen name="drawer_left_checkin_height">44dp</dimen>
+    <dimen name="drawer_left_checkin_height_ex">48dp</dimen>
+    <dimen name="drawer_left_checkin_text_size">20dp</dimen>
+    <dimen name="drawer_left_checkin_width">128dp</dimen>
+    <dimen name="drawer_left_content_width">300dp</dimen>
+    <dimen name="drawer_left_entry_b_size">54dp</dimen>
+    <dimen name="drawer_left_nickname_text_size">18dp</dimen>
+    <dimen name="drawer_left_top_height">400dp</dimen>
+    <dimen name="drawer_left_top_height_extend">440dp</dimen>
+    <dimen name="drawer_left_unit_width">92dp</dimen>
+    <dimen name="drawer_right_width">344dp</dimen>
+    <dimen name="kindred_item_width">96dp</dimen>
+    <dimen name="quiz_ranking_beat_hint_size">11dp</dimen>
+    <dimen name="quiz_ranking_beat_no_size">35dp</dimen>
+    <dimen name="quiz_share_beat_hint_size">12dp</dimen>
+    <dimen name="quiz_share_beat_no_size">34dp</dimen>
+    <dimen name="quiz_share_icon_size">28dp</dimen>
+    <dimen name="quiz_share_info_size">16dp</dimen>
+    <dimen name="quiz_share_nickname_size">18dp</dimen>
+    <dimen name="quiz_share_title_size">18dp</dimen>
+</resources>

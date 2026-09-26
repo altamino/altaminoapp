@@ -1,0 +1,5 @@
+package androidx.compose.ui.text;
+
+/* JADX INFO: loaded from: classes7.dex */
+public final class ActualAtomicReferenceJvmKt {
+}

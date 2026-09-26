@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18dp"
+    android:textColor="@color/color_default"
+    android:gravity="center"
+    android:id="@+id/alert_dialog_button"
+    android:background="@null"
+    android:layout_width="0px"
+    android:layout_height="48dp"
+    android:singleLine="true"
+    android:layout_weight="1"/>

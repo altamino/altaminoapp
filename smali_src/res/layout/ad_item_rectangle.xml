@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ai.medialab.medialabads2.banners.MediaLabAdView android:layout_gravity="center" android:id="@id/medialab_banner_rectangle" android:visibility="gone" android:layout_width="300.0dp" android:layout_height="250.0dp" />
+</FrameLayout>

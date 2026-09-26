@@ -1,0 +1,122 @@
+.class public final Landroidx/lifecycle/LifecycleRegistry$Companion;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/lifecycle/LifecycleRegistry;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/k;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Landroidx/lifecycle/LifecycleRegistry$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroidx/lifecycle/LifecycleOwner;)Landroidx/lifecycle/LifecycleRegistry;
+    .locals 3
+    .param p1    # Landroidx/lifecycle/LifecycleOwner;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/VisibleForTesting;
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    const-string v0, "owner"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/t;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    new-instance v0, Landroidx/lifecycle/LifecycleRegistry;
+
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    const/4 v2, 0x0
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-direct {v0, p1, v1, v2}, Landroidx/lifecycle/LifecycleRegistry;-><init>(Landroidx/lifecycle/LifecycleOwner;ZLkotlin/jvm/internal/k;)V
+
+    .line 13
+    return-object v0
+.end method
+
+.method public final b(Landroidx/lifecycle/Lifecycle$State;Landroidx/lifecycle/Lifecycle$State;)Landroidx/lifecycle/Lifecycle$State;
+    .locals 1
+    .param p1    # Landroidx/lifecycle/Lifecycle$State;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/lifecycle/Lifecycle$State;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    const-string v0, "state1"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/t;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    if-eqz p2, :cond_0
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {p2, p1}, Ljava/lang/Enum;->compareTo(Ljava/lang/Enum;)I
+
+    .line 11
+    move-result v0
+
+    .line 12
+    .line 13
+    if-gez v0, :cond_0
+
+    .line 14
+    move-object p1, p2
+
+    .line 15
+    :cond_0
+    return-object p1
+.end method
