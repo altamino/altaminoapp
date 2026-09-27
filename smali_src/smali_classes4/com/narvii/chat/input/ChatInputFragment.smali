@@ -11214,13 +11214,14 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/EditText;->setSelection(I)V
 
+    new-instance v2, Lcom/narvii/chat/input/EditKeyboard;
 
+    invoke-direct {v2, p0}, Lcom/narvii/chat/input/EditKeyboard;-><init>(Lcom/narvii/chat/input/ChatInputFragment;)V
 
-    new-instance v2, Lcom/narvii/chat/input/c;
+    const-wide/16 v0, 0xc8
 
-    invoke-direct {v2, p0}, Lcom/narvii/chat/input/c;-><init>(Lcom/narvii/chat/input/ChatInputFragment;)V
+    invoke-static {v2, v0, v1}, Lcom/narvii/util/Utils;->postDelayed(Ljava/lang/Runnable;J)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
     :cond_end
     return-void
-.end method
+    .end method
