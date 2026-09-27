@@ -4362,7 +4362,7 @@
 .end method
 
 .method finishWithResult(Lcom/narvii/account/AccountBaseFragment;ZILjava/lang/String;)V
-    .locals 1
+    .locals 2
 
     .line 1
     invoke-virtual {p0}, Lcom/narvii/app/NVActivity;->isDestoryed()Z
@@ -4374,29 +4374,14 @@
     return-void
 
     :cond_0
-    if-eqz p2, :cond_1
+    move-object v0, p1
 
-    iget-object p2, p0, Lcom/narvii/account/LoginActivity;->loginViewModel:Lcom/narvii/account/vm/LoginViewModel;
-
-    .line 2
-    new-instance p4, Lcom/narvii/account/LoginActivity$3;
-
-    const-class v0, Lcom/narvii/model/api/ApiResponse;
-
-    invoke-direct {p4, p0, v0, p3, p1}, Lcom/narvii/account/LoginActivity$3;-><init>(Lcom/narvii/account/LoginActivity;Ljava/lang/Class;ILcom/narvii/account/AccountBaseFragment;)V
-
-    invoke-virtual {p2, p4}, Lcom/narvii/account/vm/LoginViewModel;->sendPublicKey(Lcom/narvii/util/http/ApiResponseListener;)V
-
-    goto :goto_0
-
-    :cond_1
     iget-boolean p1, p0, Lcom/narvii/account/LoginActivity;->isRequesting:Z
 
     if-eqz p1, :cond_4
 
     const/4 p1, 0x0
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/narvii/account/LoginActivity;->setSubmitting(Lcom/narvii/account/AccountBaseFragment;)V
 
     const/4 p1, 0x0
@@ -4411,17 +4396,21 @@
 
     xor-int/lit8 p2, p2, 0x1
 
-    .line 4
     invoke-direct {p0, p1, p2, p3}, Lcom/narvii/account/LoginActivity;->trackLoginRegister(ZZI)V
+
+    # Раньше это выполнялось в LoginActivity$3.onFinish()
+    # после sendPublicKey().
+    #
+    # Теперь вызываем напрямую, без отправки public key.
+    invoke-static {p0, p3, v0}, Lcom/narvii/account/LoginActivity;->z(Lcom/narvii/account/LoginActivity;ILcom/narvii/account/AccountBaseFragment;)V
 
     if-eqz p4, :cond_4
 
-    .line 5
     div-int/lit8 p2, p3, 0x64
 
-    const/4 v0, 0x2
+    const/4 v1, 0x2
 
-    if-ne p2, v0, :cond_3
+    if-ne p2, v1, :cond_3
 
     invoke-static {p0}, Lcom/narvii/util/http/ApiService;->shouldShowErrMessage(Landroid/content/Context;)Z
 
@@ -4433,14 +4422,12 @@
 
     if-ne p3, p1, :cond_2
 
-    .line 6
     new-instance p1, Landroid/os/Bundle;
 
     invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
 
     iget-object p2, p0, Lcom/narvii/account/LoginActivity;->account:Lcom/narvii/account/AccountService;
 
-    .line 7
     invoke-virtual {p2}, Lcom/narvii/account/AccountService;->getDeviceId()Ljava/lang/String;
 
     move-result-object p2
@@ -4449,7 +4436,6 @@
 
     invoke-virtual {p1, p3, p2}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
     invoke-static {p0}, Lcom/google/firebase/analytics/FirebaseAnalytics;->getInstance(Landroid/content/Context;)Lcom/google/firebase/analytics/FirebaseAnalytics;
 
     move-result-object p2
@@ -4458,28 +4444,23 @@
 
     invoke-virtual {p2, p3, p1}, Lcom/google/firebase/analytics/FirebaseAnalytics;->a(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    .line 9
     :cond_2
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {p1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 10
     invoke-virtual {p1, p4}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     const p2, 0x104000a
 
-    .line 11
     sget-object p3, Lcom/narvii/util/Utils;->DIALOG_BUTTON_EMPTY_LISTENER:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {p1, p2, p3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 12
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     goto :goto_0
 
-    .line 13
     :cond_3
     invoke-virtual {p0}, Lcom/narvii/app/NVActivity;->getContext()Landroid/content/Context;
 
