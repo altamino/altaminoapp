@@ -163,6 +163,8 @@
 
 .field public isHidden:Z
 
+.field public isEdited:Z
+
 .field public mediaType:I
 
 .field public mediaUhqEnabled:Z

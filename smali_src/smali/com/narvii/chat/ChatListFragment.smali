@@ -2489,6 +2489,27 @@
         .end annotation
     .end param
 
+
+    iget-object v1, p2, Lcom/narvii/chat/util/ChatMessageDto;->chatMessage:Lcom/narvii/model/ChatMessage;
+
+    if-eqz v1, :cond_ws_normal
+
+    iget-boolean v1, v1, Lcom/narvii/model/ChatMessage;->isEdited:Z
+
+    if-eqz v1, :cond_ws_normal
+
+    iget-object v1, p0, Lcom/narvii/chat/ChatListFragment;->adapter:Lcom/narvii/chat/ChatListFragment$Adapter;
+
+    if-eqz v1, :cond_ws_done
+
+    iget-object v2, p2, Lcom/narvii/chat/util/ChatMessageDto;->chatMessage:Lcom/narvii/model/ChatMessage;
+
+    invoke-virtual {v1, v2}, Lcom/narvii/chat/ChatListFragment$Adapter;->applyEditedMessage(Lcom/narvii/model/ChatMessage;)V
+
+    :cond_ws_done
+    return-void
+
+    :cond_ws_normal
     .line 1
     .line 2
     iget-boolean p1, p0, Lcom/narvii/chat/ChatListFragment;->reachBottom:Z

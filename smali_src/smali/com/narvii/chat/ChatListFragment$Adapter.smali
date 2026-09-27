@@ -6776,6 +6776,8 @@
 
     .line 24
     :cond_c
+    invoke-static {p0, v5, v3, p3}, Lcom/narvii/chat/ChatListFragment$Adapter;->addEditItem(Lcom/narvii/chat/ChatListFragment$Adapter;Lcom/narvii/util/dialog/ActionSheetDialog;Ljava/util/ArrayList;Lcom/narvii/model/ChatMessage;)V
+
     invoke-virtual {p3}, Lcom/narvii/model/ChatMessage;->isStickerMessage()Z
 
     move-result p4
@@ -8341,4 +8343,136 @@
     const-class v0, Lcom/narvii/chat/MessageListResponse;
 
     return-object v0
+.end method
+
+.method static addEditItem(Lcom/narvii/chat/ChatListFragment$Adapter;Lcom/narvii/util/dialog/ActionSheetDialog;Ljava/util/ArrayList;Lcom/narvii/model/ChatMessage;)V
+    .locals 4
+
+    if-eqz p3, :cond_end
+
+    iget v0, p3, Lcom/narvii/model/ChatMessage;->type:I
+
+    if-nez v0, :cond_end
+
+    iget v0, p3, Lcom/narvii/model/ChatMessage;->mediaType:I
+
+    if-nez v0, :cond_end
+
+    iget-object v0, p3, Lcom/narvii/model/ChatMessage;->messageId:Ljava/lang/String;
+
+    if-eqz v0, :cond_end
+
+    iget-object v0, p3, Lcom/narvii/model/ChatMessage;->author:Lcom/narvii/model/User;
+
+    if-eqz v0, :cond_end
+
+    invoke-virtual {v0}, Lcom/narvii/model/User;->id()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lcom/narvii/list/NVAdapter;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/narvii/util/Utils;->getNVContext(Landroid/content/Context;)Lcom/narvii/app/NVContext;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_end
+
+    const-string v2, "account"
+
+    invoke-interface {v1, v2}, Lcom/narvii/app/NVContext;->getService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/narvii/account/AccountService;
+
+    if-eqz v1, :cond_end
+
+    invoke-virtual {v1}, Lcom/narvii/account/AccountService;->getUserId()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/narvii/util/Utils;->isEqualsNotNull(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_end
+
+    const-string v0, "edit"
+
+    invoke-virtual {p2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const v0, 0x7f120438
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Lcom/narvii/util/dialog/ActionSheetDialog;->addItem(IZ)V
+
+    :cond_end
+    return-void
+.end method
+
+.method applyEditedMessage(Lcom/narvii/model/ChatMessage;)V
+    .locals 6
+
+    if-eqz p1, :loop_end
+
+    iget-object v0, p1, Lcom/narvii/model/ChatMessage;->messageId:Ljava/lang/String;
+
+    if-eqz v0, :loop_end
+
+    invoke-virtual {p0}, Lcom/narvii/chat/ChatListFragment$Adapter;->list()Ljava/util/List;
+
+    move-result-object v1
+
+    if-eqz v1, :loop_end
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    :loop_start
+    if-ge v3, v2, :loop_end
+
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    instance-of v5, v4, Lcom/narvii/model/ChatMessage;
+
+    if-eqz v5, :loop_next
+
+    check-cast v4, Lcom/narvii/model/ChatMessage;
+
+    iget-object v5, v4, Lcom/narvii/model/ChatMessage;->messageId:Ljava/lang/String;
+
+    invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :loop_next
+
+    iget-object v5, p1, Lcom/narvii/model/ChatMessage;->content:Ljava/lang/String;
+
+    iput-object v5, v4, Lcom/narvii/model/ChatMessage;->content:Ljava/lang/String;
+
+    const/4 v5, 0x1
+
+    iput-boolean v5, v4, Lcom/narvii/model/ChatMessage;->isEdited:Z
+
+    invoke-virtual {p0}, Lcom/narvii/chat/ChatListFragment$Adapter;->notifyDataSetChanged()V
+
+    return-void
+
+    :loop_next
+    add-int/lit8 v3, v3, 0x1
+
+    goto :loop_start
+
+    :loop_end
+    return-void
 .end method

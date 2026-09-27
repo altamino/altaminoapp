@@ -51,6 +51,8 @@
 .end field
 
 
+.field public editMode:Z
+
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
@@ -1375,6 +1377,20 @@
     :goto_4
     invoke-virtual {v0, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
+
+    iget-boolean v3, p0, Lcom/narvii/chat/ChatReplyLayout;->editMode:Z
+
+    if-eqz v3, :cond_no_editmode
+
+    const v3, 0x7f120438
+
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(I)V
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+
+    :cond_no_editmode
     .line 13
     invoke-virtual {p0}, Lcom/narvii/chat/ChatReplyLayout;->getContent()Landroid/widget/TextView;
 

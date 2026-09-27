@@ -72,6 +72,46 @@
     .line 6
     move-result-object p1
 
+    const-string v0, "edit"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_not_edit
+
+    iget-object p1, p0, Lcom/narvii/chat/ChatListFragment$Adapter$4;->this$1:Lcom/narvii/chat/ChatListFragment$Adapter;
+
+    iget-object p1, p1, Lcom/narvii/chat/ChatListFragment$Adapter;->this$0:Lcom/narvii/chat/ChatListFragment;
+
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object p1
+
+    const-string p2, "chatInput"
+
+    invoke-virtual {p1, p2}, Landroidx/fragment/app/FragmentManager;->m0(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+
+    move-result-object p1
+
+    instance-of p2, p1, Lcom/narvii/chat/input/ChatInputFragment;
+
+    if-eqz p2, :cond_edit_ret
+
+    check-cast p1, Lcom/narvii/chat/input/ChatInputFragment;
+
+    iget-object p2, p0, Lcom/narvii/chat/ChatListFragment$Adapter$4;->this$1:Lcom/narvii/chat/ChatListFragment$Adapter;
+
+    invoke-virtual {p1, p2}, Lcom/narvii/chat/input/ChatInputFragment;->setEditAdapter(Lcom/narvii/list/NVAdapter;)V
+
+    iget-object p2, p0, Lcom/narvii/chat/ChatListFragment$Adapter$4;->val$msg:Lcom/narvii/model/ChatMessage;
+
+    invoke-virtual {p1, p2}, Lcom/narvii/chat/input/ChatInputFragment;->startEditing(Lcom/narvii/model/ChatMessage;)V
+
+    :cond_edit_ret
+    return-void
+
+    :cond_not_edit
     .line 7
     .line 8
     const-string p2, "copy"

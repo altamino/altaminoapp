@@ -98,6 +98,10 @@
 
 .field private chatReplyMainView:Landroid/view/View;
 
+.field private editMessage:Lcom/narvii/model/ChatMessage;
+
+.field private editAdapter:Lcom/narvii/list/NVAdapter;
+
 .field private chatRightButtonContainer:Lcom/narvii/chat/input/ChatInputRightViewContainer;
 
 .field protected chatService:Lcom/narvii/chat/core/ChatService;
@@ -2727,6 +2731,8 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 14
+    invoke-direct {p0}, Lcom/narvii/chat/input/ChatInputFragment;->cancelEdit()V
+
     return-void
 .end method
 
@@ -4591,6 +4597,15 @@
 
     .line 101
     .line 102
+    iget-object p1, p0, Lcom/narvii/chat/input/ChatInputFragment;->editMessage:Lcom/narvii/model/ChatMessage;
+
+    if-eqz p1, :cond_edit_none
+
+    invoke-direct {p0}, Lcom/narvii/chat/input/ChatInputFragment;->submitEdit()V
+
+    return-void
+
+    :cond_edit_none
     :cond_3
     iget-boolean p1, p0, Lcom/narvii/chat/input/ChatInputFragment;->replying:Z
 
@@ -7351,6 +7366,9 @@
         .annotation build Lorg/jetbrains/annotations/NotNull;
         .end annotation
     .end param
+
+
+    invoke-direct {p0}, Lcom/narvii/chat/input/ChatInputFragment;->cancelEdit()V
 
     .line 1
     const/4 v0, 0x1
@@ -11001,5 +11019,199 @@
     .line 316
     :cond_f
     :goto_c
+    return-void
+.end method
+
+.method private cancelEdit()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/narvii/chat/input/ChatInputFragment;->editMessage:Lcom/narvii/model/ChatMessage;
+
+    if-eqz v0, :cond_end
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/narvii/chat/input/ChatInputFragment;->editMessage:Lcom/narvii/model/ChatMessage;
+
+    iget-object v1, p0, Lcom/narvii/chat/input/ChatInputFragment;->chatReplyLayout:Lcom/narvii/chat/ChatReplyLayout;
+
+    if-eqz v1, :cond_no_layout
+
+    iput-boolean v0, v1, Lcom/narvii/chat/ChatReplyLayout;->editMode:Z
+
+    :cond_no_layout
+    iget-object v1, p0, Lcom/narvii/chat/input/ChatInputFragment;->edit:Lcom/narvii/chat/input/MentionedEditText;
+
+    invoke-virtual {v1}, Lcom/narvii/chat/input/MentionedEditText;->clear()V
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :cond_end
+    return-void
+.end method
+
+.method private submitEdit()V
+    .locals 6
+
+    iget-object v0, p0, Lcom/narvii/chat/input/ChatInputFragment;->editMessage:Lcom/narvii/model/ChatMessage;
+
+    if-eqz v0, :cond_end
+
+    iget-object v1, p0, Lcom/narvii/chat/input/ChatInputFragment;->edit:Lcom/narvii/chat/input/MentionedEditText;
+
+    invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    if-eqz v2, :cond_end
+
+    invoke-static {}, Lcom/narvii/util/http/ApiRequest;->builder()Lcom/narvii/util/http/ApiRequest$Builder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/narvii/util/http/ApiRequest$Builder;->chatServer()Lcom/narvii/util/http/ApiRequest$Builder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/narvii/util/http/ApiRequest$Builder;->post()Lcom/narvii/util/http/ApiRequest$Builder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/narvii/util/http/ApiRequest$Builder;->contentTypeJson()Lcom/narvii/util/http/ApiRequest$Builder;
+
+    move-result-object v2
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "/chat/thread/"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v4, v0, Lcom/narvii/model/ChatMessage;->threadId:Ljava/lang/String;
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v4, "/message/"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v4, v0, Lcom/narvii/model/ChatMessage;->messageId:Ljava/lang/String;
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lcom/narvii/util/http/ApiRequest$Builder;->path(Ljava/lang/String;)Lcom/narvii/util/http/ApiRequest$Builder;
+
+    move-result-object v2
+
+    new-instance v3, Lorg/json/JSONObject;
+
+    invoke-direct {v3}, Lorg/json/JSONObject;-><init>()V
+
+    const-string v4, "content"
+
+    invoke-virtual {v3, v4, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    invoke-virtual {v2, v3}, Lcom/narvii/util/http/ApiRequest$Builder;->body(Lorg/json/JSONObject;)Lcom/narvii/util/http/ApiRequest$Builder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/narvii/util/http/ApiRequest$Builder;->build()Lcom/narvii/util/http/ApiRequest;
+
+    move-result-object v2
+
+    const-string v3, "api"
+
+    invoke-virtual {p0, v3}, Lcom/narvii/app/NVFragment;->getService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/narvii/util/http/ApiService;
+
+    new-instance v4, Lcom/narvii/chat/input/ChatInputFragment$EditResponse;
+
+    iget-object v5, p0, Lcom/narvii/chat/input/ChatInputFragment;->editAdapter:Lcom/narvii/list/NVAdapter;
+
+    invoke-direct {v4, v5, v0, v1}, Lcom/narvii/chat/input/ChatInputFragment$EditResponse;-><init>(Lcom/narvii/list/NVAdapter;Lcom/narvii/model/ChatMessage;Ljava/lang/String;)V
+
+    invoke-virtual {v3, v2, v4}, Lcom/narvii/util/http/ApiService;->exec(Lcom/narvii/util/http/ApiRequest;Lcom/narvii/util/http/ApiResponseListener;)V
+
+    invoke-direct {p0}, Lcom/narvii/chat/input/ChatInputFragment;->cancelEdit()V
+
+    invoke-direct {p0}, Lcom/narvii/chat/input/ChatInputFragment;->stopReplaing()V
+
+    :cond_end
+    return-void
+.end method
+
+.method public setEditAdapter(Lcom/narvii/list/NVAdapter;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/narvii/chat/input/ChatInputFragment;->editAdapter:Lcom/narvii/list/NVAdapter;
+
+    return-void
+.end method
+
+.method public startEditing(Lcom/narvii/model/ChatMessage;)V
+    .locals 4
+
+    if-eqz p1, :cond_end
+
+    invoke-direct {p0}, Lcom/narvii/chat/input/ChatInputFragment;->cancelEdit()V
+
+    iput-object p1, p0, Lcom/narvii/chat/input/ChatInputFragment;->editMessage:Lcom/narvii/model/ChatMessage;
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/narvii/chat/input/ChatInputFragment;->replying:Z
+
+    iput-object p1, p0, Lcom/narvii/chat/input/ChatInputFragment;->replyMessage:Lcom/narvii/model/ChatMessage;
+
+    iget-object v1, p0, Lcom/narvii/chat/input/ChatInputFragment;->chatReplyLayout:Lcom/narvii/chat/ChatReplyLayout;
+
+    if-eqz v1, :cond_no_layout
+
+    iput-boolean v0, v1, Lcom/narvii/chat/ChatReplyLayout;->editMode:Z
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, p1, v2, v0}, Lcom/narvii/chat/ChatReplyLayout;->setMessage(Lcom/narvii/model/ChatMessage;IZ)V
+
+    :cond_no_layout
+    iget-object v0, p1, Lcom/narvii/model/ChatMessage;->content:Ljava/lang/String;
+
+    if-nez v0, :cond_has_text
+
+    const-string v0, ""
+
+    :cond_has_text
+    iget-object v1, p0, Lcom/narvii/chat/input/ChatInputFragment;->edit:Lcom/narvii/chat/input/MentionedEditText;
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setSelection(I)V
+
+    :cond_end
     return-void
 .end method

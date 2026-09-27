@@ -440,12 +440,24 @@
 .end method
 
 .method public onNewChatMessage(ILcom/narvii/chat/util/ChatMessageDto;)V
-    .locals 0
+    .locals 1
     .param p2    # Lcom/narvii/chat/util/ChatMessageDto;
         .annotation build Lorg/jetbrains/annotations/NotNull;
         .end annotation
     .end param
 
+
+    iget-object v0, p2, Lcom/narvii/chat/util/ChatMessageDto;->chatMessage:Lcom/narvii/model/ChatMessage;
+
+    if-eqz v0, :cond_sr_go
+
+    iget-boolean v0, v0, Lcom/narvii/model/ChatMessage;->isEdited:Z
+
+    if-eqz v0, :cond_sr_go
+
+    return-void
+
+    :cond_sr_go
     .line 1
     .line 2
     iget-object p1, p0, Lcom/narvii/chat/screenroom/overlay/SROverlayMainFragment;->chatRecycleView:Lcom/narvii/chat/video/overlay/AvChatMessageListView;
