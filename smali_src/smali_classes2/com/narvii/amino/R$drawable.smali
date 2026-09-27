@@ -5253,6 +5253,8 @@
 
 .field public static final window_bg_gradient:I = 0x7f080a4b
 
+.field public static final ic_edited:I = 0x7f080a4c
+
 
 # direct methods
 .method private constructor <init>()V

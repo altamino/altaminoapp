@@ -2591,10 +2591,9 @@
 .method public setText(Ljava/lang/CharSequence;Lcom/narvii/model/ChatMessage;ZLcom/fasterxml/jackson/databind/node/ObjectNode;ZI)V
     .locals 14
 
-
     invoke-static/range {p1 .. p2}, Lcom/narvii/chat/ChatBubbleView;->markEdited(Ljava/lang/CharSequence;Lcom/narvii/model/ChatMessage;)Ljava/lang/CharSequence;
-
     move-result-object p1
+
     move-object v0, p0
 
     move-object/from16 v1, p2
@@ -2807,6 +2806,8 @@
     :goto_7
     invoke-virtual {v7, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
+    invoke-static {v7, v10}, Lcom/narvii/chat/ChatBubbleView;->tintEditedIcon(Landroid/widget/TextView;I)V
+
     if-eqz p3, :cond_a
 
     .line 25
@@ -2857,7 +2858,6 @@
 
     goto :goto_9
 
-    .line 32
     :cond_c
     invoke-virtual {v2, v11}, Landroid/view/View;->setVisibility(I)V
 
@@ -3573,10 +3573,9 @@
 .end method
 
 .method static markEdited(Ljava/lang/CharSequence;Lcom/narvii/model/ChatMessage;)Ljava/lang/CharSequence;
-    .locals 6
+    .locals 8
 
     if-eqz p0, :cond_ret
-
     if-eqz p1, :cond_ret
 
     iget-boolean v0, p1, Lcom/narvii/model/ChatMessage;->isEdited:Z
@@ -3584,39 +3583,116 @@
     if-eqz v0, :cond_ret
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
-
     move-result v0
 
     if-eqz v0, :cond_ret
 
     new-instance v1, Landroid/text/SpannableStringBuilder;
-
     invoke-direct {v1, p0}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
     invoke-virtual {v1}, Landroid/text/SpannableStringBuilder;->length()I
-
     move-result v2
 
-    const-string v3, " \u270e"
+    const-string v3, " "
 
     invoke-virtual {v1, v3}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
+    invoke-static {}, Landroid/app/ActivityThread;->currentApplication()Landroid/app/Application;
+    move-result-object v3
+
+    if-eqz v3, :cond_ret
+
+    const v4, 0x7f080a4c
+
+    invoke-static {v3, v4}, Landroidx/core/content/ContextCompat;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    move-result-object v3
+
+    if-eqz v3, :cond_ret
+
+    invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
+    move-result v4
+
+    invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
+    move-result v5
+
+    if-lez v4, :cond_ret
+    if-lez v5, :cond_ret
+
+    const/4 v6, 0x0
+
+    invoke-virtual {v3, v6, v6, v4, v5}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    const-string v4, " "
+
+    invoke-virtual {v1, v4}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
     invoke-virtual {v1}, Landroid/text/SpannableStringBuilder;->length()I
+    move-result v4
 
-    move-result v3
+    new-instance v5, Landroid/text/style/ImageSpan;
 
-    new-instance v4, Landroid/text/style/RelativeSizeSpan;
+    const/4 v6, 0x0
 
-    const v5, 0x3f4ccccd
+    invoke-direct {v5, v3, v6}, Landroid/text/style/ImageSpan;-><init>(Landroid/graphics/drawable/Drawable;I)V
 
-    invoke-direct {v4, v5}, Landroid/text/style/RelativeSizeSpan;-><init>(F)V
+    const/16 v7, 0x21
 
-    const/16 v5, 0x21
-
-    invoke-virtual {v1, v4, v2, v3, v5}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
+    invoke-virtual {v1, v5, v2, v4, v7}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
     return-object v1
 
     :cond_ret
-    return-object p0
+        return-object p0
+.end method
+
+
+.method static tintEditedIcon(Landroid/widget/TextView;I)V
+    .locals 6
+
+    if-eqz p0, :cond_ret
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    move-result-object v0
+
+    instance-of v1, v0, Landroid/text/Spanned;
+    if-eqz v1, :cond_ret
+
+    check-cast v0, Landroid/text/Spanned;
+
+    invoke-interface {v0}, Landroid/text/Spanned;->length()I
+    move-result v1
+
+    if-lez v1, :cond_ret
+
+    add-int/lit8 v2, v1, -0x1
+
+    const-class v3, Landroid/text/style/ImageSpan;
+
+    invoke-interface {v0, v2, v1, v3}, Landroid/text/Spanned;->getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
+    move-result-object v3
+
+    array-length v4, v3
+
+    const/4 v5, 0x0
+
+    :loop
+        if-ge v5, v4, :cond_ret
+
+        aget-object v2, v3, v5
+
+        check-cast v2, Landroid/text/style/ImageSpan;
+
+        invoke-virtual {v2}, Landroid/text/style/ImageSpan;->getDrawable()Landroid/graphics/drawable/Drawable;
+        move-result-object v2
+
+        if-eqz v2, :next
+
+        invoke-virtual {v2, p1}, Landroid/graphics/drawable/Drawable;->setTint(I)V
+
+    :next
+        add-int/lit8 v5, v5, 0x1
+        goto :loop
+
+    :cond_ret
+        return-void
 .end method
