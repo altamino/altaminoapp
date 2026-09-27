@@ -114,7 +114,7 @@
 
 .field private cid:I
 
-.field protected edit:Lcom/narvii/chat/input/MentionedEditText;
+.field public edit:Lcom/narvii/chat/input/MentionedEditText;
 
 .field private globalChatHelper:Lcom/narvii/chat/global/GlobalChatHelper;
 
@@ -1428,7 +1428,7 @@
     .line 31
     .line 32
     :cond_0
-    invoke-direct {p0}, Lcom/narvii/chat/input/ChatInputFragment;->showChatInputLayout()V
+    invoke-virtual {p0}, Lcom/narvii/chat/input/ChatInputFragment;->showChatInputLayout()V
 
     .line 33
     return-void
@@ -2594,7 +2594,7 @@
     return-object p0
 .end method
 
-.method private showChatInputLayout()V
+.method public showChatInputLayout()V
     .locals 1
 
     .line 1
@@ -4588,7 +4588,7 @@
 
     .line 96
     .line 97
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_3_stopdone
 
     .line 98
     .line 99
@@ -4597,6 +4597,8 @@
 
     .line 101
     .line 102
+    :cond_3_stopdone
+
     iget-object p1, p0, Lcom/narvii/chat/input/ChatInputFragment;->editMessage:Lcom/narvii/model/ChatMessage;
 
     if-eqz p1, :cond_edit_none
@@ -11212,6 +11214,13 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/EditText;->setSelection(I)V
 
+
+
+    new-instance v2, Lcom/narvii/chat/input/c;
+
+    invoke-direct {v2, p0}, Lcom/narvii/chat/input/c;-><init>(Lcom/narvii/chat/input/ChatInputFragment;)V
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
     :cond_end
     return-void
 .end method
