@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.narvii.amino.master" platformBuildVersionCode="34" platformBuildVersionName="14">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.narvii.amino.mastes" platformBuildVersionCode="34" platformBuildVersionName="14">
     <permission android:name="com.narvii.amino.ACCESS_ACCOUNT" android:protectionLevel="signature"/>
     <uses-permission android:name="com.narvii.amino.ACCESS_ACCOUNT"/>
     <uses-permission android:name="android.permission.INTERNET"/>
