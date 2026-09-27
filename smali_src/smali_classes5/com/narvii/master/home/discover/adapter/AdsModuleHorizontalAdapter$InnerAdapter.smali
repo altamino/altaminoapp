@@ -685,7 +685,9 @@
     .line 41
     .line 42
     .line 43
+    :try_start_0
     invoke-static {p0, p2}, Lcom/narvii/master/home/discover/adapter/AdsModuleHorizontalAdapter$InnerAdapter;->safedk_NVRecyclerViewBaseAdapter_startActivity_bb7b074de95a221f82540c32a0a969c2(Lcom/narvii/paging/adapter/NVRecyclerViewBaseAdapter;Landroid/content/Intent;)V
+    :try_end_0
 
     .line 44
     const/4 p1, 0x1
@@ -693,7 +695,14 @@
     .line 45
     return p1
 
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_activity_not_found
+
+    :catch_activity_not_found
+    const/4 p1, 0x0
+
     .line 46
+    return p1
+
     .line 47
     .line 48
     :cond_0
